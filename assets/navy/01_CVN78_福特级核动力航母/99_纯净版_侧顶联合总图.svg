@@ -1,0 +1,251 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 551.549" width="1200" height="551.549" data-asset-id="naval.cvn78.clean.master" data-view-kind="clean-master"><title>01_CVN78_福特级核动力航母 · 纯净侧顶联合图</title><metadata>Sources: 01_CVN78_福特级核航母_侧视立面_标准型.svg | 03_CVN78_福特级核航母_顶视全甲板.svg; geometry retained, original board removed; bounds: Chromium getBBox; no physical cross-asset scale claim.</metadata><g id="clean-side" fill="none" transform="translate(40.000000 32.000000) scale(1.188542030) translate(-87.128000 -66.632000)"><defs>
+    <style>
+#clean-side { fill: none; stroke-linecap: butt; }
+#clean-side .s-dim { stroke: #2c3b40; stroke-width: 1; }
+#clean-side .s-line { stroke: #5f7c84; stroke-width: 1; }
+#clean-side .s-hi { stroke: #d4e3e6; stroke-width: 1.2; }
+#clean-side .s-alert { stroke: #ff5a36; stroke-width: 1.4; }
+#clean-side .s-focus { stroke: #38bdf8; stroke-width: 1.4; }
+#clean-side .f-dim { fill: #2c3b40; stroke: none; }
+#clean-side .f-line { fill: #5f7c84; stroke: none; }
+#clean-side .f-hi { fill: #d4e3e6; stroke: none; }
+#clean-side .f-alert { fill: #ff5a36; stroke: none; }
+#clean-side .f-panel { fill: #0c1113; }
+#clean-side text { font-family: "Rajdhani", "Bahnschrift", "DIN Alternate", "Microsoft YaHei", sans-serif; letter-spacing: 0.12em; }
+#clean-side text:not([stroke]) { stroke: none; }
+#clean-side text:not([fill]) { fill: #cfdde0; }
+#clean-side text:not([font-size]):not(.cap):not(.big) { font-size: 10px; }
+#clean-side text.cap { letter-spacing: 0.2em; text-transform: uppercase; }
+#clean-side text.cap:not([fill]) { fill: #8aa1a7; }
+#clean-side text.cap:not([font-size]) { font-size: 8.5px; }
+#clean-side text.mono { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; letter-spacing: 0.06em; }
+#clean-side text.big { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; font-weight: 600; letter-spacing: 0.08em; }
+#clean-side text.big:not([font-size]) { font-size: 18px; }
+#clean-side text.big:not([fill]) { fill: #d4e3e6; }
+#clean-side text.alert { fill: #ff5a36; }
+</style>
+    <pattern id="clean-side-cad-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#10181c" stroke-width="1" />
+      <circle cx="20" cy="20" r="0.8" fill="#1b262b" />
+    </pattern>
+    <pattern id="clean-side-hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#ff5a36" stroke-width="1.2" stroke-opacity="0.35" />
+    </pattern>
+  </defs>
+
+  
+  <g id="clean-side-layer-ship-cad">
+    <g transform="translate(65.6,76.0) scale(2.691,2.342)">
+      
+      <path d="M 18 52 L 344 52 C 356 52 359 56 358 60 C 357 64 348 65 336 65 L 26 65 L 18 58 Z" fill="#170d0c" stroke="#ff5a36" stroke-width="1.1" />
+      
+      <polygon points="24,65 30,65 29,74 23,74" fill="#1f1210" stroke="#ff5a36" stroke-width="0.9" />
+      <line x1="58" y1="65" x2="42" y2="73" stroke="#ff5a36" stroke-width="1.1" />
+      <circle cx="41" cy="73" r="3.5" fill="none" stroke="#38bdf8" stroke-width="0.9" />
+      <line x1="88" y1="65" x2="72" y2="73" stroke="#ff5a36" stroke-width="1.1" />
+      <circle cx="71" cy="73" r="3.5" fill="none" stroke="#38bdf8" stroke-width="0.9" />
+
+      
+      <path d="M 10 32 L 356 32 L 344 52 L 18 52 L 12 42 Z" fill="#091319" stroke="#d4e3e6" stroke-width="1.25" />
+      <line x1="22" y1="34" x2="22" y2="62" stroke="#4a6368" stroke-width="0.55" stroke-opacity="0.55" /><line x1="32.5" y1="34" x2="32.5" y2="62" stroke="#4a6368" stroke-width="0.55" stroke-opacity="0.55" /><line x1="43" y1="34" x2="43" y2="62" stroke="#4a6368" stroke-width="0.55" stroke-opacity="0.55" /><line x1="53.5" y1="34" x2="53.5" y2="62" stroke="#4a6368" stroke-width="0.55" stroke-opacity="0.55" /><line x1="64" y1="34" x2="64" y2="62" stroke="#4a6368" stroke-width="0.55" stroke-opacity="0.55" /><line x1="74.5" y1="34" x2="74.5" y2="62" stroke="#4a6368" stroke-width="0.55" stroke-opacity="0.55" /><line x1="85" y1="34" x2="85" y2="62" stroke="#4a6368" stroke-width="0.55" stroke-opacity="0.55" /><line x1="95.5" y1="34" x2="95.5" y2="62" stroke="#4a6368" stroke-width="0.55" stroke-opacity="0.55" /><line x1="106" y1="34" x2="106" y2="62" stroke="#4a6368" stroke-width="0.55" stroke-opacity="0.55" /><line x1="116.5" y1="34" x2="116.5" y2="62" stroke="#4a6368" stroke-width="0.55" stroke-opacity="0.55" /><line x1="127" y1="34" x2="127" y2="62" stroke="#4a6368" stroke-width="0.55" stroke-opacity="0.55" /><line x1="137.5" y1="34" x2="137.5" y2="62" stroke="#4a6368" stroke-width="0.55" stroke-opacity="0.55" /><line x1="148" y1="34" x2="148" y2="62" stroke="#4a6368" stroke-width="0.55" stroke-opacity="0.55" /><line x1="158.5" y1="34" x2="158.5" y2="62" stroke="#4a6368" stroke-width="0.55" stroke-opacity="0.55" /><line x1="169" y1="34" x2="169" y2="62" stroke="#4a6368" stroke-width="0.55" stroke-opacity="0.55" /><line x1="179.5" y1="34" x2="179.5" y2="62" stroke="#4a6368" stroke-width="0.55" stroke-opacity="0.55" /><line x1="190" y1="34" x2="190" y2="62" stroke="#4a6368" stroke-width="0.55" stroke-opacity="0.55" /><line x1="200.5" y1="34" x2="200.5" y2="62" stroke="#4a6368" stroke-width="0.55" stroke-opacity="0.55" /><line x1="211" y1="34" x2="211" y2="62" stroke="#4a6368" stroke-width="0.55" stroke-opacity="0.55" /><line x1="221.5" y1="34" x2="221.5" y2="62" stroke="#4a6368" stroke-width="0.55" stroke-opacity="0.55" /><line x1="232" y1="34" x2="232" y2="62" stroke="#4a6368" stroke-width="0.55" stroke-opacity="0.55" /><line x1="242.5" y1="34" x2="242.5" y2="62" stroke="#4a6368" stroke-width="0.55" stroke-opacity="0.55" /><line x1="253" y1="34" x2="253" y2="62" stroke="#4a6368" stroke-width="0.55" stroke-opacity="0.55" /><line x1="263.5" y1="34" x2="263.5" y2="62" stroke="#4a6368" stroke-width="0.55" stroke-opacity="0.55" /><line x1="274" y1="34" x2="274" y2="62" stroke="#4a6368" stroke-width="0.55" stroke-opacity="0.55" /><line x1="284.5" y1="34" x2="284.5" y2="62" stroke="#4a6368" stroke-width="0.55" stroke-opacity="0.55" /><line x1="295" y1="34" x2="295" y2="62" stroke="#4a6368" stroke-width="0.55" stroke-opacity="0.55" /><line x1="305.5" y1="34" x2="305.5" y2="62" stroke="#4a6368" stroke-width="0.55" stroke-opacity="0.55" /><line x1="316" y1="34" x2="316" y2="62" stroke="#4a6368" stroke-width="0.55" stroke-opacity="0.55" /><line x1="326.5" y1="34" x2="326.5" y2="62" stroke="#4a6368" stroke-width="0.55" stroke-opacity="0.55" />
+      
+      <line x1="14" y1="52" x2="355" y2="52" stroke="#d4e3e6" stroke-width="1.1" />
+
+      
+      <rect x="118" y="35" width="32" height="12" fill="#050a0d" stroke="#38bdf8" stroke-width="1" />
+      <rect x="156" y="36" width="52" height="11" fill="#060c10" stroke="#4a6368" stroke-width="0.8" />
+      <rect x="214" y="35" width="28" height="12" fill="#050a0d" stroke="#38bdf8" stroke-width="1" />
+      
+      <line x1="122" y1="43" x2="146" y2="43" stroke="#38bdf8" stroke-width="1.2" stroke-dasharray="3 2" />
+      <line x1="218" y1="43" x2="238" y2="43" stroke="#38bdf8" stroke-width="1.2" stroke-dasharray="3 2" />
+      
+      <rect x="62" y="38" width="24" height="9" fill="#060c10" stroke="#4a6368" stroke-width="0.8" />
+      <path d="M 248 32 L 262 46 L 312 46 L 326 32" fill="none" stroke="#4a6368" stroke-width="0.8" />
+      
+      <text x="322" y="45" class="p mono" fill="#d4e3e6" font-size="10" font-weight="bold">78</text>
+
+      
+
+      
+      <polygon points="82,32 85,12 104,12 108,32" fill="#0d1c24" stroke="#38bdf8" stroke-width="1.2" />
+      
+      <rect x="98" y="14" width="8" height="7" fill="#071116" stroke="#d4e3e6" stroke-width="0.7" />
+      <rect x="88" y="14" width="5" height="5" fill="#112834" stroke="#38bdf8" stroke-width="0.7" />
+      <rect x="87" y="20" width="7" height="6" fill="#112834" stroke="#38bdf8" stroke-width="0.8" />
+      <text x="89" y="29" class="p mono" fill="#d4e3e6" font-size="7.5" font-weight="bold">78</text>
+      
+      <circle cx="95" cy="10" r="2.6" fill="#0d1c24" stroke="#d4e3e6" stroke-width="0.8" />
+      <line x1="92" y1="12" x2="92" y2="-4" stroke="#d4e3e6" stroke-width="1.1" />
+      <line x1="84" y1="5" x2="101" y2="5" stroke="#38bdf8" stroke-width="0.8" />
+      <line x1="86" y1="0" x2="98" y2="0" stroke="#d4e3e6" stroke-width="0.7" />
+
+      
+      <line x1="8" y1="31" x2="358" y2="31" stroke="#38bdf8" stroke-width="1.3" />
+      <path d="M 148 31 L 157 31 L 159 28 L 152 28 L 150 25 L 148 25 Z" fill="#0d1e28" stroke="#d4e3e6" stroke-width="0.7" /><path d="M 164 31 L 173 31 L 175 28 L 168 28 L 166 25 L 164 25 Z" fill="#0d1e28" stroke="#d4e3e6" stroke-width="0.7" /><path d="M 180 31 L 189 31 L 191 28 L 184 28 L 182 25 L 180 25 Z" fill="#0d1e28" stroke="#d4e3e6" stroke-width="0.7" /><path d="M 196 31 L 205 31 L 207 28 L 200 28 L 198 25 L 196 25 Z" fill="#0d1e28" stroke="#d4e3e6" stroke-width="0.7" /><path d="M 212 31 L 221 31 L 223 28 L 216 28 L 214 25 L 212 25 Z" fill="#0d1e28" stroke="#d4e3e6" stroke-width="0.7" /><path d="M 248 31 L 257 31 L 259 28 L 252 28 L 250 25 L 248 25 Z" fill="#0d1e28" stroke="#d4e3e6" stroke-width="0.7" /><path d="M 264 31 L 273 31 L 275 28 L 268 28 L 266 25 L 264 25 Z" fill="#0d1e28" stroke="#d4e3e6" stroke-width="0.7" /><path d="M 280 31 L 289 31 L 291 28 L 284 28 L 282 25 L 280 25 Z" fill="#0d1e28" stroke="#d4e3e6" stroke-width="0.7" /><path d="M 305 31 L 314 31 L 316 28 L 309 28 L 307 25 L 305 25 Z" fill="#0d1e28" stroke="#d4e3e6" stroke-width="0.7" /><path d="M 320 31 L 329 31 L 331 28 L 324 28 L 322 25 L 320 25 Z" fill="#0d1e28" stroke="#d4e3e6" stroke-width="0.7" /><path d="M 334 31 L 343 31 L 345 28 L 338 28 L 336 25 L 334 25 Z" fill="#0d1e28" stroke="#d4e3e6" stroke-width="0.7" />
+      
+      <ellipse cx="235" cy="26" rx="9" ry="1.8" fill="#0d222e" stroke="#38bdf8" stroke-width="0.9" />
+      <line x1="230" y1="28" x2="240" y2="28" stroke="#d4e3e6" stroke-width="1.1" />
+    </g>
+  </g>
+</g><g id="clean-top" fill="none" transform="translate(40.676875 294.077018) scale(1.188542030) translate(-83.440000 -100.368000)"><defs>
+    <style>
+#clean-top { fill: none; stroke-linecap: butt; }
+#clean-top .s-dim { stroke: #2c3b40; stroke-width: 1; }
+#clean-top .s-line { stroke: #5f7c84; stroke-width: 1; }
+#clean-top .s-hi { stroke: #d4e3e6; stroke-width: 1.2; }
+#clean-top .s-alert { stroke: #ff5a36; stroke-width: 1.4; }
+#clean-top .s-focus { stroke: #38bdf8; stroke-width: 1.4; }
+#clean-top .f-dim { fill: #2c3b40; stroke: none; }
+#clean-top .f-line { fill: #5f7c84; stroke: none; }
+#clean-top .f-hi { fill: #d4e3e6; stroke: none; }
+#clean-top .f-alert { fill: #ff5a36; stroke: none; }
+#clean-top .f-panel { fill: #0c1113; }
+#clean-top text { font-family: "Rajdhani", "Bahnschrift", "DIN Alternate", "Microsoft YaHei", sans-serif; letter-spacing: 0.12em; }
+#clean-top text:not([stroke]) { stroke: none; }
+#clean-top text:not([fill]) { fill: #cfdde0; }
+#clean-top text:not([font-size]):not(.cap):not(.big) { font-size: 10px; }
+#clean-top text.cap { letter-spacing: 0.2em; text-transform: uppercase; }
+#clean-top text.cap:not([fill]) { fill: #8aa1a7; }
+#clean-top text.cap:not([font-size]) { font-size: 8.5px; }
+#clean-top text.mono { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; letter-spacing: 0.06em; }
+#clean-top text.big { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; font-weight: 600; letter-spacing: 0.08em; }
+#clean-top text.big:not([font-size]) { font-size: 18px; }
+#clean-top text.big:not([fill]) { fill: #d4e3e6; }
+#clean-top text.alert { fill: #ff5a36; }
+</style>
+    <pattern id="clean-top-cad-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#10181c" stroke-width="1" />
+      <circle cx="20" cy="20" r="0.8" fill="#1b262b" />
+    </pattern>
+    <pattern id="clean-top-hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#ff5a36" stroke-width="1.2" stroke-opacity="0.35" />
+    </pattern>
+  </defs>
+
+  
+  <g id="clean-top-layer-ship-cad">
+    <g transform="translate(56.0,71.4) scale(2.744,2.414)">
+      
+      <polygon points="10,24 88,16 218,12 246,12 276,34 352,36 352,68 272,76 244,88 18,88 10,74" fill="#081218" stroke="#d4e3e6" stroke-width="1.4" />
+      
+      <path d="M 22 34 L 348 40 Q 358 52 348 64 L 22 70 Z" fill="none" stroke="#4a6368" stroke-width="0.7" stroke-dasharray="5 3" />
+
+      
+      <line x1="14" y1="62" x2="256" y2="24" stroke="#d4e3e6" stroke-width="1.5" />
+      <line x1="12" y1="40" x2="238" y2="14" stroke="#d4e3e6" stroke-width="1.3" />
+      <line x1="14" y1="51" x2="248" y2="19" stroke="#eab308" stroke-width="1.2" stroke-dasharray="8 4" />
+      
+      <line x1="36" y1="37" x2="40" y2="59" stroke="#38bdf8" stroke-width="0.9" />
+      <line x1="52" y1="35" x2="56" y2="57" stroke="#38bdf8" stroke-width="0.9" />
+      <line x1="68" y1="33" x2="72" y2="55" stroke="#38bdf8" stroke-width="0.9" />
+
+      
+      <line x1="215" y1="43" x2="346" y2="43" stroke="#38bdf8" stroke-width="1.3" />
+      <line x1="215" y1="57" x2="346" y2="55" stroke="#38bdf8" stroke-width="1.3" />
+      <line x1="132" y1="22" x2="244" y2="22" stroke="#38bdf8" stroke-width="1.2" />
+      <line x1="142" y1="31" x2="254" y2="28" stroke="#38bdf8" stroke-width="1.2" />
+      
+      <rect x="210" y="40" width="4" height="7" fill="#152c38" stroke="#38bdf8" stroke-width="0.8" />
+      <rect x="210" y="53" width="4" height="7" fill="#152c38" stroke="#38bdf8" stroke-width="0.8" />
+
+      
+      <rect x="98" y="16" width="14" height="20" fill="#0c1b22" stroke="#eab308" stroke-width="1.1" />
+      <rect x="132" y="72" width="18" height="15" fill="#0c1b22" stroke="#eab308" stroke-width="1.1" />
+      <rect x="216" y="68" width="18" height="16" fill="#0c1b22" stroke="#eab308" stroke-width="1.1" />
+
+      
+      <g transform="translate(64, 72)">
+        <rect x="0" y="0" width="38" height="16" fill="#102430" stroke="#38bdf8" stroke-width="1.2" />
+        <circle cx="10" cy="8" r="4.2" fill="#09151c" stroke="#d4e3e6" stroke-width="0.9" />
+        <circle cx="20" cy="8" r="4.2" fill="#09151c" stroke="#d4e3e6" stroke-width="0.9" />
+        <circle cx="31" cy="6" r="5" fill="#0d1e28" stroke="#38bdf8" stroke-width="1" />
+        <circle cx="29" cy="14" r="3.5" fill="#09151c" stroke="#d4e3e6" stroke-width="0.8" />
+      </g>
+
+      
+      <text x="336" y="56" text-anchor="middle" class="p mono" fill="#d4e3e6" font-size="15" font-weight="bold" letter-spacing="1">78</text>
+
+      
+      <g transform="translate(238.0,49.0) rotate(0) scale(1.05)">
+      <line x1="-10" y1="0" x2="11" y2="0" stroke="#d4e3e6" stroke-width="1.6" />
+      <polygon points="2,-14 5,-14 4,14 2,14" fill="#0d1e28" stroke="#38bdf8" stroke-width="0.9" />
+      <line x1="-9" y1="-5" x2="-9" y2="5" stroke="#d4e3e6" stroke-width="1.1" />
+      <circle cx="-1" cy="0" r="6.2" fill="#09151c" stroke="#38bdf8" stroke-width="1.1" />
+      <line x1="-5" y1="-3.5" x2="3" y2="3.5" stroke="#38bdf8" stroke-width="0.6" />
+    </g>
+      <g transform="translate(148.0,24.0) scale(0.90)">
+      <ellipse cx="1" cy="0" rx="5.5" ry="2" fill="#0b1820" stroke="#d4e3e6" stroke-width="0.8" />
+      <line x1="-8" y1="0" x2="6" y2="0" stroke="#d4e3e6" stroke-width="0.8" />
+      <line x1="-6" y1="-6" x2="8" y2="6" stroke="#38bdf8" stroke-width="0.7" />
+      <line x1="-6" y1="6" x2="8" y2="-6" stroke="#38bdf8" stroke-width="0.7" />
+      <circle cx="1" cy="0" r="7.5" fill="none" stroke="#4a6368" stroke-width="0.5" stroke-dasharray="2 2" />
+    </g>
+      <g transform="translate(182.0,22.0) scale(0.90)">
+      <ellipse cx="1" cy="0" rx="5.5" ry="2" fill="#0b1820" stroke="#d4e3e6" stroke-width="0.8" />
+      <line x1="-8" y1="0" x2="6" y2="0" stroke="#d4e3e6" stroke-width="0.8" />
+      <line x1="-6" y1="-6" x2="8" y2="6" stroke="#38bdf8" stroke-width="0.7" />
+      <line x1="-6" y1="6" x2="8" y2="-6" stroke="#38bdf8" stroke-width="0.7" />
+      <circle cx="1" cy="0" r="7.5" fill="none" stroke="#4a6368" stroke-width="0.5" stroke-dasharray="2 2" />
+    </g>
+      <g transform="translate(214.0,20.0) scale(0.90)">
+      <ellipse cx="1" cy="0" rx="5.5" ry="2" fill="#0b1820" stroke="#d4e3e6" stroke-width="0.8" />
+      <line x1="-8" y1="0" x2="6" y2="0" stroke="#d4e3e6" stroke-width="0.8" />
+      <line x1="-6" y1="-6" x2="8" y2="6" stroke="#38bdf8" stroke-width="0.7" />
+      <line x1="-6" y1="6" x2="8" y2="-6" stroke="#38bdf8" stroke-width="0.7" />
+      <circle cx="1" cy="0" r="7.5" fill="none" stroke="#4a6368" stroke-width="0.5" stroke-dasharray="2 2" />
+    </g>
+      <g transform="translate(118.0,82.0) rotate(-75) scale(0.90)">
+      <polygon points="8,0 3,-2 -2,-7 -5,-7 -3,-2 -7,-4 -8,-4 -6,0 -8,4 -7,4 -3,2 -5,7 -2,7 3,2" fill="#0a161e" stroke="#d4e3e6" stroke-width="0.85" />
+    </g><g transform="translate(134.0,82.0) rotate(-75) scale(0.90)">
+      <polygon points="8,0 3,-2 -2,-7 -5,-7 -3,-2 -7,-4 -8,-4 -6,0 -8,4 -7,4 -3,2 -5,7 -2,7 3,2" fill="#0a161e" stroke="#d4e3e6" stroke-width="0.85" />
+    </g><g transform="translate(150.0,82.0) rotate(-75) scale(0.90)">
+      <polygon points="8,0 3,-2 -2,-7 -5,-7 -3,-2 -7,-4 -8,-4 -6,0 -8,4 -7,4 -3,2 -5,7 -2,7 3,2" fill="#0a161e" stroke="#d4e3e6" stroke-width="0.85" />
+    </g><g transform="translate(166.0,82.0) rotate(-75) scale(0.90)">
+      <polygon points="8,0 3,-2 -2,-7 -5,-7 -3,-2 -7,-4 -8,-4 -6,0 -8,4 -7,4 -3,2 -5,7 -2,7 3,2" fill="#0a161e" stroke="#d4e3e6" stroke-width="0.85" />
+    </g><g transform="translate(182.0,82.0) rotate(-75) scale(0.90)">
+      <polygon points="8,0 3,-2 -2,-7 -5,-7 -3,-2 -7,-4 -8,-4 -6,0 -8,4 -7,4 -3,2 -5,7 -2,7 3,2" fill="#0a161e" stroke="#d4e3e6" stroke-width="0.85" />
+    </g><g transform="translate(198.0,82.0) rotate(-75) scale(0.90)">
+      <polygon points="8,0 3,-2 -2,-7 -5,-7 -3,-2 -7,-4 -8,-4 -6,0 -8,4 -7,4 -3,2 -5,7 -2,7 3,2" fill="#0a161e" stroke="#d4e3e6" stroke-width="0.85" />
+    </g><g transform="translate(214.0,82.0) rotate(-75) scale(0.90)">
+      <polygon points="8,0 3,-2 -2,-7 -5,-7 -3,-2 -7,-4 -8,-4 -6,0 -8,4 -7,4 -3,2 -5,7 -2,7 3,2" fill="#0a161e" stroke="#d4e3e6" stroke-width="0.85" />
+    </g><g transform="translate(230.0,82.0) rotate(-75) scale(0.90)">
+      <polygon points="8,0 3,-2 -2,-7 -5,-7 -3,-2 -7,-4 -8,-4 -6,0 -8,4 -7,4 -3,2 -5,7 -2,7 3,2" fill="#0a161e" stroke="#d4e3e6" stroke-width="0.85" />
+    </g><g transform="translate(246.0,82.0) rotate(-75) scale(0.90)">
+      <polygon points="8,0 3,-2 -2,-7 -5,-7 -3,-2 -7,-4 -8,-4 -6,0 -8,4 -7,4 -3,2 -5,7 -2,7 3,2" fill="#0a161e" stroke="#d4e3e6" stroke-width="0.85" />
+    </g><g transform="translate(262.0,82.0) rotate(-75) scale(0.90)">
+      <polygon points="8,0 3,-2 -2,-7 -5,-7 -3,-2 -7,-4 -8,-4 -6,0 -8,4 -7,4 -3,2 -5,7 -2,7 3,2" fill="#0a161e" stroke="#d4e3e6" stroke-width="0.85" />
+    </g>
+      <g transform="translate(135.0,54.0) rotate(-22) scale(0.90)">
+      <polygon points="8,0 3,-2 -2,-7 -5,-7 -3,-2 -7,-4 -8,-4 -6,0 -8,4 -7,4 -3,2 -5,7 -2,7 3,2" fill="#0a161e" stroke="#38bdf8" stroke-width="0.85" />
+    </g><g transform="translate(149.0,52.6) rotate(-22) scale(0.90)">
+      <polygon points="8,0 3,-2 -2,-7 -5,-7 -3,-2 -7,-4 -8,-4 -6,0 -8,4 -7,4 -3,2 -5,7 -2,7 3,2" fill="#0a161e" stroke="#38bdf8" stroke-width="0.85" />
+    </g><g transform="translate(163.0,51.2) rotate(-22) scale(0.90)">
+      <polygon points="8,0 3,-2 -2,-7 -5,-7 -3,-2 -7,-4 -8,-4 -6,0 -8,4 -7,4 -3,2 -5,7 -2,7 3,2" fill="#0a161e" stroke="#38bdf8" stroke-width="0.85" />
+    </g><g transform="translate(177.0,49.8) rotate(-22) scale(0.90)">
+      <polygon points="8,0 3,-2 -2,-7 -5,-7 -3,-2 -7,-4 -8,-4 -6,0 -8,4 -7,4 -3,2 -5,7 -2,7 3,2" fill="#0a161e" stroke="#38bdf8" stroke-width="0.85" />
+    </g><g transform="translate(191.0,48.4) rotate(-22) scale(0.90)">
+      <polygon points="8,0 3,-2 -2,-7 -5,-7 -3,-2 -7,-4 -8,-4 -6,0 -8,4 -7,4 -3,2 -5,7 -2,7 3,2" fill="#0a161e" stroke="#38bdf8" stroke-width="0.85" />
+    </g><g transform="translate(205.0,47.0) rotate(-22) scale(0.90)">
+      <polygon points="8,0 3,-2 -2,-7 -5,-7 -3,-2 -7,-4 -8,-4 -6,0 -8,4 -7,4 -3,2 -5,7 -2,7 3,2" fill="#0a161e" stroke="#38bdf8" stroke-width="0.85" />
+    </g><g transform="translate(219.0,45.6) rotate(-22) scale(0.90)">
+      <polygon points="8,0 3,-2 -2,-7 -5,-7 -3,-2 -7,-4 -8,-4 -6,0 -8,4 -7,4 -3,2 -5,7 -2,7 3,2" fill="#0a161e" stroke="#38bdf8" stroke-width="0.85" />
+    </g>
+      <g transform="translate(285.0,72.0) rotate(-65) scale(0.85)">
+      <polygon points="8,0 3,-2 -2,-7 -5,-7 -3,-2 -7,-4 -8,-4 -6,0 -8,4 -7,4 -3,2 -5,7 -2,7 3,2" fill="#0a161e" stroke="#d4e3e6" stroke-width="0.85" />
+    </g><g transform="translate(299.0,70.0) rotate(-65) scale(0.85)">
+      <polygon points="8,0 3,-2 -2,-7 -5,-7 -3,-2 -7,-4 -8,-4 -6,0 -8,4 -7,4 -3,2 -5,7 -2,7 3,2" fill="#0a161e" stroke="#d4e3e6" stroke-width="0.85" />
+    </g><g transform="translate(313.0,68.0) rotate(-65) scale(0.85)">
+      <polygon points="8,0 3,-2 -2,-7 -5,-7 -3,-2 -7,-4 -8,-4 -6,0 -8,4 -7,4 -3,2 -5,7 -2,7 3,2" fill="#0a161e" stroke="#d4e3e6" stroke-width="0.85" />
+    </g><g transform="translate(327.0,66.0) rotate(-65) scale(0.85)">
+      <polygon points="8,0 3,-2 -2,-7 -5,-7 -3,-2 -7,-4 -8,-4 -6,0 -8,4 -7,4 -3,2 -5,7 -2,7 3,2" fill="#0a161e" stroke="#d4e3e6" stroke-width="0.85" />
+    </g>
+      <g transform="translate(24.0,58.0) rotate(-12) scale(0.95)">
+      <polygon points="8,0 3,-2 -2,-7 -5,-7 -3,-2 -7,-4 -8,-4 -6,0 -8,4 -7,4 -3,2 -5,7 -2,7 3,2" fill="#0a161e" stroke="#38bdf8" stroke-width="0.85" />
+    </g>
+      <g transform="translate(38.0,28.0) rotate(-35) scale(0.90)">
+      <polygon points="8,0 3,-2 -2,-7 -5,-7 -3,-2 -7,-4 -8,-4 -6,0 -8,4 -7,4 -3,2 -5,7 -2,7 3,2" fill="#0a161e" stroke="#d4e3e6" stroke-width="0.85" />
+    </g>
+    </g>
+  </g>
+</g></svg>

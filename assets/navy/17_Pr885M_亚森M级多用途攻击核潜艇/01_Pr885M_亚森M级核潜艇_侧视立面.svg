@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 320" width="1100" height="320" data-asset-id="naval.yasen885m.side" style="background:#080a0b;">
+  <defs>
+    <style>
+      svg { fill: none; stroke-linecap: butt; }
+      .s-dim { stroke: #2c3b40; stroke-width: 1; }
+      .s-line { stroke: #5f7c84; stroke-width: 1; }
+      .s-hi { stroke: #d4e3e6; stroke-width: 1.2; }
+      .s-alert { stroke: #ff5a36; stroke-width: 1.4; }
+      .s-focus { stroke: #38bdf8; stroke-width: 1.4; }
+      .f-dim { fill: #2c3b40; stroke: none; }
+      .f-line { fill: #5f7c84; stroke: none; }
+      .f-hi { fill: #d4e3e6; stroke: none; }
+      .f-alert { fill: #ff5a36; stroke: none; }
+      .f-panel { fill: #0c1113; }
+      text { font-family: "Rajdhani", "Bahnschrift", "DIN Alternate", "Microsoft YaHei", sans-serif; letter-spacing: 0.12em; }
+      text:not([stroke]) { stroke: none; }
+      text:not([fill]) { fill: #cfdde0; }
+      text:not([font-size]):not(.cap):not(.big) { font-size: 10px; }
+      text.cap { letter-spacing: 0.2em; text-transform: uppercase; }
+      text.cap:not([fill]) { fill: #8aa1a7; }
+      text.cap:not([font-size]) { font-size: 8.5px; }
+      text.mono { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; letter-spacing: 0.06em; }
+      text.big { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; font-weight: 600; letter-spacing: 0.08em; }
+      text.big:not([font-size]) { font-size: 18px; }
+      text.big:not([fill]) { fill: #d4e3e6; }
+      text.alert { fill: #ff5a36; }
+    </style>
+    <pattern id="cad-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#10181c" stroke-width="1"/>
+      <circle cx="20" cy="20" r="0.8" fill="#1b262b"/>
+    </pattern>
+    <pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#ff5a36" stroke-width="1.2" stroke-opacity="0.35"/>
+    </pattern>
+  </defs>
+
+  <!-- 1. 工程蓝图暗色底板与坐标网格图层 -->
+  <g id="layer-backdrop">
+    <rect x="0" y="0" width="1100" height="320" fill="#080a0b"/>
+    <rect x="20" y="20" width="1060" height="280" fill="url(#cad-grid)" stroke="#2c3b40" stroke-width="1"/>
+    <path d="M 20 36 V 20 H 36 M 1064 20 H 1080 V 36 M 20 284 V 300 H 36 M 1064 300 H 1080 V 284" fill="none" stroke="#38bdf8" stroke-width="1.5"/>
+    <line x1="20" y1="54" x2="1080" y2="54" stroke="#2c3b40" stroke-width="1"/>
+    <line x1="20" y1="274" x2="1080" y2="274" stroke="#2c3b40" stroke-width="1"/>
+    <text x="34" y="42" class="p mono" fill="#38bdf8" font-size="11" font-weight="bold">PROJECT 885M YASEN-M SSGN (K-561 KAZAN) · STARBOARD PROFILE &amp; UKSK / ZIRCON CUTAWAY</text>
+    <text x="1066" y="42" text-anchor="end" class="p cap" fill="#d4e3e6" font-size="10.5">885M型「亚森-M」级多用途攻击核潜艇 (喀山号) · 侧视立面与锆石垂发/中置鱼雷管内透视</text>
+    <text x="34" y="291" class="p mono" fill="#8aa1a7" font-size="9.5">13,800T SUBMERGED · 130.0M×13.0M · 8×SM-346 UKSK VLS (32×ZIRCON / 40×KALIBR) · 10×533MM MIDSHIP TUBES · KTP-6 PWR · UID-68</text>
+    <text x="1066" y="291" text-anchor="end" class="p mono" fill="#5f7c84" font-size="9.5">POSEIDON NAVAL CAD ASSET · TRUE 1:1 ASPECT (10.0:1)</text>
+  </g>
+
+  <!-- 2. 舰艇核心 CAD 矢量图层 (1:1 真实长宽比等比锁定 scale(2.360,2.360)) -->
+  <g id="layer-ship-cad">
+    <g transform="translate(46.0,60.0) scale(2.360,2.360)">
+
+      <!-- 0. 水面基准线与 8座 SM-346 (UKSK) 垂发井发射 3M22「锆石」高超音速导弹 + 3M-54「口径」出水齐射轨迹 -->
+      <g id="salvo-zircon-kalibr-cutaway">
+        <line x1="10" y1="33.5" x2="414" y2="33.5" stroke="#2c3b40" stroke-width="0.6" stroke-dasharray="4 3"/>
+        <text x="58" y="31.2" class="mono" font-size="2.6" fill="#5f7c84">SEA SURFACE DATUM · SUBMERGED COLD-LAUNCH &amp; HYPERSONIC PITCH-OVER ENVELOPE</text>
+
+        <!-- 1号 3M22「锆石」(Zircon) 垂直弹射出水、燃气转向与高超音速乘波巡航轨迹 (源自3号UKSK井 X=226) -->
+        <path d="M 226 42.0 L 226 24.0 Q 226 11.5 252 11.5 L 336 11.5" fill="none" stroke="#ff5a36" stroke-width="0.85" stroke-dasharray="2.5 1.6"/>
+        <!-- 2号 3M-54「口径」(Kalibr) 垂直出水跃升轨迹 (源自1号UKSK井 X=194) -->
+        <path d="M 194 42.0 L 194 28.0 Q 194 18.5 218 16.5" fill="none" stroke="#38bdf8" stroke-width="0.75" stroke-dasharray="2 1.8"/>
+
+        <!-- 2号出水跃升态 3M-54「口径」(SS-N-27 Sizzler) 巡航导弹剪影 (X=194 垂直跃升转弯段) -->
+        <g transform="translate(202.0, 21.5) rotate(-52)">
+          <polygon points="-9,0 -4,-1.2 -4,1.2" fill="#38bdf8" fill-opacity="0.75"/>
+          <rect x="-4" y="-1.1" width="13" height="2.2" fill="#0d222e" stroke="#38bdf8" stroke-width="0.7"/>
+          <polygon points="9,-1.1 13,0 9,1.1" fill="#d4e3e6"/>
+          <line x1="1" y1="-1.1" x2="0" y2="-4.2" stroke="#d4e3e6" stroke-width="0.65"/>
+          <line x1="1" y1="1.1" x2="0" y2="4.2" stroke="#d4e3e6" stroke-width="0.65"/>
+        </g>
+
+        <!-- 1号破空巡航态 3M22「锆石」(Zircon · Mach 9) 高超音速超燃冲压乘波体导弹剪影 + 激波锥 -->
+        <g transform="translate(346.0, 11.5)">
+          <!-- 超燃冲压尾焰 -->
+          <polygon points="-16,0 -6,-1.6 -6,1.6" fill="#ff5a36" fill-opacity="0.82"/>
+          <polygon points="-11,0 -6,-0.9 -6,0.9" fill="#eab308"/>
+          <!-- 乘波体扁平不对称升力弹体与腹部超燃冲压进气道 -->
+          <path d="M -6 -1.3 L 10 -1.3 L 19 -0.3 L 22 0.4 L 13 1.4 L -6 1.4 Z" fill="#261014" stroke="#ff5a36" stroke-width="0.85"/>
+          <polygon points="3,1.4 11,1.4 13,2.3 4,2.3" fill="#0d222e" stroke="#eab308" stroke-width="0.6"/>
+          <polygon points="-5,-1.3 -2,-3.6 1,-3.6 0,-1.3" fill="#180d10" stroke="#d4e3e6" stroke-width="0.6"/>
+          <!-- 高超音速等离子体激波包络锋面 (Mach 9 Plasma Shockwave Cone) -->
+          <path d="M 14 -5.2 L 24.5 0.4 L 14 6.0" fill="none" stroke="#eab308" stroke-width="0.7" stroke-dasharray="1.8 1.2"/>
+          <path d="M 17 -3.2 L 23.2 0.4 L 17 4.0" fill="none" stroke="#ff5a36" stroke-width="0.6"/>
+        </g>
+
+        <!-- 齐射导弹工程标注 (远离围壳桅杆与导弹轨迹，零碰撞) -->
+        <text x="122" y="9.5" class="mono" font-size="2.7" fill="#ff5a36" font-weight="bold">3M22 ZIRCON HYPERSONIC WAVERIDER (MACH 9 · 1,000KM)</text>
+        <text x="122" y="13.5" class="mono" font-size="2.5" fill="#38bdf8">8×SM-346 (UKSK) REVOLVER VLS · 32×ZIRCON / ONIKS OR 40×3M-54 KALIBR</text>
+      </g>
+
+      <!-- 1. 尾部十字形尾翼 + 顶置「整合/佩拉米达」(Pelamida) 纺锤形拖曳线列声呐荚舱 + 单轴七叶大侧斜螺旋桨 (Stern X=10..56) -->
+      <g id="stern-propulsion-fins">
+        <!-- 上垂直尾舵 (Upper Vertical Stabilizer) -->
+        <polygon points="21,49.5 25,18.2 38,18.2 48,47.5" fill="#0a1822" stroke="#d4e3e6" stroke-width="1.2"/>
+        <line x1="32" y1="18.2" x2="36" y2="47.5" stroke="#4a6368" stroke-width="0.75"/>
+        <line x1="36" y1="21.0" x2="36" y2="47.0" stroke="#38bdf8" stroke-width="0.65" stroke-dasharray="2 1.5"/>
+        <!-- 垂尾顶端标志性圆纺锤形拖曳线列声呐导流荚舱 (Pelamida Towed Array Sonar Pod) -->
+        <path d="M 16.5 17.5 C 20 15.3 37 15.5 42.5 17.5 C 37 19.3 20 19.3 16.5 17.5 Z" fill="#0d222e" stroke="#38bdf8" stroke-width="0.95"/>
+        <circle cx="17.2" cy="17.5" r="0.9" fill="#ff5a36"/>
+
+        <!-- 下垂直尾舵 (Lower Ventral Fin) -->
+        <polygon points="23,62.0 40,64.0 36,80.5 24,78.5" fill="#0a1822" stroke="#d4e3e6" stroke-width="1.15"/>
+        <line x1="31" y1="63.0" x2="30" y2="79.2" stroke="#4a6368" stroke-width="0.7"/>
+
+        <!-- 尾水平稳定翼与尾部消涡轴套 -->
+        <polygon points="16,52.5 26,50.5 26,61.5 16,59.5" fill="#0d222e" stroke="#38bdf8" stroke-width="1.0"/>
+        <ellipse cx="36" cy="56.5" rx="18" ry="1.8" fill="#09151e" stroke="#38bdf8" stroke-width="0.9"/>
+        <rect x="20" y="55.2" width="8" height="2.6" fill="#132c3a" stroke="#d4e3e6" stroke-width="0.65"/>
+
+        <!-- 第四代单轴七叶大侧斜低噪螺旋桨 (Single 7-Blade Highly Skewed Low-Noise Propeller · #eab308) -->
+        <g stroke="#eab308" stroke-width="0.95" fill="#eab308" fill-opacity="0.3">
+          <polygon points="11.5,56.0 16.0,53.8 16.0,58.2"/>
+          <path d="M 13.5 56.0 C 10.8 50.8 12.2 47.5 15.0 48.5 C 14.4 51.5 14.1 53.8 13.5 56.0 Z"/>
+          <path d="M 13.5 56.0 C 10.8 61.2 12.2 64.5 15.0 63.5 C 14.4 60.5 14.1 58.2 13.5 56.0 Z"/>
+          <path d="M 12.5 54.0 C 10.0 51.5 10.5 49.5 12.8 50.4"/>
+          <path d="M 12.5 58.0 C 10.0 60.5 10.5 62.5 12.8 61.6"/>
+          <circle cx="13.8" cy="56.0" r="1.2" fill="#eab308" stroke="#080a0b" stroke-width="0.4"/>
+        </g>
+      </g>
+
+      <!-- 2. 主艇体：885M型紧凑修长水滴形混合单/双壳体 (LOA 130.0m · X=20..410, Y=42.0..72.0 · 长宽比 10.0:1) -->
+      <g id="hybrid-hull-structure">
+        <!-- 水下暗红防污艇底下半部背景层 -->
+        <path d="M 20 56.5 L 410 56.5 C 410 65.5 392 72.0 364 72.0 L 92 72.0 C 60 72.0 36 65.0 20 59.5 Z"
+              fill="#261014" stroke="none"/>
+        <!-- 主艇体外廓 (上层消声瓦深海蓝黑 + 亮白主棱线) -->
+        <path d="M 20 53.0 L 74 42.2 L 364 42.0 C 392 42.0 410 48.5 410 57.0 C 410 65.5 392 72.0 364 72.0 L 92 72.0 C 60 72.0 36 65.0 20 59.5 Z"
+              fill="#0a1822" fill-opacity="0.72" stroke="#d4e3e6" stroke-width="1.35"/>
+        <!-- 艇底暗红防污漆高亮底边线 -->
+        <path d="M 410 57.0 C 410 65.5 392 72.0 364 72.0 L 92 72.0 C 60 72.0 36 65.0 20 59.5"
+              fill="none" stroke="#ff5a36" stroke-width="1.15"/>
+
+        <!-- 885M型核心工程特征：混合单双壳体 (Hybrid Single/Double Hull) 分界线与 8 水密隔舱透视 -->
+        <!-- 中段高强度低磁钢单壳体直连段 (X=138..342, Y=43.2..70.8) -->
+        <rect x="138" y="43.2" width="204" height="27.6" rx="2.5" fill="#061016" fill-opacity="0.52" stroke="#38bdf8" stroke-width="0.85" stroke-dasharray="5 2.2"/>
+        <!-- 首尾轻外壳双壳体过渡段分界线 -->
+        <line x1="74" y1="44.5" x2="138" y2="44.5" stroke="#4a6368" stroke-width="0.7" stroke-dasharray="3 1.5"/>
+        <line x1="342" y1="44.5" x2="374" y2="44.5" stroke="#4a6368" stroke-width="0.7" stroke-dasharray="3 1.5"/>
+        <!-- 8 个水密隔舱横舱壁虚线 -->
+        <g stroke="#2c3b40" stroke-width="0.65" stroke-dasharray="2 1.5">
+          <line x1="96" y1="44.5" x2="96" y2="70.5"/>
+          <line x1="138" y1="43.2" x2="138" y2="70.8"/>
+          <line x1="182" y1="43.2" x2="182" y2="70.8"/>
+          <line x1="252" y1="43.2" x2="252" y2="70.8"/>
+          <line x1="294" y1="43.2" x2="294" y2="70.8"/>
+          <line x1="342" y1="43.2" x2="342" y2="70.8"/>
+        </g>
+
+        <!-- 艇体侧面大型共形舷侧声呐阵 (MGK-600 Flank Sonar Array · X=146..286) -->
+        <rect x="146" y="61.5" width="136" height="3.2" rx="1.0" fill="#0b1f2c" stroke="#38bdf8" stroke-width="0.7" stroke-dasharray="3 1.2"/>
+        <!-- 首尾主压载水舱底部流水孔群 -->
+        <g stroke="#ff5a36" stroke-width="1.1" stroke-dasharray="2.2 1.5" stroke-opacity="0.8">
+          <line x1="78" y1="70.2" x2="128" y2="70.2"/>
+          <line x1="344" y1="70.2" x2="372" y2="70.2"/>
+        </g>
+      </g>
+
+      <!-- 3. 第四代 KTP-6-185SP 一体化自然循环压水核反应堆 (200MWt) + 单座减震浮筏汽轮机舱内透视 (X=76..180) -->
+      <g id="ktp6-reactor-propulsion-cutaway">
+        <!-- KTP-6 一体化自然循环压水堆屏蔽舱 (X=142..178) -->
+        <rect x="142.0" y="47.5" width="34.0" height="19.5" rx="2.0" fill="#1a0f10" fill-opacity="0.72" stroke="#ff5a36" stroke-width="0.95"/>
+        <!-- 一体化反应堆压力容器与内置蒸汽发生器束 -->
+        <rect x="151.0" y="49.5" width="16.0" height="15.5" rx="3.0" fill="#2a1214" stroke="#ff5a36" stroke-width="0.8"/>
+        <circle cx="159.0" cy="58.2" r="4.5" fill="#ff5a36" fill-opacity="0.45" stroke="#eab308" stroke-width="0.75"/>
+        <line x1="159.0" y1="48.2" x2="159.0" y2="53.7" stroke="#eab308" stroke-width="1.2"/>
+        <line x1="155.0" y1="49.5" x2="155.0" y2="64.5" stroke="#ff5a36" stroke-width="0.55" stroke-dasharray="1.5 1"/>
+        <line x1="163.0" y1="49.5" x2="163.0" y2="64.5" stroke="#ff5a36" stroke-width="0.55" stroke-dasharray="1.5 1"/>
+
+        <!-- 后部 OK-9VM 浮筏减震蒸汽轮机与主减速齿轮箱舱 (X=78..134) -->
+        <polygon points="78,52.0 132,49.2 132,65.5 78,62.0" fill="#091a24" fill-opacity="0.62" stroke="#38bdf8" stroke-width="0.8" stroke-dasharray="3 1.5"/>
+        <line x1="132" y1="53.5" x2="142" y2="53.5" stroke="#eab308" stroke-width="0.9"/>
+        <line x1="16" y1="56.0" x2="132" y2="57.2" stroke="#eab308" stroke-width="0.85" stroke-dasharray="4 2"/>
+        <text x="98" y="75.6" class="mono" font-size="2.6" fill="#ff5a36">KTP-6 MONOBLOCK PWR (200MWt) &amp; TURBINE</text>
+      </g>
+
+      <!-- 4. 核心武备一：围壳后方 8座 (2×4) SM-346 / UKSK 通用大直径左轮垂直发射筒剖面 (X=188..248) -->
+      <g id="uksk-8-revolver-vls-cutaway">
+        <!-- 4排(左4+右4) SM-346 大直径左轮垂发圆筒剖面 (#ff5a36 外筒 + 内部多联装导弹储运发射筒) -->
+        <g>
+          <rect x="189.5" y="42.2" width="9.0" height="25.8" rx="1.0" fill="#1c0d10" fill-opacity="0.82" stroke="#ff5a36" stroke-width="0.9"/>
+          <line x1="192.5" y1="43.5" x2="192.5" y2="66.8" stroke="#38bdf8" stroke-width="0.65" stroke-dasharray="2 1"/>
+          <line x1="195.5" y1="43.5" x2="195.5" y2="66.8" stroke="#38bdf8" stroke-width="0.65" stroke-dasharray="2 1"/>
+          <rect x="189.0" y="41.0" width="10.0" height="1.2" rx="0.4" fill="#132c3a" stroke="#38bdf8" stroke-width="0.65"/>
+        </g>
+        <g>
+          <rect x="205.5" y="42.2" width="9.0" height="25.8" rx="1.0" fill="#1c0d10" fill-opacity="0.82" stroke="#ff5a36" stroke-width="0.9"/>
+          <line x1="208.5" y1="43.5" x2="208.5" y2="66.8" stroke="#eab308" stroke-width="0.65" stroke-dasharray="2 1"/>
+          <line x1="211.5" y1="43.5" x2="211.5" y2="66.8" stroke="#eab308" stroke-width="0.65" stroke-dasharray="2 1"/>
+          <rect x="205.0" y="41.0" width="10.0" height="1.2" rx="0.4" fill="#132c3a" stroke="#d4e3e6" stroke-width="0.65"/>
+        </g>
+        <g>
+          <rect x="221.5" y="42.2" width="9.0" height="25.8" rx="1.0" fill="#281014" fill-opacity="0.88" stroke="#ff5a36" stroke-width="1.0"/>
+          <!-- 3号井内待发 3M22「锆石」导弹剖面 -->
+          <rect x="223.3" y="45.0" width="2.2" height="21.0" fill="#ff5a36" fill-opacity="0.7"/>
+          <rect x="226.5" y="45.0" width="2.2" height="21.0" fill="#eab308" fill-opacity="0.7"/>
+          <!-- 开启上翻态垂发井盖 -->
+          <line x1="221.5" y1="41.5" x2="217.5" y2="36.5" stroke="#ff5a36" stroke-width="1.1"/>
+        </g>
+        <g>
+          <rect x="237.5" y="42.2" width="9.0" height="25.8" rx="1.0" fill="#1c0d10" fill-opacity="0.82" stroke="#ff5a36" stroke-width="0.9"/>
+          <line x1="240.5" y1="43.5" x2="240.5" y2="66.8" stroke="#38bdf8" stroke-width="0.65" stroke-dasharray="2 1"/>
+          <line x1="243.5" y1="43.5" x2="243.5" y2="66.8" stroke="#38bdf8" stroke-width="0.65" stroke-dasharray="2 1"/>
+          <rect x="237.0" y="41.0" width="10.0" height="1.2" rx="0.4" fill="#132c3a" stroke="#d4e3e6" stroke-width="0.65"/>
+        </g>
+        <text x="218" y="70.2" text-anchor="middle" class="mono" font-size="2.5" fill="#eab308">8×UKSK VLS</text>
+      </g>
+
+      <!-- 5. 885M型标志性流畅水滴形指挥台围壳 (Streamlined Limpet Sail · X=256..314, Y=25.0..42.2) -->
+      <g id="yasen-m-streamlined-sail">
+        <!-- 围壳底座圆滑流线过渡裙边与主壳体 (885M缩短精悍型围壳) -->
+        <path d="M 254 42.2 C 260 37.5 264 25.5 273 25.5 L 302 25.5 C 308 25.5 311 31.0 316 42.2 Z"
+              fill="#0b1a24" fill-opacity="0.92" stroke="#d4e3e6" stroke-width="1.25"/>
+        <!-- 围壳前缘大倾角导流弧线与顶部装甲加强带 -->
+        <path d="M 263 33.5 L 272 25.5 L 302 25.5 C 306.5 25.5 309 28.5 311 33.5 Z"
+              fill="#0e222e" stroke="#38bdf8" stroke-width="1.0"/>
+        <!-- 前缘防冰观察窗 -->
+        <polygon points="298.5,27.5 306.0,27.5 307.5,30.5 298.5,30.5" fill="#050d12" stroke="#d4e3e6" stroke-width="0.75"/>
+        <!-- 围壳中部 VSK 集体上浮救生舱 (Escape Capsule) -->
+        <rect x="275.5" y="26.2" width="14.5" height="9.2" rx="1.4" fill="none" stroke="#ff5a36" stroke-width="0.8" stroke-dasharray="2.5 1.2"/>
+        <circle cx="282.8" cy="30.8" r="1.7" fill="none" stroke="#ff5a36" stroke-width="0.65"/>
+
+        <!-- 围壳顶部潜望镜、光电桅杆、雷达与通信升降桅杆群 (Parus-98 Optronic, MRK-50 Radar, Sintez SATCOM) -->
+        <g stroke="#d4e3e6" stroke-width="0.95">
+          <line x1="270" y1="25.5" x2="270" y2="14.5"/>
+          <rect x="268.0" y="12.5" width="4.0" height="2.2" rx="0.5" fill="#0d222e" stroke="#38bdf8" stroke-width="0.75"/>
+          <line x1="280" y1="25.5" x2="280" y2="11.0"/>
+          <circle cx="280" cy="10.2" r="1.5" fill="#132c3a" stroke="#ff5a36" stroke-width="0.75"/>
+          <line x1="289" y1="25.5" x2="289" y2="8.8"/>
+          <circle cx="289" cy="8.0" r="1.4" fill="#0d222e" stroke="#38bdf8" stroke-width="0.75"/>
+          <line x1="297" y1="25.5" x2="297" y2="12.5"/>
+          <ellipse cx="297" cy="12.0" rx="2.0" ry="1.1" fill="#0d222e" stroke="#eab308" stroke-width="0.7"/>
+        </g>
+        <text x="285" y="5.2" text-anchor="middle" class="mono" font-size="2.5" fill="#38bdf8">SAIL MASTS &amp; VSK ESCAPE POD</text>
+      </g>
+
+      <!-- 6. 核心武备二：指挥台围壳下方偏前两舷侧向倾斜 10具 533mm 鱼雷发射管 (左5右5 · X=294..346) -->
+      <g id="midship-angled-torpedo-tubes">
+        <!-- 内部鱼雷舱备用鱼雷架与向舷侧倾斜延伸的 5 具右舷 533mm 鱼雷发射管虚线 (X=296..342) -->
+        <g stroke="#eab308" stroke-width="0.75" stroke-dasharray="3 1.4" stroke-opacity="0.88">
+          <line x1="296" y1="53.5" x2="334" y2="53.5"/>
+          <line x1="296" y1="56.0" x2="338" y2="56.0"/>
+          <line x1="296" y1="58.5" x2="342" y2="58.5"/>
+          <line x1="298" y1="61.0" x2="336" y2="61.0"/>
+          <line x1="298" y1="63.5" x2="340" y2="63.5"/>
+        </g>
+        <!-- 艇体舯前部外侧 5 个长椭圆形斜置鱼雷发射口水密快开盖板 (上3 + 下2 阶梯排列 · #ff5a36 / #eab308 高亮) -->
+        <g fill="#1c0d10" stroke="#eab308" stroke-width="0.85">
+          <rect x="326.0" y="52.5" width="7.5" height="1.9" rx="0.9"/>
+          <rect x="330.0" y="55.0" width="7.5" height="1.9" rx="0.9"/>
+          <rect x="334.0" y="57.5" width="7.5" height="1.9" rx="0.9" stroke="#ff5a36"/>
+          <rect x="328.0" y="60.0" width="7.5" height="1.9" rx="0.9"/>
+          <rect x="332.0" y="62.5" width="7.5" height="1.9" rx="0.9" stroke="#ff5a36"/>
+        </g>
+        <!-- 舯部斜置鱼雷管引线标注 -->
+        <line x1="334" y1="52.5" x2="344" y2="38.5" stroke="#eab308" stroke-width="0.65" stroke-dasharray="1.8 1.2"/>
+        <text x="346" y="37.8" class="mono" font-size="2.6" fill="#eab308">10×533MM MIDSHIP CANTED TORPEDO TUBES (5 PORT / 5 STBD)</text>
+      </g>
+
+      <!-- 7. 核心特征三：超大型艇艏 MGK-600「额尔齐斯-安福拉」球形主被动声呐基阵 + 前上方可收放首水平舵 (X=356..410) -->
+      <g id="bow-spherical-sonar-cutaway">
+        <!-- 艇艏前上方可收放首水平舵 (Retractable Bow Hydroplanes · X=356..374, Y=45.2..48.4) -->
+        <rect x="356.0" y="45.2" width="17.5" height="3.2" rx="0.8" fill="#050d12" stroke="#38bdf8" stroke-width="0.95"/>
+        <line x1="358.0" y1="46.8" x2="371.5" y2="46.8" stroke="#d4e3e6" stroke-width="0.65"/>
+
+        <!-- 艇艏透声玻璃钢声呐整流罩分界线 (X=374..410) -->
+        <path d="M 376 42.3 C 371 51.0 371 63.0 376 71.7" fill="none" stroke="#38bdf8" stroke-width="1.05"/>
+
+        <!-- 占据整个艇艏空间的超大型 MGK-600 Irtysh-Amfora 球形声呐基阵 (青色 #38bdf8 经纬网格球体剖面) -->
+        <circle cx="391.5" cy="57.0" r="12.2" fill="#0b1f2c" fill-opacity="0.78" stroke="#38bdf8" stroke-width="1.05"/>
+        <ellipse cx="391.5" cy="57.0" rx="12.2" ry="5.5" fill="none" stroke="#38bdf8" stroke-width="0.55" stroke-dasharray="2 1"/>
+        <ellipse cx="391.5" cy="57.0" rx="5.5" ry="12.2" fill="none" stroke="#38bdf8" stroke-width="0.55" stroke-dasharray="2 1"/>
+        <line x1="379.3" y1="57.0" x2="403.7" y2="57.0" stroke="#38bdf8" stroke-width="0.6"/>
+        <line x1="391.5" y1="44.8" x2="391.5" y2="69.2" stroke="#38bdf8" stroke-width="0.6"/>
+        <circle cx="391.5" cy="57.0" r="2.2" fill="#38bdf8" fill-opacity="0.5"/>
+        <!-- 球形声呐基阵后部重型隔音支承座 -->
+        <polygon points="374,49.5 379.5,48.0 379.5,66.0 374,64.5" fill="#132c3a" stroke="#d4e3e6" stroke-width="0.75"/>
+
+        <!-- 艇艏球形声呐技术引线标注 -->
+        <line x1="391.5" y1="44.8" x2="391.5" y2="27.5" stroke="#38bdf8" stroke-width="0.65" stroke-dasharray="1.8 1.2"/>
+        <text x="412" y="25.5" text-anchor="end" class="mono" font-size="2.7" fill="#38bdf8" font-weight="bold">MGK-600 IRTYSH-AMFORA GIANT SPHERICAL SONAR</text>
+      </g>
+
+      <!-- 8. 底部总长与核心分段工程尺寸标尺 (LOA 130.0m · Aspect 10.0:1) -->
+      <g id="dimension-ruler" stroke="#5f7c84" stroke-width="0.6">
+        <line x1="20" y1="84.5" x2="410" y2="84.5"/>
+        <line x1="20" y1="81.5" x2="20" y2="87.0"/>
+        <line x1="182" y1="82.0" x2="182" y2="86.5"/>
+        <line x1="252" y1="82.0" x2="252" y2="86.5"/>
+        <line x1="342" y1="82.0" x2="342" y2="86.5"/>
+        <line x1="410" y1="81.5" x2="410" y2="87.0"/>
+        <text x="100" y="83.0" text-anchor="middle" class="mono" font-size="2.7" fill="#8aa1a7">AFT KTP-6 PWR &amp; 7-BLADE SCREW</text>
+        <text x="217" y="83.0" text-anchor="middle" class="mono" font-size="2.7" fill="#ff5a36">8×SM-346 UKSK VLS</text>
+        <text x="297" y="83.0" text-anchor="middle" class="mono" font-size="2.7" fill="#eab308">SAIL &amp; 10×533MM TUBES</text>
+        <text x="376" y="83.0" text-anchor="middle" class="mono" font-size="2.7" fill="#38bdf8">LOA: 130.0M (10.0:1)</text>
+      </g>
+
+    </g>
+  </g>
+</svg>

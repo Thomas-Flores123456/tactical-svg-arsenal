@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 580" width="1320" height="580" data-asset-id="naval.sejong991.master.sheet" style="background:#080a0b;">
+  <defs>
+    <style>
+      svg { fill: none; stroke-linecap: butt; }
+      .s-dim { stroke: #2c3b40; stroke-width: 1; }
+      .s-line { stroke: #5f7c84; stroke-width: 1; }
+      .s-hi { stroke: #d4e3e6; stroke-width: 1.2; }
+      .s-alert { stroke: #ff5a36; stroke-width: 1.4; }
+      .s-focus { stroke: #38bdf8; stroke-width: 1.4; }
+      .f-dim { fill: #2c3b40; stroke: none; }
+      .f-line { fill: #5f7c84; stroke: none; }
+      .f-hi { fill: #d4e3e6; stroke: none; }
+      .f-alert { fill: #ff5a36; stroke: none; }
+      .f-panel { fill: #0c1113; }
+      .p { font-family: "Rajdhani", "Bahnschrift", "DIN Alternate", "Microsoft YaHei", sans-serif; letter-spacing: 0.12em; }
+      text { font-family: "Rajdhani", "Bahnschrift", "DIN Alternate", "Microsoft YaHei", sans-serif; letter-spacing: 0.12em; }
+      text:not([stroke]) { stroke: none; }
+      text:not([fill]) { fill: #cfdde0; }
+      text.cap { letter-spacing: 0.2em; text-transform: uppercase; }
+      text.cap:not([fill]) { fill: #8aa1a7; }
+      text.cap:not([font-size]) { font-size: 8.5px; }
+      text.mono { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; letter-spacing: 0.06em; }
+      text.big { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; font-weight: 600; letter-spacing: 0.08em; }
+      text.big:not([font-size]) { font-size: 18px; }
+      text.big:not([fill]) { fill: #d4e3e6; }
+      text.alert { fill: #ff5a36; }
+    </style>
+    <pattern id="cad-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#10181c" stroke-width="1"/>
+      <circle cx="20" cy="20" r="0.8" fill="#1b262b"/>
+    </pattern>
+    <pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#ff5a36" stroke-width="1.2" stroke-opacity="0.35"/>
+    </pattern>
+  </defs>
+
+  <!-- 1. 工程蓝图暗色底板与坐标网格图层 -->
+  <g id="layer-backdrop">
+    <rect x="0" y="0" width="1320" height="580" fill="#080a0b"/>
+    <rect x="20" y="20" width="1280" height="540" fill="url(#cad-grid)" stroke="#2c3b40" stroke-width="1"/>
+    <path d="M 20 36 V 20 H 36 M 1284 20 H 1300 V 36 M 20 544 V 560 H 36 M 1284 560 H 1300 V 544" fill="none" stroke="#38bdf8" stroke-width="1.5"/>
+    <line x1="20" y1="54" x2="1300" y2="54" stroke="#2c3b40" stroke-width="1"/>
+    <line x1="20" y1="534" x2="1300" y2="534" stroke="#2c3b40" stroke-width="1"/>
+    <text x="34" y="42" class="p mono" fill="#38bdf8" font-size="10.2" font-weight="bold">ROK NAVY SEJONG THE GREAT-CLASS AEGIS DESTROYER (DDG-991) · 11,000T 128-VLS MASTER BLUEPRINT</text>
+    <text x="1286" y="42" text-anchor="end" class="p cap" fill="#d4e3e6" font-size="10.0">DDG-991「世宗大王」级重装宙斯盾驱逐舰 · 侧视128垂发谱系与顶视全甲板双联总图</text>
+    <text x="34" y="551" class="p mono" fill="#8aa1a7" font-size="9.2">LOA: 165.9M · BEAM: 21.4M (7.75:1) · 4×LM2500 (100,000 SHP) · 128 VLS (80×MK41 + 48×K-VLS) + 16×HAESEONG · UID=183</text>
+    <text x="1286" y="551" text-anchor="end" class="p mono" fill="#5f7c84" font-size="9.2">POSEIDON NAVAL CAD ASSET · TRUE 1:1 ASPECT (7.75:1)</text>
+  </g>
+
+  <!-- 2. 舰艇核心 CAD 矢量图层 (上半框侧视立面 + 下半框顶视全甲板 + 右侧双工程规格铭牌) -->
+  <g id="layer-ship-cad">
+    <rect x="44" y="72" width="1232" height="216" fill="#091116" fill-opacity="0.45" stroke="#2c3b40"/>
+    <text font-size="9.5" x="58" y="92" class="p mono" fill="#38bdf8">01 / STARBOARD PROFILE &amp; 48+32 MK41 + 48 K-VLS (128 CELLS) / 4×4 HAESEONG / GOALKEEPER</text>
+    <text x="975" y="92" text-anchor="end" class="p mono" fill="#5f7c84" font-size="9">SCALE 1:1 · BOW RIGHT (+X)</text>
+    <g transform="translate(62.0,98.0) scale(2.040,2.040)">
+      <!-- 0. 上方净空区：三区 128 单元 (48+32+48) 垂发矩阵展开图与导弹垂直谱系 (X=30..396, Y=0..24) -->
+      <g id="ddg991-vls-callout-matrices">
+        <!-- (A) 后部双区并置 80 单元展开矩阵：48单元韩国国产 K-VLS (#ff5a36, 6×8) + 32单元 Mk 41 (#38bdf8, 4×8) -->
+        <text x="140" y="1.0" text-anchor="middle" class="mono" font-size="2.4" fill="#ff5a36">AFT 48×K-VLS (6×8) + 32×MK41 (4×8) = 80 CELLS</text>
+        <!-- 后段 48 单元 K-VLS (6列×8行 · X=114..138, Y=3.0..22.2) -->
+        <rect x="114" y="3.0" width="24" height="19.2" fill="#160a0d" stroke="#ff5a36" stroke-width="0.8"/>
+        <line x1="118" y1="3.0" x2="118" y2="22.2" stroke="#ff5a36" stroke-width="0.4" stroke-opacity="0.65"/>
+        <line x1="122" y1="3.0" x2="122" y2="22.2" stroke="#ff5a36" stroke-width="0.4" stroke-opacity="0.65"/>
+        <line x1="126" y1="3.0" x2="126" y2="22.2" stroke="#ff5a36" stroke-width="0.4" stroke-opacity="0.65"/>
+        <line x1="130" y1="3.0" x2="130" y2="22.2" stroke="#ff5a36" stroke-width="0.4" stroke-opacity="0.65"/>
+        <line x1="134" y1="3.0" x2="134" y2="22.2" stroke="#ff5a36" stroke-width="0.4" stroke-opacity="0.65"/>
+        <line x1="114" y1="7.8" x2="138" y2="7.8" stroke="#ff5a36" stroke-width="0.4" stroke-opacity="0.65"/>
+        <line x1="114" y1="12.6" x2="138" y2="12.6" stroke="#ff5a36" stroke-width="0.4" stroke-opacity="0.65"/>
+        <line x1="114" y1="17.4" x2="138" y2="17.4" stroke="#ff5a36" stroke-width="0.4" stroke-opacity="0.65"/>
+        <!-- 前段 32 单元 Mk 41 (4列×8行 · X=141..157, Y=3.0..22.2) -->
+        <rect x="141" y="3.0" width="16" height="19.2" fill="#08151e" stroke="#38bdf8" stroke-width="0.8"/>
+        <line x1="145" y1="3.0" x2="145" y2="22.2" stroke="#38bdf8" stroke-width="0.4" stroke-opacity="0.65"/>
+        <line x1="149" y1="3.0" x2="149" y2="22.2" stroke="#38bdf8" stroke-width="0.4" stroke-opacity="0.65"/>
+        <line x1="153" y1="3.0" x2="153" y2="22.2" stroke="#38bdf8" stroke-width="0.4" stroke-opacity="0.65"/>
+        <line x1="141" y1="7.8" x2="157" y2="7.8" stroke="#38bdf8" stroke-width="0.4" stroke-opacity="0.65"/>
+        <line x1="141" y1="12.6" x2="157" y2="12.6" stroke="#38bdf8" stroke-width="0.4" stroke-opacity="0.65"/>
+        <line x1="141" y1="17.4" x2="157" y2="17.4" stroke="#38bdf8" stroke-width="0.4" stroke-opacity="0.65"/>
+
+        <!-- (B) 左侧净空区：世宗大王级 3 型主力舰载垂直发射导弹剪影 (SM-2 Block IIIB/IV + Hyunmoo-3C 玄武-3 + K-ASROC 红鲨) -->
+        <text x="58" y="1.0" text-anchor="middle" class="mono" font-size="2.3" fill="#eab308">SM-2 / HYUNMOO-3C / RED SHARK</text>
+        <!-- 1. SM-2 Block IIIB/IV 远程防空导弹 -->
+        <rect x="42" y="6.5" width="2.2" height="15.5" fill="#0e2432" stroke="#38bdf8" stroke-width="0.65"/>
+        <polygon points="42,6.5 43.1,3.2 44.2,6.5" fill="#38bdf8"/>
+        <!-- 2. Hyunmoo-3C 玄武-3C (1,500km 对陆巡航导弹) -->
+        <rect x="54" y="4.5" width="2.4" height="17.5" fill="#1a1014" stroke="#ff5a36" stroke-width="0.65"/>
+        <polygon points="54,4.5 55.2,1.5 56.4,4.5" fill="#ff5a36"/>
+        <line x1="52.5" y1="12.5" x2="57.9" y2="12.5" stroke="#eab308" stroke-width="0.7"/>
+        <!-- 3. Hong Sang Eo 红鲨反潜助飞鱼雷 (K-ASROC) -->
+        <rect x="66" y="7.5" width="2.2" height="14.5" fill="#0e2432" stroke="#eab308" stroke-width="0.65"/>
+        <polygon points="66,7.5 67.1,4.5 68.2,7.5" fill="#eab308"/>
+
+        <!-- (C) 舰首 48 单元 (6×8) Mk 41 Baseline VII 展开矩阵 (X=310..334, Y=3.0..22.2) -->
+        <text x="344" y="1.0" text-anchor="middle" class="mono" font-size="2.4" fill="#38bdf8">FWD 48×MK41 BASELINE VII (6×8)</text>
+        <rect x="314" y="3.0" width="24" height="19.2" fill="#08151e" stroke="#38bdf8" stroke-width="0.8"/>
+        <line x1="318" y1="3.0" x2="318" y2="22.2" stroke="#38bdf8" stroke-width="0.4" stroke-opacity="0.65"/>
+        <line x1="322" y1="3.0" x2="322" y2="22.2" stroke="#38bdf8" stroke-width="0.4" stroke-opacity="0.65"/>
+        <line x1="326" y1="3.0" x2="326" y2="22.2" stroke="#38bdf8" stroke-width="0.4" stroke-opacity="0.65"/>
+        <line x1="330" y1="3.0" x2="330" y2="22.2" stroke="#38bdf8" stroke-width="0.4" stroke-opacity="0.65"/>
+        <line x1="334" y1="3.0" x2="334" y2="22.2" stroke="#38bdf8" stroke-width="0.4" stroke-opacity="0.65"/>
+        <line x1="314" y1="7.8" x2="338" y2="7.8" stroke="#38bdf8" stroke-width="0.4" stroke-opacity="0.65"/>
+        <line x1="314" y1="12.6" x2="338" y2="12.6" stroke="#38bdf8" stroke-width="0.4" stroke-opacity="0.65"/>
+        <line x1="314" y1="17.4" x2="338" y2="17.4" stroke="#38bdf8" stroke-width="0.4" stroke-opacity="0.65"/>
+        <!-- 舰首上方标注：海拉姆与 127mm Mk 45 Mod 4 主炮 -->
+        <text x="380" y="12.0" text-anchor="middle" class="mono" font-size="2.3" fill="#eab308">TOTAL: 128 VLS CELLS</text>
+        <text x="380" y="17.5" text-anchor="middle" class="mono" font-size="2.3" fill="#d4e3e6">MK 45 MOD 4 127MM/62</text>
+      </g>
+
+      <!-- 1. 工程尺寸标尺 (LOA 165.9M = 392.0 CAD Units, X=20..412) -->
+      <line x1="20" y1="74.5" x2="412" y2="74.5" stroke="#2c3b40" stroke-width="0.6"/>
+      <line x1="20" y1="72.5" x2="20" y2="76.5" stroke="#38bdf8" stroke-width="0.75"/>
+      <line x1="412" y1="72.5" x2="412" y2="76.5" stroke="#38bdf8" stroke-width="0.75"/>
+      <text x="216" y="77.8" text-anchor="middle" class="mono" font-size="2.6" fill="#8aa1a7">LOA 165.9M · BEAM 21.4M (7.75:1) · DRAFT 6.25M · 11,000T FULL LOAD · 4×LM2500 COGAG (100,000 SHP)</text>
+
+      <!-- 2. 水下暗红防污船底、AN/SQS-53C 大型舰首球鼻声呐罩、舭龙骨与双轴五叶调距螺旋桨 -->
+      <g id="ddg991-underwater-hull">
+        <path d="M 24 55.0 L 392 55.0 C 396 57.5 405 58.8 408 62.5 C 409 66.2 401 68.5 390 68.2 C 380 68.0 372 64.5 362 64.2 L 92 64.2 L 56 60.5 L 24 58.2 Z"
+              fill="#261014" stroke="#ff5a36" stroke-width="1.05"/>
+        <!-- AN/SQS-53C 舰首低频主/被动球鼻声呐罩分界线 -->
+        <path d="M 374 55.0 L 372 64.2" fill="none" stroke="#38bdf8" stroke-width="0.85" stroke-dasharray="2 1.2"/>
+        <text x="390" y="64.5" text-anchor="middle" class="mono" font-size="2.2" fill="#38bdf8">SQS-53C</text>
+
+        <!-- 舭龙骨与减摇鳍 -->
+        <path d="M 164 61.8 L 172 64.0 L 258 64.0 L 266 61.8" fill="none" stroke="#ff5a36" stroke-width="0.9"/>
+        <polygon points="154,63.2 162,63.2 160,67.5 155,67.5" fill="#ff5a36"/>
+        <polygon points="264,63.2 272,63.2 270,67.5 265,67.5" fill="#ff5a36"/>
+
+        <!-- 双平衡舵与双轴五叶金色调距螺旋桨 (2×5-Blade CRP Propellers · #eab308) -->
+        <polygon points="28,58.5 35,58.5 33.5,67.5 27,67.0" fill="#261014" stroke="#ff5a36" stroke-width="0.85"/>
+        <line x1="94" y1="60.5" x2="44" y2="66.2" stroke="#eab308" stroke-width="1.15"/>
+        <line x1="116" y1="60.5" x2="64" y2="66.2" stroke="#eab308" stroke-width="1.1"/>
+        <line x1="52" y1="61.5" x2="47" y2="66.0" stroke="#d4e3e6" stroke-width="0.8"/>
+        <line x1="72" y1="61.5" x2="67" y2="66.0" stroke="#d4e3e6" stroke-width="0.8"/>
+        <ellipse cx="44" cy="66.2" rx="1.6" ry="4.4" fill="#eab308" stroke="#d4e3e6" stroke-width="0.55"/>
+        <ellipse cx="64" cy="66.2" rx="1.6" ry="4.4" fill="#eab308" stroke="#d4e3e6" stroke-width="0.55"/>
+
+        <!-- 舰尾 SQR-220K 黑龙拖曳线列声呐释放口 -->
+        <line x1="20" y1="53.5" x2="6" y2="55.5" stroke="#38bdf8" stroke-width="0.7" stroke-dasharray="2 1.2"/>
+      </g>
+
+      <!-- 3. 加长型宙斯盾高干舷折角隐身船体与舰首「991」大字舷号 (X=20..412, Y=38..55) -->
+      <g id="ddg991-main-hull">
+        <polygon points="20,46.5 66,46.5 70,35.5 112,35.5 114,38.0 168,38.0 172,33.5 244,33.5 248,41.5 304,41.5 308,40.0 352,40.0 356,41.2 412,37.5 398,47.5 392,55.0 24,55.0"
+                 fill="#0b1922" stroke="#d4e3e6" stroke-width="1.3"/>
+        <!-- 干舷隐身折角腰线与水线 -->
+        <polyline points="21,49.5 396,46.5" fill="none" stroke="#38bdf8" stroke-width="0.85"/>
+        <line x1="24" y1="55.0" x2="392" y2="55.0" stroke="#d4e3e6" stroke-width="0.95"/>
+        <!-- 舰首锚链孔、旗杆与白色「991」大号舷号 -->
+        <circle cx="395" cy="42.5" r="1.4" fill="#050a0e" stroke="#d4e3e6" stroke-width="0.65"/>
+        <line x1="410.5" y1="37.5" x2="412" y2="28.5" stroke="#d4e3e6" stroke-width="0.8"/>
+        <line x1="21" y1="46.5" x2="19.5" y2="38.5" stroke="#d4e3e6" stroke-width="0.8"/>
+        <text x="380" y="48.2" text-anchor="middle" class="mono" font-size="6.0" fill="#d4e3e6" font-weight="bold">991</text>
+
+        <!-- 内部动力与垂发深井透视虚线框：前48垂发井 + 4×LM2500 燃机舱 + 后80垂发井 (32 Mk41 + 48 K-VLS) -->
+        <rect x="310" y="40.2" width="36" height="12.5" fill="none" stroke="#38bdf8" stroke-width="0.7" stroke-dasharray="2.2 1.2"/>
+        <text x="328" y="48.0" text-anchor="middle" class="mono" font-size="2.2" fill="#38bdf8">48×MK41</text>
+
+        <rect x="174" y="45.5" width="66" height="8.5" fill="none" stroke="#eab308" stroke-width="0.7" stroke-dasharray="2.2 1.2"/>
+        <text x="207" y="51.2" text-anchor="middle" class="mono" font-size="2.2" fill="#eab308">4×LM2500 COGAG</text>
+
+        <rect x="146" y="38.2" width="20" height="14.0" fill="none" stroke="#38bdf8" stroke-width="0.7" stroke-dasharray="2.2 1.2"/>
+        <rect x="114" y="38.2" width="30" height="15.2" fill="none" stroke="#ff5a36" stroke-width="0.75" stroke-dasharray="2.2 1.2"/>
+        <text x="129" y="48.5" text-anchor="middle" class="mono" font-size="2.2" fill="#ff5a36">48×K-VLS</text>
+      </g>
+
+      <!-- 4. 舰首 127mm/62 Mk 45 Mod 4 隐身折面舰炮 + 前48单元垂发平台 + B炮位 RIM-116 RAM 海拉姆 -->
+      <g id="ddg991-fwd-weapons">
+        <!-- 127mm/62 Mk 45 Mod 4 长身管隐身主炮 (X=356..388) -->
+        <polygon points="356,41.2 359,34.8 369,34.8 372,41.2" fill="#142c3c" stroke="#d4e3e6" stroke-width="1.1"/>
+        <line x1="371" y1="37.2" x2="392" y2="36.2" stroke="#d4e3e6" stroke-width="1.35"/>
+
+        <!-- 前 48 单元 Mk 41 垂发甲板突出平台 (X=308..352) -->
+        <rect x="308" y="38.6" width="44" height="1.4" fill="#102432" stroke="#38bdf8" stroke-width="0.8"/>
+
+        <!-- B炮位高台：21联装 RIM-116 RAM 海拉姆近防导弹发射架 (X=290..304) -->
+        <polygon points="288,41.5 290,35.5 304,35.5 306,41.5" fill="#102432" stroke="#d4e3e6" stroke-width="0.95"/>
+        <rect x="293" y="31.8" width="6.5" height="3.7" fill="#18364a" stroke="#ff5a36" stroke-width="0.85"/>
+        <line x1="299.5" y1="32.8" x2="303" y2="31.5" stroke="#ff5a36" stroke-width="0.9"/>
+      </g>
+
+      <!-- 5. 四面 AN/SPY-1D(V) 宙斯盾相控阵舰桥 + 后倾三脚主桅 + 1号/2号双倾斜烟囱 + 16枚海星反舰导弹 -->
+      <g id="ddg991-aegis-superstructure">
+        <!-- 宙斯盾主舰桥堡垒 (X=246..288, Y=21.5..41.5) -->
+        <polygon points="246,41.5 252,21.5 280,21.5 288,41.5" fill="#102432" stroke="#d4e3e6" stroke-width="1.2"/>
+        <!-- 舰桥防弹观察窗带 -->
+        <polygon points="264,23.2 279,23.2 280.5,26.0 264,26.0" fill="#04080b" stroke="#38bdf8" stroke-width="0.75"/>
+        <!-- 侧面八角形 AN/SPY-1D(V) S波段无源相控阵大盾 (Octagonal SPY-1D Array · X=268..279, Y=28.5..38.5) -->
+        <polygon points="268,31.0 271,28.5 276,28.5 279,31.0 279,36.0 276,38.5 271,38.5 268,36.0"
+                 fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.95"/>
+        <!-- 舰桥翼台 SLQ-32(V)3 / Sonata 电子战天线与前部 #1 AN/SPG-62 照射雷达 -->
+        <rect x="256" y="31.5" width="9" height="4.8" fill="#163244" stroke="#38bdf8" stroke-width="0.75"/>
+        <rect x="273" y="18.5" width="4.5" height="3.0" fill="#142c3c" stroke="#d4e3e6" stroke-width="0.7"/>
+        <circle cx="276" cy="16.8" r="2.2" fill="none" stroke="#eab308" stroke-width="0.85"/>
+        <line x1="276" y1="16.8" x2="279" y2="15.5" stroke="#eab308" stroke-width="0.8"/>
+
+        <!-- 后倾三脚隐身主桅杆 (Raked Tripod Mainmast · X=248..264, Y=1.5..21.5) -->
+        <polygon points="254,21.5 247,5.5 251,5.5 262,21.5" fill="#142c3c" stroke="#d4e3e6" stroke-width="1.05"/>
+        <line x1="242" y1="14.5" x2="260" y2="14.5" stroke="#d4e3e6" stroke-width="0.9"/>
+        <line x1="240" y1="9.5" x2="256" y2="9.5" stroke="#38bdf8" stroke-width="0.85"/>
+        <line x1="249" y1="5.5" x2="246" y2="0.5" stroke="#d4e3e6" stroke-width="0.9"/>
+        <!-- 桅杆顶 SPS-67 对海雷达、IRSt 红外搜索仪与卫通球罩 -->
+        <circle cx="258" cy="12.5" r="1.8" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.65"/>
+        <circle cx="264" cy="19.2" r="2.2" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.65"/>
+
+        <!-- 1号前倾斜燃气轮机烟囱 (Funnel #1 · X=214..234, Y=18.5..33.5) -->
+        <polygon points="214,33.5 218,18.5 231,18.5 234,33.5" fill="#122836" stroke="#d4e3e6" stroke-width="1.1"/>
+        <polygon points="217.5,18.5 218.5,16.5 230.5,16.5 231.5,18.5" fill="#04080b" stroke="#38bdf8" stroke-width="0.8"/>
+        <rect x="217" y="24.5" width="14" height="6.0" fill="#061016" stroke="#4a6368" stroke-width="0.65"/>
+
+        <!-- 舰舯核心地标：4×4 = 16枚 SSM-700K「海星」(Haeseong) 远程反舰导弹交叉倾斜发射箱组 (X=190..212, #ff5a36 高亮!) -->
+        <g id="ddg991-haeseong-ashm">
+          <!-- 朝向舰首倾斜的 2座四联装发射筒 -->
+          <g transform="translate(192,32.5) rotate(-28)">
+            <rect x="0" y="-4.5" width="15.5" height="4.5" fill="#1a1014" stroke="#ff5a36" stroke-width="0.95"/>
+            <line x1="0" y1="-2.2" x2="15.5" y2="-2.2" stroke="#eab308" stroke-width="0.65"/>
+          </g>
+          <!-- 朝向另一侧交叉倾斜的 2座四联装发射筒 -->
+          <g transform="translate(209,32.5) rotate(-152)">
+            <rect x="0" y="0" width="15.5" height="4.5" fill="#1a1014" stroke="#ff5a36" stroke-width="0.95"/>
+            <line x1="0" y1="2.2" x2="15.5" y2="2.2" stroke="#eab308" stroke-width="0.65"/>
+          </g>
+          <text x="201" y="15.0" text-anchor="middle" class="mono" font-size="2.3" fill="#ff5a36">16×SSM-700K HAESEONG</text>
+        </g>
+
+        <!-- 2号后倾斜燃气轮机烟囱 + 后部 2座 AN/SPG-62 照射雷达平台 (Funnel #2 · X=168..188) -->
+        <polygon points="170,33.5 174,19.5 186,19.5 189,33.5" fill="#122836" stroke="#d4e3e6" stroke-width="1.1"/>
+        <polygon points="173.5,19.5 174.5,17.5 185.5,17.5 186.5,19.5" fill="#04080b" stroke="#38bdf8" stroke-width="0.8"/>
+        <!-- 后部并列阶梯布置的 #2 与 #3 AN/SPG-62 X波段照射雷达 -->
+        <rect x="160" y="24.5" width="11" height="9.0" fill="#142c3c" stroke="#d4e3e6" stroke-width="0.85"/>
+        <circle cx="168" cy="21.5" r="2.1" fill="none" stroke="#eab308" stroke-width="0.85"/>
+        <circle cx="161" cy="23.2" r="2.1" fill="none" stroke="#eab308" stroke-width="0.85"/>
+      </g>
+
+      <!-- 6. 后部 80 单元垂发区 (32 Mk41 + 48 K-VLS) + 324mm 青鲨反潜鱼雷管 + 双机库 + 30mm 守门员近防炮 + 舰尾超山猫直升机 -->
+      <g id="ddg991-aft-hangar-and-goalkeeper">
+        <!-- 后部 80 单元垂发甲板舱盖与两舷 K745「青鲨」三联装反潜鱼雷发射管 (X=114..168) -->
+        <rect x="144" y="36.6" width="22" height="1.4" fill="#08151e" stroke="#38bdf8" stroke-width="0.8"/>
+        <rect x="114" y="36.6" width="29" height="1.4" fill="#1a1014" stroke="#ff5a36" stroke-width="0.85"/>
+        <!-- K745 Blue Shark 三联装 324mm 鱼雷管 (X=150..158) -->
+        <rect x="150" y="34.2" width="7.5" height="2.0" rx="0.6" fill="#163244" stroke="#eab308" stroke-width="0.7"/>
+
+        <!-- 双直升机机库与顶置荷兰泰雷兹 30mm Goalkeeper「守门员」七管近防炮 (X=66..112) -->
+        <polygon points="66,46.5 70,35.5 112,35.5 114,38.0 114,46.5" fill="#102432" stroke="#d4e3e6" stroke-width="1.1"/>
+        <!-- 守门员 30mm 七管近防炮 (X=92..102 · 标志性顶部横向椭圆搜索天线 + 前圆盘跟踪雷达，非美式白色圆桶!) -->
+        <polygon points="93,35.5 94.5,30.5 100.5,30.5 102,35.5" fill="#18364a" stroke="#eab308" stroke-width="0.9"/>
+        <ellipse cx="97.5" cy="29.0" rx="3.2" ry="1.0" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.7"/>
+        <circle cx="93.5" cy="32.2" r="1.3" fill="#eab308"/>
+        <line x1="93.5" y1="33.0" x2="86.5" y2="32.0" stroke="#ff5a36" stroke-width="1.15"/>
+        <text x="86" y="26.5" text-anchor="middle" class="mono" font-size="2.3" fill="#eab308">30MM GOALKEEPER CIWS</text>
+
+        <!-- 舰尾飞行甲板与 ROKN Super Lynx「超级山猫」反潜直升机 (X=22..64) -->
+        <g transform="translate(26,37.0)">
+          <path d="M 4 5.5 L 14 7.0 L 28 7.0 C 32 7.0 34 9.0 30 9.5 L 14 9.5 L 4 7.0 Z" fill="#142c3c" stroke="#d4e3e6" stroke-width="0.8"/>
+          <polygon points="26,7.3 30.5,7.8 29.8,9.0 26,9.0" fill="#38bdf8"/>
+          <line x1="21" y1="7.0" x2="21" y2="4.8" stroke="#d4e3e6" stroke-width="0.85"/>
+          <line x1="8" y1="4.8" x2="34" y2="4.8" stroke="#38bdf8" stroke-width="0.9"/>
+          <circle cx="4" cy="5.8" r="1.8" fill="none" stroke="#d4e3e6" stroke-width="0.65"/>
+        </g>
+      </g>
+    </g>
+    <g>
+      <rect x="986" y="84" width="282" height="192" fill="#070d11" stroke="#2c3b40" stroke-width="1"/>
+      <rect x="986" y="84" width="282" height="22" fill="#0d1e28" stroke="#2c3b40" stroke-width="0.9"/>
+      <text x="996" y="99" class="mono" font-size="9.0" fill="#38bdf8" font-weight="bold">HYUNDAI HEAVY IND. · KDX-III SPECS</text>
+      <text x="996" y="120" class="mono" font-size="7.6" fill="#8aa1a7">DISPLACEMENT (STD/FULL):</text>
+      <text x="1258" y="120" text-anchor="end" class="mono" font-size="7.6" fill="#d4e3e6">8,500T / 11,000T</text>
+      <text x="996" y="138" class="mono" font-size="7.6" fill="#8aa1a7">DIMENSIONS (L×B×D):</text>
+      <text x="1258" y="138" text-anchor="end" class="mono" font-size="7.6" fill="#38bdf8">165.9M × 21.4M × 6.25M</text>
+      <text x="996" y="156" class="mono" font-size="7.6" fill="#8aa1a7">PROPULSION (COGAG):</text>
+      <text x="1258" y="156" text-anchor="end" class="mono" font-size="7.6" fill="#eab308">4×GE LM2500 (100,000 SHP)</text>
+      <text x="996" y="174" class="mono" font-size="7.6" fill="#8aa1a7">MAX SPEED / RANGE:</text>
+      <text x="1258" y="174" text-anchor="end" class="mono" font-size="7.6" fill="#d4e3e6">30+ KTS / 5,500 NM @ 20 KTS</text>
+      <text x="996" y="192" class="mono" font-size="7.6" fill="#8aa1a7">AEGIS COMBAT SYS:</text>
+      <text x="1258" y="192" text-anchor="end" class="mono" font-size="7.6" fill="#38bdf8">AN/SPY-1D(V) + BASELINE 7.1</text>
+      <text x="996" y="210" class="mono" font-size="7.6" fill="#8aa1a7">ILLUMINATORS / EW:</text>
+      <text x="1258" y="210" text-anchor="end" class="mono" font-size="7.6" fill="#d4e3e6">3×AN/SPG-62 + SLQ-200K SONATA</text>
+      <line x1="996" y1="222" x2="1258" y2="222" stroke="#1e2c33" stroke-width="1"/>
+      <text x="996" y="238" class="mono" font-size="8.0" fill="#38bdf8">HEAVIEST ARMED AEGIS DESTROYER:</text>
+      <text x="996" y="253" class="mono" font-size="7.6" fill="#d4e3e6">+10.6M LONGER THAN BURKE FLIGHT IIA</text>
+      <text x="996" y="266" class="mono" font-size="7.6" fill="#8aa1a7">128 VLS CELLS + 16 ANTI-SHIP MISSILES</text>
+    </g>
+
+    <rect x="44" y="304" width="1232" height="216" fill="#091116" fill-opacity="0.45" stroke="#2c3b40"/>
+    <text font-size="9.5" x="58" y="324" class="p mono" fill="#38bdf8">02 / ORTHOGRAPHIC FULL DECK PLAN · TRI-ZONE 128 VLS · 16×SSM-700K · TWIN LYNX/MH-60R HANGAR</text>
+    <text x="975" y="324" text-anchor="end" class="p mono" fill="#5f7c84" font-size="9">BEAM: 21.4M · ASPECT: 7.75:1</text>
+    <g transform="translate(62.0,330.0) scale(2.040,2.040)">
+      <!-- 0. 外部净空区尺寸标尺与五大世宗大王级专属地标标注 (严格置于 Y=6.5 与 Y=82.0 净空区，零重叠) -->
+      <g id="ddg991-top-callouts">
+        <!-- 左端 21.4M 舰宽标尺 (Y=18.7..69.3, 跨度 50.6 单位) -->
+        <line x1="9" y1="18.7" x2="9" y2="69.3" stroke="#38bdf8" stroke-width="0.65"/>
+        <line x1="6.5" y1="18.7" x2="11.5" y2="18.7" stroke="#38bdf8" stroke-width="0.75"/>
+        <line x1="6.5" y1="69.3" x2="11.5" y2="69.3" stroke="#38bdf8" stroke-width="0.75"/>
+        <text x="5.5" y="44.0" text-anchor="middle" transform="rotate(-90 5.5 44.0)" class="mono" font-size="2.6" fill="#38bdf8">BEAM 21.4M (7.75:1)</text>
+
+        <!-- 上方净空区引线标注：后部 80 单元双区垂发 (48 K-VLS + 32 Mk41) 与 舰首 48 单元 Mk41 -->
+        <polyline points="128,33.0 120,7.5 34,7.5" fill="none" stroke="#ff5a36" stroke-width="0.65"/>
+        <circle cx="128" cy="33.0" r="1.0" fill="#ff5a36"/>
+        <text x="34" y="5.5" class="mono" font-size="2.4" fill="#ff5a36">AFT: 48×K-VLS (HYUNMOO-3C/RED SHARK) + 32×MK41</text>
+
+        <polyline points="201,27.0 208,7.5 282,7.5" fill="none" stroke="#eab308" stroke-width="0.65"/>
+        <circle cx="201" cy="27.0" r="1.0" fill="#eab308"/>
+        <text x="210" y="5.5" class="mono" font-size="2.4" fill="#eab308">4×4 (16) SSM-700K HAESEONG</text>
+
+        <polyline points="328,33.0 336,7.5 408,7.5" fill="none" stroke="#38bdf8" stroke-width="0.65"/>
+        <circle cx="328" cy="33.0" r="1.0" fill="#38bdf8"/>
+        <text x="408" y="5.5" text-anchor="end" class="mono" font-size="2.4" fill="#38bdf8">FWD: 48×MK41 VLS (6×8)</text>
+
+        <!-- 下方净空区引线标注：30mm 守门员近防炮 + K745 青鲨鱼雷 + 四面 SPY-1D(V) 舰桥 + 海拉姆 -->
+        <polyline points="97,48.0 88,80.5 22,80.5" fill="none" stroke="#eab308" stroke-width="0.65"/>
+        <circle cx="97" cy="48.0" r="1.0" fill="#eab308"/>
+        <text x="22" y="83.2" class="mono" font-size="2.4" fill="#eab308">30MM GOALKEEPER CIWS &amp; TWIN HANGARS</text>
+
+        <polyline points="154,66.0 162,80.5 248,80.5" fill="none" stroke="#38bdf8" stroke-width="0.65"/>
+        <circle cx="154" cy="66.0" r="1.0" fill="#38bdf8"/>
+        <text x="164" y="83.2" class="mono" font-size="2.4" fill="#38bdf8">2×3 324MM K745 BLUE SHARK</text>
+
+        <polyline points="296,46.0 306,80.5 408,80.5" fill="none" stroke="#ff5a36" stroke-width="0.65"/>
+        <circle cx="296" cy="46.0" r="1.0" fill="#ff5a36"/>
+        <text x="408" y="83.2" text-anchor="end" class="mono" font-size="2.4" fill="#ff5a36">RIM-116 RAM + 4×SPY-1D(V) + MK45 127MM</text>
+      </g>
+
+      <!-- 1. 7.75:1 宽体宙斯盾驱逐舰外廓与折角甲板边线 (LOA=165.9m -> X=20..412, BEAM=21.4m -> Y=18.7..69.3) -->
+      <g id="ddg991-top-hull">
+        <path d="M 20,24.0 L 66,19.5 L 288,18.7 C 338,18.7 380,27.5 412,44.0 C 380,60.5 338,69.3 288,69.3 L 66,68.5 L 20,64.0 Z"
+              fill="#0a1822" stroke="#d4e3e6" stroke-width="1.35"/>
+        <path d="M 66,22.2 L 286,21.5 C 334,21.5 374,29.5 402,44.0 C 374,58.5 334,66.5 286,66.5 L 66,65.8 Z"
+              fill="#0d202c" stroke="#38bdf8" stroke-width="0.85"/>
+        <line x1="20" y1="44.0" x2="412" y2="44.0" stroke="#4a6368" stroke-width="0.65" stroke-dasharray="4 2.5"/>
+      </g>
+
+      <!-- 2. 舰尾飞行甲板、991 着舰标号与 ROKN Super Lynx 反潜直升机 (X=20..66) -->
+      <g id="ddg991-top-helideck">
+        <polygon points="20,24.0 66,20.5 66,67.5 20,64.0" fill="#08131a" stroke="#d4e3e6" stroke-width="1.05"/>
+        <!-- 两侧防坠网 -->
+        <line x1="22" y1="22.5" x2="64" y2="19.2" stroke="#38bdf8" stroke-width="0.9" stroke-dasharray="3 1.5"/>
+        <line x1="22" y1="65.5" x2="64" y2="68.8" stroke="#38bdf8" stroke-width="0.9" stroke-dasharray="3 1.5"/>
+        <!-- 着舰圈、鱼叉助降格栅与舰尾「991」白色识别标号 -->
+        <circle cx="46" cy="44.0" r="10.2" fill="none" stroke="#d4e3e6" stroke-width="1.05"/>
+        <circle cx="46" cy="44.0" r="2.8" fill="#0d202c" stroke="#eab308" stroke-width="0.8"/>
+        <line x1="22" y1="44.0" x2="65" y2="44.0" stroke="#d4e3e6" stroke-width="0.8" stroke-dasharray="3.5 2"/>
+        <text x="27" y="46.2" text-anchor="middle" class="mono" font-size="5.6" fill="#d4e3e6" font-weight="bold">991</text>
+
+        <!-- 舰载 Super Lynx「超级山猫」反潜直升机顶视 -->
+        <g transform="translate(46,44.0)">
+          <ellipse cx="1.0" cy="0" rx="6.2" ry="2.0" fill="#142c3c" stroke="#d4e3e6" stroke-width="0.8"/>
+          <line x1="-7.5" y1="0" x2="6.0" y2="0" stroke="#d4e3e6" stroke-width="0.85"/>
+          <line x1="1.5" y1="-7.8" x2="1.5" y2="7.8" stroke="#38bdf8" stroke-width="0.75"/>
+          <line x1="-6.3" y1="0" x2="9.3" y2="0" stroke="#38bdf8" stroke-width="0.75"/>
+          <circle cx="1.5" cy="0" r="1.1" fill="#eab308"/>
+        </g>
+      </g>
+
+      <!-- 3. 双直升机机库 + 顶置荷兰泰雷兹 30mm Goalkeeper「守门员」近防炮 (X=66..112) -->
+      <g id="ddg991-top-hangar-and-goalkeeper">
+        <polygon points="66,22.2 110,22.2 114,25.5 114,62.5 110,65.8 66,65.8"
+                 fill="#102432" stroke="#d4e3e6" stroke-width="1.15"/>
+        <!-- 双机库分隔线与顶部救生筏筒 -->
+        <line x1="66" y1="44.0" x2="112" y2="44.0" stroke="#38bdf8" stroke-width="0.7" stroke-dasharray="3 1.5"/>
+        <rect x="72" y="24.2" width="32" height="16.5" fill="#0b1a24" stroke="#38bdf8" stroke-width="0.7"/>
+        <rect x="72" y="47.3" width="32" height="16.5" fill="#0b1a24" stroke="#38bdf8" stroke-width="0.7"/>
+
+        <!-- 机库顶中轴：30mm Goalkeeper「守门员」七管加特林近防炮 (X=97, Y=44.0 · 顶置横向椭圆搜索雷达 + 前跟踪圆盘) -->
+        <circle cx="97" cy="44.0" r="4.5" fill="#163244" stroke="#eab308" stroke-width="0.95"/>
+        <rect x="94.5" y="41.5" width="5.0" height="5.0" rx="1" fill="#1a3a4e" stroke="#d4e3e6" stroke-width="0.8"/>
+        <!-- 横向 I 波段搜索雷达长条天线 -->
+        <rect x="96.2" y="39.2" width="1.8" height="9.6" rx="0.6" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.65"/>
+        <!-- 30mm 七管加特林炮管 (朝向舰尾 -X) -->
+        <line x1="94.5" y1="44.0" x2="87.5" y2="44.0" stroke="#ff5a36" stroke-width="1.35"/>
+      </g>
+
+      <!-- 4. 后部双区并置 80 单元垂发矩阵：后段 48 单元韩国国产 K-VLS (#ff5a36, 6×8) + 前段 32 单元 Mk 41 (#38bdf8, 4×8) + 两舷青鲨鱼雷管 -->
+      <g id="ddg991-top-aft-80vls">
+        <!-- 外框底座 (X=114..166, Y=32.0..56.0) -->
+        <rect x="114" y="32.0" width="52" height="24.0" fill="#071118" stroke="#d4e3e6" stroke-width="1.05"/>
+
+        <!-- 后段：48 单元 (6列×8行) K-VLS 热垂发矩阵 (X=115.5..142.5, Y=33.5..54.5 · 装填 32×玄武-3C + 16×红鲨反潜导弹 · #ff5a36 高亮!) -->
+        <rect x="115.5" y="33.5" width="27.0" height="21.0" fill="#180a0e" stroke="#ff5a36" stroke-width="1.0"/>
+        <line x1="120.0" y1="33.5" x2="120.0" y2="54.5" stroke="#ff5a36" stroke-width="0.5"/>
+        <line x1="124.5" y1="33.5" x2="124.5" y2="54.5" stroke="#ff5a36" stroke-width="0.5"/>
+        <line x1="129.0" y1="33.5" x2="129.0" y2="54.5" stroke="#ff5a36" stroke-width="0.5"/>
+        <line x1="133.5" y1="33.5" x2="133.5" y2="54.5" stroke="#ff5a36" stroke-width="0.5"/>
+        <line x1="138.0" y1="33.5" x2="138.0" y2="54.5" stroke="#ff5a36" stroke-width="0.5"/>
+        <line x1="115.5" y1="38.8" x2="142.5" y2="38.8" stroke="#ff5a36" stroke-width="0.5"/>
+        <line x1="115.5" y1="44.0" x2="142.5" y2="44.0" stroke="#eab308" stroke-width="0.75"/>
+        <line x1="115.5" y1="49.2" x2="142.5" y2="49.2" stroke="#ff5a36" stroke-width="0.5"/>
+
+        <!-- 前段：32 单元 (4列×8行) Mk 41 防空垂发矩阵 (X=145.0..164.5, Y=33.5..54.5 · #38bdf8 高亮) -->
+        <rect x="145.0" y="33.5" width="19.5" height="21.0" fill="#07131c" stroke="#38bdf8" stroke-width="1.0"/>
+        <line x1="149.9" y1="33.5" x2="149.9" y2="54.5" stroke="#38bdf8" stroke-width="0.5"/>
+        <line x1="154.8" y1="33.5" x2="154.8" y2="54.5" stroke="#38bdf8" stroke-width="0.5"/>
+        <line x1="159.6" y1="33.5" x2="159.6" y2="54.5" stroke="#38bdf8" stroke-width="0.5"/>
+        <line x1="145.0" y1="38.8" x2="164.5" y2="38.8" stroke="#38bdf8" stroke-width="0.5"/>
+        <line x1="145.0" y1="44.0" x2="164.5" y2="44.0" stroke="#d4e3e6" stroke-width="0.75"/>
+        <line x1="145.0" y1="49.2" x2="164.5" y2="49.2" stroke="#38bdf8" stroke-width="0.5"/>
+
+        <!-- 两舷对称布置：2×3 324mm K745「青鲨」(Blue Shark) 反潜鱼雷发射管 (X=148..158, Y=24.0 &amp; 64.0) -->
+        <g fill="#163244" stroke="#eab308" stroke-width="0.8">
+          <rect x="148" y="23.2" width="9.5" height="3.2" rx="0.8"/>
+          <line x1="148" y1="24.8" x2="157.5" y2="24.8" stroke="#d4e3e6" stroke-width="0.5"/>
+          <rect x="148" y="61.6" width="9.5" height="3.2" rx="0.8"/>
+          <line x1="148" y1="63.2" x2="157.5" y2="63.2" stroke="#d4e3e6" stroke-width="0.5"/>
+        </g>
+      </g>
+
+      <!-- 5. 舰舯双倾斜烟囱 + 后部 2座 AN/SPG-62 照射雷达 + 4×4 = 16枚 SSM-700K「海星」反舰导弹倾斜发射架 (X=166..244) -->
+      <g id="ddg991-top-midships-funnels-and-haeseong">
+        <!-- 舰舯上层建筑底盘 -->
+        <polygon points="166,25.5 242,24.0 246,27.0 246,61.0 242,64.0 166,62.5"
+                 fill="#0f2330" stroke="#d4e3e6" stroke-width="1.1"/>
+
+        <!-- 后部阶梯并列 2座 AN/SPG-62 X波段照射雷达 (#2 at X=168, #3 at X=161) -->
+        <circle cx="161.5" cy="44.0" r="2.8" fill="#163244" stroke="#eab308" stroke-width="0.85"/>
+        <circle cx="168.5" cy="44.0" r="2.8" fill="#163244" stroke="#eab308" stroke-width="0.85"/>
+
+        <!-- 2号后燃气轮机烟囱顶视图 (Funnel #2 · X=173..190, Y=33.0..55.0) -->
+        <polygon points="173,34.5 177,32.5 188,32.5 190,35.5 190,52.5 188,55.5 177,55.5 173,53.5"
+                 fill="#142c3c" stroke="#d4e3e6" stroke-width="1.05"/>
+        <rect x="176.5" y="35.5" width="10.0" height="7.2" rx="1" fill="#04080b" stroke="#38bdf8" stroke-width="0.75"/>
+        <rect x="176.5" y="45.3" width="10.0" height="7.2" rx="1" fill="#04080b" stroke="#38bdf8" stroke-width="0.75"/>
+
+        <!-- 舰舯核心地标：4座四联装 (4×4 = 16枚) SSM-700K「海星」远程反舰导弹交叉倾斜发射筒 (X=192..212, Y=26.5..61.5 · #ff5a36 高亮!) -->
+        <g id="ddg991-top-16-haeseong">
+          <!-- 左舷向右下倾斜的 2座四联装发射架 (8枚) -->
+          <rect x="193" y="27.2" width="7.2" height="14.5" rx="0.8" fill="#1a1014" stroke="#ff5a36" stroke-width="0.95"/>
+          <line x1="196.6" y1="27.2" x2="196.6" y2="41.7" stroke="#eab308" stroke-width="0.65"/>
+          <rect x="202" y="27.2" width="7.2" height="14.5" rx="0.8" fill="#1a1014" stroke="#ff5a36" stroke-width="0.95"/>
+          <line x1="205.6" y1="27.2" x2="205.6" y2="41.7" stroke="#eab308" stroke-width="0.65"/>
+
+          <!-- 右舷向右上倾斜的 2座四联装发射架 (8枚，合计 16 枚!) -->
+          <rect x="193" y="46.3" width="7.2" height="14.5" rx="0.8" fill="#1a1014" stroke="#ff5a36" stroke-width="0.95"/>
+          <line x1="196.6" y1="46.3" x2="196.6" y2="60.8" stroke="#eab308" stroke-width="0.65"/>
+          <rect x="202" y="46.3" width="7.2" height="14.5" rx="0.8" fill="#1a1014" stroke="#ff5a36" stroke-width="0.95"/>
+          <line x1="205.6" y1="46.3" x2="205.6" y2="60.8" stroke="#eab308" stroke-width="0.65"/>
+        </g>
+
+        <!-- 1号前燃气轮机烟囱顶视图 (Funnel #1 · X=214..234, Y=33.0..55.0) -->
+        <polygon points="214,34.5 218,32.5 230,32.5 233,35.5 233,52.5 230,55.5 218,55.5 214,53.5"
+                 fill="#142c3c" stroke="#d4e3e6" stroke-width="1.05"/>
+        <rect x="218" y="35.5" width="11.0" height="7.2" rx="1" fill="#04080b" stroke="#38bdf8" stroke-width="0.75"/>
+        <rect x="218" y="45.3" width="11.0" height="7.2" rx="1" fill="#04080b" stroke="#38bdf8" stroke-width="0.75"/>
+      </g>
+
+      <!-- 6. 四面 AN/SPY-1D(V) 宙斯盾八角舰桥 + 后倾三脚主桅 + 前部 #1 SPG-62 + B炮位 RIM-116 RAM 海拉姆 (X=244..306) -->
+      <g id="ddg991-top-aegis-bridge">
+        <!-- 八角形宙斯盾主舰桥外包络 (4面 45°/135° 斜切 SPY-1D(V) 相控阵阵面) -->
+        <polygon points="244,29.0 252,23.0 276,23.0 288,32.5 288,55.5 276,65.0 252,65.0 244,59.0"
+                 fill="#122836" stroke="#d4e3e6" stroke-width="1.3"/>
+        <polygon points="250,31.5 256,27.0 274,27.0 283,34.5 283,53.5 274,61.0 256,61.0 250,56.5"
+                 fill="#18364a" stroke="#38bdf8" stroke-width="0.95"/>
+        <!-- 四面八角形 SPY-1D(V) 雷达阵面切边高光条 (#d4e3e6 + #38bdf8) -->
+        <line x1="276" y1="23.0" x2="288" y2="32.5" stroke="#38bdf8" stroke-width="2.0"/>
+        <line x1="288" y1="55.5" x2="276" y2="65.0" stroke="#38bdf8" stroke-width="2.0"/>
+        <line x1="252" y1="23.0" x2="244" y2="29.0" stroke="#38bdf8" stroke-width="1.8"/>
+        <line x1="244" y1="59.0" x2="252" y2="65.0" stroke="#38bdf8" stroke-width="1.8"/>
+
+        <!-- 后倾三脚主桅杆顶视与横桁 (X=248..264, Y=33.0..55.0) -->
+        <polygon points="250,39.0 262,41.5 262,46.5 250,49.0" fill="#0d202c" stroke="#d4e3e6" stroke-width="0.95"/>
+        <line x1="254" y1="31.5" x2="254" y2="56.5" stroke="#d4e3e6" stroke-width="1.15"/>
+        <circle cx="255" cy="44.0" r="2.2" fill="#38bdf8"/>
+        <!-- 前部 #1 AN/SPG-62 照射雷达 (X=276, Y=44.0) 与两侧 SLQ-32 / Sonata 电子战翼台 -->
+        <circle cx="276" cy="44.0" r="2.8" fill="#163244" stroke="#eab308" stroke-width="0.9"/>
+        <rect x="260" y="19.8" width="10" height="3.0" fill="#163244" stroke="#38bdf8" stroke-width="0.7"/>
+        <rect x="260" y="65.2" width="10" height="3.0" fill="#163244" stroke="#38bdf8" stroke-width="0.7"/>
+
+        <!-- B炮位前突切角平台与 21联装 RIM-116 RAM 海拉姆防空导弹发射架 (X=288..306, Y=35.0..53.0) -->
+        <polygon points="288,34.5 300,36.5 306,40.0 306,48.0 300,51.5 288,53.5"
+                 fill="#102432" stroke="#38bdf8" stroke-width="1.0"/>
+        <rect x="292.5" y="40.8" width="7.2" height="6.4" rx="1" fill="#18364a" stroke="#ff5a36" stroke-width="0.95"/>
+        <line x1="299.7" y1="44.0" x2="304.5" y2="44.0" stroke="#ff5a36" stroke-width="1.2"/>
+      </g>
+
+      <!-- 7. 舰首 48 单元 (6×8) Mk 41 Baseline VII 大型防空垂发矩阵 (X=310..346, Y=33.0..55.0 · 比伯克级前32单元多出2列16单元!) -->
+      <g id="ddg991-top-fwd-48vls">
+        <rect x="309" y="32.0" width="37" height="24.0" fill="#071118" stroke="#d4e3e6" stroke-width="1.05"/>
+        <rect x="311" y="33.5" width="33.0" height="21.0" fill="#07131c" stroke="#38bdf8" stroke-width="1.0"/>
+        <!-- 6列 × 8行 垂发单元网格线 -->
+        <line x1="316.5" y1="33.5" x2="316.5" y2="54.5" stroke="#38bdf8" stroke-width="0.5"/>
+        <line x1="322.0" y1="33.5" x2="322.0" y2="54.5" stroke="#38bdf8" stroke-width="0.5"/>
+        <line x1="327.5" y1="33.5" x2="327.5" y2="54.5" stroke="#38bdf8" stroke-width="0.5"/>
+        <line x1="333.0" y1="33.5" x2="333.0" y2="54.5" stroke="#38bdf8" stroke-width="0.5"/>
+        <line x1="338.5" y1="33.5" x2="338.5" y2="54.5" stroke="#38bdf8" stroke-width="0.5"/>
+        <line x1="311.0" y1="38.8" x2="344.0" y2="38.8" stroke="#38bdf8" stroke-width="0.5"/>
+        <line x1="311.0" y1="44.0" x2="344.0" y2="44.0" stroke="#d4e3e6" stroke-width="0.75"/>
+        <line x1="311.0" y1="49.2" x2="344.0" y2="49.2" stroke="#38bdf8" stroke-width="0.5"/>
+      </g>
+
+      <!-- 8. 舰首 127mm/62 Mk 45 Mod 4 隐身主炮、V形防浪板与前甲板锚链 (X=352..412) -->
+      <g id="ddg991-top-bow-gun">
+        <circle cx="364" cy="44.0" r="6.8" fill="#09151e" stroke="#38bdf8" stroke-width="0.75"/>
+        <polygon points="356,39.2 365,37.8 372,40.0 372,48.0 365,50.2 356,48.8"
+                 fill="#163244" stroke="#d4e3e6" stroke-width="1.15"/>
+        <rect x="359" y="41.5" width="6.5" height="5.0" fill="#09151e" stroke="#38bdf8" stroke-width="0.65"/>
+        <!-- 62倍径长身管 127mm 炮管 -->
+        <line x1="372" y1="44.0" x2="395" y2="44.0" stroke="#d4e3e6" stroke-width="1.65"/>
+        <!-- V形防浪挡板与双锚链 -->
+        <polyline points="376,32.5 390,44.0 376,55.5" fill="none" stroke="#38bdf8" stroke-width="0.85"/>
+        <circle cx="386" cy="39.5" r="1.4" fill="#08131a" stroke="#d4e3e6" stroke-width="0.65"/>
+        <circle cx="386" cy="48.5" r="1.4" fill="#08131a" stroke="#d4e3e6" stroke-width="0.65"/>
+        <line x1="387.5" y1="39.5" x2="400" y2="41.5" stroke="#eab308" stroke-width="0.75" stroke-dasharray="1.5 1"/>
+        <line x1="387.5" y1="48.5" x2="400" y2="46.5" stroke="#eab308" stroke-width="0.75" stroke-dasharray="1.5 1"/>
+      </g>
+    </g>
+    <g>
+      <rect x="986" y="316" width="282" height="192" fill="#070d11" stroke="#2c3b40" stroke-width="1"/>
+      <rect x="986" y="316" width="282" height="22" fill="#1c1012" stroke="#ff5a36" stroke-width="0.9"/>
+      <text x="996" y="331" class="mono" font-size="9.0" fill="#ff5a36" font-weight="bold">128-CELL TRI-ZONE VLS &amp; STRIKE SUITE</text>
+      <text x="996" y="352" class="mono" font-size="7.6" fill="#8aa1a7">FWD VLS (ZONE 1):</text>
+      <text x="1258" y="352" text-anchor="end" class="mono" font-size="7.6" fill="#38bdf8">48-CELL MK 41 (6×8 · SM-2/SM-6)</text>
+      <text x="996" y="370" class="mono" font-size="7.6" fill="#8aa1a7">AFT VLS (ZONE 2):</text>
+      <text x="1258" y="370" text-anchor="end" class="mono" font-size="7.6" fill="#38bdf8">32-CELL MK 41 (4×8 · SM-2/SM-3)</text>
+      <text x="996" y="388" class="mono" font-size="7.6" fill="#8aa1a7">AFT K-VLS (ZONE 3):</text>
+      <text x="1258" y="388" text-anchor="end" class="mono" font-size="7.6" fill="#ff5a36">48-CELL K-VLS (32×HYUNMOO-3C)</text>
+      <text x="996" y="406" class="mono" font-size="7.6" fill="#8aa1a7">ASW &amp; ANTI-SHIP:</text>
+      <text x="1258" y="406" text-anchor="end" class="mono" font-size="7.6" fill="#eab308">16×RED SHARK + 4×4 SSM-700K</text>
+      <text x="996" y="424" class="mono" font-size="7.6" fill="#8aa1a7">CIWS &amp; TORPEDO:</text>
+      <text x="1258" y="424" text-anchor="end" class="mono" font-size="7.6" fill="#d4e3e6">1×RAM (21) + 1×30MM GOALKEEPER</text>
+      <text x="996" y="442" class="mono" font-size="7.6" fill="#8aa1a7">AVIATION &amp; SONAR:</text>
+      <text x="1258" y="442" text-anchor="end" class="mono" font-size="7.6" fill="#38bdf8">2×MH-60R + DSQS-21BZ + SQR-220K</text>
+      <line x1="996" y1="454" x2="1258" y2="454" stroke="#1e2c33" stroke-width="1"/>
+      <text x="996" y="470" class="mono" font-size="8.0" fill="#eab308">COMMISSIONED KDX-III FLEET:</text>
+      <text x="996" y="485" class="mono" font-size="7.6" fill="#d4e3e6">DDG-991 SEJONG · DDG-992 YULGOK YI I</text>
+      <text x="996" y="498" class="mono" font-size="7.6" fill="#8aa1a7">DDG-993 SEOAE RYU · DDG-995 JEONGJO</text>
+    </g>
+  </g>
+</svg>

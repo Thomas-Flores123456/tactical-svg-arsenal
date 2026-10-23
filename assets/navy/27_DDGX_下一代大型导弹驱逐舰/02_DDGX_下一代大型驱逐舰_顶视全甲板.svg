@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 360" width="1100" height="360" data-asset-id="naval.ddgx.top" style="background:#080a0b;">
+  <defs>
+    <style>
+      svg { fill: none; stroke-linecap: butt; }
+      .s-dim { stroke: #2c3b40; stroke-width: 1; }
+      .s-line { stroke: #5f7c84; stroke-width: 1; }
+      .s-hi { stroke: #d4e3e6; stroke-width: 1.2; }
+      .s-alert { stroke: #ff5a36; stroke-width: 1.4; }
+      .s-focus { stroke: #38bdf8; stroke-width: 1.4; }
+      .f-dim { fill: #2c3b40; stroke: none; }
+      .f-line { fill: #5f7c84; stroke: none; }
+      .f-hi { fill: #d4e3e6; stroke: none; }
+      .f-alert { fill: #ff5a36; stroke: none; }
+      .f-panel { fill: #0c1113; }
+      text { font-family: "Rajdhani", "Bahnschrift", "DIN Alternate", "Microsoft YaHei", sans-serif; letter-spacing: 0.12em; }
+      text:not([stroke]) { stroke: none; }
+      text:not([fill]) { fill: #cfdde0; }
+      text:not([font-size]):not(.cap):not(.big) { font-size: 10px; }
+      text.cap { letter-spacing: 0.2em; text-transform: uppercase; }
+      text.cap:not([fill]) { fill: #8aa1a7; }
+      text.cap:not([font-size]) { font-size: 8.5px; }
+      text.mono { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; letter-spacing: 0.06em; }
+      text.big { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; font-weight: 600; letter-spacing: 0.08em; }
+      text.big:not([font-size]) { font-size: 18px; }
+      text.big:not([fill]) { fill: #d4e3e6; }
+      text.alert { fill: #ff5a36; }
+    </style>
+    <pattern id="cad-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#10181c" stroke-width="1"/>
+      <circle cx="20" cy="20" r="0.8" fill="#1b262b"/>
+    </pattern>
+    <pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#ff5a36" stroke-width="1.2" stroke-opacity="0.35"/>
+    </pattern>
+  </defs>
+
+  <!-- 1. 工程蓝图暗色底板与坐标网格图层 -->
+  <g id="layer-backdrop">
+    <rect x="0" y="0" width="1100" height="360" fill="#080a0b"/>
+    <rect x="20" y="20" width="1060" height="320" fill="url(#cad-grid)" stroke="#2c3b40" stroke-width="1"/>
+    <path d="M 20 36 V 20 H 36 M 1064 20 H 1080 V 36 M 20 324 V 340 H 36 M 1064 340 H 1080 V 324" fill="none" stroke="#38bdf8" stroke-width="1.5"/>
+    <line x1="20" y1="54" x2="1080" y2="54" stroke="#2c3b40" stroke-width="1"/>
+    <line x1="20" y1="314" x2="1080" y2="314" stroke="#2c3b40" stroke-width="1"/>
+    <text x="34" y="42" class="p mono" fill="#38bdf8" font-size="9.5" font-weight="bold">US NAVY DDG(X) NEXT-GEN DESTROYER (DDG-145) · ORTHOGRAPHIC FULL DECK PLAN</text>
+    <text x="1066" y="42" text-anchor="end" class="p cap" fill="#d4e3e6" font-size="9.5">美国海军 DDG(X) 下一代大型导弹驱逐舰 · 顶视全甲板与双体制垂发总图</text>
+    <text x="34" y="331" class="p mono" fill="#8aa1a7" font-size="9.5">LOA: 180.0M · BEAM: 21.6M (8.33:1) · 12×HYPERSONIC CPS + 96×MK41 · 600KW LASER · 2×SEARAM · DPM PLUG · REF: UID-101</text>
+    <text x="1066" y="331" text-anchor="end" class="p mono" fill="#5f7c84" font-size="9.5">POSEIDON NAVAL CAD ASSET · TRUE 1:1 ASPECT (8.33:1)</text>
+  </g>
+
+  <!-- 2. 舰艇核心 CAD 矢量图层 (1:1 真实长宽比 8.33:1 严格锁定：舰长 390u=180.0m，舰宽 46.8u=21.6m，Y=20.6..67.4) -->
+  <g id="layer-ship-cad">
+    <g transform="translate(56.0,96.0) scale(2.380,2.380)">
+
+      <!-- 0. 顶视纵中剖面基准线与上/下净空区工程标注 -->
+      <line x1="12" y1="44.0" x2="416" y2="44.0" stroke="#2c3b40" stroke-width="0.6" stroke-dasharray="6 3"/>
+      <text x="20" y="13.5" class="mono" font-size="2.5" fill="#38bdf8">FWD ARSENAL: 12×HYPERSONIC CPS (2×6 LARGE TUBES) + 32×MK41 VLS + 600KW HELIOS LASER</text>
+      <text x="410" y="13.5" text-anchor="end" class="mono" font-size="2.5" fill="#ff5a36">AFT: 64×MK41 + 2×SEARAM + 150KW LASER</text>
+
+      <!-- 1. DDG(X) 隐身穿浪折角主船体顶视外廓 (X=20..410, 最大舰宽严格落在 Y=20.6..67.4) -->
+      <polygon points="20,25.5 76,22.2 128,20.6 284,20.6 346,26.0 382,33.5 410,44.0 382,54.5 346,62.0 284,67.4 128,67.4 76,65.8 20,62.5"
+               fill="#0a1822" stroke="#d4e3e6" stroke-width="1.4"/>
+      <!-- 隐身内倾折角甲板内框边线 -->
+      <polygon points="23,27.0 78,24.0 130,22.5 282,22.5 344,27.8 379,35.0 403,44.0 379,53.0 344,60.2 282,65.5 130,65.5 78,64.0 23,61.0"
+               fill="#0d202c" stroke="#38bdf8" stroke-width="0.85"/>
+
+      <!-- 2. 舰首 AN/SQS-53C 球鼻艏声呐水下虚线投影 + 隐身防浪板 + 127mm Mk 45 Mod 4 隐身主炮 (X=358..412) -->
+      <g id="bow-gun-sqs53c-top">
+        <path d="M 394 37.5 C 406 38.5 412 41.0 412 44.0 C 412 47.0 406 49.5 394 50.5"
+              fill="#261014" fill-opacity="0.5" stroke="#ff5a36" stroke-width="0.8" stroke-dasharray="2.2 1.2"/>
+        <!-- 舰首 V 形隐身防浪挡板与中轴线 -->
+        <polyline points="380,34.5 390,44.0 380,53.5" fill="none" stroke="#38bdf8" stroke-width="0.85"/>
+        <line x1="384" y1="44.0" x2="408" y2="44.0" stroke="#4a6368" stroke-width="0.8"/>
+
+        <!-- 舰首 127mm/62 Mk 45 Mod 4 多面体隐身主炮塔 (炮管朝右 +X, X=360..393) -->
+        <polygon points="360,38.8 369,37.0 376,39.2 376,48.8 369,51.0 360,49.2" fill="#163244" stroke="#d4e3e6" stroke-width="1.15"/>
+        <rect x="363.5" y="41.2" width="6.5" height="5.6" fill="#09151e" stroke="#38bdf8" stroke-width="0.65"/>
+        <line x1="376" y1="44.0" x2="393" y2="44.0" stroke="#d4e3e6" stroke-width="1.5"/>
+      </g>
+
+      <!-- 3. 前甲板双体制导弹武库：前段 12单元 (2×6) 高超音速大直径垂发 + 后段 32单元 (4×8) Mk 41 垂发 (X=298..356) -->
+      <g id="foredeck-dual-vls-top">
+        <!-- 3.1 前段：12单元 (2×6) 大口径高超音速导弹垂发模块 (IRCPS Hypersonic Large-Diameter VLS · #ff5a36 警示橘红大圆筒井, X=330..356) -->
+        <rect x="330.0" y="33.2" width="26.0" height="21.6" rx="1.4" fill="#1c0b0e" stroke="#ff5a36" stroke-width="1.05"/>
+        <line x1="330.0" y1="44.0" x2="356.0" y2="44.0" stroke="#2c3b40" stroke-width="0.65" stroke-dasharray="2.5 1.2"/>
+        <!-- 左舷列 6 具大直径高超音速发射圆筒 (Y=38.6) -->
+        <g fill="#2b0e12" stroke="#ff5a36" stroke-width="0.8">
+          <circle cx="333.2" cy="38.6" r="1.75"/><circle cx="337.1" cy="38.6" r="1.75"/><circle cx="341.0" cy="38.6" r="1.75"/>
+          <circle cx="344.9" cy="38.6" r="1.75"/><circle cx="348.8" cy="38.6" r="1.75"/><circle cx="352.7" cy="38.6" r="1.75"/>
+          <!-- 右舷列 6 具大直径高超音速发射圆筒 (Y=49.4) -->
+          <circle cx="333.2" cy="49.4" r="1.75"/><circle cx="337.1" cy="49.4" r="1.75"/><circle cx="341.0" cy="49.4" r="1.75"/>
+          <circle cx="344.9" cy="49.4" r="1.75"/><circle cx="348.8" cy="49.4" r="1.75"/><circle cx="352.7" cy="49.4" r="1.75"/>
+        </g>
+        <!-- 弹头中心金色高光点 -->
+        <g fill="#eab308">
+          <circle cx="333.2" cy="38.6" r="0.55"/><circle cx="337.1" cy="38.6" r="0.55"/><circle cx="341.0" cy="38.6" r="0.55"/>
+          <circle cx="344.9" cy="38.6" r="0.55"/><circle cx="348.8" cy="38.6" r="0.55"/><circle cx="352.7" cy="38.6" r="0.55"/>
+          <circle cx="333.2" cy="49.4" r="0.55"/><circle cx="337.1" cy="49.4" r="0.55"/><circle cx="341.0" cy="49.4" r="0.55"/>
+          <circle cx="344.9" cy="49.4" r="0.55"/><circle cx="348.8" cy="49.4" r="0.55"/><circle cx="352.7" cy="49.4" r="0.55"/>
+        </g>
+
+        <!-- 3.2 后段：32单元 (4×8) Mk 41 Baseline 10 通用垂发矩阵 (#38bdf8 战术青, X=299..327) -->
+        <rect x="299.0" y="32.8" width="28.0" height="22.4" rx="1.0" fill="#07131c" stroke="#38bdf8" stroke-width="0.95"/>
+        <path d="M 306.0 32.8 V 55.2 M 313.0 32.8 V 55.2 M 320.0 32.8 V 55.2
+                 M 299.0 35.6 H 327.0 M 299.0 38.4 H 327.0 M 299.0 41.2 H 327.0 M 299.0 44.0 H 327.0
+                 M 299.0 46.8 H 327.0 M 299.0 49.6 H 327.0 M 299.0 52.4 H 327.0"
+              stroke="#38bdf8" stroke-width="0.5"/>
+        <line x1="299.0" y1="44.0" x2="327.0" y2="44.0" stroke="#d4e3e6" stroke-width="0.75"/>
+      </g>
+
+      <!-- 4. 舰桥前阶梯 B 炮位平台：600kW HELIOS 高能固态激光武器转塔与锁定光束 (X=280..298, Y=35.5..52.5) -->
+      <g id="helios-600kw-top">
+        <polygon points="280,34.5 292,36.5 296,40.0 296,48.0 292,51.5 280,53.5" fill="#102432" stroke="#38bdf8" stroke-width="0.95"/>
+        <circle cx="287.5" cy="44.0" r="4.0" fill="#163244" stroke="#d4e3e6" stroke-width="0.9"/>
+        <circle cx="287.5" cy="44.0" r="1.6" fill="#38bdf8"/>
+        <!-- 向右前上方锁定的高能激光光束 -->
+        <line x1="289.0" y1="43.2" x2="318.0" y2="27.5" stroke="#38bdf8" stroke-width="1.2" stroke-dasharray="3 1.2"/>
+        <line x1="289.0" y1="43.2" x2="318.0" y2="27.5" stroke="#eab308" stroke-width="0.5"/>
+      </g>
+
+      <!-- 5. 全封闭多面体内倾隐身舰桥 (4×AN/SPY-6(V)1/X 大盾) + 一体化金字塔主桅 + 隐身烟囱 + DPM 模块增长段 (X=140..280) -->
+      <g id="stealth-deckhouse-top">
+        <!-- 5.1 前隐身八角翼桥与四面折角 14尺 AN/SPY-6(V)1/X 氮化镓相控阵大盾 (X=224..280, Y=22.8..65.2) -->
+        <polygon points="224,23.5 264,23.5 280,31.5 280,56.5 264,64.5 224,64.5 232,56.5 232,31.5"
+                 fill="#122836" stroke="#d4e3e6" stroke-width="1.25"/>
+        <!-- 四面折角 AN/SPY-6(V)1/X 阵面高亮边条 -->
+        <line x1="265" y1="24.0" x2="279" y2="31.0" stroke="#38bdf8" stroke-width="1.8"/>
+        <line x1="265" y1="64.0" x2="279" y2="57.0" stroke="#38bdf8" stroke-width="1.8"/>
+        <line x1="224.5" y1="24.0" x2="231.5" y2="31.0" stroke="#38bdf8" stroke-width="1.6"/>
+        <line x1="224.5" y1="64.0" x2="231.5" y2="57.0" stroke="#38bdf8" stroke-width="1.6"/>
+        <!-- 两舷 SEWIP Block 3 电子战有源相控阵贴片 -->
+        <rect x="242" y="24.2" width="14" height="2.6" fill="#163244" stroke="#eab308" stroke-width="0.75"/>
+        <rect x="242" y="61.2" width="14" height="2.6" fill="#163244" stroke="#eab308" stroke-width="0.75"/>
+
+        <!-- 中央全封闭一体化复合金字塔综合射频主桅杆俯视同心台体 (cx=248.0, cy=44.0) -->
+        <polygon points="236,34.0 258,34.0 264,38.5 264,49.5 258,54.0 236,54.0" fill="#0d202c" stroke="#d4e3e6" stroke-width="1.05"/>
+        <rect x="241" y="38.5" width="14" height="11.0" fill="#18384c" stroke="#38bdf8" stroke-width="0.9"/>
+        <circle cx="248.0" cy="44.0" r="2.4" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.7"/>
+
+        <!-- 5.2 舯部内倾隐身红外抑制燃气轮机烟囱罩 (Stealth IR-Suppressed Uptakes, X=176..224, Y=24.5..63.5) -->
+        <polygon points="176,25.0 222,24.2 224,28.0 224,60.0 222,63.8 176,63.0" fill="#0f2330" stroke="#d4e3e6" stroke-width="1.15"/>
+        <!-- 双联红外抑制黑色百叶排气井 -->
+        <rect x="184" y="29.0" width="14" height="11.5" rx="1.0" fill="#04080b" stroke="#38bdf8" stroke-width="0.85"/>
+        <rect x="184" y="47.5" width="14" height="11.5" rx="1.0" fill="#04080b" stroke="#38bdf8" stroke-width="0.85"/>
+        <rect x="203" y="31.5" width="12" height="25.0" rx="1.0" fill="#04080b" stroke="#38bdf8" stroke-width="0.8"/>
+
+        <!-- 5.3 预留模块增长段 (Destroyer Payload Module Plug · DPM, X=142..174, Y=20.8..67.2) + IPS 全电母线透视 -->
+        <rect x="142.0" y="21.0" width="32.0" height="46.0" fill="#142c3c" fill-opacity="0.32" stroke="#eab308" stroke-width="0.95" stroke-dasharray="3 1.5"/>
+        <rect x="146.0" y="27.5" width="24.0" height="33.0" fill="#0d2230" stroke="#eab308" stroke-width="0.8" stroke-dasharray="2.2 1.2"/>
+        <!-- 内部 75MW IPS HVDC 高压直流母线与脉冲储能库 (Energy Magazine) 透视 -->
+        <rect x="150.0" y="36.5" width="16.0" height="15.0" rx="1.2" fill="#1c0d10" fill-opacity="0.7" stroke="#ff5a36" stroke-width="0.75"/>
+        <line x1="94.0" y1="44.0" x2="287.5" y2="44.0" stroke="#eab308" stroke-width="0.9" stroke-dasharray="3.5 1.5"/>
+        <text x="158.0" y="45.0" text-anchor="middle" class="mono" font-size="2.3" fill="#eab308">DPM PLUG</text>
+      </g>
+
+      <!-- 6. 后部 64单元 (8×8) Mk 41 通用垂发矩阵 (X=106..138, Y=31.2..56.8) -->
+      <g id="aft-64-mk41-top">
+        <rect x="106.5" y="31.2" width="31.0" height="25.6" rx="1.0" fill="#07131c" stroke="#d4e3e6" stroke-width="1.05"/>
+        <path d="M 110.4 31.2 V 56.8 M 114.2 31.2 V 56.8 M 118.1 31.2 V 56.8 M 122.0 31.2 V 56.8
+                 M 125.9 31.2 V 56.8 M 129.8 31.2 V 56.8 M 133.6 31.2 V 56.8
+                 M 106.5 34.4 H 137.5 M 106.5 37.6 H 137.5 M 106.5 40.8 H 137.5 M 106.5 44.0 H 137.5
+                 M 106.5 47.2 H 137.5 M 106.5 50.4 H 137.5 M 106.5 53.6 H 137.5"
+              stroke="#38bdf8" stroke-width="0.5"/>
+        <line x1="106.5" y1="44.0" x2="137.5" y2="44.0" stroke="#d4e3e6" stroke-width="0.8"/>
+      </g>
+
+      <!-- 7. 后部双 MH-60R / MQ-8C 隐身机库 + 顶置 2×21联装 SeaRAM + 后150kW激光近防塔 (X=68..105, Y=24.5..63.5) -->
+      <g id="aft-hangar-searam-top">
+        <polygon points="68,25.5 104,24.5 105,63.5 68,62.5" fill="#102432" stroke="#d4e3e6" stroke-width="1.2"/>
+        <!-- 左/右双机库分界与顶盖 -->
+        <rect x="70" y="28.0" width="30" height="13.5" fill="#163042" stroke="#38bdf8" stroke-width="0.7"/>
+        <rect x="70" y="46.5" width="30" height="13.5" fill="#163042" stroke="#38bdf8" stroke-width="0.7"/>
+        <!-- 机库后中轴：150kW 激光近防武器球罩 (cx=96.5, cy=44.0) -->
+        <circle cx="96.5" cy="44.0" r="3.6" fill="#18384c" stroke="#38bdf8" stroke-width="0.9"/>
+        <circle cx="96.5" cy="44.0" r="1.4" fill="#d4e3e6"/>
+        <!-- 机库顶左/右两座 21联装 SeaRAM (RIM-116C) 近防导弹发射器 (X=81.5, Y=34.5 &amp; Y=53.5) -->
+        <rect x="76.5" y="31.5" width="9.5" height="6.0" rx="1.0" fill="#1c1012" stroke="#ff5a36" stroke-width="0.95"/>
+        <circle cx="81.2" cy="34.5" r="1.8" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.6"/>
+        <rect x="76.5" y="50.5" width="9.5" height="6.0" rx="1.0" fill="#1c1012" stroke="#ff5a36" stroke-width="0.95"/>
+        <circle cx="81.2" cy="53.5" r="1.8" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.6"/>
+      </g>
+
+      <!-- 8. 舰尾直升机起降甲板 (145 着舰标 + RAST 助降轨 + 驻留 MH-60R 海鹰反潜直升机, X=20..68) -->
+      <g id="stern-helideck-mh60r">
+        <polygon points="22,27.0 68,25.8 68,62.2 22,61.0" fill="#08131a" stroke="#d4e3e6" stroke-width="1.0"/>
+        <!-- 两侧防坠网虚线 -->
+        <line x1="24" y1="25.0" x2="66" y2="23.8" stroke="#38bdf8" stroke-width="0.95" stroke-dasharray="3 1.5"/>
+        <line x1="24" y1="63.0" x2="66" y2="64.2" stroke="#38bdf8" stroke-width="0.95" stroke-dasharray="3 1.5"/>
+        <!-- RAST 熊阱双牵引轨道与白色同心起降圈 -->
+        <line x1="45" y1="44.0" x2="68" y2="35.5" stroke="#38bdf8" stroke-width="0.75" stroke-dasharray="2.5 1.5"/>
+        <line x1="45" y1="44.0" x2="68" y2="52.5" stroke="#38bdf8" stroke-width="0.75" stroke-dasharray="2.5 1.5"/>
+        <circle cx="45.0" cy="44.0" r="10.2" fill="none" stroke="#d4e3e6" stroke-width="1.15"/>
+        <circle cx="45.0" cy="44.0" r="3.2" fill="none" stroke="#38bdf8" stroke-width="0.85"/>
+        <text x="28.0" y="46.2" text-anchor="middle" class="mono" font-size="5.2" fill="#d4e3e6" font-weight="bold">145</text>
+
+        <!-- 驻留 1架展开四叶旋翼的 MH-60R「海鹰」(Seahawk) 反潜直升机 (cx=45.0, cy=44.0) -->
+        <g transform="translate(45.0, 44.0)">
+          <path d="M -8.5 0 L -2.0 -1.8 L 6.5 -2.0 C 8.5 -2.0 9.5 -0.8 9.5 0 C 9.5 0.8 8.5 2.0 6.5 2.0 L -2.0 1.8 Z"
+                fill="#163244" stroke="#d4e3e6" stroke-width="0.85"/>
+          <rect x="-8.2" y="-3.2" width="1.4" height="3.2" fill="#18384c" stroke="#38bdf8" stroke-width="0.6"/>
+          <!-- 四叶主旋翼 -->
+          <line x1="-6.8" y1="-6.8" x2="10.8" y2="6.8" stroke="#d4e3e6" stroke-width="0.95"/>
+          <line x1="-6.8" y1="6.8" x2="10.8" y2="-6.8" stroke="#38bdf8" stroke-width="0.95"/>
+          <circle cx="2.0" cy="0" r="1.3" fill="#ff5a36" stroke="#d4e3e6" stroke-width="0.5"/>
+        </g>
+      </g>
+
+      <!-- 9. 底部总尺度与 IPS / 模块化扩展工程标注 -->
+      <text x="20" y="76.5" class="mono" font-size="2.5" fill="#eab308">75MW INTEGRATED POWER SYSTEM (IPS) · HVDC SMART GRID · DPM MODULAR PAYLOAD PLUG</text>
+      <text x="410" y="76.5" text-anchor="end" class="mono" font-size="2.5" fill="#38bdf8">BEAM: 21.6M · LOA: 180.0M (8.33:1)</text>
+
+    </g>
+  </g>
+</svg>

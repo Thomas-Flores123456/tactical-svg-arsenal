@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 320" width="1100" height="320" data-asset-id="naval.yuri.kraken.side" style="background:#080a0b;">
+  <defs>
+    <style>
+      svg { fill: none; stroke-linecap: butt; }
+      .s-dim { stroke: #2c3b40; stroke-width: 1; }
+      .s-line { stroke: #5f7c84; stroke-width: 1; }
+      .s-hi { stroke: #d4e3e6; stroke-width: 1.2; }
+      .s-alert { stroke: #ff5a36; stroke-width: 1.4; }
+      .s-focus { stroke: #38bdf8; stroke-width: 1.4; }
+      .f-dim { fill: #2c3b40; stroke: none; }
+      .f-line { fill: #5f7c84; stroke: none; }
+      .f-hi { fill: #d4e3e6; stroke: none; }
+      .f-alert { fill: #ff5a36; stroke: none; }
+      .f-panel { fill: #0c1113; }
+      text { font-family: "Rajdhani", "Bahnschrift", "DIN Alternate", "Microsoft YaHei", sans-serif; letter-spacing: 0.12em; }
+      text:not([stroke]) { stroke: none; }
+      text:not([fill]) { fill: #cfdde0; }
+      text:not([font-size]):not(.cap):not(.big) { font-size: 10px; }
+      text.cap { letter-spacing: 0.2em; text-transform: uppercase; }
+      text.cap:not([fill]) { fill: #8aa1a7; }
+      text.cap:not([font-size]) { font-size: 8.5px; }
+      text.mono { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; letter-spacing: 0.06em; }
+      text.big { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; font-weight: 600; letter-spacing: 0.08em; }
+      text.big:not([font-size]) { font-size: 18px; }
+      text.big:not([fill]) { fill: #d4e3e6; }
+      text.alert { fill: #ff5a36; }
+    </style>
+    <pattern id="cad-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#10181c" stroke-width="1"/>
+      <circle cx="20" cy="20" r="0.8" fill="#1b262b"/>
+    </pattern>
+    <pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#ff5a36" stroke-width="1.2" stroke-opacity="0.35"/>
+    </pattern>
+  </defs>
+
+  <!-- 1. 工程蓝图暗色底板与坐标网格图层 -->
+  <g id="layer-backdrop">
+    <rect x="0" y="0" width="1100" height="320" fill="#080a0b"/>
+    <rect x="20" y="20" width="1060" height="280" fill="url(#cad-grid)" stroke="#2c3b40" stroke-width="1"/>
+    <path d="M 20 36 V 20 H 36 M 1064 20 H 1080 V 36 M 20 284 V 300 H 36 M 1064 300 H 1080 V 284" fill="none" stroke="#38bdf8" stroke-width="1.5"/>
+    <line x1="20" y1="54" x2="1080" y2="54" stroke="#2c3b40" stroke-width="1"/>
+    <line x1="20" y1="274" x2="1080" y2="274" stroke="#2c3b40" stroke-width="1"/>
+    <text x="34" y="42" class="p mono" fill="#38bdf8" font-size="9.5" font-weight="bold">YURI KRAKEN-CLASS BIOMIMETIC HUNTER UUV (KRK-09) · STARBOARD PROFILE &amp; BIO-ELECTRIC CUTAWAY</text>
+    <text x="1066" y="42" text-anchor="end" class="p cap" fill="#d4e3e6" font-size="9.5">尤里「克拉肯级」多节仿生强磁猎杀潜航器 · 侧视立面与电鳗电容/等离子炬剖面</text>
+    <text x="34" y="291" class="p mono" fill="#8aa1a7" font-size="9.5">420T SUBMERGED · 48.0M×9.6M · 4×SMA MAGNETIC TENTACLES · PLASMA TORCH · 50KV BIO-ELECTRIC CAPACITOR · MHD JET · UID-28/07</text>
+    <text x="1066" y="291" text-anchor="end" class="p mono" fill="#5f7c84" font-size="9.5">POSEIDON NAVAL CAD ASSET · TRUE 1:1 ASPECT (5.00:1)</text>
+  </g>
+
+  <!-- 2. 舰艇核心 CAD 矢量图层 (1:1 真实长宽比等比缩放 scale(2.380,2.380) 锁定输出) -->
+  <g id="layer-ship-cad">
+    <g transform="translate(56.0,58.0) scale(2.380,2.380)">
+
+      <!-- 0. 顶部净空区：左上方系统标注 + 右上方「缠绕敌舰螺旋桨轴系 + 50,000V 高压放电 + 等离子切开龙骨」战术猎杀作业示意图 -->
+      <g id="kraken-tactical-kill-inset">
+        <text x="20" y="9.5" class="mono" font-size="2.5" fill="#38bdf8">BIOMIMETIC ABYSSAL HUNTER UUV: 6-SEGMENT CHITIN-TITANIUM MANTLE · SHAFTLESS MHD WATER-JET</text>
+        <text x="20" y="13.8" class="mono" font-size="2.4" fill="#eab308">BIO-ENGINEERED ELECTROPLAX ORGAN (UID-07) + 50,000V SUPERCONDUCTING PULSE CAPACITOR BANK</text>
+
+        <!-- 右上方战术猎杀剖面示意图框 (X=276..410, Y=5.2..24.2) -->
+        <rect x="276" y="5.2" width="134" height="19.0" rx="1.2" fill="#08131a" stroke="#ff5a36" stroke-width="0.75"/>
+        <!-- 敌舰船底龙骨装甲与螺旋桨轴系剖面 -->
+        <path d="M 280 8.8 L 344 8.8 L 348 13.5 L 280 13.5 Z" fill="#1c1114" stroke="#d4e3e6" stroke-width="0.65"/>
+        <line x1="284" y1="16.5" x2="322" y2="14.5" stroke="#eab308" stroke-width="1.0"/>
+        <ellipse cx="286" cy="16.8" rx="1.4" ry="3.8" fill="#eab308" stroke="#d4e3e6" stroke-width="0.5"/>
+        <!-- 机械触腕缠绕锁死敌舰推进轴 + 50kV 电弧放电 + 等离子炬切穿船底龙骨 -->
+        <path d="M 294 21.5 C 292 14.0 298 11.5 304 16.5 C 308 20.5 314 12.0 318 16.0" fill="none" stroke="#38bdf8" stroke-width="1.2" stroke-dasharray="2.2 0.8"/>
+        <polyline points="300,15.5 305,11.2 309,14.8 315,10.5 320,13.8" fill="none" stroke="#eab308" stroke-width="0.7"/>
+        <!-- 等离子切割喷流切穿船底 -->
+        <polygon points="334,20.5 330,9.5 334,7.2 338,9.5" fill="#ff5a36" fill-opacity="0.85"/>
+        <circle cx="334" cy="10.2" r="2.2" fill="#eab308"/>
+        <text x="352" y="10.2" class="mono" font-size="2.3" fill="#ff5a36" font-weight="bold">HULL-BREACH MODE:</text>
+        <text x="352" y="14.2" class="mono" font-size="2.2" fill="#38bdf8">1. CLAMP PROP SHAFT</text>
+        <text x="352" y="18.0" class="mono" font-size="2.2" fill="#eab308">2. 50,000V EMP SHOCK</text>
+        <text x="352" y="21.8" class="mono" font-size="2.2" fill="#ff5a36">3. PLASMA KEEL CUT</text>
+      </g>
+
+      <!-- 1. 尾部：无轴静音磁流体喷水推进器 (Shaftless MHD Water-Jet · X=20..78, Y=42..64) + 矢量尾喷口 + 脑波水声天线 -->
+      <g id="stern-mhd-propulsor">
+        <!-- 背部高频遥控水声与心灵信标接收鳍 (Psychic / Hydro-Acoustic Command Dorsal Fin, X=34..74, Y=26..44) -->
+        <polygon points="34,44.5 46,27.5 56,27.5 74,40.5" fill="#0c1d28" stroke="#d4e3e6" stroke-width="1.1"/>
+        <line x1="48" y1="27.5" x2="54" y2="42.0" stroke="#38bdf8" stroke-width="0.75"/>
+        <circle cx="46.5" cy="27.5" r="1.2" fill="#ff5a36" stroke="#d4e3e6" stroke-width="0.5"/>
+        <circle cx="51.0" cy="27.5" r="0.9" fill="#eab308"/>
+
+        <!-- 腹部稳定腹鳍 -->
+        <polygon points="36,59.5 64,63.5 54,73.5 42,72.0" fill="#0c1d28" stroke="#d4e3e6" stroke-width="1.0"/>
+        <line x1="48" y1="61.5" x2="46" y2="72.5" stroke="#38bdf8" stroke-width="0.65"/>
+
+        <!-- 尾部矢量偏转磁流体喷口 (Vectored MHD Nozzle · 零螺旋桨零空泡, X=20..42, Y=46..58) -->
+        <polygon points="20,48.5 34,45.2 42,44.5 42,59.5 34,58.8 20,55.5" fill="#0e2432" stroke="#38bdf8" stroke-width="1.15"/>
+        <polygon points="20,49.8 28,48.2 28,55.8 20,54.2" fill="#1c0d10" stroke="#ff5a36" stroke-width="0.9"/>
+        <!-- 磁流体超导励磁线圈环与高速离子水流尾迹 -->
+        <g stroke="#eab308" stroke-width="0.95" stroke-dasharray="1.6 1.0">
+          <line x1="31" y1="46.0" x2="31" y2="58.0"/>
+          <line x1="35" y1="45.4" x2="35" y2="58.6"/>
+          <line x1="39" y1="44.8" x2="39" y2="59.2"/>
+        </g>
+        <line x1="11" y1="52.0" x2="20" y2="52.0" stroke="#38bdf8" stroke-width="1.2" stroke-dasharray="2.5 1.2"/>
+        <line x1="14" y1="49.8" x2="20" y2="50.5" stroke="#38bdf8" stroke-width="0.75" stroke-dasharray="1.8 1.0"/>
+        <line x1="14" y1="54.2" x2="20" y2="53.5" stroke="#38bdf8" stroke-width="0.75" stroke-dasharray="1.8 1.0"/>
+        <text x="20" y="39.5" class="mono" font-size="2.3" fill="#38bdf8">SHAFTLESS MHD JET</text>
+      </g>
+
+      <!-- 2. 多节流线型深海抗压几丁质-钛合金复合装甲躯干 (6-Segment Articulated Chitin-Titanium Mantle · X=42..248, Y=33.5..68.5) -->
+      <g id="articulated-6segment-mantle">
+        <!-- 腹部暗红高强防腐蚀合成肌束底衬与进水腮道 (Ventral MHD Intake Gills) -->
+        <path d="M 42 56.0 L 244 56.0 L 236 66.8 L 92 67.5 C 68 67.5 52 62.5 42 59.0 Z"
+              fill="#240e12" stroke="#ff5a36" stroke-width="1.0"/>
+        <!-- 腹部腮裂式磁流体进水涵道格栅 (X=74..98, Y=61.5..66.8) -->
+        <polygon points="74,61.5 98,61.5 94,66.8 70,65.5" fill="#050b0f" stroke="#38bdf8" stroke-width="0.85"/>
+        <line x1="77" y1="61.5" x2="74" y2="65.8" stroke="#38bdf8" stroke-width="0.65"/>
+        <line x1="82" y1="61.5" x2="79" y2="66.0" stroke="#38bdf8" stroke-width="0.65"/>
+        <line x1="87" y1="61.5" x2="84" y2="66.2" stroke="#38bdf8" stroke-width="0.65"/>
+        <line x1="92" y1="61.5" x2="89" y2="66.5" stroke="#38bdf8" stroke-width="0.65"/>
+
+        <!-- 主躯干 6 节铰接几丁质钛合金背甲外廓 (SEG-06 至 SEG-01, 带柔性液压波纹关节) -->
+        <path d="M 42 44.5
+                 C 62 39.2 88 35.5 118 34.2
+                 L 216 33.8
+                 C 232 33.8 244 37.5 248 43.5
+                 L 248 59.5
+                 C 242 64.5 230 66.8 214 66.8
+                 L 92 66.8
+                 C 68 66.8 52 62.2 42 59.0 Z"
+              fill="#091620" fill-opacity="0.9" stroke="#d4e3e6" stroke-width="1.35"/>
+
+        <!-- 6 节铰接装甲板分节缝与液压球铰环 (Articulated Segment Joints SEG-06..SEG-01) -->
+        <g stroke="#38bdf8" stroke-width="0.9">
+          <path d="M 74 38.0 C 70 46.5 70 55.5 74 64.2"/>
+          <path d="M 106 34.8 C 102 45.0 102 56.5 106 66.8"/>
+          <path d="M 140 34.0 C 136 45.0 136 56.5 140 66.8"/>
+          <path d="M 174 33.9 C 170 45.0 170 56.5 174 66.8"/>
+          <path d="M 208 33.9 C 204 45.0 204 56.5 208 66.8"/>
+        </g>
+        <!-- 背部几丁质叠甲棘突与编号 KRK-09 -->
+        <polygon points="82,36.8 90,33.5 104,34.8" fill="#142c3c" stroke="#38bdf8" stroke-width="0.75"/>
+        <polygon points="114,34.4 122,31.2 136,34.0" fill="#142c3c" stroke="#38bdf8" stroke-width="0.75"/>
+        <polygon points="148,34.0 156,30.8 170,33.9" fill="#142c3c" stroke="#38bdf8" stroke-width="0.75"/>
+        <polygon points="182,33.9 190,30.8 204,33.9" fill="#142c3c" stroke="#38bdf8" stroke-width="0.75"/>
+        <text x="225" y="42.5" text-anchor="middle" class="mono" font-size="4.8" fill="#d4e3e6" font-weight="bold">KRK-09</text>
+
+        <!-- 侧面仿生波动推进侧鳍剖面 (Undulating Biomimetic Pectoral Fin, X=84..192, Y=54.5..60.5) -->
+        <path d="M 84 57.5 C 104 53.5 124 61.5 144 56.5 C 164 51.5 178 60.5 196 56.8"
+              fill="#122836" fill-opacity="0.75" stroke="#38bdf8" stroke-width="1.15"/>
+      </g>
+
+      <!-- 3. 中段核心内透视：仿电鳗高密度生物发电腺体阵列 + 50,000V 超导脉冲电容舱 (X=76..212, Y=42.5..62.5) -->
+      <g id="bio-electric-capacitor-cutaway">
+        <rect x="76" y="43.5" width="134" height="17.8" rx="3.0" fill="#060f15" fill-opacity="0.86" stroke="#38bdf8" stroke-width="0.85" stroke-dasharray="4 2"/>
+
+        <!-- 后段：磁流体超导直线加速管道 (MHD Linear Accelerator Channel, X=78..108) -->
+        <rect x="79" y="46.5" width="28" height="11.8" rx="1.2" fill="#0c1f2c" stroke="#38bdf8" stroke-width="0.8"/>
+        <line x1="42" y1="52.0" x2="107" y2="52.4" stroke="#38bdf8" stroke-width="1.1" stroke-dasharray="2.5 1.2"/>
+
+        <!-- 中段：3组蜂窝状仿电鳗高密度生物发电细胞柱 (Bio-Electric Eel Electroplax Stacks · UID-07, X=112..166) -->
+        <g fill="#241508" stroke="#eab308" stroke-width="0.8">
+          <rect x="112" y="45.5" width="15" height="13.8" rx="1.2"/>
+          <rect x="130" y="45.5" width="15" height="13.8" rx="1.2"/>
+          <rect x="148" y="45.5" width="15" height="13.8" rx="1.2"/>
+        </g>
+        <!-- 电鳗发电腺体内部层叠离子膜纹理与生物电核心 -->
+        <g stroke="#eab308" stroke-width="0.55">
+          <line x1="114" y1="48.5" x2="125" y2="48.5"/><line x1="114" y1="52.4" x2="125" y2="52.4"/><line x1="114" y1="56.2" x2="125" y2="56.2"/>
+          <line x1="132" y1="48.5" x2="143" y2="48.5"/><line x1="132" y1="52.4" x2="143" y2="52.4"/><line x1="132" y1="56.2" x2="143" y2="56.2"/>
+          <line x1="150" y1="48.5" x2="161" y2="48.5"/><line x1="150" y1="52.4" x2="161" y2="52.4"/><line x1="150" y1="56.2" x2="161" y2="56.2"/>
+        </g>
+
+        <!-- 前段：50,000V 超导脉冲储能电容环阵列 (50kV Superconducting Pulse Capacitor Bank, X=167..206) -->
+        <rect x="167" y="45.2" width="39" height="14.4" rx="1.5" fill="#1e0c10" stroke="#ff5a36" stroke-width="0.9"/>
+        <circle cx="176.5" cy="52.4" r="4.5" fill="#2c1014" stroke="#ff5a36" stroke-width="0.75"/>
+        <circle cx="176.5" cy="52.4" r="1.6" fill="#eab308"/>
+        <circle cx="187.5" cy="52.4" r="4.5" fill="#2c1014" stroke="#ff5a36" stroke-width="0.75"/>
+        <circle cx="187.5" cy="52.4" r="1.6" fill="#eab308"/>
+        <circle cx="198.5" cy="52.4" r="4.5" fill="#2c1014" stroke="#ff5a36" stroke-width="0.75"/>
+        <circle cx="198.5" cy="52.4" r="1.6" fill="#eab308"/>
+        <!-- 高压放电母线与电弧折线直通首部触腕 -->
+        <polyline points="112,52.4 206,52.4 218,49.5 232,54.2 248,51.0" fill="none" stroke="#38bdf8" stroke-width="1.0"/>
+        <text x="144" y="28.2" text-anchor="middle" class="mono" font-size="2.4" fill="#eab308">BIO-EEL ELECTROPLAX &amp; 50KV SUPERCONDUCTING CAPACITORS</text>
+      </g>
+
+      <!-- 4. 首部：复眼水声/蓝绿激光光学传感器簇 (X=224..248) + 中央「超空泡等离子切割炬」(Supercavitating Plasma Torch, X=248..308) -->
+      <g id="bow-sensors-plasma-torch">
+        <!-- 仿头足类巨型复眼水声与蓝绿激光传感器阵列 (Compound Acoustic / Blue-Green Laser Eye Array) -->
+        <ellipse cx="236.5" cy="50.5" rx="6.8" ry="5.2" fill="#050c10" stroke="#38bdf8" stroke-width="1.05"/>
+        <ellipse cx="237.2" cy="50.5" rx="3.8" ry="2.8" fill="#18384c" stroke="#eab308" stroke-width="0.8"/>
+        <circle cx="238.2" cy="50.2" r="1.3" fill="#ff5a36"/>
+        <!-- 上/下辅助声学透镜眼 -->
+        <circle cx="242.5" cy="41.2" r="2.0" fill="#0d222e" stroke="#38bdf8" stroke-width="0.75"/>
+        <circle cx="242.5" cy="60.2" r="2.0" fill="#0d222e" stroke="#38bdf8" stroke-width="0.75"/>
+
+        <!-- 触腕环绕正中央：装甲喙状「超空泡等离子切割炬」(Supercavitating Plasma Cutting Torch · X=248..280, Y=47.5..55.5) -->
+        <polygon points="248,47.2 268,48.5 276,50.2 276,52.8 268,54.5 248,55.8" fill="#1c0d10" stroke="#ff5a36" stroke-width="1.05"/>
+        <rect x="252" y="49.5" width="16" height="4.0" fill="#0d222e" stroke="#38bdf8" stroke-width="0.7"/>
+        <!-- 向前高速喷射的超高温等离子切割电弧射流 (PLASMA TORCH JET, X=276..312) -->
+        <polygon points="276,50.2 310,51.5 276,52.8" fill="#38bdf8" fill-opacity="0.85"/>
+        <polygon points="276,50.8 298,51.5 276,52.2" fill="#eab308"/>
+        <polyline points="276,51.5 286,49.2 294,53.5 304,50.2 312,51.5" fill="none" stroke="#ff5a36" stroke-width="0.85"/>
+        <text x="295" y="57.2" text-anchor="middle" class="mono" font-size="2.3" fill="#ff5a36">PLASMA CUTTING TORCH</text>
+      </g>
+
+      <!-- 5. 核心灵魂：首部向前伸展的 4 组高强度记忆合金与合成肌束「多关节柔性机械触腕」(4×Multi-Jointed SMA Tentacle Arms · X=248..410) -->
+      <g id="four-mechanical-tentacles-side">
+        <!-- 5.1 上外侧第 1 机械触腕 (Arm #1 Dorsal-Outer · X=246..408, Y=26..40) -->
+        <path d="M 246 37.5 C 276 31.0 314 27.5 352 29.2 C 374 30.2 388 33.5 398 35.5"
+              fill="none" stroke="#0f2432" stroke-width="4.6"/>
+        <path d="M 246 37.5 C 276 31.0 314 27.5 352 29.2 C 374 30.2 388 33.5 398 35.5"
+              fill="none" stroke="#d4e3e6" stroke-width="1.25" stroke-dasharray="6.5 1.8"/>
+        <!-- 内部合成肌束液压索 (#eab308) -->
+        <path d="M 246 37.5 C 276 31.0 314 27.5 352 29.2 C 374 30.2 388 33.5 398 35.5"
+              fill="none" stroke="#eab308" stroke-width="0.65"/>
+        <!-- 触腕内侧一排发光的超导电磁吸盘 (Superconducting Magnetic Suction Cups · #38bdf8) -->
+        <g fill="#38bdf8" stroke="#08141c" stroke-width="0.4">
+          <circle cx="264" cy="36.2" r="1.35"/><circle cx="276" cy="34.2" r="1.35"/><circle cx="288" cy="32.6" r="1.35"/>
+          <circle cx="300" cy="31.5" r="1.35"/><circle cx="312" cy="30.8" r="1.35"/><circle cx="324" cy="30.5" r="1.35"/>
+          <circle cx="336" cy="30.6" r="1.3"/><circle cx="348" cy="31.0" r="1.3"/><circle cx="360" cy="31.8" r="1.25"/>
+          <circle cx="372" cy="33.0" r="1.2"/><circle cx="384" cy="34.5" r="1.15"/>
+        </g>
+        <!-- 触腕尖端：钛合金液压倍力撕裂爪 (Hydraulic Multiplier Ripping Claw · #ff5a36) -->
+        <polygon points="396,33.2 409,31.5 403,35.5 410,38.5 396,37.8" fill="#261014" stroke="#ff5a36" stroke-width="1.05"/>
+        <circle cx="397" cy="35.5" r="1.3" fill="#eab308"/>
+
+        <!-- 5.2 上内侧第 2 机械触腕 (Arm #2 Dorsal-Inner · X=248..402, Y=37..46) -->
+        <path d="M 248 42.8 C 282 39.5 322 38.2 358 40.5 C 374 41.5 384 42.8 392 44.0"
+              fill="none" stroke="#0b1b26" stroke-width="3.8"/>
+        <path d="M 248 42.8 C 282 39.5 322 38.2 358 40.5 C 374 41.5 384 42.8 392 44.0"
+              fill="none" stroke="#38bdf8" stroke-width="1.05" stroke-dasharray="5.8 1.6"/>
+        <g fill="#38bdf8">
+          <circle cx="270" cy="42.5" r="1.1"/><circle cx="284" cy="41.5" r="1.1"/><circle cx="298" cy="40.8" r="1.1"/>
+          <circle cx="312" cy="40.5" r="1.1"/><circle cx="326" cy="40.6" r="1.1"/><circle cx="340" cy="41.0" r="1.05"/>
+          <circle cx="354" cy="41.8" r="1.05"/><circle cx="368" cy="42.8" r="1.0"/><circle cx="380" cy="43.8" r="0.95"/>
+        </g>
+        <polygon points="390,42.0 402,40.8 397,44.0 402,46.8 390,45.8" fill="#261014" stroke="#ff5a36" stroke-width="0.95"/>
+
+        <!-- 5.3 下内侧第 3 机械触腕 (Arm #3 Ventral-Inner · X=248..402, Y=57..66) -->
+        <path d="M 248 59.5 C 282 63.2 322 64.5 358 62.2 C 374 61.2 384 59.8 392 58.5"
+              fill="none" stroke="#0b1b26" stroke-width="3.8"/>
+        <path d="M 248 59.5 C 282 63.2 322 64.5 358 62.2 C 374 61.2 384 59.8 392 58.5"
+              fill="none" stroke="#38bdf8" stroke-width="1.05" stroke-dasharray="5.8 1.6"/>
+        <g fill="#38bdf8">
+          <circle cx="270" cy="59.8" r="1.1"/><circle cx="284" cy="60.8" r="1.1"/><circle cx="298" cy="61.5" r="1.1"/>
+          <circle cx="312" cy="61.8" r="1.1"/><circle cx="326" cy="61.6" r="1.1"/><circle cx="340" cy="61.2" r="1.05"/>
+          <circle cx="354" cy="60.4" r="1.05"/><circle cx="368" cy="59.4" r="1.0"/><circle cx="380" cy="58.4" r="0.95"/>
+        </g>
+        <polygon points="390,56.5 402,55.5 397,58.5 402,61.5 390,60.5" fill="#261014" stroke="#ff5a36" stroke-width="0.95"/>
+
+        <!-- 5.4 下外侧第 4 机械触腕 (Arm #4 Ventral-Outer · X=246..408, Y=63..76) -->
+        <path d="M 246 64.8 C 276 71.5 314 75.0 352 73.2 C 374 72.2 388 68.8 398 66.8"
+              fill="none" stroke="#0f2432" stroke-width="4.6"/>
+        <path d="M 246 64.8 C 276 71.5 314 75.0 352 73.2 C 374 72.2 388 68.8 398 66.8"
+              fill="none" stroke="#d4e3e6" stroke-width="1.25" stroke-dasharray="6.5 1.8"/>
+        <path d="M 246 64.8 C 276 71.5 314 75.0 352 73.2 C 374 72.2 388 68.8 398 66.8"
+              fill="none" stroke="#eab308" stroke-width="0.65"/>
+        <!-- 触腕内侧一排超导电磁吸盘 (#38bdf8) -->
+        <g fill="#38bdf8" stroke="#08141c" stroke-width="0.4">
+          <circle cx="264" cy="66.2" r="1.35"/><circle cx="276" cy="68.2" r="1.35"/><circle cx="288" cy="69.8" r="1.35"/>
+          <circle cx="300" cy="70.8" r="1.35"/><circle cx="312" cy="71.6" r="1.35"/><circle cx="324" cy="71.9" r="1.35"/>
+          <circle cx="336" cy="71.8" r="1.3"/><circle cx="348" cy="71.4" r="1.3"/><circle cx="360" cy="70.6" r="1.25"/>
+          <circle cx="372" cy="69.4" r="1.2"/><circle cx="384" cy="67.8" r="1.15"/>
+        </g>
+        <!-- 触腕尖端：钛合金液压倍力撕裂爪 (#ff5a36) + 触腕间 50,000V 跃迁电弧 -->
+        <polygon points="396,64.5 410,63.8 403,66.8 409,70.8 396,69.2" fill="#261014" stroke="#ff5a36" stroke-width="1.05"/>
+        <circle cx="397" cy="66.8" r="1.3" fill="#eab308"/>
+
+        <!-- 触腕尖端之间的 50,000V 高压脉冲电弧网 -->
+        <polyline points="402,35.5 396,41.0 401,46.5 395,52.0 401,56.5 396,61.5 402,66.8"
+                  fill="none" stroke="#38bdf8" stroke-width="0.85" stroke-dasharray="2 1"/>
+        <text x="352" y="49.5" text-anchor="middle" class="mono" font-size="2.3" fill="#38bdf8">MAGNETIC SUCTION CUPS &amp; 50KV ARC</text>
+      </g>
+
+      <!-- 6. 底部总长与分段工程尺寸标尺 (LOA 48.0m = 28.0m Mantle + 20.0m SMA Tentacles · Aspect 5.00:1) -->
+      <g id="dimension-ruler" stroke="#5f7c84" stroke-width="0.6">
+        <line x1="20" y1="83.5" x2="410" y2="83.5"/>
+        <line x1="20" y1="80.5" x2="20" y2="86.0"/>
+        <line x1="75" y1="81.0" x2="75" y2="85.5"/>
+        <line x1="248" y1="81.0" x2="248" y2="85.5"/>
+        <line x1="410" y1="80.5" x2="410" y2="86.0"/>
+        <text x="47" y="82.0" text-anchor="middle" class="mono" font-size="2.4" fill="#8aa1a7">MHD JET</text>
+        <text x="161" y="82.0" text-anchor="middle" class="mono" font-size="2.5" fill="#eab308">6-SEGMENT MANTLE &amp; BIO-ELECTRIC CAPACITOR (28.0M)</text>
+        <text x="329" y="82.0" text-anchor="middle" class="mono" font-size="2.5" fill="#ff5a36">4×SMA MAGNETIC TENTACLES &amp; CLAWS (20.0M · LOA 48.0M)</text>
+      </g>
+
+    </g>
+  </g>
+</svg>

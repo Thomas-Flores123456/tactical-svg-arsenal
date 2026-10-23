@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="600" height="360" data-asset-id="naval.redoutable.bow_stern" style="background:#080a0b;">
+  <defs>
+    <style>
+      svg { fill: none; stroke-linecap: butt; }
+      .s-dim { stroke: #2c3b40; stroke-width: 1; }
+      .s-line { stroke: #5f7c84; stroke-width: 1; }
+      .s-hi { stroke: #d4e3e6; stroke-width: 1.2; }
+      .s-alert { stroke: #ff5a36; stroke-width: 1.4; }
+      .s-focus { stroke: #38bdf8; stroke-width: 1.4; }
+      .f-dim { fill: #2c3b40; stroke: none; }
+      .f-line { fill: #5f7c84; stroke: none; }
+      .f-hi { fill: #d4e3e6; stroke: none; }
+      .f-alert { fill: #ff5a36; stroke: none; }
+      .f-panel { fill: #0c1113; }
+      text { font-family: "Rajdhani", "Bahnschrift", "DIN Alternate", "Microsoft YaHei", sans-serif; letter-spacing: 0.12em; }
+      text:not([stroke]) { stroke: none; }
+      text:not([fill]) { fill: #cfdde0; }
+      text:not([font-size]):not(.cap):not(.big) { font-size: 10px; }
+      text.cap { letter-spacing: 0.2em; text-transform: uppercase; }
+      text.cap:not([fill]) { fill: #8aa1a7; }
+      text.cap:not([font-size]) { font-size: 8.5px; }
+      text.mono { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; letter-spacing: 0.06em; }
+      text.big { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; font-weight: 600; letter-spacing: 0.08em; }
+      text.big:not([font-size]) { font-size: 18px; }
+      text.big:not([fill]) { fill: #d4e3e6; }
+      text.alert { fill: #ff5a36; }
+    </style>
+    <pattern id="cad-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#10181c" stroke-width="1"/>
+      <circle cx="20" cy="20" r="0.8" fill="#1b262b"/>
+    </pattern>
+    <pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#ff5a36" stroke-width="1.2" stroke-opacity="0.35"/>
+    </pattern>
+  </defs>
+
+  <!-- 1. 工程蓝图暗色底板与坐标网格图层 -->
+  <g id="layer-backdrop">
+    <rect x="0" y="0" width="600" height="360" fill="#080a0b"/>
+    <rect x="20" y="20" width="560" height="320" fill="url(#cad-grid)" stroke="#2c3b40" stroke-width="1"/>
+    <path d="M 20 36 V 20 H 36 M 564 20 H 580 V 36 M 20 324 V 340 H 36 M 564 340 H 580 V 324" fill="none" stroke="#38bdf8" stroke-width="1.5"/>
+    <line x1="20" y1="54" x2="580" y2="54" stroke="#2c3b40" stroke-width="1"/>
+    <line x1="20" y1="314" x2="580" y2="314" stroke="#2c3b40" stroke-width="1"/>
+    <text x="34" y="42" class="p mono" fill="#38bdf8" font-size="11" font-weight="bold">MN REDOUTABLE (CGN-38) · BOW &amp; STERN TUMBLEHOME CROSS-SECTION END VIEWS</text>
+    <text x="566" y="42" text-anchor="end" class="p cap" fill="#d4e3e6" font-size="10.5">MN Redoutable「可畏级」隐身核动力武库舰 · 舰艏/舰尾多面体内倾横截面端视图</text>
+    <text x="34" y="331" class="p mono" fill="#8aa1a7" font-size="9.5">LEFT: BOW VIEW (OCTAGONAL AESA &amp; TUMBLEHOME CHINE) · RIGHT: STERN VIEW (HANGAR DOOR &amp; QUAD GOLDEN PROPS) · REF: F100-END</text>
+    <text x="566" y="331" text-anchor="end" class="p mono" fill="#5f7c84" font-size="9.5">POSEIDON NAVAL CAD ASSET · TRUE 1:1 ASPECT</text>
+  </g>
+
+  <!-- 2. 舰艇核心 CAD 矢量图层 (无损原生算子输出) -->
+  <g id="layer-ship-cad">
+    <g transform="translate(128.0,86.0) scale(2.55)">
+      <!-- 左：舰艏正视图 (Bow View · 多面体内倾折角船体 + 八角形相控阵盾 + 顶层舰桥) -->
+      <g transform="translate(0,0)">
+        <polygon points="8,44 2,36 14,22 46,22 58,36 52,44 30,48" fill="#0a1720" stroke="#d4e3e6" stroke-width="1.2"/>
+        <polygon points="16,22 22,8 38,8 44,22" fill="#0f2330" stroke="#38bdf8" stroke-width="1.1"/>
+        <line x1="2" y1="36" x2="58" y2="36" stroke="#38bdf8" stroke-width="0.8"/>
+        <circle cx="30" cy="16" r="3.5" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.7"/>
+        <ellipse cx="20" cy="52" rx="3" ry="4" fill="#eab308" stroke="#d4e3e6" stroke-width="0.6"/>
+        <ellipse cx="40" cy="52" rx="3" ry="4" fill="#eab308" stroke="#d4e3e6" stroke-width="0.6"/>
+        <text x="30" y="65" text-anchor="middle" class="p cap" fill="#38bdf8">BOW VIEW</text>
+      </g>
+      <!-- 右：舰尾正视图 (Stern View · 内倾切角尾板 + 机库门 + 水下双舵四叶金色螺旋桨) -->
+      <g transform="translate(74,0)">
+        <polygon points="8,44 2,36 14,22 46,22 58,36 52,44 30,48" fill="#0a1720" stroke="#d4e3e6" stroke-width="1.2"/>
+        <polygon points="18,22 22,8 38,8 42,22" fill="#0f2330" stroke="#d4e3e6" stroke-width="1.1"/>
+        <rect x="18" y="25" width="24" height="8" fill="#050b0e" stroke="#38bdf8" stroke-width="0.8"/>
+        <ellipse cx="18" cy="52" rx="4" ry="4.5" fill="#eab308" stroke="#d4e3e6" stroke-width="0.6"/>
+        <ellipse cx="42" cy="52" rx="4" ry="4.5" fill="#eab308" stroke="#d4e3e6" stroke-width="0.6"/>
+        <text x="30" y="65" text-anchor="middle" class="p cap" fill="#eab308">STERN VIEW</text>
+      </g>
+    </g>
+  </g>
+</svg>

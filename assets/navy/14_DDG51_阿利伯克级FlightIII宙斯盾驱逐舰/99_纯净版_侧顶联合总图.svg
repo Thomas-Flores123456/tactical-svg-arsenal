@@ -1,0 +1,318 @@
+<?xml version='1.0' encoding='utf8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 488.205" width="1200" height="488.205" data-asset-id="naval.ddg51.clean.master" data-view-kind="clean-master" data-clean-status="measured"><title>14_DDG51_阿利伯克级FlightIII宙斯盾驱逐舰 · 纯净侧顶联合图</title><metadata>Derived from 01_DDG51_阿利伯克级驱逐舰_侧视立面.svg | 02_DDG51_阿利伯克级驱逐舰_顶视全甲板.svg. Preserves original fictional/technical geometry; not independently verified engineering data. No cross-asset physical scale claim.</metadata><g id="clean-side" fill="none" transform="translate(40.000000 32.000000) scale(1.191273919) translate(-85.190000 -61.050000)"><defs>
+    <style>
+#clean-side { fill: none; stroke-linecap: butt; }
+#clean-side .s-dim { stroke: #2c3b40; stroke-width: 1; }
+#clean-side .s-line { stroke: #5f7c84; stroke-width: 1; }
+#clean-side .s-hi { stroke: #d4e3e6; stroke-width: 1.2; }
+#clean-side .s-alert { stroke: #ff5a36; stroke-width: 1.4; }
+#clean-side .s-focus { stroke: #38bdf8; stroke-width: 1.4; }
+#clean-side .f-panel { fill: #0c1113; }
+#clean-side text { font-family: "Rajdhani", "Bahnschrift", "DIN Alternate", "Microsoft YaHei", sans-serif; letter-spacing: 0.08em; }
+#clean-side text:not([stroke]) { stroke: none; }
+#clean-side text:not([fill]) { fill: #cfdde0; }
+#clean-side text.p { letter-spacing: 0.08em; }
+#clean-side text.cap { letter-spacing: 0.14em; text-transform: uppercase; }
+#clean-side text.mono { font-family: "Rajdhani", "JetBrains Mono", Consolas, "Microsoft YaHei", monospace; letter-spacing: 0.05em; }
+</style>
+    <pattern id="clean-side-grid20" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#0c151b" stroke-width="0.7" />
+    </pattern>
+    <pattern id="clean-side-grid100" width="100" height="100" patternUnits="userSpaceOnUse">
+      <path d="M 100 0 L 0 0 0 100" fill="none" stroke="#15242d" stroke-width="1" />
+      <circle cx="50" cy="50" r="0.9" fill="#233844" />
+    </pattern>
+    <pattern id="clean-side-hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#ff5a36" stroke-width="1.0" stroke-opacity="0.35" />
+    </pattern>
+  </defs>
+
+  <g id="clean-side-layer-ship-cad">
+    <g transform="translate(38.0,55.0) scale(2.420,2.420)">
+
+      <path d="M 24 69.5 L 392 69.5 C 394 72.0, 397 74.5, 402 76.8 C 407.5 79.2, 406.5 85.8, 393 86.2 C 381 86.2, 372 82.0, 364 80.5 L 88 80.5 L 54 76.8 L 25 75.0 Z" fill="#261014" stroke="#ff5a36" stroke-width="1.1" />
+      <path d="M 374 74.5 C 387 74.5, 400 76.5, 404.5 81.0 C 400.5 84.8, 386 85.2, 374 81.8 Z" fill="#351419" stroke="#ff5a36" stroke-width="0.8" />
+      <line x1="383" y1="75.0" x2="383" y2="83.8" stroke="#ff5a36" stroke-width="0.55" />
+      <line x1="392" y1="76.0" x2="392" y2="84.5" stroke="#ff5a36" stroke-width="0.55" />
+      <path d="M 156 77.8 L 166 79.6 L 266 79.6 L 276 77.8" fill="none" stroke="#ff5a36" stroke-width="0.95" />
+      <polygon points="144,79.6 151,79.6 149,84.5 145,84.5" fill="#ff5a36" />
+      <polygon points="270,79.6 277,79.6 275,84.5 271,84.5" fill="#ff5a36" />
+      <polygon points="28,74.8 36,75.2 34.5,84.2 27,84.2" fill="#261014" stroke="#ff5a36" stroke-width="0.9" />
+      <line x1="43" y1="81.0" x2="84" y2="77.2" stroke="#eab308" stroke-width="1.2" />
+      <line x1="55" y1="76.5" x2="53" y2="80.8" stroke="#d4e3e6" stroke-width="0.95" />
+      <ellipse cx="43" cy="81.0" rx="1.7" ry="4.8" fill="#eab308" stroke="#d4e3e6" stroke-width="0.6" />
+      <circle cx="43" cy="81.0" r="0.85" fill="#d4e3e6" />
+      <rect x="172" y="71.2" width="68" height="7.5" fill="url(#clean-side-hatch)" stroke="#eab308" stroke-width="0.55" stroke-dasharray="2.5 1.5" />
+
+      <polygon points="20,61.5 84,61.5 86,56.5 304,56.5 340,56.0 374,54.8 408,52.8 398,62.5 392,69.5 24,69.5" fill="#0a1822" stroke="#d4e3e6" stroke-width="1.35" />
+      <polyline points="22,65.0 86,65.0 92,62.5 348,61.2 400,59.0" fill="none" stroke="#38bdf8" stroke-width="0.85" />
+      <line x1="24" y1="69.5" x2="392" y2="69.5" stroke="#d4e3e6" stroke-width="0.95" />
+      <circle cx="23.5" cy="65.2" r="1.1" fill="#050a0e" stroke="#38bdf8" stroke-width="0.6" />
+      <line x1="406.5" y1="52.8" x2="408" y2="44.5" stroke="#d4e3e6" stroke-width="0.85" />
+      <line x1="21" y1="61.5" x2="19.5" y2="53.5" stroke="#d4e3e6" stroke-width="0.85" />
+      <circle cx="390" cy="57.8" r="1.4" fill="#050a0e" stroke="#d4e3e6" stroke-width="0.65" />
+      <text x="374" y="63.5" text-anchor="middle" class="mono" font-size="6.4" fill="#d4e3e6" font-weight="bold">125</text>
+
+      <polygon points="340,56.0 343,49.6 351.5,49.6 354.5,56.0" fill="#122836" stroke="#d4e3e6" stroke-width="1.15" />
+      <line x1="343" y1="52.5" x2="352.5" y2="52.5" stroke="#38bdf8" stroke-width="0.65" />
+      <line x1="354" y1="52.0" x2="375" y2="51.2" stroke="#d4e3e6" stroke-width="1.35" />
+      <rect x="309" y="54.0" width="25" height="2.5" fill="#163244" stroke="#38bdf8" stroke-width="0.9" />
+      <line x1="315.2" y1="54.0" x2="315.2" y2="56.5" stroke="#d4e3e6" stroke-width="0.6" />
+      <line x1="321.5" y1="54.0" x2="321.5" y2="56.5" stroke="#d4e3e6" stroke-width="0.6" />
+      <line x1="327.8" y1="54.0" x2="327.8" y2="56.5" stroke="#d4e3e6" stroke-width="0.6" />
+      <polygon points="295,56.5 297,50.5 307,50.5 308,56.5" fill="#102432" stroke="#d4e3e6" stroke-width="0.95" />
+      <rect x="299.5" y="47.5" width="3.8" height="3.0" fill="#163244" stroke="#38bdf8" stroke-width="0.65" />
+      <path d="M 300.0 47.5 V 44.6 A 1.4 1.4 0 0 1 302.8 44.6 V 47.5 Z" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.6" />
+      <line x1="303" y1="48.8" x2="307.5" y2="48.5" stroke="#38bdf8" stroke-width="0.95" />
+
+      <polygon points="248,56.5 253,35.0 286,35.0 296,56.5" fill="#112636" stroke="#d4e3e6" stroke-width="1.2" />
+      <polygon points="260,35.0 263,29.5 282,29.5 285,35.0" fill="#163244" stroke="#d4e3e6" stroke-width="1.05" />
+      <polygon points="268,31.0 282.5,31.0 283.5,33.6 268,33.6" fill="#04080b" stroke="#38bdf8" stroke-width="0.75" />
+      <rect x="278.5" y="26.5" width="4.2" height="3.0" fill="#122836" stroke="#d4e3e6" stroke-width="0.75" />
+      <path d="M 281.8 22.4 A 2.4 2.4 0 0 0 281.8 27.0" fill="#18384c" stroke="#38bdf8" stroke-width="1.05" />
+      <line x1="281.8" y1="24.7" x2="284.8" y2="24.7" stroke="#38bdf8" stroke-width="0.85" />
+
+      <polygon points="274,38.0 282.5,38.0 286.0,41.5 286.0,47.5 282.5,51.0 274,51.0 270.5,47.5 270.5,41.5" fill="#183c52" stroke="#38bdf8" stroke-width="1.25" />
+      <line x1="270.5" y1="44.5" x2="286.0" y2="44.5" stroke="#38bdf8" stroke-width="0.5" />
+      <line x1="275.5" y1="38.0" x2="275.5" y2="51.0" stroke="#38bdf8" stroke-width="0.45" />
+      <line x1="281.0" y1="38.0" x2="281.0" y2="51.0" stroke="#38bdf8" stroke-width="0.45" />
+      <polygon points="253.5,39.0 261.0,38.5 262.5,49.5 252.0,50.5" fill="#143246" stroke="#38bdf8" stroke-width="1.05" />
+
+      <polygon points="263,31.0 250,7.5 252.5,7.5 267,35.0" fill="#163244" stroke="#d4e3e6" stroke-width="1.05" />
+      <line x1="255" y1="35.0" x2="251" y2="11.0" stroke="#8aa1a7" stroke-width="0.85" />
+      <polygon points="256,20.0 269,20.0 267,22.5 255,22.5" fill="#18384c" stroke="#38bdf8" stroke-width="0.85" />
+      <polygon points="262.5,20.0 264.0,16.5 267.5,16.5 268.5,20.0" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.7" />
+      <line x1="245" y1="14.5" x2="261" y2="14.5" stroke="#d4e3e6" stroke-width="0.95" />
+      <circle cx="246.5" cy="13.2" r="1.3" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.55" />
+      <line x1="247" y1="10.2" x2="257" y2="10.2" stroke="#38bdf8" stroke-width="0.8" />
+      <line x1="251.2" y1="7.5" x2="250.0" y2="2.5" stroke="#38bdf8" stroke-width="0.95" />
+
+      <rect x="242" y="43.5" width="11.5" height="7.5" fill="#1a3a4e" stroke="#eab308" stroke-width="1.0" />
+      <rect x="243.8" y="45.0" width="8.0" height="4.5" fill="#091a26" stroke="#38bdf8" stroke-width="0.7" />
+      <line x1="247.8" y1="45.0" x2="247.8" y2="49.5" stroke="#38bdf8" stroke-width="0.5" />
+
+      <polygon points="148,56.5 152,46.5 246,46.5 248,56.5" fill="#0e2230" stroke="#d4e3e6" stroke-width="1.05" />
+
+      <polygon points="220,46.5 224,33.5 238,34.5 236,46.5" fill="#122836" stroke="#d4e3e6" stroke-width="1.1" />
+      <polygon points="224,33.5 238,34.5 237.5,37.2 223.2,36.2" fill="#04080b" stroke="#38bdf8" stroke-width="0.8" />
+      <rect x="224.5" y="39.5" width="8.5" height="4.8" fill="#061016" stroke="#4a6368" stroke-width="0.65" />
+      <rect x="235.5" y="31.0" width="4.0" height="3.0" fill="#122836" stroke="#d4e3e6" stroke-width="0.75" />
+      <path d="M 238.5 27.0 A 2.3 2.3 0 0 0 238.5 31.5" fill="#18384c" stroke="#38bdf8" stroke-width="1.0" />
+
+      <ellipse cx="207" cy="49.5" rx="6.5" ry="2.2" fill="#163244" stroke="#38bdf8" stroke-width="0.75" />
+      <line x1="201" y1="46.5" x2="202" y2="51.5" stroke="#d4e3e6" stroke-width="0.75" />
+      <line x1="213" y1="46.5" x2="212" y2="51.5" stroke="#d4e3e6" stroke-width="0.75" />
+      <rect x="195" y="53.2" width="7.5" height="2.4" fill="#18384c" stroke="#ff5a36" stroke-width="0.75" />
+      <line x1="195" y1="54.4" x2="202.5" y2="54.4" stroke="#d4e3e6" stroke-width="0.5" />
+
+      <polygon points="174,46.5 178,34.5 192,35.5 190,46.5" fill="#122836" stroke="#d4e3e6" stroke-width="1.1" />
+      <polygon points="178,34.5 192,35.5 191.5,38.2 177.2,37.2" fill="#04080b" stroke="#38bdf8" stroke-width="0.8" />
+      <rect x="178.5" y="40.2" width="8.5" height="4.8" fill="#061016" stroke="#4a6368" stroke-width="0.65" />
+
+      <polygon points="156,46.5 158,39.5 173,39.5 174,46.5" fill="#122836" stroke="#d4e3e6" stroke-width="0.95" />
+      <circle cx="168.5" cy="36.8" r="2.6" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.7" />
+      <rect x="159" y="36.5" width="4.2" height="3.0" fill="#122836" stroke="#d4e3e6" stroke-width="0.75" />
+      <path d="M 160.2 32.4 A 2.4 2.4 0 0 1 160.2 37.0" fill="#18384c" stroke="#38bdf8" stroke-width="1.05" />
+      <line x1="160.2" y1="34.7" x2="157.2" y2="34.7" stroke="#38bdf8" stroke-width="0.85" />
+
+      <polygon points="84,56.5 88,46.5 152,46.5 152,56.5" fill="#102432" stroke="#d4e3e6" stroke-width="1.1" />
+      <rect x="142.5" y="42.5" width="7.0" height="4.0" fill="#163244" stroke="#ff5a36" stroke-width="0.85" />
+      <path d="M 145.2 42.5 V 39.8 A 1.3 1.3 0 0 1 147.8 39.8 V 42.5 Z" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.6" />
+      <line x1="142.5" y1="44.2" x2="138.0" y2="43.5" stroke="#d4e3e6" stroke-width="1.1" />
+
+      <rect x="108" y="44.2" width="30" height="2.3" fill="#163244" stroke="#38bdf8" stroke-width="0.95" />
+      <line x1="115.5" y1="44.2" x2="115.5" y2="46.5" stroke="#d4e3e6" stroke-width="0.6" />
+      <line x1="123.0" y1="44.2" x2="123.0" y2="46.5" stroke="#d4e3e6" stroke-width="0.6" />
+      <line x1="130.5" y1="44.2" x2="130.5" y2="46.5" stroke="#d4e3e6" stroke-width="0.6" />
+
+      <circle cx="96" cy="44.2" r="2.2" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.65" />
+      <rect x="90" y="48.5" width="15" height="6.0" fill="#061016" stroke="#38bdf8" stroke-width="0.7" />
+      <rect x="112" y="49.5" width="5.0" height="2.2" rx="0.8" fill="#d4e3e6" />
+      <rect x="118.5" y="49.5" width="5.0" height="2.2" rx="0.8" fill="#d4e3e6" />
+      <rect x="125" y="49.5" width="5.0" height="2.2" rx="0.8" fill="#d4e3e6" />
+
+      <line x1="22" y1="60.2" x2="82" y2="60.2" stroke="#38bdf8" stroke-width="0.75" stroke-dasharray="3 1.5" />
+      <g transform="translate(28, 49.0)">
+        <path d="M 5 6.2 L 16 7.8 L 35 7.8 C 40 7.8, 42 10.2, 38 11.6 L 16 11.6 L 5 8.4 Z" fill="#142c3c" stroke="#d4e3e6" stroke-width="0.85" />
+        <polygon points="33,8.2 38.5,8.9 37.5,10.5 33,10.5" fill="#38bdf8" />
+        <circle cx="23" cy="9.8" r="1.0" fill="#ff5a36" />
+        <ellipse cx="36" cy="11.6" rx="1.9" ry="0.65" fill="#38bdf8" />
+        <line x1="26" y1="7.8" x2="26" y2="5.2" stroke="#d4e3e6" stroke-width="0.95" />
+        <line x1="10" y1="5.2" x2="42" y2="5.2" stroke="#38bdf8" stroke-width="0.95" />
+        <line x1="3.5" y1="3.8" x2="7.5" y2="8.8" stroke="#d4e3e6" stroke-width="0.85" />
+        <line x1="3.5" y1="8.8" x2="7.5" y2="3.8" stroke="#d4e3e6" stroke-width="0.85" />
+        <circle cx="11" cy="12.0" r="0.85" fill="#050a0e" stroke="#d4e3e6" stroke-width="0.55" />
+        <circle cx="31" cy="12.2" r="1.0" fill="#050a0e" stroke="#d4e3e6" stroke-width="0.55" />
+      </g>
+
+      </g>
+  </g>
+</g><g id="clean-top" fill="none" transform="translate(40.000000 311.297297) scale(1.163950782) translate(-75.600000 -121.752000)"><defs>
+    <style>
+#clean-top { fill: none; stroke-linecap: butt; }
+#clean-top .s-dim { stroke: #2c3b40; stroke-width: 1; }
+#clean-top .s-line { stroke: #5f7c84; stroke-width: 1; }
+#clean-top .s-hi { stroke: #d4e3e6; stroke-width: 1.2; }
+#clean-top .s-alert { stroke: #ff5a36; stroke-width: 1.4; }
+#clean-top .s-focus { stroke: #38bdf8; stroke-width: 1.4; }
+#clean-top .f-panel { fill: #0c1113; }
+#clean-top text { font-family: "Rajdhani", "Bahnschrift", "DIN Alternate", "Microsoft YaHei", sans-serif; letter-spacing: 0.08em; }
+#clean-top text:not([stroke]) { stroke: none; }
+#clean-top text:not([fill]) { fill: #cfdde0; }
+#clean-top text.p { letter-spacing: 0.08em; }
+#clean-top text.cap { letter-spacing: 0.14em; text-transform: uppercase; }
+#clean-top text.mono { font-family: "Rajdhani", "JetBrains Mono", Consolas, "Microsoft YaHei", monospace; letter-spacing: 0.05em; }
+</style>
+    <pattern id="clean-top-grid20" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#0c151b" stroke-width="0.7" />
+    </pattern>
+    <pattern id="clean-top-grid100" width="100" height="100" patternUnits="userSpaceOnUse">
+      <path d="M 100 0 L 0 0 0 100" fill="none" stroke="#15242d" stroke-width="1" />
+      <circle cx="50" cy="50" r="0.9" fill="#233844" />
+    </pattern>
+  </defs>
+
+  <g id="clean-top-layer-ship-cad">
+    <g transform="translate(26.0,84.8) scale(2.480,2.480)">
+
+      <path d="M 20 21.5                L 78 16.5                L 132 14.9                L 292 14.9                C 324 14.9, 354 20.5, 380 28.5                C 394 33.0, 402 36.8, 408 40.0                C 402 43.2, 394 47.0, 380 51.5                C 354 59.5, 324 65.1, 292 65.1                L 132 65.1                L 78 63.5                L 20 58.5                Z" fill="#0a1822" stroke="#d4e3e6" stroke-width="1.35" />
+
+      <path d="M 22 23.5                L 82 18.8                L 134 17.4                L 290 17.4                C 320 17.4, 348 22.8, 374 30.2                L 398 40.0                L 374 49.8                C 348 57.2, 320 62.6, 290 62.6                L 134 62.6                L 82 61.2                L 22 56.5                Z" fill="#0d202c" stroke="#38bdf8" stroke-width="0.8" />
+
+      <polygon points="22,23.5 84,18.8 84,61.2 22,56.5" fill="#08131a" stroke="#d4e3e6" stroke-width="0.95" />
+      <line x1="23" y1="21.0" x2="82" y2="16.5" stroke="#38bdf8" stroke-width="1.0" stroke-dasharray="2.8 1.4" />
+      <line x1="23" y1="59.0" x2="82" y2="63.5" stroke="#38bdf8" stroke-width="1.0" stroke-dasharray="2.8 1.4" />
+      <polyline points="48,40 66,40 84,31.5" fill="none" stroke="#5f7c84" stroke-width="0.85" />
+      <polyline points="48,40 66,40 84,48.5" fill="none" stroke="#5f7c84" stroke-width="0.85" />
+      <line x1="22" y1="40" x2="84" y2="40" stroke="#d4e3e6" stroke-width="0.75" stroke-dasharray="3.5 2" />
+      <circle cx="54" cy="40" r="10.5" fill="none" stroke="#d4e3e6" stroke-width="1.1" />
+      <circle cx="54" cy="40" r="3.5" fill="none" stroke="#38bdf8" stroke-width="0.85" />
+      <text x="31" y="42.2" text-anchor="middle" class="mono" font-size="6.4" fill="#d4e3e6" font-weight="bold">125</text>
+
+      <g transform="translate(42, 34)">
+        <path d="M 2 6 L 10 4.3 L 22 4.3 C 25.5 4.3, 27 6, 22 7.7 L 10 7.7 Z" fill="#163244" stroke="#d4e3e6" stroke-width="0.8" />
+        <polygon points="20,4.8 24,5.4 24,6.6 20,7.2" fill="#38bdf8" />
+        <line x1="8" y1="-2" x2="24" y2="14" stroke="#38bdf8" stroke-width="0.9" />
+        <line x1="8" y1="14" x2="24" y2="-2" stroke="#38bdf8" stroke-width="0.9" />
+        <circle cx="16" cy="6" r="1.3" fill="#d4e3e6" />
+      </g>
+
+      <polygon points="84,19.5 148,19.5 156,22.5 156,57.5 148,60.5 84,60.5" fill="#102432" stroke="#d4e3e6" stroke-width="1.15" />
+      <rect x="84" y="24.5" width="20" height="11.0" fill="#0b1a24" stroke="#38bdf8" stroke-width="0.65" />
+      <rect x="84" y="44.5" width="20" height="11.0" fill="#0b1a24" stroke="#38bdf8" stroke-width="0.65" />
+      <rect x="110" y="20.8" width="4.8" height="2.2" rx="0.9" fill="#d4e3e6" />
+      <rect x="116.5" y="20.8" width="4.8" height="2.2" rx="0.9" fill="#d4e3e6" />
+      <rect x="123" y="20.8" width="4.8" height="2.2" rx="0.9" fill="#d4e3e6" />
+      <rect x="110" y="57.0" width="4.8" height="2.2" rx="0.9" fill="#d4e3e6" />
+      <rect x="116.5" y="57.0" width="4.8" height="2.2" rx="0.9" fill="#d4e3e6" />
+      <rect x="123" y="57.0" width="4.8" height="2.2" rx="0.9" fill="#d4e3e6" />
+      <circle cx="96" cy="22.2" r="2.0" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.65" />
+      <circle cx="96" cy="57.8" r="2.0" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.65" />
+
+      <rect x="108" y="26.0" width="28" height="28" fill="#07131c" stroke="#d4e3e6" stroke-width="1.05" />
+      <line x1="111.5" y1="26.0" x2="111.5" y2="54.0" stroke="#38bdf8" stroke-width="0.5" />
+      <line x1="115.0" y1="26.0" x2="115.0" y2="54.0" stroke="#38bdf8" stroke-width="0.5" />
+      <line x1="118.5" y1="26.0" x2="118.5" y2="54.0" stroke="#38bdf8" stroke-width="0.5" />
+      <line x1="122.0" y1="26.0" x2="122.0" y2="54.0" stroke="#d4e3e6" stroke-width="0.75" />
+      <line x1="125.5" y1="26.0" x2="125.5" y2="54.0" stroke="#38bdf8" stroke-width="0.5" />
+      <line x1="129.0" y1="26.0" x2="129.0" y2="54.0" stroke="#38bdf8" stroke-width="0.5" />
+      <line x1="132.5" y1="26.0" x2="132.5" y2="54.0" stroke="#38bdf8" stroke-width="0.5" />
+      <line x1="108.0" y1="29.5" x2="136.0" y2="29.5" stroke="#38bdf8" stroke-width="0.5" />
+      <line x1="108.0" y1="33.0" x2="136.0" y2="33.0" stroke="#38bdf8" stroke-width="0.5" />
+      <line x1="108.0" y1="36.5" x2="136.0" y2="36.5" stroke="#38bdf8" stroke-width="0.5" />
+      <line x1="108.0" y1="40.0" x2="136.0" y2="40.0" stroke="#d4e3e6" stroke-width="0.75" />
+      <line x1="108.0" y1="43.5" x2="136.0" y2="43.5" stroke="#38bdf8" stroke-width="0.5" />
+      <line x1="108.0" y1="47.0" x2="136.0" y2="47.0" stroke="#38bdf8" stroke-width="0.5" />
+      <line x1="108.0" y1="50.5" x2="136.0" y2="50.5" stroke="#38bdf8" stroke-width="0.5" />
+
+      <rect x="140" y="35.5" width="11" height="9.0" rx="1" fill="#163244" stroke="#ff5a36" stroke-width="0.95" />
+      <circle cx="145.5" cy="40.0" r="2.2" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.65" />
+
+      <rect x="156" y="22.5" width="88" height="35.0" fill="#0f2330" stroke="#d4e3e6" stroke-width="1.1" />
+
+      <rect x="158" y="31.0" width="14" height="18.0" fill="#142d3e" stroke="#38bdf8" stroke-width="0.8" />
+      <circle cx="162.5" cy="40.0" r="2.6" fill="#18384c" stroke="#38bdf8" stroke-width="0.95" />
+      <line x1="162.5" y1="40.0" x2="158.5" y2="40.0" stroke="#38bdf8" stroke-width="0.85" />
+      <circle cx="168.5" cy="40.0" r="2.8" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.75" />
+
+      <polygon points="174,30.5 178,28.5 189,28.5 192,30.5 192,49.5 189,51.5 178,51.5 174,49.5" fill="#163244" stroke="#d4e3e6" stroke-width="1.1" />
+      <rect x="177.5" y="31.2" width="11.0" height="7.2" fill="#04080b" stroke="#38bdf8" stroke-width="0.75" />
+      <rect x="177.5" y="41.6" width="11.0" height="7.2" fill="#04080b" stroke="#38bdf8" stroke-width="0.75" />
+      <line x1="181" y1="31.2" x2="181" y2="38.4" stroke="#5f7c84" stroke-width="0.5" />
+      <line x1="185" y1="31.2" x2="185" y2="38.4" stroke="#5f7c84" stroke-width="0.5" />
+      <line x1="181" y1="41.6" x2="181" y2="48.8" stroke="#5f7c84" stroke-width="0.5" />
+      <line x1="185" y1="41.6" x2="185" y2="48.8" stroke="#5f7c84" stroke-width="0.5" />
+
+      <ellipse cx="207" cy="26.5" rx="7.0" ry="2.6" fill="#18364a" stroke="#38bdf8" stroke-width="0.8" />
+      <ellipse cx="207" cy="26.5" rx="4.2" ry="1.2" fill="#08131a" />
+      <ellipse cx="207" cy="53.5" rx="7.0" ry="2.6" fill="#18364a" stroke="#38bdf8" stroke-width="0.8" />
+      <ellipse cx="207" cy="53.5" rx="4.2" ry="1.2" fill="#08131a" />
+      <rect x="195" y="18.2" width="7.5" height="3.2" fill="#18384c" stroke="#ff5a36" stroke-width="0.85" />
+      <line x1="195" y1="19.8" x2="202.5" y2="19.8" stroke="#d4e3e6" stroke-width="0.5" />
+      <rect x="195" y="58.6" width="7.5" height="3.2" fill="#18384c" stroke="#ff5a36" stroke-width="0.85" />
+      <line x1="195" y1="60.2" x2="202.5" y2="60.2" stroke="#d4e3e6" stroke-width="0.5" />
+
+      <polygon points="220,30.0 224,28.0 235,28.0 238,30.0 238,50.0 235,52.0 224,52.0 220,50.0" fill="#163244" stroke="#d4e3e6" stroke-width="1.1" />
+      <rect x="223.5" y="30.8" width="11.0" height="7.5" fill="#04080b" stroke="#38bdf8" stroke-width="0.75" />
+      <rect x="223.5" y="41.7" width="11.0" height="7.5" fill="#04080b" stroke="#38bdf8" stroke-width="0.75" />
+      <line x1="227" y1="30.8" x2="227" y2="38.3" stroke="#5f7c84" stroke-width="0.5" />
+      <line x1="231" y1="30.8" x2="231" y2="38.3" stroke="#5f7c84" stroke-width="0.5" />
+      <line x1="227" y1="41.7" x2="227" y2="49.2" stroke="#5f7c84" stroke-width="0.5" />
+      <line x1="231" y1="41.7" x2="231" y2="49.2" stroke="#5f7c84" stroke-width="0.5" />
+      <circle cx="239.5" cy="40.0" r="2.5" fill="#18384c" stroke="#38bdf8" stroke-width="0.95" />
+      <line x1="239.5" y1="40.0" x2="243.0" y2="40.0" stroke="#38bdf8" stroke-width="0.85" />
+
+      <polygon points="240,22.5 242,15.8 251,15.8 253,22.5" fill="#1a3a4e" stroke="#eab308" stroke-width="1.05" />
+      <rect x="243" y="17.2" width="7.0" height="3.8" fill="#091a26" stroke="#38bdf8" stroke-width="0.7" />
+      <polygon points="240,57.5 242,64.2 251,64.2 253,57.5" fill="#1a3a4e" stroke="#eab308" stroke-width="1.05" />
+      <rect x="243" y="59.0" width="7.0" height="3.8" fill="#091a26" stroke="#38bdf8" stroke-width="0.7" />
+
+      <polygon points="248,26.5 259,19.5 283,19.5 296,29.5 296,50.5 283,60.5 259,60.5 248,53.5" fill="#132a3a" stroke="#d4e3e6" stroke-width="1.3" />
+      <polygon points="256,28.5 264,23.5 281,23.5 290,31.0 290,49.0 281,56.5 264,56.5 256,51.5" fill="#18364a" stroke="#38bdf8" stroke-width="0.95" />
+
+      <polygon points="282.5,20.0 294.5,29.2 292.2,31.8 280.2,22.6" fill="#0c283a" stroke="#38bdf8" stroke-width="1.3" />
+      <polygon points="282.5,60.0 294.5,50.8 292.2,48.2 280.2,57.4" fill="#0c283a" stroke="#38bdf8" stroke-width="1.3" />
+      <polygon points="249.0,26.8 259.5,20.2 261.2,22.8 250.7,29.4" fill="#0c283a" stroke="#38bdf8" stroke-width="1.2" />
+      <polygon points="249.0,53.2 259.5,59.8 261.2,57.2 250.7,50.6" fill="#0c283a" stroke="#38bdf8" stroke-width="1.2" />
+
+      <circle cx="283.5" cy="40.0" r="2.7" fill="#18384c" stroke="#38bdf8" stroke-width="1.0" />
+      <line x1="283.5" y1="40.0" x2="288.0" y2="40.0" stroke="#38bdf8" stroke-width="0.9" />
+
+      <line x1="262" y1="26.0" x2="262" y2="54.0" stroke="#d4e3e6" stroke-width="1.15" />
+      <line x1="254" y1="30.0" x2="254" y2="50.0" stroke="#38bdf8" stroke-width="0.95" />
+      <polygon points="262,36.0 271,38.0 271,42.0 262,44.0" fill="#1c3f56" stroke="#38bdf8" stroke-width="0.9" />
+      <circle cx="266.5" cy="40.0" r="1.9" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.65" />
+      <line x1="266" y1="40.0" x2="249" y2="40.0" stroke="#d4e3e6" stroke-width="1.4" />
+      <circle cx="250" cy="40.0" r="1.5" fill="#ff5a36" />
+
+      <polygon points="296,32.5 304,34.0 307,36.5 307,43.5 304,46.0 296,47.5" fill="#102432" stroke="#38bdf8" stroke-width="0.95" />
+      <circle cx="301.5" cy="40.0" r="2.8" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.8" />
+      <line x1="304.0" y1="40.0" x2="308.5" y2="40.0" stroke="#38bdf8" stroke-width="1.1" />
+
+      <rect x="311" y="26.0" width="14" height="28" fill="#07131c" stroke="#d4e3e6" stroke-width="1.05" />
+      <line x1="314.5" y1="26.0" x2="314.5" y2="54.0" stroke="#38bdf8" stroke-width="0.5" />
+      <line x1="318.0" y1="26.0" x2="318.0" y2="54.0" stroke="#d4e3e6" stroke-width="0.75" />
+      <line x1="321.5" y1="26.0" x2="321.5" y2="54.0" stroke="#38bdf8" stroke-width="0.5" />
+      <line x1="311.0" y1="29.5" x2="325.0" y2="29.5" stroke="#38bdf8" stroke-width="0.5" />
+      <line x1="311.0" y1="33.0" x2="325.0" y2="33.0" stroke="#38bdf8" stroke-width="0.5" />
+      <line x1="311.0" y1="36.5" x2="325.0" y2="36.5" stroke="#38bdf8" stroke-width="0.5" />
+      <line x1="311.0" y1="40.0" x2="325.0" y2="40.0" stroke="#d4e3e6" stroke-width="0.75" />
+      <line x1="311.0" y1="43.5" x2="325.0" y2="43.5" stroke="#38bdf8" stroke-width="0.5" />
+      <line x1="311.0" y1="47.0" x2="325.0" y2="47.0" stroke="#38bdf8" stroke-width="0.5" />
+      <line x1="311.0" y1="50.5" x2="325.0" y2="50.5" stroke="#38bdf8" stroke-width="0.5" />
+
+      <polygon points="336,35.0 345,33.5 352,35.5 352,44.5 345,46.5 336,45.0" fill="#163244" stroke="#d4e3e6" stroke-width="1.15" />
+      <rect x="339.5" y="37.2" width="6.5" height="5.6" fill="#09151e" stroke="#38bdf8" stroke-width="0.65" />
+      <line x1="352" y1="40.0" x2="375" y2="40.0" stroke="#d4e3e6" stroke-width="1.55" />
+
+      <polyline points="364,29.0 377,40.0 364,51.0" fill="none" stroke="#38bdf8" stroke-width="0.9" />
+      <line x1="372" y1="36.5" x2="394" y2="38.2" stroke="#8aa1a7" stroke-width="0.75" stroke-dasharray="1.5 1" />
+      <line x1="372" y1="43.5" x2="394" y2="41.8" stroke="#8aa1a7" stroke-width="0.75" stroke-dasharray="1.5 1" />
+      <circle cx="372" cy="36.5" r="1.5" fill="#102432" stroke="#d4e3e6" stroke-width="0.6" />
+      <circle cx="372" cy="43.5" r="1.5" fill="#102432" stroke="#d4e3e6" stroke-width="0.6" />
+      <line x1="377" y1="40.0" x2="406" y2="40.0" stroke="#4a6368" stroke-width="0.75" />
+      <text x="387" y="41.8" text-anchor="middle" class="mono" font-size="4.8" fill="#d4e3e6" font-weight="bold">125</text>
+
+      </g>
+  </g>
+</g></svg>

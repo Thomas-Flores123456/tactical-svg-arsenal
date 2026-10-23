@@ -1,0 +1,502 @@
+<?xml version='1.0' encoding='utf8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 655.048" width="1200" height="655.048" data-asset-id="naval.qe_r08.clean.master" data-view-kind="clean-master" data-clean-status="measured"><title>12_R08_伊丽莎白女王级双舰岛航空母舰 · 纯净侧顶联合图</title><metadata>Derived from 01_R08_伊丽莎白女王级航母_侧视立面.svg | 02_R08_伊丽莎白女王级航母_顶视全甲板_双舰岛滑跃.svg. Preserves original fictional/technical geometry; not independently verified engineering data. No cross-asset physical scale claim.</metadata><g id="clean-side" fill="none" transform="translate(40.000000 32.000000) scale(1.198655793) translate(-89.552000 -61.866000)"><defs>
+    <style>
+#clean-side { fill: none; stroke-linecap: butt; }
+#clean-side .s-dim { stroke: #2c3b40; stroke-width: 1; }
+#clean-side .s-line { stroke: #5f7c84; stroke-width: 1; }
+#clean-side .s-hi { stroke: #d4e3e6; stroke-width: 1.2; }
+#clean-side .s-alert { stroke: #ff5a36; stroke-width: 1.4; }
+#clean-side .s-focus { stroke: #38bdf8; stroke-width: 1.4; }
+#clean-side .f-dim { fill: #2c3b40; stroke: none; }
+#clean-side .f-line { fill: #5f7c84; stroke: none; }
+#clean-side .f-hi { fill: #d4e3e6; stroke: none; }
+#clean-side .f-alert { fill: #ff5a36; stroke: none; }
+#clean-side .f-panel { fill: #0c1113; }
+#clean-side text { font-family: "Rajdhani", "Bahnschrift", "DIN Alternate", "Microsoft YaHei", sans-serif; letter-spacing: 0.12em; }
+#clean-side text:not([stroke]) { stroke: none; }
+#clean-side text:not([fill]) { fill: #cfdde0; }
+#clean-side text:not([font-size]):not(.cap):not(.big) { font-size: 10px; }
+#clean-side text.cap { letter-spacing: 0.2em; text-transform: uppercase; }
+#clean-side text.cap:not([fill]) { fill: #8aa1a7; }
+#clean-side text.cap:not([font-size]) { font-size: 8.5px; }
+#clean-side text.mono { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; letter-spacing: 0.06em; }
+#clean-side text.big { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; font-weight: 600; letter-spacing: 0.08em; }
+#clean-side text.big:not([font-size]) { font-size: 18px; }
+#clean-side text.big:not([fill]) { fill: #d4e3e6; }
+#clean-side text.alert { fill: #ff5a36; }
+</style>
+    <pattern id="clean-side-cad-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#10181c" stroke-width="1" />
+      <circle cx="20" cy="20" r="0.8" fill="#1b262b" />
+    </pattern>
+    <pattern id="clean-side-hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#ff5a36" stroke-width="1.2" stroke-opacity="0.35" />
+    </pattern>
+  </defs>
+
+  <g id="clean-side-layer-ship-cad">
+    <g transform="translate(38.0,58.0) scale(3.222,3.222)">
+      <path d="M 24 51.0 L 290 51.0 C 299 51.0 303.5 54.2 303.2 57.8 C 302.8 61.2 296.5 62.0 286 62.0 L 34 62.0 L 24 56.5 Z" fill="#261014" stroke="#ff5a36" stroke-width="1.05" />
+      <line x1="36" y1="59.2" x2="288" y2="59.2" stroke="#ff5a36" stroke-width="0.45" stroke-opacity="0.55" />
+      <polygon points="132,57.5 156,57.5 153,60.2 135,60.2" fill="#1a0b0e" stroke="#ff5a36" stroke-width="0.6" />
+      <polygon points="268,55.5 276,55.5 276,58.5 268,58.5" fill="#1a0b0e" stroke="#ff5a36" stroke-width="0.55" />
+      <circle cx="294.5" cy="56.8" r="1.5" fill="#091319" stroke="#ff5a36" stroke-width="0.55" />
+
+      <polygon points="27,61.2 33.5,61.2 32.2,67.2 25.8,67.2" fill="#261014" stroke="#ff5a36" stroke-width="0.8" />
+      <polygon points="35.5,61.2 41.5,61.2 40.2,66.8 34.5,66.8" fill="#1d0c10" stroke="#ff5a36" stroke-width="0.7" />
+      <line x1="82" y1="59.5" x2="48" y2="65.2" stroke="#ff5a36" stroke-width="1.0" />
+      <line x1="55" y1="60.5" x2="50" y2="65.0" stroke="#ff5a36" stroke-width="0.75" />
+      <circle cx="47.2" cy="65.3" r="3.1" fill="none" stroke="#38bdf8" stroke-width="0.8" />
+      <circle cx="47.2" cy="65.3" r="0.9" fill="#ff5a36" />
+      <line x1="47.2" y1="62.2" x2="47.2" y2="68.4" stroke="#d4e3e6" stroke-width="0.55" />
+      <line x1="44.5" y1="63.8" x2="49.9" y2="66.8" stroke="#d4e3e6" stroke-width="0.55" />
+      <line x1="108" y1="59.5" x2="72" y2="65.2" stroke="#ff5a36" stroke-width="1.0" />
+      <line x1="79" y1="60.5" x2="74" y2="65.0" stroke="#ff5a36" stroke-width="0.75" />
+      <circle cx="71.2" cy="65.3" r="3.1" fill="none" stroke="#38bdf8" stroke-width="0.8" />
+      <circle cx="71.2" cy="65.3" r="0.9" fill="#ff5a36" />
+      <line x1="71.2" y1="62.2" x2="71.2" y2="68.4" stroke="#d4e3e6" stroke-width="0.55" />
+      <line x1="68.5" y1="63.8" x2="73.9" y2="66.8" stroke="#d4e3e6" stroke-width="0.55" />
+
+      <path d="M 18 33.5 L 246 33.5 Q 278 33.2 304 27.5 L 301.5 34.2 L 290 51.0 L 24 51.0 L 19.5 42.5 Z" fill="#091319" stroke="#d4e3e6" stroke-width="1.2" />
+      <line x1="28.0" y1="35" x2="28.0" y2="60" stroke="#4a6368" stroke-width="0.5" stroke-opacity="0.5" /><line x1="36.5" y1="35" x2="36.5" y2="60" stroke="#4a6368" stroke-width="0.5" stroke-opacity="0.5" /><line x1="45.0" y1="35" x2="45.0" y2="60" stroke="#4a6368" stroke-width="0.5" stroke-opacity="0.5" /><line x1="53.5" y1="35" x2="53.5" y2="60" stroke="#4a6368" stroke-width="0.5" stroke-opacity="0.5" /><line x1="62.0" y1="35" x2="62.0" y2="60" stroke="#4a6368" stroke-width="0.5" stroke-opacity="0.5" /><line x1="70.5" y1="35" x2="70.5" y2="60" stroke="#4a6368" stroke-width="0.5" stroke-opacity="0.5" /><line x1="79.0" y1="35" x2="79.0" y2="60" stroke="#4a6368" stroke-width="0.5" stroke-opacity="0.5" /><line x1="87.5" y1="35" x2="87.5" y2="60" stroke="#4a6368" stroke-width="0.5" stroke-opacity="0.5" /><line x1="96.0" y1="35" x2="96.0" y2="60" stroke="#4a6368" stroke-width="0.5" stroke-opacity="0.5" /><line x1="104.5" y1="35" x2="104.5" y2="60" stroke="#4a6368" stroke-width="0.5" stroke-opacity="0.5" /><line x1="113.0" y1="35" x2="113.0" y2="60" stroke="#4a6368" stroke-width="0.5" stroke-opacity="0.5" /><line x1="121.5" y1="35" x2="121.5" y2="60" stroke="#4a6368" stroke-width="0.5" stroke-opacity="0.5" /><line x1="130.0" y1="35" x2="130.0" y2="60" stroke="#4a6368" stroke-width="0.5" stroke-opacity="0.5" /><line x1="138.5" y1="35" x2="138.5" y2="60" stroke="#4a6368" stroke-width="0.5" stroke-opacity="0.5" /><line x1="147.0" y1="35" x2="147.0" y2="60" stroke="#4a6368" stroke-width="0.5" stroke-opacity="0.5" /><line x1="155.5" y1="35" x2="155.5" y2="60" stroke="#4a6368" stroke-width="0.5" stroke-opacity="0.5" /><line x1="164.0" y1="35" x2="164.0" y2="60" stroke="#4a6368" stroke-width="0.5" stroke-opacity="0.5" /><line x1="172.5" y1="35" x2="172.5" y2="60" stroke="#4a6368" stroke-width="0.5" stroke-opacity="0.5" /><line x1="181.0" y1="35" x2="181.0" y2="60" stroke="#4a6368" stroke-width="0.5" stroke-opacity="0.5" /><line x1="189.5" y1="35" x2="189.5" y2="60" stroke="#4a6368" stroke-width="0.5" stroke-opacity="0.5" /><line x1="198.0" y1="35" x2="198.0" y2="60" stroke="#4a6368" stroke-width="0.5" stroke-opacity="0.5" /><line x1="206.5" y1="35" x2="206.5" y2="60" stroke="#4a6368" stroke-width="0.5" stroke-opacity="0.5" /><line x1="215.0" y1="35" x2="215.0" y2="60" stroke="#4a6368" stroke-width="0.5" stroke-opacity="0.5" /><line x1="223.5" y1="35" x2="223.5" y2="60" stroke="#4a6368" stroke-width="0.5" stroke-opacity="0.5" /><line x1="232.0" y1="35" x2="232.0" y2="60" stroke="#4a6368" stroke-width="0.5" stroke-opacity="0.5" /><line x1="240.5" y1="35" x2="240.5" y2="60" stroke="#4a6368" stroke-width="0.5" stroke-opacity="0.5" /><line x1="249.0" y1="35" x2="249.0" y2="60" stroke="#4a6368" stroke-width="0.5" stroke-opacity="0.5" /><line x1="257.5" y1="35" x2="257.5" y2="60" stroke="#4a6368" stroke-width="0.5" stroke-opacity="0.5" /><line x1="266.0" y1="35" x2="266.0" y2="60" stroke="#4a6368" stroke-width="0.5" stroke-opacity="0.5" /><line x1="274.5" y1="35" x2="274.5" y2="60" stroke="#4a6368" stroke-width="0.5" stroke-opacity="0.5" /><line x1="283.0" y1="35" x2="283.0" y2="60" stroke="#4a6368" stroke-width="0.5" stroke-opacity="0.5" />
+      <line x1="16" y1="51.0" x2="306" y2="51.0" stroke="#d4e3e6" stroke-width="1.0" />
+
+      <path d="M 246 33.5 Q 278 33.2 304 27.5 L 302.2 31.8 Q 277 35.0 246 35.2 Z" fill="#102430" stroke="#38bdf8" stroke-width="1.05" />
+      <line x1="256" y1="33.4" x2="256" y2="35.1" stroke="#38bdf8" stroke-width="0.6" />
+      <line x1="266" y1="32.9" x2="266" y2="34.8" stroke="#38bdf8" stroke-width="0.6" />
+      <line x1="276" y1="32.0" x2="276" y2="34.2" stroke="#38bdf8" stroke-width="0.6" />
+      <line x1="286" y1="30.6" x2="286" y2="33.4" stroke="#38bdf8" stroke-width="0.6" />
+      <line x1="296" y1="29.0" x2="296" y2="32.4" stroke="#38bdf8" stroke-width="0.6" />
+      <rect x="191" y="38.2" width="24" height="5.8" fill="#061016" stroke="#38bdf8" stroke-width="0.7" stroke-dasharray="2.2 1.2" />
+      <rect x="111" y="38.2" width="24" height="5.8" fill="#061016" stroke="#38bdf8" stroke-width="0.7" stroke-dasharray="2.2 1.2" />
+      <rect x="82" y="52.4" width="25" height="6.4" fill="#170a0d" stroke="#ff5a36" stroke-width="0.7" stroke-dasharray="2.2 1.2" />
+      <rect x="112" y="52.4" width="25" height="6.4" fill="#170a0d" stroke="#ff5a36" stroke-width="0.7" stroke-dasharray="2.2 1.2" />
+      <rect x="150" y="52.6" width="32" height="6.0" fill="#14090c" stroke="#eab308" stroke-width="0.65" stroke-dasharray="2 1.2" />
+      <path d="M 123 44.0 V 49.2 H 94.5 V 52.4 M 203 44.0 V 49.2 H 124.5 V 52.4" fill="none" stroke="#38bdf8" stroke-width="0.6" stroke-dasharray="2 1.5" />
+
+      <rect x="144" y="34.2" width="34" height="9.6" fill="#04080b" stroke="#eab308" stroke-width="0.95" />
+      <line x1="144" y1="36.8" x2="178" y2="36.8" stroke="#4a6368" stroke-width="0.55" stroke-dasharray="2.5 1.5" />
+      <line x1="147" y1="41.8" x2="175" y2="41.8" stroke="#38bdf8" stroke-width="0.9" stroke-dasharray="3 1.8" />
+      <rect x="66" y="34.2" width="34" height="9.6" fill="#04080b" stroke="#eab308" stroke-width="0.95" />
+      <line x1="66" y1="36.8" x2="100" y2="36.8" stroke="#4a6368" stroke-width="0.55" stroke-dasharray="2.5 1.5" />
+      <line x1="69" y1="41.8" x2="97" y2="41.8" stroke="#38bdf8" stroke-width="0.9" stroke-dasharray="3 1.8" />
+      <path d="M 28 36.2 H 62 M 104 36.2 H 140 M 182 36.2 H 276" fill="none" stroke="#5f7c84" stroke-width="0.65" />
+      <rect x="36" y="39.5" width="22" height="5.5" fill="#050b0f" stroke="#4a6368" stroke-width="0.65" />
+      <rect x="226" y="39.5" width="26" height="5.5" fill="#050b0f" stroke="#4a6368" stroke-width="0.65" />
+      <polygon points="16,35.5 24,35.5 23,38.2 17,38.2" fill="#102430" stroke="#d4e3e6" stroke-width="0.65" />
+      <rect x="18.2" y="33.0" width="2.2" height="2.5" rx="0.8" fill="#d4e3e6" />
+      <polygon points="282,34.5 292,34.5 290,37.2 283,37.2" fill="#102430" stroke="#d4e3e6" stroke-width="0.65" />
+      <rect x="286.2" y="32.0" width="2.2" height="2.5" rx="0.8" fill="#d4e3e6" />
+
+      <g id="clean-side-forward-island">
+        <polygon points="184,33.5 186.5,15.5 215.5,15.5 219.5,21.5 218.0,33.5" fill="#0d1e28" stroke="#d4e3e6" stroke-width="1.15" />
+        <line x1="186" y1="24.5" x2="218.5" y2="24.5" stroke="#4a6368" stroke-width="0.65" />
+        <polygon points="205.0,17.2 217.2,17.2 218.5,20.2 205.0,20.2" fill="#06131c" stroke="#38bdf8" stroke-width="0.85" />
+        <line x1="208.5" y1="17.2" x2="208.5" y2="20.2" stroke="#d4e3e6" stroke-width="0.5" />
+        <line x1="212.0" y1="17.2" x2="212.0" y2="20.2" stroke="#d4e3e6" stroke-width="0.5" />
+        <line x1="215.2" y1="17.2" x2="215.2" y2="20.2" stroke="#d4e3e6" stroke-width="0.5" />
+        <rect x="206.5" y="21.0" width="10.5" height="2.4" fill="#07151f" stroke="#d4e3e6" stroke-width="0.65" />
+        <text x="199.5" y="30.8" text-anchor="middle" class="mono" font-size="6.8" font-weight="bold" fill="#d4e3e6">R08</text>
+        <polygon points="187.5,15.5 189.0,11.5 196.8,11.5 198.0,15.5" fill="#09151d" stroke="#5f7c84" stroke-width="0.85" />
+        <line x1="191.2" y1="11.5" x2="189.8" y2="9.6" stroke="#ff5a36" stroke-width="1.0" />
+        <line x1="194.2" y1="11.5" x2="192.8" y2="9.6" stroke="#ff5a36" stroke-width="1.0" />
+        <polygon points="199.5,15.5 201.0,10.5 211.5,10.5 213.0,15.5" fill="#112634" stroke="#d4e3e6" stroke-width="0.85" />
+        <circle cx="184.8" cy="13.2" r="2.3" fill="#0d1e28" stroke="#d4e3e6" stroke-width="0.75" />
+        <circle cx="216.2" cy="13.2" r="2.1" fill="#0d1e28" stroke="#d4e3e6" stroke-width="0.75" />
+        <rect x="197.5" y="5.8" width="16.5" height="4.2" rx="0.5" fill="#122c3c" stroke="#38bdf8" stroke-width="1.05" />
+        <line x1="201.5" y1="5.8" x2="201.5" y2="10.0" stroke="#38bdf8" stroke-width="0.45" />
+        <line x1="205.8" y1="5.8" x2="205.8" y2="10.0" stroke="#38bdf8" stroke-width="0.45" />
+        <line x1="210.0" y1="5.8" x2="210.0" y2="10.0" stroke="#38bdf8" stroke-width="0.45" />
+        <line x1="206.0" y1="5.8" x2="206.0" y2="1.2" stroke="#d4e3e6" stroke-width="0.85" />
+        <line x1="202.5" y1="3.2" x2="209.5" y2="3.2" stroke="#38bdf8" stroke-width="0.65" />
+        </g>
+
+      <g id="clean-side-aft-island">
+        <polygon points="104,33.5 106.5,16.2 133.5,16.2 136.5,33.5" fill="#0d1e28" stroke="#d4e3e6" stroke-width="1.15" />
+        <line x1="105.5" y1="25.0" x2="135.2" y2="25.0" stroke="#4a6368" stroke-width="0.65" />
+        <polygon points="127.0,17.5 141.5,17.5 143.2,21.2 139.5,23.5 127.0,23.5" fill="#071b28" stroke="#38bdf8" stroke-width="1.0" />
+        <line x1="131.0" y1="17.5" x2="130.5" y2="23.5" stroke="#d4e3e6" stroke-width="0.5" />
+        <line x1="135.0" y1="17.5" x2="134.2" y2="23.5" stroke="#d4e3e6" stroke-width="0.5" />
+        <line x1="139.0" y1="17.5" x2="138.0" y2="23.5" stroke="#d4e3e6" stroke-width="0.5" />
+        <line x1="127.0" y1="20.4" x2="142.2" y2="20.4" stroke="#38bdf8" stroke-width="0.5" />
+        <polygon points="110.5,16.2 112.0,12.0 120.2,12.0 121.5,16.2" fill="#09151d" stroke="#5f7c84" stroke-width="0.85" />
+        <line x1="114.2" y1="12.0" x2="112.8" y2="10.0" stroke="#ff5a36" stroke-width="1.0" />
+        <line x1="117.2" y1="12.0" x2="115.8" y2="10.0" stroke="#ff5a36" stroke-width="1.0" />
+        <polygon points="122.5,16.2 124.5,7.8 129.5,7.8 131.5,16.2" fill="#112634" stroke="#d4e3e6" stroke-width="0.85" />
+        <polygon points="121.5,7.5 123.5,5.0 130.5,5.0 132.5,7.5" fill="#153244" stroke="#38bdf8" stroke-width="0.95" />
+        <line x1="127.0" y1="5.0" x2="127.0" y2="1.2" stroke="#d4e3e6" stroke-width="0.85" />
+        <circle cx="107.2" cy="13.8" r="2.2" fill="#0d1e28" stroke="#d4e3e6" stroke-width="0.75" />
+        </g>
+
+      <path d="M 16 33.5 L 246 33.5 Q 278 33.2 304 27.5" fill="none" stroke="#38bdf8" stroke-width="1.15" />
+      
+      <g transform="translate(36,33.5)">
+        <path d="M 0,-1.4 L 3.5,-1.6 L 5.2,-4.6 L 6.2,-4.6 L 5.6,-2.2 L 12.8,-2.8 C 14.5,-2.8 15.6,-1.8 15.8,-0.8 L 13.5,-0.5 L 4.5,-0.5 Z" fill="#0e222e" stroke="#d4e3e6" stroke-width="0.65" />
+        <line x1="10.2" y1="-2.8" x2="10.2" y2="-5.4" stroke="#d4e3e6" stroke-width="0.7" />
+        <line x1="2.8" y1="-5.4" x2="17.6" y2="-5.4" stroke="#38bdf8" stroke-width="0.65" />
+        <circle cx="5.5" cy="-4.6" r="1.6" fill="none" stroke="#38bdf8" stroke-width="0.45" stroke-dasharray="1.2 1" />
+        <ellipse cx="12.2" cy="-1.2" rx="1.9" ry="0.95" fill="#143244" stroke="#38bdf8" stroke-width="0.6" />
+      </g>
+      <g transform="translate(54,33.5)">
+        <path d="M 0,-1.4 L 3.5,-1.6 L 5.2,-4.6 L 6.2,-4.6 L 5.6,-2.2 L 12.8,-2.8 C 14.5,-2.8 15.6,-1.8 15.8,-0.8 L 13.5,-0.5 L 4.5,-0.5 Z" fill="#0e222e" stroke="#d4e3e6" stroke-width="0.65" />
+        <line x1="10.2" y1="-2.8" x2="10.2" y2="-5.4" stroke="#d4e3e6" stroke-width="0.7" />
+        <line x1="2.8" y1="-5.4" x2="17.6" y2="-5.4" stroke="#38bdf8" stroke-width="0.65" />
+        <circle cx="5.5" cy="-4.6" r="1.6" fill="none" stroke="#38bdf8" stroke-width="0.45" stroke-dasharray="1.2 1" />
+        <ellipse cx="12.2" cy="-1.2" rx="1.9" ry="0.95" fill="#143244" stroke="#38bdf8" stroke-width="0.6" />
+      </g>
+      <g transform="translate(88,33.5)">
+        <path d="M 0,-1.4 L 3.5,-1.6 L 5.2,-4.6 L 6.2,-4.6 L 5.6,-2.2 L 12.8,-2.8 C 14.5,-2.8 15.6,-1.8 15.8,-0.8 L 13.5,-0.5 L 4.5,-0.5 Z" fill="#0e222e" stroke="#d4e3e6" stroke-width="0.65" />
+        <line x1="10.2" y1="-2.8" x2="10.2" y2="-5.4" stroke="#d4e3e6" stroke-width="0.7" />
+        <line x1="2.8" y1="-5.4" x2="17.6" y2="-5.4" stroke="#38bdf8" stroke-width="0.65" />
+        <circle cx="5.5" cy="-4.6" r="1.6" fill="none" stroke="#38bdf8" stroke-width="0.45" stroke-dasharray="1.2 1" />
+        
+      </g>
+      
+      <g transform="translate(140,33.5)">
+        <polygon points="0,0 10.5,0 11.2,-1.6 7.5,-2.5 5.2,-3.8 2.8,-2.4 1.6,-5.2 0.2,-5.2 0.8,-2.2 0,-1.6" fill="#0d1e28" stroke="#d4e3e6" stroke-width="0.65" />
+        <polygon points="5.0,-2.4 8.2,-2.2 6.8,-3.5" fill="#123042" stroke="#38bdf8" stroke-width="0.5" />
+        <line x1="2.2" y1="0" x2="2.2" y2="-1.2" stroke="#8aa1a7" stroke-width="0.55" />
+        <line x1="8.2" y1="0" x2="8.2" y2="-1.2" stroke="#8aa1a7" stroke-width="0.55" />
+      </g>
+      <g transform="translate(152,33.5)">
+        <polygon points="0,0 10.5,0 11.2,-1.6 7.5,-2.5 5.2,-3.8 2.8,-2.4 1.6,-5.2 0.2,-5.2 0.8,-2.2 0,-1.6" fill="#0d1e28" stroke="#d4e3e6" stroke-width="0.65" />
+        <polygon points="5.0,-2.4 8.2,-2.2 6.8,-3.5" fill="#123042" stroke="#38bdf8" stroke-width="0.5" />
+        <line x1="2.2" y1="0" x2="2.2" y2="-1.2" stroke="#8aa1a7" stroke-width="0.55" />
+        <line x1="8.2" y1="0" x2="8.2" y2="-1.2" stroke="#8aa1a7" stroke-width="0.55" />
+      </g>
+      <g transform="translate(164,33.5)">
+        <polygon points="0,0 10.5,0 11.2,-1.6 7.5,-2.5 5.2,-3.8 2.8,-2.4 1.6,-5.2 0.2,-5.2 0.8,-2.2 0,-1.6" fill="#0d1e28" stroke="#d4e3e6" stroke-width="0.65" />
+        <polygon points="5.0,-2.4 8.2,-2.2 6.8,-3.5" fill="#123042" stroke="#38bdf8" stroke-width="0.5" />
+        <line x1="2.2" y1="0" x2="2.2" y2="-1.2" stroke="#8aa1a7" stroke-width="0.55" />
+        <line x1="8.2" y1="0" x2="8.2" y2="-1.2" stroke="#8aa1a7" stroke-width="0.55" />
+      </g>
+      <g transform="translate(222,33.5)">
+        <polygon points="0,0 10.5,0 11.2,-1.6 7.5,-2.5 5.2,-3.8 2.8,-2.4 1.6,-5.2 0.2,-5.2 0.8,-2.2 0,-1.6" fill="#0d1e28" stroke="#d4e3e6" stroke-width="0.65" />
+        <polygon points="5.0,-2.4 8.2,-2.2 6.8,-3.5" fill="#123042" stroke="#38bdf8" stroke-width="0.5" />
+        <line x1="2.2" y1="0" x2="2.2" y2="-1.2" stroke="#8aa1a7" stroke-width="0.55" />
+        <line x1="8.2" y1="0" x2="8.2" y2="-1.2" stroke="#8aa1a7" stroke-width="0.55" />
+      </g>
+      <g transform="translate(234,33.5)">
+        <polygon points="0,0 10.5,0 11.2,-1.6 7.5,-2.5 5.2,-3.8 2.8,-2.4 1.6,-5.2 0.2,-5.2 0.8,-2.2 0,-1.6" fill="#0d1e28" stroke="#d4e3e6" stroke-width="0.65" />
+        <polygon points="5.0,-2.4 8.2,-2.2 6.8,-3.5" fill="#123042" stroke="#38bdf8" stroke-width="0.5" />
+        <line x1="2.2" y1="0" x2="2.2" y2="-1.2" stroke="#8aa1a7" stroke-width="0.55" />
+        <line x1="8.2" y1="0" x2="8.2" y2="-1.2" stroke="#8aa1a7" stroke-width="0.55" />
+      </g>
+      <g transform="translate(246,33.5)">
+        <polygon points="0,0 10.5,0 11.2,-1.6 7.5,-2.5 5.2,-3.8 2.8,-2.4 1.6,-5.2 0.2,-5.2 0.8,-2.2 0,-1.6" fill="#0d1e28" stroke="#d4e3e6" stroke-width="0.65" />
+        <polygon points="5.0,-2.4 8.2,-2.2 6.8,-3.5" fill="#123042" stroke="#38bdf8" stroke-width="0.5" />
+        <line x1="2.2" y1="0" x2="2.2" y2="-1.2" stroke="#8aa1a7" stroke-width="0.55" />
+        <line x1="8.2" y1="0" x2="8.2" y2="-1.2" stroke="#8aa1a7" stroke-width="0.55" />
+      </g>
+      <g transform="translate(264,33.0)">
+        <polygon points="0,0 11.2,0 12.0,-1.7 8.0,-2.6 5.6,-4.0 3.0,-2.5 1.8,-5.5 0.2,-5.5 0.9,-2.3 0,-1.7" fill="#102532" stroke="#38bdf8" stroke-width="0.75" />
+        <line x1="4.5" y1="-2.6" x2="3.2" y2="-5.2" stroke="#eab308" stroke-width="0.85" />
+        <line x1="4.0" y1="0.2" x2="4.0" y2="2.6" stroke="#38bdf8" stroke-width="0.65" stroke-dasharray="1 0.8" />
+      </g>
+      <g transform="translate(291.5,29.5) rotate(-13.5)">
+        <polygon points="-6.5,-0.8 0,-0.3 0,-1.8" fill="#ff5a36" stroke="#eab308" stroke-width="0.45" />
+        <polygon points="0,0 11.8,0 12.6,-1.8 8.4,-2.8 5.8,-4.2 3.2,-2.6 1.8,-5.6 0.2,-5.6 0.9,-2.4 0,-1.8" fill="#122b3a" stroke="#38bdf8" stroke-width="0.85" />
+        <polygon points="5.4,-2.6 8.8,-2.3 7.2,-3.8" fill="#183f54" stroke="#d4e3e6" stroke-width="0.55" />
+        <line x1="4.8" y1="-2.7" x2="3.5" y2="-5.3" stroke="#eab308" stroke-width="0.85" />
+      </g>
+    </g>
+  </g>
+</g><g id="clean-top" fill="none" transform="translate(40.000000 329.530555) scale(1.364206629) translate(-155.134000 -79.232000)"><defs>
+    <style>
+#clean-top { fill: none; stroke-linecap: butt; }
+#clean-top .s-dim { stroke: #2c3b40; stroke-width: 1; }
+#clean-top .s-line { stroke: #5f7c84; stroke-width: 1; }
+#clean-top .s-hi { stroke: #d4e3e6; stroke-width: 1.2; }
+#clean-top .s-alert { stroke: #ff5a36; stroke-width: 1.4; }
+#clean-top .s-focus { stroke: #38bdf8; stroke-width: 1.4; }
+#clean-top .f-dim { fill: #2c3b40; stroke: none; }
+#clean-top .f-line { fill: #5f7c84; stroke: none; }
+#clean-top .f-hi { fill: #d4e3e6; stroke: none; }
+#clean-top .f-alert { fill: #ff5a36; stroke-width: 1; }
+#clean-top .f-panel { fill: #0c1113; }
+#clean-top text { font-family: "Rajdhani", "Bahnschrift", "DIN Alternate", "Microsoft YaHei", sans-serif; letter-spacing: 0.12em; }
+#clean-top text:not([stroke]) { stroke: none; }
+#clean-top text:not([fill]) { fill: #cfdde0; }
+#clean-top text:not([font-size]):not(.cap):not(.big) { font-size: 10px; }
+#clean-top text.cap { letter-spacing: 0.2em; text-transform: uppercase; }
+#clean-top text.cap:not([fill]) { fill: #8aa1a7; }
+#clean-top text.cap:not([font-size]) { font-size: 8.5px; }
+#clean-top text.mono { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; letter-spacing: 0.06em; }
+#clean-top text.big { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; font-weight: 600; letter-spacing: 0.08em; }
+#clean-top text.big:not([font-size]) { font-size: 18px; }
+#clean-top text.big:not([fill]) { fill: #d4e3e6; }
+#clean-top text.alert { fill: #ff5a36; }
+</style>
+    <pattern id="clean-top-cad-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#10181c" stroke-width="1" />
+      <circle cx="20" cy="20" r="0.8" fill="#1b262b" />
+    </pattern>
+    <pattern id="clean-top-hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#ff5a36" stroke-width="1.2" stroke-opacity="0.35" />
+    </pattern>
+  </defs>
+
+  <g id="clean-top-layer-ship-cad">
+    <g transform="translate(115.5,58.0) scale(2.831,2.831)">
+      <path d="M 24 26.5 L 282 25.0 Q 304 44.0 282 63.0 L 24 61.5 Z" fill="none" stroke="#4a6368" stroke-width="0.75" stroke-dasharray="4.5 2.5" />
+
+      <polygon points="14,26.0 20,18.5 32,18.5 32,26.0" fill="#0d202c" stroke="#d4e3e6" stroke-width="0.8" />
+      <circle cx="22" cy="22.2" r="1.9" fill="#08131a" stroke="#38bdf8" stroke-width="0.7" />
+      <polygon points="14,62.0 20,69.5 32,69.5 32,62.0" fill="#0d202c" stroke="#d4e3e6" stroke-width="0.8" />
+      <circle cx="22" cy="65.8" r="1.9" fill="#08131a" stroke="#38bdf8" stroke-width="0.7" />
+      <polygon points="288,52.0 299,54.0 299,63.5 284,63.5" fill="#0d202c" stroke="#d4e3e6" stroke-width="0.85" />
+      <circle cx="294" cy="58.8" r="2.1" fill="#08131a" stroke="#38bdf8" stroke-width="0.75" />
+
+      <polygon points="20,26.0 42,7.5 234,7.5 248,16.0 304,16.0 304,35.0 290,35.0 290,58.0 236,80.5 60,80.5 20,62.0" fill="#08131a" stroke="#d4e3e6" stroke-width="1.35" />
+
+      <line x1="22" y1="16.8" x2="303" y2="16.8" stroke="#d4e3e6" stroke-width="1.25" />
+      <line x1="22" y1="34.2" x2="303" y2="34.2" stroke="#d4e3e6" stroke-width="1.25" />
+      <line x1="26" y1="25.5" x2="298" y2="25.5" stroke="#eab308" stroke-width="1.2" stroke-dasharray="6.5 3.5" />
+      <line x1="24" y1="43.5" x2="288" y2="43.5" stroke="#ff5a36" stroke-width="0.9" stroke-dasharray="4.5 2.5" />
+
+      <rect x="246" y="16.4" width="57.5" height="18.2" fill="#0d2230" stroke="#38bdf8" stroke-width="1.1" />
+      <line x1="250.0" y1="16.8" x2="250.0" y2="34.2" stroke="#38bdf8" stroke-width="0.5" stroke-opacity="0.75" /><line x1="253.0" y1="16.8" x2="253.0" y2="34.2" stroke="#38bdf8" stroke-width="0.5" stroke-opacity="0.75" /><line x1="256.0" y1="16.8" x2="256.0" y2="34.2" stroke="#38bdf8" stroke-width="0.5" stroke-opacity="0.75" /><line x1="259.0" y1="16.8" x2="259.0" y2="34.2" stroke="#38bdf8" stroke-width="0.5" stroke-opacity="0.75" /><line x1="262.0" y1="16.8" x2="262.0" y2="34.2" stroke="#38bdf8" stroke-width="0.5" stroke-opacity="0.75" /><line x1="265.0" y1="16.8" x2="265.0" y2="34.2" stroke="#38bdf8" stroke-width="0.5" stroke-opacity="0.75" /><line x1="268.0" y1="16.8" x2="268.0" y2="34.2" stroke="#38bdf8" stroke-width="0.5" stroke-opacity="0.75" /><line x1="271.0" y1="16.8" x2="271.0" y2="34.2" stroke="#38bdf8" stroke-width="0.5" stroke-opacity="0.75" /><line x1="274.0" y1="16.8" x2="274.0" y2="34.2" stroke="#38bdf8" stroke-width="0.5" stroke-opacity="0.75" /><line x1="277.0" y1="16.8" x2="277.0" y2="34.2" stroke="#38bdf8" stroke-width="0.5" stroke-opacity="0.75" /><line x1="280.0" y1="16.8" x2="280.0" y2="34.2" stroke="#38bdf8" stroke-width="0.5" stroke-opacity="0.75" /><line x1="283.0" y1="16.8" x2="283.0" y2="34.2" stroke="#38bdf8" stroke-width="0.5" stroke-opacity="0.75" /><line x1="286.0" y1="16.8" x2="286.0" y2="34.2" stroke="#38bdf8" stroke-width="0.5" stroke-opacity="0.75" /><line x1="289.0" y1="16.8" x2="289.0" y2="34.2" stroke="#38bdf8" stroke-width="0.5" stroke-opacity="0.75" /><line x1="292.0" y1="16.8" x2="292.0" y2="34.2" stroke="#38bdf8" stroke-width="0.5" stroke-opacity="0.75" /><line x1="295.0" y1="16.8" x2="295.0" y2="34.2" stroke="#38bdf8" stroke-width="0.5" stroke-opacity="0.75" /><line x1="298.0" y1="16.8" x2="298.0" y2="34.2" stroke="#38bdf8" stroke-width="0.5" stroke-opacity="0.75" /><line x1="301.0" y1="16.8" x2="301.0" y2="34.2" stroke="#38bdf8" stroke-width="0.5" stroke-opacity="0.75" />
+      <line x1="246" y1="24.2" x2="303" y2="24.2" stroke="#38bdf8" stroke-width="0.75" />
+      <line x1="246" y1="26.8" x2="303" y2="26.8" stroke="#38bdf8" stroke-width="0.75" />
+      <polyline points="256,22.0 262,25.5 256,29.0" fill="none" stroke="#eab308" stroke-width="0.95" />
+      <polyline points="270,22.0 276,25.5 270,29.0" fill="none" stroke="#eab308" stroke-width="0.95" />
+      <polyline points="294,22.0 300,25.5 294,29.0" fill="none" stroke="#ff5a36" stroke-width="1.05" />
+      <rect x="184" y="20.5" width="7.5" height="10.0" fill="#132836" stroke="#38bdf8" stroke-width="0.8" />
+      <line x1="187.8" y1="20.5" x2="187.8" y2="30.5" stroke="#4a6368" stroke-width="0.6" />
+
+      <g>
+        <circle cx="214" cy="25.5" r="7.8" fill="none" stroke="#d4e3e6" stroke-width="0.65" stroke-opacity="0.75" />
+        <line x1="232" y1="8.0" x2="232" y2="41.0" stroke="#d4e3e6" stroke-width="0.55" stroke-opacity="0.55" />
+        <text x="224" y="14.5" class="mono" font-size="4.2" fill="#d4e3e6">1</text>
+      </g>
+      <g>
+        <circle cx="176" cy="25.5" r="7.8" fill="none" stroke="#d4e3e6" stroke-width="0.65" stroke-opacity="0.75" />
+        <line x1="194" y1="8.0" x2="194" y2="41.0" stroke="#d4e3e6" stroke-width="0.55" stroke-opacity="0.55" />
+        <text x="186" y="14.5" class="mono" font-size="4.2" fill="#d4e3e6">2</text>
+      </g>
+      <g>
+        <circle cx="138" cy="25.5" r="7.8" fill="none" stroke="#d4e3e6" stroke-width="0.65" stroke-opacity="0.75" />
+        <line x1="156" y1="8.0" x2="156" y2="41.0" stroke="#d4e3e6" stroke-width="0.55" stroke-opacity="0.55" />
+        <text x="148" y="14.5" class="mono" font-size="4.2" fill="#d4e3e6">3</text>
+      </g>
+      <g>
+        <circle cx="98" cy="25.5" r="7.8" fill="none" stroke="#d4e3e6" stroke-width="0.65" stroke-opacity="0.75" />
+        <line x1="116" y1="8.0" x2="116" y2="41.0" stroke="#d4e3e6" stroke-width="0.55" stroke-opacity="0.55" />
+        <text x="108" y="14.5" class="mono" font-size="4.2" fill="#d4e3e6">4</text>
+      </g>
+      <g>
+        <circle cx="56" cy="25.5" r="7.8" fill="none" stroke="#d4e3e6" stroke-width="0.65" stroke-opacity="0.75" />
+        <line x1="74" y1="8.0" x2="74" y2="41.0" stroke="#d4e3e6" stroke-width="0.55" stroke-opacity="0.55" />
+        <text x="66" y="14.5" class="mono" font-size="4.2" fill="#d4e3e6">5</text>
+      </g>
+
+      <rect x="144" y="44.5" width="24" height="10" fill="#0c1c26" stroke="#38bdf8" stroke-width="0.75" stroke-dasharray="2.5 1.5" />
+      <circle cx="156" cy="49.5" r="4.5" fill="none" stroke="#eab308" stroke-width="0.8" />
+      <circle cx="156" cy="49.5" r="7.2" fill="none" stroke="#ff5a36" stroke-width="0.55" stroke-dasharray="1.8 1.4" />
+      <line x1="146" y1="49.5" x2="166" y2="49.5" stroke="#eab308" stroke-width="0.6" />
+      <text x="34" y="54.5" text-anchor="middle" class="mono" font-size="9.5" font-weight="bold" fill="#d4e3e6" letter-spacing="0.8">R08</text>
+      <text x="36" y="28.5" text-anchor="middle" class="mono" font-size="8.0" font-weight="bold" fill="#38bdf8">Q</text>
+      <text x="276" y="48.5" text-anchor="middle" class="mono" font-size="8.8" font-weight="bold" fill="#d4e3e6" letter-spacing="0.8">R08</text>
+
+      <rect x="142" y="64.0" width="38" height="19.5" fill="#0c1d28" stroke="#eab308" stroke-width="1.4" stroke-dasharray="3.2 1.6" />
+      <line x1="161" y1="65.5" x2="161" y2="82.0" stroke="#4a6368" stroke-width="0.65" stroke-dasharray="2 1.5" />
+      <g transform="translate(151.5,73.8) rotate(-90) scale(0.84)">
+        
+        <polygon points="8.5,0 3.5,-1.8 1.2,-1.8 -1.8,-6.6 -4.6,-6.6 -3.2,-2.0 -6.8,-3.8 -8.2,-3.6 -6.2,-0.8 -7.2,0 -6.2,0.8 -8.2,3.6 -6.8,3.8 -3.2,2.0 -4.6,6.6 -1.8,6.6 1.2,1.8 3.5,1.8" fill="#112938" stroke="#38bdf8" stroke-width="0.8" />
+        <polygon points="4.8,0 1.8,-0.9 -0.5,0 1.8,0.9" fill="#061017" stroke="#38bdf8" stroke-width="0.5" />
+        
+      </g>
+            <g transform="translate(170.5,73.8) rotate(-90) scale(0.84)">
+        
+        <polygon points="8.5,0 3.5,-1.8 1.2,-1.8 -1.8,-6.6 -4.6,-6.6 -3.2,-2.0 -6.8,-3.8 -8.2,-3.6 -6.2,-0.8 -7.2,0 -6.2,0.8 -8.2,3.6 -6.8,3.8 -3.2,2.0 -4.6,6.6 -1.8,6.6 1.2,1.8 3.5,1.8" fill="#112938" stroke="#38bdf8" stroke-width="0.8" />
+        <polygon points="4.8,0 1.8,-0.9 -0.5,0 1.8,0.9" fill="#061017" stroke="#38bdf8" stroke-width="0.5" />
+        
+      </g>
+
+      <rect x="64" y="64.0" width="38" height="19.5" fill="#0c1d28" stroke="#eab308" stroke-width="1.4" stroke-dasharray="3.2 1.6" />
+      <line x1="83" y1="65.5" x2="83" y2="82.0" stroke="#4a6368" stroke-width="0.65" stroke-dasharray="2 1.5" />
+      <g transform="translate(73.5,73.8) rotate(-90) scale(0.84)">
+        
+        <polygon points="8.5,0 3.5,-1.8 1.2,-1.8 -1.8,-6.6 -4.6,-6.6 -3.2,-2.0 -6.8,-3.8 -8.2,-3.6 -6.2,-0.8 -7.2,0 -6.2,0.8 -8.2,3.6 -6.8,3.8 -3.2,2.0 -4.6,6.6 -1.8,6.6 1.2,1.8 3.5,1.8" fill="#112938" stroke="#38bdf8" stroke-width="0.8" />
+        <polygon points="4.8,0 1.8,-0.9 -0.5,0 1.8,0.9" fill="#061017" stroke="#38bdf8" stroke-width="0.5" />
+        
+      </g>
+            <g transform="translate(92.5,73.8) rotate(-90) scale(0.84)">
+        
+        <polygon points="8.5,0 3.5,-1.8 1.2,-1.8 -1.8,-6.6 -4.6,-6.6 -3.2,-2.0 -6.8,-3.8 -8.2,-3.6 -6.2,-0.8 -7.2,0 -6.2,0.8 -8.2,3.6 -6.8,3.8 -3.2,2.0 -4.6,6.6 -1.8,6.6 1.2,1.8 3.5,1.8" fill="#112938" stroke="#38bdf8" stroke-width="0.8" />
+        <polygon points="4.8,0 1.8,-0.9 -0.5,0 1.8,0.9" fill="#061017" stroke="#38bdf8" stroke-width="0.5" />
+        
+      </g>
+
+      <g id="clean-top-top-forward-island">
+        <polygon points="184,80.5 184,67.5 190,64.5 215,64.5 220,68.5 220,80.5" fill="#122734" stroke="#d4e3e6" stroke-width="1.15" />
+        <polygon points="207,65.2 217.5,65.2 219.2,68.5 207,68.5" fill="#071520" stroke="#38bdf8" stroke-width="0.8" />
+        <rect x="188.5" y="69.5" width="7.5" height="6.5" fill="#071118" stroke="#ff5a36" stroke-width="0.75" />
+        <line x1="190.8" y1="69.5" x2="190.8" y2="76.0" stroke="#ff5a36" stroke-width="0.5" />
+        <line x1="193.5" y1="69.5" x2="193.5" y2="76.0" stroke="#ff5a36" stroke-width="0.5" />
+        <circle cx="204.5" cy="72.8" r="6.2" fill="none" stroke="#38bdf8" stroke-width="0.45" stroke-dasharray="1.8 1.4" />
+        <rect x="198.0" y="70.6" width="13.0" height="4.4" rx="0.6" transform="rotate(-12 204.5 72.8)" fill="#153448" stroke="#38bdf8" stroke-width="1.0" />
+        <circle cx="186.2" cy="75.5" r="2.3" fill="#09151e" stroke="#d4e3e6" stroke-width="0.75" />
+        <circle cx="216.8" cy="75.5" r="2.1" fill="#09151e" stroke="#d4e3e6" stroke-width="0.75" />
+        </g>
+
+      <g id="clean-top-top-aft-island">
+        <polygon points="104,80.5 104,67.5 110,64.5 135,64.5 138,68.5 138,80.5" fill="#122734" stroke="#d4e3e6" stroke-width="1.15" />
+        <polygon points="124.5,64.8 126.5,58.6 135.2,58.6 137.2,62.5 135.8,64.8" fill="#082232" stroke="#38bdf8" stroke-width="1.05" />
+        <line x1="126.5" y1="61.2" x2="136.2" y2="61.2" stroke="#d4e3e6" stroke-width="0.5" />
+        <line x1="130.8" y1="58.6" x2="130.8" y2="64.8" stroke="#38bdf8" stroke-width="0.5" />
+        <rect x="111.0" y="69.5" width="7.5" height="6.5" fill="#071118" stroke="#ff5a36" stroke-width="0.75" />
+        <line x1="113.5" y1="69.5" x2="113.5" y2="76.0" stroke="#ff5a36" stroke-width="0.5" />
+        <line x1="116.0" y1="69.5" x2="116.0" y2="76.0" stroke="#ff5a36" stroke-width="0.5" />
+        <circle cx="126.5" cy="72.8" r="4.2" fill="#0d2230" stroke="#38bdf8" stroke-width="0.95" />
+        <line x1="123.0" y1="71.2" x2="130.0" y2="74.4" stroke="#d4e3e6" stroke-width="0.9" />
+        <circle cx="107.2" cy="75.2" r="2.2" fill="#09151e" stroke="#d4e3e6" stroke-width="0.75" />
+        </g>
+
+      <g transform="translate(284.0,25.5) rotate(0) scale(0.96)">
+        <polygon points="-13.5,0 -7.2,-1.6 -5.8,0 -7.2,1.6" fill="#ff5a36" stroke="#eab308" stroke-width="0.5" />
+        <polygon points="8.5,0 3.5,-1.8 1.2,-1.8 -1.8,-6.6 -4.6,-6.6 -3.2,-2.0 -6.8,-3.8 -8.2,-3.6 -6.2,-0.8 -7.2,0 -6.2,0.8 -8.2,3.6 -6.8,3.8 -3.2,2.0 -4.6,6.6 -1.8,6.6 1.2,1.8 3.5,1.8" fill="#112938" stroke="#38bdf8" stroke-width="0.8" />
+        <polygon points="4.8,0 1.8,-0.9 -0.5,0 1.8,0.9" fill="#061017" stroke="#38bdf8" stroke-width="0.5" />
+        <rect x="-2.2" y="-1.1" width="2.4" height="2.2" fill="#183648" stroke="#eab308" stroke-width="0.65" />
+      </g>
+      <g transform="translate(156.0,49.5) rotate(0) scale(0.92)">
+        
+        <polygon points="8.5,0 3.5,-1.8 1.2,-1.8 -1.8,-6.6 -4.6,-6.6 -3.2,-2.0 -6.8,-3.8 -8.2,-3.6 -6.2,-0.8 -7.2,0 -6.2,0.8 -8.2,3.6 -6.8,3.8 -3.2,2.0 -4.6,6.6 -1.8,6.6 1.2,1.8 3.5,1.8" fill="#112938" stroke="#38bdf8" stroke-width="0.8" />
+        <polygon points="4.8,0 1.8,-0.9 -0.5,0 1.8,0.9" fill="#061017" stroke="#38bdf8" stroke-width="0.5" />
+        <rect x="-2.2" y="-1.1" width="2.4" height="2.2" fill="#183648" stroke="#eab308" stroke-width="0.65" />
+      </g>
+      <g transform="translate(194.0,56.5) rotate(-68) scale(0.88)">
+        
+        <polygon points="8.5,0 3.5,-1.8 1.2,-1.8 -1.8,-6.6 -4.6,-6.6 -3.2,-2.0 -6.8,-3.8 -8.2,-3.6 -6.2,-0.8 -7.2,0 -6.2,0.8 -8.2,3.6 -6.8,3.8 -3.2,2.0 -4.6,6.6 -1.8,6.6 1.2,1.8 3.5,1.8" fill="#0a161e" stroke="#d4e3e6" stroke-width="0.8" />
+        <polygon points="4.8,0 1.8,-0.9 -0.5,0 1.8,0.9" fill="#061017" stroke="#38bdf8" stroke-width="0.5" />
+        
+      </g>
+      <g transform="translate(208.0,56.1) rotate(-68) scale(0.88)">
+        
+        <polygon points="8.5,0 3.5,-1.8 1.2,-1.8 -1.8,-6.6 -4.6,-6.6 -3.2,-2.0 -6.8,-3.8 -8.2,-3.6 -6.2,-0.8 -7.2,0 -6.2,0.8 -8.2,3.6 -6.8,3.8 -3.2,2.0 -4.6,6.6 -1.8,6.6 1.2,1.8 3.5,1.8" fill="#0a161e" stroke="#d4e3e6" stroke-width="0.8" />
+        <polygon points="4.8,0 1.8,-0.9 -0.5,0 1.8,0.9" fill="#061017" stroke="#38bdf8" stroke-width="0.5" />
+        
+      </g>
+      <g transform="translate(222.0,55.7) rotate(-68) scale(0.88)">
+        
+        <polygon points="8.5,0 3.5,-1.8 1.2,-1.8 -1.8,-6.6 -4.6,-6.6 -3.2,-2.0 -6.8,-3.8 -8.2,-3.6 -6.2,-0.8 -7.2,0 -6.2,0.8 -8.2,3.6 -6.8,3.8 -3.2,2.0 -4.6,6.6 -1.8,6.6 1.2,1.8 3.5,1.8" fill="#0a161e" stroke="#d4e3e6" stroke-width="0.8" />
+        <polygon points="4.8,0 1.8,-0.9 -0.5,0 1.8,0.9" fill="#061017" stroke="#38bdf8" stroke-width="0.5" />
+        
+      </g>
+      <g transform="translate(236.0,55.3) rotate(-68) scale(0.88)">
+        
+        <polygon points="8.5,0 3.5,-1.8 1.2,-1.8 -1.8,-6.6 -4.6,-6.6 -3.2,-2.0 -6.8,-3.8 -8.2,-3.6 -6.2,-0.8 -7.2,0 -6.2,0.8 -8.2,3.6 -6.8,3.8 -3.2,2.0 -4.6,6.6 -1.8,6.6 1.2,1.8 3.5,1.8" fill="#0a161e" stroke="#d4e3e6" stroke-width="0.8" />
+        <polygon points="4.8,0 1.8,-0.9 -0.5,0 1.8,0.9" fill="#061017" stroke="#38bdf8" stroke-width="0.5" />
+        
+      </g>
+      <g transform="translate(250.0,54.9) rotate(-68) scale(0.88)">
+        
+        <polygon points="8.5,0 3.5,-1.8 1.2,-1.8 -1.8,-6.6 -4.6,-6.6 -3.2,-2.0 -6.8,-3.8 -8.2,-3.6 -6.2,-0.8 -7.2,0 -6.2,0.8 -8.2,3.6 -6.8,3.8 -3.2,2.0 -4.6,6.6 -1.8,6.6 1.2,1.8 3.5,1.8" fill="#0a161e" stroke="#d4e3e6" stroke-width="0.8" />
+        <polygon points="4.8,0 1.8,-0.9 -0.5,0 1.8,0.9" fill="#061017" stroke="#38bdf8" stroke-width="0.5" />
+        
+      </g>
+      <g transform="translate(264.0,54.5) rotate(-68) scale(0.88)">
+        
+        <polygon points="8.5,0 3.5,-1.8 1.2,-1.8 -1.8,-6.6 -4.6,-6.6 -3.2,-2.0 -6.8,-3.8 -8.2,-3.6 -6.2,-0.8 -7.2,0 -6.2,0.8 -8.2,3.6 -6.8,3.8 -3.2,2.0 -4.6,6.6 -1.8,6.6 1.2,1.8 3.5,1.8" fill="#0a161e" stroke="#d4e3e6" stroke-width="0.8" />
+        <polygon points="4.8,0 1.8,-0.9 -0.5,0 1.8,0.9" fill="#061017" stroke="#38bdf8" stroke-width="0.5" />
+        
+      </g>
+      <g transform="translate(46.0,57.5) rotate(-68) scale(0.88)">
+        
+        <polygon points="8.5,0 3.5,-1.8 1.2,-1.8 -1.8,-6.6 -4.6,-6.6 -3.2,-2.0 -6.8,-3.8 -8.2,-3.6 -6.2,-0.8 -7.2,0 -6.2,0.8 -8.2,3.6 -6.8,3.8 -3.2,2.0 -4.6,6.6 -1.8,6.6 1.2,1.8 3.5,1.8" fill="#0a161e" stroke="#d4e3e6" stroke-width="0.8" />
+        <polygon points="4.8,0 1.8,-0.9 -0.5,0 1.8,0.9" fill="#061017" stroke="#38bdf8" stroke-width="0.5" />
+        
+      </g>
+      <g transform="translate(60.0,57.5) rotate(-68) scale(0.88)">
+        
+        <polygon points="8.5,0 3.5,-1.8 1.2,-1.8 -1.8,-6.6 -4.6,-6.6 -3.2,-2.0 -6.8,-3.8 -8.2,-3.6 -6.2,-0.8 -7.2,0 -6.2,0.8 -8.2,3.6 -6.8,3.8 -3.2,2.0 -4.6,6.6 -1.8,6.6 1.2,1.8 3.5,1.8" fill="#0a161e" stroke="#d4e3e6" stroke-width="0.8" />
+        <polygon points="4.8,0 1.8,-0.9 -0.5,0 1.8,0.9" fill="#061017" stroke="#38bdf8" stroke-width="0.5" />
+        
+      </g>
+      <g transform="translate(108.0,57.5) rotate(-68) scale(0.88)">
+        
+        <polygon points="8.5,0 3.5,-1.8 1.2,-1.8 -1.8,-6.6 -4.6,-6.6 -3.2,-2.0 -6.8,-3.8 -8.2,-3.6 -6.2,-0.8 -7.2,0 -6.2,0.8 -8.2,3.6 -6.8,3.8 -3.2,2.0 -4.6,6.6 -1.8,6.6 1.2,1.8 3.5,1.8" fill="#0a161e" stroke="#d4e3e6" stroke-width="0.8" />
+        <polygon points="4.8,0 1.8,-0.9 -0.5,0 1.8,0.9" fill="#061017" stroke="#38bdf8" stroke-width="0.5" />
+        
+      </g>
+      <g transform="translate(122.0,57.5) rotate(-68) scale(0.88)">
+        
+        <polygon points="8.5,0 3.5,-1.8 1.2,-1.8 -1.8,-6.6 -4.6,-6.6 -3.2,-2.0 -6.8,-3.8 -8.2,-3.6 -6.2,-0.8 -7.2,0 -6.2,0.8 -8.2,3.6 -6.8,3.8 -3.2,2.0 -4.6,6.6 -1.8,6.6 1.2,1.8 3.5,1.8" fill="#0a161e" stroke="#d4e3e6" stroke-width="0.8" />
+        <polygon points="4.8,0 1.8,-0.9 -0.5,0 1.8,0.9" fill="#061017" stroke="#38bdf8" stroke-width="0.5" />
+        
+      </g>
+      <g transform="translate(136.0,57.5) rotate(-68) scale(0.88)">
+        
+        <polygon points="8.5,0 3.5,-1.8 1.2,-1.8 -1.8,-6.6 -4.6,-6.6 -3.2,-2.0 -6.8,-3.8 -8.2,-3.6 -6.2,-0.8 -7.2,0 -6.2,0.8 -8.2,3.6 -6.8,3.8 -3.2,2.0 -4.6,6.6 -1.8,6.6 1.2,1.8 3.5,1.8" fill="#0a161e" stroke="#d4e3e6" stroke-width="0.8" />
+        <polygon points="4.8,0 1.8,-0.9 -0.5,0 1.8,0.9" fill="#061017" stroke="#38bdf8" stroke-width="0.5" />
+        
+      </g>
+      <g transform="translate(214.0,25.5) scale(0.95)">
+        <circle cx="1.2" cy="0" r="7.8" fill="none" stroke="#4a6368" stroke-width="0.5" stroke-dasharray="2 1.8" />
+        <ellipse cx="1.5" cy="0" rx="5.8" ry="2.1" fill="#0c1c26" stroke="#d4e3e6" stroke-width="0.8" />
+        <line x1="-8.2" y1="0" x2="6.8" y2="0" stroke="#d4e3e6" stroke-width="0.85" />
+        <line x1="-7.8" y1="-2.2" x2="-7.8" y2="0.4" stroke="#38bdf8" stroke-width="0.65" />
+        <circle cx="3.2" cy="2.6" r="1.45" fill="#133246" stroke="#38bdf8" stroke-width="0.7" />
+        <line x1="1.2" y1="0" x2="8.8" y2="0" stroke="#38bdf8" stroke-width="0.7" />
+        <line x1="1.2" y1="0" x2="3.5" y2="-7.2" stroke="#38bdf8" stroke-width="0.7" />
+        <line x1="1.2" y1="0" x2="-5.0" y2="-4.5" stroke="#38bdf8" stroke-width="0.7" />
+        <line x1="1.2" y1="0" x2="-5.0" y2="4.5" stroke="#38bdf8" stroke-width="0.7" />
+        <line x1="1.2" y1="0" x2="3.5" y2="7.2" stroke="#38bdf8" stroke-width="0.7" />
+        <circle cx="1.2" cy="0" r="1.0" fill="#d4e3e6" />
+      </g>
+            <g transform="translate(176.0,25.5) scale(0.95)">
+        <circle cx="1.2" cy="0" r="7.8" fill="none" stroke="#4a6368" stroke-width="0.5" stroke-dasharray="2 1.8" />
+        <ellipse cx="1.5" cy="0" rx="5.8" ry="2.1" fill="#0c1c26" stroke="#d4e3e6" stroke-width="0.8" />
+        <line x1="-8.2" y1="0" x2="6.8" y2="0" stroke="#d4e3e6" stroke-width="0.85" />
+        <line x1="-7.8" y1="-2.2" x2="-7.8" y2="0.4" stroke="#38bdf8" stroke-width="0.65" />
+        <circle cx="3.2" cy="2.6" r="1.45" fill="#133246" stroke="#38bdf8" stroke-width="0.7" />
+        <line x1="1.2" y1="0" x2="8.8" y2="0" stroke="#38bdf8" stroke-width="0.7" />
+        <line x1="1.2" y1="0" x2="3.5" y2="-7.2" stroke="#38bdf8" stroke-width="0.7" />
+        <line x1="1.2" y1="0" x2="-5.0" y2="-4.5" stroke="#38bdf8" stroke-width="0.7" />
+        <line x1="1.2" y1="0" x2="-5.0" y2="4.5" stroke="#38bdf8" stroke-width="0.7" />
+        <line x1="1.2" y1="0" x2="3.5" y2="7.2" stroke="#38bdf8" stroke-width="0.7" />
+        <circle cx="1.2" cy="0" r="1.0" fill="#d4e3e6" />
+      </g>
+            <g transform="translate(138.0,25.5) scale(0.95)">
+        <circle cx="1.2" cy="0" r="7.8" fill="none" stroke="#4a6368" stroke-width="0.5" stroke-dasharray="2 1.8" />
+        <ellipse cx="1.5" cy="0" rx="5.8" ry="2.1" fill="#0c1c26" stroke="#d4e3e6" stroke-width="0.8" />
+        <line x1="-8.2" y1="0" x2="6.8" y2="0" stroke="#d4e3e6" stroke-width="0.85" />
+        <line x1="-7.8" y1="-2.2" x2="-7.8" y2="0.4" stroke="#38bdf8" stroke-width="0.65" />
+        
+        <line x1="1.2" y1="0" x2="8.8" y2="0" stroke="#38bdf8" stroke-width="0.7" />
+        <line x1="1.2" y1="0" x2="3.5" y2="-7.2" stroke="#38bdf8" stroke-width="0.7" />
+        <line x1="1.2" y1="0" x2="-5.0" y2="-4.5" stroke="#38bdf8" stroke-width="0.7" />
+        <line x1="1.2" y1="0" x2="-5.0" y2="4.5" stroke="#38bdf8" stroke-width="0.7" />
+        <line x1="1.2" y1="0" x2="3.5" y2="7.2" stroke="#38bdf8" stroke-width="0.7" />
+        <circle cx="1.2" cy="0" r="1.0" fill="#d4e3e6" />
+      </g>
+            <g transform="translate(98.0,25.5) scale(0.95)">
+        <circle cx="1.2" cy="0" r="7.8" fill="none" stroke="#4a6368" stroke-width="0.5" stroke-dasharray="2 1.8" />
+        <ellipse cx="1.5" cy="0" rx="5.8" ry="2.1" fill="#0c1c26" stroke="#d4e3e6" stroke-width="0.8" />
+        <line x1="-8.2" y1="0" x2="6.8" y2="0" stroke="#d4e3e6" stroke-width="0.85" />
+        <line x1="-7.8" y1="-2.2" x2="-7.8" y2="0.4" stroke="#38bdf8" stroke-width="0.65" />
+        
+        <line x1="1.2" y1="0" x2="8.8" y2="0" stroke="#38bdf8" stroke-width="0.7" />
+        <line x1="1.2" y1="0" x2="3.5" y2="-7.2" stroke="#38bdf8" stroke-width="0.7" />
+        <line x1="1.2" y1="0" x2="-5.0" y2="-4.5" stroke="#38bdf8" stroke-width="0.7" />
+        <line x1="1.2" y1="0" x2="-5.0" y2="4.5" stroke="#38bdf8" stroke-width="0.7" />
+        <line x1="1.2" y1="0" x2="3.5" y2="7.2" stroke="#38bdf8" stroke-width="0.7" />
+        <circle cx="1.2" cy="0" r="1.0" fill="#d4e3e6" />
+      </g>
+      <g transform="translate(56.0,25.5) scale(0.96)">
+        <circle cx="-5.2" cy="0" r="7.2" fill="none" stroke="#4a6368" stroke-width="0.5" stroke-dasharray="2 1.8" />
+        <circle cx="5.2" cy="0" r="7.2" fill="none" stroke="#4a6368" stroke-width="0.5" stroke-dasharray="2 1.8" />
+        <rect x="-7.5" y="-2.4" width="15.0" height="4.8" rx="1.8" fill="#0d202c" stroke="#d4e3e6" stroke-width="0.85" />
+        <rect x="-5.5" y="-3.2" width="10.0" height="6.4" rx="1.0" fill="none" stroke="#5f7c84" stroke-width="0.55" />
+        <line x1="5.2" y1="0" x2="11.8" y2="0" stroke="#38bdf8" stroke-width="0.75" />
+        <line x1="5.2" y1="0" x2="1.8" y2="-5.8" stroke="#38bdf8" stroke-width="0.75" />
+        <line x1="5.2" y1="0" x2="1.8" y2="5.8" stroke="#38bdf8" stroke-width="0.75" />
+        <circle cx="5.2" cy="0" r="1.1" fill="#eab308" />
+        <line x1="-5.2" y1="0" x2="-11.8" y2="0" stroke="#38bdf8" stroke-width="0.75" />
+        <line x1="-5.2" y1="0" x2="-1.8" y2="-5.8" stroke="#38bdf8" stroke-width="0.75" />
+        <line x1="-5.2" y1="0" x2="-1.8" y2="5.8" stroke="#38bdf8" stroke-width="0.75" />
+        <circle cx="-5.2" cy="0" r="1.1" fill="#eab308" />
+      </g>
+    </g>
+  </g>
+</g></svg>

@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 580" width="1320" height="580" data-asset-id="naval.yuri.siren.master.sheet" style="background:#080a0b;">
+  <defs>
+    <style>
+      svg { fill: none; stroke-linecap: butt; }
+      .s-dim { stroke: #2c3b40; stroke-width: 1; }
+      .s-line { stroke: #5f7c84; stroke-width: 1; }
+      .s-hi { stroke: #d4e3e6; stroke-width: 1.2; }
+      .s-alert { stroke: #ff5a36; stroke-width: 1.4; }
+      .s-focus { stroke: #38bdf8; stroke-width: 1.4; }
+      .f-dim { fill: #2c3b40; stroke: none; }
+      .f-line { fill: #5f7c84; stroke: none; }
+      .f-hi { fill: #d4e3e6; stroke: none; }
+      .f-alert { fill: #ff5a36; stroke: none; }
+      .f-panel { fill: #0c1113; }
+      .p { font-family: "Rajdhani", "Bahnschrift", "DIN Alternate", "Microsoft YaHei", sans-serif; letter-spacing: 0.12em; }
+      text { font-family: "Rajdhani", "Bahnschrift", "DIN Alternate", "Microsoft YaHei", sans-serif; letter-spacing: 0.12em; }
+      text:not([stroke]) { stroke: none; }
+      text:not([fill]) { fill: #cfdde0; }
+      text.cap { letter-spacing: 0.2em; text-transform: uppercase; }
+      text.cap:not([fill]) { fill: #8aa1a7; }
+      text.cap:not([font-size]) { font-size: 8.5px; }
+      text.mono { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; letter-spacing: 0.06em; }
+      text.big { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; font-weight: 600; letter-spacing: 0.08em; }
+      text.big:not([font-size]) { font-size: 18px; }
+      text.big:not([fill]) { fill: #d4e3e6; }
+      text.alert { fill: #ff5a36; }
+    </style>
+    <pattern id="cad-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#10181c" stroke-width="1"/>
+      <circle cx="20" cy="20" r="0.8" fill="#1b262b"/>
+    </pattern>
+    <pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#ff5a36" stroke-width="1.2" stroke-opacity="0.35"/>
+    </pattern>
+  </defs>
+
+  <!-- 1. 工程蓝图暗色底板与坐标网格图层 -->
+  <g id="layer-backdrop">
+    <rect x="0" y="0" width="1320" height="580" fill="#080a0b"/>
+    <rect x="20" y="20" width="1280" height="540" fill="url(#cad-grid)" stroke="#2c3b40" stroke-width="1"/>
+    <path d="M 20 36 V 20 H 36 M 1284 20 H 1300 V 36 M 20 544 V 560 H 36 M 1284 560 H 1300 V 544" fill="none" stroke="#38bdf8" stroke-width="1.5"/>
+    <line x1="20" y1="54" x2="1300" y2="54" stroke="#2c3b40" stroke-width="1"/>
+    <line x1="20" y1="534" x2="1300" y2="534" stroke="#2c3b40" stroke-width="1"/>
+    <text x="34" y="42" class="p mono" fill="#38bdf8" font-size="10.0" font-weight="bold">YURI SIREN-CLASS WAVE-PIERCING SEMI-SUBMERSIBLE GATTLING FRIGATE (SRN-14) · 2,850T MASTER BLUEPRINT</text>
+    <text x="1286" y="42" text-anchor="end" class="p cap" fill="#d4e3e6" font-size="9.8">尤里「SRN-14 海妖级」穿浪半潜式盖特防空护卫舰 · 侧视三级超频弹幕与顶视全甲板总图</text>
+    <text x="34" y="551" class="p mono" fill="#8aa1a7" font-size="9.0">LOA: 112.0M · BEAM: 14.8M (7.57:1) · SEMI-SUBMERSIBLE BALLAST HULL · 2×TWIN 30MM 6-BARREL SERVO GATTLING (7,200 RPM) · UID=29</text>
+    <text x="1286" y="551" text-anchor="end" class="p mono" fill="#5f7c84" font-size="9.0">POSEIDON NAVAL CAD ASSET · TRUE 1:1 ASPECT (7.57:1)</text>
+  </g>
+
+  <!-- 2. 舰艇核心 CAD 矢量图层 (上半框侧视立面 + 下半框顶视全甲板 + 右侧双工程规格铭牌) -->
+  <g id="layer-ship-cad">
+    <rect x="44" y="72" width="1232" height="216" fill="#091116" fill-opacity="0.45" stroke="#2c3b40"/>
+    <text font-size="9.5" x="58" y="92" class="p mono" fill="#38bdf8">01 / STARBOARD PROFILE &amp; SEMI-SUBMERSIBLE WL / 2×TWIN 30MM GATTLING / 3-STAGE 7,200 RPM CURVE</text>
+    <text x="975" y="92" text-anchor="end" class="p mono" fill="#5f7c84" font-size="9">SCALE 1:1 · BOW RIGHT (+X)</text>
+    <g transform="translate(62.0,98.0) scale(2.040,2.040)">
+      <!-- 0. 左上方空白区：《协议 uid=27：盖特伺服电机—防空火控相控并网协议》三级射速阶梯与 +1.5s 心灵预旋曲线框 (X=22..178, Y=-1.0..23.5) -->
+      <g id="siren-protocol27-telemetry">
+        <rect x="22" y="-1.0" width="156" height="24.5" fill="#061016" fill-opacity="0.85" stroke="#38bdf8" stroke-width="0.75"/>
+        <line x1="22" y1="4.2" x2="178" y2="4.2" stroke="#2c3b40" stroke-width="0.6"/>
+        <text x="26" y="2.6" class="mono" font-size="2.3" fill="#38bdf8">PROTOCOL UID-27: BRUSHLESS SERVO 3-STAGE RPM RAMP</text>
+
+        <!-- 三级射速阶梯曲线 (Stage I -> Stage II -> Stage III +1.5s Psychic Pre-Spin) -->
+        <polyline points="27,20.5 52,20.5 56,15.0 92,15.0 96,8.2 172,8.2" fill="none" stroke="#ff5a36" stroke-width="1.05"/>
+        <!-- +1.5s 心灵传感器提前预旋虚线导前曲线 -->
+        <polyline points="82,15.0 86,8.2 96,8.2" fill="none" stroke="#eab308" stroke-width="0.85" stroke-dasharray="1.8 1.0"/>
+        <circle cx="86" cy="8.2" r="1.1" fill="#eab308"/>
+        <circle cx="56" cy="15.0" r="1.0" fill="#38bdf8"/>
+        <circle cx="96" cy="8.2" r="1.1" fill="#ff5a36"/>
+
+        <text x="27" y="18.8" class="mono" font-size="2.1" fill="#8aa1a7">STG I: 1,200 RPM</text>
+        <text x="58" y="13.4" class="mono" font-size="2.1" fill="#38bdf8">STG II: 3,600 RPM</text>
+        <text x="99" y="7.0" class="mono" font-size="2.1" fill="#ff5a36">STG III: 7,200 RPM (METAL STORM)</text>
+        <text x="84" y="21.8" class="mono" font-size="2.1" fill="#eab308">+1.5S Ψ-SENSOR PRE-SPIN OVERCLOCK</text>
+      </g>
+
+      <!-- 右上方净空区：心灵并网主桅与前双联 30mm 盖特防空弹幕标注 -->
+      <g id="siren-side-callouts">
+        <polyline points="222,7.2 234,1.2 308,1.2" fill="none" stroke="#eab308" stroke-width="0.65"/>
+        <circle cx="222" cy="7.2" r="1.0" fill="#eab308"/>
+        <text x="236" y="-0.6" class="mono" font-size="2.4" fill="#eab308" dy="2.5">Ψ-LINK &amp; AESA SYNC MAST</text>
+
+        <text x="338" y="4.5" class="mono" font-size="2.4" fill="#ff5a36">TWIN 30MM 6-BARREL SEA GATTLING</text>
+        <text x="338" y="8.2" class="mono" font-size="2.2" fill="#38bdf8">7,200 RPM TUNGSTEN FLAK CONE</text>
+      </g>
+
+      <!-- 1. 工程尺寸标尺 (LOA 112.0M = 392.0 CAD Units, X=20..412) -->
+      <line x1="20" y1="74.5" x2="412" y2="74.5" stroke="#2c3b40" stroke-width="0.6"/>
+      <line x1="20" y1="72.5" x2="20" y2="76.5" stroke="#38bdf8" stroke-width="0.75"/>
+      <line x1="412" y1="72.5" x2="412" y2="76.5" stroke="#38bdf8" stroke-width="0.75"/>
+      <text x="216" y="77.8" text-anchor="middle" class="mono" font-size="2.5" fill="#8aa1a7">LOA 112.0M · BEAM 14.8M (7.57:1) · SEMI-SUBMERGED DRAFT 6.8M · 2,850T · 2×PUMP-JET THRUSTERS</text>
+
+      <!-- 2. 水下与半潜艇体：逆向内倾穿浪刀锋首 (X=345..412) + 快速注排水压载水舱 + 舰尾可伸缩猎潜声呐与双涵道泵喷 -->
+      <g id="siren-semi-submersible-hull">
+        <!-- 水下暗红防污艇底与压载深潜壳体 (Y=54.0..66.5) -->
+        <path d="M 24 54.0 L 404 54.0 L 412 56.5 L 394 65.8 L 352 66.5 L 54 66.5 L 32 62.5 L 20 57.5 Z"
+              fill="#261014" stroke="#ff5a36" stroke-width="1.05"/>
+
+        <!-- 穿浪刀锋首 + 半潜低可探测多面体内倾主艇体 (Inverted Wave-Piercing Bow · X=20..412, Y=42.5..54.0) -->
+        <polygon points="20,48.5 34,43.5 92,43.5 98,42.2 132,42.2 138,43.5 182,43.5 188,38.0 278,38.0 284,42.2 332,42.2 345,43.0 412,56.5 404,54.0 24,54.0"
+                 fill="#09151e" stroke="#d4e3e6" stroke-width="1.3"/>
+
+        <!-- 刀锋穿浪首高强度钛合金分水脊与消磁/声学格栅 (X=345..412) -->
+        <polygon points="345,43.0 374,48.8 412,56.5 390,54.0 342,46.8" fill="#122836" stroke="#38bdf8" stroke-width="0.95"/>
+        <line x1="358" y1="45.6" x2="352" y2="54.0" stroke="#38bdf8" stroke-width="0.65"/>
+        <line x1="370" y1="48.0" x2="364" y2="54.0" stroke="#38bdf8" stroke-width="0.65"/>
+        <line x1="382" y1="50.4" x2="376" y2="54.0" stroke="#38bdf8" stroke-width="0.65"/>
+        <!-- 舰首舷号 SRN-14 -->
+        <text x="358" y="52.4" text-anchor="middle" class="mono" font-size="3.4" fill="#d4e3e6" font-weight="bold">SRN-14</text>
+
+        <!-- 双水线标示：(1) 正常巡航水线 NORMAL WL (Y=54.0) 与 (2) 交战半潜低可探测水线 SEMI-SUBMERGED COMBAT WL (Y=43.2) -->
+        <line x1="14" y1="54.0" x2="414" y2="54.0" stroke="#38bdf8" stroke-width="0.9"/>
+        <text x="413" y="52.2" text-anchor="end" class="mono" font-size="2.2" fill="#38bdf8">NORMAL WL</text>
+
+        <line x1="14" y1="43.2" x2="414" y2="43.2" stroke="#ff5a36" stroke-width="1.05" stroke-dasharray="4.5 2.0"/>
+        <text x="413" y="41.2" text-anchor="end" class="mono" font-size="2.3" fill="#ff5a36">SEMI-SUBMERGED COMBAT WL (-4.2M)</text>
+
+        <!-- 水下双涵道静音泵喷推进器 (2×Shrouded Pump-Jet / Waterjet Thrusters · X=22..48, Y=58.5..65.5) -->
+        <polygon points="22,59.5 42,58.5 44,64.2 22,63.5" fill="#142c3c" stroke="#eab308" stroke-width="1.0"/>
+        <rect x="25" y="59.8" width="12" height="3.2" fill="#061016" stroke="#38bdf8" stroke-width="0.65"/>
+        <line x1="44" y1="61.2" x2="92" y2="61.2" stroke="#eab308" stroke-width="1.15"/>
+        <!-- 泵喷尾流喷射矢量线 -->
+        <line x1="10" y1="60.5" x2="21" y2="60.5" stroke="#38bdf8" stroke-width="0.75" stroke-dasharray="2 1.2"/>
+        <line x1="12" y1="62.2" x2="21" y2="62.2" stroke="#eab308" stroke-width="0.75" stroke-dasharray="2 1.2"/>
+        <!-- 水平潜舵 (Hydroplanes) -->
+        <polygon points="368,58.5 384,58.5 381,61.2 366,61.2" fill="#18364a" stroke="#eab308" stroke-width="0.8"/>
+        <polygon points="44,55.5 56,55.5 54,58.0 42,58.0" fill="#18364a" stroke="#eab308" stroke-width="0.8"/>
+
+        <!-- 舰尾船底可伸缩主动猎潜声呐吊舱 (Retractable Active Hunter Sonar Pod · X=58..76, Y=64.5..71.5) -->
+        <line x1="65" y1="62.0" x2="61" y2="68.5" stroke="#d4e3e6" stroke-width="1.0"/>
+        <line x1="71" y1="62.0" x2="67" y2="68.5" stroke="#d4e3e6" stroke-width="1.0"/>
+        <ellipse cx="64" cy="69.2" rx="6.5" ry="2.0" fill="#163244" stroke="#38bdf8" stroke-width="0.9"/>
+        <path d="M 73 67.5 Q 76 69.2 73 70.9 M 76 66.5 Q 80 69.2 76 71.9" fill="none" stroke="#eab308" stroke-width="0.65"/>
+        <text x="108" y="70.8" class="mono" font-size="2.2" fill="#38bdf8">RETRACTABLE ACTIVE SONAR</text>
+      </g>
+
+      <!-- 3. 内部透视：前/中/后快速注排水半潜压载水舱 + 盖特炮塔下部无刷伺服电机/双路供弹链/导热凝胶罐 + 柴电/燃机动力舱 -->
+      <g id="siren-internal-cutaway">
+        <!-- (A) 前/中/后高压快速注排水半潜压载水舱 (Rapid Flood/Blow Ballast Tanks · #38bdf8 虚线框) -->
+        <rect x="336" y="49.5" width="44" height="13.5" fill="#05131c" fill-opacity="0.7" stroke="#38bdf8" stroke-width="0.75" stroke-dasharray="2.2 1.2"/>
+        <line x1="336" y1="56.5" x2="380" y2="56.5" stroke="#38bdf8" stroke-width="0.55" stroke-dasharray="1.5 1.0"/>
+        <text x="358" y="61.2" text-anchor="middle" class="mono" font-size="2.1" fill="#38bdf8">FWD BALLAST</text>
+
+        <rect x="142" y="46.5" width="40" height="17.5" fill="#05131c" fill-opacity="0.7" stroke="#38bdf8" stroke-width="0.75" stroke-dasharray="2.2 1.2"/>
+        <text x="162" y="56.5" text-anchor="middle" class="mono" font-size="2.1" fill="#38bdf8">MID BALLAST</text>
+
+        <rect x="46" y="46.5" width="38" height="14.0" fill="#05131c" fill-opacity="0.7" stroke="#38bdf8" stroke-width="0.75" stroke-dasharray="2.2 1.2"/>
+        <text x="65" y="54.8" text-anchor="middle" class="mono" font-size="2.1" fill="#38bdf8">AFT BALLAST</text>
+
+        <!-- (B) 1号前盖特防空炮塔深井：大功率无刷伺服电机 + 双路自动供弹升降链 + 枪管冷却导热凝胶储罐 (X=290..328, Y=42.5..64.0) -->
+        <rect x="290" y="42.5" width="38" height="21.5" fill="#16090c" stroke="#ff5a36" stroke-width="0.85" stroke-dasharray="2.5 1.2"/>
+        <!-- 中央大功率无刷伺服电机转子总成 -->
+        <rect x="303" y="44.2" width="12" height="7.5" fill="#1e1408" stroke="#eab308" stroke-width="0.8"/>
+        <line x1="305" y1="44.2" x2="305" y2="51.7" stroke="#eab308" stroke-width="0.55"/>
+        <line x1="309" y1="44.2" x2="309" y2="51.7" stroke="#eab308" stroke-width="0.55"/>
+        <line x1="313" y1="44.2" x2="313" y2="51.7" stroke="#eab308" stroke-width="0.55"/>
+        <!-- 左右双路自动供弹升降链条 (Dual-Feed Ammo Chutes) 与 底部导热凝胶冷却罐 (Cryo-Gel Tank) -->
+        <line x1="296" y1="42.5" x2="296" y2="61.5" stroke="#ff5a36" stroke-width="1.2" stroke-dasharray="1.4 0.9"/>
+        <line x1="322" y1="42.5" x2="322" y2="61.5" stroke="#ff5a36" stroke-width="1.2" stroke-dasharray="1.4 0.9"/>
+        <rect x="299" y="53.5" width="20" height="4.8" rx="1.2" fill="#081b26" stroke="#38bdf8" stroke-width="0.7"/>
+        <text x="309" y="56.8" text-anchor="middle" class="mono" font-size="2.0" fill="#38bdf8">CRYO-GEL</text>
+        <text x="309" y="62.6" text-anchor="middle" class="mono" font-size="2.0" fill="#eab308">SERVO + AMMO</text>
+
+        <!-- (C) 2号后盖特防空炮塔深井：无刷伺服电机 + 双路供弹链 + 导热凝胶罐 (X=94..132, Y=42.5..64.0) -->
+        <rect x="94" y="42.5" width="38" height="21.5" fill="#16090c" stroke="#ff5a36" stroke-width="0.85" stroke-dasharray="2.5 1.2"/>
+        <rect x="107" y="44.2" width="12" height="7.5" fill="#1e1408" stroke="#eab308" stroke-width="0.8"/>
+        <line x1="100" y1="42.5" x2="100" y2="61.5" stroke="#ff5a36" stroke-width="1.2" stroke-dasharray="1.4 0.9"/>
+        <line x1="126" y1="42.5" x2="126" y2="61.5" stroke="#ff5a36" stroke-width="1.2" stroke-dasharray="1.4 0.9"/>
+        <rect x="103" y="53.5" width="20" height="4.8" rx="1.2" fill="#081b26" stroke="#38bdf8" stroke-width="0.7"/>
+        <text x="113" y="56.8" text-anchor="middle" class="mono" font-size="2.0" fill="#38bdf8">CRYO-GEL</text>
+        <text x="113" y="62.6" text-anchor="middle" class="mono" font-size="2.0" fill="#eab308">SERVO + AMMO</text>
+
+        <!-- (D) 舯部静音综合电力推进舱 (IEP Gas-Turbine / Diesel-Electric Plant &amp; Capacitor Bank · X=188..282, Y=46.5..64.0) -->
+        <rect x="188" y="46.5" width="94" height="17.5" fill="#071118" stroke="#eab308" stroke-width="0.8" stroke-dasharray="2.5 1.2"/>
+        <line x1="236" y1="46.5" x2="236" y2="64.0" stroke="#4a6368" stroke-width="0.65"/>
+        <text x="212" y="54.2" text-anchor="middle" class="mono" font-size="2.2" fill="#eab308">SILENT IEP PLANT</text>
+        <text x="212" y="59.8" text-anchor="middle" class="mono" font-size="2.1" fill="#8aa1a7">2×PUMP-JET DRIVE</text>
+        <text x="259" y="54.2" text-anchor="middle" class="mono" font-size="2.2" fill="#ff5a36">HV CAPACITOR</text>
+        <text x="259" y="59.8" text-anchor="middle" class="mono" font-size="2.1" fill="#38bdf8">GATTLING BUS</text>
+      </g>
+
+      <!-- 4. 前后两座双联装 30mm 六管海用无刷伺服多档「盖特」防空炮塔 (2×Twin 30mm 6-Barrel Sea Gattling Turrets · X=308 &amp; X=112) -->
+      <g id="siren-twin-gattling-turrets">
+        <!-- (1) 前甲板 1号双联装 30mm 六管盖特防空主炮塔 (X=298..320, Y=33.0..42.2, 仰角 +26° 高密度钨芯弹幕射击态!) -->
+        <ellipse cx="309" cy="42.2" rx="11.5" ry="1.6" fill="#102432" stroke="#d4e3e6" stroke-width="0.9"/>
+        <polygon points="298,42.2 301,34.0 315,34.0 320,38.0 319,42.2"
+                 fill="#163244" stroke="#d4e3e6" stroke-width="1.25"/>
+        <polygon points="302,40.5 304,35.5 314,35.5 316,40.5" fill="#0d202c" stroke="#ff5a36" stroke-width="0.85"/>
+        <!-- 炮塔顶部光电/毫米波相控跟踪球 (EO/Radar Fire-Control Director) -->
+        <circle cx="307" cy="32.2" r="2.2" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.75"/>
+        <circle cx="307" cy="32.2" r="0.8" fill="#ff5a36"/>
+        <!-- 双联装六管 30mm 加特林转管炮束 (仰角 26° 朝向右上 +X) + 液冷散热护套 -->
+        <g transform="translate(316,36.8) rotate(-26)">
+          <rect x="0" y="-2.2" width="7.5" height="3.8" rx="0.6" fill="#18364a" stroke="#eab308" stroke-width="0.75"/>
+          <line x1="7.5" y1="-1.5" x2="23.5" y2="-1.5" stroke="#d4e3e6" stroke-width="1.15"/>
+          <line x1="7.5" y1="-0.3" x2="24.2" y2="-0.3" stroke="#38bdf8" stroke-width="0.9"/>
+          <line x1="7.5" y1="0.9" x2="23.5" y2="0.9" stroke="#d4e3e6" stroke-width="1.15"/>
+          <!-- 炮口旋转箍 -->
+          <rect x="19.5" y="-1.9" width="1.8" height="3.2" fill="#ff5a36"/>
+          <rect x="22.8" y="-1.9" width="1.5" height="3.2" fill="#eab308"/>
+          <!-- Stage III 7,200 RPM 高密度钨芯防空弹幕锥形扇面! -->
+          <polygon points="24.5,-0.3 68,-10.5 68,8.5" fill="#ff5a36" fill-opacity="0.16" stroke="none"/>
+          <line x1="25" y1="-0.3" x2="68" y2="-8.5" stroke="#ff5a36" stroke-width="0.75" stroke-dasharray="3 1.5"/>
+          <line x1="25" y1="-0.3" x2="70" y2="-2.5" stroke="#eab308" stroke-width="0.85" stroke-dasharray="4 1.5"/>
+          <line x1="25" y1="-0.3" x2="68" y2="4.2" stroke="#ff5a36" stroke-width="0.75" stroke-dasharray="3 1.5"/>
+        </g>
+
+        <!-- (2) 后甲板 2号双联装 30mm 六管盖特防空副炮塔 (X=102..124, Y=33.0..42.2, 朝向舰尾 -X 仰角戒备态) -->
+        <ellipse cx="113" cy="42.2" rx="11.5" ry="1.6" fill="#102432" stroke="#d4e3e6" stroke-width="0.9"/>
+        <polygon points="124,42.2 121,34.0 107,34.0 102,38.0 103,42.2"
+                 fill="#163244" stroke="#d4e3e6" stroke-width="1.25"/>
+        <polygon points="120,40.5 118,35.5 108,35.5 106,40.5" fill="#0d202c" stroke="#ff5a36" stroke-width="0.85"/>
+        <circle cx="115" cy="32.2" r="2.2" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.75"/>
+        <circle cx="115" cy="32.2" r="0.8" fill="#ff5a36"/>
+        <g transform="translate(106,36.8) rotate(18)">
+          <rect x="-7.5" y="-2.2" width="7.5" height="3.8" rx="0.6" fill="#18364a" stroke="#eab308" stroke-width="0.75"/>
+          <line x1="-7.5" y1="-1.5" x2="-23.5" y2="-1.5" stroke="#d4e3e6" stroke-width="1.15"/>
+          <line x1="-7.5" y1="-0.3" x2="-24.2" y2="-0.3" stroke="#38bdf8" stroke-width="0.9"/>
+          <line x1="-7.5" y1="0.9" x2="-23.5" y2="0.9" stroke="#d4e3e6" stroke-width="1.15"/>
+          <rect x="-21.3" y="-1.9" width="1.8" height="3.2" fill="#ff5a36"/>
+          <rect x="-24.3" y="-1.9" width="1.5" height="3.2" fill="#eab308"/>
+        </g>
+      </g>
+
+      <!-- 5. 舯部低矮多面体半潜隐身指挥室 + 射频相控阵与心灵感应预警并网接收主桅 (Phased-Array &amp; Psychic-Link Sync Mast · X=184..282) -->
+      <g id="siren-stealth-citadel-and-psychic-mast">
+        <!-- 低矮流线型水密装甲上层建筑 (半潜交战时仅此段与两座盖特炮塔露出海面! Y=28.0..38.0) -->
+        <polygon points="184,38.0 194,29.5 266,29.5 280,38.0"
+                 fill="#102432" stroke="#d4e3e6" stroke-width="1.25"/>
+        <polygon points="196,29.5 204,25.2 254,25.2 264,29.5"
+                 fill="#152e3e" stroke="#38bdf8" stroke-width="1.0"/>
+        <!-- 舰桥狭长防激光/防EMP装甲观察窗 -->
+        <polygon points="244,26.2 258,28.8 258,30.6 242,28.2" fill="#ff5a36" stroke="#eab308" stroke-width="0.6"/>
+        <line x1="188" y1="33.8" x2="275" y2="33.8" stroke="#38bdf8" stroke-width="0.75"/>
+
+        <!-- 射频相控阵 + 心灵感应预警并网接收主桅 (Ψ-Link &amp; X-Band Phased-Array Mast · X=212..236, Y=6.5..25.2) -->
+        <polygon points="214,25.2 218,11.5 227,11.5 232,25.2"
+                 fill="#122836" stroke="#d4e3e6" stroke-width="1.15"/>
+        <!-- 桅杆侧面菱形 X 波段有源相控阵火控阵面 -->
+        <polygon points="219,19.5 223,14.5 227,19.5 223,24.0" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.85"/>
+        <!-- 桅顶标志性尤里「心灵感应波束谐振环 + 神经并网接收尖塔 (Ψ-Sensor Resonance Rings)」 -->
+        <ellipse cx="222.5" cy="9.8" rx="7.5" ry="1.6" fill="none" stroke="#ff5a36" stroke-width="0.95"/>
+        <ellipse cx="222.5" cy="7.2" rx="5.2" ry="1.2" fill="none" stroke="#eab308" stroke-width="0.9"/>
+        <line x1="222.5" y1="11.5" x2="222.5" y2="2.5" stroke="#d4e3e6" stroke-width="1.1"/>
+        <circle cx="222.5" cy="2.5" r="1.5" fill="#ff5a36" stroke="#eab308" stroke-width="0.65"/>
+
+        <!-- 后侧半潜式水冷排气消音扩散器 (Water-Cooled Exhaust Diffuser · X=190..206) -->
+        <polygon points="192,29.5 195,24.0 205,24.0 207,29.5" fill="#08131a" stroke="#38bdf8" stroke-width="0.85"/>
+        <line x1="195" y1="25.8" x2="205" y2="25.8" stroke="#ff5a36" stroke-width="0.65"/>
+      </g>
+
+      <!-- 6. 舰尾甲板下可伸缩双联装火箭助飞反潜深弹/反蛙人榴弹发射器 (ASW Rocket Mortar · X=56..78) -->
+      <g id="siren-stern-asw-mortar">
+        <rect x="56" y="41.8" width="20" height="1.8" fill="#102432" stroke="#38bdf8" stroke-width="0.75"/>
+        <polygon points="60,41.8 62,37.8 71,37.8 73,41.8" fill="#18364a" stroke="#eab308" stroke-width="0.85"/>
+        <!-- 6管反潜深弹/反蛙人火箭发射筒束 (朝向舰尾左上方) -->
+        <line x1="62" y1="39.2" x2="52" y2="35.5" stroke="#ff5a36" stroke-width="1.35"/>
+        <line x1="62" y1="40.4" x2="53" y2="37.0" stroke="#eab308" stroke-width="1.0"/>
+        <text x="54" y="32.5" text-anchor="middle" class="mono" font-size="2.2" fill="#eab308">ASW ROCKET MORTAR</text>
+      </g>
+    </g>
+    <g>
+      <rect x="986" y="84" width="282" height="192" fill="#070d11" stroke="#2c3b40" stroke-width="1"/>
+      <rect x="986" y="84" width="282" height="22" fill="#0d1e28" stroke="#2c3b40" stroke-width="0.9"/>
+      <text x="996" y="99" class="mono" font-size="9.0" fill="#38bdf8" font-weight="bold">YURI NAVAL YARD · SRN-14 SPECS</text>
+      <text x="996" y="120" class="mono" font-size="7.6" fill="#8aa1a7">DISPLACEMENT (SURF/SUB):</text>
+      <text x="1258" y="120" text-anchor="end" class="mono" font-size="7.6" fill="#d4e3e6">2,400T / 2,850T (BALLASTED)</text>
+      <text x="996" y="138" class="mono" font-size="7.6" fill="#8aa1a7">DIMENSIONS (L×B×D):</text>
+      <text x="1258" y="138" text-anchor="end" class="mono" font-size="7.6" fill="#38bdf8">112.0M × 14.8M × 4.2/6.8M</text>
+      <text x="996" y="156" class="mono" font-size="7.6" fill="#8aa1a7">HULL ARCHITECTURE:</text>
+      <text x="1258" y="156" text-anchor="end" class="mono" font-size="7.6" fill="#38bdf8">WAVE-PIERCING SEMI-SUBMERSIBLE</text>
+      <text x="996" y="174" class="mono" font-size="7.6" fill="#8aa1a7">PROPULSION:</text>
+      <text x="1258" y="174" text-anchor="end" class="mono" font-size="7.6" fill="#eab308">CODLAG + 2×PUMP-JET WATERJETS</text>
+      <text x="996" y="192" class="mono" font-size="7.6" fill="#8aa1a7">MAX SPEED:</text>
+      <text x="1258" y="192" text-anchor="end" class="mono" font-size="7.6" fill="#d4e3e6">34 KTS (SURF) / 26 KTS (SEMI-SUB)</text>
+      <text x="996" y="210" class="mono" font-size="7.6" fill="#8aa1a7">FIRE-CONTROL LINK:</text>
+      <text x="1258" y="210" text-anchor="end" class="mono" font-size="7.6" fill="#ff5a36">PSYCHIC SENSOR + AESA SYNC MAST</text>
+      <line x1="996" y1="222" x2="1258" y2="222" stroke="#1e2c33" stroke-width="1"/>
+      <text x="996" y="238" class="mono" font-size="8.0" fill="#38bdf8">LOW-RCS SEMI-SUBMERSIBLE POSTURE:</text>
+      <text x="996" y="253" class="mono" font-size="7.6" fill="#d4e3e6">FLOODS RAPID BALLAST TANKS IN COMBAT</text>
+      <text x="996" y="266" class="mono" font-size="7.6" fill="#8aa1a7">ONLY LOW-PROFILE TURRETS ABOVE WAVE</text>
+    </g>
+
+    <rect x="44" y="304" width="1232" height="216" fill="#091116" fill-opacity="0.45" stroke="#2c3b40"/>
+    <text font-size="9.5" x="58" y="324" class="p mono" fill="#38bdf8">02 / ORTHOGRAPHIC FULL DECK PLAN · INVERTED WAVE-PIERCING BOW · PSYCHIC SYNC MAST · ASW MORTAR</text>
+    <text x="975" y="324" text-anchor="end" class="p mono" fill="#5f7c84" font-size="9">BEAM: 14.8M · ASPECT: 7.57:1</text>
+    <g transform="translate(62.0,330.0) scale(2.040,2.040)">
+      <!-- 0. 外部净空区尺寸标尺与五大尤里海妖级专属地标引线标注 (严格置于 Y=6.0 与 Y=82.5 净空区，零重叠) -->
+      <g id="siren-top-callouts">
+        <!-- 左端 14.8M 舰宽标尺 (Y=18.1..69.9, 跨度 51.8 单位) -->
+        <line x1="9" y1="18.1" x2="9" y2="69.9" stroke="#38bdf8" stroke-width="0.65"/>
+        <line x1="6.5" y1="18.1" x2="11.5" y2="18.1" stroke="#38bdf8" stroke-width="0.75"/>
+        <line x1="6.5" y1="69.9" x2="11.5" y2="69.9" stroke="#38bdf8" stroke-width="0.75"/>
+        <text x="5.5" y="44.0" text-anchor="middle" transform="rotate(-90 5.5 44.0)" class="mono" font-size="2.6" fill="#38bdf8">BEAM 14.8M (7.57:1)</text>
+
+        <!-- 上方净空区引线标注：后双联 30mm 盖特炮塔 + 心灵并网接收主桅 + 穿浪刀锋首 -->
+        <polyline points="113,31.0 102,7.2 22,7.2" fill="none" stroke="#ff5a36" stroke-width="0.65"/>
+        <circle cx="113" cy="31.0" r="1.0" fill="#ff5a36"/>
+        <text x="22" y="5.2" class="mono" font-size="2.4" fill="#ff5a36">AFT TURRET: TWIN 30MM 6-BARREL SEA GATTLING</text>
+
+        <polyline points="222.5,33.5 222.5,7.2 296,7.2" fill="none" stroke="#eab308" stroke-width="0.65"/>
+        <circle cx="222.5" cy="33.5" r="1.0" fill="#eab308"/>
+        <text x="225" y="5.2" class="mono" font-size="2.4" fill="#eab308" dy="2.5">Ψ-LINK &amp; AESA SYNC MAST</text>
+
+        <polyline points="374,32.5 384,7.2 412,7.2" fill="none" stroke="#38bdf8" stroke-width="0.65"/>
+        <circle cx="374" cy="32.5" r="1.0" fill="#38bdf8"/>
+        <text x="412" y="5.2" text-anchor="end" class="mono" font-size="2.4" fill="#38bdf8">INVERTED WAVE-PIERCING BOW</text>
+
+        <!-- 下方净空区引线标注：双泵喷推进器与反潜火箭深弹 + 半潜压载水舱格栅 + 前双联 30mm 盖特主炮 -->
+        <polyline points="64,52.0 54,80.8 20,80.8" fill="none" stroke="#eab308" stroke-width="0.65"/>
+        <circle cx="64" cy="52.0" r="1.0" fill="#eab308"/>
+        <text x="20" y="83.2" class="mono" font-size="2.4" fill="#eab308">ASW ROCKET MORTAR &amp; 2×PUMP-JETS</text>
+
+        <polyline points="164,67.5 174,80.8 258,80.8" fill="none" stroke="#38bdf8" stroke-width="0.65"/>
+        <circle cx="164" cy="67.5" r="1.0" fill="#38bdf8"/>
+        <text x="176" y="83.2" class="mono" font-size="2.4" fill="#38bdf8">RAPID BALLAST FLOOD GRATES</text>
+
+        <polyline points="309,57.0 320,80.8 412,80.8" fill="none" stroke="#ff5a36" stroke-width="0.65"/>
+        <circle cx="309" cy="57.0" r="1.0" fill="#ff5a36"/>
+        <text x="412" y="83.2" text-anchor="end" class="mono" font-size="2.4" fill="#ff5a36">FWD GATTLING (7,200 RPM · UID-27)</text>
+      </g>
+
+      <!-- 1. 水下双涵道泵喷推进器喷口与首尾水平潜舵 (2×Pump-Jet Thrusters &amp; Hydroplanes) -->
+      <g id="siren-top-thrusters-and-hydroplanes">
+        <!-- 舰首水下可收放水平潜舵 (X=366..382, Y=22.5..65.5) -->
+        <polygon points="366,28.0 374,21.5 381,22.5 376,30.0" fill="#18364a" stroke="#eab308" stroke-width="0.8"/>
+        <polygon points="366,60.0 374,66.5 381,65.5 376,58.0" fill="#18364a" stroke="#eab308" stroke-width="0.8"/>
+
+        <!-- 舰尾水下水平稳定翼与双涵道静音泵喷推进器 (X=14..32, Y=24.0..64.0) -->
+        <polygon points="32,26.0 24,21.5 19,22.5 24,28.0" fill="#18364a" stroke="#eab308" stroke-width="0.8"/>
+        <polygon points="32,62.0 24,66.5 19,65.5 24,60.0" fill="#18364a" stroke="#eab308" stroke-width="0.8"/>
+        <!-- 左右双涵道泵喷导流管 -->
+        <rect x="16" y="32.5" width="9.5" height="6.8" rx="1.2" fill="#142c3c" stroke="#eab308" stroke-width="0.95"/>
+        <rect x="16" y="48.7" width="9.5" height="6.8" rx="1.2" fill="#142c3c" stroke="#eab308" stroke-width="0.95"/>
+        <line x1="8" y1="35.9" x2="15.5" y2="35.9" stroke="#38bdf8" stroke-width="0.75" stroke-dasharray="2 1.2"/>
+        <line x1="8" y1="52.1" x2="15.5" y2="52.1" stroke="#38bdf8" stroke-width="0.75" stroke-dasharray="2 1.2"/>
+      </g>
+
+      <!-- 2. 7.57:1 穿浪半潜式压载艇体主轮廓 (LOA=112.0m -> X=20..412, BEAM=14.8m -> Y=18.1..69.9) -->
+      <g id="siren-top-ballast-hull">
+        <!-- 外层半潜压载水舱艇体最大包络 (Y=18.1..69.9) -->
+        <path d="M 20,28.0 L 42,20.5 L 96,18.1 L 288,18.1 L 345,23.5 L 388,34.5 L 412,44.0 L 388,53.5 L 345,64.5 L 288,69.9 L 96,69.9 L 42,67.5 L 20,60.0 Z"
+              fill="#0a1822" stroke="#d4e3e6" stroke-width="1.35"/>
+
+        <!-- 内层「交战半潜低可探测水线包络」(SEMI-SUBMERGED COMBAT WL · #ff5a36 警示虚线，半潜时仅此线以内露出水面!) -->
+        <path d="M 32,31.5 L 88,24.2 L 292,24.2 L 345,28.5 L 392,44.0 L 345,59.5 L 292,63.8 L 88,63.8 L 32,56.5 Z"
+              fill="#0d202c" stroke="#ff5a36" stroke-width="0.95" stroke-dasharray="4.5 2.0"/>
+
+        <!-- 两舷高压快速注排水压载水舱格栅群 (Rapid Flood/Blow Ballast Vents · X=56..336) -->
+        <g fill="#050c10" stroke="#38bdf8" stroke-width="0.65">
+          <!-- 前压载水舱注水格栅 -->
+          <rect x="332" y="21.0" width="10" height="2.4"/><rect x="318" y="19.8" width="10" height="2.4"/>
+          <rect x="332" y="64.6" width="10" height="2.4"/><rect x="318" y="65.8" width="10" height="2.4"/>
+          <!-- 中压载水舱注水格栅 -->
+          <rect x="144" y="19.5" width="12" height="2.8"/><rect x="160" y="19.5" width="12" height="2.8"/>
+          <rect x="144" y="65.7" width="12" height="2.8"/><rect x="160" y="65.7" width="12" height="2.8"/>
+          <!-- 后压载水舱注水格栅 -->
+          <rect x="54" y="21.2" width="11" height="2.6"/><rect x="70" y="20.2" width="11" height="2.6"/>
+          <rect x="54" y="64.2" width="11" height="2.6"/><rect x="70" y="65.2" width="11" height="2.6"/>
+        </g>
+
+        <!-- 逆向内倾穿浪刀锋首脊线与 SRN-14 战术舷号 (Inverted Wave-Piercing Blade Bow · X=345..412) -->
+        <polygon points="345,28.5 376,36.5 412,44.0 376,51.5 345,59.5 356,44.0"
+                 fill="#122836" stroke="#38bdf8" stroke-width="0.95"/>
+        <line x1="20" y1="44.0" x2="412" y2="44.0" stroke="#38bdf8" stroke-width="0.7" stroke-dasharray="4 2.5"/>
+        <text x="362" y="41.2" text-anchor="middle" class="mono" font-size="3.2" fill="#d4e3e6" font-weight="bold">SRN-14</text>
+      </g>
+
+      <!-- 3. 舰尾可伸缩双联装反潜深弹/反蛙人火箭发射器 + 水下可伸缩主动猎潜声呐虚线投影 (X=46..82) -->
+      <g id="siren-top-stern-asw">
+        <!-- 水下可伸缩主动猎潜声呐吊舱虚线圆与声波弧 -->
+        <ellipse cx="64" cy="44.0" rx="9.5" ry="6.2" fill="none" stroke="#38bdf8" stroke-width="0.7" stroke-dasharray="2.2 1.2"/>
+        <!-- 甲板可伸缩双联 6管反潜深弹/反蛙人榴弹发射塔 (X=58..72, Y=38.5..49.5) -->
+        <rect x="57" y="38.5" width="14" height="11.0" rx="1.2" fill="#102432" stroke="#d4e3e6" stroke-width="0.9"/>
+        <rect x="60" y="40.2" width="8.5" height="7.6" rx="0.8" fill="#18364a" stroke="#eab308" stroke-width="0.85"/>
+        <line x1="60" y1="42.2" x2="50" y2="42.2" stroke="#ff5a36" stroke-width="1.15"/>
+        <line x1="60" y1="45.8" x2="50" y2="45.8" stroke="#ff5a36" stroke-width="1.15"/>
+      </g>
+
+      <!-- 4. 舯部低矮多面体半潜隐身指挥室 + 射频相控阵与心灵感应预警并网接收主桅 (X=184..280, Y=25.5..62.5) -->
+      <g id="siren-top-citadel-and-psychic-mast">
+        <!-- 多面体水密装甲核心堡垒外廓 -->
+        <polygon points="184,30.0 198,25.5 262,25.5 280,32.5 280,55.5 262,62.5 198,62.5 184,58.0"
+                 fill="#102432" stroke="#d4e3e6" stroke-width="1.25"/>
+        <polygon points="192,33.0 204,29.0 256,29.0 270,35.0 270,53.0 256,59.0 204,59.0 192,55.0"
+                 fill="#152e3e" stroke="#38bdf8" stroke-width="0.9"/>
+        <!-- 多面体折面棱线 -->
+        <line x1="184" y1="30.0" x2="192" y2="33.0" stroke="#38bdf8" stroke-width="0.75"/>
+        <line x1="184" y1="58.0" x2="192" y2="55.0" stroke="#38bdf8" stroke-width="0.75"/>
+        <line x1="280" y1="32.5" x2="270" y2="35.0" stroke="#38bdf8" stroke-width="0.75"/>
+        <line x1="280" y1="55.5" x2="270" y2="53.0" stroke="#38bdf8" stroke-width="0.75"/>
+
+        <!-- 前部防EMP/防激光狭长装甲观察窗 (X=256..268) -->
+        <polyline points="256,31.5 266,36.5 266,51.5 256,56.5" fill="none" stroke="#ff5a36" stroke-width="1.25"/>
+
+        <!-- 后侧半潜式水冷排气消音扩散器格栅 (X=192..206, Y=35.5..52.5) -->
+        <rect x="193" y="35.5" width="11" height="6.8" rx="1" fill="#04080b" stroke="#38bdf8" stroke-width="0.75"/>
+        <rect x="193" y="45.7" width="11" height="6.8" rx="1" fill="#04080b" stroke="#38bdf8" stroke-width="0.75"/>
+        <line x1="193" y1="38.9" x2="204" y2="38.9" stroke="#ff5a36" stroke-width="0.55"/>
+        <line x1="193" y1="49.1" x2="204" y2="49.1" stroke="#ff5a36" stroke-width="0.55"/>
+
+        <!-- 核心地标：射频相控阵 + 心灵感应预警并网接收主桅顶视图 (Ψ-Link &amp; Phased-Array Sync Mast · Center X=222.5, Y=44.0) -->
+        <!-- 四面 X 波段相控阵菱形基座 -->
+        <polygon points="211,44.0 222.5,32.5 234,44.0 222.5,55.5" fill="#18364a" stroke="#d4e3e6" stroke-width="1.1"/>
+        <!-- 外层与内层心灵感应谐振环 (Ψ-Sensor Resonance Rings) -->
+        <circle cx="222.5" cy="44.0" r="8.2" fill="none" stroke="#ff5a36" stroke-width="0.95" stroke-dasharray="3 1.5"/>
+        <circle cx="222.5" cy="44.0" r="5.2" fill="#09151e" stroke="#eab308" stroke-width="0.95"/>
+        <circle cx="222.5" cy="44.0" r="2.0" fill="#ff5a36"/>
+        <line x1="214.3" y1="44.0" x2="230.7" y2="44.0" stroke="#38bdf8" stroke-width="0.75"/>
+        <line x1="222.5" y1="35.8" x2="222.5" y2="52.2" stroke="#38bdf8" stroke-width="0.75"/>
+      </g>
+
+      <!-- 5. 前后两座双联装 30mm 六管海用无刷伺服多档「盖特」防空炮塔顶视图 (2×Twin 30mm 6-Barrel Sea Gattling Turrets · X=309 &amp; X=113) -->
+      <g id="siren-top-twin-gattling-turrets">
+        <!-- (1) 前甲板 1号双联装 30mm 六管海用盖特防空炮塔 (Center X=309, Y=44.0, 炮管朝向舰首 +X) -->
+        <!-- 360° 伺服火控射界虚线圆与无刷伺服座圈 -->
+        <circle cx="309" cy="44.0" r="14.5" fill="none" stroke="#ff5a36" stroke-width="0.65" stroke-dasharray="3 2"/>
+        <circle cx="309" cy="44.0" r="10.8" fill="#08131a" stroke="#38bdf8" stroke-width="0.9"/>
+        <!-- 多边形重装甲隐身炮塔外壳 -->
+        <polygon points="299,37.0 305,34.0 315,35.0 319,38.5 319,49.5 315,53.0 305,54.0 299,51.0"
+                 fill="#163244" stroke="#d4e3e6" stroke-width="1.25"/>
+        <polygon points="302,39.0 307,36.8 314,37.5 316,40.0 316,48.0 314,50.5 307,51.2 302,49.0"
+                 fill="#0d202c" stroke="#ff5a36" stroke-width="0.85"/>
+        <!-- 双路供弹鼓与导热凝胶冷却管顶视 -->
+        <rect x="302" y="38.2" width="6.5" height="3.2" rx="0.6" fill="#18364a" stroke="#eab308" stroke-width="0.65"/>
+        <rect x="302" y="46.6" width="6.5" height="3.2" rx="0.6" fill="#18364a" stroke="#eab308" stroke-width="0.65"/>
+        <!-- 顶部光电/相控跟踪球 -->
+        <circle cx="308" cy="44.0" r="2.6" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.8"/>
+        <circle cx="308" cy="44.0" r="0.9" fill="#ff5a36"/>
+        <!-- 左右并列 2 门长身管 30mm 六管加特林转管炮束 (Twin 6-Barrel 30mm Rotary Cannon Bundles · X=319..342) -->
+        <rect x="319" y="38.2" width="6.0" height="3.2" fill="#18364a" stroke="#eab308" stroke-width="0.75"/>
+        <rect x="319" y="46.6" width="6.0" height="3.2" fill="#18364a" stroke="#eab308" stroke-width="0.75"/>
+        <!-- 左门六管炮束 -->
+        <line x1="325" y1="38.8" x2="342" y2="38.8" stroke="#d4e3e6" stroke-width="1.05"/>
+        <line x1="325" y1="39.8" x2="343" y2="39.8" stroke="#38bdf8" stroke-width="0.85"/>
+        <line x1="325" y1="40.8" x2="342" y2="40.8" stroke="#d4e3e6" stroke-width="1.05"/>
+        <rect x="338" y="38.4" width="1.8" height="2.8" fill="#ff5a36"/>
+        <!-- 右门六管炮束 -->
+        <line x1="325" y1="47.2" x2="342" y2="47.2" stroke="#d4e3e6" stroke-width="1.05"/>
+        <line x1="325" y1="48.2" x2="343" y2="48.2" stroke="#38bdf8" stroke-width="0.85"/>
+        <line x1="325" y1="49.2" x2="342" y2="49.2" stroke="#d4e3e6" stroke-width="1.05"/>
+        <rect x="338" y="46.8" width="1.8" height="2.8" fill="#ff5a36"/>
+
+        <!-- (2) 后甲板 2号双联装 30mm 六管海用盖特防空炮塔 (Center X=113, Y=44.0, 炮管朝向舰尾 -X) -->
+        <circle cx="113" cy="44.0" r="14.5" fill="none" stroke="#ff5a36" stroke-width="0.65" stroke-dasharray="3 2"/>
+        <circle cx="113" cy="44.0" r="10.8" fill="#08131a" stroke="#38bdf8" stroke-width="0.9"/>
+        <polygon points="123,37.0 117,34.0 107,35.0 103,38.5 103,49.5 107,53.0 117,54.0 123,51.0"
+                 fill="#163244" stroke="#d4e3e6" stroke-width="1.25"/>
+        <polygon points="120,39.0 115,36.8 108,37.5 106,40.0 106,48.0 108,50.5 115,51.2 120,49.0"
+                 fill="#0d202c" stroke="#ff5a36" stroke-width="0.85"/>
+        <rect x="113.5" y="38.2" width="6.5" height="3.2" rx="0.6" fill="#18364a" stroke="#eab308" stroke-width="0.65"/>
+        <rect x="113.5" y="46.6" width="6.5" height="3.2" rx="0.6" fill="#18364a" stroke="#eab308" stroke-width="0.65"/>
+        <circle cx="114" cy="44.0" r="2.6" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.8"/>
+        <circle cx="114" cy="44.0" r="0.9" fill="#ff5a36"/>
+        <!-- 左右并列 2 门长身管 30mm 六管加特林转管炮束 (朝向舰尾 -X · X=80..103) -->
+        <rect x="97" y="38.2" width="6.0" height="3.2" fill="#18364a" stroke="#eab308" stroke-width="0.75"/>
+        <rect x="97" y="46.6" width="6.0" height="3.2" fill="#18364a" stroke="#eab308" stroke-width="0.75"/>
+        <line x1="97" y1="38.8" x2="80" y2="38.8" stroke="#d4e3e6" stroke-width="1.05"/>
+        <line x1="97" y1="39.8" x2="79" y2="39.8" stroke="#38bdf8" stroke-width="0.85"/>
+        <line x1="97" y1="40.8" x2="80" y2="40.8" stroke="#d4e3e6" stroke-width="1.05"/>
+        <rect x="82.2" y="38.4" width="1.8" height="2.8" fill="#ff5a36"/>
+        <line x1="97" y1="47.2" x2="80" y2="47.2" stroke="#d4e3e6" stroke-width="1.05"/>
+        <line x1="97" y1="48.2" x2="79" y2="48.2" stroke="#38bdf8" stroke-width="0.85"/>
+        <line x1="97" y1="49.2" x2="80" y2="49.2" stroke="#d4e3e6" stroke-width="1.05"/>
+        <rect x="82.2" y="46.8" width="1.8" height="2.8" fill="#ff5a36"/>
+      </g>
+    </g>
+    <g>
+      <rect x="986" y="316" width="282" height="192" fill="#070d11" stroke="#2c3b40" stroke-width="1"/>
+      <rect x="986" y="316" width="282" height="22" fill="#1c1012" stroke="#ff5a36" stroke-width="0.9"/>
+      <text x="996" y="331" class="mono" font-size="9.0" fill="#ff5a36" font-weight="bold">BRUSHLESS-SERVO SEA GATTLING SUITE</text>
+      <text x="996" y="352" class="mono" font-size="7.6" fill="#8aa1a7">MAIN AA BATTERY:</text>
+      <text x="1258" y="352" text-anchor="end" class="mono" font-size="7.6" fill="#ff5a36">2×TWIN 30MM 6-BARREL SEA GATTLING</text>
+      <text x="996" y="370" class="mono" font-size="7.6" fill="#8aa1a7">STAGE I / II ROF:</text>
+      <text x="1258" y="370" text-anchor="end" class="mono" font-size="7.6" fill="#eab308">1,200 RPM BURST / 3,600 RPM SUPP</text>
+      <text x="996" y="388" class="mono" font-size="7.6" fill="#8aa1a7">STAGE III OVERDRIVE:</text>
+      <text x="1258" y="388" text-anchor="end" class="mono" font-size="7.6" fill="#ff5a36">7,200 RPM METAL STORM (+1.5S SYNC)</text>
+      <text x="996" y="406" class="mono" font-size="7.6" fill="#8aa1a7">BARREL COOLING:</text>
+      <text x="1258" y="406" text-anchor="end" class="mono" font-size="7.6" fill="#38bdf8">THERMAL GEL INJECTION RESERVOIR</text>
+      <text x="996" y="424" class="mono" font-size="7.6" fill="#8aa1a7">ASW &amp; ANTI-FROGMAN:</text>
+      <text x="1258" y="424" text-anchor="end" class="mono" font-size="7.6" fill="#d4e3e6">2×ASW ROCKET MORTAR + VDS SONAR</text>
+      <text x="996" y="442" class="mono" font-size="7.6" fill="#8aa1a7">PROTOCOL REF:</text>
+      <text x="1258" y="442" text-anchor="end" class="mono" font-size="7.6" fill="#eab308">UID=27 SERVO-PSYCHIC GRID SYNC</text>
+      <line x1="996" y1="454" x2="1258" y2="454" stroke="#1e2c33" stroke-width="1"/>
+      <text x="996" y="470" class="mono" font-size="8.0" fill="#eab308">THERMAL FATIGUE &amp; AMMO CONSTRAINTS:</text>
+      <text x="996" y="485" class="mono" font-size="7.6" fill="#d4e3e6">-25% BARREL LIFE UNDER STAGE-III SYNC</text>
+      <text x="996" y="498" class="mono" font-size="7.6" fill="#8aa1a7">REQUIRES THERMAL GEL FLUSH POST-SORTIE</text>
+    </g>
+  </g>
+</svg>

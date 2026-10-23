@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 320" width="1100" height="320" data-asset-id="naval.gorshkov22350.side" style="background:#050a0e;">
+  <defs>
+    <style>
+      svg { fill: none; stroke-linecap: butt; }
+      .s-dim { stroke: #2c3b40; stroke-width: 1; }
+      .s-line { stroke: #5f7c84; stroke-width: 1; }
+      .s-hi { stroke: #d4e3e6; stroke-width: 1.2; }
+      .s-alert { stroke: #ff5a36; stroke-width: 1.4; }
+      .s-focus { stroke: #38bdf8; stroke-width: 1.4; }
+      .f-dim { fill: #2c3b40; stroke: none; }
+      .f-line { fill: #5f7c84; stroke: none; }
+      .f-hi { fill: #d4e3e6; stroke: none; }
+      .f-alert { fill: #ff5a36; stroke: none; }
+      .f-panel { fill: #0c1113; }
+      text { font-family: "Rajdhani", "Bahnschrift", "DIN Alternate", "Microsoft YaHei", sans-serif; letter-spacing: 0.12em; }
+      text:not([stroke]) { stroke: none; }
+      text:not([fill]) { fill: #cfdde0; }
+      text.p { font-family: "Rajdhani", "JetBrains Mono", Consolas, "Microsoft YaHei", monospace; letter-spacing: 0.08em; }
+      text.cap { letter-spacing: 0.16em; text-transform: uppercase; }
+      text.cap:not([fill]) { fill: #8aa1a7; }
+      text.mono { font-family: "Rajdhani", "JetBrains Mono", Consolas, "Microsoft YaHei", monospace; letter-spacing: 0.05em; }
+      text.big { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; font-weight: 600; letter-spacing: 0.08em; }
+      text.alert { fill: #ff5a36; }
+    </style>
+    <pattern id="grid20" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#0c151c" stroke-width="0.7"/>
+    </pattern>
+    <pattern id="grid100" width="100" height="100" patternUnits="userSpaceOnUse">
+      <path d="M 100 0 L 0 0 0 100" fill="none" stroke="#14222c" stroke-width="1"/>
+      <circle cx="50" cy="50" r="0.9" fill="#1f3340"/>
+    </pattern>
+    <pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#ff5a36" stroke-width="1.2" stroke-opacity="0.35"/>
+    </pattern>
+  </defs>
+
+  <!-- 1. 工程蓝图暗色底板与坐标网格图层 -->
+  <g id="layer-backdrop">
+    <rect x="0" y="0" width="1100" height="320" fill="#050a0e"/>
+    <rect x="20" y="20" width="1060" height="280" fill="url(#grid20)"/>
+    <rect x="20" y="20" width="1060" height="280" fill="url(#grid100)" stroke="#2c3b40" stroke-width="1"/>
+    <path d="M 20 36 V 20 H 36 M 1064 20 H 1080 V 36 M 20 284 V 300 H 36 M 1064 300 H 1080 V 284" fill="none" stroke="#38bdf8" stroke-width="1.6"/>
+    <line x1="20" y1="52" x2="1080" y2="52" stroke="#2c3b40" stroke-width="1"/>
+    <line x1="20" y1="276" x2="1080" y2="276" stroke="#2c3b40" stroke-width="1"/>
+    <text x="34" y="40" font-size="11" class="p mono" fill="#38bdf8" font-weight="bold">PROJECT 22350 ADMIRAL GORSHKOV (454) · 5,400T AEGIS FRIGATE STARBOARD ELEVATION</text>
+    <text x="1066" y="40" font-size="10.5" text-anchor="end" class="p cap" fill="#d4e3e6">22350型「戈尔什科夫海军元帅」级神盾护卫舰 · 侧视立面与锆石/鲁道特垂发谱系图</text>
+    <text x="34" y="292" font-size="9.5" class="p mono" fill="#8aa1a7">LOA: 135.0M · BEAM: 16.4M (8.23:1) · 32-CELL REDUT SAM + 16-CELL UKSK (3M22 ZIRCON) · 5P-20K POLIMENT · A-192M 130MM · UID=73</text>
+    <text x="1066" y="292" font-size="9.5" text-anchor="end" class="p mono" fill="#5f7c84">OBLIVION UI GFX · POSEIDON NAVAL CAD · TRUE 1:1 ASPECT</text>
+  </g>
+
+  <!-- 2. 舰艇核心 CAD 矢量图层 (1:1 等比缩放 sx===sy=2.420, 船首朝右 +X) -->
+  <g id="layer-ship-cad">
+    <g transform="translate(46.0,58.0) scale(2.420,2.420)">
+
+      <!-- A. 舰尾上方海域：22350型全谱系垂发导弹垂直剪影对比框 (X=22..118, Y=8..44 · 远离中央金字塔主桅 X=244..278) -->
+      <g id="missile-spectrum-callout" transform="translate(0,-6.5)">
+        <rect x="22" y="10" width="96" height="33" fill="#071118" fill-opacity="0.78" stroke="#2c3b40" stroke-width="0.65"/>
+        <line x1="22" y1="16.5" x2="118" y2="16.5" stroke="#2c3b40" stroke-width="0.55"/>
+        <text x="26" y="14.6" class="mono" font-size="2.7" fill="#38bdf8" font-weight="bold">VLS MISSILE LOADOUT (UKSK &amp; REDUT)</text>
+
+        <!-- 1. 3M22 Zircon 锆石高超音速导弹 (Mach 9) -->
+        <rect x="30" y="21.5" width="2.5" height="16.5" fill="#261014" stroke="#ff5a36" stroke-width="0.65"/>
+        <polygon points="30,21.5 31.25,17.2 32.5,21.5" fill="#ff5a36"/>
+        <line x1="29.3" y1="31" x2="33.2" y2="31" stroke="#eab308" stroke-width="0.6"/>
+        <text x="31.2" y="41.4" text-anchor="middle" class="mono" font-size="2.3" fill="#ff5a36">3M22</text>
+
+        <!-- 2. P-800 Oniks 缟玛瑙超音速反舰导弹 -->
+        <rect x="44" y="22.0" width="2.4" height="16.0" fill="#182630" stroke="#ff5a36" stroke-width="0.65"/>
+        <polygon points="44,22.0 45.2,18.0 46.4,22.0" fill="#eab308"/>
+        <text x="45.2" y="41.4" text-anchor="middle" class="mono" font-size="2.3" fill="#d4e3e6">P-800</text>
+
+        <!-- 3. 3M-54 Kalibr 口径巡航导弹 -->
+        <rect x="58" y="23.0" width="2.2" height="15.0" fill="#0e2230" stroke="#38bdf8" stroke-width="0.65"/>
+        <polygon points="58,23.0 59.1,19.5 60.2,23.0" fill="#38bdf8"/>
+        <text x="59.1" y="41.4" text-anchor="middle" class="mono" font-size="2.3" fill="#38bdf8">3M54</text>
+
+        <!-- 4. 91RE1 Otvet 反潜导弹 -->
+        <rect x="72" y="24.5" width="2.0" height="13.5" fill="#0e2230" stroke="#eab308" stroke-width="0.6"/>
+        <polygon points="72,24.5 73.0,21.2 74.0,24.5" fill="#eab308"/>
+        <text x="73.0" y="41.4" text-anchor="middle" class="mono" font-size="2.3" fill="#eab308">91RE1</text>
+
+        <!-- 5. 9M96E2 远程防空导弹 (120km) -->
+        <rect x="86" y="25.5" width="1.8" height="12.5" fill="#0c1e2a" stroke="#38bdf8" stroke-width="0.6"/>
+        <polygon points="86,25.5 86.9,22.5 87.8,25.5" fill="#38bdf8"/>
+        <text x="86.9" y="41.4" text-anchor="middle" class="mono" font-size="2.3" fill="#38bdf8">9M96E2</text>
+
+        <!-- 6. 9M100 一坑四弹近程防空弹 (Quad-pack) -->
+        <rect x="99.5" y="29.0" width="1.2" height="9.0" fill="#0c1e2a" stroke="#d4e3e6" stroke-width="0.5"/>
+        <rect x="101.5" y="29.0" width="1.2" height="9.0" fill="#0c1e2a" stroke="#d4e3e6" stroke-width="0.5"/>
+        <polygon points="99.5,29.0 100.1,26.8 100.7,29.0" fill="#38bdf8"/>
+        <polygon points="101.5,29.0 102.1,26.8 102.7,29.0" fill="#38bdf8"/>
+        <text x="101.2" y="41.4" text-anchor="middle" class="mono" font-size="2.3" fill="#8aa1a7">9M100×4</text>
+      </g>
+
+      <!-- B. 前甲板上方海域：16单元 3S14 UKSK 与 32单元 3K96 Redut 展开矩阵框 (X=306..408, Y=8..38 · 距离金字塔主桅 X=278 留有 28 单位净空) -->
+      <g id="forward-vls-matrices">
+        <!-- 左框：16-CELL (2×8) 3S14 UKSK 高超音速通用垂发矩阵 (X=308..332, Y=17..35) -->
+        <rect x="308" y="17" width="24" height="14" fill="#1c0d10" stroke="#ff5a36" stroke-width="0.85"/>
+        <line x1="308" y1="24" x2="332" y2="24" stroke="#ff5a36" stroke-width="0.55"/>
+        <line x1="311" y1="17" x2="311" y2="31" stroke="#5f7c84" stroke-width="0.45"/>
+        <line x1="314" y1="17" x2="314" y2="31" stroke="#5f7c84" stroke-width="0.45"/>
+        <line x1="317" y1="17" x2="317" y2="31" stroke="#5f7c84" stroke-width="0.45"/>
+        <line x1="320" y1="17" x2="320" y2="31" stroke="#ff5a36" stroke-width="0.65"/>
+        <line x1="323" y1="17" x2="323" y2="31" stroke="#5f7c84" stroke-width="0.45"/>
+        <line x1="326" y1="17" x2="326" y2="31" stroke="#5f7c84" stroke-width="0.45"/>
+        <line x1="329" y1="17" x2="329" y2="31" stroke="#5f7c84" stroke-width="0.45"/>
+        <circle cx="309.5" cy="20.5" r="0.8" fill="#ff5a36"/>
+        <circle cx="312.5" cy="20.5" r="0.8" fill="#ff5a36"/>
+        <circle cx="315.5" cy="20.5" r="0.8" fill="#eab308"/>
+        <circle cx="318.5" cy="20.5" r="0.8" fill="#eab308"/>
+        <text x="320" y="11.5" text-anchor="middle" class="mono" font-size="2.6" fill="#ff5a36" font-weight="bold">16-CELL UKSK (2×8)</text>
+        <text x="320" y="15.0" text-anchor="middle" class="mono" font-size="2.4" fill="#eab308">3M22 ZIRCON / KALIBR</text>
+        <line x1="318" y1="31" x2="318" y2="48" stroke="#ff5a36" stroke-width="0.55" stroke-dasharray="2 1.2"/>
+
+        <!-- 右框：32-CELL (4×8) 3K96 Redut 鲁道特防空导弹垂发矩阵 (X=356..388, Y=17..35) -->
+        <rect x="356" y="17" width="32" height="16" fill="#08151e" stroke="#38bdf8" stroke-width="0.85"/>
+        <line x1="356" y1="21" x2="388" y2="21" stroke="#38bdf8" stroke-width="0.45"/>
+        <line x1="356" y1="25" x2="388" y2="25" stroke="#38bdf8" stroke-width="0.65"/>
+        <line x1="356" y1="29" x2="388" y2="29" stroke="#38bdf8" stroke-width="0.45"/>
+        <line x1="360" y1="17" x2="360" y2="33" stroke="#4a6368" stroke-width="0.45"/>
+        <line x1="364" y1="17" x2="364" y2="33" stroke="#4a6368" stroke-width="0.45"/>
+        <line x1="368" y1="17" x2="368" y2="33" stroke="#4a6368" stroke-width="0.45"/>
+        <line x1="372" y1="17" x2="372" y2="33" stroke="#38bdf8" stroke-width="0.65"/>
+        <line x1="376" y1="17" x2="376" y2="33" stroke="#4a6368" stroke-width="0.45"/>
+        <line x1="380" y1="17" x2="380" y2="33" stroke="#4a6368" stroke-width="0.45"/>
+        <line x1="384" y1="17" x2="384" y2="33" stroke="#4a6368" stroke-width="0.45"/>
+        <text x="372" y="11.5" text-anchor="middle" class="mono" font-size="2.6" fill="#38bdf8" font-weight="bold">32-CELL REDUT (4×8)</text>
+        <text x="372" y="15.0" text-anchor="middle" class="mono" font-size="2.4" fill="#8aa1a7">9M96E2 / 9M100 SAM</text>
+        <line x1="356" y1="33" x2="340" y2="51.2" stroke="#38bdf8" stroke-width="0.55" stroke-dasharray="2 1.2"/>
+      </g>
+
+      <!-- 1. 水下暗红防污船底、Zarya-M 大型球鼻艏声呐罩、舭龙骨、减摇鳍、平衡舵与双轴五叶金色螺旋桨 (Y=68.0..83.5) -->
+      <g id="underwater-hull">
+        <path d="M 24 68.0 L 398 68.0 C 401 70.5, 405 72.5, 411 74.5 C 416 76.2, 415 82.5, 402 83.2 C 390 83.2, 380 79.8, 370 78.5 L 86 78.5 L 54 74.8 L 25 72.8 Z"
+              fill="#261014" stroke="#ff5a36" stroke-width="1.15"/>
+        <!-- 舰首 Zarya-M (曙光-M) 低频主被动球鼻声呐整流罩分格线 -->
+        <path d="M 380 72.2 C 394 72.2, 408 74.2, 412.5 78.2 C 408 81.8, 394 82.2, 380 79.2 Z"
+              fill="#351419" stroke="#ff5a36" stroke-width="0.85"/>
+        <line x1="390" y1="72.6" x2="390" y2="81.2" stroke="#ff5a36" stroke-width="0.55"/>
+        <line x1="400" y1="73.5" x2="400" y2="81.8" stroke="#ff5a36" stroke-width="0.55"/>
+        <!-- 舭龙骨与主动减摇鳍 -->
+        <path d="M 152 75.5 L 160 77.6 L 264 77.6 L 272 75.5" fill="none" stroke="#ff5a36" stroke-width="1.0"/>
+        <polygon points="140,77.2 146,77.2 144,81.8 141,81.8" fill="#ff5a36"/>
+        <polygon points="276,77.2 282,77.2 280,81.8 277,81.8" fill="#ff5a36"/>
+        <!-- 舰尾平衡舵 + 双轴推进轴架 + 五叶大侧斜金色螺旋桨 (#eab308) -->
+        <polygon points="26,72.5 33,72.5 31.5,81.5 24.5,81.5" fill="#261014" stroke="#ff5a36" stroke-width="0.95"/>
+        <line x1="39" y1="78.2" x2="82" y2="74.5" stroke="#eab308" stroke-width="1.25"/>
+        <line x1="51" y1="73.5" x2="48.5" y2="78.0" stroke="#d4e3e6" stroke-width="1.0"/>
+        <ellipse cx="39" cy="78.2" rx="1.8" ry="4.6" fill="#eab308" stroke="#d4e3e6" stroke-width="0.6"/>
+        <circle cx="39" cy="78.2" r="0.9" fill="#d4e3e6"/>
+        <!-- M55R CODAG 柴燃联合动力舱内透视虚线框 (2×M90FR 燃机 + 2×10D49 柴机) -->
+        <rect x="176" y="69.2" width="54" height="7.8" rx="1.0" fill="#141812" fill-opacity="0.65" stroke="#eab308" stroke-width="0.7" stroke-dasharray="3 1.5"/>
+        <text x="203" y="74.2" text-anchor="middle" class="mono" font-size="2.5" fill="#eab308">M55R CODAG (65,400 HP)</text>
+      </g>
+
+      <!-- 2. 22350型高干舷隐身折角长首楼船体与舷号 454 (X=20..415, Y=50.5..68.0) -->
+      <g id="stealth-main-hull">
+        <polygon points="20,58.0 104,58.0 106,54.0 304,54.0 330,52.8 376,51.8 415,50.5 404,60.5 398,68.0 24,68.0"
+                 fill="#0a1822" stroke="#d4e3e6" stroke-width="1.35"/>
+        <!-- 标志性全通隐身折角腰线 (Stealth Chined Knuckle Line) 与吃水线 -->
+        <polyline points="21.5,62.0 104,62.0 108,59.5 352,58.2 407,56.5" fill="none" stroke="#38bdf8" stroke-width="0.95"/>
+        <line x1="24" y1="68.0" x2="398" y2="68.0" stroke="#d4e3e6" stroke-width="0.95"/>
+        <!-- 船尾 Vignette-M (小插图-M) 主被动拖曳线列声呐收放舱门 -->
+        <rect x="21.5" y="63.2" width="4.2" height="2.6" fill="#050a0e" stroke="#38bdf8" stroke-width="0.75"/>
+        <!-- 舰首旗杆、锚链孔、消磁电缆线与白色战术舷号「454」 -->
+        <line x1="413.5" y1="50.5" x2="415.0" y2="42.5" stroke="#d4e3e6" stroke-width="0.85"/>
+        <line x1="20.5" y1="58.0" x2="18.5" y2="50.5" stroke="#d4e3e6" stroke-width="0.85"/>
+        <circle cx="395" cy="55.2" r="1.4" fill="#050a0e" stroke="#d4e3e6" stroke-width="0.65"/>
+        <text x="378" y="61.2" text-anchor="middle" class="mono" font-size="6.8" fill="#d4e3e6" font-weight="bold">454</text>
+        <rect x="364" y="57.5" width="4.2" height="2.6" fill="#ff5a36" stroke="#d4e3e6" stroke-width="0.4"/>
+      </g>
+
+      <!-- 3. 前甲板武备：130mm A-192M Armat 隐身舰炮 + 32单元鲁道特防空垂发 + 16单元 UKSK 锆石高超音速垂发 (X=304..392) -->
+      <g id="forward-weapons">
+        <!-- 130mm/70 A-192M Armat 多面体隐身折角舰炮 (炮管朝右 +X) -->
+        <rect x="353" y="51.2" width="17" height="1.4" fill="#163244" stroke="#38bdf8" stroke-width="0.75"/>
+        <polygon points="354,51.2 357.5,45.2 366.5,45.2 369.5,51.2" fill="#122836" stroke="#d4e3e6" stroke-width="1.15"/>
+        <polygon points="358.5,46.2 365.5,46.2 367.5,50.2 356.5,50.2" fill="#18384c" stroke="#38bdf8" stroke-width="0.65"/>
+        <!-- 130mm 高仰角长炮管与制退器 -->
+        <line x1="368.5" y1="47.6" x2="391.5" y2="46.4" stroke="#d4e3e6" stroke-width="1.45"/>
+        <rect x="389.5" y="45.8" width="2.5" height="1.2" fill="#38bdf8"/>
+
+        <!-- 第一层：32单元 (4×8) 3K96 Redut 鲁道特防空垂发井口装甲围槛 (X=330..350) -->
+        <rect x="330" y="50.8" width="20" height="2.2" fill="#102838" stroke="#38bdf8" stroke-width="0.9"/>
+        <line x1="335" y1="50.8" x2="335" y2="53.0" stroke="#d4e3e6" stroke-width="0.55"/>
+        <line x1="340" y1="50.8" x2="340" y2="53.0" stroke="#d4e3e6" stroke-width="0.55"/>
+        <line x1="345" y1="50.8" x2="345" y2="53.0" stroke="#d4e3e6" stroke-width="0.55"/>
+
+        <!-- 第二层（抬高平台）：16单元 (2×8) 3S14 UKSK 重型通用垂发平台 (搭载 3M22 锆石高超音速导弹 · X=305..329) -->
+        <polygon points="304,54.0 306,48.2 328,48.2 329.5,53.0 304,54.0" fill="#1c1014" stroke="#ff5a36" stroke-width="1.05"/>
+        <rect x="307.5" y="46.8" width="19" height="1.5" fill="#2a1216" stroke="#ff5a36" stroke-width="0.85"/>
+        <line x1="312.2" y1="46.8" x2="312.2" y2="48.3" stroke="#eab308" stroke-width="0.6"/>
+        <line x1="317.0" y1="46.8" x2="317.0" y2="48.3" stroke="#eab308" stroke-width="0.6"/>
+        <line x1="321.8" y1="46.8" x2="321.8" y2="48.3" stroke="#eab308" stroke-width="0.6"/>
+        <text x="317" y="52.2" text-anchor="middle" class="mono" font-size="2.5" fill="#ff5a36" font-weight="bold">UKSK·ZIRCON</text>
+      </g>
+
+      <!-- 4. 22350型核心地标：倾角隐身主舰桥 + 一体式金字塔综合射频塔桅 (5P-20K Poliment 四面相控阵 + 顶置 5P-27 Furke-4 球罩 · X=238..304) -->
+      <g id="integrated-pyramid-mast">
+        <!-- 前舰桥多面体隐身基座 (X=238..304, Y=39.5..54.0) -->
+        <polygon points="238,54.0 241,39.5 296,39.5 304,54.0" fill="#0e2230" stroke="#d4e3e6" stroke-width="1.2"/>
+        <line x1="240" y1="46.8" x2="300" y2="46.8" stroke="#38bdf8" stroke-width="0.75"/>
+        <!-- 航海舰桥防冰倾斜观察窗与翼桥 (Pilothouse Windows) -->
+        <polygon points="282,41.0 296.5,41.0 298.2,44.2 282,44.2" fill="#04080b" stroke="#38bdf8" stroke-width="0.85"/>
+        <line x1="287" y1="41.0" x2="287" y2="44.2" stroke="#d4e3e6" stroke-width="0.6"/>
+        <line x1="292" y1="41.0" x2="292" y2="44.2" stroke="#d4e3e6" stroke-width="0.6"/>
+        <!-- 舰桥顶前阶梯平台：5P-10E Puma (美洲狮) 炮瞄雷达球罩 + Sfera-2 光电球 -->
+        <rect x="283" y="36.5" width="7.5" height="3.0" fill="#122836" stroke="#d4e3e6" stroke-width="0.8"/>
+        <circle cx="286.8" cy="34.2" r="2.6" fill="#18384c" stroke="#eab308" stroke-width="0.95"/>
+        <circle cx="293.5" cy="37.5" r="1.4" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.7"/>
+
+        <!-- 一体式四棱锥金字塔综合射频主塔桅 (Integrated Pyramid Mast · X=244..278, Y=13.5..39.5) -->
+        <polygon points="244,39.5 253,13.5 269,13.5 278,39.5" fill="#122836" stroke="#d4e3e6" stroke-width="1.25"/>
+        <!-- 塔桅内部水平结构分层肋线 -->
+        <line x1="246.8" y1="31.5" x2="275.2" y2="31.5" stroke="#38bdf8" stroke-width="0.75"/>
+        <line x1="250.2" y1="21.5" x2="271.8" y2="21.5" stroke="#38bdf8" stroke-width="0.75"/>
+
+        <!-- 右舷侧向大型 5P-20K Poliment 相控阵雷达主阵面 (八边形/矩形高亮 #38bdf8) -->
+        <polygon points="253.5,23.2 264.5,23.2 266.2,25.2 266.2,29.2 264.5,30.6 253.5,30.6 251.8,29.2 251.8,25.2"
+                 fill="#1c445c" stroke="#38bdf8" stroke-width="1.15"/>
+        <line x1="251.8" y1="26.9" x2="266.2" y2="26.9" stroke="#38bdf8" stroke-width="0.5"/>
+        <line x1="259.0" y1="23.2" x2="259.0" y2="30.6" stroke="#38bdf8" stroke-width="0.5"/>
+
+        <!-- 舰首前向 5P-20K Poliment 相控阵雷达斜切阵面 (前倾壁面高亮 #38bdf8) -->
+        <polygon points="269.5,23.2 272.2,23.8 274.5,30.2 271.0,30.6"
+                 fill="#20506c" stroke="#38bdf8" stroke-width="1.1"/>
+
+        <!-- 上层 Zaslon X波段相控阵与综合电子支援共形阵面 -->
+        <rect x="254.5" y="15.8" width="9.5" height="4.2" rx="0.6" fill="#163244" stroke="#38bdf8" stroke-width="0.85"/>
+        <rect x="252.0" y="33.2" width="14.0" height="4.2" rx="0.6" fill="#0b1a24" stroke="#4a6368" stroke-width="0.75"/>
+
+        <!-- 塔桅顶置 5P-27 Furke-4 三坐标搜索雷达流线型大球罩 + 极高频卫通/塔康天线 (Y=2.5..13.5) -->
+        <rect x="256.5" y="11.5" width="9.0" height="2.0" fill="#163244" stroke="#38bdf8" stroke-width="0.8"/>
+        <path d="M 256.8 11.5 C 256.8 6.2, 265.2 6.2, 265.2 11.5 Z" fill="#183a4e" stroke="#38bdf8" stroke-width="1.15"/>
+        <line x1="261.0" y1="7.2" x2="261.0" y2="2.2" stroke="#d4e3e6" stroke-width="0.95"/>
+        <circle cx="261.0" cy="2.2" r="0.8" fill="#ff5a36"/>
+
+        <!-- 塔桅顶部工程标注 (置于塔桅正上方偏左安全净空区 X=196..252) -->
+        <text x="248" y="6.2" text-anchor="end" class="mono" font-size="2.7" fill="#38bdf8" font-weight="bold">5P-20K POLIMENT PYRAMID MAST</text>
+        <text x="248" y="9.8" text-anchor="end" class="mono" font-size="2.4" fill="#8aa1a7">4×AESA + 5P-27 FURKE-4 RADOME</text>
+      </g>
+
+      <!-- 5. 舯部隐身倾斜单烟囱 (CODAG) + 电子战耳台 + 舷侧内藏 2×4 Paket-NK 330mm 反潜/反鱼雷舱门 (X=182..238) -->
+      <g id="midship-funnel-paket">
+        <!-- 舯部上层建筑过渡段 -->
+        <polygon points="182,54.0 184,41.5 238,41.5 238,54.0" fill="#0c1d28" stroke="#d4e3e6" stroke-width="1.1"/>
+        <!-- 标志性多面体内倾单烟囱 (Single Stealth Inclined Funnel · X=196..224, Y=25.5..41.5) -->
+        <polygon points="196,41.5 202,26.5 220,26.5 224,41.5" fill="#102432" stroke="#d4e3e6" stroke-width="1.15"/>
+        <polygon points="202,26.5 204,24.2 219.5,24.8 220,26.5" fill="#04080b" stroke="#38bdf8" stroke-width="0.9"/>
+        <!-- 烟囱侧壁大型红外抑制散热百叶格栅 -->
+        <rect x="201" y="30.2" width="17" height="7.8" fill="#050d12" stroke="#4a6368" stroke-width="0.75"/>
+        <line x1="201" y1="32.8" x2="218" y2="32.8" stroke="#38bdf8" stroke-width="0.5"/>
+        <line x1="201" y1="35.4" x2="218" y2="35.4" stroke="#38bdf8" stroke-width="0.5"/>
+        <!-- TK-25E 电子战球罩、卫通球罩与救生快艇隐身卷帘门 -->
+        <circle cx="231" cy="38.2" r="2.2" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.75"/>
+        <circle cx="190" cy="38.8" r="1.9" fill="#163244" stroke="#38bdf8" stroke-width="0.75"/>
+        <rect x="212" y="44.2" width="19" height="6.2" rx="0.6" fill="#061016" stroke="#4a6368" stroke-width="0.75"/>
+        <!-- 舷侧舱门内藏 2×4 330mm Paket-NK 反潜/反鱼雷发射器 (高亮 #ff5a36) -->
+        <rect x="186" y="47.2" width="18" height="4.8" rx="0.6" fill="#1c0d10" stroke="#ff5a36" stroke-width="0.9"/>
+        <line x1="188" y1="48.6" x2="202" y2="48.6" stroke="#ff5a36" stroke-width="0.65"/>
+        <line x1="188" y1="50.4" x2="202" y2="50.4" stroke="#ff5a36" stroke-width="0.65"/>
+        <text x="195" y="45.8" text-anchor="middle" class="mono" font-size="2.3" fill="#ff5a36">2×4 PAKET-NK</text>
+      </g>
+
+      <!-- 6. 后部 Ka-27M 直升机库 + 机库顶双 3M89 Palash (帕拉什/佩剑) 弹炮合一近防系统 (X=104..182) -->
+      <g id="aft-hangar-palash">
+        <polygon points="104,58.0 108,40.5 182,40.5 182,54.0 106,54.0" fill="#0e2230" stroke="#d4e3e6" stroke-width="1.15"/>
+        <!-- 机库侧壁隐身折线与维修观察窗 -->
+        <line x1="107" y1="47.5" x2="182" y2="47.5" stroke="#38bdf8" stroke-width="0.7"/>
+        <rect x="144" y="42.8" width="26" height="3.2" fill="#061016" stroke="#4a6368" stroke-width="0.65"/>
+
+        <!-- 机库顶左右并列 2座 3M89 Palash (帕拉什/佩剑) 弹炮合一 CIWS (2×6管30mm + 8×9M337 Sosna-R 导弹) -->
+        <rect x="116" y="37.2" width="24" height="3.3" fill="#122836" stroke="#d4e3e6" stroke-width="0.85"/>
+        <!-- Palash 炮塔座圈、双30mm加特林炮管与左右 4+4 Sosna-R 导弹筒 -->
+        <polygon points="121,37.2 122.5,31.5 130.5,31.5 132,37.2" fill="#18384c" stroke="#ff5a36" stroke-width="0.95"/>
+        <circle cx="126.5" cy="29.8" r="1.8" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.75"/>
+        <!-- 双 30mm 六管加特林速射炮管与 8 枚 9M337 导弹发射管 (朝向舰尾左上方 -X) -->
+        <line x1="122" y1="33.2" x2="112.5" y2="31.5" stroke="#d4e3e6" stroke-width="1.15"/>
+        <rect x="119.5" y="31.8" width="6.5" height="2.4" rx="0.5" fill="#2a1216" stroke="#ff5a36" stroke-width="0.75"/>
+        <line x1="119.5" y1="33.0" x2="126.0" y2="33.0" stroke="#eab308" stroke-width="0.55"/>
+        <text x="150" y="29.5" text-anchor="middle" class="mono" font-size="2.6" fill="#ff5a36" font-weight="bold">2×3M89 PALASH CIWS</text>
+        <text x="150" y="33.0" text-anchor="middle" class="mono" font-size="2.3" fill="#8aa1a7">2×30MM + 8×SOSNA-R SAM</text>
+      </g>
+
+      <!-- 7. 尾部飞行甲板与 Ka-27M Helix (卡-27M 蜗牛) 共轴双旋翼反潜直升机 (X=20..104) -->
+      <g id="aft-flight-deck-ka27">
+        <!-- 飞行甲板防跌落安全网与助降标志线 -->
+        <line x1="22" y1="56.8" x2="103" y2="56.8" stroke="#38bdf8" stroke-width="0.8" stroke-dasharray="3 1.5"/>
+        <!-- Ka-27M Helix 共轴双旋翼反潜直升机侧视精密轮廓 -->
+        <g transform="translate(42.0, 43.2)">
+          <!-- 短粗流线机身与机头搜潜雷达罩 -->
+          <path d="M 8 7.5 L 18 7.2 L 38 7.2 C 43 7.2, 45 9.8, 41 11.8 L 18 11.8 L 8 9.2 Z" fill="#142c3c" stroke="#d4e3e6" stroke-width="0.95"/>
+          <polygon points="35,7.6 41.5,8.4 40.5,10.4 35,10.4" fill="#38bdf8"/>
+          <ellipse cx="41.5" cy="11.5" rx="2.4" ry="0.9" fill="#1c445c" stroke="#38bdf8" stroke-width="0.65"/>
+          <!-- 红星机徽 -->
+          <circle cx="25" cy="9.6" r="1.2" fill="#ff5a36"/>
+          <!-- 卡莫夫标志性双垂尾翼面 -->
+          <polygon points="6,5.0 11,5.0 13,10.5 7,10.5" fill="#163244" stroke="#38bdf8" stroke-width="0.75"/>
+          <!-- 共轴双层反转主旋翼轴与上下双层旋翼桨盘 (Coaxial Contra-Rotating Rotors) -->
+          <line x1="28" y1="7.2" x2="28" y2="1.8" stroke="#d4e3e6" stroke-width="1.1"/>
+          <line x1="10" y1="4.2" x2="46" y2="4.2" stroke="#38bdf8" stroke-width="0.95"/>
+          <line x1="10" y1="1.8" x2="46" y2="1.8" stroke="#d4e3e6" stroke-width="0.95"/>
+          <circle cx="28" cy="1.8" r="0.9" fill="#eab308"/>
+          <!-- 四点式防滑起落架 -->
+          <circle cx="21" cy="12.8" r="1.1" fill="#050a0e" stroke="#d4e3e6" stroke-width="0.6"/>
+          <circle cx="36" cy="12.8" r="0.95" fill="#050a0e" stroke="#d4e3e6" stroke-width="0.6"/>
+        </g>
+        <text x="64" y="42.0" text-anchor="middle" class="mono" font-size="2.5" fill="#d4e3e6">KA-27M HELIX ASW HELO</text>
+      </g>
+
+      <!-- 8. 底部总长与分站工程尺寸标尺 (LOA 135.0M) -->
+      <g id="dimension-ruler" stroke="#5f7c84" stroke-width="0.55">
+        <line x1="20" y1="86.0" x2="415" y2="86.0"/>
+        <line x1="20" y1="83.5" x2="20" y2="87.5"/>
+        <line x1="104" y1="84.0" x2="104" y2="87.2"/>
+        <line x1="304" y1="84.0" x2="304" y2="87.2"/>
+        <line x1="415" y1="83.5" x2="415" y2="87.5"/>
+        <text x="62" y="85.0" text-anchor="middle" class="mono" font-size="2.5" fill="#8aa1a7">AFT HELO DECK &amp; VIGNETTE-M</text>
+        <text x="204" y="85.0" text-anchor="middle" class="mono" font-size="2.5" fill="#38bdf8">5P-20K POLIMENT MAST · CODAG · 2×PALASH</text>
+        <text x="360" y="85.0" text-anchor="middle" class="mono" font-size="2.5" fill="#ff5a36">16×UKSK + 32×REDUT + 130MM A-192M</text>
+      </g>
+    </g>
+  </g>
+</svg>

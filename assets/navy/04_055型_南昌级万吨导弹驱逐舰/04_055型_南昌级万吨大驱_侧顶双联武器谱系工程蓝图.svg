@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 560" width="1280" height="560" data-asset-id="naval.type055.master.sheet" style="background:#080a0b;">
+  <defs>
+    <style>
+      svg { fill: none; stroke-linecap: butt; }
+      .s-dim { stroke: #2c3b40; stroke-width: 1; }
+      .s-line { stroke: #5f7c84; stroke-width: 1; }
+      .s-hi { stroke: #d4e3e6; stroke-width: 1.2; }
+      .s-alert { stroke: #ff5a36; stroke-width: 1.4; }
+      .s-focus { stroke: #38bdf8; stroke-width: 1.4; }
+      .f-dim { fill: #2c3b40; stroke: none; }
+      .f-line { fill: #5f7c84; stroke: none; }
+      .f-hi { fill: #d4e3e6; stroke: none; }
+      .f-alert { fill: #ff5a36; stroke: none; }
+      .f-panel { fill: #0c1113; }
+      text { font-family: "Rajdhani", "Bahnschrift", "DIN Alternate", "Microsoft YaHei", sans-serif; letter-spacing: 0.12em; }
+      text:not([stroke]) { stroke: none; }
+      text:not([fill]) { fill: #cfdde0; }
+      text:not([font-size]):not(.cap):not(.big) { font-size: 10px; }
+      text.cap { letter-spacing: 0.2em; text-transform: uppercase; }
+      text.cap:not([fill]) { fill: #8aa1a7; }
+      text.cap:not([font-size]) { font-size: 8.5px; }
+      text.mono { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; letter-spacing: 0.06em; }
+      text.big { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; font-weight: 600; letter-spacing: 0.08em; }
+      text.big:not([font-size]) { font-size: 18px; }
+      text.big:not([fill]) { fill: #d4e3e6; }
+      text.alert { fill: #ff5a36; }
+    </style>
+    <pattern id="cad-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#10181c" stroke-width="1"/>
+      <circle cx="20" cy="20" r="0.8" fill="#1b262b"/>
+    </pattern>
+    <pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#ff5a36" stroke-width="1.2" stroke-opacity="0.35"/>
+    </pattern>
+  </defs>
+
+  <!-- 1. 工程蓝图暗色底板与坐标网格图层 -->
+  <g id="layer-backdrop">
+    <rect x="0" y="0" width="1280" height="560" fill="#080a0b"/>
+    <rect x="20" y="20" width="1240" height="520" fill="url(#cad-grid)" stroke="#2c3b40" stroke-width="1"/>
+    <path d="M 20 36 V 20 H 36 M 1244 20 H 1260 V 36 M 20 524 V 540 H 36 M 1244 540 H 1260 V 524" fill="none" stroke="#38bdf8" stroke-width="1.5"/>
+    <line x1="20" y1="54" x2="1260" y2="54" stroke="#2c3b40" stroke-width="1"/>
+    <line x1="20" y1="514" x2="1260" y2="514" stroke="#2c3b40" stroke-width="1"/>
+    <text x="34" y="42" class="p mono" fill="#38bdf8" font-size="11" font-weight="bold">PLA NAVY TYPE-055 DDG (101 NANCHANG) · 13,000T CRUISER-DESTROYER MASTER BLUEPRINT</text>
+    <text x="1246" y="42" text-anchor="end" class="p cap" fill="#d4e3e6" font-size="10.5">055型「101 南昌舰」万吨大型驱逐舰 · 侧视垂发导弹谱系与顶视全甲板双联工程总图</text>
+    <text x="34" y="531" class="p mono" fill="#8aa1a7" font-size="9.5">LOA: 180.0M · BEAM: 20.0M · 4×QC-280 GAS TURBINES · 128-CELL GJB-5860 UNIVERSAL COLD/HOT VLS · REF: F104 &amp; F105</text>
+    <text x="1246" y="531" text-anchor="end" class="p mono" fill="#5f7c84" font-size="9.5">POSEIDON NAVAL CAD ASSET · TRUE 1:1 ASPECT</text>
+  </g>
+
+  <!-- 2. 舰艇核心 CAD 矢量图层 (无损原生算子输出) -->
+  <g id="layer-ship-cad">
+    
+      <rect x="44" y="72" width="1192" height="244" fill="#091116" fill-opacity="0.45" stroke="#2c3b40"/>
+      <text x="58" y="92" class="p mono" fill="#38bdf8">01 / STARBOARD ELEVATION WITH 64+64 VLS MATRICES &amp; 7-TYPE MISSILE FAMILY (REF: F104)</text>
+      <g transform="translate(127.4,98.0) scale(2.441,2.188)">
+      
+      <!-- 后部平台 64 单元 (8×8) 通用垂发矩阵展开图 (X=118..150 · 舰政标准规范) -->
+      <rect x="118" y="18" width="30" height="30" fill="#08151e" stroke="#38bdf8" stroke-width="0.9"/><line x1="121.8" y1="18" x2="121.8" y2="48" stroke="#4a6368" stroke-width="0.45"/><line x1="118" y1="21.8" x2="148" y2="21.8" stroke="#4a6368" stroke-width="0.45"/><line x1="125.5" y1="18" x2="125.5" y2="48" stroke="#4a6368" stroke-width="0.45"/><line x1="118" y1="25.5" x2="148" y2="25.5" stroke="#4a6368" stroke-width="0.45"/><line x1="129.3" y1="18" x2="129.3" y2="48" stroke="#4a6368" stroke-width="0.45"/><line x1="118" y1="29.3" x2="148" y2="29.3" stroke="#4a6368" stroke-width="0.45"/><line x1="133.0" y1="18" x2="133.0" y2="48" stroke="#4a6368" stroke-width="0.45"/><line x1="118" y1="33.0" x2="148" y2="33.0" stroke="#4a6368" stroke-width="0.45"/><line x1="136.8" y1="18" x2="136.8" y2="48" stroke="#4a6368" stroke-width="0.45"/><line x1="118" y1="36.8" x2="148" y2="36.8" stroke="#4a6368" stroke-width="0.45"/><line x1="140.5" y1="18" x2="140.5" y2="48" stroke="#4a6368" stroke-width="0.45"/><line x1="118" y1="40.5" x2="148" y2="40.5" stroke="#4a6368" stroke-width="0.45"/><line x1="144.3" y1="18" x2="144.3" y2="48" stroke="#4a6368" stroke-width="0.45"/><line x1="118" y1="44.3" x2="148" y2="44.3" stroke="#4a6368" stroke-width="0.45"/>
+      <text x="133" y="14" text-anchor="middle" class="p cap" fill="#38bdf8">后64单元(8×8)</text>
+
+      <!-- 中部上方：7型全谱系舰载导弹垂直剪影 (一坑四弹/鱼-8/红旗-16/红旗-9B/鹰击-18/长剑-10/鹰击-21 · 舰政标准规范) -->
+      <g stroke="#d4e3e6" stroke-width="0.7" fill="#0e2432">
+        <rect x="156" y="29" width="1.8" height="11"/><polygon points="156,29 156.9,26 157.8,29" fill="#ff5a36" stroke="none"/>
+        <rect x="161" y="25" width="2.0" height="15"/><polygon points="161,25 162,21.5 163,25" fill="#ff5a36" stroke="none"/>
+        <rect x="166" y="23" width="2.1" height="17"/><polygon points="166,23 167.05,19.5 168.1,23" fill="#38bdf8" stroke="none"/>
+        <rect x="171.5" y="14" width="2.4" height="26"/><polygon points="171.5,14 172.7,9.5 173.9,14" fill="#ff5a36" stroke="none"/>
+        <rect x="177" y="17" width="2.3" height="23"/><polygon points="177,17 178.15,13 179.3,17" fill="#38bdf8" stroke="none"/>
+        <rect x="182.5" y="16" width="2.3" height="24"/><polygon points="182.5,16 183.65,12 184.8,16" fill="#eab308" stroke="none"/>
+        <rect x="188" y="18" width="2.5" height="22"/><polygon points="188,18 189.25,13.5 190.5,18" fill="#ff5a36" stroke="none"/>
+      </g>
+
+      <!-- 舰首 64 单元 (8×8) 通用垂发矩阵展开图 + 2枚升空导弹剪影 (X=298..330 · 舰政标准规范) -->
+      <rect x="298" y="18" width="30" height="30" fill="#08151e" stroke="#38bdf8" stroke-width="0.9"/><line x1="301.8" y1="18" x2="301.8" y2="48" stroke="#4a6368" stroke-width="0.45"/><line x1="298" y1="21.8" x2="328" y2="21.8" stroke="#4a6368" stroke-width="0.45"/><line x1="305.5" y1="18" x2="305.5" y2="48" stroke="#4a6368" stroke-width="0.45"/><line x1="298" y1="25.5" x2="328" y2="25.5" stroke="#4a6368" stroke-width="0.45"/><line x1="309.3" y1="18" x2="309.3" y2="48" stroke="#4a6368" stroke-width="0.45"/><line x1="298" y1="29.3" x2="328" y2="29.3" stroke="#4a6368" stroke-width="0.45"/><line x1="313.0" y1="18" x2="313.0" y2="48" stroke="#4a6368" stroke-width="0.45"/><line x1="298" y1="33.0" x2="328" y2="33.0" stroke="#4a6368" stroke-width="0.45"/><line x1="316.8" y1="18" x2="316.8" y2="48" stroke="#4a6368" stroke-width="0.45"/><line x1="298" y1="36.8" x2="328" y2="36.8" stroke="#4a6368" stroke-width="0.45"/><line x1="320.5" y1="18" x2="320.5" y2="48" stroke="#4a6368" stroke-width="0.45"/><line x1="298" y1="40.5" x2="328" y2="40.5" stroke="#4a6368" stroke-width="0.45"/><line x1="324.3" y1="18" x2="324.3" y2="48" stroke="#4a6368" stroke-width="0.45"/><line x1="298" y1="44.3" x2="328" y2="44.3" stroke="#4a6368" stroke-width="0.45"/>
+      <rect x="303" y="2" width="2.2" height="14" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.5"/>
+      <rect x="309" y="2" width="2.2" height="14" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.5"/>
+      <text x="348" y="28" class="p cap" fill="#38bdf8">前64单元(8×8)</text>
+      <text x="348" y="39" class="p cap" fill="#eab308">101舰·共128单元</text>
+    
+      <g transform="translate(0,26)">
+        <!-- 1. 水下暗红船底、球鼻艏 (Bulbous Bow)、舭龙骨、前后双梯形减摇鳍、推进轴架、五叶金桨与平衡舵 (舰政标准规范) -->
+        <path d="M 18 46 L 395 46 C 397 48, 396 51, 398 53 C 403 55, 403 61, 393 62 C 384 62, 378 59, 372 59 L 82 59 L 52 55 L 19 53 Z"
+              fill="#311216" stroke="#ff5a36" stroke-width="1.1"/>
+        <!-- 舭龙骨水平减摇条 (Bilge Keel · 舰政标准规范 船底中部红线) -->
+        <path d="M 162 56 L 170 58 L 246 58 L 254 56" fill="none" stroke="#ff5a36" stroke-width="1.0"/>
+        <!-- 舰尾平衡舵与五叶金色调距螺旋桨 + 轴支架 -->
+        <polygon points="22,53 29,53 28,62 22,62" fill="#261014" stroke="#ff5a36" stroke-width="0.9"/>
+        <line x1="34" y1="58" x2="72" y2="55" stroke="#eab308" stroke-width="1.2"/>
+        <line x1="46" y1="54" x2="45" y2="58" stroke="#d4e3e6" stroke-width="1.0"/>
+        <ellipse cx="34" cy="58" rx="1.6" ry="4.8" fill="#eab308" stroke="#d4e3e6" stroke-width="0.6"/>
+        <!-- 前后两具红色梯形减摇鳍 -->
+        <polygon points="146,58 152,58 150,63 147,63" fill="#ff5a36"/>
+        <polygon points="256,58 262,58 260,63 257,63" fill="#ff5a36"/>
+
+        <!-- 2. 飞剪式高干舷长首楼隐身船体、干舷折角腰线与舰艏「101」舷号 (舰政标准规范) -->
+        <polygon points="12,38 66,38 72,26 116,26 118,32 152,32 156,22 276,22 280,29 294,29 296,33 364,33 414,30 403,40 395,46 18,46"
+                 fill="#0b1922" stroke="#d4e3e6" stroke-width="1.35"/>
+        <polyline points="14,41 399,41" fill="none" stroke="#38bdf8" stroke-width="0.9"/>
+        <line x1="18" y1="46" x2="395" y2="46" stroke="#d4e3e6" stroke-width="0.9"/>
+        <!-- 舰艏旗杆、尾旗杆与锚链孔 -->
+        <line x1="412" y1="30" x2="413" y2="21" stroke="#d4e3e6" stroke-width="0.9"/>
+        <line x1="13" y1="38" x2="11" y2="30" stroke="#d4e3e6" stroke-width="0.9"/>
+        <circle cx="394" cy="35.5" r="1.5" fill="#050a0e" stroke="#d4e3e6" stroke-width="0.6"/>
+        <!-- 舰艏「101」白色大号舷号 (舰政标准规范) -->
+        <text x="376" y="40" text-anchor="middle" class="p mono" font-size="7.5" fill="#d4e3e6" font-weight="bold">101</text>
+
+        <!-- 3. 舰艏 H/PJ-45A 型 130mm 单管隐身主炮 (X=340..369) -->
+        <polygon points="340,33 343,27 351,27 354,33" fill="#122836" stroke="#d4e3e6" stroke-width="1.1"/>
+        <line x1="353" y1="29.5" x2="369" y2="29.2" stroke="#d4e3e6" stroke-width="1.3"/>
+
+        <!-- 4. B炮位 H/PJ-11 型 11管30mm 近防炮 (1130 CIWS · X=282..293) -->
+        <polygon points="284,29 286,23 291,23 292,29" fill="#122836" stroke="#38bdf8" stroke-width="0.9"/>
+        <circle cx="288.5" cy="21.5" r="1.6" fill="#d4e3e6"/>
+        <line x1="291" y1="25.5" x2="297" y2="25.5" stroke="#38bdf8" stroke-width="1.1"/>
+
+        <!-- 5. 一体化综合射频隐身金字塔主桅杆 + 舰桥 + 346B型S波段大盾 (X=214..278 · 舰政标准规范) -->
+        <polygon points="222,22 228,14 270,14 274,22" fill="#0f2330" stroke="#d4e3e6" stroke-width="1.2"/>
+        <polygon points="258,15.5 271,15.5 272,18.5 258,18.5" fill="#04080b" stroke="#38bdf8" stroke-width="0.7"/>
+        <polygon points="262,21 273,21 275,32 264,32" fill="#163244" stroke="#38bdf8" stroke-width="1.1"/>
+        <rect x="242" y="23" width="9" height="6" fill="#122836" stroke="#d4e3e6" stroke-width="0.75"/>
+        <rect x="218" y="26" width="18" height="7" fill="#061016" stroke="#4a6368" stroke-width="0.8"/>
+        <line x1="218" y1="28.3" x2="236" y2="28.3" stroke="#38bdf8" stroke-width="0.5"/>
+        <line x1="218" y1="30.6" x2="236" y2="30.6" stroke="#38bdf8" stroke-width="0.5"/>
+
+        <!-- 一体化金字塔隐身主桅杆 -->
+        <polygon points="228,14 235,-5 245,-5 250,14" fill="#122836" stroke="#d4e3e6" stroke-width="1.2"/>
+        <polygon points="231,13 234,5 241,5 242,13" fill="#18384c" stroke="#38bdf8" stroke-width="0.85"/>
+        <rect x="237" y="-2" width="5" height="5" fill="#18384c" stroke="#d4e3e6" stroke-width="0.7"/>
+        <polygon points="238,-5 239,-14 241,-14 242,-5" fill="#d4e3e6"/>
+        <line x1="240" y1="-14" x2="240" y2="-19" stroke="#38bdf8" stroke-width="1.1"/>
+
+        <!-- 6. 中段隐身烟囱与黑色百叶格栅 (X=156..216 · 舰政标准规范 侧面深黑格栅块) -->
+        <rect x="166" y="23" width="6" height="8" fill="#04080b" stroke="#38bdf8" stroke-width="0.7"/>
+        <rect x="174" y="25" width="8" height="6" fill="#061016" stroke="#4a6368" stroke-width="0.7"/>
+        <rect x="196" y="23" width="7" height="5" fill="#04080b" stroke="#4a6368" stroke-width="0.7"/>
+
+        <!-- 7. 后部双直升机机库、球形卫通罩与 24联装红旗-10 近防导弹 (X=70..116 · 舰政标准规范) -->
+        <polygon points="108,26 110,20 115,20 116,26" fill="#0f2330" stroke="#d4e3e6" stroke-width="0.9"/>
+        <circle cx="112.5" cy="18" r="2.6" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.7"/>
+        <rect x="78" y="21.5" width="7" height="4.5" fill="#142c3c" stroke="#ff5a36" stroke-width="0.9"/>
+        <line x1="76" y1="22.5" x2="86" y2="21.5" stroke="#d4e3e6" stroke-width="1.2"/>
+        <rect x="92" y="23" width="14" height="5" fill="#061016" stroke="#38bdf8" stroke-width="0.65"/>
+
+        <!-- 8. 舰尾飞行甲板与 13吨级直-20F 反潜直升机 (X=12..66) -->
+        <g transform="translate(14, 24)">
+          <path d="M 6 6 L 18 8 L 36 8 C 41 8, 43 11, 39 12.5 L 18 12.5 L 6 8.5 Z" fill="#142c3c" stroke="#d4e3e6" stroke-width="0.9"/>
+          <polygon points="34,8.5 39,9.2 38,11 34,11" fill="#38bdf8"/>
+          <circle cx="24" cy="10.2" r="1.1" fill="#ff5a36"/>
+          <line x1="27" y1="8" x2="27" y2="5.5" stroke="#d4e3e6" stroke-width="1"/>
+          <line x1="11" y1="5.5" x2="44" y2="5.5" stroke="#38bdf8" stroke-width="1.0"/>
+          <line x1="4" y1="3.5" x2="8" y2="9.5" stroke="#d4e3e6" stroke-width="0.9"/>
+          <line x1="4" y1="9.5" x2="8" y2="3.5" stroke="#d4e3e6" stroke-width="0.9"/>
+          <circle cx="21" cy="13.2" r="1.1" fill="#050a0e" stroke="#d4e3e6" stroke-width="0.6"/>
+          <circle cx="35" cy="13.2" r="1.1" fill="#050a0e" stroke="#d4e3e6" stroke-width="0.6"/>
+        </g>
+      </g>
+    </g>
+
+      <rect x="44" y="330" width="1192" height="172" fill="#091116" fill-opacity="0.45" stroke="#2c3b40"/>
+      <text x="58" y="350" class="p mono" fill="#38bdf8">02 / ORTHOGRAPHIC DECK PLAN VIEW (OCTAGONAL BRIDGE · 128 VLS · HELIDECK 101 · REF: F105)</text>
+      <g transform="translate(136.2,354.0) scale(2.399,2.088)">
+      <!-- 1. 055型修长穿浪飞剪船体顶视外廓与首楼折角边线 (舰政标准规范) -->
+      <polygon points="8,14 78,12 282,12 348,18 414,34 348,50 282,56 78,56 8,54"
+               fill="#0a1822" stroke="#d4e3e6" stroke-width="1.4"/>
+      <polygon points="78,15 280,15 344,21 402,34 344,47 280,53 78,53"
+               fill="#0d202c" stroke="#38bdf8" stroke-width="0.85"/>
+
+      <!-- 2. 舰尾直升机起降甲板 (X=8..76 · 舰政标准图档：双同心圆起降标 + 上下三角标 + 中轴虚线 + 双横线 + 舰尾「101」大字！) -->
+      <rect x="10" y="15" width="66" height="38" fill="#08131a" stroke="#d4e3e6" stroke-width="1.0"/>
+      <!-- 舰尾两侧安全网边框 (Safety Nets) -->
+      <line x1="12" y1="13" x2="74" y2="13" stroke="#38bdf8" stroke-width="1.1" stroke-dasharray="3 1.5"/>
+      <line x1="12" y1="55" x2="74" y2="55" stroke="#38bdf8" stroke-width="1.1" stroke-dasharray="3 1.5"/>
+      <!-- 前后白色限位双横线与中轴虚线 -->
+      <line x1="52" y1="16" x2="52" y2="52" stroke="#d4e3e6" stroke-width="0.9"/>
+      <line x1="55" y1="16" x2="55" y2="52" stroke="#d4e3e6" stroke-width="0.7"/>
+      <line x1="12" y1="34" x2="74" y2="34" stroke="#d4e3e6" stroke-width="0.9" stroke-dasharray="4 2.5"/>
+      <!-- 双层白色同心圆起降标志 -->
+      <circle cx="38" cy="34" r="10.5" fill="none" stroke="#d4e3e6" stroke-width="1.15"/>
+      <circle cx="38" cy="34" r="3.2" fill="none" stroke="#38bdf8" stroke-width="0.9"/>
+      <!-- 起降圈上下各 3 个白色对位小三角 (舰政标准规范 2+10+3 标示) -->
+      <circle cx="33" cy="20" r="0.9" fill="#d4e3e6"/><circle cx="38" cy="20" r="0.9" fill="#d4e3e6"/><circle cx="43" cy="20" r="0.9" fill="#d4e3e6"/>
+      <circle cx="33" cy="48" r="0.9" fill="#d4e3e6"/><circle cx="38" cy="48" r="0.9" fill="#d4e3e6"/><circle cx="43" cy="48" r="0.9" fill="#d4e3e6"/>
+      <!-- 舰尾末端「101」~「108」白色着舰识别标号 (舰政标准规范 最右端) -->
+      <text x="19" y="37" text-anchor="middle" class="p mono" font-size="8" fill="#d4e3e6" font-weight="bold">101</text>
+
+      <!-- 3. 后部双直升机机库顶盖 + 红旗-10 + 左右 2×3 白色救生筏筒 + 球形卫通罩 (X=76..134 · 舰政标准规范) -->
+      <polygon points="76,16 128,16 134,21 134,47 128,52 76,52" fill="#102432" stroke="#d4e3e6" stroke-width="1.15"/>
+      <!-- 机库后段左右两片浅灰白甲板区 (舰政标准规范 H308 区) -->
+      <rect x="78" y="17.5" width="24" height="8" fill="#1a3648" stroke="#38bdf8" stroke-width="0.6"/>
+      <rect x="78" y="42.5" width="24" height="8" fill="#1a3648" stroke="#38bdf8" stroke-width="0.6"/>
+      <!-- 机库后中轴：24联装红旗-10 (HQ-10) 导弹发射架 -->
+      <rect x="85" y="30" width="9" height="8" rx="1" fill="#162e3e" stroke="#ff5a36" stroke-width="1.0"/>
+      <!-- 机库前段左右两侧各 3 具白色胶囊形救生筏筒 (2×3 Life-Raft Canisters · 舰政标准规范) -->
+      <rect x="108" y="18" width="4.5" height="2.4" rx="1" fill="#d4e3e6"/><rect x="114" y="18" width="4.5" height="2.4" rx="1" fill="#d4e3e6"/><rect x="120" y="18" width="4.5" height="2.4" rx="1" fill="#d4e3e6"/>
+      <rect x="108" y="47.6" width="4.5" height="2.4" rx="1" fill="#d4e3e6"/><rect x="114" y="47.6" width="4.5" height="2.4" rx="1" fill="#d4e3e6"/><rect x="120" y="47.6" width="4.5" height="2.4" rx="1" fill="#d4e3e6"/>
+      <!-- 机库前中轴凸台与球形卫通天线罩 -->
+      <rect x="106" y="27" width="24" height="14" fill="#0c1c28" stroke="#38bdf8" stroke-width="0.85"/>
+      <circle cx="125" cy="34" r="3.5" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.8"/>
+
+      <!-- 4. 后部平台 64 单元 (8×8) 大口径通用垂发矩阵 (X=138..164 · 舰政标准规范) -->
+      <rect x="138" y="22" width="24" height="24" fill="#07131c" stroke="#d4e3e6" stroke-width="1.0"/><line x1="141.0" y1="22" x2="141.0" y2="46" stroke="#38bdf8" stroke-width="0.5"/><line x1="144.0" y1="22" x2="144.0" y2="46" stroke="#38bdf8" stroke-width="0.5"/><line x1="147.0" y1="22" x2="147.0" y2="46" stroke="#38bdf8" stroke-width="0.5"/><line x1="150.0" y1="22" x2="150.0" y2="46" stroke="#38bdf8" stroke-width="0.5"/><line x1="153.0" y1="22" x2="153.0" y2="46" stroke="#38bdf8" stroke-width="0.5"/><line x1="156.0" y1="22" x2="156.0" y2="46" stroke="#38bdf8" stroke-width="0.5"/><line x1="159.0" y1="22" x2="159.0" y2="46" stroke="#38bdf8" stroke-width="0.5"/><line x1="138" y1="28.0" x2="162" y2="28.0" stroke="#38bdf8" stroke-width="0.5"/><line x1="138" y1="34.0" x2="162" y2="34.0" stroke="#38bdf8" stroke-width="0.5"/><line x1="138" y1="40.0" x2="162" y2="40.0" stroke="#38bdf8" stroke-width="0.5"/><line x1="138" y1="34.0" x2="162" y2="34.0" stroke="#d4e3e6" stroke-width="0.8"/>
+
+      <!-- 5. 中段隐身烟囱、白色方舱盖与双联黑色燃气轮机排气口 (X=168..236 · 舰政标准规范 H12/33 区) -->
+      <!-- 后白色方舱盖 (内含双并列小方框) -->
+      <rect x="168" y="23" width="16" height="22" fill="#183244" stroke="#d4e3e6" stroke-width="1.0"/>
+      <rect x="171" y="26" width="10" height="6" fill="#0b1a24" stroke="#38bdf8" stroke-width="0.6"/>
+      <rect x="171" y="36" width="10" height="6" fill="#0b1a24" stroke="#38bdf8" stroke-width="0.6"/>
+      <!-- 中段烟囱顶：前后两组黑色燃气轮机排气格栅与双黑圆孔 -->
+      <polygon points="184,21 232,19 236,23 236,45 232,49 184,47" fill="#0f2330" stroke="#d4e3e6" stroke-width="1.1"/>
+      <rect x="188" y="24" width="10" height="8" fill="#04080b" stroke="#38bdf8" stroke-width="0.8"/>
+      <rect x="188" y="36" width="10" height="8" fill="#04080b" stroke="#38bdf8" stroke-width="0.8"/>
+      <circle cx="204" cy="34" r="2.2" fill="#04080b" stroke="#d4e3e6" stroke-width="0.6"/>
+      <rect x="214" y="25" width="9" height="18" fill="#04080b" stroke="#38bdf8" stroke-width="0.8"/>
+      <rect x="225" y="26" width="9" height="16" fill="#162e3e" stroke="#d4e3e6" stroke-width="0.8"/>
+
+      <!-- 6. 核心灵魂：八角翼桥包络 + 阶梯金字塔一体化隐身主桅杆俯视图 (X=236..286 · 舰政标准图档 最具辨识度的钻石八角桥楼！) -->
+      <!-- 外层八角翼桥与四面 346B S波段相控阵盾切面 -->
+      <polygon points="236,16 266,16 284,24 284,44 266,52 236,52 246,44 246,24"
+               fill="#122836" stroke="#d4e3e6" stroke-width="1.3"/>
+      <!-- 翼桥前斜切 346B 大盾高亮边与舰桥内框 -->
+      <polygon points="252,20 268,20 278,26 278,42 268,48 252,48"
+               fill="#18364a" stroke="#38bdf8" stroke-width="1.05"/>
+      <!-- 中央阶梯金字塔一体化主桅杆俯视同心台体 + 向后延伸的白色主桅横桁 -->
+      <polygon points="244,26 262,26 266,30 266,38 262,42 244,42" fill="#0d202c" stroke="#d4e3e6" stroke-width="1.0"/>
+      <rect x="248" y="30" width="12" height="8" fill="#1a3a4e" stroke="#38bdf8" stroke-width="0.9"/>
+      <circle cx="254" cy="34" r="2.2" fill="#d4e3e6"/>
+      <line x1="238" y1="34" x2="254" y2="34" stroke="#d4e3e6" stroke-width="1.3"/>
+
+      <!-- 7. B炮位五边形前突切角平台与 H/PJ-11 型 1130 近防炮 (X=284..304 · 舰政标准规范) -->
+      <polygon points="284,24 298,26 304,30 304,38 298,42 284,44" fill="#102432" stroke="#38bdf8" stroke-width="1.0"/>
+      <circle cx="294" cy="34" r="3.8" fill="#163244" stroke="#d4e3e6" stroke-width="0.9"/>
+      <line x1="297" y1="34" x2="303" y2="34" stroke="#38bdf8" stroke-width="1.3"/>
+
+      <!-- 8. 舰首 64 单元 (8×8) 大口径通用垂发矩阵 (X=308..334 · 与后部合计 128 单元 · 舰政标准规范) -->
+      <rect x="308" y="22" width="26" height="24" fill="#07131c" stroke="#d4e3e6" stroke-width="1.0"/><line x1="311.3" y1="22" x2="311.3" y2="46" stroke="#38bdf8" stroke-width="0.5"/><line x1="314.5" y1="22" x2="314.5" y2="46" stroke="#38bdf8" stroke-width="0.5"/><line x1="317.8" y1="22" x2="317.8" y2="46" stroke="#38bdf8" stroke-width="0.5"/><line x1="321.0" y1="22" x2="321.0" y2="46" stroke="#38bdf8" stroke-width="0.5"/><line x1="324.3" y1="22" x2="324.3" y2="46" stroke="#38bdf8" stroke-width="0.5"/><line x1="327.5" y1="22" x2="327.5" y2="46" stroke="#38bdf8" stroke-width="0.5"/><line x1="330.8" y1="22" x2="330.8" y2="46" stroke="#38bdf8" stroke-width="0.5"/><line x1="308" y1="28.0" x2="334" y2="28.0" stroke="#38bdf8" stroke-width="0.5"/><line x1="308" y1="34.0" x2="334" y2="34.0" stroke="#38bdf8" stroke-width="0.5"/><line x1="308" y1="40.0" x2="334" y2="40.0" stroke="#38bdf8" stroke-width="0.5"/><line x1="308" y1="34.0" x2="334" y2="34.0" stroke="#d4e3e6" stroke-width="0.8"/>
+
+      <!-- 9. 舰首 H/PJ-45A 型 130mm 隐身主炮、V形防浪板与飞剪尖艏分水脊线 (X=340..414 · 舰政标准规范) -->
+      <polygon points="340,28 349,26 355,28 355,40 349,42 340,40" fill="#163244" stroke="#d4e3e6" stroke-width="1.15"/>
+      <rect x="343" y="31" width="6" height="6" fill="#09151e" stroke="#38bdf8" stroke-width="0.6"/>
+      <line x1="355" y1="34" x2="378" y2="34" stroke="#d4e3e6" stroke-width="1.6"/>
+      <!-- 舰首 V 形防浪挡板与中轴线 -->
+      <polyline points="374,23 386,34 374,45" fill="none" stroke="#38bdf8" stroke-width="0.8"/>
+      <line x1="378" y1="34" x2="412" y2="34" stroke="#4a6368" stroke-width="0.8"/>
+    </g>
+    
+  </g>
+</svg>

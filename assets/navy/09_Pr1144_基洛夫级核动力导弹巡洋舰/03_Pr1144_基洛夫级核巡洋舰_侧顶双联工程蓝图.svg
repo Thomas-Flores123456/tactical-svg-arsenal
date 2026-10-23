@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 580" width="1320" height="580" data-asset-id="naval.kirov1144.master.sheet" style="background:#080a0b;">
+  <defs>
+    <style>
+      svg { fill: none; stroke-linecap: butt; }
+      .s-dim { stroke: #2c3b40; stroke-width: 1; }
+      .s-line { stroke: #5f7c84; stroke-width: 1; }
+      .s-hi { stroke: #d4e3e6; stroke-width: 1.2; }
+      .s-alert { stroke: #ff5a36; stroke-width: 1.4; }
+      .s-focus { stroke: #38bdf8; stroke-width: 1.4; }
+      .f-dim { fill: #2c3b40; stroke: none; }
+      .f-line { fill: #5f7c84; stroke: none; }
+      .f-hi { fill: #d4e3e6; stroke: none; }
+      .f-alert { fill: #ff5a36; stroke: none; }
+      .f-panel { fill: #0c1113; }
+      text { font-family: "Rajdhani", "Bahnschrift", "DIN Alternate", "Microsoft YaHei", sans-serif; letter-spacing: 0.12em; }
+      text:not([stroke]) { stroke: none; }
+      text:not([fill]) { fill: #cfdde0; }
+      text:not([font-size]):not(.cap):not(.big) { font-size: 10px; }
+      text.cap { letter-spacing: 0.2em; text-transform: uppercase; }
+      text.cap:not([fill]) { fill: #8aa1a7; }
+      text.cap:not([font-size]) { font-size: 8.5px; }
+      text.mono { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; letter-spacing: 0.06em; }
+      text.big { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; font-weight: 600; letter-spacing: 0.08em; }
+      text.big:not([font-size]) { font-size: 18px; }
+      text.big:not([fill]) { fill: #d4e3e6; }
+      text.alert { fill: #ff5a36; }
+    </style>
+    <pattern id="cad-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#10181c" stroke-width="1"/>
+      <circle cx="20" cy="20" r="0.8" fill="#1b262b"/>
+    </pattern>
+    <pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#ff5a36" stroke-width="1.2" stroke-opacity="0.35"/>
+    </pattern>
+  </defs>
+
+  <!-- 1. 工程蓝图暗色底板与坐标网格图层 -->
+  <g id="layer-backdrop">
+    <rect x="0" y="0" width="1320" height="580" fill="#080a0b"/>
+    <rect x="20" y="20" width="1280" height="540" fill="url(#cad-grid)" stroke="#2c3b40" stroke-width="1"/>
+    <path d="M 20 36 V 20 H 36 M 1284 20 H 1300 V 36 M 20 544 V 560 H 36 M 1284 560 H 1300 V 544" fill="none" stroke="#38bdf8" stroke-width="1.5"/>
+    <line x1="20" y1="54" x2="1300" y2="54" stroke="#2c3b40" stroke-width="1"/>
+    <line x1="20" y1="534" x2="1300" y2="534" stroke="#2c3b40" stroke-width="1"/>
+    <text x="34" y="42" class="p mono" fill="#38bdf8" font-size="11" font-weight="bold">PROJECT 1144.2 ORLAN / KIROV-CLASS NUCLEAR BATTLECRUISER (099 PYOTR VELIKY) · MASTER BLUEPRINT</text>
+    <text x="1286" y="42" text-anchor="end" class="p cap" fill="#d4e3e6" font-size="10.5">1144.2型「基洛夫级 · 099 彼得大帝号」核动力重型导弹巡洋舰 · 侧顶双联工程蓝图 (UID=81)</text>
+    <text x="34" y="551" class="p mono" fill="#8aa1a7" font-size="9.5">DISPLACEMENT: 28,000T · LOA: 252.0M · BEAM: 28.5M · 2×KN-3 PWR CONAS · 20×P-700 GRANIT + 96×S-300F FORT + 6×KASHTAN + AK-130</text>
+    <text x="1286" y="551" text-anchor="end" class="p mono" fill="#5f7c84" font-size="9.5">OBLIVION NAVAL CAD ASSET · TRUE 1:1 ASPECT (8.84:1)</text>
+  </g>
+
+  <!-- 2. 舰艇核心 CAD 矢量图层 (上框侧视剖面 + 下框顶视全甲板) -->
+  <g id="layer-ship-cad">
+    <rect x="44" y="70" width="1232" height="248" fill="#091116" fill-opacity="0.45" stroke="#2c3b40"/>
+    <text font-size="9.5" x="58" y="90" class="p mono" fill="#38bdf8">01 / STARBOARD PROFILE &amp; P-700 / S-300F MISSILE CUTAWAY (CONAS NUCLEAR PLANT · POLINOM SONAR · TOP PAIR &amp; TOP DOME)</text>
+    <g transform="translate(143.6,82.0) scale(2.326,2.326)">
+
+      <!-- A. 前甲板上方：20单元 60°倾角 P-700「花岗岩」(SS-N-19) 巨型反舰导弹发射井剖面与弹体展开图 (X=226..294, Y=8..42) -->
+      <rect x="226" y="13" width="68" height="23" fill="#08141c" stroke="#ff5a36" stroke-width="0.85"/>
+      <text x="260" y="10.8" text-anchor="middle" class="cap" font-size="3.3" fill="#ff5a36">20×P-700 GRANIT (60° SILOS)</text>
+      <polygon points="232.0,33 235.2,33 239.0,20 235.8,20" fill="#180d10" stroke="#ff5a36" stroke-width="0.6"/>
+      <polygon points="237.2,33 240.39999999999998,33 244.2,20 241,20" fill="#180d10" stroke="#ff5a36" stroke-width="0.6"/>
+      <polygon points="242.4,33 245.6,33 249.4,20 246.20000000000002,20" fill="#180d10" stroke="#ff5a36" stroke-width="0.6"/>
+      <polygon points="247.6,33 250.79999999999998,33 254.6,20 251.4,20" fill="#180d10" stroke="#ff5a36" stroke-width="0.6"/>
+      <polygon points="252.8,33 256,33 259.8,20 256.6,20" fill="#180d10" stroke="#ff5a36" stroke-width="0.6"/>
+      <polygon points="258.0,33 261.2,33 265.0,20 261.8,20" fill="#180d10" stroke="#ff5a36" stroke-width="0.6"/>
+      <polygon points="263.2,33 266.4,33 270.2,20 267,20" fill="#180d10" stroke="#ff5a36" stroke-width="0.6"/>
+      <polygon points="268.4,33 271.59999999999997,33 275.4,20 272.2,20" fill="#180d10" stroke="#ff5a36" stroke-width="0.6"/>
+      <polygon points="273.6,33 276.8,33 280.6,20 277.40000000000003,20" fill="#180d10" stroke="#ff5a36" stroke-width="0.6"/>
+      <polygon points="278.8,33 282,33 285.8,20 282.6,20" fill="#180d10" stroke="#ff5a36" stroke-width="0.6"/>
+      <!-- P-700 花岗岩 7吨级冲压超音速反舰导弹侧视剖面剪影 -->
+      <g transform="translate(231, 38.5)">
+        <polygon points="0,1.2 42,1.2 49,2.4 42,3.6 0,3.6" fill="#261014" stroke="#ff5a36" stroke-width="0.7"/>
+        <polygon points="49,2.4 53,2.4 49,1.7 49,3.1" fill="#eab308"/>
+        <polygon points="18,1.2 26,-1.6 31,1.2" fill="#ff5a36"/>
+        <polygon points="2,1.2 6,-0.8 9,1.2" fill="#d4e3e6"/>
+        <text x="24" y="8.2" text-anchor="middle" class="mono" font-size="3.1" fill="#eab308">3M45 · MACH 2.5 · 625KM</text>
+      </g>
+
+      <!-- B. 前甲板上方：12×8 (96单元) S-300F「里夫」(SA-N-6) 左轮转轮垂发阵列与导弹展开图 (X=299..366, Y=8..42) -->
+      <rect x="299" y="13" width="66" height="23" fill="#08141c" stroke="#38bdf8" stroke-width="0.85"/>
+      <text x="332" y="10.8" text-anchor="middle" class="cap" font-size="3.3" fill="#38bdf8">12×8 S-300F FORT (96 VLS)</text>
+      <circle cx="306.0" cy="21.5" r="2.7" fill="#0b1d28" stroke="#38bdf8" stroke-width="0.6"/><circle cx="306.0" cy="21.5" r="0.8" fill="#ff5a36"/>
+      <circle cx="312.8" cy="21.5" r="2.7" fill="#0b1d28" stroke="#38bdf8" stroke-width="0.6"/><circle cx="312.8" cy="21.5" r="0.8" fill="#ff5a36"/>
+      <circle cx="319.6" cy="21.5" r="2.7" fill="#0b1d28" stroke="#38bdf8" stroke-width="0.6"/><circle cx="319.6" cy="21.5" r="0.8" fill="#ff5a36"/>
+      <circle cx="326.4" cy="21.5" r="2.7" fill="#0b1d28" stroke="#38bdf8" stroke-width="0.6"/><circle cx="326.4" cy="21.5" r="0.8" fill="#ff5a36"/>
+      <circle cx="333.2" cy="21.5" r="2.7" fill="#0b1d28" stroke="#38bdf8" stroke-width="0.6"/><circle cx="333.2" cy="21.5" r="0.8" fill="#ff5a36"/>
+      <circle cx="340.0" cy="21.5" r="2.7" fill="#0b1d28" stroke="#38bdf8" stroke-width="0.6"/><circle cx="340.0" cy="21.5" r="0.8" fill="#ff5a36"/>
+      <circle cx="306.0" cy="28.7" r="2.7" fill="#0b1d28" stroke="#38bdf8" stroke-width="0.6"/><circle cx="306.0" cy="28.7" r="0.8" fill="#ff5a36"/>
+      <circle cx="312.8" cy="28.7" r="2.7" fill="#0b1d28" stroke="#38bdf8" stroke-width="0.6"/><circle cx="312.8" cy="28.7" r="0.8" fill="#ff5a36"/>
+      <circle cx="319.6" cy="28.7" r="2.7" fill="#0b1d28" stroke="#38bdf8" stroke-width="0.6"/><circle cx="319.6" cy="28.7" r="0.8" fill="#ff5a36"/>
+      <circle cx="326.4" cy="28.7" r="2.7" fill="#0b1d28" stroke="#38bdf8" stroke-width="0.6"/><circle cx="326.4" cy="28.7" r="0.8" fill="#ff5a36"/>
+      <circle cx="333.2" cy="28.7" r="2.7" fill="#0b1d28" stroke="#38bdf8" stroke-width="0.6"/><circle cx="333.2" cy="28.7" r="0.8" fill="#ff5a36"/>
+      <circle cx="340.0" cy="28.7" r="2.7" fill="#0b1d28" stroke="#38bdf8" stroke-width="0.6"/><circle cx="340.0" cy="28.7" r="0.8" fill="#ff5a36"/>
+      <!-- 2枚 48N6E / 5V55RM 远程防空导弹垂直剪影 -->
+      <rect x="351.5" y="15.5" width="2.2" height="18" fill="#0e2432" stroke="#d4e3e6" stroke-width="0.55"/>
+      <polygon points="351.5,15.5 352.6,12.2 353.7,15.5" fill="#38bdf8"/>
+      <rect x="356.5" y="15.5" width="2.2" height="18" fill="#0e2432" stroke="#d4e3e6" stroke-width="0.55"/>
+      <polygon points="356.5,15.5 357.6,12.2 358.7,15.5" fill="#ff5a36"/>
+      <text x="332" y="41.8" text-anchor="middle" class="mono" font-size="3.1" fill="#38bdf8">B-203A DRUMS · 96×48N6E SAM</text>
+
+      <!-- C. 舰首上方：6×卡什坦 (Kashtan CADS-N-1) 弹炮合一近防系统 + 128单元道尔-M1/匕首点防空标识框 (X=371..430, Y=8..42) -->
+      <rect x="371" y="13" width="59" height="23" fill="#08141c" stroke="#d4e3e6" stroke-width="0.8"/>
+      <text x="400.5" y="10.8" text-anchor="middle" class="cap" font-size="3.3" fill="#d4e3e6">6×KASHTAN &amp; 128×KINZHAL</text>
+      <!-- 卡什坦弹炮合一模块特写 (双30mm六管机炮 + 8枚9M311导弹 + 雷达光电球) -->
+      <polygon points="376,32 379,23 389,23 391,32" fill="#122836" stroke="#38bdf8" stroke-width="0.75"/>
+      <circle cx="384" cy="19.8" r="2.2" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.55"/>
+      <line x1="388" y1="25.2" x2="399" y2="24.2" stroke="#ff5a36" stroke-width="1.0"/>
+      <line x1="388" y1="27.5" x2="399" y2="27.2" stroke="#38bdf8" stroke-width="0.9"/>
+      <text x="401" y="21.5" class="mono" font-size="2.9" fill="#d4e3e6">2×30MM GSh-6-30K</text>
+      <text x="401" y="26.8" class="mono" font-size="2.9" fill="#ff5a36">8×9M311 SOSNA-R</text>
+      <text x="401" y="32.0" class="mono" font-size="2.9" fill="#38bdf8">1×AK-130 + RBU</text>
+
+      <!-- 1. 水下暗红防污船底 + 舰首巨型「马颚」(MGK-355 Polinom) 球鼻声呐导流罩 + 双轴五叶金桨与平衡舵 (Y=78..96.5) -->
+      <path d="M 16 78 L 407 78 C 412 80, 418 84, 418 90 C 418 95.5, 408 96.5, 396 96.5 C 383 96.5, 376 92, 368 92 L 78 92 L 48 88 L 17 85 Z"
+            fill="#261014" stroke="#ff5a36" stroke-width="1.15"/>
+      <!-- 舰首巨型「马颚」(Polynom / Horse Jaw) 低频声呐导流罩内部换能器阵列网格 -->
+      <path d="M 374 80 L 413 83 M 372 85 L 417 88 M 374 90 L 414 93 M 384 79 L 382 95 M 395 79 L 394 96.5 M 406 80 L 405 96"
+            stroke="#ff5a36" stroke-width="0.55" stroke-opacity="0.65"/>
+      <text x="394" y="88.5" text-anchor="middle" class="p mono" font-size="3.8" fill="#eab308">MGK-355 POLINOM</text>
+
+      <!-- 舭龙骨 (Bilge Keel) 与前后双梯形减摇鳍 -->
+      <path d="M 148 89.5 L 158 91.5 L 264 91.5 L 274 89.5" fill="none" stroke="#ff5a36" stroke-width="0.95"/>
+      <polygon points="132,91 139,91 137,95.5 133,95.5" fill="#ff5a36"/>
+      <polygon points="282,91 289,91 287,95.5 283,95.5" fill="#ff5a36"/>
+
+      <!-- 舰尾大型半平衡舵 + 双轴推进支架 + 双列五叶金色螺旋桨 -->
+      <polygon points="19,84.5 28,85.5 26,95.5 19,94.5" fill="#261014" stroke="#ff5a36" stroke-width="0.95"/>
+      <line x1="35" y1="91" x2="88" y2="85.5" stroke="#eab308" stroke-width="1.25"/>
+      <line x1="46" y1="90" x2="96" y2="85.5" stroke="#eab308" stroke-width="1.05"/>
+      <line x1="52" y1="84" x2="49" y2="90.5" stroke="#d4e3e6" stroke-width="1.0"/>
+      <ellipse cx="35" cy="91" rx="1.8" ry="5.6" fill="#eab308" stroke="#d4e3e6" stroke-width="0.6"/>
+      <ellipse cx="45" cy="90" rx="1.6" ry="5.0" fill="#eab308" stroke="#d4e3e6" stroke-width="0.6"/>
+
+      <!-- 2. 水线以上修长飞剪艏长首楼 + 舰尾下沉阶梯船体 (X=12..432, Y=55.5..78) -->
+      <polygon points="12,66 74,66 78,63.5 102,63.5 106,57.5 150,57.5 154,60.5 388,60.5 432,55.5 419,68 407,78 16,78"
+               fill="#0a1822" stroke="#d4e3e6" stroke-width="1.35"/>
+      <!-- 干舷折角腰线 (Chine Line)、长首楼甲板边线与水线 -->
+      <polyline points="13,70.5 152,70.5 158,67.5 398,67.5 426,61.5" fill="none" stroke="#38bdf8" stroke-width="0.9"/>
+      <line x1="16" y1="78" x2="407" y2="78" stroke="#d4e3e6" stroke-width="0.95"/>
+      <!-- 舷窗列 -->
+      <circle cx="42.0" cy="67.2" r="0.55" fill="#38bdf8"/>
+      <circle cx="53.5" cy="67.2" r="0.55" fill="#38bdf8"/>
+      <circle cx="65.0" cy="67.2" r="0.55" fill="#38bdf8"/>
+      <circle cx="76.5" cy="67.2" r="0.55" fill="#38bdf8"/>
+      <circle cx="88.0" cy="67.2" r="0.55" fill="#38bdf8"/>
+      <circle cx="99.5" cy="67.2" r="0.55" fill="#38bdf8"/>
+      <circle cx="111.0" cy="67.2" r="0.55" fill="#38bdf8"/>
+      <circle cx="122.5" cy="67.2" r="0.55" fill="#38bdf8"/>
+      <circle cx="134.0" cy="67.2" r="0.55" fill="#38bdf8"/>
+      <circle cx="145.5" cy="67.2" r="0.55" fill="#38bdf8"/>
+      <circle cx="157.0" cy="65.2" r="0.55" fill="#38bdf8"/>
+      <circle cx="168.5" cy="65.2" r="0.55" fill="#38bdf8"/>
+      <circle cx="180.0" cy="65.2" r="0.55" fill="#38bdf8"/>
+      <circle cx="191.5" cy="65.2" r="0.55" fill="#38bdf8"/>
+      <circle cx="203.0" cy="65.2" r="0.55" fill="#38bdf8"/>
+      <circle cx="214.5" cy="65.2" r="0.55" fill="#38bdf8"/>
+      <circle cx="226.0" cy="65.2" r="0.55" fill="#38bdf8"/>
+      <circle cx="237.5" cy="65.2" r="0.55" fill="#38bdf8"/>
+      <circle cx="249.0" cy="65.2" r="0.55" fill="#38bdf8"/>
+      <circle cx="260.5" cy="65.2" r="0.55" fill="#38bdf8"/>
+      <circle cx="272.0" cy="65.2" r="0.55" fill="#38bdf8"/>
+      <circle cx="283.5" cy="65.2" r="0.55" fill="#38bdf8"/>
+      <circle cx="295.0" cy="65.2" r="0.55" fill="#38bdf8"/>
+      <circle cx="306.5" cy="65.2" r="0.55" fill="#38bdf8"/>
+      <!-- 舰首锚链孔、首柱防浪折角、首尾旗杆与白色大号舷号「099」 -->
+      <circle cx="403" cy="63" r="1.7" fill="#050a0e" stroke="#d4e3e6" stroke-width="0.7"/>
+      <line x1="430.5" y1="55.5" x2="432" y2="46.5" stroke="#d4e3e6" stroke-width="0.9"/>
+      <line x1="12.5" y1="66" x2="10.5" y2="57.5" stroke="#d4e3e6" stroke-width="0.9"/>
+      <text x="383" y="72.5" text-anchor="middle" class="p mono" font-size="8.2" fill="#d4e3e6" font-weight="bold">099</text>
+
+      <!-- 舰尾门「猎户座 / 马尾」(MGK-345 Bronza / Orion VDS) 可变深拖曳声呐尾舱门 -->
+      <rect x="13.5" y="70.5" width="6.5" height="5.2" fill="#180d10" stroke="#ff5a36" stroke-width="0.85"/>
+      <line x1="13.5" y1="73.1" x2="8.5" y2="76.5" stroke="#38bdf8" stroke-width="0.7" stroke-dasharray="1.5 1"/>
+
+      <!-- 3. 船体中段内部：双座 KN-3 压水核反应堆 + GTZA-653 蒸汽轮机 CONAS 联合核动力舱透视虚线框 (X=126..242, Y=69..89) -->
+      <rect x="126" y="69.5" width="116" height="19" fill="#071118" fill-opacity="0.82" stroke="#38bdf8" stroke-width="0.8" stroke-dasharray="3 1.5"/>
+      <!-- 前后两座 KN-3 (OK-900A) 300MWt 压水核反应堆安全壳与堆芯 -->
+      <rect x="190" y="71.2" width="22" height="15.5" rx="2" fill="#220e12" stroke="#ff5a36" stroke-width="0.85"/>
+      <circle cx="201" cy="79" r="4.2" fill="#ff5a36" fill-opacity="0.28" stroke="#eab308" stroke-width="0.7"/>
+      <circle cx="201" cy="79" r="1.3" fill="#eab308"/>
+      <rect x="216" y="71.2" width="22" height="15.5" rx="2" fill="#220e12" stroke="#ff5a36" stroke-width="0.85"/>
+      <circle cx="227" cy="79" r="4.2" fill="#ff5a36" fill-opacity="0.28" stroke="#eab308" stroke-width="0.7"/>
+      <circle cx="227" cy="79" r="1.3" fill="#eab308"/>
+      <!-- 双座 GTZA-653 主蒸汽轮机减速齿轮箱 + 燃油过热锅炉 (CONAS) -->
+      <polygon points="130,73 154,71.5 158,86 130,86" fill="#0d2230" stroke="#38bdf8" stroke-width="0.8"/>
+      <rect x="162" y="72.5" width="23" height="13.5" fill="#102838" stroke="#d4e3e6" stroke-width="0.7" stroke-dasharray="2 1"/>
+      <line x1="158" y1="79" x2="190" y2="79" stroke="#eab308" stroke-width="0.9"/>
+      <line x1="88" y1="85.5" x2="130" y2="81" stroke="#eab308" stroke-width="0.85" stroke-dasharray="3 1.5"/>
+      <text x="184" y="68.2" text-anchor="middle" class="p mono" font-size="3.9" fill="#eab308">CONAS NUCLEAR PLANT: 2×KN-3 PWR (600MWt) + 2×GTZA-653 TURBINES (140,000 SHP)</text>
+
+      <!-- 4. 前甲板重型导弹武库区：RBU-12000 反潜深弹 + 96单元 S-300F 垂发 + 20单元 60°倾角 P-700 花岗岩巨井 (X=230..418) -->
+      <!-- 舰首 RBU-12000「蟒蛇-1」(Udav-1) 10管300mm反潜/反鱼雷深弹发射器 -->
+      <polygon points="405,59 408,55.2 414,55.2 415,59" fill="#142c3c" stroke="#38bdf8" stroke-width="0.85"/>
+      <line x1="411" y1="56.2" x2="418" y2="54.2" stroke="#ff5a36" stroke-width="1.1"/>
+      <!-- 前部两侧卡什坦 (Kashtan CADS-N-1) 弹炮合一近防系统前炮台 (1号/2号) -->
+      <polygon points="379,60.2 381,54.5 388,54.5 390,60.2" fill="#142c3c" stroke="#38bdf8" stroke-width="0.85"/>
+      <circle cx="384.5" cy="52.8" r="1.5" fill="#d4e3e6"/>
+      <line x1="387" y1="56.2" x2="394" y2="55.5" stroke="#ff5a36" stroke-width="0.95"/>
+      <!-- 前甲板 12×8 (96单元) S-300F「里夫」转轮垂发装甲井盖群 -->
+      <rect x="304" y="59.2" width="71" height="1.5" fill="#0d222e" stroke="#38bdf8" stroke-width="0.7"/>
+      <rect x="307.0" y="58.7" width="4.2" height="1.8" fill="#0d222e" stroke="#38bdf8" stroke-width="0.55"/>
+      <rect x="312.6" y="58.7" width="4.2" height="1.8" fill="#0d222e" stroke="#38bdf8" stroke-width="0.55"/>
+      <rect x="318.2" y="58.7" width="4.2" height="1.8" fill="#0d222e" stroke="#38bdf8" stroke-width="0.55"/>
+      <rect x="323.8" y="58.7" width="4.2" height="1.8" fill="#0d222e" stroke="#38bdf8" stroke-width="0.55"/>
+      <rect x="329.4" y="58.7" width="4.2" height="1.8" fill="#0d222e" stroke="#38bdf8" stroke-width="0.55"/>
+      <rect x="335.0" y="58.7" width="4.2" height="1.8" fill="#0d222e" stroke="#38bdf8" stroke-width="0.55"/>
+      <rect x="340.6" y="58.7" width="4.2" height="1.8" fill="#0d222e" stroke="#38bdf8" stroke-width="0.55"/>
+      <rect x="346.2" y="58.7" width="4.2" height="1.8" fill="#0d222e" stroke="#38bdf8" stroke-width="0.55"/>
+      <rect x="351.8" y="58.7" width="4.2" height="1.8" fill="#0d222e" stroke="#38bdf8" stroke-width="0.55"/>
+      <rect x="357.4" y="58.7" width="4.2" height="1.8" fill="#0d222e" stroke="#38bdf8" stroke-width="0.55"/>
+      <rect x="363.0" y="58.7" width="4.2" height="1.8" fill="#0d222e" stroke="#38bdf8" stroke-width="0.55"/>
+      <rect x="368.6" y="58.7" width="4.2" height="1.8" fill="#0d222e" stroke="#38bdf8" stroke-width="0.55"/>
+      <!-- 后方阶梯隆起的 20单元 60°倾角 P-700「花岗岩」重型超音速反舰导弹发射井区 -->
+      <polygon points="231,60.5 234,56.2 301,56.2 303,60.5" fill="#162c3a" stroke="#d4e3e6" stroke-width="1.0"/>
+      <rect x="234.0" y="56.2" width="5.2" height="2.2" fill="#1c1114" stroke="#ff5a36" stroke-width="0.65"/><line x1="236.6" y1="58.4" x2="230.2" y2="71.5" stroke="#ff5a36" stroke-width="0.55" stroke-dasharray="1.8 1.2"/>
+      <rect x="240.5" y="56.2" width="5.2" height="2.2" fill="#1c1114" stroke="#ff5a36" stroke-width="0.65"/><line x1="243.1" y1="58.4" x2="236.7" y2="71.5" stroke="#ff5a36" stroke-width="0.55" stroke-dasharray="1.8 1.2"/>
+      <rect x="247.0" y="56.2" width="5.2" height="2.2" fill="#1c1114" stroke="#ff5a36" stroke-width="0.65"/><line x1="249.6" y1="58.4" x2="243.2" y2="71.5" stroke="#ff5a36" stroke-width="0.55" stroke-dasharray="1.8 1.2"/>
+      <rect x="253.5" y="56.2" width="5.2" height="2.2" fill="#1c1114" stroke="#ff5a36" stroke-width="0.65"/><line x1="256.1" y1="58.4" x2="249.7" y2="71.5" stroke="#ff5a36" stroke-width="0.55" stroke-dasharray="1.8 1.2"/>
+      <rect x="260.0" y="56.2" width="5.2" height="2.2" fill="#1c1114" stroke="#ff5a36" stroke-width="0.65"/><line x1="262.6" y1="58.4" x2="256.2" y2="71.5" stroke="#ff5a36" stroke-width="0.55" stroke-dasharray="1.8 1.2"/>
+      <rect x="266.5" y="56.2" width="5.2" height="2.2" fill="#1c1114" stroke="#ff5a36" stroke-width="0.65"/><line x1="269.1" y1="58.4" x2="262.7" y2="71.5" stroke="#ff5a36" stroke-width="0.55" stroke-dasharray="1.8 1.2"/>
+      <rect x="273.0" y="56.2" width="5.2" height="2.2" fill="#1c1114" stroke="#ff5a36" stroke-width="0.65"/><line x1="275.6" y1="58.4" x2="269.2" y2="71.5" stroke="#ff5a36" stroke-width="0.55" stroke-dasharray="1.8 1.2"/>
+      <rect x="279.5" y="56.2" width="5.2" height="2.2" fill="#1c1114" stroke="#ff5a36" stroke-width="0.65"/><line x1="282.1" y1="58.4" x2="275.7" y2="71.5" stroke="#ff5a36" stroke-width="0.55" stroke-dasharray="1.8 1.2"/>
+      <rect x="286.0" y="56.2" width="5.2" height="2.2" fill="#1c1114" stroke="#ff5a36" stroke-width="0.65"/><line x1="288.6" y1="58.4" x2="282.2" y2="71.5" stroke="#ff5a36" stroke-width="0.55" stroke-dasharray="1.8 1.2"/>
+      <rect x="292.5" y="56.2" width="5.2" height="2.2" fill="#1c1114" stroke="#ff5a36" stroke-width="0.65"/><line x1="295.1" y1="58.4" x2="288.7" y2="71.5" stroke="#ff5a36" stroke-width="0.55" stroke-dasharray="1.8 1.2"/>
+      <!-- 1枚以60°倾角腾空齐射的 P-700 花岗岩导弹矢量虚影 -->
+      <line x1="256" y1="56.2" x2="269" y2="36.5" stroke="#ff5a36" stroke-width="0.9" stroke-dasharray="2.5 1.5"/>
+      <polygon points="267,39.5 272,32 270,41" fill="#ff5a36"/>
+
+      <!-- 5. 中央高耸金字塔形巨型上层建筑与前后双主塔桅 (X=104..232, Y=10..60.5) -->
+      <!-- 5.1 前多面体内倾阶梯桥楼与指挥塔台 (X=184..231) -->
+      <polygon points="184,60.5 190,44 226,44 231,60.5" fill="#0f2330" stroke="#d4e3e6" stroke-width="1.2"/>
+      <polygon points="193,44 198,35 220,35 224,44" fill="#142c3c" stroke="#d4e3e6" stroke-width="1.1"/>
+      <!-- 舰桥防弹观察窗带 -->
+      <polygon points="212,37 222,37 223,40 212,40" fill="#04080b" stroke="#38bdf8" stroke-width="0.7"/>
+      <polygon points="214,46 227,46 228,49 214,49" fill="#04080b" stroke="#38bdf8" stroke-width="0.7"/>
+      <!-- 前主桥楼顶置：巨型前「墓碑 / 顶罩」(3R41 Volna / Tomb Stone) S-300F 相控阵制导雷达罩 -->
+      <polygon points="205,35 207,29 217,29 219,35" fill="#18364a" stroke="#38bdf8" stroke-width="0.85"/>
+      <path d="M 205.5 29 C 205.5 21.5, 218.5 21.5, 218.5 29 Z" fill="#d4e3e6" stroke="#38bdf8" stroke-width="1.0"/>
+      <line x1="206" y1="26" x2="218" y2="24.5" stroke="#ff5a36" stroke-width="0.8"/>
+
+      <!-- 5.2 中央高耸金字塔形主塔桅 + 顶置巨型背靠背「顶对」(MR-800 Top Pair) 远程三坐标雷达网架 (X=166..194, Y=10..44) -->
+      <polygon points="168,44 175,18 185,18 192,44" fill="#122836" stroke="#d4e3e6" stroke-width="1.2"/>
+      <!-- 金字塔主桅横向桁架与电子战球罩 (Bell Crown / Rum Tub) -->
+      <line x1="171" y1="35" x2="189" y2="35" stroke="#38bdf8" stroke-width="0.8"/>
+      <line x1="173" y1="27" x2="187" y2="27" stroke="#38bdf8" stroke-width="0.8"/>
+      <line x1="164" y1="31" x2="196" y2="31" stroke="#d4e3e6" stroke-width="0.9"/>
+      <circle cx="166" cy="30" r="1.8" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.6"/>
+      <circle cx="194" cy="30" r="1.8" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.6"/>
+      <!-- 标志性背靠背「顶对」(Top Pair) 巨型双抛物面三坐标雷达网架 -->
+      <polygon points="169,18 172,10.5 179,11.5 179,18" fill="url(#hatch)" stroke="#38bdf8" stroke-width="1.0"/>
+      <polygon points="181,18 181,12 189,11 191,18" fill="#18384c" stroke="#d4e3e6" stroke-width="1.0"/>
+      <line x1="180" y1="18" x2="180" y2="7.5" stroke="#ff5a36" stroke-width="1.0"/>
+
+      <!-- 5.3 中后部动力烟囱、后主桅顶置「顶板」(Top Plate) 雷达与后巨型「顶罩」(Top Dome) 制导雷达罩 (X=104..168) -->
+      <polygon points="134,57.5 138,40 168,40 170,57.5" fill="#0e202c" stroke="#d4e3e6" stroke-width="1.15"/>
+      <!-- 一体化倾角烟囱与黑色散热格栅 -->
+      <polygon points="148,40 151,31 164,31 166,40" fill="#142c3c" stroke="#d4e3e6" stroke-width="1.0"/>
+      <rect x="152" y="33" width="10" height="5" fill="#04080b" stroke="#38bdf8" stroke-width="0.7"/>
+      <!-- 后主塔桅 + 顶置「顶板」(MR-750 Top Plate) 三坐标相控阵雷达 -->
+      <polygon points="138,40 142,21 147,21 150,40" fill="#122836" stroke="#d4e3e6" stroke-width="1.05"/>
+      <polygon points="139,21 141,14.5 148,14.5 150,21" fill="#18384c" stroke="#38bdf8" stroke-width="0.95"/>
+      <line x1="144.5" y1="14.5" x2="144.5" y2="10.5" stroke="#d4e3e6" stroke-width="0.85"/>
+      <!-- 后部高架球柱形「顶罩 / 墓碑」(3R41 Volna / Top Dome) S-300F 制导雷达大圆罩 -->
+      <polygon points="112,57.5 116,39 134,39 136,57.5" fill="#102432" stroke="#d4e3e6" stroke-width="1.1"/>
+      <rect x="118" y="34" width="11" height="5" fill="#18364a" stroke="#38bdf8" stroke-width="0.8"/>
+      <path d="M 117 34 C 117 25.5, 130 25.5, 130 34 Z" fill="#d4e3e6" stroke="#38bdf8" stroke-width="1.05"/>
+      <line x1="118" y1="30.5" x2="129" y2="29" stroke="#ff5a36" stroke-width="0.85"/>
+      <!-- 后部 MR-184「鸢鸣」(Kite Screech) AK-130 主炮火控雷达 -->
+      <polygon points="104,57.5 106,46 114,46 115,57.5" fill="#142c3c" stroke="#d4e3e6" stroke-width="0.95"/>
+      <circle cx="109.5" cy="43.5" r="2.3" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.7"/>
+
+      <!-- 中段与后段两舷 4座「卡什坦」(Kashtan CADS-N-1) 弹炮合一近防系统 (3~6号炮位) -->
+      <polygon points="155,56.5 157,51 163,51 164,56.5" fill="#142c3c" stroke="#38bdf8" stroke-width="0.85"/>
+      <circle cx="160" cy="49.5" r="1.4" fill="#d4e3e6"/>
+      <line x1="156" y1="53" x2="150" y2="52.2" stroke="#ff5a36" stroke-width="0.9"/>
+      <polygon points="116,56.5 118,51 124,51 125,56.5" fill="#142c3c" stroke="#38bdf8" stroke-width="0.85"/>
+      <circle cx="121" cy="49.5" r="1.4" fill="#d4e3e6"/>
+      <line x1="117" y1="53" x2="111" y2="52.2" stroke="#ff5a36" stroke-width="0.9"/>
+
+      <!-- 6. 舰尾阶梯火炮与航空区：AK-130 双管 130mm 舰炮 + 下沉式直升机升降机虚线框 + 驻留 Ka-27 反潜直升机 (X=12..104) -->
+      <!-- RBU-1000「龙卷风-3」6管305mm反潜火箭深弹发射器 -->
+      <rect x="97" y="54" width="5.5" height="3.5" fill="#163244" stroke="#38bdf8" stroke-width="0.75"/>
+      <!-- AK-130 双联装 130mm/70 大口径全自动舰炮 (炮口朝左后 -X) -->
+      <polygon points="84,63.5 87,56 98,56 101,63.5" fill="#163244" stroke="#d4e3e6" stroke-width="1.15"/>
+      <rect x="89" y="57.5" width="6" height="3.2" fill="#08141c" stroke="#38bdf8" stroke-width="0.6"/>
+      <line x1="85" y1="58.2" x2="66" y2="57.6" stroke="#d4e3e6" stroke-width="1.25"/>
+      <line x1="85" y1="60.0" x2="66" y2="59.4" stroke="#38bdf8" stroke-width="1.15"/>
+
+      <!-- 舰尾下沉式机库与斜置直升机升降平台虚线框 (Below-Deck Hangar &amp; Elevator) -->
+      <rect x="44" y="66.5" width="34" height="9.2" fill="#071219" stroke="#38bdf8" stroke-width="0.75" stroke-dasharray="2.5 1.5"/>
+      <line x1="48" y1="66" x2="68" y2="75.7" stroke="#eab308" stroke-width="0.75" stroke-dasharray="2 1"/>
+
+      <!-- 舰尾起降甲板驻留：卡-27 (Ka-27PL Helix-A) 共轴双旋翼反潜直升机侧视剪影 (X=20..56, Y=53..66) -->
+      <g transform="translate(22, 53)">
+        <!-- 机身与双垂尾 -->
+        <path d="M 4 7.5 L 13 8.2 L 26 8.2 C 30 8.2, 31.5 10.5, 28 11.8 L 13 11.8 L 4 9.5 Z" fill="#142c3c" stroke="#d4e3e6" stroke-width="0.85"/>
+        <polygon points="3,5.5 6.5,5.5 7.5,10.5 3.5,10.5" fill="#18364a" stroke="#38bdf8" stroke-width="0.7"/>
+        <polygon points="24,8.6 29,9.2 28,10.8 24,10.8" fill="#38bdf8"/>
+        <circle cx="17" cy="10" r="1.0" fill="#ff5a36"/>
+        <!-- 标志性共轴反转双旋翼高耸主轴与上下两层旋翼盘 -->
+        <line x1="19.5" y1="8.2" x2="19.5" y2="1.2" stroke="#d4e3e6" stroke-width="1.0"/>
+        <line x1="3" y1="1.5" x2="35" y2="1.5" stroke="#d4e3e6" stroke-width="0.95"/>
+        <line x1="4.5" y1="3.8" x2="33.5" y2="3.8" stroke="#38bdf8" stroke-width="0.95"/>
+        <!-- 四轮起落架 -->
+        <circle cx="15" cy="12.4" r="0.95" fill="#050a0e" stroke="#d4e3e6" stroke-width="0.55"/>
+        <circle cx="25" cy="12.4" r="0.95" fill="#050a0e" stroke="#d4e3e6" stroke-width="0.55"/>
+      </g>
+
+    </g>
+
+    <rect x="44" y="332" width="1232" height="186" fill="#091116" fill-opacity="0.45" stroke="#2c3b40"/>
+    <text font-size="9.5" x="58" y="352" class="p mono" fill="#38bdf8">02 / ORTHOGRAPHIC FULL DECK PLAN (SOVIET RUST-RED DECK · 12×8 S-300F DRUMS · 20×P-700 SILOS · AK-130 · KA-27 HELIX)</text>
+    <g transform="translate(132.8,346.5) scale(2.375,2.375)">
+
+      <!-- 1. 1144.2型修长飞剪主船体深海蓝灰外廓 (LOA=420u/252.0m, Beam=47.5u/28.5m, 真实 8.84:1 长宽比) -->
+      <polygon points="12,20 74,15.5 112,12.25 286,12.25 344,16.5 392,24.5 432,36 392,47.5 344,55.5 286,59.75 112,59.75 74,56.5 12,52"
+               fill="#0a1822" stroke="#d4e3e6" stroke-width="1.4"/>
+
+      <!-- 2. 铁锈红/深褐橙苏联特色全通甲板涂装内框 (Soviet Rust-Red / Deep Orange-Brown Weather Deck) -->
+      <polygon points="15,21.5 76,17.2 114,14.2 284,14.2 342,18.2 388,25.8 426,36 388,46.2 342,53.8 284,57.8 114,57.8 76,54.8 15,50.5"
+               fill="#1c1412" stroke="#ff5a36" stroke-width="0.95"/>
+
+      <!-- 3. 舰首朝右 (+X)：尖锐飞剪艏锚链甲板 → RBU-12000 反潜深弹 → 前卡什坦/道尔点防空区 (X=374..432) -->
+      <!-- 分水脊线、双锚链与起锚绞盘 -->
+      <line x1="386" y1="36" x2="430" y2="36" stroke="#d4e3e6" stroke-width="0.8"/>
+      <line x1="392" y1="33.5" x2="416" y2="34.8" stroke="#d4e3e6" stroke-width="0.9" stroke-dasharray="2 1"/>
+      <line x1="392" y1="38.5" x2="416" y2="37.2" stroke="#d4e3e6" stroke-width="0.9" stroke-dasharray="2 1"/>
+      <circle cx="394" cy="33" r="1.4" fill="#09151e" stroke="#38bdf8" stroke-width="0.6"/>
+      <circle cx="394" cy="39" r="1.4" fill="#09151e" stroke="#38bdf8" stroke-width="0.6"/>
+      <!-- 舰首顶端 RBU-12000「蟒蛇-1」反潜深弹发射架 -->
+      <rect x="405" y="33.2" width="7.5" height="5.6" rx="1" fill="#142c3c" stroke="#38bdf8" stroke-width="0.9"/>
+      <line x1="412.5" y1="34.8" x2="418" y2="34.8" stroke="#ff5a36" stroke-width="0.9"/>
+      <line x1="412.5" y1="37.2" x2="418" y2="37.2" stroke="#ff5a36" stroke-width="0.9"/>
+      <!-- 舰首 V 形防浪挡板与前点防空 3K95「匕首」(Kinzhal) 8联装转轮垂发井 -->
+      <polyline points="376,22 390,36 376,50" fill="none" stroke="#d4e3e6" stroke-width="1.0"/>
+      <circle cx="384" cy="31.5" r="2.6" fill="#09151e" stroke="#38bdf8" stroke-width="0.7"/>
+      <circle cx="384" cy="40.5" r="2.6" fill="#09151e" stroke="#38bdf8" stroke-width="0.7"/>
+
+      <!-- 4. 前甲板 12 座八角/圆形 S-300F「里夫」(SA-N-6) 转轮垂发井盖阵列 (2排×6列 = 96单元, X=304..374) -->
+      <rect x="305" y="24.5" width="66" height="23" rx="1.5" fill="#0b1822" stroke="#38bdf8" stroke-width="1.05"/>
+      <line x1="305" y1="36" x2="371" y2="36" stroke="#2c3b40" stroke-width="0.7" stroke-dasharray="3 1.5"/>
+      <circle cx="313.0" cy="30.8" r="3.9" fill="#09151e" stroke="#38bdf8" stroke-width="0.85"/><circle cx="313.0" cy="30.8" r="2.2" fill="none" stroke="#d4e3e6" stroke-width="0.45" stroke-dasharray="1.1 0.8"/><circle cx="313.0" cy="30.8" r="0.9" fill="#ff5a36"/>
+      <circle cx="323.2" cy="30.8" r="3.9" fill="#09151e" stroke="#38bdf8" stroke-width="0.85"/><circle cx="323.2" cy="30.8" r="2.2" fill="none" stroke="#d4e3e6" stroke-width="0.45" stroke-dasharray="1.1 0.8"/><circle cx="323.2" cy="30.8" r="0.9" fill="#ff5a36"/>
+      <circle cx="333.4" cy="30.8" r="3.9" fill="#09151e" stroke="#38bdf8" stroke-width="0.85"/><circle cx="333.4" cy="30.8" r="2.2" fill="none" stroke="#d4e3e6" stroke-width="0.45" stroke-dasharray="1.1 0.8"/><circle cx="333.4" cy="30.8" r="0.9" fill="#ff5a36"/>
+      <circle cx="343.6" cy="30.8" r="3.9" fill="#09151e" stroke="#38bdf8" stroke-width="0.85"/><circle cx="343.6" cy="30.8" r="2.2" fill="none" stroke="#d4e3e6" stroke-width="0.45" stroke-dasharray="1.1 0.8"/><circle cx="343.6" cy="30.8" r="0.9" fill="#ff5a36"/>
+      <circle cx="353.8" cy="30.8" r="3.9" fill="#09151e" stroke="#38bdf8" stroke-width="0.85"/><circle cx="353.8" cy="30.8" r="2.2" fill="none" stroke="#d4e3e6" stroke-width="0.45" stroke-dasharray="1.1 0.8"/><circle cx="353.8" cy="30.8" r="0.9" fill="#ff5a36"/>
+      <circle cx="364.0" cy="30.8" r="3.9" fill="#09151e" stroke="#38bdf8" stroke-width="0.85"/><circle cx="364.0" cy="30.8" r="2.2" fill="none" stroke="#d4e3e6" stroke-width="0.45" stroke-dasharray="1.1 0.8"/><circle cx="364.0" cy="30.8" r="0.9" fill="#ff5a36"/>
+      <circle cx="313.0" cy="41.2" r="3.9" fill="#09151e" stroke="#38bdf8" stroke-width="0.85"/><circle cx="313.0" cy="41.2" r="2.2" fill="none" stroke="#d4e3e6" stroke-width="0.45" stroke-dasharray="1.1 0.8"/><circle cx="313.0" cy="41.2" r="0.9" fill="#ff5a36"/>
+      <circle cx="323.2" cy="41.2" r="3.9" fill="#09151e" stroke="#38bdf8" stroke-width="0.85"/><circle cx="323.2" cy="41.2" r="2.2" fill="none" stroke="#d4e3e6" stroke-width="0.45" stroke-dasharray="1.1 0.8"/><circle cx="323.2" cy="41.2" r="0.9" fill="#ff5a36"/>
+      <circle cx="333.4" cy="41.2" r="3.9" fill="#09151e" stroke="#38bdf8" stroke-width="0.85"/><circle cx="333.4" cy="41.2" r="2.2" fill="none" stroke="#d4e3e6" stroke-width="0.45" stroke-dasharray="1.1 0.8"/><circle cx="333.4" cy="41.2" r="0.9" fill="#ff5a36"/>
+      <circle cx="343.6" cy="41.2" r="3.9" fill="#09151e" stroke="#38bdf8" stroke-width="0.85"/><circle cx="343.6" cy="41.2" r="2.2" fill="none" stroke="#d4e3e6" stroke-width="0.45" stroke-dasharray="1.1 0.8"/><circle cx="343.6" cy="41.2" r="0.9" fill="#ff5a36"/>
+      <circle cx="353.8" cy="41.2" r="3.9" fill="#09151e" stroke="#38bdf8" stroke-width="0.85"/><circle cx="353.8" cy="41.2" r="2.2" fill="none" stroke="#d4e3e6" stroke-width="0.45" stroke-dasharray="1.1 0.8"/><circle cx="353.8" cy="41.2" r="0.9" fill="#ff5a36"/>
+      <circle cx="364.0" cy="41.2" r="3.9" fill="#09151e" stroke="#38bdf8" stroke-width="0.85"/><circle cx="364.0" cy="41.2" r="2.2" fill="none" stroke="#d4e3e6" stroke-width="0.45" stroke-dasharray="1.1 0.8"/><circle cx="364.0" cy="41.2" r="0.9" fill="#ff5a36"/>
+      <text x="338" y="9.2" text-anchor="middle" class="cap" font-size="3.4" fill="#38bdf8">12×8 S-300F ROTARY VLS</text>
+
+      <!-- 5. 中前部 20 座大尺寸矩形 P-700「花岗岩」(SS-N-19 Shipwreck) 倾斜导弹发射井装甲大盖 (2×10 对称密集排布, X=232..301) -->
+      <rect x="233" y="21.2" width="66" height="29.6" rx="1.5" fill="#120c0e" stroke="#ff5a36" stroke-width="1.15"/>
+      <line x1="233" y1="36" x2="299" y2="36" stroke="#d4e3e6" stroke-width="0.9"/>
+      <rect x="236.0" y="23.2" width="5.0" height="10.4" fill="#09151e" stroke="#38bdf8" stroke-width="0.85"/><line x1="236.0" y1="28.4" x2="241.0" y2="28.4" stroke="#ff5a36" stroke-width="0.7"/><rect x="237.2" y="24.6" width="2.6" height="7.6" fill="none" stroke="#ff5a36" stroke-width="0.5"/>
+      <rect x="236.0" y="38.4" width="5.0" height="10.4" fill="#09151e" stroke="#38bdf8" stroke-width="0.85"/><line x1="236.0" y1="43.6" x2="241.0" y2="43.6" stroke="#ff5a36" stroke-width="0.7"/><rect x="237.2" y="39.8" width="2.6" height="7.6" fill="none" stroke="#ff5a36" stroke-width="0.5"/>
+      <rect x="242.1" y="23.2" width="5.0" height="10.4" fill="#09151e" stroke="#38bdf8" stroke-width="0.85"/><line x1="242.1" y1="28.4" x2="247.1" y2="28.4" stroke="#ff5a36" stroke-width="0.7"/><rect x="243.3" y="24.6" width="2.6" height="7.6" fill="none" stroke="#ff5a36" stroke-width="0.5"/>
+      <rect x="242.1" y="38.4" width="5.0" height="10.4" fill="#09151e" stroke="#38bdf8" stroke-width="0.85"/><line x1="242.1" y1="43.6" x2="247.1" y2="43.6" stroke="#ff5a36" stroke-width="0.7"/><rect x="243.3" y="39.8" width="2.6" height="7.6" fill="none" stroke="#ff5a36" stroke-width="0.5"/>
+      <rect x="248.2" y="23.2" width="5.0" height="10.4" fill="#09151e" stroke="#38bdf8" stroke-width="0.85"/><line x1="248.2" y1="28.4" x2="253.2" y2="28.4" stroke="#ff5a36" stroke-width="0.7"/><rect x="249.4" y="24.6" width="2.6" height="7.6" fill="none" stroke="#ff5a36" stroke-width="0.5"/>
+      <rect x="248.2" y="38.4" width="5.0" height="10.4" fill="#09151e" stroke="#38bdf8" stroke-width="0.85"/><line x1="248.2" y1="43.6" x2="253.2" y2="43.6" stroke="#ff5a36" stroke-width="0.7"/><rect x="249.4" y="39.8" width="2.6" height="7.6" fill="none" stroke="#ff5a36" stroke-width="0.5"/>
+      <rect x="254.3" y="23.2" width="5.0" height="10.4" fill="#09151e" stroke="#38bdf8" stroke-width="0.85"/><line x1="254.3" y1="28.4" x2="259.3" y2="28.4" stroke="#ff5a36" stroke-width="0.7"/><rect x="255.5" y="24.6" width="2.6" height="7.6" fill="none" stroke="#ff5a36" stroke-width="0.5"/>
+      <rect x="254.3" y="38.4" width="5.0" height="10.4" fill="#09151e" stroke="#38bdf8" stroke-width="0.85"/><line x1="254.3" y1="43.6" x2="259.3" y2="43.6" stroke="#ff5a36" stroke-width="0.7"/><rect x="255.5" y="39.8" width="2.6" height="7.6" fill="none" stroke="#ff5a36" stroke-width="0.5"/>
+      <rect x="260.4" y="23.2" width="5.0" height="10.4" fill="#09151e" stroke="#38bdf8" stroke-width="0.85"/><line x1="260.4" y1="28.4" x2="265.4" y2="28.4" stroke="#ff5a36" stroke-width="0.7"/><rect x="261.6" y="24.6" width="2.6" height="7.6" fill="none" stroke="#ff5a36" stroke-width="0.5"/>
+      <rect x="260.4" y="38.4" width="5.0" height="10.4" fill="#09151e" stroke="#38bdf8" stroke-width="0.85"/><line x1="260.4" y1="43.6" x2="265.4" y2="43.6" stroke="#ff5a36" stroke-width="0.7"/><rect x="261.6" y="39.8" width="2.6" height="7.6" fill="none" stroke="#ff5a36" stroke-width="0.5"/>
+      <rect x="266.5" y="23.2" width="5.0" height="10.4" fill="#09151e" stroke="#38bdf8" stroke-width="0.85"/><line x1="266.5" y1="28.4" x2="271.5" y2="28.4" stroke="#ff5a36" stroke-width="0.7"/><rect x="267.7" y="24.6" width="2.6" height="7.6" fill="none" stroke="#ff5a36" stroke-width="0.5"/>
+      <rect x="266.5" y="38.4" width="5.0" height="10.4" fill="#09151e" stroke="#38bdf8" stroke-width="0.85"/><line x1="266.5" y1="43.6" x2="271.5" y2="43.6" stroke="#ff5a36" stroke-width="0.7"/><rect x="267.7" y="39.8" width="2.6" height="7.6" fill="none" stroke="#ff5a36" stroke-width="0.5"/>
+      <rect x="272.6" y="23.2" width="5.0" height="10.4" fill="#09151e" stroke="#38bdf8" stroke-width="0.85"/><line x1="272.6" y1="28.4" x2="277.6" y2="28.4" stroke="#ff5a36" stroke-width="0.7"/><rect x="273.8" y="24.6" width="2.6" height="7.6" fill="none" stroke="#ff5a36" stroke-width="0.5"/>
+      <rect x="272.6" y="38.4" width="5.0" height="10.4" fill="#09151e" stroke="#38bdf8" stroke-width="0.85"/><line x1="272.6" y1="43.6" x2="277.6" y2="43.6" stroke="#ff5a36" stroke-width="0.7"/><rect x="273.8" y="39.8" width="2.6" height="7.6" fill="none" stroke="#ff5a36" stroke-width="0.5"/>
+      <rect x="278.7" y="23.2" width="5.0" height="10.4" fill="#09151e" stroke="#38bdf8" stroke-width="0.85"/><line x1="278.7" y1="28.4" x2="283.7" y2="28.4" stroke="#ff5a36" stroke-width="0.7"/><rect x="279.9" y="24.6" width="2.6" height="7.6" fill="none" stroke="#ff5a36" stroke-width="0.5"/>
+      <rect x="278.7" y="38.4" width="5.0" height="10.4" fill="#09151e" stroke="#38bdf8" stroke-width="0.85"/><line x1="278.7" y1="43.6" x2="283.7" y2="43.6" stroke="#ff5a36" stroke-width="0.7"/><rect x="279.9" y="39.8" width="2.6" height="7.6" fill="none" stroke="#ff5a36" stroke-width="0.5"/>
+      <rect x="284.8" y="23.2" width="5.0" height="10.4" fill="#09151e" stroke="#38bdf8" stroke-width="0.85"/><line x1="284.8" y1="28.4" x2="289.8" y2="28.4" stroke="#ff5a36" stroke-width="0.7"/><rect x="286.0" y="24.6" width="2.6" height="7.6" fill="none" stroke="#ff5a36" stroke-width="0.5"/>
+      <rect x="284.8" y="38.4" width="5.0" height="10.4" fill="#09151e" stroke="#38bdf8" stroke-width="0.85"/><line x1="284.8" y1="43.6" x2="289.8" y2="43.6" stroke="#ff5a36" stroke-width="0.7"/><rect x="286.0" y="39.8" width="2.6" height="7.6" fill="none" stroke="#ff5a36" stroke-width="0.5"/>
+      <rect x="290.9" y="23.2" width="5.0" height="10.4" fill="#09151e" stroke="#38bdf8" stroke-width="0.85"/><line x1="290.9" y1="28.4" x2="295.9" y2="28.4" stroke="#ff5a36" stroke-width="0.7"/><rect x="292.1" y="24.6" width="2.6" height="7.6" fill="none" stroke="#ff5a36" stroke-width="0.5"/>
+      <rect x="290.9" y="38.4" width="5.0" height="10.4" fill="#09151e" stroke="#38bdf8" stroke-width="0.85"/><line x1="290.9" y1="43.6" x2="295.9" y2="43.6" stroke="#ff5a36" stroke-width="0.7"/><rect x="292.1" y="39.8" width="2.6" height="7.6" fill="none" stroke="#ff5a36" stroke-width="0.5"/>
+      <text x="266" y="9.2" text-anchor="middle" class="cap" font-size="3.4" fill="#ff5a36">20×P-700 GRANIT SILOS</text>
+
+      <!-- 6. 中部庞大复杂的宝塔形上层建筑俯视轮廓 (X=102..231, Y=14..58) -->
+      <!-- 主上层建筑外层基座 -->
+      <polygon points="102,19 138,16.5 216,16.5 230,22 230,50 216,55.5 138,55.5 102,53"
+               fill="#0f2230" stroke="#d4e3e6" stroke-width="1.25"/>
+      <!-- 6.1 前舰桥与前大直径圆形「墓碑 / 顶罩」(Tomb Stone / Top Dome) S-300F 制导雷达圆罩 (X=192..228) -->
+      <polygon points="192,20 218,20 226,25 226,47 218,52 192,52" fill="#163042" stroke="#38bdf8" stroke-width="1.05"/>
+      <circle cx="210" cy="36" r="7.4" fill="#d4e3e6" stroke="#38bdf8" stroke-width="1.1"/>
+      <circle cx="210" cy="36" r="4.2" fill="#18364a" stroke="#ff5a36" stroke-width="0.8"/>
+      <line x1="210" y1="28.6" x2="210" y2="43.4" stroke="#38bdf8" stroke-width="0.7"/>
+
+      <!-- 6.2 中央巨型金字塔主桅横桁与「顶对」(MR-800 Top Pair) 巨型三坐标雷达网架俯视 (X=166..192) -->
+      <rect x="166" y="21.5" width="25" height="29" fill="#122836" stroke="#d4e3e6" stroke-width="1.1"/>
+      <rect x="171" y="25.5" width="15" height="21" fill="#18384c" stroke="#38bdf8" stroke-width="0.9"/>
+      <!-- 主桅横桁 (Yardarm) -->
+      <line x1="178.5" y1="13.5" x2="178.5" y2="58.5" stroke="#d4e3e6" stroke-width="1.25"/>
+      <!-- 背靠背 Top Pair 巨型雷达天线俯视投影 -->
+      <rect x="173.5" y="23.5" width="10" height="25" fill="#07131c" stroke="#ff5a36" stroke-width="0.95"/>
+      <line x1="173.5" y1="36" x2="183.5" y2="36" stroke="#eab308" stroke-width="1.0"/>
+
+      <!-- 6.3 动力烟囱、后主桅「顶板」(Top Plate) 雷达与后大直径「顶罩」(Top Dome) S-300F 制导雷达圆罩 (X=104..166) -->
+      <rect x="142" y="22.5" width="22" height="27" fill="#0b1a24" stroke="#d4e3e6" stroke-width="1.0"/>
+      <rect x="146" y="25.5" width="14" height="8.5" fill="#04080b" stroke="#38bdf8" stroke-width="0.8"/>
+      <rect x="146" y="38.0" width="14" height="8.5" fill="#04080b" stroke="#38bdf8" stroke-width="0.8"/>
+      <!-- 后主桅与 Top Plate 顶板雷达横臂 -->
+      <rect x="134" y="28" width="8" height="16" fill="#163244" stroke="#38bdf8" stroke-width="0.9"/>
+      <line x1="138" y1="24" x2="138" y2="48" stroke="#38bdf8" stroke-width="1.3"/>
+      <!-- 后巨型圆形 Top Dome 制导雷达罩 (cx=122, cy=36) + Kite Screech 炮瞄雷达 (cx=108, cy=36) -->
+      <circle cx="122" cy="36" r="7.4" fill="#d4e3e6" stroke="#38bdf8" stroke-width="1.1"/>
+      <circle cx="122" cy="36" r="4.2" fill="#18364a" stroke="#ff5a36" stroke-width="0.8"/>
+      <circle cx="108" cy="36" r="3.4" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.85"/>
+      <!-- 两舷 RBU-1000 反潜深弹发射器 -->
+      <rect x="103" y="20.2" width="5.5" height="3.8" fill="#142c3c" stroke="#38bdf8" stroke-width="0.75"/>
+      <rect x="103" y="48.0" width="5.5" height="3.8" fill="#142c3c" stroke="#38bdf8" stroke-width="0.75"/>
+
+      <!-- 6.4 两舷 6 座「卡什坦」(Kashtan CADS-N-1) 弹炮合一近防系统全分布 -->
+      <rect x="378.8" y="18.9" width="6.4" height="5.2" rx="1" fill="#142c3c" stroke="#38bdf8" stroke-width="0.85"/><circle cx="382" cy="21.5" r="1.7" fill="#d4e3e6" stroke="#ff5a36" stroke-width="0.65"/><line x1="382" y1="20.3" x2="386.8" y2="20.3" stroke="#ff5a36" stroke-width="0.8"/><line x1="382" y1="22.7" x2="386.8" y2="22.7" stroke="#38bdf8" stroke-width="0.8"/>
+      <rect x="378.8" y="47.9" width="6.4" height="5.2" rx="1" fill="#142c3c" stroke="#38bdf8" stroke-width="0.85"/><circle cx="382" cy="50.5" r="1.7" fill="#d4e3e6" stroke="#ff5a36" stroke-width="0.65"/><line x1="382" y1="49.3" x2="386.8" y2="49.3" stroke="#ff5a36" stroke-width="0.8"/><line x1="382" y1="51.7" x2="386.8" y2="51.7" stroke="#38bdf8" stroke-width="0.8"/>
+      <rect x="154.8" y="12.6" width="6.4" height="5.2" rx="1" fill="#142c3c" stroke="#38bdf8" stroke-width="0.85"/><circle cx="158" cy="15.2" r="1.7" fill="#d4e3e6" stroke="#ff5a36" stroke-width="0.65"/><line x1="158" y1="14.0" x2="153.2" y2="14.0" stroke="#ff5a36" stroke-width="0.8"/><line x1="158" y1="16.4" x2="153.2" y2="16.4" stroke="#38bdf8" stroke-width="0.8"/>
+      <rect x="154.8" y="54.2" width="6.4" height="5.2" rx="1" fill="#142c3c" stroke="#38bdf8" stroke-width="0.85"/><circle cx="158" cy="56.8" r="1.7" fill="#d4e3e6" stroke="#ff5a36" stroke-width="0.65"/><line x1="158" y1="55.6" x2="153.2" y2="55.6" stroke="#ff5a36" stroke-width="0.8"/><line x1="158" y1="58.0" x2="153.2" y2="58.0" stroke="#38bdf8" stroke-width="0.8"/>
+      <rect x="112.8" y="13.0" width="6.4" height="5.2" rx="1" fill="#142c3c" stroke="#38bdf8" stroke-width="0.85"/><circle cx="116" cy="15.6" r="1.7" fill="#d4e3e6" stroke="#ff5a36" stroke-width="0.65"/><line x1="116" y1="14.4" x2="111.2" y2="14.4" stroke="#ff5a36" stroke-width="0.8"/><line x1="116" y1="16.8" x2="111.2" y2="16.8" stroke="#38bdf8" stroke-width="0.8"/>
+      <rect x="112.8" y="53.8" width="6.4" height="5.2" rx="1" fill="#142c3c" stroke="#38bdf8" stroke-width="0.85"/><circle cx="116" cy="56.4" r="1.7" fill="#d4e3e6" stroke="#ff5a36" stroke-width="0.65"/><line x1="116" y1="55.2" x2="111.2" y2="55.2" stroke="#ff5a36" stroke-width="0.8"/><line x1="116" y1="57.6" x2="111.2" y2="57.6" stroke="#38bdf8" stroke-width="0.8"/>
+
+      <!-- 7. 后甲板：AK-130 双联装 130mm 主炮塔 (双炮管朝左 -X, X=66..101, Y=29..43) -->
+      <polygon points="84,29.5 96,28.5 100,31.5 100,40.5 96,43.5 84,42.5" fill="#163244" stroke="#d4e3e6" stroke-width="1.2"/>
+      <rect x="88" y="32.5" width="7.5" height="7" fill="#09151e" stroke="#38bdf8" stroke-width="0.7"/>
+      <line x1="84" y1="34.3" x2="66" y2="34.3" stroke="#d4e3e6" stroke-width="1.35"/>
+      <line x1="84" y1="37.7" x2="66" y2="37.7" stroke="#38bdf8" stroke-width="1.35"/>
+
+      <!-- 8. 舰尾宽阔的直升机起降甲板 (白色起降圈、斜向引导线、下沉机库升降机虚线框与展开双共轴旋翼的 Ka-27 反潜直升机, X=12..74) -->
+      <polygon points="15,22 72,18.5 72,53.5 15,50" fill="#14181d" stroke="#d4e3e6" stroke-width="1.0"/>
+      <!-- 两侧安全网虚线 -->
+      <line x1="16" y1="19.5" x2="70" y2="16.8" stroke="#38bdf8" stroke-width="1.0" stroke-dasharray="3 1.5"/>
+      <line x1="16" y1="52.5" x2="70" y2="55.2" stroke="#38bdf8" stroke-width="1.0" stroke-dasharray="3 1.5"/>
+      <!-- 下沉式机库斜置直升机升降机虚线框 (X=50..70, Y=29.5..42.5) -->
+      <rect x="50" y="29.5" width="19.5" height="13" fill="#081218" stroke="#38bdf8" stroke-width="0.9" stroke-dasharray="2.5 1.5"/>
+      <line x1="50" y1="29.5" x2="69.5" y2="42.5" stroke="#38bdf8" stroke-width="0.55" stroke-dasharray="2 1.5"/>
+      <!-- 白色起降同心圆、中轴与斜向着舰引导线 -->
+      <line x1="16" y1="36" x2="50" y2="36" stroke="#d4e3e6" stroke-width="0.85" stroke-dasharray="3.5 2"/>
+      <line x1="18" y1="26" x2="36" y2="36" stroke="#ff5a36" stroke-width="0.8"/>
+      <line x1="18" y1="46" x2="36" y2="36" stroke="#ff5a36" stroke-width="0.8"/>
+      <circle cx="34" cy="36" r="9.8" fill="none" stroke="#d4e3e6" stroke-width="1.15"/>
+      <circle cx="34" cy="36" r="3.2" fill="none" stroke="#38bdf8" stroke-width="0.85"/>
+      <!-- 舰尾识别号 099 与尾门可变深拖曳声呐舱盖 -->
+      <text x="20.5" y="38.2" text-anchor="middle" class="p mono" font-size="5.5" fill="#d4e3e6" font-weight="bold">099</text>
+      <rect x="12" y="32.5" width="4.5" height="7" fill="#261014" stroke="#ff5a36" stroke-width="0.85"/>
+
+      <!-- 驻留 1 架展开双共轴反转旋翼的 Ka-27 (Helix-A) 反潜直升机俯视剪影 (cx=34, cy=36) -->
+      <g transform="translate(34, 36)">
+        <ellipse cx="1.5" cy="0" rx="6.8" ry="2.4" fill="#163244" stroke="#d4e3e6" stroke-width="0.85"/>
+        <line x1="-5" y1="-1.6" x2="-8.5" y2="-2.8" stroke="#d4e3e6" stroke-width="0.8"/>
+        <line x1="-5" y1="1.6" x2="-8.5" y2="2.8" stroke="#d4e3e6" stroke-width="0.8"/>
+        <!-- 上旋翼三叶 (实线高亮) + 下旋翼三叶 (天蓝交错共轴反转) -->
+        <line x1="0" y1="0" x2="0" y2="-9.2" stroke="#d4e3e6" stroke-width="0.95"/>
+        <line x1="0" y1="0" x2="8.0" y2="4.6" stroke="#d4e3e6" stroke-width="0.95"/>
+        <line x1="0" y1="0" x2="-8.0" y2="4.6" stroke="#d4e3e6" stroke-width="0.95"/>
+        <line x1="0" y1="0" x2="0" y2="9.2" stroke="#38bdf8" stroke-width="0.9"/>
+        <line x1="0" y1="0" x2="8.0" y2="-4.6" stroke="#38bdf8" stroke-width="0.9"/>
+        <line x1="0" y1="0" x2="-8.0" y2="-4.6" stroke="#38bdf8" stroke-width="0.9"/>
+        <circle cx="0" cy="0" r="1.3" fill="#ff5a36" stroke="#d4e3e6" stroke-width="0.5"/>
+      </g>
+
+    </g>
+  </g>
+</svg>

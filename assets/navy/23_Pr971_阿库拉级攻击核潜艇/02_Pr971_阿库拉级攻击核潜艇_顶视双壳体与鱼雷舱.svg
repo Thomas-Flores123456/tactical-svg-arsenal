@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 360" width="1100" height="360" data-asset-id="naval.akula971.top" style="background:#080a0b;">
+  <defs>
+    <style>
+      svg { fill: none; stroke-linecap: butt; }
+      .s-dim { stroke: #2c3b40; stroke-width: 1; }
+      .s-line { stroke: #5f7c84; stroke-width: 1; }
+      .s-hi { stroke: #d4e3e6; stroke-width: 1.2; }
+      .s-alert { stroke: #ff5a36; stroke-width: 1.4; }
+      .s-focus { stroke: #38bdf8; stroke-width: 1.4; }
+      .f-dim { fill: #2c3b40; stroke: none; }
+      .f-line { fill: #5f7c84; stroke: none; }
+      .f-hi { fill: #d4e3e6; stroke: none; }
+      .f-alert { fill: #ff5a36; stroke: none; }
+      .f-panel { fill: #0c1113; }
+      text { font-family: "Rajdhani", "Bahnschrift", "DIN Alternate", "Microsoft YaHei", sans-serif; letter-spacing: 0.12em; }
+      text:not([stroke]) { stroke: none; }
+      text:not([fill]) { fill: #cfdde0; }
+      text:not([font-size]):not(.cap):not(.big) { font-size: 10px; }
+      text.cap { letter-spacing: 0.2em; text-transform: uppercase; }
+      text.cap:not([fill]) { fill: #8aa1a7; }
+      text.cap:not([font-size]) { font-size: 8.5px; }
+      text.mono { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; letter-spacing: 0.06em; }
+      text.big { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; font-weight: 600; letter-spacing: 0.08em; }
+      text.big:not([font-size]) { font-size: 18px; }
+      text.big:not([fill]) { fill: #d4e3e6; }
+      text.alert { fill: #ff5a36; }
+    </style>
+    <pattern id="cad-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#10181c" stroke-width="1"/>
+      <circle cx="20" cy="20" r="0.8" fill="#1b262b"/>
+    </pattern>
+    <pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#ff5a36" stroke-width="1.2" stroke-opacity="0.35"/>
+    </pattern>
+  </defs>
+
+  <!-- 1. 工程蓝图暗色底板与坐标网格图层 -->
+  <g id="layer-backdrop">
+    <rect x="0" y="0" width="1100" height="360" fill="#080a0b"/>
+    <rect x="20" y="20" width="1060" height="320" fill="url(#cad-grid)" stroke="#2c3b40" stroke-width="1"/>
+    <path d="M 20 36 V 20 H 36 M 1064 20 H 1080 V 36 M 20 324 V 340 H 36 M 1064 340 H 1080 V 324" fill="none" stroke="#38bdf8" stroke-width="1.5"/>
+    <line x1="20" y1="54" x2="1080" y2="54" stroke="#2c3b40" stroke-width="1"/>
+    <line x1="20" y1="314" x2="1080" y2="314" stroke="#2c3b40" stroke-width="1"/>
+    <text x="34" y="42" class="p mono" fill="#38bdf8" font-size="11" font-weight="bold">PROJECT 971 SHCHUKA-B / AKULA-III SSN (K-335 GEPARD) · TOP VIEW &amp; DOUBLE-HULL X-RAY</text>
+    <text x="1066" y="42" text-anchor="end" class="p cap" fill="#d4e3e6" font-size="10.5">971型「阿库拉/猎豹号」攻击核潜艇 · 顶视水滴形宽双壳体与双口径鱼雷舱工程图</text>
+    <text x="34" y="331" class="p mono" fill="#8aa1a7" font-size="9.5">4×650MM (65-76 KIT / RPK-7) + 4×533MM (KALIBR / GRANAT / UGST) + 6×533MM EXT · PELAMIDA TOWED SONAR POD · UID-63</text>
+    <text x="1066" y="331" text-anchor="end" class="p mono" fill="#5f7c84" font-size="9.5">POSEIDON NAVAL CAD ASSET · TRUE 1:1 ASPECT (8.11:1)</text>
+  </g>
+
+  <!-- 2. 舰艇核心 CAD 矢量图层 (1:1 真实长宽比等比锁定 scale(2.420,2.420) · 局部 X=20..410(390), Y=20.0..68.0(48.0)) -->
+  <g id="layer-ship-cad">
+    <g transform="translate(34.0,76.0) scale(2.420,2.420)">
+
+      <!-- 0. 顶视纵中剖面基准线与左舷工程标注 -->
+      <line x1="8" y1="44.0" x2="416" y2="44.0" stroke="#2c3b40" stroke-width="0.6" stroke-dasharray="6 3"/>
+      <text x="14" y="8.2" class="mono" font-size="2.6" fill="#38bdf8">DOUBLE-HULL ARCHITECTURE: OUTER CLUSTER-GUARD ANECHOIC HULL + INNER AK-32 PRESSURE HULL</text>
+      <text x="412" y="8.2" text-anchor="end" class="mono" font-size="2.6" fill="#eab308">BOW ARSENAL: 4×650MM + 4×533MM + 6×EXT (40 WEAPONS)</text>
+
+      <!-- 1. 尾部宽展水平稳定翼、单轴七叶大侧斜静音螺旋桨与可收放 OK-300 辅助推进器 (Stern X=11..76) -->
+      <g id="akula-stern-top">
+        <!-- 尾部宽展水平稳定翼及翼端导流端板 (Y=19.0..69.0) -->
+        <polygon points="21,19.0 34,19.0 54,34.5 54,53.5 34,69.0 21,69.0 24,56.0 24,32.0"
+                 fill="#071218" stroke="#d4e3e6" stroke-width="1.15"/>
+        <rect x="18.5" y="18.0" width="9.0" height="1.9" rx="0.4" fill="#0d222e" stroke="#38bdf8" stroke-width="0.8"/>
+        <rect x="18.5" y="68.1" width="9.0" height="1.9" rx="0.4" fill="#0d222e" stroke="#38bdf8" stroke-width="0.8"/>
+
+        <!-- 单轴七叶大侧斜超静音螺旋桨 (Single 7-Blade Highly Skewed Low-Noise Screw · #eab308) -->
+        <g stroke="#eab308" stroke-width="0.95" fill="#eab308" fill-opacity="0.32">
+          <polygon points="11.2,44.0 16.5,41.6 16.5,46.4"/>
+          <path d="M 13.4 44.0 C 10.6 38.2 12.0 35.0 15.0 36.4 C 14.3 39.6 14.0 42.0 13.4 44.0 Z"/>
+          <path d="M 13.4 44.0 C 10.6 49.8 12.0 53.0 15.0 51.6 C 14.3 48.4 14.0 46.0 13.4 44.0 Z"/>
+          <line x1="11.0" y1="40.0" x2="15.2" y2="48.0"/>
+          <line x1="11.0" y1="48.0" x2="15.2" y2="40.0"/>
+          <circle cx="13.6" cy="44.0" r="1.25" fill="#eab308" stroke="#080a0b" stroke-width="0.4"/>
+        </g>
+      </g>
+
+      <!-- 2. 阿库拉级粗壮饱满水滴形双壳体俯视主外廓 (LOA 110.3m × Beam 13.6m · 长宽比 8.11:1 · X=20..410, Y=20.0..68.0) -->
+      <path d="M 20 41.0
+               C 46 34.5 92 24.5 148 21.0
+               C 182 20.0 296 20.0 332 21.2
+               C 372 22.8 396 29.8 406 38.0
+               C 409.0 40.5 410 42.2 410 44.0
+               C 410 45.8 409.0 47.5 406 50.0
+               C 396 58.2 372 65.2 332 66.8
+               C 296 68.0 182 68.0 148 67.0
+               C 92 63.5 46 53.5 20 47.0 Z"
+            fill="#08141c" stroke="#d4e3e6" stroke-width="1.4"/>
+
+      <!-- 外壳非耐压上层甲板边线与 Cluster Guard 橡胶消声瓦分格线 -->
+      <path d="M 52 36.2 C 98 28.2 146 22.5 178 22.0 L 328 22.0 C 368 23.8 394 31.8 404 44.0 C 394 56.2 368 64.2 328 66.0 L 178 66.0 C 146 65.5 98 59.8 52 51.8"
+            fill="none" stroke="#4a6368" stroke-width="0.75"/>
+      <!-- 两舷 MGK-540 侧向共形阵声呐与消声瓦带 -->
+      <line x1="142" y1="20.8" x2="298" y2="20.8" stroke="#38bdf8" stroke-width="0.9" stroke-dasharray="4 1.5"/>
+      <line x1="142" y1="67.2" x2="298" y2="67.2" stroke="#38bdf8" stroke-width="0.9" stroke-dasharray="4 1.5"/>
+      <!-- 后部左右两舷可收放 OK-300 辅助机动推进器翼舱 (X=64..74) -->
+      <rect x="64" y="26.5" width="9.5" height="2.4" rx="0.8" fill="#0d222e" stroke="#eab308" stroke-width="0.75"/>
+      <rect x="64" y="59.1" width="9.5" height="2.4" rx="0.8" fill="#0d222e" stroke="#eab308" stroke-width="0.75"/>
+
+      <!-- 垂尾顶端超大型泪滴形「斯卡特-3/佩拉米达」(Pelamida) 拖曳线列声呐荚舱俯视图 (X=14..57.5, Y=40.8..47.2) -->
+      <path d="M 14.0 44.0
+               C 18.0 40.8 34.0 40.5 46.0 41.6
+               C 53.0 42.3 57.0 43.2 57.5 44.0
+               C 57.0 44.8 53.0 45.7 46.0 46.4
+               C 34.0 47.5 18.0 47.2 14.0 44.0 Z"
+            fill="#0d222e" stroke="#38bdf8" stroke-width="1.15"/>
+      <ellipse cx="34.5" cy="44.0" rx="10.0" ry="1.9" fill="#061016" stroke="#eab308" stroke-width="0.75" stroke-dasharray="2 1"/>
+      <circle cx="15.2" cy="44.0" r="1.0" fill="#ff5a36"/>
+
+      <!-- 3. 双壳体 X 光内透视：AK-32 圆柱耐压壳体 + 7水密隔舱 + OK-650B (190MWt) 压水堆 + 双层浮筏汽轮机 (X=72..348, Y=28.0..60.0) -->
+      <g id="akula-double-hull-xray">
+        <!-- 内耐压壳体 (储备浮力高达 30%，两侧耐压壳与外壳间距宽达 8.0 局部单位) -->
+        <rect x="72.0" y="28.0" width="276.0" height="32.0" rx="12.0"
+              fill="#061016" fill-opacity="0.58" stroke="#38bdf8" stroke-width="0.95" stroke-dasharray="5 2.4"/>
+        <!-- 7 个水密隔舱横舱壁虚线 -->
+        <g stroke="#38bdf8" stroke-width="0.6" stroke-dasharray="2 1.5" stroke-opacity="0.65">
+          <line x1="102" y1="28.8" x2="102" y2="59.2"/>
+          <line x1="154" y1="28.0" x2="154" y2="60.0"/>
+          <line x1="204" y1="28.0" x2="204" y2="60.0"/>
+          <line x1="246" y1="28.0" x2="246" y2="60.0"/>
+          <line x1="298" y1="28.0" x2="298" y2="60.0"/>
+        </g>
+
+        <!-- 第 IV 隔舱：1座 OK-650B (190MWt) 压水核反应堆屏蔽舱 (X=158..200) -->
+        <rect x="158.0" y="33.5" width="40.0" height="21.0" rx="2.4" fill="#1a0f10" fill-opacity="0.74" stroke="#ff5a36" stroke-width="0.9"/>
+        <circle cx="178.0" cy="44.0" r="6.4" fill="#2a1214" stroke="#ff5a36" stroke-width="0.85"/>
+        <circle cx="178.0" cy="44.0" r="2.6" fill="#ff5a36" fill-opacity="0.65" stroke="#eab308" stroke-width="0.7"/>
+        <!-- 反应堆前后主循环泵与蒸汽发生器 -->
+        <rect x="161.5" y="36.2" width="6.5" height="15.6" rx="1.2" fill="#261014" stroke="#eab308" stroke-width="0.65"/>
+        <rect x="188.0" y="36.2" width="6.5" height="15.6" rx="1.2" fill="#261014" stroke="#eab308" stroke-width="0.65"/>
+
+        <!-- 第 V/VI 隔舱：OK-9VM (50,000 SHP) 双层气动减震浮筏蒸汽轮机与主减速齿轮箱舱 (X=80..148) -->
+        <polygon points="80,36.8 148,34.2 148,53.8 80,51.2" fill="#091a24" fill-opacity="0.62" stroke="#38bdf8" stroke-width="0.8" stroke-dasharray="3 1.5"/>
+        <rect x="92" y="37.5" width="48" height="13.0" rx="1.5" fill="none" stroke="#eab308" stroke-width="0.65" stroke-dasharray="2.5 1.2"/>
+        <line x1="16" y1="44.0" x2="148" y2="44.0" stroke="#eab308" stroke-width="0.9" stroke-dasharray="3.5 1.8"/>
+
+        <text x="154" y="17.5" text-anchor="middle" class="mono" font-size="2.5" fill="#ff5a36">OK-650B PWR (190MWt) &amp; RAFT TURBINE</text>
+      </g>
+
+      <!-- 4. 顺滑大圆弧流线型小翼指挥台围壳俯视图 (Smooth Blended Limpet Sail · X=224..320, Y=35.8..52.2) -->
+      <g id="akula-blended-sail-top">
+        <!-- 围壳底座大圆弧流线导流裙边 -->
+        <path d="M 224 44.0
+                 C 236 37.2 252 35.8 294 35.8
+                 C 308 35.8 317 39.2 320 44.0
+                 C 317 48.8 308 52.2 294 52.2
+                 C 252 52.2 236 50.8 224 44.0 Z"
+              fill="#0a1922" stroke="#d4e3e6" stroke-width="1.25"/>
+        <!-- 围壳上层流线甲板轮廓 -->
+        <path d="M 236 44.0
+                 C 246 39.0 258 38.0 293 38.0
+                 C 304 38.0 311 40.5 313 44.0
+                 C 311 47.5 304 50.0 293 50.0
+                 C 258 50.0 246 49.0 236 44.0 Z"
+              fill="#0e2430" stroke="#38bdf8" stroke-width="1.05"/>
+
+        <!-- 围壳前端弧形防冰观察窗、指挥桥槽与 SOKS 尾流化学传感器 -->
+        <path d="M 301 39.8 C 306.5 41.0 309.0 42.4 309.0 44.0 C 309.0 45.6 306.5 47.0 301 48.2" fill="none" stroke="#d4e3e6" stroke-width="1.1"/>
+        <rect x="292.5" y="41.2" width="6.5" height="5.6" rx="1.0" fill="#050d12" stroke="#38bdf8" stroke-width="0.75"/>
+        <circle cx="311.2" cy="44.0" r="1.1" fill="#eab308"/>
+
+        <!-- 围壳中部 VSE 集体上浮救生漂浮舱 (VSE Escape Pod · X=267..284 · #ff5a36 高亮) -->
+        <ellipse cx="275.5" cy="44.0" rx="7.8" ry="4.4" fill="#180d10" stroke="#ff5a36" stroke-width="0.95"/>
+        <circle cx="275.5" cy="44.0" r="2.1" fill="#0b1d28" stroke="#d4e3e6" stroke-width="0.7"/>
+        <circle cx="275.5" cy="44.0" r="0.8" fill="#ff5a36"/>
+
+        <!-- 围壳后部「冲锋碗/闪电-M」卫通井与前部潜望镜/雷达升降井阵列 -->
+        <rect x="252.0" y="40.2" width="11.5" height="7.6" rx="1.8" fill="#061016" stroke="#38bdf8" stroke-width="0.8"/>
+        <circle cx="257.8" cy="44.0" r="2.8" fill="#132c3a" stroke="#ff5a36" stroke-width="0.85"/>
+        <circle cx="286.5" cy="42.2" r="1.4" fill="#061016" stroke="#d4e3e6" stroke-width="0.7"/>
+        <circle cx="286.5" cy="45.8" r="1.4" fill="#061016" stroke="#38bdf8" stroke-width="0.7"/>
+      </g>
+
+      <!-- 5. 艇首第 I 隔舱武器库、8具双口径重型鱼雷/导弹管 (4×650mm + 4×533mm) + 外置 6具 533mm 管 + MGK-540 声呐阵 (Bow X=298..410) -->
+      <g id="akula-bow-torpedo-sonar-top">
+        <!-- 艇首左右展开态可收放前水平舵 (Retractable Bow Hydroplanes · X=354..372, Y=12.5..22.5 / 65.5..75.5) -->
+        <polygon points="354,22.8 369,23.8 372,12.5 359,12.5" fill="#0b1d28" stroke="#38bdf8" stroke-width="0.95"/>
+        <polygon points="354,65.2 369,64.2 372,75.5 359,75.5" fill="#0b1d28" stroke="#38bdf8" stroke-width="0.95"/>
+
+        <!-- 第 I 隔舱：40枚重型鱼雷/潜射巡航导弹自动装填架透视 (X=302..346, Y=31.0..57.0) -->
+        <g fill="#121e28" stroke-width="0.65">
+          <!-- 左舷备用 650mm/533mm 弹架 -->
+          <rect x="304" y="31.5" width="36" height="2.4" rx="0.8" stroke="#ff5a36"/>
+          <rect x="304" y="35.0" width="36" height="2.0" rx="0.7" stroke="#38bdf8"/>
+          <rect x="304" y="38.2" width="36" height="2.4" rx="0.8" stroke="#eab308"/>
+          <!-- 右舷备用 650mm/533mm 弹架 -->
+          <rect x="304" y="47.4" width="36" height="2.4" rx="0.8" stroke="#eab308"/>
+          <rect x="304" y="51.0" width="36" height="2.0" rx="0.7" stroke="#38bdf8"/>
+          <rect x="304" y="54.1" width="36" height="2.4" rx="0.8" stroke="#ff5a36"/>
+        </g>
+
+        <!-- 艇首耐压舱壁向前延伸的 8 具双口径发射管 (4×650mm 巨管 #ff5a36/#eab308 + 4×533mm 管 #38bdf8 · X=346..396) -->
+        <g stroke-dasharray="3.2 1.2">
+          <!-- 左舷 2×650mm + 2×533mm -->
+          <line x1="346" y1="34.0" x2="388" y2="35.8" stroke="#ff5a36" stroke-width="1.05"/>
+          <line x1="346" y1="37.2" x2="392" y2="38.5" stroke="#38bdf8" stroke-width="0.8"/>
+          <line x1="346" y1="40.2" x2="395" y2="41.0" stroke="#eab308" stroke-width="1.05"/>
+          <line x1="346" y1="42.6" x2="397" y2="43.0" stroke="#38bdf8" stroke-width="0.8"/>
+          <!-- 右舷 2×533mm + 2×650mm -->
+          <line x1="346" y1="45.4" x2="397" y2="45.0" stroke="#38bdf8" stroke-width="0.8"/>
+          <line x1="346" y1="47.8" x2="395" y2="47.0" stroke="#eab308" stroke-width="1.05"/>
+          <line x1="346" y1="50.8" x2="392" y2="49.5" stroke="#38bdf8" stroke-width="0.8"/>
+          <line x1="346" y1="54.0" x2="388" y2="52.2" stroke="#ff5a36" stroke-width="1.05"/>
+        </g>
+
+        <!-- 艇首上部非耐压壳体外置 6 具 533mm 发射管 (左3 + 右3 · X=344..368) -->
+        <g fill="#0b1d28" stroke="#38bdf8" stroke-width="0.75">
+          <rect x="345" y="23.5" width="6.0" height="1.8" rx="0.6"/>
+          <rect x="353" y="24.2" width="6.0" height="1.8" rx="0.6"/>
+          <rect x="361" y="25.0" width="6.0" height="1.8" rx="0.6"/>
+          <rect x="345" y="62.7" width="6.0" height="1.8" rx="0.6"/>
+          <rect x="353" y="62.0" width="6.0" height="1.8" rx="0.6"/>
+          <rect x="361" y="61.2" width="6.0" height="1.8" rx="0.6"/>
+        </g>
+
+        <!-- 艇首 MGK-540「斯卡特-3」(Skat-3) 圆柱-球形声呐基阵俯视透视 (X=374..408) -->
+        <path d="M 374 26.8 C 368 35.5 368 52.5 374 61.2" fill="none" stroke="#38bdf8" stroke-width="1.05" stroke-dasharray="3 1.5"/>
+        <ellipse cx="391.5" cy="44.0" rx="12.2" ry="9.5" fill="#0b1f2c" fill-opacity="0.72" stroke="#38bdf8" stroke-width="1.0"/>
+        <ellipse cx="391.5" cy="44.0" rx="6.0" ry="9.5" fill="none" stroke="#38bdf8" stroke-width="0.55" stroke-dasharray="2 1"/>
+        <line x1="379.3" y1="44.0" x2="403.7" y2="44.0" stroke="#38bdf8" stroke-width="0.6"/>
+        <circle cx="391.5" cy="44.0" r="2.2" fill="#38bdf8" fill-opacity="0.55"/>
+
+        <!-- 右舷 650mm 巨型鱼雷管破浪出管的 65-76A「鲸」(Kit) 650mm 重型反航母鱼雷剪影 -->
+        <g transform="translate(402.0, 52.8) rotate(6)">
+          <rect x="-8.5" y="-1.3" width="16.5" height="2.6" rx="1.1" fill="#261014" stroke="#ff5a36" stroke-width="0.85"/>
+          <circle cx="8.0" cy="0" r="1.25" fill="#eab308"/>
+          <line x1="-14.5" y1="0" x2="-8.5" y2="0" stroke="#eab308" stroke-width="1.0" stroke-dasharray="1.5 1"/>
+        </g>
+
+        <!-- 前甲板鱼雷装填斜舱口与救生对接圆舱口 -->
+        <rect x="322" y="41.2" width="15" height="5.6" rx="1.0" fill="#0b1d28" stroke="#d4e3e6" stroke-width="0.85"/>
+        <circle cx="348" cy="44.0" r="3.6" fill="#0b1d28" stroke="#38bdf8" stroke-width="0.85"/>
+      </g>
+
+      <!-- 6. 底部主尺度与核心特征标注 (严格保持水平间距零碰撞) -->
+      <text x="14" y="81.8" class="mono" font-size="2.7" fill="#38bdf8">STERN: GIANT TEARDROP PELAMIDA TOWED SONAR POD &amp; 7-BLADE SCREW</text>
+      <text x="412" y="81.8" text-anchor="end" class="mono" font-size="2.7" fill="#ff5a36">▲ 65-76A KIT (650MM WAKE-HOMING TORPEDO LAUNCH)</text>
+
+    </g>
+  </g>
+</svg>

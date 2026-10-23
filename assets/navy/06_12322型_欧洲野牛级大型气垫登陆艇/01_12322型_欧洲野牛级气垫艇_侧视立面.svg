@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 360" width="860" height="360" data-asset-id="naval.zubr.side" style="background:#080a0b;">
+  <defs>
+    <style>
+      svg { fill: none; stroke-linecap: butt; }
+      .s-dim { stroke: #2c3b40; stroke-width: 1; }
+      .s-line { stroke: #5f7c84; stroke-width: 1; }
+      .s-hi { stroke: #d4e3e6; stroke-width: 1.2; }
+      .s-alert { stroke: #ff5a36; stroke-width: 1.4; }
+      .s-focus { stroke: #38bdf8; stroke-width: 1.4; }
+      .f-dim { fill: #2c3b40; stroke: none; }
+      .f-line { fill: #5f7c84; stroke: none; }
+      .f-hi { fill: #d4e3e6; stroke: none; }
+      .f-alert { fill: #ff5a36; stroke: none; }
+      .f-panel { fill: #0c1113; }
+      text { font-family: "Rajdhani", "Bahnschrift", "DIN Alternate", "Microsoft YaHei", sans-serif; letter-spacing: 0.12em; }
+      text:not([stroke]) { stroke: none; }
+      text:not([fill]) { fill: #cfdde0; }
+      text:not([font-size]):not(.cap):not(.big) { font-size: 10px; }
+      text.cap { letter-spacing: 0.2em; text-transform: uppercase; }
+      text.cap:not([fill]) { fill: #8aa1a7; }
+      text.cap:not([font-size]) { font-size: 8.5px; }
+      text.mono { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; letter-spacing: 0.06em; }
+      text.big { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; font-weight: 600; letter-spacing: 0.08em; }
+      text.big:not([font-size]) { font-size: 18px; }
+      text.big:not([fill]) { fill: #d4e3e6; }
+      text.alert { fill: #ff5a36; }
+    </style>
+    <pattern id="cad-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#10181c" stroke-width="1"/>
+      <circle cx="20" cy="20" r="0.8" fill="#1b262b"/>
+    </pattern>
+    <pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#ff5a36" stroke-width="1.2" stroke-opacity="0.35"/>
+    </pattern>
+  </defs>
+
+  <!-- 1. 工程蓝图暗色底板与坐标网格图层 -->
+  <g id="layer-backdrop">
+    <rect x="0" y="0" width="860" height="360" fill="#080a0b"/>
+    <rect x="20" y="20" width="820" height="320" fill="url(#cad-grid)" stroke="#2c3b40" stroke-width="1"/>
+    <path d="M 20 36 V 20 H 36 M 824 20 H 840 V 36 M 20 324 V 340 H 36 M 824 340 H 840 V 324" fill="none" stroke="#38bdf8" stroke-width="1.5"/>
+    <line x1="20" y1="54" x2="840" y2="54" stroke="#2c3b40" stroke-width="1"/>
+    <line x1="20" y1="314" x2="840" y2="314" stroke="#2c3b40" stroke-width="1"/>
+    <text x="34" y="42" class="p mono" fill="#38bdf8" font-size="11" font-weight="bold">PROJECT 12322 ZUBR (POMORNIK) LCAC · STARBOARD PROFILE ELEVATION</text>
+    <text x="826" y="42" text-anchor="end" class="p cap" fill="#d4e3e6" font-size="10.5">12322型「欧洲野牛」级大型气垫登陆艇 · 侧视立面图 (555T)</text>
+    <text x="34" y="331" class="p mono" fill="#8aa1a7" font-size="9.5">LOA: 57.3M · BEAM: 25.6M · FLEXIBLE RUBBER SKIRT · 3×Ø5.5M SHROUDED AIR PROPELLERS · 2×AK-630 CIWS · REF: F114-UPPER</text>
+    <text x="826" y="331" text-anchor="end" class="p mono" fill="#5f7c84" font-size="9.5">POSEIDON NAVAL CAD ASSET · TRUE 1:1 ASPECT</text>
+  </g>
+
+  <!-- 2. 舰艇核心 CAD 矢量图层 (无损原生算子输出) -->
+  <g id="layer-ship-cad">
+    <g transform="translate(108.6,66.0) scale(2.472,2.375)">
+      <!-- 首尾登陆跳板展开虚线轨迹弧與水线基准 (舰政标准规范) -->
+      <path d="M 22 60 C 8 62, 6 74, 8 83" fill="none" stroke="#d4e3e6" stroke-width="0.8" stroke-dasharray="3 2"/>
+      <line x1="8" y1="83" x2="21" y2="78" stroke="#d4e3e6" stroke-width="1.2"/>
+      <path d="M 244 64 C 248 72, 248 80, 244 85" fill="none" stroke="#d4e3e6" stroke-width="0.8" stroke-dasharray="3 2"/>
+      <line x1="230" y1="82" x2="243" y2="85" stroke="#d4e3e6" stroke-width="1.4"/>
+      <line x1="2" y1="84" x2="258" y2="84" stroke="#38bdf8" stroke-width="1.1"/>
+
+      <!-- 1. 底部黑色橡胶气垫围裙 (Flexible Rubber Air-Cushion Skirt · Y=71..88) -->
+      <path d="M 20 72 L 232 70 C 238 71, 240 77, 234 83 L 228 88 L 24 88 L 19 82 Z"
+            fill="#050a0e" stroke="#d4e3e6" stroke-width="1.2"/>
+      <line x1="20" y1="79" x2="235" y2="78" stroke="#4a6368" stroke-width="0.9"/>
+      <line x1="24.0" y1="74" x2="24.0" y2="88" stroke="#38bdf8" stroke-width="0.55" stroke-opacity="0.65"/><line x1="31.4" y1="74" x2="31.4" y2="88" stroke="#38bdf8" stroke-width="0.55" stroke-opacity="0.65"/><line x1="38.8" y1="74" x2="38.8" y2="88" stroke="#38bdf8" stroke-width="0.55" stroke-opacity="0.65"/><line x1="46.2" y1="74" x2="46.2" y2="88" stroke="#38bdf8" stroke-width="0.55" stroke-opacity="0.65"/><line x1="53.6" y1="74" x2="53.6" y2="88" stroke="#38bdf8" stroke-width="0.55" stroke-opacity="0.65"/><line x1="61.0" y1="74" x2="61.0" y2="88" stroke="#38bdf8" stroke-width="0.55" stroke-opacity="0.65"/><line x1="68.4" y1="74" x2="68.4" y2="88" stroke="#38bdf8" stroke-width="0.55" stroke-opacity="0.65"/><line x1="75.8" y1="74" x2="75.8" y2="88" stroke="#38bdf8" stroke-width="0.55" stroke-opacity="0.65"/><line x1="83.2" y1="74" x2="83.2" y2="88" stroke="#38bdf8" stroke-width="0.55" stroke-opacity="0.65"/><line x1="90.6" y1="74" x2="90.6" y2="88" stroke="#38bdf8" stroke-width="0.55" stroke-opacity="0.65"/><line x1="98.0" y1="74" x2="98.0" y2="88" stroke="#38bdf8" stroke-width="0.55" stroke-opacity="0.65"/><line x1="105.4" y1="74" x2="105.4" y2="88" stroke="#38bdf8" stroke-width="0.55" stroke-opacity="0.65"/><line x1="112.8" y1="74" x2="112.8" y2="88" stroke="#38bdf8" stroke-width="0.55" stroke-opacity="0.65"/><line x1="120.2" y1="74" x2="120.2" y2="88" stroke="#38bdf8" stroke-width="0.55" stroke-opacity="0.65"/><line x1="127.6" y1="74" x2="127.6" y2="88" stroke="#38bdf8" stroke-width="0.55" stroke-opacity="0.65"/><line x1="135.0" y1="74" x2="135.0" y2="88" stroke="#38bdf8" stroke-width="0.55" stroke-opacity="0.65"/><line x1="142.4" y1="74" x2="142.4" y2="88" stroke="#38bdf8" stroke-width="0.55" stroke-opacity="0.65"/><line x1="149.8" y1="74" x2="149.8" y2="88" stroke="#38bdf8" stroke-width="0.55" stroke-opacity="0.65"/><line x1="157.2" y1="74" x2="157.2" y2="88" stroke="#38bdf8" stroke-width="0.55" stroke-opacity="0.65"/><line x1="164.6" y1="74" x2="164.6" y2="88" stroke="#38bdf8" stroke-width="0.55" stroke-opacity="0.65"/><line x1="172.0" y1="74" x2="172.0" y2="88" stroke="#38bdf8" stroke-width="0.55" stroke-opacity="0.65"/><line x1="179.4" y1="74" x2="179.4" y2="88" stroke="#38bdf8" stroke-width="0.55" stroke-opacity="0.65"/><line x1="186.8" y1="74" x2="186.8" y2="88" stroke="#38bdf8" stroke-width="0.55" stroke-opacity="0.65"/><line x1="194.2" y1="74" x2="194.2" y2="88" stroke="#38bdf8" stroke-width="0.55" stroke-opacity="0.65"/><line x1="201.6" y1="74" x2="201.6" y2="88" stroke="#38bdf8" stroke-width="0.55" stroke-opacity="0.65"/><line x1="209.0" y1="74" x2="209.0" y2="88" stroke="#38bdf8" stroke-width="0.55" stroke-opacity="0.65"/><line x1="216.4" y1="74" x2="216.4" y2="88" stroke="#38bdf8" stroke-width="0.55" stroke-opacity="0.65"/><line x1="223.8" y1="74" x2="223.8" y2="88" stroke="#38bdf8" stroke-width="0.55" stroke-opacity="0.65"/>
+
+      <!-- 2. 铝合金主浮箱干舷、前倾跳板首与甲板栏杆 (Y=54..72 · 舰政标准规范) -->
+      <polygon points="20,54 205,54 244,62 232,70 20,72" fill="#0d202c" stroke="#d4e3e6" stroke-width="1.25"/>
+      <polyline points="22,64 234,64" fill="none" stroke="#38bdf8" stroke-width="0.85"/>
+      <!-- 干舷检修窗、舱门与橙红救生圈 -->
+      <rect x="30" y="65" width="6" height="4" fill="#061118" stroke="#38bdf8" stroke-width="0.6"/>
+      <rect x="74" y="57" width="8" height="6" fill="#061118" stroke="#d4e3e6" stroke-width="0.6"/>
+      <rect x="98" y="57" width="8" height="6" fill="#061118" stroke="#d4e3e6" stroke-width="0.6"/>
+      <rect x="188" y="65" width="7" height="4" fill="#061118" stroke="#38bdf8" stroke-width="0.6"/>
+      <circle cx="154" cy="60.5" r="2.2" fill="none" stroke="#ff5a36" stroke-width="1.1"/>
+
+      <!-- 3. 舰尾高耸的巨型导管空气螺旋桨支架与喇叭形环形涵道罩 (X=21..58, Y=20..54 · 舰政标准规范 左端) -->
+      <!-- 斜撑塔架与顶部燃气轮机短舱 -->
+      <polygon points="21,54 30,33 43,33 45,54" fill="#102634" stroke="#d4e3e6" stroke-width="1.1"/>
+      <rect x="23" y="27" width="22" height="6.5" rx="2" fill="#163244" stroke="#38bdf8" stroke-width="0.95"/>
+      <!-- 喇叭形巨型空气螺旋桨导管罩 (Ø5.5m Shrouded Air Propeller Duct) -->
+      <path d="M 45 22 L 56 18 L 56 49 L 45 45 Z" fill="#142e3e" stroke="#d4e3e6" stroke-width="1.25"/>
+      <line x1="49" y1="20.5" x2="49" y2="46.5" stroke="#38bdf8" stroke-width="0.8"/>
+
+      <!-- 4. 中部梯形内倾主舰桥、观通楼与格栅主桅杆 + 白色大球雷达罩 (X=94..156, Y=4..54 · 舰政标准规范) -->
+      <polygon points="96,54 104,31 148,31 153,54" fill="#0f2432" stroke="#d4e3e6" stroke-width="1.2"/>
+      <!-- 垫升风扇进气口侧视凸缘 -->
+      <ellipse cx="96" cy="52" rx="9" ry="2.5" fill="#163244" stroke="#38bdf8" stroke-width="0.85"/>
+      <ellipse cx="134" cy="52" rx="9" ry="2.5" fill="#163244" stroke="#38bdf8" stroke-width="0.85"/>
+      <!-- 舰桥前向防风观察窗带与 MR-123 火控雷达座 -->
+      <polygon points="138,33 149,33 150,37 138,37" fill="#04080b" stroke="#38bdf8" stroke-width="0.7"/>
+      <rect x="123" y="25" width="7" height="6" rx="2" fill="#163244" stroke="#d4e3e6" stroke-width="0.8"/>
+      <!-- 主桅基座、顶部大型白色球形雷达罩與格栅主桅 -->
+      <polygon points="105,31 108,21 118,21 120,31" fill="#142c3c" stroke="#d4e3e6" stroke-width="0.95"/>
+      <circle cx="108" cy="15" r="6.8" fill="#d4e3e6" stroke="#38bdf8" stroke-width="1.0"/>
+      <line x1="96" y1="31" x2="96" y2="4" stroke="#d4e3e6" stroke-width="1.1"/>
+      <line x1="91" y1="12" x2="102" y2="12" stroke="#38bdf8" stroke-width="0.85"/>
+      <line x1="92" y1="21" x2="118" y2="21" stroke="#38bdf8" stroke-width="0.85"/>
+      <line x1="96" y1="21" x2="105" y2="31" stroke="#4a6368" stroke-width="0.75"/>
+
+      <!-- 5. 前甲板 AK-630 六管 30mm 近防炮塔 (X=162..178) -->
+      <rect x="163" y="49" width="14" height="5" fill="#142c3c" stroke="#d4e3e6" stroke-width="0.9"/>
+      <polygon points="166,49 168,43 173,43 175,49" fill="#183648" stroke="#38bdf8" stroke-width="0.9"/>
+      <line x1="174" y1="45.5" x2="181" y2="45.2" stroke="#d4e3e6" stroke-width="1.2"/>
+    </g>
+  </g>
+</svg>

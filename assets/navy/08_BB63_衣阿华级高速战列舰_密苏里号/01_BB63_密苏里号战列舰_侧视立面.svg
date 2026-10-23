@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 340" width="1120" height="340" data-asset-id="naval.bb63.side" style="background:#080a0b;">
+  <defs>
+    <style>
+      svg { fill: none; stroke-linecap: butt; }
+      .s-dim { stroke: #2c3b40; stroke-width: 1; }
+      .s-line { stroke: #5f7c84; stroke-width: 1; }
+      .s-hi { stroke: #d4e3e6; stroke-width: 1.2; }
+      .s-alert { stroke: #ff5a36; stroke-width: 1.4; }
+      .s-focus { stroke: #38bdf8; stroke-width: 1.4; }
+      .f-dim { fill: #2c3b40; stroke: none; }
+      .f-line { fill: #5f7c84; stroke: none; }
+      .f-hi { fill: #d4e3e6; stroke: none; }
+      .f-alert { fill: #ff5a36; stroke: none; }
+      .f-panel { fill: #0c1113; }
+      text { font-family: "Rajdhani", "Bahnschrift", "DIN Alternate", "Microsoft YaHei", sans-serif; letter-spacing: 0.12em; }
+      text:not([stroke]) { stroke: none; }
+      text:not([fill]) { fill: #cfdde0; }
+      text:not([font-size]):not(.cap):not(.big) { font-size: 10px; }
+      text.cap { letter-spacing: 0.2em; text-transform: uppercase; }
+      text.cap:not([fill]) { fill: #8aa1a7; }
+      text.cap:not([font-size]) { font-size: 8.5px; }
+      text.mono { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; letter-spacing: 0.06em; }
+      text.big { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; font-weight: 600; letter-spacing: 0.08em; }
+      text.big:not([font-size]) { font-size: 18px; }
+      text.big:not([fill]) { fill: #d4e3e6; }
+      text.alert { fill: #ff5a36; }
+    </style>
+    <pattern id="cad-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#10181c" stroke-width="1"/>
+      <circle cx="20" cy="20" r="0.8" fill="#1b262b"/>
+    </pattern>
+    <pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#ff5a36" stroke-width="1.1" stroke-opacity="0.38"/>
+    </pattern>
+  </defs>
+
+  <!-- 1. 工程蓝图暗色底板与坐标网格图层 -->
+  <g id="layer-backdrop">
+    <rect x="0" y="0" width="1120" height="340" fill="#080a0b"/>
+    <rect x="20" y="20" width="1080" height="300" fill="url(#cad-grid)" stroke="#2c3b40" stroke-width="1"/>
+    <path d="M 20 36 V 20 H 36 M 1084 20 H 1100 V 36 M 20 304 V 320 H 36 M 1084 320 H 1100 V 304" fill="none" stroke="#38bdf8" stroke-width="1.5"/>
+    <line x1="20" y1="54" x2="1100" y2="54" stroke="#2c3b40" stroke-width="1"/>
+    <line x1="20" y1="294" x2="1100" y2="294" stroke="#2c3b40" stroke-width="1"/>
+    <text x="34" y="42" class="p mono" fill="#38bdf8" font-size="11" font-weight="bold">US NAVY IOWA-CLASS BATTLESHIP (BB-63 USS MISSOURI) · 1986 MODERNIZATION REFIT ELEVATION</text>
+    <text x="1086" y="42" text-anchor="end" class="p cap" fill="#d4e3e6" font-size="10.5">衣阿华级「BB-63 密苏里号」高速战列舰 · 1986现代化改装侧视立面与主炮/战斧谱系图</text>
+    <text x="34" y="311" class="p mono" fill="#8aa1a7" font-size="9.5">3×3 406MM/50 MK 7 · 8×4 (32) BGM-109 TOMAHAWK ABL · 4×4 (16) RGM-84 HARPOON · 6×2 127MM/38 · 4×MK 15 CIWS · REF: UID-190</text>
+    <text x="1086" y="311" text-anchor="end" class="p mono" fill="#5f7c84" font-size="9.5">POSEIDON NAVAL CAD ASSET · TRUE 1:1 ASPECT</text>
+  </g>
+
+  <!-- 2. 舰艇核心 CAD 矢量图层 (440×92 原生画布 · 1:1 等比缩放 scale=2.350) -->
+  <g id="layer-ship-cad">
+    <g transform="translate(43.0,65.9) scale(2.350,2.350)">
+
+      <!-- ==================== 上方总师级武器谱系与装甲标定框 (Y=4..30) ==================== -->
+      <!-- 模块 A: 3×3 406mm/50 Mk 7 主炮与 Mk 8 超重穿甲弹标定框 (X=14..108, Y=1..22) -->
+      <rect x="14" y="1" width="94" height="21" fill="#08131a" stroke="#2c3b40" stroke-width="0.7"/>
+      <path d="M 14 5 V 1 H 18 M 104 1 H 108 V 5" fill="none" stroke="#ff5a36" stroke-width="0.9"/>
+      <text x="18" y="6.8" class="mono" font-size="3.9" fill="#ff5a36" font-weight="bold">3×3 406MM/50 MK 7 BATTERY</text>
+      <text x="18" y="11.5" class="mono" font-size="3.3" fill="#d4e3e6">AP MK 8: 1,225KG · V0: 762M/S</text>
+      <text x="18" y="16.0" class="mono" font-size="3.2" fill="#8aa1a7">TURRET FACE: 432MM · RANGE: 38.7KM</text>
+      <text x="18" y="20.4" class="mono" font-size="3.2" fill="#eab308">TURRETS: A (FWD) · B (SUPER) · X (AFT)</text>
+      <!-- 406mm 穿甲弹与发射药包垂直剪影 -->
+      <g transform="translate(94, 3)">
+        <rect x="0" y="6" width="3.2" height="11" fill="#122836" stroke="#d4e3e6" stroke-width="0.5"/>
+        <polygon points="0,6 1.6,1 3.2,6" fill="#ff5a36"/>
+        <rect x="5.5" y="4" width="3.2" height="13" fill="#0c1c26" stroke="#eab308" stroke-width="0.5"/>
+        <line x1="5.5" y1="7.2" x2="8.7" y2="7.2" stroke="#eab308" stroke-width="0.4"/>
+        <line x1="5.5" y1="10.5" x2="8.7" y2="10.5" stroke="#eab308" stroke-width="0.4"/>
+        <line x1="5.5" y1="13.8" x2="8.7" y2="13.8" stroke="#eab308" stroke-width="0.4"/>
+      </g>
+
+      <!-- 模块 B: 1986 现代化改装导弹矩阵 (8×4 战斧 ABL + 4×4 捕鲸叉) 展开图 (X=112..214, Y=1..22) -->
+      <rect x="108" y="1" width="98" height="21" fill="#08131a" stroke="#38bdf8" stroke-width="0.75"/>
+      <text x="111" y="6.8" class="mono" font-size="3.3" fill="#38bdf8" font-weight="bold">8×4 (32) TOMAHAWK ABL</text>
+      <text x="111" y="11.5" class="mono" font-size="3.1" fill="#ff5a36" font-weight="bold">4×4 (16) HARPOON ASM</text>
+      <text x="111" y="16.0" class="mono" font-size="2.8" fill="#d4e3e6">4×MK 15 CIWS · 6×2 127MM</text>
+      <text x="111" y="20.4" class="mono" font-size="2.8" fill="#8aa1a7">SPS-49 RADAR · SLQ-32 EW</text>
+      <!-- 8座四联装 Mk 143 装甲箱式发射器微缩阵列 + 战斧/捕鲸叉导弹剪影 -->
+      <g transform="translate(182, 2.5)">
+        <rect x="0" y="0" width="9" height="4.2" fill="#0d2230" stroke="#38bdf8" stroke-width="0.55"/>
+        <rect x="0" y="5.2" width="9" height="4.2" fill="#0d2230" stroke="#38bdf8" stroke-width="0.55"/>
+        <rect x="0" y="10.4" width="9" height="4.2" fill="#0d2230" stroke="#38bdf8" stroke-width="0.55"/>
+        <rect x="0" y="15.6" width="9" height="4.2" fill="#0d2230" stroke="#38bdf8" stroke-width="0.55"/>
+        <circle cx="2.2" cy="2.1" r="0.7" fill="#38bdf8"/><circle cx="4.5" cy="2.1" r="0.7" fill="#38bdf8"/><circle cx="6.8" cy="2.1" r="0.7" fill="#38bdf8"/>
+        <circle cx="2.2" cy="7.3" r="0.7" fill="#38bdf8"/><circle cx="4.5" cy="7.3" r="0.7" fill="#38bdf8"/><circle cx="6.8" cy="7.3" r="0.7" fill="#38bdf8"/>
+        <!-- BGM-109 战斧与 RGM-84 捕鲸叉垂直剪影 -->
+        <rect x="13" y="2.5" width="2.2" height="17" fill="#102838" stroke="#38bdf8" stroke-width="0.55"/>
+        <polygon points="13,2.5 14.1,0 15.2,2.5" fill="#38bdf8"/>
+        <line x1="11.2" y1="10" x2="17" y2="10" stroke="#d4e3e6" stroke-width="0.6"/>
+        <rect x="19" y="5.5" width="2.2" height="14" fill="#1a1822" stroke="#ff5a36" stroke-width="0.55"/>
+        <polygon points="19,5.5 20.1,3 21.2,5.5" fill="#ff5a36"/>
+      </g>
+
+      <!-- 模块 C: 巴拿马极限高速船体与主装甲盒参数框 (X=298..426) -->
+      <rect x="298" y="5" width="128" height="22" fill="#08131a" stroke="#2c3b40" stroke-width="0.7"/>
+      <path d="M 298 9 V 5 H 302 M 422 5 H 426 V 9" fill="none" stroke="#38bdf8" stroke-width="0.9"/>
+      <text x="303" y="11.5" class="mono" font-size="4.2" fill="#38bdf8" font-weight="bold">PANAMAX FAST BATTLESHIP HULL (8.2:1)</text>
+      <text x="303" y="16.8" class="mono" font-size="3.6" fill="#d4e3e6">LOA: 270.4M · BEAM: 33.0M · DISP: 58,000T</text>
+      <text x="303" y="22.0" class="mono" font-size="3.5" fill="#eab308">BELT: 307MM (19° INCLINED) · 212,000 SHP / 33 KTS</text>
+
+      <!-- ==================== 1. 水下暗红防污船底、球鼻艏、310mm水线装甲带与四轴金桨 (Y=71..84) ==================== -->
+      <!-- 水下暗红防污船底 (含修长微凸球鼻艏 Bulbous Bow 与尾部呆木 Skeg) -->
+      <path d="M 18 71.5 L 415 71.5 C 418 73.2, 422 75.0, 423.5 77.5 C 424.5 80.0, 421.0 82.2, 414 82.2 L 74 82.2 L 44 79.0 L 19 76.2 Z"
+            fill="#261014" stroke="#ff5a36" stroke-width="1.0"/>
+      <!-- 舭龙骨减摇条 (Bilge Keel) -->
+      <path d="M 142 79.5 L 154 81.2 L 296 81.2 L 308 79.5" fill="none" stroke="#ff5a36" stroke-width="0.85"/>
+
+      <!-- 舰尾双平衡舵 + 四轴推进轴架与金色五叶/四叶螺旋桨 (#eab308) -->
+      <polygon points="22,76.2 31,76.8 29.5,83.5 21.5,83.5" fill="#261014" stroke="#ff5a36" stroke-width="0.85"/>
+      <line x1="36" y1="80.5" x2="76" y2="77.2" stroke="#eab308" stroke-width="1.1"/>
+      <line x1="49" y1="81.2" x2="88" y2="78.0" stroke="#eab308" stroke-width="0.95"/>
+      <line x1="42" y1="77.2" x2="40" y2="80.8" stroke="#d4e3e6" stroke-width="0.8"/>
+      <line x1="55" y1="78.0" x2="53" y2="81.2" stroke="#d4e3e6" stroke-width="0.8"/>
+      <!-- 外侧四叶与内侧五叶大直径金色螺旋桨 -->
+      <ellipse cx="36" cy="80.5" rx="1.6" ry="4.4" fill="#eab308" stroke="#d4e3e6" stroke-width="0.55"/>
+      <ellipse cx="49" cy="81.2" rx="1.5" ry="4.1" fill="#eab308" stroke="#d4e3e6" stroke-width="0.55"/>
+
+      <!-- 307mm/310mm 核心水线装甲盒分界带 (Citadel Belt Armor · X=92..348, Y=68.5..73.5) -->
+      <polygon points="92,68.8 348,68.8 344,73.5 96,73.5" fill="url(#hatch)" stroke="#ff5a36" stroke-width="0.85"/>
+      <line x1="14" y1="71.5" x2="418" y2="71.5" stroke="#ff5a36" stroke-width="0.9" stroke-dasharray="3 1.5"/>
+
+      <!-- ==================== 2. 水线以上修长飞剪式长首楼船体与柚木甲板纹路 (X=14..428, Y=56..71.5) ==================== -->
+      <!-- 衣阿华级标志性修长微上扬飞剪舰首与平直中后段干舷 -->
+      <path d="M 14 63.5 L 92 62.5 L 280 61.2 L 352 60.0 L 428 56.2 C 423 61.5, 418 66.8, 415 71.5 L 18 71.5 L 14 63.5 Z"
+            fill="#0a1822" stroke="#d4e3e6" stroke-width="1.3"/>
+      <!-- 柚木主甲板边缘双线与甲板纵向分节横线 -->
+      <path d="M 15 64.8 L 92 63.8 L 280 62.5 L 352 61.4 L 424 58.0" fill="none" stroke="#38bdf8" stroke-width="0.75"/>
+      <g stroke="#5f7c84" stroke-width="0.45">
+        <line x1="36" y1="63.5" x2="36" y2="65.2"/><line x1="58" y1="63.2" x2="58" y2="65.0"/>
+        <line x1="80" y1="62.8" x2="80" y2="64.6"/><line x1="126" y1="62.2" x2="126" y2="64.0"/>
+        <line x1="286" y1="61.2" x2="286" y2="63.0"/><line x1="312" y1="60.8" x2="312" y2="62.6"/>
+        <line x1="356" y1="59.8" x2="356" y2="61.8"/><line x1="382" y1="58.6" x2="382" y2="60.6"/>
+      </g>
+      <!-- 舰首旗杆、尾旗杆、霍尔锚孔与醒目白色大号舷号「63」 -->
+      <line x1="426.5" y1="56.2" x2="428" y2="48.5" stroke="#d4e3e6" stroke-width="0.8"/>
+      <line x1="15" y1="63.5" x2="13" y2="55.5" stroke="#d4e3e6" stroke-width="0.8"/>
+      <circle cx="411" cy="61.2" r="1.5" fill="#050a0e" stroke="#d4e3e6" stroke-width="0.65"/>
+      <circle cx="404" cy="61.8" r="1.2" fill="#050a0e" stroke="#5f7c84" stroke-width="0.55"/>
+      <text x="392" y="66.2" text-anchor="middle" class="mono" font-size="7.2" fill="#d4e3e6" font-weight="bold">63</text>
+
+      <!-- ==================== 3. 三座三联装 406mm/50 (16英寸) Mark 7 巨型主炮塔 ==================== -->
+      <!-- A 炮塔 (Turret I · 前甲板第一座 · X=318..374, 炮口朝右 +X) -->
+      <g id="turret-1-fwd">
+        <!-- 装甲座圈 Barbette -->
+        <rect x="320" y="58.5" width="20" height="2.4" fill="#0e202c" stroke="#5f7c84" stroke-width="0.7"/>
+        <!-- 3根修长 406mm/50 炮管 (错位刻画三联装层次感 + 白色炮口制退气囊箍 gun buckler) -->
+        <line x1="341" y1="54.2" x2="375" y2="51.8" stroke="#8aa1a7" stroke-width="1.15"/>
+        <line x1="341" y1="55.4" x2="376" y2="53.2" stroke="#d4e3e6" stroke-width="1.35"/>
+        <line x1="341" y1="56.6" x2="374" y2="54.6" stroke="#38bdf8" stroke-width="1.0"/>
+        <ellipse cx="342.5" cy="55.5" rx="2.2" ry="1.8" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.5"/>
+        <!-- 多面倾斜重装甲炮塔壳 (432mm 正面斜切) + 13.7m 光学测距仪耳轴 -->
+        <polygon points="317,58.5 319,53.2 336,53.2 342.5,56.2 342.5,58.5" fill="#132a3a" stroke="#d4e3e6" stroke-width="1.15"/>
+        <line x1="322" y1="55.2" x2="338" y2="55.2" stroke="#38bdf8" stroke-width="0.6"/>
+        <circle cx="322.5" cy="55.6" r="1.5" fill="#091620" stroke="#38bdf8" stroke-width="0.7"/>
+      </g>
+
+      <!-- B 炮塔 (Turret II · 前甲板背负式第二座 · X=284..340, 炮口朝右 +X) -->
+      <g id="turret-2-superfiring">
+        <!-- 高耸 439mm 圆柱装甲座圈 Barbette -->
+        <rect x="286" y="51.8" width="20" height="9.2" fill="#0d1e2a" stroke="#d4e3e6" stroke-width="0.9"/>
+        <line x1="286" y1="55.5" x2="306" y2="55.5" stroke="#38bdf8" stroke-width="0.5"/>
+        <!-- 3根修长 406mm/50 炮管 (越过 A 炮塔上方) -->
+        <line x1="307" y1="47.6" x2="341" y2="45.2" stroke="#8aa1a7" stroke-width="1.15"/>
+        <line x1="307" y1="48.8" x2="342" y2="46.6" stroke="#d4e3e6" stroke-width="1.35"/>
+        <line x1="307" y1="50.0" x2="340" y2="48.0" stroke="#38bdf8" stroke-width="1.0"/>
+        <ellipse cx="308.5" cy="48.9" rx="2.2" ry="1.8" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.5"/>
+        <!-- 多面倾斜重装甲炮塔壳 + 测距仪耳轴 -->
+        <polygon points="283,51.8 285,46.5 302,46.5 308.5,49.5 308.5,51.8" fill="#132a3a" stroke="#d4e3e6" stroke-width="1.15"/>
+        <line x1="288" y1="48.5" x2="304" y2="48.5" stroke="#38bdf8" stroke-width="0.6"/>
+        <circle cx="288.5" cy="48.9" r="1.5" fill="#091620" stroke="#38bdf8" stroke-width="0.7"/>
+      </g>
+
+      <!-- X 炮塔 (Turret III · 后甲板第三座 · X=60..120, 炮口朝左 -X) -->
+      <g id="turret-3-aft">
+        <!-- 装甲座圈 Barbette -->
+        <rect x="96" y="59.5" width="20" height="3.0" fill="#0e202c" stroke="#5f7c84" stroke-width="0.7"/>
+        <!-- 3根修长 406mm/50 炮管朝左 (-X) -->
+        <line x1="95" y1="55.2" x2="61" y2="52.8" stroke="#8aa1a7" stroke-width="1.15"/>
+        <line x1="95" y1="56.4" x2="60" y2="54.2" stroke="#d4e3e6" stroke-width="1.35"/>
+        <line x1="95" y1="57.6" x2="62" y2="55.6" stroke="#38bdf8" stroke-width="1.0"/>
+        <ellipse cx="93.5" cy="56.5" rx="2.2" ry="1.8" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.5"/>
+        <!-- 多面倾斜重装甲炮塔壳 + 测距仪耳轴 -->
+        <polygon points="119,59.5 117,54.2 100,54.2 93.5,57.2 93.5,59.5" fill="#132a3a" stroke="#d4e3e6" stroke-width="1.15"/>
+        <line x1="114" y1="56.2" x2="98" y2="56.2" stroke="#38bdf8" stroke-width="0.6"/>
+        <circle cx="113.5" cy="56.6" r="1.5" fill="#091620" stroke="#38bdf8" stroke-width="0.7"/>
+      </g>
+
+      <!-- ==================== 4. 舯部上层建筑、塔式装甲舰桥、双烟囱与1986现代化改装武备 (X=124..280) ==================== -->
+      <!-- 底层长甲板室基座 (01-02 Deck Citadel Superstructure · X=124..280, Y=52..62) -->
+      <polygon points="124,62.2 128,53.0 278,51.8 280,61.2" fill="#0d1e2a" stroke="#d4e3e6" stroke-width="1.0"/>
+      <line x1="127" y1="56.5" x2="278" y2="55.5" stroke="#5f7c84" stroke-width="0.6"/>
+      <line x1="126" y1="59.2" x2="279" y2="58.4" stroke="#38bdf8" stroke-width="0.55"/>
+
+      <!-- 前部高耸塔式装甲舰桥 (Armored Conning Tower &amp; Bridge Tower · X=242..276, Y=24..52) -->
+      <polygon points="244,51.8 246,33.0 272,33.0 275,51.8" fill="#112636" stroke="#d4e3e6" stroke-width="1.1"/>
+      <!-- 17.3英寸 (439mm) 装甲司令塔圆柱体与航海舰桥观察窗 -->
+      <rect x="252" y="27.5" width="14" height="24.3" fill="#152e40" stroke="#d4e3e6" stroke-width="0.95"/>
+      <rect x="254" y="34.5" width="16" height="3.2" fill="#04080b" stroke="#38bdf8" stroke-width="0.7"/>
+      <rect x="247" y="40.2" width="25" height="3.0" fill="#04080b" stroke="#38bdf8" stroke-width="0.65"/>
+      <!-- 舰桥两侧 OE-82 卫星通信白色圆顶罩与 AN/SLQ-32(V)3 电子战横桁 -->
+      <circle cx="249" cy="31.2" r="1.9" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.6"/>
+      <rect x="255" y="30.2" width="7" height="2.4" fill="#1b3b52" stroke="#38bdf8" stroke-width="0.65"/>
+
+      <!-- 舰桥前顶：前部 Mk 38 主炮火控导演仪 (大基线光学测距横梁 + Mk 13 火控雷达 · X=253..265, Y=17..27.5) -->
+      <rect x="256" y="22.0" width="6.5" height="5.5" fill="#163244" stroke="#d4e3e6" stroke-width="0.85"/>
+      <rect x="252.5" y="20.2" width="13.5" height="2.2" fill="#1c3f56" stroke="#38bdf8" stroke-width="0.8"/>
+      <ellipse cx="259.2" cy="18.5" rx="3.2" ry="1.5" fill="#0e2432" stroke="#ff5a36" stroke-width="0.75"/>
+      <!-- 舰桥前阶：前部 Mk 37 副炮火控导演仪 + Mk 25 碟形雷达 (X=267..274, Y=26..33) -->
+      <rect x="267.5" y="29.0" width="5.2" height="4.0" fill="#163244" stroke="#d4e3e6" stroke-width="0.75"/>
+      <circle cx="270.1" cy="27.2" r="1.7" fill="#0b1a24" stroke="#38bdf8" stroke-width="0.65"/>
+
+      <!-- 前格栅主桅与顶置 AN/SPS-49 远程对空搜索雷达 + SPS-67 对海雷达 (X=238..252, Y=6..33) -->
+      <polygon points="241,33.0 244,9.5 247,9.5 250,33.0" fill="none" stroke="#d4e3e6" stroke-width="0.95"/>
+      <line x1="242" y1="25" x2="249" y2="21" stroke="#5f7c84" stroke-width="0.6"/>
+      <line x1="243" y1="21" x2="248" y2="16" stroke="#5f7c84" stroke-width="0.6"/>
+      <line x1="243.5" y1="16" x2="247.5" y2="11" stroke="#5f7c84" stroke-width="0.6"/>
+      <!-- 桅顶 AN/SPS-49 远程对空搜索雷达大抛物面天线 + 前伸横桁 AN/SPS-67 对海雷达 -->
+      <polygon points="241.5,9.5 248.5,8.0 248.5,12.2 241.5,11.2" fill="#18364a" stroke="#ff5a36" stroke-width="0.9"/>
+      <line x1="245.5" y1="9.5" x2="245.5" y2="4.2" stroke="#38bdf8" stroke-width="0.85"/>
+      <line x1="245" y1="15.0" x2="253" y2="15.0" stroke="#d4e3e6" stroke-width="0.8"/>
+      <rect x="250.5" y="13.2" width="4.2" height="1.6" fill="#38bdf8"/>
+
+      <!-- 1号高大装甲烟囱 (Forward Funnel · X=217..236, Y=23..52, 带黑色斜烟罩与侧面排烟管) -->
+      <polygon points="218,52.0 220,24.5 234,26.0 236,52.0" fill="#122836" stroke="#d4e3e6" stroke-width="1.1"/>
+      <polygon points="220,24.5 234,26.0 234,29.5 219.6,28.2" fill="#04080b" stroke="#38bdf8" stroke-width="0.8"/>
+      <line x1="224" y1="29" x2="223" y2="51" stroke="#5f7c84" stroke-width="0.65"/>
+      <line x1="230" y1="29.5" x2="229" y2="51" stroke="#38bdf8" stroke-width="0.6"/>
+
+      <!-- 2号高大装甲烟囱与后置桁架桅 (Aft Funnel · X=168..185, Y=26..48) -->
+      <polygon points="169,48.0 171,27.0 183,28.5 185,48.0" fill="#122836" stroke="#d4e3e6" stroke-width="1.05"/>
+      <polygon points="171,27.0 183,28.5 183,31.8 170.6,30.5" fill="#04080b" stroke="#38bdf8" stroke-width="0.8"/>
+      <line x1="176" y1="31.5" x2="175" y2="48" stroke="#5f7c84" stroke-width="0.6"/>
+      <!-- 后烟囱后缘副桅与盘状 TACAN/通信天线 -->
+      <line x1="168" y1="45" x2="165" y2="23.5" stroke="#d4e3e6" stroke-width="0.85"/>
+      <line x1="162" y1="25" x2="169" y2="25" stroke="#38bdf8" stroke-width="0.75"/>
+
+      <!-- 后部塔楼、后置 Mk 38 主炮导演仪与后置 Mk 37 副炮导演仪 (X=132..164, Y=25..53) -->
+      <polygon points="132,53.0 135,41.5 164,41.5 166,53.0" fill="#102432" stroke="#d4e3e6" stroke-width="0.95"/>
+      <!-- 后部高耸桅楼与第二座 Mk 38 主炮导演仪 -->
+      <rect x="147" y="31.5" width="7.5" height="10.0" fill="#142c3c" stroke="#d4e3e6" stroke-width="0.85"/>
+      <rect x="144" y="29.5" width="13.5" height="2.2" fill="#1c3f56" stroke="#38bdf8" stroke-width="0.8"/>
+      <ellipse cx="150.8" cy="27.8" rx="3.0" ry="1.4" fill="#0e2432" stroke="#ff5a36" stroke-width="0.75"/>
+      <!-- 后部 Mk 37 副炮导演仪 -->
+      <rect x="136" y="37.2" width="5.5" height="4.3" fill="#163244" stroke="#d4e3e6" stroke-width="0.75"/>
+      <circle cx="138.8" cy="35.4" r="1.6" fill="#0b1a24" stroke="#38bdf8" stroke-width="0.65"/>
+
+      <!-- ==================== 5. 1986 现代化改装标志性武备：8×4 战斧 ABL + 4×4 捕鲸叉 + 4×密集阵 + 6×2 127mm 副炮 ==================== -->
+      <!-- 03/05 两层高架导弹甲板基座 (Elevated Missile Decks · X=150..217) -->
+      <rect x="185" y="47.5" width="33" height="4.5" fill="#0f2330" stroke="#38bdf8" stroke-width="0.85"/>
+      <rect x="154" y="43.5" width="32" height="4.5" fill="#0f2330" stroke="#38bdf8" stroke-width="0.85"/>
+
+      <!-- 8座四联装 Mk 143「战斧」(BGM-109 Tomahawk) 装甲箱式发射器 (ABL · 单侧可见4座，全舰左右共8座 · 高亮 #38bdf8) -->
+      <g id="tomahawk-abl-array">
+        <!-- 前烟囱与后烟囱之间 03 甲板：前 2 座 (左右共 4 座) Mk 143 ABL -->
+        <rect x="202" y="42.8" width="11.5" height="4.6" fill="#143246" stroke="#38bdf8" stroke-width="1.05"/>
+        <line x1="202" y1="45.1" x2="213.5" y2="45.1" stroke="#d4e3e6" stroke-width="0.55"/>
+        <rect x="187" y="42.8" width="11.5" height="4.6" fill="#143246" stroke="#38bdf8" stroke-width="1.05"/>
+        <line x1="187" y1="45.1" x2="198.5" y2="45.1" stroke="#d4e3e6" stroke-width="0.55"/>
+        <!-- 后烟囱两侧及后方 05 高架甲板：后 2 座 (左右共 4 座) Mk 143 ABL -->
+        <rect x="169" y="38.8" width="11.5" height="4.6" fill="#143246" stroke="#38bdf8" stroke-width="1.05"/>
+        <line x1="169" y1="41.1" x2="180.5" y2="41.1" stroke="#d4e3e6" stroke-width="0.55"/>
+        <rect x="155" y="38.8" width="11.5" height="4.6" fill="#143246" stroke="#38bdf8" stroke-width="1.05"/>
+        <line x1="155" y1="41.1" x2="166.5" y2="41.1" stroke="#d4e3e6" stroke-width="0.55"/>
+        <!-- 战斧 ABL 引线标注 -->
+        <line x1="192.5" y1="42.8" x2="192.5" y2="33.5" stroke="#38bdf8" stroke-width="0.65" stroke-dasharray="1.5 1"/>
+        <text x="200" y="32.2" text-anchor="middle" class="mono" font-size="3.2" fill="#38bdf8" font-weight="bold">8×4 TOMAHAWK</text>
+      </g>
+
+      <!-- 4座四联装 RGM-84「捕鲸叉」(Harpoon) 反舰导弹倾斜发射筒 (1号烟囱旁 · 高亮 #ff5a36) -->
+      <g id="harpoon-canisters">
+        <polygon points="215,51.2 225,46.8 226.5,50.0 216.5,54.2" fill="#261216" stroke="#ff5a36" stroke-width="1.0"/>
+        <line x1="215.8" y1="52.6" x2="225.8" y2="48.4" stroke="#eab308" stroke-width="0.6"/>
+        <polygon points="227,51.2 237,46.8 238.5,50.0 228.5,54.2" fill="#261216" stroke="#ff5a36" stroke-width="1.0"/>
+        <line x1="227.8" y1="52.6" x2="237.8" y2="48.4" stroke="#eab308" stroke-width="0.6"/>
+        <text x="201" y="37.2" text-anchor="middle" class="mono" font-size="3.1" fill="#ff5a36" font-weight="bold">4×4 HARPOON</text>
+      </g>
+
+      <!-- 4座 Mk 15「密集阵」(Phalanx CIWS · 标志性白色 R2-D2 雷达罩 · 前舰桥2座 + 后烟囱后2座) -->
+      <g id="phalanx-ciws">
+        <!-- 前舰桥两侧高台 Mk 15 CIWS -->
+        <rect x="260.5" y="30.2" width="3.6" height="2.8" fill="#163244" stroke="#38bdf8" stroke-width="0.6"/>
+        <path d="M 261.0 30.2 V 27.6 A 1.3 1.3 0 0 1 263.6 27.6 V 30.2 Z" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.55"/>
+        <!-- 后烟囱后方两侧高台 Mk 15 CIWS -->
+        <rect x="142.5" y="38.6" width="3.6" height="2.8" fill="#163244" stroke="#38bdf8" stroke-width="0.6"/>
+        <path d="M 143.0 38.6 V 36.0 A 1.3 1.3 0 0 1 145.6 36.0 V 38.6 Z" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.55"/>
+      </g>
+
+      <!-- 单侧可见 3 座（全舰共 6 座）Mk 28 双联装 127mm/38 (5英寸) 高平两用副炮塔 (X=162..244) -->
+      <g id="secondary-5inch-turrets">
+        <!-- 前右舷 127mm 双联副炮塔 -->
+        <polygon points="233,56.5 234.5,52.6 242,52.6 243.5,56.5" fill="#163244" stroke="#d4e3e6" stroke-width="0.9"/>
+        <line x1="242.5" y1="53.8" x2="251.5" y2="51.2" stroke="#d4e3e6" stroke-width="0.9"/>
+        <line x1="242.5" y1="54.8" x2="251.5" y2="52.4" stroke="#38bdf8" stroke-width="0.75"/>
+        <!-- 中右舷高置 127mm 双联副炮塔 -->
+        <polygon points="196,53.2 197.5,49.3 205,49.3 206.5,53.2" fill="#163244" stroke="#d4e3e6" stroke-width="0.9"/>
+        <line x1="205.5" y1="50.5" x2="214.5" y2="47.9" stroke="#d4e3e6" stroke-width="0.9"/>
+        <line x1="205.5" y1="51.5" x2="214.5" y2="49.1" stroke="#38bdf8" stroke-width="0.75"/>
+        <!-- 后右舷 127mm 双联副炮塔 -->
+        <polygon points="158,56.8 159.5,52.9 167,52.9 168.5,56.8" fill="#163244" stroke="#d4e3e6" stroke-width="0.9"/>
+        <line x1="158.5" y1="54.1" x2="149.5" y2="51.5" stroke="#d4e3e6" stroke-width="0.9"/>
+        <line x1="158.5" y1="55.1" x2="149.5" y2="52.7" stroke="#38bdf8" stroke-width="0.75"/>
+      </g>
+
+      <!-- ==================== 6. 舰尾 SH-60B「海鹰」直升机停机坪与 RQ-2 先锋无人机作业区 (X=16..62) ==================== -->
+      <g transform="translate(22, 54.2)">
+        <path d="M 4 5.2 L 15 6.8 L 31 6.8 C 35 6.8, 37 8.8, 33.5 9.8 L 15 9.8 L 4 7.0 Z" fill="#142c3c" stroke="#d4e3e6" stroke-width="0.8"/>
+        <polygon points="29,7.2 33.5,7.8 32.8,9.0 29,9.0" fill="#38bdf8"/>
+        <line x1="23" y1="6.8" x2="23" y2="4.6" stroke="#d4e3e6" stroke-width="0.85"/>
+        <line x1="9" y1="4.6" x2="37" y2="4.6" stroke="#38bdf8" stroke-width="0.85"/>
+        <circle cx="3.8" cy="5.2" r="1.8" fill="none" stroke="#d4e3e6" stroke-width="0.65"/>
+        <circle cx="18" cy="10.2" r="0.9" fill="#050a0e" stroke="#d4e3e6" stroke-width="0.5"/>
+        <circle cx="30" cy="10.2" r="0.9" fill="#050a0e" stroke="#d4e3e6" stroke-width="0.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

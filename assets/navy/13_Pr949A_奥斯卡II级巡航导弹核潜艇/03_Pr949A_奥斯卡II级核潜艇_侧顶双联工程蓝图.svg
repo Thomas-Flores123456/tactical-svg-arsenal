@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 580" width="1320" height="580" data-asset-id="naval.oscar949a.master.sheet" style="background:#080a0b;">
+  <defs>
+    <style>
+      svg { fill: none; stroke-linecap: butt; }
+      .s-dim { stroke: #2c3b40; stroke-width: 1; }
+      .s-line { stroke: #5f7c84; stroke-width: 1; }
+      .s-hi { stroke: #d4e3e6; stroke-width: 1.2; }
+      .s-alert { stroke: #ff5a36; stroke-width: 1.4; }
+      .s-focus { stroke: #38bdf8; stroke-width: 1.4; }
+      .f-dim { fill: #2c3b40; stroke: none; }
+      .f-line { fill: #5f7c84; stroke: none; }
+      .f-hi { fill: #d4e3e6; stroke: none; }
+      .f-alert { fill: #ff5a36; stroke: none; }
+      .f-panel { fill: #0c1113; }
+      text { font-family: "Rajdhani", "Bahnschrift", "DIN Alternate", "Microsoft YaHei", sans-serif; letter-spacing: 0.12em; }
+      text:not([stroke]) { stroke: none; }
+      text:not([fill]) { fill: #cfdde0; }
+      text:not([font-size]):not(.cap):not(.big) { font-size: 10px; }
+      text.cap { letter-spacing: 0.2em; text-transform: uppercase; }
+      text.cap:not([fill]) { fill: #8aa1a7; }
+      text.cap:not([font-size]) { font-size: 8.5px; }
+      text.mono { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; letter-spacing: 0.06em; }
+      text.big { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; font-weight: 600; letter-spacing: 0.08em; }
+      text.big:not([font-size]) { font-size: 18px; }
+      text.big:not([fill]) { fill: #d4e3e6; }
+      text.alert { fill: #ff5a36; }
+    </style>
+    <pattern id="cad-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#10181c" stroke-width="1"/>
+      <circle cx="20" cy="20" r="0.8" fill="#1b262b"/>
+    </pattern>
+    <pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#ff5a36" stroke-width="1.2" stroke-opacity="0.35"/>
+    </pattern>
+  </defs>
+
+  <!-- 1. 工程蓝图暗色底板与坐标网格图层 -->
+  <g id="layer-backdrop">
+    <rect x="0" y="0" width="1320" height="580" fill="#080a0b"/>
+    <rect x="20" y="20" width="1280" height="540" fill="url(#cad-grid)" stroke="#2c3b40" stroke-width="1"/>
+    <path d="M 20 36 V 20 H 36 M 1284 20 H 1300 V 36 M 20 544 V 560 H 36 M 1284 560 H 1300 V 544" fill="none" stroke="#38bdf8" stroke-width="1.5"/>
+    <line x1="20" y1="54" x2="1300" y2="54" stroke="#2c3b40" stroke-width="1"/>
+    <line x1="20" y1="534" x2="1300" y2="534" stroke="#2c3b40" stroke-width="1"/>
+    <text x="34" y="42" class="p mono" fill="#38bdf8" font-size="11" font-weight="bold">PROJECT 949A ANTEY / OSCAR-II SSGN · MASTER SUBMARINE &amp; 24×P-700 GRANIT SYSTEM BLUEPRINT</text>
+    <text x="1286" y="42" text-anchor="end" class="p cap" fill="#d4e3e6" font-size="10.5">949A型「安泰/奥斯卡II」级重型巡航导弹核潜艇 · 侧视+顶视双联工程总图 (库尔斯克/奥廖尔号)</text>
+    <text x="34" y="551" class="p mono" fill="#8aa1a7" font-size="9.5">24,000T SUBMERGED · 154.0M×18.2M · 24×P-700 GRANIT (SS-N-19) · 2×OK-650B PWR (380MWt) · TSKB MT RUBIN · REF: UID-66</text>
+    <text x="1286" y="551" text-anchor="end" class="p mono" fill="#5f7c84" font-size="9.5">POSEIDON NAVAL CAD ASSET · TRUE 1:1 ASPECT (8.46:1)</text>
+  </g>
+
+  <!-- 2. 舰艇核心 CAD 矢量图层 (上半框侧视立面内透视 + 下半框顶视全甲板 X 光透视 + 右侧工程规格参数栏) -->
+  <g id="layer-ship-cad">
+    <!-- 上半框：01 侧视立面与 40° 花岗岩发射筒/核堆内透视 -->
+    <rect x="44" y="72" width="1232" height="216" fill="#091116" fill-opacity="0.45" stroke="#2c3b40"/>
+    <text font-size="9.5" x="58" y="92" class="p mono" fill="#38bdf8">01 / STARBOARD PROFILE &amp; 40° SLANTED P-700 GRANIT TUBES / OK-650B REACTOR CUTAWAY</text>
+    <text x="975" y="92" text-anchor="end" class="p mono" fill="#5f7c84" font-size="9">SCALE 1:1 · BOW RIGHT (+X)</text>
+    <g transform="translate(84.6,98.0) scale(2.044,2.044)">
+      
+      
+      <!-- 0. 顶部标尺与出水齐射 P-700「花岗岩」(SS-N-19 Shipwreck) 巡航导弹轨迹剪影 -->
+      <g id="salvo-p700-cutaway">
+        <!-- 水面基准虚线 -->
+        <line x1="12" y1="34.5" x2="414" y2="34.5" stroke="#2c3b40" stroke-width="0.6" stroke-dasharray="4 3"/>
+        <text x="16" y="33.0" class="mono" font-size="3.2" fill="#5f7c84">SEA SURFACEDATUM / PERISCOPE DEPTH LAUNCH ENVELOPE</text>
+
+        <!-- 导弹发射出水轨迹弧线 (40°倾角跃出水面转掠海巡航) -->
+        <path d="M 284 43.0 Q 306 20.0 342 12.5" fill="none" stroke="#ff5a36" stroke-width="0.8" stroke-dasharray="2.5 1.8"/>
+        <path d="M 302 43.0 Q 324 23.0 368 18.0" fill="none" stroke="#38bdf8" stroke-width="0.7" stroke-dasharray="2 2"/>
+
+        <!-- 1号出水齐射 P-700「花岗岩」(3M45) 超音速反舰导弹剪影 (巡航展开态) -->
+        <g transform="translate(348.0, 11.2) rotate(-8)">
+          <!-- 尾助推火焰 -->
+          <polygon points="-14,0 -6,-1.6 -6,1.6" fill="#ff5a36" fill-opacity="0.75"/>
+          <!-- 圆柱弹体与环形进气道头锥 -->
+          <path d="M -6 -1.5 L 14 -1.5 L 19 -0.6 L 22 0 L 19 0.6 L 14 1.5 L -6 1.5 Z" fill="#180d0e" stroke="#ff5a36" stroke-width="0.85"/>
+          <!-- 中心激波锥 -->
+          <polygon points="19,-0.5 24,0 19,0.5" fill="#eab308"/>
+          <!-- 后掠主翼与尾翼 -->
+          <polygon points="1,-1.5 5,-5.8 9,-5.8 7,-1.5" fill="#0d222e" stroke="#d4e3e6" stroke-width="0.6"/>
+          <polygon points="2,1.5 6,4.8 9,4.8 7,1.5" fill="#0d222e" stroke="#d4e3e6" stroke-width="0.6"/>
+          <polygon points="-5,-1.5 -3,-3.8 -1,-3.8 -2,-1.5" fill="#0d222e" stroke="#38bdf8" stroke-width="0.55"/>
+        </g>
+
+        <!-- 2号出水跃升 P-700「花岗岩」导弹剪影 (助推段 22° 仰角) -->
+        <g transform="translate(318.0, 21.5) rotate(-24)">
+          <polygon points="-11,0 -5,-1.4 -5,1.4" fill="#eab308" fill-opacity="0.8"/>
+          <path d="M -5 -1.3 L 11 -1.3 L 16 -0.5 L 18.5 0 L 16 0.5 L 11 1.3 L -5 1.3 Z" fill="#0d222e" stroke="#38bdf8" stroke-width="0.8"/>
+          <polygon points="1,-1.3 4,-4.6 7.5,-4.6 6,-1.3" fill="#0b1d28" stroke="#d4e3e6" stroke-width="0.55"/>
+        </g>
+
+        <!-- 齐射导弹工程标注 -->
+        <text x="248" y="3.2" class="mono" font-size="2.6" fill="#ff5a36" font-weight="bold">P-700 GRANIT (SS-N-19) SALVO</text>
+        <text x="248" y="6.6" class="mono" font-size="2.4" fill="#eab308">24×SM-225 · MACH 2.5 · 625KM</text>
+      </g>
+
+      <!-- 1. 尾部高大梯形上垂直尾翼 + 顶置「整合」(Pelamida) 拖曳线列声呐导流荚舱 (Left Stern X=8..54) -->
+      <polygon points="16,49 20,16.5 35,16.5 46,47" fill="#0a1822" stroke="#d4e3e6" stroke-width="1.2"/>
+      <line x1="28" y1="16.5" x2="33" y2="47.5" stroke="#4a6368" stroke-width="0.75"/>
+      <line x1="33" y1="20" x2="33" y2="47" stroke="#38bdf8" stroke-width="0.65" stroke-dasharray="2 1.5"/>
+      <!-- 垂尾顶端标志性纺锤形拖曳线列声呐荚舱 (Towed Array Sonar Pod) -->
+      <path d="M 13.5 16.0 C 17 14.0 34 14.2 39.5 16.0 C 34 17.8 17 17.8 13.5 16.0 Z" fill="#0d222e" stroke="#38bdf8" stroke-width="0.95"/>
+      <circle cx="14.2" cy="16.0" r="0.9" fill="#ff5a36"/>
+
+      <!-- 下垂直尾舵与尾水平稳定翼 -->
+      <polygon points="19,61 37,63 34,81 20,78.5" fill="#0a1822" stroke="#d4e3e6" stroke-width="1.15"/>
+      <line x1="28" y1="62" x2="27" y2="79.5" stroke="#4a6368" stroke-width="0.7"/>
+      <!-- 双轴推进尾流轴套与水平尾翼翼面 -->
+      <polygon points="11,51.5 22,49.5 22,60.5 11,58.5" fill="#0d222e" stroke="#38bdf8" stroke-width="1.0"/>
+      <ellipse cx="32" cy="55.5" rx="19" ry="1.9" fill="#09151e" stroke="#38bdf8" stroke-width="0.9"/>
+      <rect x="15" y="54.2" width="8" height="2.6" fill="#132c3a" stroke="#d4e3e6" stroke-width="0.65"/>
+
+      <!-- 双轴七叶大侧斜低噪螺旋桨 (Twin 7-Blade Skewed Propellers · #eab308 高亮) -->
+      <g stroke="#eab308" stroke-width="0.95" fill="#eab308" fill-opacity="0.28">
+        <polygon points="8.2,55.0 11.2,52.8 11.2,57.2"/>
+        <path d="M 9.5 55.0 C 7.2 50.5 8.5 47.2 11.0 48.0 C 10.5 50.8 10.2 53.0 9.5 55.0 Z"/>
+        <path d="M 9.5 55.0 C 7.2 59.5 8.5 62.8 11.0 62.0 C 10.5 59.2 10.2 57.0 9.5 55.0 Z"/>
+        <path d="M 8.6 53.2 C 6.2 51.0 6.8 49.0 8.8 49.8"/>
+        <path d="M 8.6 56.8 C 6.2 59.0 6.8 61.0 8.8 60.2"/>
+        <circle cx="9.6" cy="55.0" r="1.1" fill="#eab308" stroke="#080a0b" stroke-width="0.4"/>
+      </g>
+
+      <!-- 2. 主艇体：饱满宽扁双壳体外廓 + 平直长脊背 + 浑圆鲸型艇艏 (LOA 154.0m · X=14..416, Y=41..71.8) -->
+      <path d="M 15 52.0 L 72 41.2 L 368 41.0 C 398 41.0 416 47.5 416 56.4 C 416 65.5 398 71.8 368 71.8 L 96 71.8 C 62 71.8 34 65.0 15 58.5 Z"
+            fill="#08141c" stroke="#d4e3e6" stroke-width="1.35"/>
+
+      <!-- 艇体纵向吃水线、双壳体分界线与底部主压载水舱排水孔群 -->
+      <line x1="36" y1="49.2" x2="413" y2="49.2" stroke="#4a6368" stroke-width="0.7" stroke-dasharray="6 2"/>
+      <path d="M 66 64.5 L 354 64.5" fill="none" stroke="#2c3b40" stroke-width="0.75"/>
+      <g stroke="#4a6368" stroke-width="1.2" stroke-dasharray="2.2 1.6">
+        <line x1="78" y1="69.8" x2="104" y2="69.8"/>
+        <line x1="116" y1="69.8" x2="142" y2="69.8"/>
+        <line x1="154" y1="69.8" x2="176" y2="69.8"/>
+        <line x1="316" y1="69.8" x2="342" y2="69.8"/>
+        <line x1="350" y1="69.8" x2="372" y2="69.8"/>
+      </g>
+      <!-- 尾部侧向流体稳定鳍 -->
+      <polygon points="64,62.5 92,67.5 90,69.5 62,64.2" fill="#0d222e" stroke="#38bdf8" stroke-width="0.8"/>
+
+      <!-- 3. 内耐压壳体 (Ø8.5m Single Cylindrical Pressure Hull) 与 10 水密隔舱总师透视层 -->
+      <rect x="68" y="48.0" width="290" height="21.5" rx="3.5" fill="#061016" fill-opacity="0.55" stroke="#38bdf8" stroke-width="0.8" stroke-dasharray="5 2.5"/>
+      <g stroke="#2c3b40" stroke-width="0.65" stroke-dasharray="2 1.5">
+        <line x1="96" y1="48.0" x2="96" y2="69.5"/>
+        <line x1="112" y1="48.0" x2="112" y2="69.5"/>
+        <line x1="140" y1="48.0" x2="140" y2="69.5"/>
+        <line x1="168" y1="48.0" x2="168" y2="69.5"/>
+        <line x1="210" y1="48.0" x2="210" y2="69.5"/>
+        <line x1="254" y1="48.0" x2="254" y2="69.5"/>
+        <line x1="296" y1="48.0" x2="296" y2="69.5"/>
+        <line x1="328" y1="48.0" x2="328" y2="69.5"/>
+      </g>
+
+      <!-- 4. 后部双座 OK-650B 压水核反应堆舱 (2×190MWt) + 双蒸汽轮机齿轮箱与推进轴内透视 -->
+      <g id="reactor-propulsion-cutaway">
+        <!-- 1号与2号 OK-650B 压水核反应堆屏蔽舱 (X=114..166) -->
+        <rect x="114.5" y="50.2" width="23.5" height="17.2" rx="1.8" fill="#1a0f10" fill-opacity="0.65" stroke="#ff5a36" stroke-width="0.9"/>
+        <rect x="142.0" y="50.2" width="23.5" height="17.2" rx="1.8" fill="#1a0f10" fill-opacity="0.65" stroke="#ff5a36" stroke-width="0.9"/>
+        <!-- 反应堆堆芯活性区与控制棒驱动机构 -->
+        <circle cx="126.2" cy="59.5" r="4.8" fill="#2a1214" stroke="#ff5a36" stroke-width="0.75"/>
+        <circle cx="126.2" cy="59.5" r="2.2" fill="#ff5a36" fill-opacity="0.6"/>
+        <line x1="126.2" y1="50.5" x2="126.2" y2="54.7" stroke="#eab308" stroke-width="1.1"/>
+        <circle cx="153.7" cy="59.5" r="4.8" fill="#2a1214" stroke="#ff5a36" stroke-width="0.75"/>
+        <circle cx="153.7" cy="59.5" r="2.2" fill="#ff5a36" fill-opacity="0.6"/>
+        <line x1="153.7" y1="50.5" x2="153.7" y2="54.7" stroke="#eab308" stroke-width="1.1"/>
+        <!-- 主蒸汽管路与后部双座 OK-9 汽轮机舱 (X=72..110) -->
+        <polygon points="74,52.5 108,50.8 108,66.2 74,63.5" fill="#091a24" fill-opacity="0.6" stroke="#38bdf8" stroke-width="0.75" stroke-dasharray="3 1.5"/>
+        <line x1="16" y1="55.2" x2="114.5" y2="58.5" stroke="#eab308" stroke-width="0.75" stroke-dasharray="4 2"/>
+        <text x="115" y="66.2" class="mono" font-size="2.8" fill="#ff5a36">2×OK-650B PWR (380MWt)</text>
+      </g>
+
+      <!-- 5. 核心灵魂：艇体中部 6对(单侧12枚/全艇24枚) 40°前倾 P-700「花岗岩」SM-225 发射筒内透视 + 外壳大型矩形水密铰链盖板 -->
+      <g id="granit-slanted-tubes-cutaway">
+        
+        <g>
+          <polygon points="177.7,67.8 184.0,69.2 197.0,44.0 190.7,42.6"
+                   fill="#1a0f10" fill-opacity="0.58" stroke="#ff5a36" stroke-width="0.7" stroke-dasharray="2.4 1.2"/>
+          <line x1="181.2" y1="66.5" x2="192.4" y2="46.2" stroke="#ff5a36" stroke-width="1.35" stroke-opacity="0.85"/>
+          <polygon points="191.0,45.6 193.6,46.6 193.8,43.6" fill="#ff5a36"/>
+          <line x1="185.4" y1="59.0" x2="189.7" y2="57.2" stroke="#38bdf8" stroke-width="0.55" stroke-dasharray="1.5 1"/>
+        </g>
+        <g>
+          <polygon points="186.5,67.8 192.8,69.2 205.8,44.0 199.5,42.6"
+                   fill="#1a0f10" fill-opacity="0.58" stroke="#ff5a36" stroke-width="0.7" stroke-dasharray="2.4 1.2"/>
+          <line x1="190.0" y1="66.5" x2="201.2" y2="46.2" stroke="#ff5a36" stroke-width="1.35" stroke-opacity="0.85"/>
+          <polygon points="199.8,45.6 202.4,46.6 202.6,43.6" fill="#ff5a36"/>
+          <line x1="194.2" y1="59.0" x2="198.5" y2="57.2" stroke="#38bdf8" stroke-width="0.55" stroke-dasharray="1.5 1"/>
+        </g>
+        <g>
+          <polygon points="199.2,67.8 205.5,69.2 218.5,44.0 212.2,42.6"
+                   fill="#1a0f10" fill-opacity="0.58" stroke="#ff5a36" stroke-width="0.7" stroke-dasharray="2.4 1.2"/>
+          <line x1="202.7" y1="66.5" x2="213.9" y2="46.2" stroke="#ff5a36" stroke-width="1.35" stroke-opacity="0.85"/>
+          <polygon points="212.5,45.6 215.1,46.6 215.3,43.6" fill="#ff5a36"/>
+          <line x1="206.9" y1="59.0" x2="211.2" y2="57.2" stroke="#38bdf8" stroke-width="0.55" stroke-dasharray="1.5 1"/>
+        </g>
+        <g>
+          <polygon points="208.0,67.8 214.3,69.2 227.3,44.0 221.0,42.6"
+                   fill="#1a0f10" fill-opacity="0.58" stroke="#ff5a36" stroke-width="0.7" stroke-dasharray="2.4 1.2"/>
+          <line x1="211.5" y1="66.5" x2="222.7" y2="46.2" stroke="#ff5a36" stroke-width="1.35" stroke-opacity="0.85"/>
+          <polygon points="221.3,45.6 223.9,46.6 224.1,43.6" fill="#ff5a36"/>
+          <line x1="215.7" y1="59.0" x2="220.0" y2="57.2" stroke="#38bdf8" stroke-width="0.55" stroke-dasharray="1.5 1"/>
+        </g>
+        <g>
+          <polygon points="220.7,67.8 227.0,69.2 240.0,44.0 233.7,42.6"
+                   fill="#1a0f10" fill-opacity="0.58" stroke="#ff5a36" stroke-width="0.7" stroke-dasharray="2.4 1.2"/>
+          <line x1="224.2" y1="66.5" x2="235.4" y2="46.2" stroke="#ff5a36" stroke-width="1.35" stroke-opacity="0.85"/>
+          <polygon points="234.0,45.6 236.6,46.6 236.8,43.6" fill="#ff5a36"/>
+          <line x1="228.4" y1="59.0" x2="232.7" y2="57.2" stroke="#38bdf8" stroke-width="0.55" stroke-dasharray="1.5 1"/>
+        </g>
+        <g>
+          <polygon points="229.5,67.8 235.8,69.2 248.8,44.0 242.5,42.6"
+                   fill="#1a0f10" fill-opacity="0.58" stroke="#ff5a36" stroke-width="0.7" stroke-dasharray="2.4 1.2"/>
+          <line x1="233.0" y1="66.5" x2="244.2" y2="46.2" stroke="#ff5a36" stroke-width="1.35" stroke-opacity="0.85"/>
+          <polygon points="242.8,45.6 245.4,46.6 245.6,43.6" fill="#ff5a36"/>
+          <line x1="237.2" y1="59.0" x2="241.5" y2="57.2" stroke="#38bdf8" stroke-width="0.55" stroke-dasharray="1.5 1"/>
+        </g>
+        <g>
+          <polygon points="242.2,67.8 248.5,69.2 261.5,44.0 255.2,42.6"
+                   fill="#1a0f10" fill-opacity="0.58" stroke="#ff5a36" stroke-width="0.7" stroke-dasharray="2.4 1.2"/>
+          <line x1="245.7" y1="66.5" x2="256.9" y2="46.2" stroke="#ff5a36" stroke-width="1.35" stroke-opacity="0.85"/>
+          <polygon points="255.5,45.6 258.1,46.6 258.3,43.6" fill="#ff5a36"/>
+          <line x1="249.9" y1="59.0" x2="254.2" y2="57.2" stroke="#38bdf8" stroke-width="0.55" stroke-dasharray="1.5 1"/>
+        </g>
+        <g>
+          <polygon points="251.0,67.8 257.3,69.2 270.3,44.0 264.0,42.6"
+                   fill="#1a0f10" fill-opacity="0.58" stroke="#ff5a36" stroke-width="0.7" stroke-dasharray="2.4 1.2"/>
+          <line x1="254.5" y1="66.5" x2="265.7" y2="46.2" stroke="#ff5a36" stroke-width="1.35" stroke-opacity="0.85"/>
+          <polygon points="264.3,45.6 266.9,46.6 267.1,43.6" fill="#ff5a36"/>
+          <line x1="258.7" y1="59.0" x2="263.0" y2="57.2" stroke="#38bdf8" stroke-width="0.55" stroke-dasharray="1.5 1"/>
+        </g>
+        <g>
+          <polygon points="263.7,67.8 270.0,69.2 283.0,44.0 276.7,42.6"
+                   fill="#1a0f10" fill-opacity="0.58" stroke="#ff5a36" stroke-width="0.7" stroke-dasharray="2.4 1.2"/>
+          <line x1="267.2" y1="66.5" x2="278.4" y2="46.2" stroke="#ff5a36" stroke-width="1.35" stroke-opacity="0.85"/>
+          <polygon points="277.0,45.6 279.6,46.6 279.8,43.6" fill="#ff5a36"/>
+          <line x1="271.4" y1="59.0" x2="275.7" y2="57.2" stroke="#38bdf8" stroke-width="0.55" stroke-dasharray="1.5 1"/>
+        </g>
+        <g>
+          <polygon points="272.5,67.8 278.8,69.2 291.8,44.0 285.5,42.6"
+                   fill="#1a0f10" fill-opacity="0.58" stroke="#ff5a36" stroke-width="0.7" stroke-dasharray="2.4 1.2"/>
+          <line x1="276.0" y1="66.5" x2="287.2" y2="46.2" stroke="#ff5a36" stroke-width="1.35" stroke-opacity="0.85"/>
+          <polygon points="285.8,45.6 288.4,46.6 288.6,43.6" fill="#ff5a36"/>
+          <line x1="280.2" y1="59.0" x2="284.5" y2="57.2" stroke="#38bdf8" stroke-width="0.55" stroke-dasharray="1.5 1"/>
+        </g>
+        <g>
+          <polygon points="285.2,67.8 291.5,69.2 304.5,44.0 298.2,42.6"
+                   fill="#1a0f10" fill-opacity="0.58" stroke="#ff5a36" stroke-width="0.7" stroke-dasharray="2.4 1.2"/>
+          <line x1="288.7" y1="66.5" x2="299.9" y2="46.2" stroke="#ff5a36" stroke-width="1.35" stroke-opacity="0.85"/>
+          <polygon points="298.5,45.6 301.1,46.6 301.3,43.6" fill="#ff5a36"/>
+          <line x1="292.9" y1="59.0" x2="297.2" y2="57.2" stroke="#38bdf8" stroke-width="0.55" stroke-dasharray="1.5 1"/>
+        </g>
+        <g>
+          <polygon points="294.0,67.8 300.3,69.2 313.3,44.0 307.0,42.6"
+                   fill="#1a0f10" fill-opacity="0.58" stroke="#ff5a36" stroke-width="0.7" stroke-dasharray="2.4 1.2"/>
+          <line x1="297.5" y1="66.5" x2="308.7" y2="46.2" stroke="#ff5a36" stroke-width="1.35" stroke-opacity="0.85"/>
+          <polygon points="307.3,45.6 309.9,46.6 310.1,43.6" fill="#ff5a36"/>
+          <line x1="301.7" y1="59.0" x2="306.0" y2="57.2" stroke="#38bdf8" stroke-width="0.55" stroke-dasharray="1.5 1"/>
+        </g>
+      </g>
+      <g id="granit-outer-hatches">
+        
+      <g>
+        <rect x="182.0" y="41.8" width="18.2" height="5.4" rx="0.6" fill="#0b1d28" fill-opacity="0.82" stroke="#38bdf8" stroke-width="0.75"/>
+        <line x1="191.1" y1="41.8" x2="191.1" y2="47.2" stroke="#2c3b40" stroke-width="0.6"/>
+        <rect x="184.0" y="40.9" width="4.2" height="0.9" fill="#132c3a" stroke="#d4e3e6" stroke-width="0.5"/>
+        <rect x="194.0" y="40.9" width="4.2" height="0.9" fill="#132c3a" stroke="#d4e3e6" stroke-width="0.5"/>
+        <text x="186.5" y="45.6" class="mono" font-size="3.1" fill="#8aa1a7">01</text>
+        <text x="195.6" y="45.6" class="mono" font-size="3.1" fill="#8aa1a7">02</text>
+      </g>
+      <g>
+        <rect x="203.5" y="41.8" width="18.2" height="5.4" rx="0.6" fill="#0b1d28" fill-opacity="0.82" stroke="#38bdf8" stroke-width="0.75"/>
+        <line x1="212.6" y1="41.8" x2="212.6" y2="47.2" stroke="#2c3b40" stroke-width="0.6"/>
+        <rect x="205.5" y="40.9" width="4.2" height="0.9" fill="#132c3a" stroke="#d4e3e6" stroke-width="0.5"/>
+        <rect x="215.5" y="40.9" width="4.2" height="0.9" fill="#132c3a" stroke="#d4e3e6" stroke-width="0.5"/>
+        <text x="208.0" y="45.6" class="mono" font-size="3.1" fill="#8aa1a7">03</text>
+        <text x="217.1" y="45.6" class="mono" font-size="3.1" fill="#8aa1a7">04</text>
+      </g>
+      <g>
+        <rect x="225.0" y="41.8" width="18.2" height="5.4" rx="0.6" fill="#0b1d28" fill-opacity="0.82" stroke="#38bdf8" stroke-width="0.75"/>
+        <line x1="234.1" y1="41.8" x2="234.1" y2="47.2" stroke="#2c3b40" stroke-width="0.6"/>
+        <rect x="227.0" y="40.9" width="4.2" height="0.9" fill="#132c3a" stroke="#d4e3e6" stroke-width="0.5"/>
+        <rect x="237.0" y="40.9" width="4.2" height="0.9" fill="#132c3a" stroke="#d4e3e6" stroke-width="0.5"/>
+        <text x="229.5" y="45.6" class="mono" font-size="3.1" fill="#8aa1a7">05</text>
+        <text x="238.6" y="45.6" class="mono" font-size="3.1" fill="#8aa1a7">06</text>
+      </g>
+      <g>
+        <rect x="246.5" y="41.8" width="18.2" height="5.4" rx="0.6" fill="#0b1d28" fill-opacity="0.82" stroke="#38bdf8" stroke-width="0.75"/>
+        <line x1="255.6" y1="41.8" x2="255.6" y2="47.2" stroke="#2c3b40" stroke-width="0.6"/>
+        <rect x="248.5" y="40.9" width="4.2" height="0.9" fill="#132c3a" stroke="#d4e3e6" stroke-width="0.5"/>
+        <rect x="258.5" y="40.9" width="4.2" height="0.9" fill="#132c3a" stroke="#d4e3e6" stroke-width="0.5"/>
+        <text x="251.0" y="45.6" class="mono" font-size="3.1" fill="#8aa1a7">07</text>
+        <text x="260.1" y="45.6" class="mono" font-size="3.1" fill="#8aa1a7">08</text>
+      </g>
+      <g>
+        <rect x="268.0" y="41.8" width="18.2" height="5.4" rx="0.6" fill="#0b1d28" fill-opacity="0.82" stroke="#38bdf8" stroke-width="0.75"/>
+        <line x1="277.1" y1="41.8" x2="277.1" y2="47.2" stroke="#2c3b40" stroke-width="0.6"/>
+        <rect x="270.0" y="40.9" width="4.2" height="0.9" fill="#132c3a" stroke="#d4e3e6" stroke-width="0.5"/>
+        <rect x="280.0" y="40.9" width="4.2" height="0.9" fill="#132c3a" stroke="#d4e3e6" stroke-width="0.5"/>
+        <text x="272.5" y="45.6" class="mono" font-size="3.1" fill="#8aa1a7">09</text>
+        <text x="281.6" y="45.6" class="mono" font-size="3.1" fill="#8aa1a7">10</text>
+      </g>
+      <g>
+        <rect x="289.5" y="41.8" width="18.2" height="5.4" rx="0.6" fill="#0b1d28" fill-opacity="0.82" stroke="#38bdf8" stroke-width="0.75"/>
+        <line x1="298.6" y1="41.8" x2="298.6" y2="47.2" stroke="#2c3b40" stroke-width="0.6"/>
+        <rect x="291.5" y="40.9" width="4.2" height="0.9" fill="#132c3a" stroke="#d4e3e6" stroke-width="0.5"/>
+        <rect x="301.5" y="40.9" width="4.2" height="0.9" fill="#132c3a" stroke="#d4e3e6" stroke-width="0.5"/>
+        <text x="294.0" y="45.6" class="mono" font-size="3.1" fill="#8aa1a7">11</text>
+        <text x="303.1" y="45.6" class="mono" font-size="3.1" fill="#8aa1a7">12</text>
+      </g>
+      </g>
+
+      <!-- 6. 标志性超长流线型指挥围壳 (Long Streamlined Sail · X=212..302, Y=23.5..41.2) -->
+      <g id="long-streamlined-sail">
+        <!-- 围壳底座流线裙边与主壳体 -->
+        <path d="M 210 41.2 C 218 35.5 224 23.5 234 23.5 L 291 23.5 C 296 23.5 299.5 28.5 303 41.2 Z"
+              fill="#0b1a24" fill-opacity="0.88" stroke="#d4e3e6" stroke-width="1.25"/>
+        <!-- 围壳上半部加强装甲壳与前缘大倾角防冰导流线 -->
+        <path d="M 224 32.0 L 233 23.5 L 291 23.5 C 295 23.5 297.5 26.8 299.2 32.0 Z"
+              fill="#0e222e" stroke="#38bdf8" stroke-width="1.0"/>
+        <!-- 前缘防冰风挡观察窗 (Anti-Icing Bridge Windows) 与声呐环境传感器 -->
+        <polygon points="286.5,25.5 294.8,25.5 296.4,28.8 286.5,28.8" fill="#050d12" stroke="#d4e3e6" stroke-width="0.75"/>
+        <line x1="290.5" y1="25.5" x2="290.5" y2="28.8" stroke="#38bdf8" stroke-width="0.6"/>
+        <!-- 围壳中部 VSK 上浮救生漂浮舱 (Escape Pod) 侧面分界轮廓 -->
+        <rect x="252.0" y="24.2" width="16.5" height="9.5" rx="1.2" fill="none" stroke="#ff5a36" stroke-width="0.75" stroke-dasharray="2.5 1.2"/>
+        <circle cx="260.2" cy="28.8" r="1.8" fill="none" stroke="#ff5a36" stroke-width="0.65"/>
+        <!-- 围壳侧面登艇爬梯 -->
+        <line x1="278.5" y1="24.0" x2="278.5" y2="40.8" stroke="#d4e3e6" stroke-width="1.5" stroke-dasharray="1.0 1.6"/>
+
+        <!-- 围壳后部可上翻开启舱盖 + 大型「潘奇」(Punch Bowl / Korall-BN) 卫星目标指示接收天线罩 -->
+        <path d="M 228 23.5 L 222 18.2 L 235 18.2" fill="none" stroke="#38bdf8" stroke-width="0.85" stroke-dasharray="2 1"/>
+        <!-- 粗壮潘奇卫通球柱天线杆与雷达罩 -->
+        <rect x="236.5" y="13.5" width="4.2" height="10.0" fill="#0d222e" stroke="#d4e3e6" stroke-width="0.85"/>
+        <ellipse cx="238.6" cy="12.2" rx="3.8" ry="2.6" fill="#132c3a" stroke="#ff5a36" stroke-width="0.95"/>
+        <line x1="235.2" y1="12.2" x2="242.0" y2="12.2" stroke="#eab308" stroke-width="0.65"/>
+
+        <!-- 围壳顶部潜望镜、雷达与通信桅杆群 (Periscopes, Front Door Radar, Sintez Comms, ESM) -->
+        <g stroke="#d4e3e6" stroke-width="0.95">
+          <!-- 雷达桅杆 -->
+          <line x1="248" y1="23.5" x2="248" y2="9.5"/>
+          <rect x="245.8" y="7.5" width="4.4" height="2.4" rx="0.5" fill="#0d222e" stroke="#38bdf8" stroke-width="0.75"/>
+          <!-- 导航与攻击潜望镜 -->
+          <line x1="264" y1="23.5" x2="264" y2="6.5"/>
+          <polygon points="262.5,8.5 265.5,8.5 264,5.5" fill="#38bdf8" stroke="none"/>
+          <line x1="272" y1="23.5" x2="272" y2="4.8"/>
+          <circle cx="272" cy="4.8" r="1.4" fill="#0d222e" stroke="#38bdf8" stroke-width="0.75"/>
+          <!-- 前门/前灯 (Front Door) 目标指示天线与高频通信杆 -->
+          <line x1="281" y1="23.5" x2="281" y2="8.0"/>
+          <ellipse cx="281" cy="8.0" rx="2.2" ry="1.2" fill="#0d222e" stroke="#ff5a36" stroke-width="0.7"/>
+          <line x1="288" y1="23.5" x2="288" y2="11.0"/>
+        </g>
+        <text x="192" y="3.2" text-anchor="middle" class="mono" font-size="2.5" fill="#38bdf8">PUNCH BOWL SATCOM &amp; MASTS</text>
+      </g>
+
+      <!-- 7. 浑圆鲸型艇艏：MGK-500「鲨鱼鳃」大型球柱声呐罩 + 6具 533/650mm 鱼雷发射管舱门 + 可收放前水平舵 (X=350..416) -->
+      <g id="bow-sonar-torpedo-cutaway">
+        <!-- MGK-500「鲨鱼鳃」(Skat-3) 艇艏透声整流罩分界线与内部球柱声呐基阵透视 -->
+        <path d="M 386 41.8 C 382 51.0 382 61.5 390 70.8" fill="none" stroke="#38bdf8" stroke-width="1.0"/>
+        <path d="M 384 56.5 L 415.8 56.5" fill="none" stroke="#38bdf8" stroke-width="0.8" stroke-dasharray="2.5 1.5"/>
+        <!-- 内部大型球柱水声换能器基阵 (Shark Gill Spherical-Cylindrical Array) -->
+        <ellipse cx="398.5" cy="57.2" rx="10.5" ry="8.2" fill="#0b1f2c" fill-opacity="0.7" stroke="#38bdf8" stroke-width="0.85" stroke-dasharray="2 1"/>
+        <line x1="391" y1="54.0" x2="406" y2="54.0" stroke="#38bdf8" stroke-width="0.5"/>
+        <line x1="390" y1="57.2" x2="407" y2="57.2" stroke="#38bdf8" stroke-width="0.5"/>
+        <line x1="391" y1="60.4" x2="406" y2="60.4" stroke="#38bdf8" stroke-width="0.5"/>
+
+        <!-- 6具 533mm(4) + 650mm(2) 鱼雷发射管外舱门与内部发射管透视 (X=358..394) -->
+        <g stroke="#d4e3e6" stroke-width="0.7" fill="#061016">
+          <!-- 上排 2 具 650mm 重型鱼雷发射管 -->
+          <rect x="384.5" y="46.2" width="6.5" height="1.8" rx="0.6" stroke="#eab308"/>
+          <rect x="386.0" y="48.8" width="6.5" height="1.8" rx="0.6" stroke="#eab308"/>
+          <!-- 下排 4 具 533mm 鱼雷发射管 -->
+          <rect x="385.0" y="51.4" width="5.5" height="1.4" rx="0.5"/>
+          <rect x="386.2" y="53.4" width="5.5" height="1.4" rx="0.5"/>
+          <rect x="385.5" y="61.8" width="5.5" height="1.4" rx="0.5"/>
+          <rect x="384.0" y="63.8" width="5.5" height="1.4" rx="0.5"/>
+        </g>
+        <!-- 内部鱼雷管延长虚线与备用鱼雷架 (Compartment I) -->
+        <g stroke="#eab308" stroke-width="0.65" stroke-dasharray="3 1.5" stroke-opacity="0.8">
+          <line x1="358" y1="47.1" x2="384.5" y2="47.1"/>
+          <line x1="358" y1="49.7" x2="386.0" y2="49.7"/>
+          <line x1="358" y1="52.1" x2="385.0" y2="52.1"/>
+          <line x1="358" y1="54.1" x2="386.2" y2="54.1"/>
+        </g>
+
+        <!-- 可收放前水平舵 (Retractable Bow Planes) -->
+        <rect x="364.0" y="44.2" width="17.5" height="3.2" rx="0.8" fill="#050d12" stroke="#38bdf8" stroke-width="0.95"/>
+        <line x1="366.0" y1="45.8" x2="379.5" y2="45.8" stroke="#d4e3e6" stroke-width="0.65"/>
+
+        <!-- 艇艏声呐与鱼雷管技术引线标注 -->
+        <line x1="398.5" y1="38.2" x2="398.5" y2="48.5" stroke="#38bdf8" stroke-width="0.6" stroke-dasharray="1.5 1"/>
+        <text x="414" y="36.5" text-anchor="end" class="mono" font-size="2.8" fill="#38bdf8">MGK-500 SHARK GILL SONAR &amp; 6×533/650MM TORPEDO TUBES</text>
+      </g>
+
+      <!-- 8. 底部总长与核心分段工程尺寸标尺 (LOA 154.0m) -->
+      <g id="dimension-ruler" stroke="#5f7c84" stroke-width="0.6">
+        <line x1="8" y1="84.5" x2="416" y2="84.5"/>
+        <line x1="8" y1="81.5" x2="8" y2="87.0"/>
+        <line x1="178" y1="82.0" x2="178" y2="86.5"/>
+        <line x1="312" y1="82.0" x2="312" y2="86.5"/>
+        <line x1="416" y1="81.5" x2="416" y2="87.0"/>
+        <text x="92" y="83.2" text-anchor="middle" class="mono" font-size="2.9" fill="#8aa1a7">AFT PWR &amp; TURBINES (2×OK-650B)</text>
+        <text x="245" y="83.2" text-anchor="middle" class="mono" font-size="2.9" fill="#ff5a36">MIDSHIP 2×12 P-700 GRANIT SILO BAY (40° INCLINED)</text>
+        <text x="354" y="83.2" text-anchor="middle" class="mono" font-size="2.9" fill="#38bdf8">LOA: 154.0M (ASPECT 8.46:1)</text>
+      </g>
+    
+    </g>
+
+    <!-- 上半框右侧：949A型主尺度与动力推进参数铭牌 -->
+    <g id="spec-panel-upper">
+      <rect x="986" y="84" width="282" height="192" fill="#070d11" stroke="#2c3b40" stroke-width="1"/>
+      <rect x="986" y="84" width="282" height="22" fill="#0d1e28" stroke="#2c3b40" stroke-width="1"/>
+      <text x="996" y="99" class="mono" font-size="9.0" fill="#38bdf8" font-weight="bold">RUBIN DESIGN BUREAU · PR.949A SPECS</text>
+      <text x="996" y="120" class="mono" font-size="7.6" fill="#8aa1a7">DISPLACEMENT (SURF/SUB):</text>
+      <text x="1258" y="120" text-anchor="end" class="mono" font-size="7.6" fill="#d4e3e6">14,700T / 24,000T</text>
+      <text x="996" y="138" class="mono" font-size="7.6" fill="#8aa1a7">DIMENSIONS (L×B×D):</text>
+      <text x="1258" y="138" text-anchor="end" class="mono" font-size="7.6" fill="#38bdf8">154.0M × 18.2M × 9.2M</text>
+      <text x="996" y="156" class="mono" font-size="7.6" fill="#8aa1a7">PRESSURE HULL:</text>
+      <text x="1258" y="156" text-anchor="end" class="mono" font-size="7.6" fill="#d4e3e6">Ø8.5M AK-33 STEEL (10 COMP.)</text>
+      <text x="996" y="174" class="mono" font-size="7.6" fill="#8aa1a7">NUCLEAR REACTORS:</text>
+      <text x="1258" y="174" text-anchor="end" class="mono" font-size="7.6" fill="#ff5a36">2×OK-650B PWR (380 MWt)</text>
+      <text x="996" y="192" class="mono" font-size="7.6" fill="#8aa1a7">TURBINES / SHAFTS:</text>
+      <text x="1258" y="192" text-anchor="end" class="mono" font-size="7.6" fill="#eab308">2×OK-9 (98,000 SHP) · 2×7-BLADE</text>
+      <text x="996" y="210" class="mono" font-size="7.6" fill="#8aa1a7">SPEED / TEST DEPTH:</text>
+      <text x="1258" y="210" text-anchor="end" class="mono" font-size="7.6" fill="#d4e3e6">32 KTS SUBMERGED / 600M</text>
+      <line x1="996" y1="222" x2="1258" y2="222" stroke="#1e2c33" stroke-width="1"/>
+      <text x="996" y="238" class="mono" font-size="8.0" fill="#38bdf8">ACOUSTIC &amp; HYDRODYNAMIC UPGRADE:</text>
+      <text x="996" y="253" class="mono" font-size="7.6" fill="#8aa1a7">+10M EXTENDED STERN · PELAMIDA TOWED</text>
+      <text x="996" y="266" class="mono" font-size="7.6" fill="#8aa1a7">ARRAY POD · CLUSTER RUBBER TILES</text>
+    </g>
+
+    <!-- 下半框：02 顶视全甲板与 2×12 花岗岩导弹舱盖/单耐压壳 X 光透视 -->
+    <rect x="44" y="304" width="1232" height="216" fill="#091116" fill-opacity="0.45" stroke="#2c3b40"/>
+    <text font-size="9.5" x="58" y="324" class="p mono" fill="#38bdf8">02 / ORTHOGRAPHIC TOP VIEW · 2×12 P-700 GRANIT HATCHES &amp; DOUBLE HULL X-RAY</text>
+    <text x="975" y="324" text-anchor="end" class="p mono" fill="#5f7c84" font-size="9">BEAM: 18.2M · HULL GAP: 4.8M</text>
+    <g transform="translate(84.6,330.0) scale(2.044,2.044)">
+      
+      
+      <!-- 0. 顶视工程基准线与标注 -->
+      <line x1="4" y1="45.0" x2="420" y2="45.0" stroke="#2c3b40" stroke-width="0.6" stroke-dasharray="6 3"/>
+      <text x="16" y="10.5" class="mono" font-size="3.2" fill="#38bdf8">PORT BATTERY: 6×2 SM-225 INCLINED LAUNCHERS (12×P-700 GRANIT)</text>
+      <text x="260" y="13.8" class="mono" font-size="2.9" fill="#ff5a36">▼ HATCH OPEN (READY-TO-FIRE · 2×3M45 WARHEADS EXPOSED)</text>
+
+      <!-- 1. 尾部水平稳定翼、双轴流道收束与左右双七叶大侧斜螺旋桨 (Stern X=8..58) -->
+      <!-- 尾部水平稳定翼及翼端稳定端板 -->
+      <polygon points="18,22.0 34,22.0 52,33.5 52,56.5 34,68.0 18,68.0 21,58.0 21,32.0"
+               fill="#071218" stroke="#d4e3e6" stroke-width="1.1"/>
+      <rect x="15.5" y="21.0" width="9.5" height="2.0" rx="0.5" fill="#0d222e" stroke="#38bdf8" stroke-width="0.8"/>
+      <rect x="15.5" y="67.0" width="9.5" height="2.0" rx="0.5" fill="#0d222e" stroke="#38bdf8" stroke-width="0.8"/>
+
+      <!-- 左舷(上)与右舷(下)推进轴流道尾锥 -->
+      <path d="M 13 31.5 L 26 29.0 L 42 31.0 L 42 38.0 L 26 37.0 L 13 35.5 Z" fill="#0b1d28" stroke="#38bdf8" stroke-width="0.95"/>
+      <path d="M 13 54.5 L 26 53.0 L 42 52.0 L 42 59.0 L 26 61.0 L 13 58.5 Z" fill="#0b1d28" stroke="#38bdf8" stroke-width="0.95"/>
+
+      <!-- 左舷(上 Y=33.5)与右舷(下 Y=56.5) 双轴七叶大侧斜螺旋桨 (#eab308 高亮) -->
+      <g stroke="#eab308" stroke-width="0.9" fill="#eab308" fill-opacity="0.3">
+        <!-- 左舷螺旋桨 -->
+        <polygon points="8.0,33.5 13.0,31.8 13.0,35.2"/>
+        <path d="M 10.2 33.5 C 8.0 28.5 9.4 26.2 11.8 27.5 C 11.2 30.0 10.8 31.8 10.2 33.5 Z"/>
+        <path d="M 10.2 33.5 C 8.0 38.5 9.4 40.8 11.8 39.5 C 11.2 37.0 10.8 35.2 10.2 33.5 Z"/>
+        <line x1="7.8" y1="30.2" x2="11.5" y2="36.8"/>
+        <line x1="7.8" y1="36.8" x2="11.5" y2="30.2"/>
+        <circle cx="10.4" cy="33.5" r="1.1" fill="#eab308" stroke="#080a0b" stroke-width="0.4"/>
+        <!-- 右舷螺旋桨 -->
+        <polygon points="8.0,56.5 13.0,54.8 13.0,58.2"/>
+        <path d="M 10.2 56.5 C 8.0 51.5 9.4 49.2 11.8 50.5 C 11.2 53.0 10.8 54.8 10.2 56.5 Z"/>
+        <path d="M 10.2 56.5 C 8.0 61.5 9.4 63.8 11.8 62.5 C 11.2 60.0 10.8 58.2 10.2 56.5 Z"/>
+        <line x1="7.8" y1="53.2" x2="11.5" y2="59.8"/>
+        <line x1="7.8" y1="59.8" x2="11.5" y2="53.2"/>
+        <circle cx="10.4" cy="56.5" r="1.1" fill="#eab308" stroke="#080a0b" stroke-width="0.4"/>
+      </g>
+
+      <!-- 2. 宽腰纺锤形双壳体俯视主外廓 (LOA 154.0m × Beam 18.2m · 长宽比 8.46:1 · 中部“大肚子鱼”饱满鼓出 Y=20.9..69.1) -->
+      <path d="M 32 33.0
+               C 58 29.5 102 25.0 162 21.6
+               C 188 20.6 292 20.6 322 22.0
+               C 362 24.0 388 28.5 404 35.0
+               C 413 38.6 416 41.8 416 45.0
+               C 416 48.2 413 51.4 404 55.0
+               C 388 61.5 362 66.0 322 68.0
+               C 292 69.4 188 69.4 162 68.4
+               C 102 65.0 58 60.5 32 57.0
+               C 38 52.0 38 48.5 22 45.0
+               C 38 41.5 38 38.0 32 33.0 Z"
+            fill="#08141c" stroke="#d4e3e6" stroke-width="1.4"/>
+
+      <!-- 外壳非耐压上层建筑甲板边线 -->
+      <path d="M 46 35.2 C 96 29.0 156 23.2 180 22.8 L 312 22.8 C 358 24.8 392 31.0 409 45.0 C 392 59.0 358 65.2 312 67.2 L 180 67.2 C 156 66.8 96 61.0 46 54.8"
+            fill="none" stroke="#4a6368" stroke-width="0.75"/>
+
+      <!-- 尾部中央高大垂直尾翼与顶置「整合」(Pelamida) 拖曳声呐荚舱俯视脊线 -->
+      <ellipse cx="28" cy="45.0" rx="15.0" ry="1.8" fill="#0d222e" stroke="#38bdf8" stroke-width="0.95"/>
+      <ellipse cx="25" cy="45.0" rx="11.5" ry="1.2" fill="#132c3a" stroke="#d4e3e6" stroke-width="0.75"/>
+
+      <!-- 3. 内部总师 X 光透视：中央单根 Ø8.5m 圆柱耐压壳体 (Single Cylindrical Pressure Hull) + 10 水密隔舱 + 双 OK-650B 反应堆 -->
+      <g id="single-pressure-hull-xray">
+        <rect x="64.0" y="33.8" width="294.0" height="22.4" rx="11.2"
+              fill="#061016" fill-opacity="0.58" stroke="#38bdf8" stroke-width="0.95" stroke-dasharray="5 2.5"/>
+        <!-- 10 个水密隔舱横舱壁虚线 (Compartments I - X) -->
+        <g stroke="#38bdf8" stroke-width="0.6" stroke-dasharray="2 1.5" stroke-opacity="0.65">
+          <line x1="94" y1="33.8" x2="94" y2="56.2"/>
+          <line x1="112" y1="33.8" x2="112" y2="56.2"/>
+          <line x1="140" y1="33.8" x2="140" y2="56.2"/>
+          <line x1="168" y1="33.8" x2="168" y2="56.2"/>
+          <line x1="210" y1="33.8" x2="210" y2="56.2"/>
+          <line x1="254" y1="33.8" x2="254" y2="56.2"/>
+          <line x1="298" y1="33.8" x2="298" y2="56.2"/>
+          <line x1="330" y1="33.8" x2="330" y2="56.2"/>
+        </g>
+        <!-- 耐压壳内后部双座 OK-650B 压水堆与汽轮机舱顶视透视 -->
+        <rect x="115.0" y="36.8" width="22.0" height="16.4" rx="2.0" fill="#1a0f10" fill-opacity="0.65" stroke="#ff5a36" stroke-width="0.8"/>
+        <circle cx="126.0" cy="45.0" r="4.5" fill="#2a1214" stroke="#ff5a36" stroke-width="0.75"/>
+        <circle cx="126.0" cy="45.0" r="1.6" fill="#eab308"/>
+        <rect x="142.0" y="36.8" width="22.0" height="16.4" rx="2.0" fill="#1a0f10" fill-opacity="0.65" stroke="#ff5a36" stroke-width="0.8"/>
+        <circle cx="153.0" cy="45.0" r="4.5" fill="#2a1214" stroke="#ff5a36" stroke-width="0.75"/>
+        <circle cx="153.0" cy="45.0" r="1.6" fill="#eab308"/>
+        <!-- 双推进轴系虚线 -->
+        <line x1="13" y1="33.5" x2="112" y2="41.0" stroke="#eab308" stroke-width="0.7" stroke-dasharray="3.5 1.8" stroke-opacity="0.75"/>
+        <line x1="13" y1="56.5" x2="112" y2="49.0" stroke="#eab308" stroke-width="0.7" stroke-dasharray="3.5 1.8" stroke-opacity="0.75"/>
+        <text x="115" y="32.2" class="mono" font-size="2.7" fill="#38bdf8">SINGLE Ø8.5M AK-33 PRESSURE HULL (X-RAY)</text>
+      </g>
+
+      <!-- 4. 左右两舷对称排列 6×2 + 6×2 = 24 枚 P-700「花岗岩」巡航导弹巨型长方形水密舱盖矩阵 -->
+      <g id="granit-24-hatches-matrix">
+        
+        <g id="port-hatch-1">
+          <!-- 闭合态双联大型长方形水密舱盖 -->
+          <rect x="182.0" y="23.6" width="18.6" height="9.0" rx="0.7" fill="#0b1d28" stroke="#d4e3e6" stroke-width="0.9"/>
+          <line x1="191.3" y1="23.6" x2="191.3" y2="32.6" stroke="#38bdf8" stroke-width="0.65"/>
+          <!-- 内部并列 2 枚斜置花岗岩导弹圆筒与弹体虚线投影 -->
+          <rect x="183.3" y="25.1" width="6.8" height="6.0" rx="1.8" fill="none" stroke="#38bdf8" stroke-width="0.6" stroke-dasharray="2 1.2"/>
+          <line x1="184.2" y1="28.1" x2="189.4" y2="28.1" stroke="#ff5a36" stroke-width="0.7" stroke-dasharray="1.5 1"/>
+          <rect x="192.5" y="25.1" width="6.8" height="6.0" rx="1.8" fill="none" stroke="#38bdf8" stroke-width="0.6" stroke-dasharray="2 1.2"/>
+          <line x1="193.4" y1="28.1" x2="198.6" y2="28.1" stroke="#ff5a36" stroke-width="0.7" stroke-dasharray="1.5 1"/>
+          <!-- 舷侧液压开盖铰链节点 -->
+          <rect x="185.2" y="22.3" width="2.8" height="1.3" fill="#132c3a" stroke="#38bdf8" stroke-width="0.55"/>
+          <rect x="194.6" y="22.3" width="2.8" height="1.3" fill="#132c3a" stroke="#38bdf8" stroke-width="0.55"/>
+        </g>
+        <g id="port-hatch-2">
+          <!-- 闭合态双联大型长方形水密舱盖 -->
+          <rect x="203.5" y="23.6" width="18.6" height="9.0" rx="0.7" fill="#0b1d28" stroke="#d4e3e6" stroke-width="0.9"/>
+          <line x1="212.8" y1="23.6" x2="212.8" y2="32.6" stroke="#38bdf8" stroke-width="0.65"/>
+          <!-- 内部并列 2 枚斜置花岗岩导弹圆筒与弹体虚线投影 -->
+          <rect x="204.8" y="25.1" width="6.8" height="6.0" rx="1.8" fill="none" stroke="#38bdf8" stroke-width="0.6" stroke-dasharray="2 1.2"/>
+          <line x1="205.7" y1="28.1" x2="210.9" y2="28.1" stroke="#ff5a36" stroke-width="0.7" stroke-dasharray="1.5 1"/>
+          <rect x="214.0" y="25.1" width="6.8" height="6.0" rx="1.8" fill="none" stroke="#38bdf8" stroke-width="0.6" stroke-dasharray="2 1.2"/>
+          <line x1="214.9" y1="28.1" x2="220.1" y2="28.1" stroke="#ff5a36" stroke-width="0.7" stroke-dasharray="1.5 1"/>
+          <!-- 舷侧液压开盖铰链节点 -->
+          <rect x="206.7" y="22.3" width="2.8" height="1.3" fill="#132c3a" stroke="#38bdf8" stroke-width="0.55"/>
+          <rect x="216.1" y="22.3" width="2.8" height="1.3" fill="#132c3a" stroke="#38bdf8" stroke-width="0.55"/>
+        </g>
+        <g id="port-hatch-3">
+          <!-- 闭合态双联大型长方形水密舱盖 -->
+          <rect x="225.0" y="23.6" width="18.6" height="9.0" rx="0.7" fill="#0b1d28" stroke="#d4e3e6" stroke-width="0.9"/>
+          <line x1="234.3" y1="23.6" x2="234.3" y2="32.6" stroke="#38bdf8" stroke-width="0.65"/>
+          <!-- 内部并列 2 枚斜置花岗岩导弹圆筒与弹体虚线投影 -->
+          <rect x="226.3" y="25.1" width="6.8" height="6.0" rx="1.8" fill="none" stroke="#38bdf8" stroke-width="0.6" stroke-dasharray="2 1.2"/>
+          <line x1="227.2" y1="28.1" x2="232.4" y2="28.1" stroke="#ff5a36" stroke-width="0.7" stroke-dasharray="1.5 1"/>
+          <rect x="235.5" y="25.1" width="6.8" height="6.0" rx="1.8" fill="none" stroke="#38bdf8" stroke-width="0.6" stroke-dasharray="2 1.2"/>
+          <line x1="236.4" y1="28.1" x2="241.6" y2="28.1" stroke="#ff5a36" stroke-width="0.7" stroke-dasharray="1.5 1"/>
+          <!-- 舷侧液压开盖铰链节点 -->
+          <rect x="228.2" y="22.3" width="2.8" height="1.3" fill="#132c3a" stroke="#38bdf8" stroke-width="0.55"/>
+          <rect x="237.6" y="22.3" width="2.8" height="1.3" fill="#132c3a" stroke="#38bdf8" stroke-width="0.55"/>
+        </g>
+        <g id="port-hatch-4">
+          <!-- 闭合态双联大型长方形水密舱盖 -->
+          <rect x="246.5" y="23.6" width="18.6" height="9.0" rx="0.7" fill="#0b1d28" stroke="#d4e3e6" stroke-width="0.9"/>
+          <line x1="255.8" y1="23.6" x2="255.8" y2="32.6" stroke="#38bdf8" stroke-width="0.65"/>
+          <!-- 内部并列 2 枚斜置花岗岩导弹圆筒与弹体虚线投影 -->
+          <rect x="247.8" y="25.1" width="6.8" height="6.0" rx="1.8" fill="none" stroke="#38bdf8" stroke-width="0.6" stroke-dasharray="2 1.2"/>
+          <line x1="248.7" y1="28.1" x2="253.9" y2="28.1" stroke="#ff5a36" stroke-width="0.7" stroke-dasharray="1.5 1"/>
+          <rect x="257.0" y="25.1" width="6.8" height="6.0" rx="1.8" fill="none" stroke="#38bdf8" stroke-width="0.6" stroke-dasharray="2 1.2"/>
+          <line x1="257.9" y1="28.1" x2="263.1" y2="28.1" stroke="#ff5a36" stroke-width="0.7" stroke-dasharray="1.5 1"/>
+          <!-- 舷侧液压开盖铰链节点 -->
+          <rect x="249.7" y="22.3" width="2.8" height="1.3" fill="#132c3a" stroke="#38bdf8" stroke-width="0.55"/>
+          <rect x="259.1" y="22.3" width="2.8" height="1.3" fill="#132c3a" stroke="#38bdf8" stroke-width="0.55"/>
+        </g>
+        <g id="port-hatch-open-5">
+          <!-- 掀开向舷外翻折的双联液压水密盖板 -->
+          <rect x="268.0" y="16.2" width="18.6" height="5.8" rx="0.6" fill="#0d222e" stroke="#ff5a36" stroke-width="0.85" stroke-dasharray="2.5 1"/>
+          <line x1="277.3" y1="16.2" x2="277.3" y2="22.0" stroke="#ff5a36" stroke-width="0.65"/>
+          <!-- 敞开的发射井口 (带警戒斜纹底衬) -->
+          <rect x="268.0" y="23.6" width="18.6" height="9.0" rx="0.7" fill="#180a0c" stroke="#ff5a36" stroke-width="1.05"/>
+          <rect x="268.6" y="24.2" width="17.4" height="7.8" fill="url(#hatch)"/>
+          <line x1="277.3" y1="23.6" x2="277.3" y2="32.6" stroke="#ff5a36" stroke-width="0.8"/>
+          <!-- 并列 2 枚 SM-225 发射筒与露出的红色 P-700「花岗岩」导弹进气道头锥 (朝向艇艏 +X) -->
+          <rect x="269.2" y="25.0" width="7.2" height="6.2" rx="1.6" fill="#090d10" stroke="#38bdf8" stroke-width="0.65" stroke-dasharray="1.8 1"/>
+          <ellipse cx="273.8" cy="28.1" rx="2.5" ry="2.1" fill="#2b0c0e" stroke="#ff5a36" stroke-width="0.85"/>
+          <polygon points="272.5,26.8 276.0,28.1 272.5,29.4" fill="#ff5a36"/>
+          <circle cx="274.8" cy="28.1" r="0.7" fill="#eab308"/>
+
+          <rect x="278.2" y="25.0" width="7.2" height="6.2" rx="1.6" fill="#090d10" stroke="#38bdf8" stroke-width="0.65" stroke-dasharray="1.8 1"/>
+          <ellipse cx="282.8" cy="28.1" rx="2.5" ry="2.1" fill="#2b0c0e" stroke="#ff5a36" stroke-width="0.85"/>
+          <polygon points="281.5,26.8 285.0,28.1 281.5,29.4" fill="#ff5a36"/>
+          <circle cx="283.8" cy="28.1" r="0.7" fill="#eab308"/>
+        </g>
+        <g id="port-hatch-6">
+          <!-- 闭合态双联大型长方形水密舱盖 -->
+          <rect x="289.5" y="23.6" width="18.6" height="9.0" rx="0.7" fill="#0b1d28" stroke="#d4e3e6" stroke-width="0.9"/>
+          <line x1="298.8" y1="23.6" x2="298.8" y2="32.6" stroke="#38bdf8" stroke-width="0.65"/>
+          <!-- 内部并列 2 枚斜置花岗岩导弹圆筒与弹体虚线投影 -->
+          <rect x="290.8" y="25.1" width="6.8" height="6.0" rx="1.8" fill="none" stroke="#38bdf8" stroke-width="0.6" stroke-dasharray="2 1.2"/>
+          <line x1="291.7" y1="28.1" x2="296.9" y2="28.1" stroke="#ff5a36" stroke-width="0.7" stroke-dasharray="1.5 1"/>
+          <rect x="300.0" y="25.1" width="6.8" height="6.0" rx="1.8" fill="none" stroke="#38bdf8" stroke-width="0.6" stroke-dasharray="2 1.2"/>
+          <line x1="300.9" y1="28.1" x2="306.1" y2="28.1" stroke="#ff5a36" stroke-width="0.7" stroke-dasharray="1.5 1"/>
+          <!-- 舷侧液压开盖铰链节点 -->
+          <rect x="292.7" y="22.3" width="2.8" height="1.3" fill="#132c3a" stroke="#38bdf8" stroke-width="0.55"/>
+          <rect x="302.1" y="22.3" width="2.8" height="1.3" fill="#132c3a" stroke="#38bdf8" stroke-width="0.55"/>
+        </g>
+        
+        <g id="stbd-hatch-1">
+          <!-- 闭合态双联大型长方形水密舱盖 -->
+          <rect x="182.0" y="57.4" width="18.6" height="9.0" rx="0.7" fill="#0b1d28" stroke="#d4e3e6" stroke-width="0.9"/>
+          <line x1="191.3" y1="57.4" x2="191.3" y2="66.4" stroke="#38bdf8" stroke-width="0.65"/>
+          <!-- 内部并列 2 枚斜置花岗岩导弹圆筒与弹体虚线投影 -->
+          <rect x="183.3" y="58.9" width="6.8" height="6.0" rx="1.8" fill="none" stroke="#38bdf8" stroke-width="0.6" stroke-dasharray="2 1.2"/>
+          <line x1="184.2" y1="61.9" x2="189.4" y2="61.9" stroke="#ff5a36" stroke-width="0.7" stroke-dasharray="1.5 1"/>
+          <rect x="192.5" y="58.9" width="6.8" height="6.0" rx="1.8" fill="none" stroke="#38bdf8" stroke-width="0.6" stroke-dasharray="2 1.2"/>
+          <line x1="193.4" y1="61.9" x2="198.6" y2="61.9" stroke="#ff5a36" stroke-width="0.7" stroke-dasharray="1.5 1"/>
+          <!-- 舷侧液压开盖铰链节点 -->
+          <rect x="185.2" y="66.4" width="2.8" height="1.3" fill="#132c3a" stroke="#38bdf8" stroke-width="0.55"/>
+          <rect x="194.6" y="66.4" width="2.8" height="1.3" fill="#132c3a" stroke="#38bdf8" stroke-width="0.55"/>
+        </g>
+        <g id="stbd-hatch-2">
+          <!-- 闭合态双联大型长方形水密舱盖 -->
+          <rect x="203.5" y="57.4" width="18.6" height="9.0" rx="0.7" fill="#0b1d28" stroke="#d4e3e6" stroke-width="0.9"/>
+          <line x1="212.8" y1="57.4" x2="212.8" y2="66.4" stroke="#38bdf8" stroke-width="0.65"/>
+          <!-- 内部并列 2 枚斜置花岗岩导弹圆筒与弹体虚线投影 -->
+          <rect x="204.8" y="58.9" width="6.8" height="6.0" rx="1.8" fill="none" stroke="#38bdf8" stroke-width="0.6" stroke-dasharray="2 1.2"/>
+          <line x1="205.7" y1="61.9" x2="210.9" y2="61.9" stroke="#ff5a36" stroke-width="0.7" stroke-dasharray="1.5 1"/>
+          <rect x="214.0" y="58.9" width="6.8" height="6.0" rx="1.8" fill="none" stroke="#38bdf8" stroke-width="0.6" stroke-dasharray="2 1.2"/>
+          <line x1="214.9" y1="61.9" x2="220.1" y2="61.9" stroke="#ff5a36" stroke-width="0.7" stroke-dasharray="1.5 1"/>
+          <!-- 舷侧液压开盖铰链节点 -->
+          <rect x="206.7" y="66.4" width="2.8" height="1.3" fill="#132c3a" stroke="#38bdf8" stroke-width="0.55"/>
+          <rect x="216.1" y="66.4" width="2.8" height="1.3" fill="#132c3a" stroke="#38bdf8" stroke-width="0.55"/>
+        </g>
+        <g id="stbd-hatch-3">
+          <!-- 闭合态双联大型长方形水密舱盖 -->
+          <rect x="225.0" y="57.4" width="18.6" height="9.0" rx="0.7" fill="#0b1d28" stroke="#d4e3e6" stroke-width="0.9"/>
+          <line x1="234.3" y1="57.4" x2="234.3" y2="66.4" stroke="#38bdf8" stroke-width="0.65"/>
+          <!-- 内部并列 2 枚斜置花岗岩导弹圆筒与弹体虚线投影 -->
+          <rect x="226.3" y="58.9" width="6.8" height="6.0" rx="1.8" fill="none" stroke="#38bdf8" stroke-width="0.6" stroke-dasharray="2 1.2"/>
+          <line x1="227.2" y1="61.9" x2="232.4" y2="61.9" stroke="#ff5a36" stroke-width="0.7" stroke-dasharray="1.5 1"/>
+          <rect x="235.5" y="58.9" width="6.8" height="6.0" rx="1.8" fill="none" stroke="#38bdf8" stroke-width="0.6" stroke-dasharray="2 1.2"/>
+          <line x1="236.4" y1="61.9" x2="241.6" y2="61.9" stroke="#ff5a36" stroke-width="0.7" stroke-dasharray="1.5 1"/>
+          <!-- 舷侧液压开盖铰链节点 -->
+          <rect x="228.2" y="66.4" width="2.8" height="1.3" fill="#132c3a" stroke="#38bdf8" stroke-width="0.55"/>
+          <rect x="237.6" y="66.4" width="2.8" height="1.3" fill="#132c3a" stroke="#38bdf8" stroke-width="0.55"/>
+        </g>
+        <g id="stbd-hatch-4">
+          <!-- 闭合态双联大型长方形水密舱盖 -->
+          <rect x="246.5" y="57.4" width="18.6" height="9.0" rx="0.7" fill="#0b1d28" stroke="#d4e3e6" stroke-width="0.9"/>
+          <line x1="255.8" y1="57.4" x2="255.8" y2="66.4" stroke="#38bdf8" stroke-width="0.65"/>
+          <!-- 内部并列 2 枚斜置花岗岩导弹圆筒与弹体虚线投影 -->
+          <rect x="247.8" y="58.9" width="6.8" height="6.0" rx="1.8" fill="none" stroke="#38bdf8" stroke-width="0.6" stroke-dasharray="2 1.2"/>
+          <line x1="248.7" y1="61.9" x2="253.9" y2="61.9" stroke="#ff5a36" stroke-width="0.7" stroke-dasharray="1.5 1"/>
+          <rect x="257.0" y="58.9" width="6.8" height="6.0" rx="1.8" fill="none" stroke="#38bdf8" stroke-width="0.6" stroke-dasharray="2 1.2"/>
+          <line x1="257.9" y1="61.9" x2="263.1" y2="61.9" stroke="#ff5a36" stroke-width="0.7" stroke-dasharray="1.5 1"/>
+          <!-- 舷侧液压开盖铰链节点 -->
+          <rect x="249.7" y="66.4" width="2.8" height="1.3" fill="#132c3a" stroke="#38bdf8" stroke-width="0.55"/>
+          <rect x="259.1" y="66.4" width="2.8" height="1.3" fill="#132c3a" stroke="#38bdf8" stroke-width="0.55"/>
+        </g>
+        <g id="stbd-hatch-5">
+          <!-- 闭合态双联大型长方形水密舱盖 -->
+          <rect x="268.0" y="57.4" width="18.6" height="9.0" rx="0.7" fill="#0b1d28" stroke="#d4e3e6" stroke-width="0.9"/>
+          <line x1="277.3" y1="57.4" x2="277.3" y2="66.4" stroke="#38bdf8" stroke-width="0.65"/>
+          <!-- 内部并列 2 枚斜置花岗岩导弹圆筒与弹体虚线投影 -->
+          <rect x="269.3" y="58.9" width="6.8" height="6.0" rx="1.8" fill="none" stroke="#38bdf8" stroke-width="0.6" stroke-dasharray="2 1.2"/>
+          <line x1="270.2" y1="61.9" x2="275.4" y2="61.9" stroke="#ff5a36" stroke-width="0.7" stroke-dasharray="1.5 1"/>
+          <rect x="278.5" y="58.9" width="6.8" height="6.0" rx="1.8" fill="none" stroke="#38bdf8" stroke-width="0.6" stroke-dasharray="2 1.2"/>
+          <line x1="279.4" y1="61.9" x2="284.6" y2="61.9" stroke="#ff5a36" stroke-width="0.7" stroke-dasharray="1.5 1"/>
+          <!-- 舷侧液压开盖铰链节点 -->
+          <rect x="271.2" y="66.4" width="2.8" height="1.3" fill="#132c3a" stroke="#38bdf8" stroke-width="0.55"/>
+          <rect x="280.6" y="66.4" width="2.8" height="1.3" fill="#132c3a" stroke="#38bdf8" stroke-width="0.55"/>
+        </g>
+        <g id="stbd-hatch-open-6">
+          <!-- 掀开向舷外翻折的双联液压水密盖板 -->
+          <rect x="289.5" y="68.0" width="18.6" height="5.8" rx="0.6" fill="#0d222e" stroke="#ff5a36" stroke-width="0.85" stroke-dasharray="2.5 1"/>
+          <line x1="298.8" y1="68.0" x2="298.8" y2="73.8" stroke="#ff5a36" stroke-width="0.65"/>
+          <!-- 敞开的发射井口 -->
+          <rect x="289.5" y="57.4" width="18.6" height="9.0" rx="0.7" fill="#180a0c" stroke="#ff5a36" stroke-width="1.05"/>
+          <rect x="290.1" y="58.0" width="17.4" height="7.8" fill="url(#hatch)"/>
+          <line x1="298.8" y1="57.4" x2="298.8" y2="66.4" stroke="#ff5a36" stroke-width="0.8"/>
+          <!-- 并列 2 枚 SM-225 发射筒与露出的红色 P-700「花岗岩」导弹进气道头锥 -->
+          <rect x="290.7" y="58.8" width="7.2" height="6.2" rx="1.6" fill="#090d10" stroke="#38bdf8" stroke-width="0.65" stroke-dasharray="1.8 1"/>
+          <ellipse cx="295.3" cy="61.9" rx="2.5" ry="2.1" fill="#2b0c0e" stroke="#ff5a36" stroke-width="0.85"/>
+          <polygon points="294.0,60.6 297.5,61.9 294.0,63.2" fill="#ff5a36"/>
+          <circle cx="296.3" cy="61.9" r="0.7" fill="#eab308"/>
+
+          <rect x="299.7" y="58.8" width="7.2" height="6.2" rx="1.6" fill="#090d10" stroke="#38bdf8" stroke-width="0.65" stroke-dasharray="1.8 1"/>
+          <ellipse cx="304.3" cy="61.9" rx="2.5" ry="2.1" fill="#2b0c0e" stroke="#ff5a36" stroke-width="0.85"/>
+          <polygon points="303.0,60.6 306.5,61.9 303.0,63.2" fill="#ff5a36"/>
+          <circle cx="305.3" cy="61.9" r="0.7" fill="#eab308"/>
+        </g>
+      </g>
+
+      <!-- 5. 中央修长水滴形指挥围壳俯视图 (Long Streamlined Sail · X=210..303, Y=37.0..53.0) -->
+      <g id="sail-top-view">
+        <!-- 围壳底座导流裙边 -->
+        <path d="M 208 45.0 C 218 37.5 234 36.2 286 36.2 C 297 36.2 303 39.8 303 45.0 C 303 50.2 297 53.8 286 53.8 C 234 53.8 218 52.5 208 45.0 Z"
+              fill="#0a1922" stroke="#d4e3e6" stroke-width="1.2"/>
+        <!-- 围壳上层主甲板流线轮廓 -->
+        <path d="M 218 45.0 C 226 39.6 240 38.6 285 38.6 C 294 38.6 298 41.2 298 45.0 C 298 48.8 294 51.4 285 51.4 C 240 51.4 226 50.4 218 45.0 Z"
+              fill="#0e2430" stroke="#38bdf8" stroke-width="1.05"/>
+
+        <!-- 围壳前端弧形防冰观察窗与露天指挥桥槽 -->
+        <path d="M 290 40.2 C 294.5 41.2 296.5 43.0 296.5 45.0 C 296.5 47.0 294.5 48.8 290 49.8" fill="none" stroke="#d4e3e6" stroke-width="1.1"/>
+        <rect x="281.5" y="41.8" width="6.8" height="6.4" rx="1.0" fill="#050d12" stroke="#38bdf8" stroke-width="0.75"/>
+
+        <!-- 潜望镜、雷达与通信升降桅杆井阵列 -->
+        <circle cx="275.5" cy="43.2" r="1.5" fill="#061016" stroke="#d4e3e6" stroke-width="0.7"/>
+        <circle cx="275.5" cy="46.8" r="1.5" fill="#061016" stroke="#38bdf8" stroke-width="0.7"/>
+        <circle cx="269.5" cy="45.0" r="1.8" fill="#061016" stroke="#38bdf8" stroke-width="0.75"/>
+
+        <!-- 围壳中后方 V 形/水滴形上浮救生漂浮舱 (VSK Escape Pod · X=250..265) -->
+        <path d="M 250.0 45.0 C 252.5 40.4 258.5 39.8 263.5 40.4 L 265.2 45.0 L 263.5 49.6 C 258.5 50.2 252.5 49.6 250.0 45.0 Z"
+              fill="#180d10" stroke="#ff5a36" stroke-width="0.95"/>
+        <circle cx="258.2" cy="45.0" r="2.2" fill="#0b1d28" stroke="#d4e3e6" stroke-width="0.7"/>
+        <circle cx="258.2" cy="45.0" r="0.8" fill="#ff5a36"/>
+
+        <!-- 围壳后部大型「潘奇」(Punch Bowl / Korall-BN) 卫星目标指示天线大圆井 -->
+        <rect x="229.5" y="40.4" width="16.0" height="9.2" rx="2.0" fill="#061016" stroke="#38bdf8" stroke-width="0.85"/>
+        <circle cx="238.5" cy="45.0" r="3.6" fill="#132c3a" stroke="#ff5a36" stroke-width="0.9"/>
+        <circle cx="238.5" cy="45.0" r="1.4" fill="#eab308"/>
+      </g>
+
+      <!-- 6. 后甲板反应堆装载舱口、散热格栅与后救生对接舱口 (Aft Deck X=52..176) -->
+      <rect x="74" y="39.5" width="28" height="11.0" rx="1.0" fill="#0a1820" stroke="#4a6368" stroke-width="0.75"/>
+      <line x1="88" y1="39.5" x2="88" y2="50.5" stroke="#2c3b40" stroke-width="0.65"/>
+      <circle cx="58" cy="45.0" r="3.8" fill="#0b1d28" stroke="#d4e3e6" stroke-width="0.9"/>
+      <circle cx="58" cy="45.0" r="1.5" fill="none" stroke="#38bdf8" stroke-width="0.65"/>
+      <circle cx="172" cy="45.0" r="3.4" fill="#0b1d28" stroke="#38bdf8" stroke-width="0.85"/>
+
+      <!-- 7. 艇艏声呐罩、救生对接圆舱口、6具鱼雷发射管内透视与可展开前水平舵 (Bow X=340..416) -->
+      <g id="bow-top-view">
+        <!-- 艇艏左右展开态前水平舵 (Retractable Bow Planes) -->
+        <polygon points="365,26.8 379,26.8 382,17.2 370,17.2" fill="#0b1d28" stroke="#38bdf8" stroke-width="0.95"/>
+        <polygon points="365,63.2 379,63.2 382,72.8 370,72.8" fill="#0b1d28" stroke="#38bdf8" stroke-width="0.95"/>
+
+        <!-- 艇艏 MGK-500「鲨鱼鳃」声呐导流罩分界弧线 -->
+        <path d="M 388 30.8 C 382 38.0 382 52.0 388 59.2" fill="none" stroke="#38bdf8" stroke-width="1.0" stroke-dasharray="3 1.5"/>
+        <ellipse cx="399.0" cy="45.0" rx="9.5" ry="7.8" fill="none" stroke="#38bdf8" stroke-width="0.75" stroke-dasharray="2 1.2"/>
+
+        <!-- 6具 533mm/650mm 鱼雷发射管俯视内透视 (左右对称各 3 具) -->
+        <g stroke="#eab308" stroke-width="0.7" stroke-dasharray="3 1.2" stroke-opacity="0.85">
+          <line x1="354" y1="37.5" x2="392" y2="38.5"/>
+          <line x1="354" y1="40.0" x2="395" y2="40.8"/>
+          <line x1="354" y1="42.5" x2="397" y2="43.0"/>
+          <line x1="354" y1="47.5" x2="397" y2="47.0"/>
+          <line x1="354" y1="50.0" x2="395" y2="49.2"/>
+          <line x1="354" y1="52.5" x2="392" y2="51.5"/>
+        </g>
+
+        <!-- 前甲板中央鱼雷装填斜舱口与前救生对接圆舱口 -->
+        <rect x="336" y="42.2" width="14" height="5.6" rx="1.0" fill="#0b1d28" stroke="#4a6368" stroke-width="0.8"/>
+        <circle cx="362" cy="45.0" r="4.2" fill="#0b1d28" stroke="#d4e3e6" stroke-width="0.95"/>
+        <circle cx="362" cy="45.0" r="1.8" fill="#132c3a" stroke="#38bdf8" stroke-width="0.7"/>
+        <circle cx="378" cy="45.0" r="2.6" fill="#0b1d28" stroke="#38bdf8" stroke-width="0.8"/>
+      </g>
+
+      <!-- 8. 底部右舷标注与全艇主尺度说明 -->
+      <text x="16" y="82.5" class="mono" font-size="3.2" fill="#38bdf8">STARBOARD BATTERY: 6×2 SM-225 INCLINED LAUNCHERS · TOTAL 24×P-700 GRANIT (SS-N-19)</text>
+      <text x="414" y="82.5" text-anchor="end" class="mono" font-size="3.1" fill="#ff5a36">▲ HATCH OPEN (STBD-11/12 ARMED)</text>
+    
+    </g>
+
+    <!-- 下半框右侧：武备火控与传奇艇目标接收系统铭牌 -->
+    <g id="spec-panel-lower">
+      <rect x="986" y="316" width="282" height="192" fill="#070d11" stroke="#2c3b40" stroke-width="1"/>
+      <rect x="986" y="316" width="282" height="22" fill="#1c1012" stroke="#ff5a36" stroke-width="0.9"/>
+      <text x="996" y="331" class="mono" font-size="9.0" fill="#ff5a36" font-weight="bold">STRIKE &amp; SENSOR SUITE (CARRIER KILLER)</text>
+      <text x="996" y="352" class="mono" font-size="7.6" fill="#8aa1a7">CRUISE MISSILES:</text>
+      <text x="1258" y="352" text-anchor="end" class="mono" font-size="7.6" fill="#ff5a36">24×P-700 GRANIT (SS-N-19)</text>
+      <text x="996" y="370" class="mono" font-size="7.6" fill="#8aa1a7">LAUNCHER CONFIG:</text>
+      <text x="1258" y="370" text-anchor="end" class="mono" font-size="7.6" fill="#d4e3e6">2×6 TWIN SM-225 (40° INCLINED)</text>
+      <text x="996" y="388" class="mono" font-size="7.6" fill="#8aa1a7">KINEMATICS:</text>
+      <text x="1258" y="388" text-anchor="end" class="mono" font-size="7.6" fill="#eab308">MACH 2.5+ · 625KM · WOLF-PACK AI</text>
+      <text x="996" y="406" class="mono" font-size="7.6" fill="#8aa1a7">BOW TORPEDO TUBES:</text>
+      <text x="1258" y="406" text-anchor="end" class="mono" font-size="7.6" fill="#d4e3e6">2×650MM + 4×533MM (28 WEAPONS)</text>
+      <text x="996" y="424" class="mono" font-size="7.6" fill="#8aa1a7">OTH TARGETING:</text>
+      <text x="1258" y="424" text-anchor="end" class="mono" font-size="7.6" fill="#38bdf8">KORALL-BN / PUNCH BOWL SATCOM</text>
+      <text x="996" y="442" class="mono" font-size="7.6" fill="#8aa1a7">MAIN SONAR:</text>
+      <text x="1258" y="442" text-anchor="end" class="mono" font-size="7.6" fill="#38bdf8">MGK-500 SKAT-3 / SHARK GILL</text>
+      <line x1="996" y1="454" x2="1258" y2="454" stroke="#1e2c33" stroke-width="1"/>
+      <text x="996" y="470" class="mono" font-size="8.0" fill="#eab308">NOTABLE VESSELS OF CLASS (11 BUILT):</text>
+      <text x="996" y="485" class="mono" font-size="7.6" fill="#d4e3e6">K-141 KURSK · K-266 OREL · K-119 VORONEZH</text>
+      <text x="996" y="498" class="mono" font-size="7.6" fill="#8aa1a7">K-186 OMSK · K-150 TOMSK · K-410 SMOLENSK</text>
+    </g>
+  </g>
+</svg>

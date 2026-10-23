@@ -1,0 +1,28 @@
+{
+  "name": "tactical-svg-arsenal",
+  "version": "1.0.0",
+  "description": "Tri-service (Navy / Army / Air Force) 1:1 tactical CAD SVG blueprint vault with interactive Vue 3 lightbox inspector and structured metadata catalog.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "index": "node scripts/build-index.mjs",
+    "predev": "npm run index",
+    "dev": "vite --host 127.0.0.1",
+    "build": "npm run index && vue-tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "node --test tests/*.test.mjs",
+    "verify": "node scripts/build-index.mjs --verify",
+    "verify:geometry": "python scripts/verify-clean-fleet.py"
+  },
+  "dependencies": {
+    "pinia": "^3.0.3",
+    "vue": "3.5.44",
+    "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "6.0.10",
+    "typescript": "~5.9.3",
+    "vite": "8.3.5",
+    "vue-tsc": "^3.1.0"
+  }
+}

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 320" width="1100" height="320" data-asset-id="naval.ra2.typhoon_ssn.side" style="background:#080a0b;">
+  <defs>
+    <style>
+      svg { fill: none; stroke-linecap: butt; }
+      .s-dim { stroke: #2c3b40; stroke-width: 1; }
+      .s-line { stroke: #5f7c84; stroke-width: 1; }
+      .s-hi { stroke: #d4e3e6; stroke-width: 1.2; }
+      .s-alert { stroke: #ff5a36; stroke-width: 1.4; }
+      .s-focus { stroke: #38bdf8; stroke-width: 1.4; }
+      .f-dim { fill: #2c3b40; stroke: none; }
+      .f-line { fill: #5f7c84; stroke: none; }
+      .f-hi { fill: #d4e3e6; stroke: none; }
+      .f-alert { fill: #ff5a36; stroke: none; }
+      .f-panel { fill: #0c1113; }
+      text { font-family: "Rajdhani", "Bahnschrift", "DIN Alternate", "Microsoft YaHei", sans-serif; letter-spacing: 0.12em; }
+      text:not([stroke]) { stroke: none; }
+      text:not([fill]) { fill: #cfdde0; }
+      text:not([font-size]):not(.cap):not(.big) { font-size: 10px; }
+      text.p { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; letter-spacing: 0.06em; }
+      text.cap { letter-spacing: 0.2em; text-transform: uppercase; }
+      text.cap:not([fill]) { fill: #8aa1a7; }
+      text.cap:not([font-size]) { font-size: 8.5px; }
+      text.mono { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; letter-spacing: 0.06em; }
+      text.big { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; font-weight: 600; letter-spacing: 0.08em; }
+      text.big:not([font-size]) { font-size: 18px; }
+      text.big:not([fill]) { fill: #d4e3e6; }
+      text.alert { fill: #ff5a36; }
+    </style>
+    <pattern id="cad-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#10181c" stroke-width="1"/>
+      <circle cx="20" cy="20" r="0.8" fill="#1b262b"/>
+    </pattern>
+    <pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#ff5a36" stroke-width="1.2" stroke-opacity="0.35"/>
+    </pattern>
+  </defs>
+
+  <!-- 1. 工程蓝图暗色底板与坐标网格图层 -->
+  <g id="layer-backdrop">
+    <rect x="0" y="0" width="1100" height="320" fill="#080a0b"/>
+    <rect x="20" y="20" width="1060" height="280" fill="url(#cad-grid)" stroke="#2c3b40" stroke-width="1"/>
+    <path d="M 20 36 V 20 H 36 M 1064 20 H 1080 V 36 M 20 284 V 300 H 36 M 1064 300 H 1080 V 284" fill="none" stroke="#38bdf8" stroke-width="1.5"/>
+    <line x1="20" y1="54" x2="1080" y2="54" stroke="#2c3b40" stroke-width="1"/>
+    <line x1="20" y1="274" x2="1080" y2="274" stroke="#2c3b40" stroke-width="1"/>
+    <text x="34" y="42" class="p mono" fill="#38bdf8" font-size="9.5" font-weight="bold">SOVIET NAVY RA2 TYPHOON-CLASS HEAVY ATTACK SUBMARINE (TK-210) · STARBOARD PROFILE</text>
+    <text x="1066" y="42" text-anchor="end" class="p cap" fill="#d4e3e6" font-size="9.5">苏联「台风」级重型攻击核潜艇 (TK-210) · 侧视48枚转轮重鱼雷舱与双核堆剖面图</text>
+    <text x="34" y="291" class="p mono" fill="#8aa1a7" font-size="9.5">14,500T SUBMERGED · 128.0M×15.2M · 4×650MM + 4×533MM TUBES (48×SHKVAL/65-76A) · 2×OK-650M PWR + 2×SHROUDED DUCTS · UID: 62</text>
+    <text x="1066" y="291" text-anchor="end" class="p mono" fill="#5f7c84" font-size="9.5">POSEIDON NAVAL CAD ASSET · TRUE 1:1 ASPECT (8.42:1)</text>
+  </g>
+
+  <!-- 2. 舰艇核心 CAD 矢量图层 (1:1 等比缩放 sx=sy=2.380 · 艇首朝右 +X · X=20..410 长390单位 = 128.0m) -->
+  <g id="layer-ship-cad">
+    <g transform="translate(56.0,56.0) scale(2.380,2.380)">
+      <!-- 0. 顶部净空区：VA-111「暴风」200节超空泡火箭鱼雷 (包裹超空泡气幕) + 65-76A「鲸」650mm 巨型反航母鱼雷双雷齐射剪影 -->
+      <g id="shkval-and-65-76-salvo">
+        <line x1="14.0" y1="16.5" x2="416.0" y2="16.5" stroke="#2c3b40" stroke-width="0.6" stroke-dasharray="4 3"/>
+        <text x="18.0" y="14.0" class="mono" font-size="2.4" fill="#5f7c84">DEEP-OCEAN WOLF-PACK INTERCEPT DATUM · MAX DEPTH 550M · 8-TUBE SALVO</text>
+
+        <!-- 从鲨鱼鼻艇首射出的双雷跃升引线 -->
+        <path d="M 405.0 47.0 C 414.0 36.0 398.0 18.0 356.0 8.5" fill="none" stroke="#ff5a36" stroke-width="0.75" stroke-dasharray="2.2 1.4"/>
+        <path d="M 401.0 52.5 C 412.0 42.0 388.0 24.0 356.0 24.5" fill="none" stroke="#eab308" stroke-width="0.7" stroke-dasharray="2.2 1.4"/>
+
+        <!-- [齐射剪影 1] VA-111 Shkval (暴风 533mm 200节超空泡火箭鱼雷 · 外裹锥形高温超空泡等离子气幕) -->
+        <g transform="translate(362.0, 8.2)">
+          <!-- 超空泡锥形气幕包络 (Supercavitating Gas Envelope) -->
+          <polygon points="34.0,0 18.0,-3.2 -8.0,-4.2 -4.0,0 -8.0,4.2 18.0,3.2"
+                   fill="#38bdf8" fill-opacity="0.14" stroke="#38bdf8" stroke-width="0.7" stroke-dasharray="2 1.2"/>
+          <!-- 尾端固体火箭喷流尾焰 -->
+          <polygon points="-14.0,0 -4.0,-1.8 -4.0,1.8" fill="#ff5a36" fill-opacity="0.88"/>
+          <!-- 鱼雷本体与前端空化器圆盘鼻锥 (Cavitator Disk Nose) -->
+          <polygon points="-4.0,-1.2 24.0,-1.2 31.5,-0.5 31.5,0.5 24.0,1.2 -4.0,1.2" fill="#261014" stroke="#ff5a36" stroke-width="0.8"/>
+          <line x1="31.8" y1="-1.5" x2="31.8" y2="1.5" stroke="#eab308" stroke-width="1.0"/>
+          <polygon points="2.0,-1.2 0,-3.2 4.5,-1.2" fill="#d4e3e6"/>
+          <polygon points="2.0,1.2 0,3.2 4.5,1.2" fill="#d4e3e6"/>
+        </g>
+        <text x="342.0" y="6.8" text-anchor="end" class="mono" font-size="2.4" fill="#ff5a36" font-weight="bold">VA-111 SHKVAL (200 KTS)</text>
+
+        <!-- [齐射剪影 2] 65-76A Kit (650mm 11米长重型过氧化氢尾流自导反航母鱼雷) -->
+        <g transform="translate(362.0, 24.5)">
+          <rect x="-4.0" y="-1.7" width="32.0" height="3.4" rx="1.6" fill="#1a140c" stroke="#eab308" stroke-width="0.85"/>
+          <line x1="21.0" y1="-1.7" x2="21.0" y2="1.7" stroke="#ff5a36" stroke-width="0.7"/>
+          <line x1="12.0" y1="-1.7" x2="12.0" y2="1.7" stroke="#38bdf8" stroke-width="0.6"/>
+          <!-- 尾部对转螺旋桨与十字尾翼 -->
+          <polygon points="-4.0,-1.2 -6.5,-2.8 -6.5,2.8 -4.0,1.2" fill="#eab308"/>
+        </g>
+        <text x="352.0" y="29.8" text-anchor="end" class="mono" font-size="2.3" fill="#eab308">65-76A KIT (650MM WAKE-HOMING)</text>
+      </g>
+
+      <!-- 1. 红警2 经典尾部地标：双并列环形装甲导管推进器 (Twin Shrouded Ducted Propulsors · X=20..48) 与十字稳定尾舵 -->
+      <g id="ra2-twin-shrouded-propulsors">
+        <!-- 高大梯形上垂直尾翼 + 顶置 Skat-KS 拖曳线列声呐导流荚舱 (X=32..66, Y=21.5..45.5) -->
+        <polygon points="32.0,45.5 39.0,22.0 53.0,22.0 66.0,41.5" fill="#0a1822" stroke="#d4e3e6" stroke-width="1.2"/>
+        <line x1="46.5" y1="22.0" x2="50.0" y2="43.5" stroke="#4a6368" stroke-width="0.75"/>
+        <path d="M 28.5 21.5 C 33.0 19.8 52.0 19.8 57.5 21.5 C 52.0 23.0 33.0 23.0 28.5 21.5 Z" fill="#0d2230" stroke="#38bdf8" stroke-width="0.95"/>
+        <circle cx="29.5" cy="21.5" r="0.8" fill="#ff5a36"/>
+
+        <!-- 下垂直腹鳍稳定舵 (Lower Ventral Fin · X=34..62, Y=66.5..80.2) -->
+        <polygon points="34.0,66.5 62.0,71.0 53.0,80.2 39.0,80.2" fill="#0a1822" stroke="#d4e3e6" stroke-width="1.15"/>
+        <line x1="46.5" y1="68.5" x2="46.0" y2="80.2" stroke="#4a6368" stroke-width="0.7"/>
+
+        <!-- 大型环形装甲导管推进器环筒 (Armored Shrouded Propulsor Duct · X=20..46, Y=46.5..65.5 · #eab308 高亮) -->
+        <polygon points="20.0,47.8 41.5,45.8 46.0,47.5 46.0,64.5 41.5,66.2 20.0,64.2"
+                 fill="#161f26" stroke="#eab308" stroke-width="1.25"/>
+        <!-- 导管外壁加强装甲肋条与红警2重工业铆接折线 -->
+        <rect x="23.0" y="47.2" width="17.5" height="17.6" fill="#0c151c" stroke="#38bdf8" stroke-width="0.75"/>
+        <!-- 导管内前置定子导叶与双7叶反转螺旋桨透视 -->
+        <line x1="35.5" y1="47.2" x2="35.5" y2="64.8" stroke="#38bdf8" stroke-width="0.9" stroke-dasharray="1.8 1.0"/>
+        <line x1="28.5" y1="47.2" x2="28.5" y2="64.8" stroke="#eab308" stroke-width="1.2" stroke-dasharray="2.0 1.0"/>
+        <line x1="24.5" y1="47.2" x2="24.5" y2="64.8" stroke="#ff5a36" stroke-width="1.0" stroke-dasharray="1.8 1.0"/>
+        <!-- 推进器中心消音尾锥与水平尾翼翼面 -->
+        <polygon points="16.8,56.0 20.5,53.2 20.5,58.8" fill="#eab308" stroke="#d4e3e6" stroke-width="0.7"/>
+        <ellipse cx="52.0" cy="56.0" rx="15.0" ry="2.0" fill="#091620" stroke="#38bdf8" stroke-width="0.9"/>
+        <text x="20.0" y="18.0" class="mono" font-size="2.4" fill="#eab308">2×SHROUDED DUCTED PROPULSORS</text>
+      </g>
+
+      <!-- 2. 主艇体：8.42:1 宽体强袭钛合金双壳体 + 破冰强化脊背 + 标志性前掠鲨鱼鼻艇首 (X=34..410, Y=38.5..73.5) -->
+      <g id="ra2-sharknose-outer-hull">
+        <!-- 下半部暗红重型防污消声船底与声学消音瓦 -->
+        <path d="M 38.0 56.0 L 404.0 56.0 L 385.0 72.5 C 378.0 73.5 362.0 73.5 340.0 73.5 L 92.0 73.5 C 66.0 73.5 48.0 67.5 38.0 63.0 Z"
+              fill="#240d12" stroke="#ff5a36" stroke-width="1.0"/>
+        <!-- 主艇体外廓：平直破冰强化脊背 (Y=39.2) + 冷峻前掠鲨鱼鼻尖端 (X=410.0, Y=51.5) + 内收下颚折角 -->
+        <path d="M 38.0 49.0 C 50.0 44.5 68.0 39.2 92.0 39.2 L 368.0 39.2 C 384.0 39.2 398.0 43.5 410.0 51.5 L 385.0 72.5 C 378.0 73.5 362.0 73.5 340.0 73.5 L 92.0 73.5 C 66.0 73.5 48.0 67.5 38.0 63.0 Z"
+              fill="#08131b" fill-opacity="0.88" stroke="#d4e3e6" stroke-width="1.35"/>
+
+        <!-- 艇背破冰强化装甲隆起脊线与艇尾拖曳声呐绞车整流背脊 (X=76..248 &amp; 322..382) -->
+        <polygon points="74.0,39.2 82.0,36.8 248.0,36.8 248.0,39.2" fill="#0d202d" stroke="#38bdf8" stroke-width="0.8"/>
+        <polygon points="322.0,39.2 322.0,37.2 372.0,37.2 382.0,39.2" fill="#0d202d" stroke="#38bdf8" stroke-width="0.8"/>
+        <!-- 艇体中轴装甲折线与两腮鲨鱼鳃消音导流格栅 (Shark-Gill Acoustic Louvers · X=340..366) -->
+        <line x1="40.0" y1="56.0" x2="404.0" y2="56.0" stroke="#4a6368" stroke-width="0.65" stroke-dasharray="5 2.5"/>
+        <g stroke="#38bdf8" stroke-width="0.85">
+          <line x1="342.0" y1="42.0" x2="339.5" y2="48.0"/>
+          <line x1="346.5" y1="42.0" x2="344.0" y2="48.0"/>
+          <line x1="351.0" y1="42.0" x2="348.5" y2="48.0"/>
+          <line x1="355.5" y1="42.0" x2="353.0" y2="48.0"/>
+          <line x1="360.0" y1="42.0" x2="357.5" y2="48.0"/>
+        </g>
+      </g>
+
+      <!-- 3. 红警2 标志性宽肩流线型阶梯指挥台围壳 (Stepped Armored Sail · X=248..322, Y=19.2..39.2) + 可动前水平翼 -->
+      <g id="ra2-stepped-armored-sail">
+        <!-- 阶梯式重装甲指挥台围壳主轮廓 (后部二级平台 + 前部带装甲护眉的主舰桥) -->
+        <path d="M 248.0 39.2 L 255.0 25.5 L 274.0 25.5 L 279.0 19.2 L 314.5 19.2 L 318.5 23.0 L 312.5 26.5 L 322.0 39.2 Z"
+              fill="#0e2230" stroke="#d4e3e6" stroke-width="1.25"/>
+        <line x1="252.0" y1="32.2" x2="316.8" y2="32.2" stroke="#4a6368" stroke-width="0.7"/>
+        <!-- 围壳前部带装甲护眉的深海防爆观察窗 (Armored Brow Visor Windows) -->
+        <polygon points="301.0,21.2 315.8,21.2 312.5,24.8 301.0,24.8" fill="#05111a" stroke="#38bdf8" stroke-width="0.9"/>
+        <line x1="306.0" y1="21.2" x2="306.0" y2="24.8" stroke="#d4e3e6" stroke-width="0.55"/>
+        <line x1="311.0" y1="21.2" x2="311.0" y2="24.8" stroke="#d4e3e6" stroke-width="0.55"/>
+
+        <!-- 苏维埃红星徽记与 TK-210 战术舷号 -->
+        <circle cx="286.0" cy="27.2" r="2.6" fill="#261014" stroke="#ff5a36" stroke-width="0.75"/>
+        <polygon points="286.0,25.0 286.6,26.5 288.2,26.5 286.9,27.4 287.4,29.0 286.0,28.0 284.6,29.0 285.1,27.4 283.8,26.5 285.4,26.5"
+                 fill="#ff5a36"/>
+        <text x="299.0" y="30.2" text-anchor="middle" class="mono" font-size="3.4" font-weight="bold" fill="#d4e3e6">210</text>
+        <text x="268.0" y="37.2" text-anchor="middle" class="mono" font-size="2.3" fill="#eab308">TK-210</text>
+
+        <!-- 围壳前下部大展弦比可动首水平翼 (Movable Foreplanes · X=314..335, Y=35.2..38.5) -->
+        <polygon points="314.0,36.8 333.5,35.2 335.5,38.0 315.5,39.0" fill="#132c3d" stroke="#38bdf8" stroke-width="0.95"/>
+        <line x1="316.0" y1="37.2" x2="333.0" y2="36.6" stroke="#d4e3e6" stroke-width="0.6"/>
+
+        <!-- 围壳顶置升降潜望镜、雷达与全向极低频通信桅杆 -->
+        <line x1="305.0" y1="19.2" x2="305.0" y2="8.8" stroke="#d4e3e6" stroke-width="1.0"/>
+        <rect x="303.2" y="6.8" width="3.6" height="2.2" rx="0.5" fill="#133246" stroke="#38bdf8" stroke-width="0.75"/>
+        <line x1="296.5" y1="19.2" x2="296.5" y2="10.5" stroke="#d4e3e6" stroke-width="0.9"/>
+        <circle cx="296.5" cy="9.6" r="1.2" fill="#0d2230" stroke="#eab308" stroke-width="0.75"/>
+        <line x1="287.0" y1="19.2" x2="287.0" y2="12.0" stroke="#5f7c84" stroke-width="0.9"/>
+        <rect x="283.5" y="10.5" width="7.0" height="1.7" rx="0.4" fill="#0d2230" stroke="#38bdf8" stroke-width="0.75"/>
+        <text x="285.0" y="5.2" text-anchor="middle" class="mono" font-size="2.4" fill="#38bdf8">ARMORED SAIL &amp; FOREPLANES</text>
+      </g>
+
+      <!-- 4. 后半艇钛合金耐压壳内透视：2×OK-650M 压水核反应堆 (390MWt) + 双蒸汽涡轮主机舱 (80,000 SHP) + 作战指挥舱 (X=56..256) -->
+      <g id="aft-twin-reactors-and-turbines">
+        <!-- 48-T 钛合金内耐压壳体总包络框 (X=56..366, Y=42.2..70.8) -->
+        <rect x="56.0" y="42.2" width="310.0" height="28.6" rx="3.2" fill="#061018" fill-opacity="0.72" stroke="#38bdf8" stroke-width="0.85" stroke-dasharray="4.5 2.0"/>
+        <!-- 钛合金耐压隔舱横向环形加强肋骨 -->
+        <g stroke="#2c3b40" stroke-width="0.7" stroke-dasharray="2.2 1.4">
+          <line x1="116.0" y1="42.2" x2="116.0" y2="70.8"/>
+          <line x1="186.0" y1="42.2" x2="186.0" y2="70.8"/>
+          <line x1="254.0" y1="42.2" x2="254.0" y2="70.8"/>
+          <line x1="336.0" y1="42.2" x2="336.0" y2="70.8"/>
+        </g>
+
+        <!-- [后轮机舱 · X=58..116] 双座 GTZA 蒸汽涡轮齿轮主机组 (2×40,000 SHP = 80,000 SHP) 与双推进轴 -->
+        <polygon points="60.0,46.5 113.0,44.5 113.0,67.5 60.0,65.5" fill="#081824" fill-opacity="0.75" stroke="#eab308" stroke-width="0.85" stroke-dasharray="3 1.5"/>
+        <line x1="36.0" y1="53.5" x2="120.0" y2="53.5" stroke="#eab308" stroke-width="1.1" stroke-dasharray="4 1.8"/>
+        <line x1="36.0" y1="58.5" x2="120.0" y2="58.5" stroke="#eab308" stroke-width="1.1" stroke-dasharray="4 1.8"/>
+        <rect x="74.0" y="48.8" width="32.0" height="14.4" rx="1.4" fill="#0d2230" stroke="#38bdf8" stroke-width="0.75"/>
+        <text x="90.0" y="57.0" text-anchor="middle" class="mono" font-size="2.3" fill="#eab308">2×GTZA (80,000SHP)</text>
+
+        <!-- [双核反应堆舱 · X=118..186] 2×OK-650M 压水核反应堆屏蔽舱 (2×195MWt = 390MWt) -->
+        <rect x="120.0" y="44.2" width="30.0" height="24.5" rx="2.0" fill="#1e0c10" fill-opacity="0.8" stroke="#ff5a36" stroke-width="0.95"/>
+        <rect x="153.0" y="44.2" width="30.0" height="24.5" rx="2.0" fill="#1e0c10" fill-opacity="0.8" stroke="#ff5a36" stroke-width="0.95"/>
+        <circle cx="135.0" cy="56.5" r="5.8" fill="#2c1015" stroke="#ff5a36" stroke-width="0.85"/>
+        <circle cx="135.0" cy="56.5" r="2.6" fill="#ff5a36" fill-opacity="0.7"/>
+        <line x1="135.0" y1="45.0" x2="135.0" y2="50.7" stroke="#eab308" stroke-width="1.15"/>
+        <circle cx="168.0" cy="56.5" r="5.8" fill="#2c1015" stroke="#ff5a36" stroke-width="0.85"/>
+        <circle cx="168.0" cy="56.5" r="2.6" fill="#ff5a36" fill-opacity="0.7"/>
+        <line x1="168.0" y1="45.0" x2="168.0" y2="50.7" stroke="#eab308" stroke-width="1.15"/>
+        <text x="151.5" y="67.5" text-anchor="middle" class="mono" font-size="2.3" fill="#ff5a36">2×OK-650M PWR (390MWt)</text>
+
+        <!-- [作战指挥与声呐火控舱 · X=188..254] Omnibus-M 狼群作战系统与深海救援舱 (okb) -->
+        <line x1="186.0" y1="53.5" x2="254.0" y2="53.5" stroke="#4a6368" stroke-width="0.65"/>
+        <line x1="186.0" y1="62.5" x2="254.0" y2="62.5" stroke="#4a6368" stroke-width="0.65"/>
+        <text x="220.0" y="49.5" text-anchor="middle" class="mono" font-size="2.3" fill="#38bdf8">OMNIBUS-M C3I &amp; SONAR</text>
+        <rect x="192.0" y="63.8" width="56.0" height="5.5" fill="#081c28" stroke="#38bdf8" stroke-width="0.65"/>
+      </g>
+
+      <!-- 5. 前半艇核心灵魂：第一/第二隔舱 48枚全自动转轮再装填重型鱼雷武库 (X=256..366) + 艇首 8具双口径鱼雷管 (4×650mm+4×533mm) -->
+      <g id="revolver-torpedo-magazine-and-8tubes">
+        <!-- 48枚全自动转轮重型鱼雷武库高亮舱段框 (X=256.0..364.0, Y=42.8..70.2) -->
+        <rect x="256.0" y="42.8" width="108.0" height="27.4" rx="1.8" fill="#180b10" fill-opacity="0.62" stroke="#ff5a36" stroke-width="1.05" stroke-dasharray="3.5 1.6"/>
+
+        <!-- 后转轮自动装填鼓 (Drum #2 · cx=276.0, cy=56.5, r=10.5) 与前转轮自动装填鼓 (Drum #1 · cx=318.0, cy=56.5, r=10.5) -->
+        <circle cx="276.0" cy="56.5" r="10.2" fill="#12090d" stroke="#eab308" stroke-width="0.9" stroke-dasharray="2.5 1.2"/>
+        <circle cx="276.0" cy="56.5" r="2.2" fill="#eab308"/>
+        <circle cx="318.0" cy="56.5" r="10.2" fill="#12090d" stroke="#ff5a36" stroke-width="0.9" stroke-dasharray="2.5 1.2"/>
+        <circle cx="318.0" cy="56.5" r="2.2" fill="#ff5a36"/>
+
+        <!-- 四层全自动液压鱼雷储运架：混装 65-76A Kit (650mm 巨型鱼雷 · #eab308) 与 VA-111 Shkval (533mm 暴风超空泡鱼雷 · #ff5a36) -->
+        <g stroke-width="0.75">
+          <!-- 第 1 层 (650mm 65-76A 重型鱼雷) -->
+          <rect x="260.0" y="44.8" width="32.0" height="2.6" rx="0.9" fill="#1f160c" stroke="#eab308"/>
+          <rect x="296.0" y="44.8" width="32.0" height="2.6" rx="0.9" fill="#1f160c" stroke="#eab308"/>
+          <rect x="331.0" y="44.8" width="29.0" height="2.6" rx="0.9" fill="#1f160c" stroke="#eab308"/>
+          <!-- 第 2 层 (533mm VA-111 暴风超空泡鱼雷) -->
+          <rect x="260.0" y="49.2" width="28.0" height="2.2" rx="0.7" fill="#281014" stroke="#ff5a36"/>
+          <rect x="292.0" y="49.2" width="28.0" height="2.2" rx="0.7" fill="#281014" stroke="#ff5a36"/>
+          <rect x="324.0" y="49.2" width="36.0" height="2.2" rx="0.7" fill="#281014" stroke="#ff5a36"/>
+          <!-- 第 3 层 (533mm VA-111 / TEST-71M 鱼雷) -->
+          <rect x="260.0" y="59.8" width="28.0" height="2.2" rx="0.7" fill="#281014" stroke="#ff5a36"/>
+          <rect x="292.0" y="59.8" width="28.0" height="2.2" rx="0.7" fill="#0d2230" stroke="#38bdf8"/>
+          <rect x="324.0" y="59.8" width="36.0" height="2.2" rx="0.7" fill="#281014" stroke="#ff5a36"/>
+          <!-- 第 4 层 (650mm 65-76A 重型鱼雷) -->
+          <rect x="260.0" y="64.0" width="32.0" height="2.6" rx="0.9" fill="#1f160c" stroke="#eab308"/>
+          <rect x="296.0" y="64.0" width="32.0" height="2.6" rx="0.9" fill="#1f160c" stroke="#eab308"/>
+          <rect x="331.0" y="64.0" width="29.0" height="2.6" rx="0.9" fill="#1f160c" stroke="#eab308"/>
+        </g>
+        <text x="310.0" y="56.2" text-anchor="middle" class="mono" font-size="2.3" fill="#d4e3e6" font-weight="bold">48-ROUND REVOLVER TORPEDO MAGAZINE</text>
+
+        <!-- 艇首高密度 8具双口径重型鱼雷发射管 (上2排 4×650mm + 下2排 4×533mm · X=364..405) + 全向攻击声呐阵 -->
+        <g stroke-width="0.8">
+          <rect x="364.0" y="43.5" width="34.0" height="2.6" rx="0.6" fill="#1f160c" stroke="#eab308"/>
+          <rect x="364.0" y="47.2" width="38.5" height="2.6" rx="0.6" fill="#1f160c" stroke="#eab308"/>
+          <rect x="364.0" y="51.0" width="41.5" height="2.2" rx="0.5" fill="#281014" stroke="#ff5a36"/>
+          <rect x="364.0" y="54.2" width="38.0" height="2.2" rx="0.5" fill="#281014" stroke="#ff5a36"/>
+        </g>
+        <!-- 艇首下部 MGK-540 Skat-3 全向主被动攻击声呐基阵 (X=368..396, Y=58.5..71.0) -->
+        <polygon points="368.0,58.5 397.5,58.5 385.5,71.2 368.0,71.2" fill="#0b2434" fill-opacity="0.8" stroke="#38bdf8" stroke-width="0.95"/>
+        <line x1="370.0" y1="62.5" x2="393.0" y2="62.5" stroke="#38bdf8" stroke-width="0.55"/>
+        <line x1="370.0" y1="66.5" x2="389.0" y2="66.5" stroke="#38bdf8" stroke-width="0.55"/>
+        <text x="380.0" y="69.8" text-anchor="middle" class="mono" font-size="2.2" fill="#38bdf8">SKAT-3 SONAR</text>
+      </g>
+
+      <!-- 6. 底部全艇总长与核心分段工程标尺 (LOA 128.0m · BEAM 15.2m · ASPECT 8.42:1 · 零碰撞) -->
+      <g id="dimension-ruler" stroke="#5f7c84" stroke-width="0.6">
+        <line x1="20.0" y1="84.5" x2="410.0" y2="84.5"/>
+        <line x1="20.0" y1="81.5" x2="20.0" y2="87.0"/>
+        <line x1="186.0" y1="82.0" x2="186.0" y2="86.5"/>
+        <line x1="256.0" y1="82.0" x2="256.0" y2="86.5" stroke="#ff5a36"/>
+        <line x1="410.0" y1="81.5" x2="410.0" y2="87.0"/>
+        <text x="103.0" y="83.0" text-anchor="middle" class="mono" font-size="2.5" fill="#eab308">2×SHROUDED DUCTS &amp; 2×OK-650M PWR</text>
+        <text x="221.0" y="83.0" text-anchor="middle" class="mono" font-size="2.5" fill="#38bdf8">C3I &amp; SAIL</text>
+        <text x="333.0" y="83.0" text-anchor="middle" class="mono" font-size="2.5" fill="#ff5a36">48-TORP MAGAZINE &amp; 8 TUBES · LOA 128.0M</text>
+      </g>
+    </g>
+  </g>
+</svg>

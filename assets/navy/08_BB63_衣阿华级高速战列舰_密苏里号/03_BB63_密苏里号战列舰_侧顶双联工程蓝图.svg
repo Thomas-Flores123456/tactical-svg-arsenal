@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 580" width="1320" height="580" data-asset-id="naval.bb63.master.sheet" style="background:#080a0b;">
+  <defs>
+    <style>
+      svg { fill: none; stroke-linecap: butt; }
+      .s-dim { stroke: #2c3b40; stroke-width: 1; }
+      .s-line { stroke: #5f7c84; stroke-width: 1; }
+      .s-hi { stroke: #d4e3e6; stroke-width: 1.2; }
+      .s-alert { stroke: #ff5a36; stroke-width: 1.4; }
+      .s-focus { stroke: #38bdf8; stroke-width: 1.4; }
+      .f-dim { fill: #2c3b40; stroke: none; }
+      .f-line { fill: #5f7c84; stroke: none; }
+      .f-hi { fill: #d4e3e6; stroke: none; }
+      .f-alert { fill: #ff5a36; stroke: none; }
+      .f-panel { fill: #0c1113; }
+      text { font-family: "Rajdhani", "Bahnschrift", "DIN Alternate", "Microsoft YaHei", sans-serif; letter-spacing: 0.12em; }
+      text:not([stroke]) { stroke: none; }
+      text:not([fill]) { fill: #cfdde0; }
+      text:not([font-size]):not(.cap):not(.big) { font-size: 10px; }
+      text.cap { letter-spacing: 0.2em; text-transform: uppercase; }
+      text.cap:not([fill]) { fill: #8aa1a7; }
+      text.cap:not([font-size]) { font-size: 8.5px; }
+      text.mono { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; letter-spacing: 0.06em; }
+      text.big { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; font-weight: 600; letter-spacing: 0.08em; }
+      text.big:not([font-size]) { font-size: 18px; }
+      text.big:not([fill]) { fill: #d4e3e6; }
+      text.alert { fill: #ff5a36; }
+    </style>
+    <pattern id="cad-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#10181c" stroke-width="1"/>
+      <circle cx="20" cy="20" r="0.8" fill="#1b262b"/>
+    </pattern>
+    <pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#ff5a36" stroke-width="1.1" stroke-opacity="0.38"/>
+    </pattern>
+    <pattern id="teak-lines" width="12" height="3.2" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="1.6" x2="12" y2="1.6" stroke="#162c3a" stroke-width="0.55"/>
+    </pattern>
+  </defs>
+
+  <!-- 1. 工程蓝图暗色底板与坐标网格图层 -->
+  <g id="layer-backdrop">
+    <rect x="0" y="0" width="1320" height="580" fill="#080a0b"/>
+    <rect x="20" y="20" width="1280" height="540" fill="url(#cad-grid)" stroke="#2c3b40" stroke-width="1"/>
+    <path d="M 20 36 V 20 H 36 M 1284 20 H 1300 V 36 M 20 544 V 560 H 36 M 1284 560 H 1300 V 544" fill="none" stroke="#38bdf8" stroke-width="1.5"/>
+    <line x1="20" y1="54" x2="1300" y2="54" stroke="#2c3b40" stroke-width="1"/>
+    <line x1="20" y1="534" x2="1300" y2="534" stroke="#2c3b40" stroke-width="1"/>
+    <text x="34" y="42" class="p mono" fill="#38bdf8" font-size="11" font-weight="bold">US NAVY IOWA-CLASS FAST BATTLESHIP (BB-63 USS MISSOURI) · 58,000T 1986 REFIT MASTER BLUEPRINT</text>
+    <text x="1286" y="42" text-anchor="end" class="p cap" fill="#d4e3e6" font-size="10.5">衣阿华级「BB-63 密苏里号」高速战列舰 · 侧视立面与顶视全甲板双联工程总图</text>
+    <text x="34" y="551" class="p mono" fill="#8aa1a7" font-size="9.5">LOA: 270.4M · BEAM: 33.0M (8.2:1) · 212,000 SHP (33 KTS) · 3×3 406MM/50 MK 7 · 8×4 BGM-109 TOMAHAWK ABL · 4×4 RGM-84 HARPOON · UID-190</text>
+    <text x="1286" y="551" text-anchor="end" class="p mono" fill="#5f7c84" font-size="9.5">POSEIDON NAVAL CAD ASSET · TRUE 1:1 ASPECT</text>
+  </g>
+
+  <!-- 2. 舰艇核心 CAD 矢量图层 (上下正交同轴投影 · 1:1 等比缩放 scale=2.450) -->
+  <g id="layer-ship-cad">
+
+    <!-- ==================== 上半框：01 / STARBOARD PROFILE ELEVATION ==================== -->
+    <rect x="44" y="66" width="1232" height="244" fill="#091116" fill-opacity="0.45" stroke="#2c3b40"/>
+    <text font-size="9.5" x="58" y="84" class="p mono" fill="#38bdf8">01 / STARBOARD PROFILE ELEVATION · 1986 MODERNIZATION REFIT (3×3 406MM MK 7 · 8×4 TOMAHAWK ABL · 4×4 HARPOON)</text>
+    <text x="1262" y="84" text-anchor="end" class="p mono" fill="#8aa1a7" font-size="9">SCALE 1:1 · CITADEL BELT 307MM</text>
+
+    <!-- 上下视图同轴正交投影基准虚线 (舰尾 X=14 / X炮塔 X=108 / 2号烟囱 X=176 / 1号烟囱 X=226 / B炮塔 X=294 / A炮塔 X=328 / 舰首 X=428) -->
+    <g stroke="#1b2d36" stroke-width="0.8" stroke-dasharray="3 3">
+      <line x1="155.3" y1="265" x2="155.3" y2="427"/>
+      <line x1="385.6" y1="265" x2="385.6" y2="427"/>
+      <line x1="552.2" y1="265" x2="552.2" y2="427"/>
+      <line x1="674.7" y1="265" x2="674.7" y2="427"/>
+      <line x1="841.3" y1="265" x2="841.3" y2="427"/>
+      <line x1="924.6" y1="265" x2="924.6" y2="427"/>
+      <line x1="1169.6" y1="265" x2="1169.6" y2="427"/>
+    </g>
+
+    <g transform="translate(121.0,89.0) scale(2.450,2.450)">
+      <!-- 模块 A: 3×3 406mm/50 Mk 7 主炮与 Mk 8 超重穿甲弹标定框 (X=14..108, Y=1..22) -->
+      <rect x="14" y="1" width="94" height="21" fill="#08131a" stroke="#2c3b40" stroke-width="0.7"/>
+      <path d="M 14 5 V 1 H 18 M 104 1 H 108 V 5" fill="none" stroke="#ff5a36" stroke-width="0.9"/>
+      <text x="18" y="6.8" class="mono" font-size="3.9" fill="#ff5a36" font-weight="bold">3×3 406MM/50 MK 7 BATTERY</text>
+      <text x="18" y="11.5" class="mono" font-size="3.3" fill="#d4e3e6">AP MK 8: 1,225KG · V0: 762M/S</text>
+      <text x="18" y="16.0" class="mono" font-size="3.2" fill="#8aa1a7">TURRET FACE: 432MM · RANGE: 38.7KM</text>
+      <text x="18" y="20.4" class="mono" font-size="3.2" fill="#eab308">TURRETS: A (FWD) · B (SUPER) · X (AFT)</text>
+      <g transform="translate(94, 3)">
+        <rect x="0" y="6" width="3.2" height="11" fill="#122836" stroke="#d4e3e6" stroke-width="0.5"/>
+        <polygon points="0,6 1.6,1 3.2,6" fill="#ff5a36"/>
+        <rect x="5.5" y="4" width="3.2" height="13" fill="#0c1c26" stroke="#eab308" stroke-width="0.5"/>
+        <line x1="5.5" y1="7.2" x2="8.7" y2="7.2" stroke="#eab308" stroke-width="0.4"/>
+        <line x1="5.5" y1="10.5" x2="8.7" y2="10.5" stroke="#eab308" stroke-width="0.4"/>
+        <line x1="5.5" y1="13.8" x2="8.7" y2="13.8" stroke="#eab308" stroke-width="0.4"/>
+      </g>
+
+      <!-- 模块 B: 1986 现代化改装导弹矩阵 (8×4 战斧 ABL + 4×4 捕鲸叉) 展开图 (X=112..214, Y=1..22) -->
+      <rect x="108" y="1" width="98" height="21" fill="#08131a" stroke="#38bdf8" stroke-width="0.75"/>
+      <text x="111" y="6.8" class="mono" font-size="3.3" fill="#38bdf8" font-weight="bold">8×4 (32) TOMAHAWK ABL</text>
+      <text x="111" y="11.5" class="mono" font-size="3.1" fill="#ff5a36" font-weight="bold">4×4 (16) HARPOON ASM</text>
+      <text x="111" y="16.0" class="mono" font-size="2.8" fill="#d4e3e6">4×MK 15 CIWS · 6×2 127MM</text>
+      <text x="111" y="20.4" class="mono" font-size="2.8" fill="#8aa1a7">SPS-49 RADAR · SLQ-32 EW</text>
+      <g transform="translate(182, 2.5)">
+        <rect x="0" y="0" width="9" height="4.2" fill="#0d2230" stroke="#38bdf8" stroke-width="0.55"/>
+        <rect x="0" y="5.2" width="9" height="4.2" fill="#0d2230" stroke="#38bdf8" stroke-width="0.55"/>
+        <rect x="0" y="10.4" width="9" height="4.2" fill="#0d2230" stroke="#38bdf8" stroke-width="0.55"/>
+        <rect x="0" y="15.6" width="9" height="4.2" fill="#0d2230" stroke="#38bdf8" stroke-width="0.55"/>
+        <circle cx="2.2" cy="2.1" r="0.7" fill="#38bdf8"/><circle cx="4.5" cy="2.1" r="0.7" fill="#38bdf8"/><circle cx="6.8" cy="2.1" r="0.7" fill="#38bdf8"/>
+        <circle cx="2.2" cy="7.3" r="0.7" fill="#38bdf8"/><circle cx="4.5" cy="7.3" r="0.7" fill="#38bdf8"/><circle cx="6.8" cy="7.3" r="0.7" fill="#38bdf8"/>
+        <rect x="13" y="2.5" width="2.2" height="17" fill="#102838" stroke="#38bdf8" stroke-width="0.55"/>
+        <polygon points="13,2.5 14.1,0 15.2,2.5" fill="#38bdf8"/>
+        <line x1="11.2" y1="10" x2="17" y2="10" stroke="#d4e3e6" stroke-width="0.6"/>
+        <rect x="19" y="5.5" width="2.2" height="14" fill="#1a1822" stroke="#ff5a36" stroke-width="0.55"/>
+        <polygon points="19,5.5 20.1,3 21.2,5.5" fill="#ff5a36"/>
+      </g>
+
+      <!-- 模块 C: 巴拿马极限高速船体与主装甲盒参数框 (X=298..426) -->
+      <rect x="298" y="5" width="128" height="22" fill="#08131a" stroke="#2c3b40" stroke-width="0.7"/>
+      <path d="M 298 9 V 5 H 302 M 422 5 H 426 V 9" fill="none" stroke="#38bdf8" stroke-width="0.9"/>
+      <text x="303" y="11.5" class="mono" font-size="4.2" fill="#38bdf8" font-weight="bold">PANAMAX FAST BATTLESHIP HULL (8.2:1)</text>
+      <text x="303" y="16.8" class="mono" font-size="3.6" fill="#d4e3e6">LOA: 270.4M · BEAM: 33.0M · DISP: 58,000T</text>
+      <text x="303" y="22.0" class="mono" font-size="3.5" fill="#eab308">BELT: 307MM (19° INCLINED) · 212,000 SHP / 33 KTS</text>
+
+      <!-- 水下暗红船底、球鼻艏、双舵与四轴金桨 -->
+      <path d="M 18 71.5 L 415 71.5 C 418 73.2, 422 75.0, 423.5 77.5 C 424.5 80.0, 421.0 82.2, 414 82.2 L 74 82.2 L 44 79.0 L 19 76.2 Z"
+            fill="#261014" stroke="#ff5a36" stroke-width="1.0"/>
+      <path d="M 142 79.5 L 154 81.2 L 296 81.2 L 308 79.5" fill="none" stroke="#ff5a36" stroke-width="0.85"/>
+      <polygon points="22,76.2 31,76.8 29.5,83.5 21.5,83.5" fill="#261014" stroke="#ff5a36" stroke-width="0.85"/>
+      <line x1="36" y1="80.5" x2="76" y2="77.2" stroke="#eab308" stroke-width="1.1"/>
+      <line x1="49" y1="81.2" x2="88" y2="78.0" stroke="#eab308" stroke-width="0.95"/>
+      <line x1="42" y1="77.2" x2="40" y2="80.8" stroke="#d4e3e6" stroke-width="0.8"/>
+      <line x1="55" y1="78.0" x2="53" y2="81.2" stroke="#d4e3e6" stroke-width="0.8"/>
+      <ellipse cx="36" cy="80.5" rx="1.6" ry="4.4" fill="#eab308" stroke="#d4e3e6" stroke-width="0.55"/>
+      <ellipse cx="49" cy="81.2" rx="1.5" ry="4.1" fill="#eab308" stroke="#d4e3e6" stroke-width="0.55"/>
+      <polygon points="92,68.8 348,68.8 344,73.5 96,73.5" fill="url(#hatch)" stroke="#ff5a36" stroke-width="0.85"/>
+      <line x1="14" y1="71.5" x2="418" y2="71.5" stroke="#ff5a36" stroke-width="0.9" stroke-dasharray="3 1.5"/>
+
+      <!-- 水线以上修长飞剪式长首楼船体与舷号 63 -->
+      <path d="M 14 63.5 L 92 62.5 L 280 61.2 L 352 60.0 L 428 56.2 C 423 61.5, 418 66.8, 415 71.5 L 18 71.5 L 14 63.5 Z"
+            fill="#0a1822" stroke="#d4e3e6" stroke-width="1.3"/>
+      <path d="M 15 64.8 L 92 63.8 L 280 62.5 L 352 61.4 L 424 58.0" fill="none" stroke="#38bdf8" stroke-width="0.75"/>
+      <g stroke="#5f7c84" stroke-width="0.45">
+        <line x1="36" y1="63.5" x2="36" y2="65.2"/><line x1="58" y1="63.2" x2="58" y2="65.0"/>
+        <line x1="80" y1="62.8" x2="80" y2="64.6"/><line x1="126" y1="62.2" x2="126" y2="64.0"/>
+        <line x1="286" y1="61.2" x2="286" y2="63.0"/><line x1="312" y1="60.8" x2="312" y2="62.6"/>
+        <line x1="356" y1="59.8" x2="356" y2="61.8"/><line x1="382" y1="58.6" x2="382" y2="60.6"/>
+      </g>
+      <line x1="426.5" y1="56.2" x2="428" y2="48.5" stroke="#d4e3e6" stroke-width="0.8"/>
+      <line x1="15" y1="63.5" x2="13" y2="55.5" stroke="#d4e3e6" stroke-width="0.8"/>
+      <circle cx="411" cy="61.2" r="1.5" fill="#050a0e" stroke="#d4e3e6" stroke-width="0.65"/>
+      <circle cx="404" cy="61.8" r="1.2" fill="#050a0e" stroke="#5f7c84" stroke-width="0.55"/>
+      <text x="392" y="66.2" text-anchor="middle" class="mono" font-size="7.2" fill="#d4e3e6" font-weight="bold">63</text>
+
+      <!-- 三座三联装 406mm/50 Mark 7 主炮塔 (A / B / X) -->
+      <g id="master-side-turrets">
+        <rect x="320" y="58.5" width="20" height="2.4" fill="#0e202c" stroke="#5f7c84" stroke-width="0.7"/>
+        <line x1="341" y1="54.2" x2="375" y2="51.8" stroke="#8aa1a7" stroke-width="1.15"/>
+        <line x1="341" y1="55.4" x2="376" y2="53.2" stroke="#d4e3e6" stroke-width="1.35"/>
+        <line x1="341" y1="56.6" x2="374" y2="54.6" stroke="#38bdf8" stroke-width="1.0"/>
+        <ellipse cx="342.5" cy="55.5" rx="2.2" ry="1.8" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.5"/>
+        <polygon points="317,58.5 319,53.2 336,53.2 342.5,56.2 342.5,58.5" fill="#132a3a" stroke="#d4e3e6" stroke-width="1.15"/>
+        <line x1="322" y1="55.2" x2="338" y2="55.2" stroke="#38bdf8" stroke-width="0.6"/>
+        <circle cx="322.5" cy="55.6" r="1.5" fill="#091620" stroke="#38bdf8" stroke-width="0.7"/>
+
+        <rect x="286" y="51.8" width="20" height="9.2" fill="#0d1e2a" stroke="#d4e3e6" stroke-width="0.9"/>
+        <line x1="286" y1="55.5" x2="306" y2="55.5" stroke="#38bdf8" stroke-width="0.5"/>
+        <line x1="307" y1="47.6" x2="341" y2="45.2" stroke="#8aa1a7" stroke-width="1.15"/>
+        <line x1="307" y1="48.8" x2="342" y2="46.6" stroke="#d4e3e6" stroke-width="1.35"/>
+        <line x1="307" y1="50.0" x2="340" y2="48.0" stroke="#38bdf8" stroke-width="1.0"/>
+        <ellipse cx="308.5" cy="48.9" rx="2.2" ry="1.8" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.5"/>
+        <polygon points="283,51.8 285,46.5 302,46.5 308.5,49.5 308.5,51.8" fill="#132a3a" stroke="#d4e3e6" stroke-width="1.15"/>
+        <line x1="288" y1="48.5" x2="304" y2="48.5" stroke="#38bdf8" stroke-width="0.6"/>
+        <circle cx="288.5" cy="48.9" r="1.5" fill="#091620" stroke="#38bdf8" stroke-width="0.7"/>
+
+        <rect x="96" y="59.5" width="20" height="3.0" fill="#0e202c" stroke="#5f7c84" stroke-width="0.7"/>
+        <line x1="95" y1="55.2" x2="61" y2="52.8" stroke="#8aa1a7" stroke-width="1.15"/>
+        <line x1="95" y1="56.4" x2="60" y2="54.2" stroke="#d4e3e6" stroke-width="1.35"/>
+        <line x1="95" y1="57.6" x2="62" y2="55.6" stroke="#38bdf8" stroke-width="1.0"/>
+        <ellipse cx="93.5" cy="56.5" rx="2.2" ry="1.8" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.5"/>
+        <polygon points="119,59.5 117,54.2 100,54.2 93.5,57.2 93.5,59.5" fill="#132a3a" stroke="#d4e3e6" stroke-width="1.15"/>
+        <line x1="114" y1="56.2" x2="98" y2="56.2" stroke="#38bdf8" stroke-width="0.6"/>
+        <circle cx="113.5" cy="56.6" r="1.5" fill="#091620" stroke="#38bdf8" stroke-width="0.7"/>
+      </g>
+
+      <!-- 舯部上层建筑、塔式装甲舰桥、格栅主桅与双烟囱 -->
+      <polygon points="124,62.2 128,53.0 278,51.8 280,61.2" fill="#0d1e2a" stroke="#d4e3e6" stroke-width="1.0"/>
+      <line x1="127" y1="56.5" x2="278" y2="55.5" stroke="#5f7c84" stroke-width="0.6"/>
+      <line x1="126" y1="59.2" x2="279" y2="58.4" stroke="#38bdf8" stroke-width="0.55"/>
+
+      <polygon points="244,51.8 246,33.0 272,33.0 275,51.8" fill="#112636" stroke="#d4e3e6" stroke-width="1.1"/>
+      <rect x="252" y="27.5" width="14" height="24.3" fill="#152e40" stroke="#d4e3e6" stroke-width="0.95"/>
+      <rect x="254" y="34.5" width="16" height="3.2" fill="#04080b" stroke="#38bdf8" stroke-width="0.7"/>
+      <rect x="247" y="40.2" width="25" height="3.0" fill="#04080b" stroke="#38bdf8" stroke-width="0.65"/>
+      <circle cx="249" cy="31.2" r="1.9" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.6"/>
+      <rect x="255" y="30.2" width="7" height="2.4" fill="#1b3b52" stroke="#38bdf8" stroke-width="0.65"/>
+
+      <rect x="256" y="22.0" width="6.5" height="5.5" fill="#163244" stroke="#d4e3e6" stroke-width="0.85"/>
+      <rect x="252.5" y="20.2" width="13.5" height="2.2" fill="#1c3f56" stroke="#38bdf8" stroke-width="0.8"/>
+      <ellipse cx="259.2" cy="18.5" rx="3.2" ry="1.5" fill="#0e2432" stroke="#ff5a36" stroke-width="0.75"/>
+      <rect x="267.5" y="29.0" width="5.2" height="4.0" fill="#163244" stroke="#d4e3e6" stroke-width="0.75"/>
+      <circle cx="270.1" cy="27.2" r="1.7" fill="#0b1a24" stroke="#38bdf8" stroke-width="0.65"/>
+
+      <polygon points="241,33.0 244,9.5 247,9.5 250,33.0" fill="none" stroke="#d4e3e6" stroke-width="0.95"/>
+      <line x1="242" y1="25" x2="249" y2="21" stroke="#5f7c84" stroke-width="0.6"/>
+      <line x1="243" y1="21" x2="248" y2="16" stroke="#5f7c84" stroke-width="0.6"/>
+      <line x1="243.5" y1="16" x2="247.5" y2="11" stroke="#5f7c84" stroke-width="0.6"/>
+      <polygon points="241.5,9.5 248.5,8.0 248.5,12.2 241.5,11.2" fill="#18364a" stroke="#ff5a36" stroke-width="0.9"/>
+      <line x1="245.5" y1="9.5" x2="245.5" y2="4.2" stroke="#38bdf8" stroke-width="0.85"/>
+      <line x1="245" y1="15.0" x2="253" y2="15.0" stroke="#d4e3e6" stroke-width="0.8"/>
+      <rect x="250.5" y="13.2" width="4.2" height="1.6" fill="#38bdf8"/>
+
+      <polygon points="218,52.0 220,24.5 234,26.0 236,52.0" fill="#122836" stroke="#d4e3e6" stroke-width="1.1"/>
+      <polygon points="220,24.5 234,26.0 234,29.5 219.6,28.2" fill="#04080b" stroke="#38bdf8" stroke-width="0.8"/>
+      <line x1="224" y1="29" x2="223" y2="51" stroke="#5f7c84" stroke-width="0.65"/>
+      <line x1="230" y1="29.5" x2="229" y2="51" stroke="#38bdf8" stroke-width="0.6"/>
+
+      <polygon points="169,48.0 171,27.0 183,28.5 185,48.0" fill="#122836" stroke="#d4e3e6" stroke-width="1.05"/>
+      <polygon points="171,27.0 183,28.5 183,31.8 170.6,30.5" fill="#04080b" stroke="#38bdf8" stroke-width="0.8"/>
+      <line x1="176" y1="31.5" x2="175" y2="48" stroke="#5f7c84" stroke-width="0.6"/>
+      <line x1="168" y1="45" x2="165" y2="23.5" stroke="#d4e3e6" stroke-width="0.85"/>
+      <line x1="162" y1="25" x2="169" y2="25" stroke="#38bdf8" stroke-width="0.75"/>
+
+      <polygon points="132,53.0 135,41.5 164,41.5 166,53.0" fill="#102432" stroke="#d4e3e6" stroke-width="0.95"/>
+      <rect x="147" y="31.5" width="7.5" height="10.0" fill="#142c3c" stroke="#d4e3e6" stroke-width="0.85"/>
+      <rect x="144" y="29.5" width="13.5" height="2.2" fill="#1c3f56" stroke="#38bdf8" stroke-width="0.8"/>
+      <ellipse cx="150.8" cy="27.8" rx="3.0" ry="1.4" fill="#0e2432" stroke="#ff5a36" stroke-width="0.75"/>
+      <rect x="136" y="37.2" width="5.5" height="4.3" fill="#163244" stroke="#d4e3e6" stroke-width="0.75"/>
+      <circle cx="138.8" cy="35.4" r="1.6" fill="#0b1a24" stroke="#38bdf8" stroke-width="0.65"/>
+
+      <!-- 1986 现代化改装：8座战斧 ABL + 4座捕鲸叉 + 4座密集阵 + 单侧3座127mm副炮 -->
+      <rect x="185" y="47.5" width="33" height="4.5" fill="#0f2330" stroke="#38bdf8" stroke-width="0.85"/>
+      <rect x="154" y="43.5" width="32" height="4.5" fill="#0f2330" stroke="#38bdf8" stroke-width="0.85"/>
+      <rect x="202" y="42.8" width="11.5" height="4.6" fill="#143246" stroke="#38bdf8" stroke-width="1.05"/>
+      <line x1="202" y1="45.1" x2="213.5" y2="45.1" stroke="#d4e3e6" stroke-width="0.55"/>
+      <rect x="187" y="42.8" width="11.5" height="4.6" fill="#143246" stroke="#38bdf8" stroke-width="1.05"/>
+      <line x1="187" y1="45.1" x2="198.5" y2="45.1" stroke="#d4e3e6" stroke-width="0.55"/>
+      <rect x="169" y="38.8" width="11.5" height="4.6" fill="#143246" stroke="#38bdf8" stroke-width="1.05"/>
+      <line x1="169" y1="41.1" x2="180.5" y2="41.1" stroke="#d4e3e6" stroke-width="0.55"/>
+      <rect x="155" y="38.8" width="11.5" height="4.6" fill="#143246" stroke="#38bdf8" stroke-width="1.05"/>
+      <line x1="155" y1="41.1" x2="166.5" y2="41.1" stroke="#d4e3e6" stroke-width="0.55"/>
+      <line x1="192.5" y1="42.8" x2="192.5" y2="33.5" stroke="#38bdf8" stroke-width="0.65" stroke-dasharray="1.5 1"/>
+      <text x="200" y="32.2" text-anchor="middle" class="mono" font-size="3.2" fill="#38bdf8" font-weight="bold">8×4 TOMAHAWK</text>
+
+      <polygon points="215,51.2 225,46.8 226.5,50.0 216.5,54.2" fill="#261216" stroke="#ff5a36" stroke-width="1.0"/>
+      <line x1="215.8" y1="52.6" x2="225.8" y2="48.4" stroke="#eab308" stroke-width="0.6"/>
+      <polygon points="227,51.2 237,46.8 238.5,50.0 228.5,54.2" fill="#261216" stroke="#ff5a36" stroke-width="1.0"/>
+      <line x1="227.8" y1="52.6" x2="237.8" y2="48.4" stroke="#eab308" stroke-width="0.6"/>
+      <text x="201" y="37.2" text-anchor="middle" class="mono" font-size="3.1" fill="#ff5a36" font-weight="bold">4×4 HARPOON</text>
+
+      <rect x="260.5" y="30.2" width="3.6" height="2.8" fill="#163244" stroke="#38bdf8" stroke-width="0.6"/>
+      <path d="M 261.0 30.2 V 27.6 A 1.3 1.3 0 0 1 263.6 27.6 V 30.2 Z" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.55"/>
+      <rect x="142.5" y="38.6" width="3.6" height="2.8" fill="#163244" stroke="#38bdf8" stroke-width="0.6"/>
+      <path d="M 143.0 38.6 V 36.0 A 1.3 1.3 0 0 1 145.6 36.0 V 38.6 Z" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.55"/>
+
+      <polygon points="233,56.5 234.5,52.6 242,52.6 243.5,56.5" fill="#163244" stroke="#d4e3e6" stroke-width="0.9"/>
+      <line x1="242.5" y1="53.8" x2="251.5" y2="51.2" stroke="#d4e3e6" stroke-width="0.9"/>
+      <line x1="242.5" y1="54.8" x2="251.5" y2="52.4" stroke="#38bdf8" stroke-width="0.75"/>
+      <polygon points="196,53.2 197.5,49.3 205,49.3 206.5,53.2" fill="#163244" stroke="#d4e3e6" stroke-width="0.9"/>
+      <line x1="205.5" y1="50.5" x2="214.5" y2="47.9" stroke="#d4e3e6" stroke-width="0.9"/>
+      <line x1="205.5" y1="51.5" x2="214.5" y2="49.1" stroke="#38bdf8" stroke-width="0.75"/>
+      <polygon points="158,56.8 159.5,52.9 167,52.9 168.5,56.8" fill="#163244" stroke="#d4e3e6" stroke-width="0.9"/>
+      <line x1="158.5" y1="54.1" x2="149.5" y2="51.5" stroke="#d4e3e6" stroke-width="0.9"/>
+      <line x1="158.5" y1="55.1" x2="149.5" y2="52.7" stroke="#38bdf8" stroke-width="0.75"/>
+
+      <!-- 舰尾 SH-60B 海鹰直升机 -->
+      <g transform="translate(22, 54.2)">
+        <path d="M 4 5.2 L 15 6.8 L 31 6.8 C 35 6.8, 37 8.8, 33.5 9.8 L 15 9.8 L 4 7.0 Z" fill="#142c3c" stroke="#d4e3e6" stroke-width="0.8"/>
+        <polygon points="29,7.2 33.5,7.8 32.8,9.0 29,9.0" fill="#38bdf8"/>
+        <line x1="23" y1="6.8" x2="23" y2="4.6" stroke="#d4e3e6" stroke-width="0.85"/>
+        <line x1="9" y1="4.6" x2="37" y2="4.6" stroke="#38bdf8" stroke-width="0.85"/>
+        <circle cx="3.8" cy="5.2" r="1.8" fill="none" stroke="#d4e3e6" stroke-width="0.65"/>
+        <circle cx="18" cy="10.2" r="0.9" fill="#050a0e" stroke="#d4e3e6" stroke-width="0.5"/>
+        <circle cx="30" cy="10.2" r="0.9" fill="#050a0e" stroke="#d4e3e6" stroke-width="0.5"/>
+      </g>
+    </g>
+
+    <!-- ==================== 下半框：02 / ORTHOGRAPHIC FULL DECK PLAN ==================== -->
+    <rect x="44" y="320" width="1232" height="202" fill="#091116" fill-opacity="0.45" stroke="#2c3b40"/>
+    <text font-size="9.5" x="58" y="338" class="p mono" fill="#38bdf8">02 / ORTHOGRAPHIC FULL DECK PLAN · PANAMAX BOTTLE-SHAPED HULL (270.4M × 33.0M · 8.2:1 TRUE ASPECT)</text>
+    <text x="1262" y="338" text-anchor="end" class="p mono" fill="#8aa1a7" font-size="9">6×2 127MM/38 · 4×PHALANX CIWS · HELIDECK 63</text>
+
+    <g transform="translate(121.0,343.0) scale(2.450,2.450)">
+      <!-- 巴拿马极限香槟酒瓶修长流线型外廓 -->
+      <path d="M 12 24.0
+               C 16 18.0, 36 13.5, 76 10.5
+               L 132 8.6
+               L 302 8.6
+               C 332 8.6, 354 15.5, 378 22.8
+               C 398 28.5, 414 31.8, 428 34.0
+               C 414 36.2, 398 39.5, 378 45.2
+               C 354 52.5, 332 59.4, 302 59.4
+               L 132 59.4
+               L 76 57.5
+               C 36 54.5, 16 50.0, 12 44.0
+               Z"
+            fill="#0a1822" stroke="#d4e3e6" stroke-width="1.35"/>
+
+      <path d="M 15 25.2
+               C 20 20.0, 40 15.8, 78 12.8
+               L 134 11.0
+               L 300 11.0
+               C 328 11.0, 350 17.5, 374 24.5
+               C 394 30.0, 408 32.5, 421 34.0
+               C 408 35.5, 394 38.0, 374 43.5
+               C 350 50.5, 328 57.0, 300 57.0
+               L 134 57.0
+               L 78 55.2
+               C 40 52.2, 20 48.0, 15 42.8
+               Z"
+            fill="url(#teak-lines)" stroke="#38bdf8" stroke-width="0.75"/>
+
+      <rect x="94" y="12.2" width="250" height="43.6" fill="none" stroke="#ff5a36" stroke-width="0.55" stroke-dasharray="3 2" stroke-opacity="0.65"/>
+
+      <!-- 舰尾直升机起降区与「63」尾标 -->
+      <line x1="16" y1="13.5" x2="78" y2="10.2" stroke="#38bdf8" stroke-width="0.95" stroke-dasharray="2.5 1.5"/>
+      <line x1="16" y1="54.5" x2="78" y2="57.8" stroke="#38bdf8" stroke-width="0.95" stroke-dasharray="2.5 1.5"/>
+      <line x1="14" y1="34" x2="86" y2="34" stroke="#d4e3e6" stroke-width="0.75" stroke-dasharray="3.5 2"/>
+      <line x1="20" y1="21" x2="50" y2="34" stroke="#38bdf8" stroke-width="0.65" stroke-dasharray="2 1.5"/>
+      <line x1="78" y1="16" x2="78" y2="52" stroke="#d4e3e6" stroke-width="0.8"/>
+      <circle cx="50" cy="34" r="10.2" fill="#08131c" fill-opacity="0.7" stroke="#d4e3e6" stroke-width="1.1"/>
+      <circle cx="50" cy="34" r="7.2" fill="none" stroke="#38bdf8" stroke-width="0.75" stroke-dasharray="2.5 1.5"/>
+      <path d="M 47.5 31.2 V 36.8 M 52.5 31.2 V 36.8 M 47.5 34.0 H 52.5" stroke="#d4e3e6" stroke-width="1.15"/>
+      <text x="24" y="36.6" text-anchor="middle" class="mono" font-size="7.5" fill="#d4e3e6" font-weight="bold">63</text>
+      <rect x="80" y="28" width="6" height="12" fill="#102432" stroke="#38bdf8" stroke-width="0.7"/>
+
+      <!-- 后甲板 X 炮塔 (Turret III) -->
+      <circle cx="108" cy="34" r="10.2" fill="#091620" stroke="#5f7c84" stroke-width="0.8"/>
+      <rect x="61" y="29.4" width="36" height="1.5" fill="#d4e3e6" stroke="#08131a" stroke-width="0.35"/>
+      <rect x="60" y="33.25" width="37" height="1.5" fill="#d4e3e6" stroke="#08131a" stroke-width="0.35"/>
+      <rect x="61" y="37.1" width="36" height="1.5" fill="#d4e3e6" stroke="#08131a" stroke-width="0.35"/>
+      <rect x="94.5" y="28.8" width="3.2" height="2.7" rx="0.6" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.5"/>
+      <rect x="94.5" y="32.65" width="3.2" height="2.7" rx="0.6" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.5"/>
+      <rect x="94.5" y="36.5" width="3.2" height="2.7" rx="0.6" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.5"/>
+      <rect x="111" y="22.0" width="5.5" height="24.0" rx="1" fill="#18364a" stroke="#38bdf8" stroke-width="0.85"/>
+      <polygon points="97,27.2 104,24.2 119.5,24.8 119.5,43.2 104,43.8 97,40.8" fill="#142d3e" stroke="#d4e3e6" stroke-width="1.2"/>
+      <line x1="104" y1="24.2" x2="104" y2="43.8" stroke="#38bdf8" stroke-width="0.7"/>
+      <line x1="104" y1="31.2" x2="119.5" y2="31.2" stroke="#5f7c84" stroke-width="0.55"/>
+      <line x1="104" y1="36.8" x2="119.5" y2="36.8" stroke="#5f7c84" stroke-width="0.55"/>
+      <text x="111.5" y="35.3" text-anchor="middle" class="mono" font-size="4.0" fill="#eab308" font-weight="bold">III</text>
+
+      <!-- 舯部上层建筑与两舷 6 座双联装 127mm 副炮 -->
+      <polygon points="126,22 140,16 254,16 278,22 278,46 254,52 140,52 126,46"
+               fill="#0e2230" stroke="#d4e3e6" stroke-width="1.05"/>
+
+      <polygon points="158,11.2 166,11.2 167.5,14.2 166,17.2 158,17.2" fill="#163244" stroke="#d4e3e6" stroke-width="0.85"/>
+      <line x1="158" y1="13.2" x2="150" y2="11.2" stroke="#d4e3e6" stroke-width="0.85"/>
+      <line x1="158" y1="15.2" x2="150" y2="13.2" stroke="#d4e3e6" stroke-width="0.85"/>
+      <polygon points="158,50.8 166,50.8 167.5,53.8 166,56.8 158,56.8" fill="#163244" stroke="#d4e3e6" stroke-width="0.85"/>
+      <line x1="158" y1="52.8" x2="150" y2="54.8" stroke="#d4e3e6" stroke-width="0.85"/>
+      <line x1="158" y1="54.8" x2="150" y2="56.8" stroke="#d4e3e6" stroke-width="0.85"/>
+
+      <polygon points="196,11.2 204,11.2 205.5,14.2 204,17.2 196,17.2" fill="#163244" stroke="#d4e3e6" stroke-width="0.85"/>
+      <line x1="200" y1="11.2" x2="200" y2="5.5" stroke="#d4e3e6" stroke-width="0.85"/>
+      <line x1="202" y1="11.2" x2="202" y2="5.5" stroke="#d4e3e6" stroke-width="0.85"/>
+      <polygon points="196,50.8 204,50.8 205.5,53.8 204,56.8 196,56.8" fill="#163244" stroke="#d4e3e6" stroke-width="0.85"/>
+      <line x1="200" y1="56.8" x2="200" y2="62.5" stroke="#d4e3e6" stroke-width="0.85"/>
+      <line x1="202" y1="56.8" x2="202" y2="62.5" stroke="#d4e3e6" stroke-width="0.85"/>
+
+      <polygon points="234,11.2 242,11.2 243.5,14.2 242,17.2 234,17.2" fill="#163244" stroke="#d4e3e6" stroke-width="0.85"/>
+      <line x1="242" y1="13.2" x2="250" y2="11.2" stroke="#d4e3e6" stroke-width="0.85"/>
+      <line x1="242" y1="15.2" x2="250" y2="13.2" stroke="#d4e3e6" stroke-width="0.85"/>
+      <polygon points="234,50.8 242,50.8 243.5,53.8 242,56.8 234,56.8" fill="#163244" stroke="#d4e3e6" stroke-width="0.85"/>
+      <line x1="242" y1="52.8" x2="250" y2="54.8" stroke="#d4e3e6" stroke-width="0.85"/>
+      <line x1="242" y1="54.8" x2="250" y2="56.8" stroke="#d4e3e6" stroke-width="0.85"/>
+
+      <!-- 03/05 导弹甲板 + 8座四联装战斧 ABL + 4座四联装捕鲸叉 -->
+      <polygon points="148,19 218,19 236,23 236,45 218,49 148,49"
+               fill="#112838" stroke="#38bdf8" stroke-width="0.95"/>
+      <rect x="154" y="20.2" width="12" height="4.8" fill="#091d2c" stroke="#38bdf8" stroke-width="1.05"/>
+      <line x1="154" y1="22.6" x2="166" y2="22.6" stroke="#d4e3e6" stroke-width="0.55"/>
+      <rect x="169" y="20.2" width="12" height="4.8" fill="#091d2c" stroke="#38bdf8" stroke-width="1.05"/>
+      <line x1="169" y1="22.6" x2="181" y2="22.6" stroke="#d4e3e6" stroke-width="0.55"/>
+      <rect x="154" y="43.0" width="12" height="4.8" fill="#091d2c" stroke="#38bdf8" stroke-width="1.05"/>
+      <line x1="154" y1="45.4" x2="166" y2="45.4" stroke="#d4e3e6" stroke-width="0.55"/>
+      <rect x="169" y="43.0" width="12" height="4.8" fill="#091d2c" stroke="#38bdf8" stroke-width="1.05"/>
+      <line x1="169" y1="45.4" x2="181" y2="45.4" stroke="#d4e3e6" stroke-width="0.55"/>
+
+      <rect x="187" y="21.2" width="12" height="4.8" fill="#091d2c" stroke="#38bdf8" stroke-width="1.05"/>
+      <line x1="187" y1="23.6" x2="199" y2="23.6" stroke="#d4e3e6" stroke-width="0.55"/>
+      <rect x="202" y="21.2" width="12" height="4.8" fill="#091d2c" stroke="#38bdf8" stroke-width="1.05"/>
+      <line x1="202" y1="23.6" x2="214" y2="23.6" stroke="#d4e3e6" stroke-width="0.55"/>
+      <rect x="187" y="42.0" width="12" height="4.8" fill="#091d2c" stroke="#38bdf8" stroke-width="1.05"/>
+      <line x1="187" y1="44.4" x2="199" y2="44.4" stroke="#d4e3e6" stroke-width="0.55"/>
+      <rect x="202" y="42.0" width="12" height="4.8" fill="#091d2c" stroke="#38bdf8" stroke-width="1.05"/>
+      <line x1="202" y1="44.4" x2="214" y2="44.4" stroke="#d4e3e6" stroke-width="0.55"/>
+
+      <polygon points="217,23.5 224,19.5 225.8,22.2 218.8,26.2" fill="#261216" stroke="#ff5a36" stroke-width="0.95"/>
+      <polygon points="225,23.5 232,19.5 233.8,22.2 226.8,26.2" fill="#261216" stroke="#ff5a36" stroke-width="0.95"/>
+      <polygon points="217,44.5 224,48.5 225.8,45.8 218.8,41.8" fill="#261216" stroke="#ff5a36" stroke-width="0.95"/>
+      <polygon points="225,44.5 232,48.5 233.8,45.8 226.8,41.8" fill="#261216" stroke="#ff5a36" stroke-width="0.95"/>
+
+      <!-- 双椭圆形装甲烟囱格栅 -->
+      <ellipse cx="176" cy="34" rx="8.5" ry="5.2" fill="#163244" stroke="#d4e3e6" stroke-width="1.05"/>
+      <ellipse cx="176" cy="34" rx="6.2" ry="3.4" fill="#04080b" stroke="#38bdf8" stroke-width="0.75"/>
+      <line x1="171" y1="34" x2="181" y2="34" stroke="#38bdf8" stroke-width="0.55"/>
+      <ellipse cx="226" cy="34" rx="9.5" ry="5.6" fill="#163244" stroke="#d4e3e6" stroke-width="1.1"/>
+      <ellipse cx="226" cy="34" rx="7.0" ry="3.8" fill="#04080b" stroke="#38bdf8" stroke-width="0.75"/>
+      <line x1="220" y1="34" x2="232" y2="34" stroke="#38bdf8" stroke-width="0.55"/>
+
+      <!-- 后部与前部塔楼、Mk 38 主炮导演仪与 4 座密集阵 CIWS -->
+      <rect x="134" y="27" width="18" height="14" fill="#142d3e" stroke="#d4e3e6" stroke-width="0.9"/>
+      <circle cx="146" cy="23.5" r="2.1" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.7"/>
+      <circle cx="146" cy="44.5" r="2.1" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.7"/>
+      <rect x="147.5" y="25.5" width="3.6" height="17.0" fill="#1c3f56" stroke="#38bdf8" stroke-width="0.85"/>
+      <circle cx="149.3" cy="34" r="2.8" fill="#0e2432" stroke="#ff5a36" stroke-width="0.8"/>
+      <rect x="136.5" y="30.5" width="5.5" height="7.0" fill="#18364a" stroke="#d4e3e6" stroke-width="0.75"/>
+      <circle cx="139.2" cy="34" r="1.8" fill="#38bdf8"/>
+
+      <polygon points="240,20 266,20 276,25 276,43 266,48 240,48" fill="#152f42" stroke="#d4e3e6" stroke-width="1.15"/>
+      <line x1="244" y1="21" x2="244" y2="47" stroke="#38bdf8" stroke-width="1.1"/>
+      <rect x="241.5" y="30" width="5.0" height="8.0" fill="#18364a" stroke="#ff5a36" stroke-width="0.85"/>
+      <circle cx="261" cy="21.8" r="2.1" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.75"/>
+      <circle cx="261" cy="46.2" r="2.1" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.75"/>
+      <circle cx="251" cy="23.5" r="1.7" fill="#d4e3e6" stroke="#5f7c84" stroke-width="0.6"/>
+      <circle cx="251" cy="44.5" r="1.7" fill="#d4e3e6" stroke="#5f7c84" stroke-width="0.6"/>
+      <rect x="256.5" y="25.0" width="4.0" height="18.0" fill="#1c3f56" stroke="#38bdf8" stroke-width="0.9"/>
+      <circle cx="258.5" cy="34" r="3.2" fill="#0e2432" stroke="#ff5a36" stroke-width="0.85"/>
+      <circle cx="265.5" cy="34" r="3.8" fill="#0d1e2a" stroke="#d4e3e6" stroke-width="0.95"/>
+      <rect x="268.5" y="30.5" width="5.5" height="7.0" fill="#18364a" stroke="#d4e3e6" stroke-width="0.8"/>
+      <circle cx="271.2" cy="34" r="1.8" fill="#38bdf8"/>
+
+      <!-- 前甲板 B 炮塔 (Turret II) 与 A 炮塔 (Turret I) -->
+      <circle cx="294" cy="34" r="10.2" fill="#091620" stroke="#5f7c84" stroke-width="0.8"/>
+      <rect x="305" y="29.4" width="36" height="1.5" fill="#d4e3e6" stroke="#08131a" stroke-width="0.35"/>
+      <rect x="305" y="33.25" width="37" height="1.5" fill="#d4e3e6" stroke="#08131a" stroke-width="0.35"/>
+      <rect x="305" y="37.1" width="36" height="1.5" fill="#d4e3e6" stroke="#08131a" stroke-width="0.35"/>
+      <rect x="304.3" y="28.8" width="3.2" height="2.7" rx="0.6" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.5"/>
+      <rect x="304.3" y="32.65" width="3.2" height="2.7" rx="0.6" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.5"/>
+      <rect x="304.3" y="36.5" width="3.2" height="2.7" rx="0.6" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.5"/>
+      <rect x="285.5" y="22.0" width="5.5" height="24.0" rx="1" fill="#18364a" stroke="#38bdf8" stroke-width="0.85"/>
+      <polygon points="305,27.2 298,24.2 282.5,24.8 282.5,43.2 298,43.8 305,40.8" fill="#142d3e" stroke="#d4e3e6" stroke-width="1.2"/>
+      <line x1="298" y1="24.2" x2="298" y2="43.8" stroke="#38bdf8" stroke-width="0.7"/>
+      <line x1="282.5" y1="31.2" x2="298" y2="31.2" stroke="#5f7c84" stroke-width="0.55"/>
+      <line x1="282.5" y1="36.8" x2="298" y2="36.8" stroke="#5f7c84" stroke-width="0.55"/>
+      <text x="290.5" y="35.3" text-anchor="middle" class="mono" font-size="4.0" fill="#eab308" font-weight="bold">II</text>
+
+      <circle cx="328" cy="34" r="10.2" fill="#091620" stroke="#5f7c84" stroke-width="0.8"/>
+      <rect x="339" y="29.4" width="36" height="1.5" fill="#d4e3e6" stroke="#08131a" stroke-width="0.35"/>
+      <rect x="339" y="33.25" width="37" height="1.5" fill="#d4e3e6" stroke="#08131a" stroke-width="0.35"/>
+      <rect x="339" y="37.1" width="36" height="1.5" fill="#d4e3e6" stroke="#08131a" stroke-width="0.35"/>
+      <rect x="338.3" y="28.8" width="3.2" height="2.7" rx="0.6" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.5"/>
+      <rect x="338.3" y="32.65" width="3.2" height="2.7" rx="0.6" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.5"/>
+      <rect x="338.3" y="36.5" width="3.2" height="2.7" rx="0.6" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.5"/>
+      <rect x="319.5" y="22.0" width="5.5" height="24.0" rx="1" fill="#18364a" stroke="#38bdf8" stroke-width="0.85"/>
+      <polygon points="339,27.2 332,24.2 316.5,24.8 316.5,43.2 332,43.8 339,40.8" fill="#142d3e" stroke="#d4e3e6" stroke-width="1.2"/>
+      <line x1="332" y1="24.2" x2="332" y2="43.8" stroke="#38bdf8" stroke-width="0.7"/>
+      <line x1="316.5" y1="31.2" x2="332" y2="31.2" stroke="#5f7c84" stroke-width="0.55"/>
+      <line x1="316.5" y1="36.8" x2="332" y2="36.8" stroke="#5f7c84" stroke-width="0.55"/>
+      <text x="324.5" y="35.3" text-anchor="middle" class="mono" font-size="4.0" fill="#eab308" font-weight="bold">I</text>
+
+      <!-- 前甲板防浪板、锚链与舰首 63 标号 -->
+      <polyline points="348,18.5 362,34.0 348,49.5" fill="none" stroke="#38bdf8" stroke-width="1.0"/>
+      <line x1="368" y1="29.5" x2="404" y2="32.2" stroke="#8aa1a7" stroke-width="0.8" stroke-dasharray="1.5 1"/>
+      <line x1="368" y1="38.5" x2="404" y2="35.8" stroke="#8aa1a7" stroke-width="0.8" stroke-dasharray="1.5 1"/>
+      <circle cx="372" cy="29.5" r="2.0" fill="#102432" stroke="#d4e3e6" stroke-width="0.7"/>
+      <circle cx="372" cy="38.5" r="2.0" fill="#102432" stroke="#d4e3e6" stroke-width="0.7"/>
+      <circle cx="404" cy="32.0" r="1.1" fill="#050a0e" stroke="#d4e3e6" stroke-width="0.55"/>
+      <circle cx="404" cy="36.0" r="1.1" fill="#050a0e" stroke="#d4e3e6" stroke-width="0.55"/>
+      <line x1="376" y1="34" x2="426" y2="34" stroke="#5f7c84" stroke-width="0.7"/>
+      <text x="390" y="35.8" text-anchor="middle" class="mono" font-size="5.2" fill="#d4e3e6" font-weight="bold">63</text>
+      <text x="184" y="6.8" text-anchor="middle" class="mono" font-size="3.6" fill="#38bdf8" font-weight="bold">PORT: 4×4 MK 143 TOMAHAWK ABL + 2×4 HARPOON</text>
+      <text x="184" y="64.5" text-anchor="middle" class="mono" font-size="3.6" fill="#38bdf8" font-weight="bold">STBD: 4×4 MK 143 TOMAHAWK ABL + 2×4 HARPOON</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 320" width="1100" height="320" data-asset-id="naval.yuri.boomer.side" style="background:#080a0b;">
+  <defs>
+    <style>
+      svg { fill: none; stroke-linecap: butt; }
+      .s-dim { stroke: #2c3b40; stroke-width: 1; }
+      .s-line { stroke: #5f7c84; stroke-width: 1; }
+      .s-hi { stroke: #d4e3e6; stroke-width: 1.2; }
+      .s-alert { stroke: #ff5a36; stroke-width: 1.4; }
+      .s-focus { stroke: #38bdf8; stroke-width: 1.4; }
+      .f-dim { fill: #2c3b40; stroke: none; }
+      .f-line { fill: #5f7c84; stroke: none; }
+      .f-hi { fill: #d4e3e6; stroke: none; }
+      .f-alert { fill: #ff5a36; stroke: none; }
+      .f-panel { fill: #0c1113; }
+      text { font-family: "Rajdhani", "Bahnschrift", "DIN Alternate", "Microsoft YaHei", sans-serif; letter-spacing: 0.12em; }
+      text:not([stroke]) { stroke: none; }
+      text:not([fill]) { fill: #cfdde0; }
+      text:not([font-size]):not(.cap):not(.big) { font-size: 10px; }
+      text.p { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; letter-spacing: 0.06em; }
+      text.cap { letter-spacing: 0.2em; text-transform: uppercase; }
+      text.cap:not([fill]) { fill: #8aa1a7; }
+      text.cap:not([font-size]) { font-size: 8.5px; }
+      text.mono { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; letter-spacing: 0.06em; }
+      text.big { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; font-weight: 600; letter-spacing: 0.08em; }
+      text.big:not([font-size]) { font-size: 18px; }
+      text.big:not([fill]) { fill: #d4e3e6; }
+      text.alert { fill: #ff5a36; }
+    </style>
+    <pattern id="cad-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#10181c" stroke-width="1"/>
+      <circle cx="20" cy="20" r="0.8" fill="#1b262b"/>
+    </pattern>
+    <pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#ff5a36" stroke-width="1.2" stroke-opacity="0.35"/>
+    </pattern>
+  </defs>
+
+  <!-- 1. 工程蓝图暗色底板与坐标网格图层 -->
+  <g id="layer-backdrop">
+    <rect x="0" y="0" width="1100" height="320" fill="#080a0b"/>
+    <rect x="20" y="20" width="1060" height="280" fill="url(#cad-grid)" stroke="#2c3b40" stroke-width="1"/>
+    <path d="M 20 36 V 20 H 36 M 1064 20 H 1080 V 36 M 20 284 V 300 H 36 M 1064 300 H 1080 V 284" fill="none" stroke="#38bdf8" stroke-width="1.5"/>
+    <line x1="20" y1="54" x2="1080" y2="54" stroke="#2c3b40" stroke-width="1"/>
+    <line x1="20" y1="274" x2="1080" y2="274" stroke="#2c3b40" stroke-width="1"/>
+    <text x="34" y="42" class="p mono" fill="#38bdf8" font-size="9.5" font-weight="bold">YURI BOOMER-CLASS SIEGE SUBMARINE (BMR-01) · STARBOARD PROFILE &amp; 8-CELL TURTLEBACK CUTAWAY</text>
+    <text x="1066" y="42" text-anchor="end" class="p cap" fill="#d4e3e6" font-size="9.5">尤里「雷鸣」级龟背多载荷攻城潜艇 · 侧视立面与8联攻城导弹井/三型特种弹头剖面图</text>
+    <text x="34" y="291" class="p mono" fill="#8aa1a7" font-size="9">6,800T SUBMERGED · 96.0M×12.8M (7.50:1) · 2×4 (8) Ø1.8M SIEGE SILOS · 2×533MM TORPEDO · DEGAUSSING HULL · UID: 27/28/7</text>
+    <text x="1066" y="291" text-anchor="end" class="p mono" fill="#5f7c84" font-size="9">POSEIDON NAVAL CAD ASSET · TRUE 1:1 ASPECT (7.50:1)</text>
+  </g>
+
+  <!-- 2. 舰艇核心 CAD 矢量图层 (1:1 等比缩放 sx=sy=2.340 · X=20..410 长390u · 艇首朝右 +X) -->
+  <g id="layer-ship-cad">
+    <g transform="translate(52.0,56.0) scale(2.340,2.340)">
+
+      <!-- ==================== 0. 左上方净空框：《协议 uid=28》解锁的三型可换装模块化攻城战斗部剖面图 (X=16..182, Y=3..28) ==================== -->
+      <g id="protocol-uid28-warhead-spectrum">
+        <rect x="16.0" y="3.5" width="166.0" height="23.5" fill="#08131a" stroke="#38bdf8" stroke-width="0.75"/>
+        <path d="M 16.0 7.5 V 3.5 H 20.0 M 178.0 3.5 H 182.0 V 7.5" fill="none" stroke="#ff5a36" stroke-width="0.9"/>
+        <text x="20.0" y="8.2" class="mono" font-size="2.5" fill="#38bdf8" font-weight="bold">PROTOCOL UID-28: MODULAR SIEGE WARHEADS (Ø1.8M)</text>
+
+        <!-- TYPE-A: 常规重磅温压穿甲钻地战斗部 (Thermobaric Bunker-Buster · X=22..72) -->
+        <g transform="translate(22.0, 11.2)">
+          <polygon points="0,3.2 8.5,3.2 12.5,4.8 8.5,6.4 0,6.4" fill="#261014" stroke="#ff5a36" stroke-width="0.65"/>
+          <polygon points="8.5,3.2 12.5,4.8 8.5,6.4" fill="#ff5a36"/>
+          <line x1="4.2" y1="3.2" x2="4.2" y2="6.4" stroke="#eab308" stroke-width="0.5"/>
+          <text x="15.0" y="4.2" class="mono" font-size="2.2" fill="#ff5a36" font-weight="bold">TYPE-A: THERMOBARIC</text>
+          <text x="15.0" y="7.8" class="mono" font-size="2.0" fill="#8aa1a7">BUNKER-BUSTER HE-FAE</text>
+          <text x="15.0" y="11.4" class="mono" font-size="2.0" fill="#d4e3e6">YIELD: 2,200KG PENETRATOR</text>
+        </g>
+
+        <!-- TYPE-B: 广域二元神经毒气气溶胶空爆战斗部 (Binary Neuro-Toxin Aerosol · X=76..126) -->
+        <g transform="translate(76.0, 11.2)">
+          <path d="M 0,3.2 L 8.0,3.2 C 10.5,3.2 12.0,4.0 12.0,4.8 C 12.0,5.6 10.5,6.4 8.0,6.4 L 0,6.4 Z" fill="#182214" stroke="#eab308" stroke-width="0.65"/>
+          <circle cx="3.5" cy="4.8" r="1.0" fill="#eab308"/>
+          <circle cx="7.2" cy="4.8" r="1.0" fill="#ff5a36"/>
+          <text x="14.5" y="4.2" class="mono" font-size="2.2" fill="#eab308" font-weight="bold">TYPE-B: NEURO-TOXIN</text>
+          <text x="14.5" y="7.8" class="mono" font-size="2.0" fill="#8aa1a7">BINARY AEROSOL DISPENSER</text>
+          <text x="14.5" y="11.4" class="mono" font-size="2.0" fill="#d4e3e6">BIO-AGENT AIRBURST</text>
+        </g>
+
+        <!-- TYPE-C: 强磁通超高压电磁脉冲淬灭战斗部 (High-Flux EMP Quench Warhead · X=130..180) -->
+        <g transform="translate(130.0, 11.2)">
+          <polygon points="0,3.2 9.0,3.2 12.2,4.8 9.0,6.4 0,6.4" fill="#0c2232" stroke="#38bdf8" stroke-width="0.65"/>
+          <line x1="2.2" y1="3.2" x2="2.2" y2="6.4" stroke="#38bdf8" stroke-width="0.55"/>
+          <line x1="4.5" y1="3.2" x2="4.5" y2="6.4" stroke="#38bdf8" stroke-width="0.55"/>
+          <line x1="6.8" y1="3.2" x2="6.8" y2="6.4" stroke="#38bdf8" stroke-width="0.55"/>
+          <circle cx="9.8" cy="4.8" r="0.8" fill="#d4e3e6"/>
+          <text x="14.2" y="4.2" class="mono" font-size="2.2" fill="#38bdf8" font-weight="bold">TYPE-C: HIGH-FLUX EMP</text>
+          <text x="14.2" y="7.8" class="mono" font-size="2.0" fill="#8aa1a7">FLUX-COMPRESSION GENERATOR</text>
+          <text x="14.2" y="11.4" class="mono" font-size="2.0" fill="#d4e3e6">GRID QUENCH PULSE</text>
+        </g>
+      </g>
+
+      <!-- ==================== 1. 半潜攻城水线基准与龟背重型攻城导弹破水齐射轨迹 (X=196..268, Y=4..35) ==================== -->
+      <g id="turtleback-siege-salvo">
+        <!-- 半潜发射水线基准 (Semi-Submerged Siege Firing Datum · Y=33.2) -->
+        <line x1="12.0" y1="33.2" x2="422.0" y2="33.2" stroke="#2c3b40" stroke-width="0.6" stroke-dasharray="4 3"/>
+        <text x="336.0" y="31.0" class="mono" font-size="2.3" fill="#5f7c84">SEMI-SUBMERGED SIEGE DATUM</text>
+
+        <!-- 1号井 (X=242) 与 2号井 (X=210) 攻城导弹微前倾齐射轨迹弧与水面空泡激波环 -->
+        <path d="M 242.0 35.8 Q 246.0 22.0 258.0 9.5" fill="none" stroke="#ff5a36" stroke-width="0.85" stroke-dasharray="2.2 1.4"/>
+        <path d="M 210.0 35.8 Q 213.0 25.0 220.0 15.5" fill="none" stroke="#38bdf8" stroke-width="0.75" stroke-dasharray="2.0 1.4"/>
+        <ellipse cx="242.5" cy="33.2" rx="4.5" ry="1.0" fill="#ff5a36" fill-opacity="0.25" stroke="#ff5a36" stroke-width="0.6"/>
+        <ellipse cx="210.5" cy="33.2" rx="3.8" ry="0.9" fill="#38bdf8" fill-opacity="0.25" stroke="#38bdf8" stroke-width="0.55"/>
+
+        <!-- [齐射攻城弹 1] 1号井腾空转向攻城弹道：尤里「雷鸣-M」(Grom-M) 重型高超音速/准弹道攻城导弹 -->
+        <g transform="translate(256.0, 11.2) rotate(-52)">
+          <!-- 固体助推器猛烈尾焰 -->
+          <polygon points="-8.5,0 -3.5,-1.5 -3.5,1.5" fill="#eab308" fill-opacity="0.85"/>
+          <polygon points="-6.5,0 -3.5,-0.9 -3.5,0.9" fill="#ff5a36"/>
+          <!-- Ø1.8m 重型攻城弹体与折叠栅格控制翼 -->
+          <rect x="-3.5" y="-1.5" width="9.8" height="3.0" fill="#1c0d12" stroke="#ff5a36" stroke-width="0.75"/>
+          <line x1="1.5" y1="-1.5" x2="1.5" y2="1.5" stroke="#eab308" stroke-width="0.55"/>
+          <polygon points="6.3,-1.5 12.8,0 6.3,1.5" fill="#ff5a36" stroke="#d4e3e6" stroke-width="0.65"/>
+          <polygon points="-3.2,-1.5 -4.8,-3.0 -2.0,-1.5" fill="#122836" stroke="#38bdf8" stroke-width="0.5"/>
+          <polygon points="-3.2,1.5 -4.8,3.0 -2.0,1.5" fill="#122836" stroke="#38bdf8" stroke-width="0.5"/>
+        </g>
+
+        <!-- [齐射攻城弹 2] 2号井刚跃出水面点火的第二枚攻城导弹 -->
+        <g transform="translate(218.5, 17.5) rotate(-68)">
+          <polygon points="-6.5,0 -2.8,-1.3 -2.8,1.3" fill="#eab308" fill-opacity="0.8"/>
+          <rect x="-2.8" y="-1.3" width="8.5" height="2.6" fill="#0d2230" stroke="#38bdf8" stroke-width="0.7"/>
+          <polygon points="5.7,-1.3 11.0,0 5.7,1.3" fill="#38bdf8" stroke="#d4e3e6" stroke-width="0.6"/>
+        </g>
+
+        <text x="272.0" y="8.2" class="mono" font-size="2.5" fill="#ff5a36" font-weight="bold">SALVO: 8×Ø1.8M HEAVY SIEGE MISSILES</text>
+        <text x="272.0" y="13.0" class="mono" font-size="2.3" fill="#eab308">MICROSECOND BALLAST AUTO-COMPENSATION</text>
+      </g>
+
+      <!-- ==================== 2. 艇尾无轴环形涵道静音推进器 (Rim-Driven Ducted Quiet Propulsor) + 复合折角尾翼 (X=18..64) ==================== -->
+      <g id="stern-ducted-propulsor-and-fins">
+        <!-- 上垂直折角尾安定面与拖曳式超低频神经通信浮标荚舱 (X=34..64, Y=24.5..48.0) -->
+        <polygon points="34.0,48.5 43.0,25.5 54.0,25.5 64.0,45.0" fill="#0b1a24" stroke="#d4e3e6" stroke-width="1.15"/>
+        <line x1="48.5" y1="25.5" x2="51.0" y2="46.8" stroke="#38bdf8" stroke-width="0.7"/>
+        <path d="M 31.5 25.0 C 35.0 23.6 52.5 23.6 57.0 25.0 C 52.5 26.4 35.0 26.4 31.5 25.0 Z" fill="#140b10" stroke="#ff5a36" stroke-width="0.85"/>
+        <circle cx="32.5" cy="25.0" r="0.8" fill="#eab308"/>
+
+        <!-- 下垂直折角腹鳍舵与坐底攻城液压驻锄 (Lower Ventral Fin &amp; Seabed Siege Anchor Skid · X=34..64, Y=67.5..82.5) -->
+        <polygon points="34.0,67.5 64.0,71.0 54.0,82.5 42.0,82.5" fill="#0b1a24" stroke="#d4e3e6" stroke-width="1.1"/>
+        <line x1="48.5" y1="69.2" x2="48.0" y2="82.5" stroke="#38bdf8" stroke-width="0.7"/>
+
+        <!-- 水平尾稳定翼与电磁尾流消除电极轨 -->
+        <polygon points="33.0,55.5 60.0,54.2 63.0,58.0 60.0,61.8 33.0,60.5" fill="#102636" stroke="#38bdf8" stroke-width="0.85"/>
+
+        <!-- 尤里无轴环形涵道静音推进器 (Rim-Driven Magnetohydrodynamic / Ducted Propulsor · X=18..34, Y=49.2..66.8 · #eab308 高亮) -->
+        <polygon points="18.5,50.5 31.0,48.5 34.0,49.8 34.0,66.2 31.0,67.5 18.5,65.5"
+                 fill="#161d24" stroke="#eab308" stroke-width="1.2"/>
+        <line x1="28.5" y1="49.2" x2="28.5" y2="66.8" stroke="#38bdf8" stroke-width="0.9" stroke-dasharray="1.6 1.0"/>
+        <line x1="23.2" y1="49.8" x2="23.2" y2="66.2" stroke="#eab308" stroke-width="1.1" stroke-dasharray="1.8 1.0"/>
+        <polygon points="15.0,58.0 18.8,55.2 18.8,60.8" fill="#eab308" stroke="#d4e3e6" stroke-width="0.65"/>
+      </g>
+
+      <!-- ==================== 3. 低磁性钛合金双壳体与高耸大曲率流线型「龟背」导弹舱主轮廓 (X=28..410, Y=35.0..74.0) ==================== -->
+      <g id="titanium-turtleback-hull">
+        <!-- 下半暗红无反应合成橡胶消声瓦与防坐底装甲龙骨 (Y=58.0..74.0) -->
+        <path d="M 32.0 58.0 L 410.0 58.0 C 410.0 67.8 392.0 74.0 366.0 74.0 L 76.0 74.0 C 54.0 74.0 40.0 68.5 32.0 63.5 Z"
+              fill="#220d12" stroke="#ff5a36" stroke-width="1.0"/>
+
+        <!-- 全艇外层轻壳体：含中后部 X=118..272 标志性的高耸大曲率流线型「龟背」攻城导弹舱 (Y=35.0..74.0) -->
+        <path d="M 32.0 52.5
+                 C 40.0 47.5 54.0 44.0 76.0 44.0
+                 L 116.0 44.0
+                 C 126.0 44.0 132.0 35.0 146.0 35.0
+                 L 252.0 35.0
+                 C 264.0 35.0 268.0 41.5 276.0 41.5
+                 L 326.0 43.5
+                 L 366.0 43.5
+                 C 392.0 43.5 410.0 49.5 410.0 58.0
+                 C 410.0 67.8 392.0 74.0 366.0 74.0
+                 L 76.0 74.0
+                 C 54.0 74.0 40.0 68.5 32.0 63.5
+                 Z"
+              fill="#08131b" fill-opacity="0.9" stroke="#d4e3e6" stroke-width="1.35"/>
+
+        <!-- 环艇超导消磁线圈环 (Superconducting Degaussing Coils · 世界书 uid=7 特色科技 · #eab308 / #38bdf8 环肋线) -->
+        <line x1="34.0" y1="58.0" x2="408.0" y2="58.0" stroke="#38bdf8" stroke-width="0.7" stroke-dasharray="5 2.5"/>
+        <g stroke="#eab308" stroke-width="0.75" stroke-opacity="0.75" stroke-dasharray="2 1.5">
+          <line x1="78.0" y1="44.2" x2="78.0" y2="73.8"/>
+          <line x1="122.0" y1="43.5" x2="122.0" y2="73.8"/>
+          <line x1="268.0" y1="40.5" x2="268.0" y2="73.8"/>
+          <line x1="334.0" y1="43.5" x2="334.0" y2="73.8"/>
+          <line x1="374.0" y1="44.5" x2="374.0" y2="73.0"/>
+        </g>
+      </g>
+
+      <!-- ==================== 4. 艇尾闭式高能反应堆/磁流体静音电力舱 + 微秒级高压吹除调平压载水舱 (X=66..126) ==================== -->
+      <g id="aft-power-and-trim-ballast">
+        <!-- 闭式循环高能核/化学磁流体静音主动力舱 (X=68..122, Y=46.5..70.5) -->
+        <rect x="68.0" y="46.5" width="54.0" height="24.0" rx="2.0" fill="#1a0c10" fill-opacity="0.8" stroke="#ff5a36" stroke-width="0.9"/>
+        <line x1="34.0" y1="58.0" x2="92.0" y2="58.0" stroke="#eab308" stroke-width="1.25"/>
+        <rect x="73.0" y="51.0" width="18.0" height="14.0" rx="1.5" fill="#0d2230" stroke="#eab308" stroke-width="0.85"/>
+        <circle cx="106.0" cy="58.0" r="6.2" fill="#2c1015" stroke="#ff5a36" stroke-width="0.9"/>
+        <circle cx="106.0" cy="58.0" r="2.8" fill="#ff5a36" fill-opacity="0.75"/>
+        <text x="82.0" y="59.0" text-anchor="middle" class="mono" font-size="2.1" fill="#eab308">MHD DRIVE</text>
+        <text x="106.0" y="68.8" text-anchor="middle" class="mono" font-size="2.1" fill="#ff5a36">YURI CORE</text>
+      </g>
+
+      <!-- ==================== 5. 核心灵魂：中后部高耸「龟背」2×4 = 8 单元 Ø1.8m 重型攻城导弹发射井 + 微秒级高压调平舱 (X=128..264) ==================== -->
+      <g id="turtleback-8-siege-silos-cutaway">
+        <!-- 龟背装甲舱段高亮轮廓框 (X=128..262, Y=35.0..66.5) -->
+        <path d="M 128.0 66.5 L 128.0 42.0 C 132.0 35.8 138.0 35.2 146.0 35.2 L 252.0 35.2 C 258.0 35.2 262.0 38.5 262.0 42.0 L 262.0 66.5 Z"
+              fill="#14090e" fill-opacity="0.6" stroke="#ff5a36" stroke-width="1.05" stroke-dasharray="3.5 1.8"/>
+
+        <!-- 单侧可见 4 座（全艇 2×4 = 8 座）Ø1.8m 大口径微前倾攻城导弹发射筒剖面 (cx=146, 178, 210, 242) -->
+        <!-- Silo Pair #4 (X=137..155 · 内装 TYPE-C 强磁通 EMP 攻城导弹) -->
+        <rect x="137.5" y="36.8" width="17.0" height="28.2" rx="1.2" fill="#0b1d2a" stroke="#38bdf8" stroke-width="0.95"/>
+        <rect x="142.2" y="39.5" width="7.6" height="23.0" fill="#122c3e" stroke="#38bdf8" stroke-width="0.65"/>
+        <polygon points="142.2,39.5 146.0,37.2 149.8,39.5" fill="#38bdf8"/>
+        <text x="146.0" y="53.0" text-anchor="middle" class="mono" font-size="2.2" fill="#38bdf8" font-weight="bold">EMP #4</text>
+
+        <!-- Silo Pair #3 (X=169.5..187.5 · 内装 TYPE-B 二元神经毒气气溶胶攻城导弹) -->
+        <rect x="169.5" y="36.8" width="17.0" height="28.2" rx="1.2" fill="#182012" stroke="#eab308" stroke-width="0.95"/>
+        <rect x="174.2" y="39.5" width="7.6" height="23.0" fill="#222e18" stroke="#eab308" stroke-width="0.65"/>
+        <polygon points="174.2,39.5 178.0,37.2 181.8,39.5" fill="#eab308"/>
+        <text x="178.0" y="53.0" text-anchor="middle" class="mono" font-size="2.2" fill="#eab308" font-weight="bold">TOX #3</text>
+
+        <!-- Silo Pair #2 (X=201.5..219.5 · 已开启舱盖齐射 TYPE-A 温压钻地攻城导弹) -->
+        <rect x="201.5" y="36.8" width="17.0" height="28.2" rx="1.2" fill="#1f0d12" stroke="#ff5a36" stroke-width="0.95"/>
+        <line x1="210.0" y1="37.5" x2="210.0" y2="63.5" stroke="#38bdf8" stroke-width="0.7" stroke-dasharray="2 1.5"/>
+        <line x1="218.5" y1="35.0" x2="222.5" y2="30.2" stroke="#d4e3e6" stroke-width="1.2"/>
+        <text x="210.0" y="53.0" text-anchor="middle" class="mono" font-size="2.2" fill="#ff5a36" font-weight="bold">FAE #2</text>
+
+        <!-- Silo Pair #1 (X=233.5..251.5 · 已开启舱盖齐射 TYPE-A 温压钻地攻城导弹) -->
+        <rect x="233.5" y="36.8" width="17.0" height="28.2" rx="1.2" fill="#1f0d12" stroke="#ff5a36" stroke-width="1.05"/>
+        <line x1="242.0" y1="37.5" x2="242.0" y2="63.5" stroke="#ff5a36" stroke-width="0.75" stroke-dasharray="2 1.5"/>
+        <line x1="250.5" y1="35.0" x2="254.5" y2="30.2" stroke="#d4e3e6" stroke-width="1.2"/>
+        <text x="242.0" y="53.0" text-anchor="middle" class="mono" font-size="2.2" fill="#ff5a36" font-weight="bold">FAE #1</text>
+
+        <!-- 发射井底部：微秒级高压吹除与瞬态配重调平水舱 (Microsecond High-Pressure Trim &amp; Compensation Tanks · Y=66.5..72.8) -->
+        <rect x="132.0" y="66.8" width="126.0" height="5.6" rx="1.0" fill="#071a26" stroke="#38bdf8" stroke-width="0.8"/>
+        <line x1="162.0" y1="66.8" x2="162.0" y2="72.4" stroke="#38bdf8" stroke-width="0.65"/>
+        <line x1="195.0" y1="66.8" x2="195.0" y2="72.4" stroke="#38bdf8" stroke-width="0.65"/>
+        <line x1="227.0" y1="66.8" x2="227.0" y2="72.4" stroke="#38bdf8" stroke-width="0.65"/>
+        <text x="195.0" y="70.6" text-anchor="middle" class="mono" font-size="2.1" fill="#38bdf8">HIGH-PRESSURE TRIM &amp; RECOIL COMPENSATION TANKS</text>
+      </g>
+
+      <!-- ==================== 6. 前倾棱角尤里神经光学指挥台围壳 (Forward-Raked Psychic/Optronic Sail · X=272..326) ==================== -->
+      <g id="yuri-forward-raked-sail">
+        <!-- 极具辨识度的前倾折角刀锋围壳主体 (X=272..326, Y=21.0..43.5) -->
+        <polygon points="270.0,41.5 282.0,21.5 322.0,21.5 316.0,33.5 326.0,43.5 270.0,43.5"
+                 fill="#112432" stroke="#d4e3e6" stroke-width="1.25"/>
+        <!-- 围壳前倾装甲观察棱窗与尤里三叉神经波导徽记 -->
+        <polygon points="308.0,23.5 320.0,23.5 317.5,27.5 306.0,27.5" fill="#04080b" stroke="#ff5a36" stroke-width="0.75"/>
+        <line x1="276.0" y1="30.5" x2="316.5" y2="30.5" stroke="#38bdf8" stroke-width="0.7"/>
+        <!-- 围壳可收放前水平舵 (Retractable Bow/Sail Planes) -->
+        <polygon points="302.0,34.5 318.0,34.5 315.0,37.5 299.0,37.5" fill="#18384c" stroke="#eab308" stroke-width="0.9"/>
+        <!-- 围壳侧面白色舷号「BMR-01」 -->
+        <text x="292.0" y="28.2" text-anchor="middle" class="mono" font-size="3.2" fill="#d4e3e6" font-weight="bold">BMR-01</text>
+
+        <!-- 围壳顶：尤里心灵波导谐振天线 (Psychic Waveguide Resonator) + 神经光学潜望镜桅杆 (Y=9.0..21.5) -->
+        <line x1="296.0" y1="21.5" x2="296.0" y2="11.5" stroke="#d4e3e6" stroke-width="1.05"/>
+        <circle cx="296.0" cy="10.5" r="1.8" fill="#2c1015" stroke="#ff5a36" stroke-width="0.8"/>
+        <path d="M 292.5 8.5 A 4.2 4.2 0 0 1 299.5 8.5" fill="none" stroke="#eab308" stroke-width="0.75"/>
+        <rect x="306.0" y="13.0" width="1.8" height="8.5" fill="#163244" stroke="#38bdf8" stroke-width="0.65"/>
+        <rect x="304.8" y="10.8" width="4.2" height="2.4" fill="#0d2230" stroke="#38bdf8" stroke-width="0.7"/>
+
+        <!-- 围壳下方：28人高自动化神经接驳作战指挥舱 (28-Crew Neural-Link C2 Pod · X=274..332, Y=45.5..68.5) -->
+        <rect x="274.0" y="45.5" width="56.0" height="23.0" rx="2.0" fill="#07151f" fill-opacity="0.78" stroke="#38bdf8" stroke-width="0.85" stroke-dasharray="3 1.5"/>
+        <line x1="274.0" y1="56.5" x2="330.0" y2="56.5" stroke="#2c3b40" stroke-width="0.65"/>
+        <circle cx="292.0" cy="51.2" r="3.2" fill="#160c14" stroke="#eab308" stroke-width="0.75"/>
+        <text x="311.0" y="52.2" text-anchor="middle" class="mono" font-size="2.2" fill="#38bdf8">28-CREW C2</text>
+        <text x="302.0" y="63.5" text-anchor="middle" class="mono" font-size="2.1" fill="#eab308">DEGAUSSING &amp; NEURAL LINK</text>
+      </g>
+
+      <!-- ==================== 7. 艇首精简自卫武备：仅保留 2×533mm 自卫鱼雷发射管 + 共形水声相控阵 (X=334..424) ==================== -->
+      <g id="bow-twin-533mm-torpedo-and-sonar">
+        <!-- 艇首鱼雷舱透视 (世界书设定：为容纳庞大龟背攻城井，艇首仅保留 2 具 533mm 自卫鱼雷发射管 · X=336..388) -->
+        <rect x="336.0" y="46.5" width="48.0" height="23.0" rx="2.0" fill="#07151f" fill-opacity="0.75" stroke="#ff5a36" stroke-width="0.8" stroke-dasharray="3 1.5"/>
+        <!-- 严格仅绘制 2 具 533mm 重型自卫鱼雷发射管 (Upper Tube #1 Y=55.2 &amp; Lower Tube #2 Y=60.8) + 4枚备用自卫鱼雷 -->
+        <rect x="360.0" y="54.0" width="32.0" height="2.4" fill="#1c0d12" stroke="#ff5a36" stroke-width="0.85"/>
+        <rect x="360.0" y="59.6" width="32.0" height="2.4" fill="#1c0d12" stroke="#ff5a36" stroke-width="0.85"/>
+        <rect x="340.0" y="54.2" width="16.0" height="2.0" rx="0.6" fill="#eab308"/>
+        <rect x="340.0" y="59.8" width="16.0" height="2.0" rx="0.6" fill="#eab308"/>
+        <!-- 艇首 2 具鱼雷发射管椭圆外舱门 -->
+        <ellipse cx="394.5" cy="55.2" rx="2.5" ry="1.1" fill="#050a0e" stroke="#ff5a36" stroke-width="0.75"/>
+        <ellipse cx="394.5" cy="60.8" rx="2.5" ry="1.1" fill="#050a0e" stroke="#ff5a36" stroke-width="0.75"/>
+        <text x="360.0" y="51.2" text-anchor="middle" class="mono" font-size="2.2" fill="#ff5a36" font-weight="bold">2×533MM TORPEDO</text>
+
+        <!-- 1枚刚从 1号管高速射出的 533mm 自卫鱼雷剪影 (X=402..422, Y=55.2) -->
+        <line x1="396.5" y1="55.2" x2="405.0" y2="55.2" stroke="#38bdf8" stroke-width="0.8" stroke-dasharray="1.5 1"/>
+        <rect x="405.0" y="54.1" width="13.5" height="2.2" rx="0.8" fill="#163244" stroke="#eab308" stroke-width="0.75"/>
+        <polygon points="418.5,54.1 422.5,55.2 418.5,56.3" fill="#ff5a36"/>
+
+        <!-- 艇首宽频共形水声相控阵与有源消音发生器 (Conformal Hydro-Acoustic Phased Array · X=388..410) -->
+        <path d="M 388.0 44.8 C 402.0 45.8 409.5 51.0 409.5 58.0 C 409.5 65.0 402.0 70.2 388.0 71.2 Z"
+              fill="#112b3c" fill-opacity="0.82" stroke="#38bdf8" stroke-width="1.05" stroke-dasharray="2.5 1.2"/>
+        <path d="M 393.5 48.5 C 403.0 49.5 407.5 53.2 407.5 58.0 C 407.5 62.8 403.0 66.5 393.5 67.5 Z"
+              fill="#183b52" stroke="#eab308" stroke-width="0.85"/>
+      </g>
+
+      <!-- ==================== 8. 底部全艇工程标尺与总师标注 (Y=81.5..88.5 · 严格净空零碰撞) ==================== -->
+      <line x1="20.0" y1="84.5" x2="410.0" y2="84.5" stroke="#2c3b40" stroke-width="0.6"/>
+      <line x1="20.0" y1="82.8" x2="20.0" y2="86.2" stroke="#38bdf8" stroke-width="0.7"/>
+      <line x1="410.0" y1="82.8" x2="410.0" y2="86.2" stroke="#38bdf8" stroke-width="0.7"/>
+      <text x="78.0" y="88.2" text-anchor="middle" class="mono" font-size="2.4" fill="#eab308" font-weight="bold">◀ QUIET DUCTED PROPULSOR &amp; MHD CORE ▶</text>
+      <text x="198.0" y="88.2" text-anchor="middle" class="mono" font-size="2.4" fill="#ff5a36" font-weight="bold">◀ TURTLEBACK: 2×4 (8) Ø1.8M SIEGE SILOS ▶</text>
+      <text x="348.0" y="88.2" text-anchor="middle" class="mono" font-size="2.4" fill="#38bdf8" font-weight="bold">◀ 28-CREW C2 + 2×533MM TORPEDO (LOA 96.0M) ▶</text>
+    </g>
+  </g>
+</svg>

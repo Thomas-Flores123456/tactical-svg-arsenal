@@ -1,0 +1,15 @@
+# Dependencies & build artifacts
+node_modules/
+dist/
+.vite/
+
+# Generated flat asset copies & metadata mirror (rebuilt automatically via `npm run index`)
+public/assets/
+public/metadata/
+
+# Legacy empty folder or local editor artifacts
+/asset-browser/
+*.log
+.DS_Store
+Thumbs.db
+Desktop.ini

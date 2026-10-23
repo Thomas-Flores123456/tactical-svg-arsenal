@@ -1,0 +1,1038 @@
+{
+  "schemaVersion": 1,
+  "note": "按项目现有装备用途人工归类；不代表现实装备性能考证。未登记资产回退未分类。",
+  "categories": [
+    {
+      "id": "carrier",
+      "label": "航空母舰",
+      "subtypes": [
+        {
+          "id": "nuclear",
+          "label": "核动力航母"
+        },
+        {
+          "id": "conventional",
+          "label": "常规动力航母"
+        }
+      ]
+    },
+    {
+      "id": "amphibious",
+      "label": "两栖舰艇",
+      "subtypes": [
+        {
+          "id": "assault",
+          "label": "两栖攻击舰"
+        },
+        {
+          "id": "dock",
+          "label": "船坞运输舰"
+        },
+        {
+          "id": "hovercraft",
+          "label": "气垫登陆艇"
+        }
+      ]
+    },
+    {
+      "id": "battleship",
+      "label": "战列舰",
+      "subtypes": []
+    },
+    {
+      "id": "cruiser",
+      "label": "巡洋舰",
+      "subtypes": []
+    },
+    {
+      "id": "destroyer",
+      "label": "驱逐舰",
+      "subtypes": []
+    },
+    {
+      "id": "frigate",
+      "label": "护卫舰",
+      "subtypes": []
+    },
+    {
+      "id": "arsenal",
+      "label": "导弹支援／武库舰",
+      "subtypes": []
+    },
+    {
+      "id": "fast-craft",
+      "label": "近海快艇",
+      "subtypes": []
+    },
+    {
+      "id": "submarine",
+      "label": "潜艇",
+      "subtypes": [
+        {
+          "id": "ssbn",
+          "label": "战略导弹核潜艇"
+        },
+        {
+          "id": "ssgn",
+          "label": "巡航导弹核潜艇"
+        },
+        {
+          "id": "ssn",
+          "label": "攻击核潜艇"
+        },
+        {
+          "id": "conventional",
+          "label": "常规动力潜艇"
+        },
+        {
+          "id": "siege",
+          "label": "攻城潜艇（设定）"
+        }
+      ]
+    },
+    {
+      "id": "special",
+      "label": "特种潜航器／母舰",
+      "subtypes": [
+        {
+          "id": "hunter",
+          "label": "仿生猎杀潜航器"
+        },
+        {
+          "id": "mothership",
+          "label": "潜水母舰"
+        }
+      ]
+    },
+    {
+      "id": "mixed",
+      "label": "舰载航空与混合装备",
+      "subtypes": []
+    },
+    {
+      "id": "land-tank",
+      "label": "坦克",
+      "subtypes": [
+        {
+          "id": "main",
+          "label": "主战坦克"
+        },
+        {
+          "id": "heavy",
+          "label": "重型坦克"
+        },
+        {
+          "id": "special",
+          "label": "特种坦克"
+        },
+        {
+          "id": "light",
+          "label": "轻型坦克"
+        }
+      ]
+    },
+    {
+      "id": "land-armored",
+      "label": "装甲战斗车辆",
+      "subtypes": [
+        {
+          "id": "ifv",
+          "label": "多功能步兵车"
+        },
+        {
+          "id": "tracked-ifv",
+          "label": "履带步兵战车"
+        },
+        {
+          "id": "wheeled-ifv",
+          "label": "轮式步兵战车"
+        },
+        {
+          "id": "wheeled-mgs",
+          "label": "轮式突击炮"
+        },
+        {
+          "id": "command-c2",
+          "label": "信息化指挥车"
+        },
+        {
+          "id": "quadruped-drone",
+          "label": "四足作战机械"
+        }
+      ]
+    },
+    {
+      "id": "land-light",
+      "label": "轻型战术车辆",
+      "subtypes": [
+        {
+          "id": "utility",
+          "label": "通用战术车"
+        }
+      ]
+    },
+    {
+      "id": "land-engineering",
+      "label": "支援与工程",
+      "subtypes": [
+        {
+          "id": "mcv",
+          "label": "机动基地车"
+        },
+        {
+          "id": "heavy-mining",
+          "label": "重工采矿"
+        },
+        {
+          "id": "breacher",
+          "label": "突击破障车"
+        }
+      ]
+    },
+    {
+      "id": "land-support",
+      "label": "维修保障车辆",
+      "subtypes": [
+        {
+          "id": "repair",
+          "label": "前线维修车"
+        }
+      ]
+    },
+    {
+      "id": "land-artillery",
+      "label": "炮兵与导弹",
+      "subtypes": [
+        {
+          "id": "spg",
+          "label": "自行榴弹炮"
+        },
+        {
+          "id": "mlrs",
+          "label": "多管火箭炮"
+        },
+        {
+          "id": "tactical-missile",
+          "label": "战役战术导弹"
+        },
+        {
+          "id": "strategic-missile",
+          "label": "战略核导弹"
+        }
+      ]
+    },
+    {
+      "id": "land-air-defense",
+      "label": "自行防空",
+      "subtypes": [
+        {
+          "id": "wheeled-spaa",
+          "label": "轮式自行防空"
+        },
+        {
+          "id": "sam",
+          "label": "远程防空导弹"
+        },
+        {
+          "id": "tracked-sam",
+          "label": "履带野战防空"
+        }
+      ]
+    },
+    {
+      "id": "air-fighter",
+      "label": "制空与多用途战机",
+      "subtypes": [
+        {
+          "id": "stealth-fighter",
+          "label": "五代隐身战斗机"
+        },
+        {
+          "id": "strike-fighter",
+          "label": "前掠翼／多用途突击机"
+        },
+        {
+          "id": "interceptor",
+          "label": "高空高速截击／载机"
+        },
+        {
+          "id": "ucav",
+          "label": "湿件／无人制空战斗机"
+        },
+        {
+          "id": "ew-attack",
+          "label": "舰载电子攻击机"
+        }
+      ]
+    },
+    {
+      "id": "air-bomber",
+      "label": "攻击机与战略轰炸机",
+      "subtypes": [
+        {
+          "id": "cas",
+          "label": "近距支援攻击机"
+        },
+        {
+          "id": "fighter-bomber",
+          "label": "防区外战斗轰炸机"
+        },
+        {
+          "id": "strategic-bomber",
+          "label": "超音速／隐身战略轰炸机"
+        }
+      ]
+    },
+    {
+      "id": "air-rotorcraft",
+      "label": "旋翼与倾转旋翼机",
+      "subtypes": [
+        {
+          "id": "attack-heli",
+          "label": "重型武装／攻城直升机"
+        },
+        {
+          "id": "tiltrotor",
+          "label": "倾转旋翼／双涵道攻击机"
+        },
+        {
+          "id": "heavy-ducted",
+          "label": "四涵道重型装甲运输机"
+        },
+        {
+          "id": "transport-heli",
+          "label": "纵列双旋翼／重型运输直升机"
+        }
+      ]
+    },
+    {
+      "id": "air-special",
+      "label": "空天母舰与特种飞行器",
+      "subtypes": [
+        {
+          "id": "arsenal-airship",
+          "label": "空中无人机武库母舰"
+        },
+        {
+          "id": "mhd-disc",
+          "label": "磁流体飞碟母舰"
+        },
+        {
+          "id": "recon-lifting",
+          "label": "无尾仿生侦察机"
+        },
+        {
+          "id": "strategic-transport",
+          "label": "大型战略／战术运输机"
+        },
+        {
+          "id": "awacs-c2",
+          "label": "大型空中预警与指控机"
+        },
+        {
+          "id": "hale-uav",
+          "label": "高空长航时战略侦察无人机"
+        },
+        {
+          "id": "male-ucav",
+          "label": "中高空察打一体战略无人机"
+        },
+        {
+          "id": "maritime-asw",
+          "label": "远程反潜与海上巡逻机"
+        },
+        {
+          "id": "aerial-tanker",
+          "label": "大型战略空中加油机"
+        }
+      ]
+    },
+    {
+      "id": "unclassified",
+      "label": "未分类",
+      "subtypes": []
+    }
+  ],
+  "equipment": {
+    "navy:01_CVN78_福特级核动力航母": {
+      "categoryId": "carrier",
+      "subtypeId": "nuclear"
+    },
+    "navy:02_076型_四川级电磁弹射两栖攻击舰": {
+      "categoryId": "amphibious",
+      "subtypeId": "assault"
+    },
+    "navy:03_MN-Redoutable_可畏级隐身核动力武库舰": {
+      "categoryId": "arsenal",
+      "subtypeId": ""
+    },
+    "navy:04_055型_南昌级万吨导弹驱逐舰": {
+      "categoryId": "destroyer",
+      "subtypeId": ""
+    },
+    "navy:05_941型_台风级战略弹道导弹核潜艇": {
+      "categoryId": "submarine",
+      "subtypeId": "ssbn"
+    },
+    "navy:06_12322型_欧洲野牛级大型气垫登陆艇": {
+      "categoryId": "amphibious",
+      "subtypeId": "hovercraft"
+    },
+    "navy:07_舰载航空兵与船坞重机附属件": {
+      "categoryId": "mixed",
+      "subtypeId": ""
+    },
+    "navy:08_BB63_衣阿华级高速战列舰_密苏里号": {
+      "categoryId": "battleship",
+      "subtypeId": ""
+    },
+    "navy:09_Pr1144_基洛夫级核动力导弹巡洋舰": {
+      "categoryId": "cruiser",
+      "subtypeId": ""
+    },
+    "navy:10_Pr23_苏维埃同盟级重型战列舰": {
+      "categoryId": "battleship",
+      "subtypeId": ""
+    },
+    "navy:11_CG47_提康德罗加级宙斯盾导弹巡洋舰": {
+      "categoryId": "cruiser",
+      "subtypeId": ""
+    },
+    "navy:12_R08_伊丽莎白女王级双舰岛航空母舰": {
+      "categoryId": "carrier",
+      "subtypeId": "conventional"
+    },
+    "navy:13_Pr949A_奥斯卡II级巡航导弹核潜艇": {
+      "categoryId": "submarine",
+      "subtypeId": "ssgn"
+    },
+    "navy:14_DDG51_阿利伯克级FlightIII宙斯盾驱逐舰": {
+      "categoryId": "destroyer",
+      "subtypeId": ""
+    },
+    "navy:15_Pr955A_北风之神A级战略导弹核潜艇": {
+      "categoryId": "submarine",
+      "subtypeId": "ssbn"
+    },
+    "navy:16_LHD1_黄蜂级两栖攻击舰": {
+      "categoryId": "amphibious",
+      "subtypeId": "assault"
+    },
+    "navy:17_Pr885M_亚森M级多用途攻击核潜艇": {
+      "categoryId": "submarine",
+      "subtypeId": "ssn"
+    },
+    "navy:18_SSN774_弗吉尼亚级BlockV攻击核潜艇": {
+      "categoryId": "submarine",
+      "subtypeId": "ssn"
+    },
+    "navy:19_Pr22350_戈尔什科夫元帅级神盾护卫舰": {
+      "categoryId": "frigate",
+      "subtypeId": ""
+    },
+    "navy:20_SSBN826_哥伦比亚级战略导弹核潜艇": {
+      "categoryId": "submarine",
+      "subtypeId": "ssbn"
+    },
+    "navy:21_Pr1155M_无畏II级大型反潜驱逐舰": {
+      "categoryId": "destroyer",
+      "subtypeId": ""
+    },
+    "navy:22_LPD17_圣安东尼奥级两栖船坞运输舰": {
+      "categoryId": "amphibious",
+      "subtypeId": "dock"
+    },
+    "navy:23_Pr971_阿库拉级攻击核潜艇": {
+      "categoryId": "submarine",
+      "subtypeId": "ssn"
+    },
+    "navy:24_Type45_勇敢级防空驱逐舰": {
+      "categoryId": "destroyer",
+      "subtypeId": ""
+    },
+    "navy:25_RA2_无畏级重型导弹支援舰": {
+      "categoryId": "arsenal",
+      "subtypeId": ""
+    },
+    "navy:26_CVN68_尼米兹级核动力航母": {
+      "categoryId": "carrier",
+      "subtypeId": "nuclear"
+    },
+    "navy:27_DDGX_下一代大型导弹驱逐舰": {
+      "categoryId": "destroyer",
+      "subtypeId": ""
+    },
+    "navy:28_DDG991_世宗大王级宙斯盾驱逐舰": {
+      "categoryId": "destroyer",
+      "subtypeId": ""
+    },
+    "navy:29_SSN688I_洛杉矶级改进型攻击核潜艇": {
+      "categoryId": "submarine",
+      "subtypeId": "ssn"
+    },
+    "navy:30_Pr636_基洛级改进型常规动力潜艇": {
+      "categoryId": "submarine",
+      "subtypeId": "conventional"
+    },
+    "navy:31_Pr20385_轰鸣级隐身导弹护卫舰": {
+      "categoryId": "frigate",
+      "subtypeId": ""
+    },
+    "navy:32_Yuri_雷鸣级龟背攻城潜艇": {
+      "categoryId": "submarine",
+      "subtypeId": "siege"
+    },
+    "navy:33_Yuri_克拉肯级仿生猎杀潜航器": {
+      "categoryId": "special",
+      "subtypeId": "hunter"
+    },
+    "navy:34_Yuri_海妖级半潜盖特防空护卫舰": {
+      "categoryId": "frigate",
+      "subtypeId": ""
+    },
+    "navy:35_Yuri_深渊母巢双壳体潜水母舰": {
+      "categoryId": "special",
+      "subtypeId": "mothership"
+    },
+    "navy:36_RA2_台风级重型攻击潜艇": {
+      "categoryId": "submarine",
+      "subtypeId": "ssn"
+    },
+    "navy:37_RA2_海蝎级近海防空快艇": {
+      "categoryId": "fast-craft",
+      "subtypeId": ""
+    },
+    "army:01_盟军MCV_3744": {
+      "categoryId": "land-engineering",
+      "subtypeId": "mcv"
+    },
+    "army:02_苏联MCV_И110": {
+      "categoryId": "land-engineering",
+      "subtypeId": "mcv"
+    },
+    "army:03_天启_重型决战坦克": {
+      "categoryId": "land-tank",
+      "subtypeId": "heavy"
+    },
+    "army:04_幻影_113坦克": {
+      "categoryId": "land-tank",
+      "subtypeId": "special"
+    },
+    "army:05_IFV_多功能步兵车": {
+      "categoryId": "land-armored",
+      "subtypeId": "ifv"
+    },
+    "army:06_HUMVEE_军用悍马": {
+      "categoryId": "land-light",
+      "subtypeId": "utility"
+    },
+    "army:07_FRV1400_前线维修车": {
+      "categoryId": "land-support",
+      "subtypeId": "repair"
+    },
+    "army:08_M1A1_灰熊主战坦克": {
+      "categoryId": "land-tank",
+      "subtypeId": "main"
+    },
+    "army:09_M2A3_布拉德利步兵战车": {
+      "categoryId": "land-armored",
+      "subtypeId": "tracked-ifv"
+    },
+    "army:10_M1A2_SEP主战坦克": {
+      "categoryId": "land-tank",
+      "subtypeId": "main"
+    },
+    "army:11_M109A6_帕拉丁自行火炮": {
+      "categoryId": "land-artillery",
+      "subtypeId": "spg"
+    },
+    "army:12_M142_海马斯多管火箭车": {
+      "categoryId": "land-artillery",
+      "subtypeId": "mlrs"
+    },
+    "army:13_光棱坦克_现代化改型": {
+      "categoryId": "land-tank",
+      "subtypeId": "special"
+    },
+    "army:14_犀牛_独立主战坦克": {
+      "categoryId": "land-tank",
+      "subtypeId": "main",
+      "sourceStatus": "用户确认候选原样入库；犀牛独立车族；原版安装画面主轮廓，现代细部为设计补全，非T系列改名。 非实物1:1工程认证。"
+    },
+    "army:15_BMP-3_步兵战车": {
+      "categoryId": "land-armored",
+      "subtypeId": "tracked-ifv",
+      "sourceStatus": "用户确认候选原样入库；BMP-3代表构型；实车与四视图参考，原文车族同时含BMP-2，非实物1:1。 非实物1:1工程认证。"
+    },
+    "army:16_狂风_轻型坦克": {
+      "categoryId": "land-tank",
+      "subtypeId": "light",
+      "sourceStatus": "用户确认候选原样入库；狂风单105mm炮；来源参考与设计补全，非实物1:1。 非实物1:1工程认证。"
+    },
+    "army:17_盖特_轮式自行防空": {
+      "categoryId": "land-air-defense",
+      "subtypeId": "wheeled-spaa",
+      "sourceStatus": "用户确认候选原样入库；盖特轮式自行防空；双四管25mm转管组、2x2管束，设计补全非实物1:1。 非实物1:1工程认证。"
+    },
+    "army:18_T-90M_突破3主战坦克": {
+      "categoryId": "land-tank",
+      "subtypeId": "main",
+      "sourceStatus": "用户确认候选原样入库；现代焊接炮塔与反应装甲；可信完整顶视缺失，细部为设计补全。 非实物1:1工程认证。"
+    },
+    "army:19_2S35_联盟SV自行火炮": {
+      "categoryId": "land-artillery",
+      "subtypeId": "spg",
+      "sourceStatus": "用户确认候选原样入库；现代单管无人炮塔，不是早期双管；可信完整顶视缺失。 非实物1:1工程认证。"
+    },
+    "army:20_V3_战役导弹发射车": {
+      "categoryId": "land-artillery",
+      "subtypeId": "tactical-missile",
+      "sourceStatus": "用户确认候选原样入库；游戏履带路线，非MAZ；单车符号而非完整导弹营；行军/起竖双构型。 非实物1:1工程认证。"
+    },
+    "army:21_铠甲-S1_弹炮合一防空车": {
+      "categoryId": "land-air-defense",
+      "subtypeId": "wheeled-spaa",
+      "sourceStatus": "用户确认候选原样入库；8x8轮式弹炮合一代表；行军姿态，机构细部为设计补全。 非实物1:1工程认证。"
+    },
+    "army:22_磁电_超导引力波坦克": {
+      "categoryId": "land-tank",
+      "subtypeId": "special",
+      "sourceStatus": "用户确认候选原样入库；世界书设定磁电特种车辆；上层布置和结构细节为设计补全。 非实物1:1工程认证。"
+    },
+    "army:23_精神控制车_脑波母车": {
+      "categoryId": "land-tank",
+      "subtypeId": "special",
+      "sourceStatus": "用户确认候选原样入库；世界书设定精神控制特种车辆；上层布置和结构细节为设计补全。 非实物1:1工程认证。"
+    },
+    "army:24_冥河甲虫_两栖步兵战车": {
+      "categoryId": "land-armored",
+      "subtypeId": "wheeled-ifv",
+      "sourceStatus": "用户确认候选原样入库；轮式两栖步兵战车设定；几何细节为设计补全。 非实物1:1工程认证。"
+    },
+    "army:25_机动熔炼采矿母车": {
+      "categoryId": "land-engineering",
+      "subtypeId": "heavy-mining",
+      "sourceStatus": "用户确认候选原样入库；重工采矿母车设定；几何细节为设计补全。 非实物1:1工程认证。"
+    },
+    "army:26_暴君_重型电浆主战坦克": {
+      "categoryId": "land-tank",
+      "subtypeId": "heavy",
+      "sourceStatus": "依据《武备·尤里》UID18绘制：75吨超宽双履带底盘、低矮半球卵形炮塔、双联脉冲磁流体电浆主炮与同轴盖特、纳米自愈合生物陶瓷装甲。非实物1:1工程认证。"
+    },
+    "army:27_冥雾_24管生化温压火箭炮": {
+      "categoryId": "land-artillery",
+      "subtypeId": "mlrs",
+      "sourceStatus": "依据《武备·尤里》UID20绘制：8×8高机动越野底盘、中置心灵感应谐振火控舱、后置2×12管密封模块化生化温压定向发射箱（行军/起竖双构型）。非实物1:1工程认证。"
+    },
+    "army:28_恐怖机器人_四足作战平台": {
+      "categoryId": "land-armored",
+      "subtypeId": "quadruped-drone",
+      "sourceStatus": "依据《武备·苏联》UID33/34与《工程·苏联》UID22绘制：微型四足冲压机械底盘，含拆解爆破型（双旋转刃爪+穿甲钻头）与电磁锁止侦察型双互斥构型。非实物1:1工程认证。"
+    },
+    "army:29_龙卷风S_远程制导火箭炮": {
+      "categoryId": "land-artillery",
+      "subtypeId": "mlrs",
+      "sourceStatus": "依据《武备·苏联》UID31绘制：MAZ/MZKT重型8×8底盘、中置GLONASS保密火控指挥舱、后置12管300mm远程制导集束定向器（行军/起竖双构型）。非实物1:1工程认证。"
+    },
+    "army:30_超时空采矿车_重型工程母车": {
+      "categoryId": "land-engineering",
+      "subtypeId": "heavy-mining",
+      "sourceStatus": "依据《武备·盟军》UID27绘制：7负重轮超重型工程履带底盘、前置全宽螺旋钻割碎矿滚筒、中段四肋拱形微型超时空位移谐振球舱与后置重载储矿斗。非实物1:1工程认证。"
+    },
+    "army:31_超时空_轻型突击坦克": {
+      "categoryId": "land-tank",
+      "subtypeId": "light",
+      "sourceStatus": "依据《武备·盟军》UID142绘制：大倾角楔形6负重轮轻坦底盘、前置特种高膛压穿甲速射炮、炮塔顶置半开分瓣护罩与中型超时空谐振跃迁核心。非实物1:1工程认证。"
+    },
+    "army:32_T-80BVM_燃气轮机主战坦克": {
+      "categoryId": "land-tank",
+      "subtypeId": "main",
+      "sourceStatus": "依据《武备·苏联》UID26与UID16绘制：铸造圆弧炮塔蚌壳扇形「化石」反应装甲、2-2-2分组6对双轮缘负重轮、侧前软质爆反方包与车尾中央矩形GTD-1250燃气轮机排气百叶。非实物1:1工程认证。"
+    },
+    "army:33_BTR-82A_轮式装甲输送车": {
+      "categoryId": "land-armored",
+      "subtypeId": "wheeled-ifv",
+      "sourceStatus": "依据《武备·苏联》UID18绘制：前尖后方两栖船形8×8轮式装甲车体（第2/3轴加宽间距）、对开步兵侧舱门与BPPU单人30mm 2A72机炮武器站。非实物1:1工程认证。"
+    },
+    "army:34_TOS-1A_烈日热压火箭炮": {
+      "categoryId": "land-artillery",
+      "subtypeId": "mlrs",
+      "sourceStatus": "依据《武备·苏联》UID32与《工程·苏联》UID12绘制：T-72重型坦克履带底盘、首下V形推土铲、中置旋转装甲托架与平顶加厚焊接装甲3×8=24管220mm热压火箭定向器（行军/起竖双构型）。非实物1:1工程认证。"
+    },
+    "army:35_2S7M_牡丹203mm自行巨炮": {
+      "categoryId": "land-artillery",
+      "subtypeId": "spg",
+      "sourceStatus": "依据《武备·苏联》UID119绘制：Object 216加长7负重轮履带底盘、车尾开放式无炮塔基座、跨越全车的59倍径203mm 2A44超长巨炮、车尾宽幅液压驻锄与右侧机械摇臂输弹机（行军/起竖双构型）。非实物1:1工程认证。"
+    },
+    "army:36_S-400_凯旋远程防空导弹车": {
+      "categoryId": "land-air-defense",
+      "subtypeId": "sam",
+      "sourceStatus": "依据《武备·苏联》UID57绘制：MAZ-543M 8×8四轴八轮重型底盘、车首左右分体双驾驶室、中置燃气轮机供电液压舱与后置2×2四联装加强箍环储运发射筒（水平行军/90°垂直冷弹射起竖双构型）。非实物1:1工程认证。"
+    },
+    "army:37_道尔M2_履带野战防空车": {
+      "categoryId": "land-air-defense",
+      "subtypeId": "tracked-sam",
+      "sourceStatus": "依据《武备·苏联》UID58与《工程·苏联》UID19绘制：GM-5955七负重轮履带底盘、全自动防空转塔（后置高仰三坐标搜索雷达+前置平板相控阵制导雷达+球形光电头+顶面中央双列垂直冷发射导弹井阵列）。非实物1:1工程认证。"
+    },
+    "army:38_豹2A7+_主战坦克": {
+      "categoryId": "land-tank",
+      "subtypeId": "main",
+      "sourceStatus": "依据《武备·盟军》UID162绘制：7对负重轮重型底盘、前3段重型防雷复合侧裙、长楔形空心箭头附加装甲炮塔、55倍径120mm Rh-120 L55A1加长滑膛炮、PERI RTWL周视镜、车尾双圆散热风扇百叶与右侧APU舱。非实物1:1工程认证。"
+    },
+    "army:39_挑战者3_主战坦克": {
+      "categoryId": "land-tank",
+      "subtypeId": "main",
+      "sourceStatus": "依据《武备·盟军》UID164绘制：英式6对负重轮液气悬挂底盘、全尺寸法斯汉姆模块化侧裙、全新全焊接菱形复合装甲炮塔、120mm L55A1高膛压滑膛炮、四角Trophy MV主动防御雷达与车顶双拦截弹发射器、Orion周视热像仪与车尾双外挂油桶。非实物1:1工程认证。"
+    },
+    "army:40_M1130_斯特赖克装甲指挥车": {
+      "categoryId": "land-armored",
+      "subtypeId": "command-c2",
+      "sourceStatus": "依据《武备·盟军》UID35与《工程·盟军》UID4绘制：8×8高速轮式装甲底盘、两侧分块式MEXAS/DEK附加陶瓷装甲、后部加高全封闭数字化C4ISR指挥方舱与车尾外挂ECU空调、M151遥控武器站及车顶SATCOM圆盘/笼式/4根高耸鞭状天线群。非实物1:1工程认证。"
+    },
+    "army:41_半人马座II_轮式装甲突击车": {
+      "categoryId": "land-armored",
+      "subtypeId": "wheeled-mgs",
+      "sourceStatus": "依据《武备·盟军》UID168绘制：8×8 H型传动越野底盘、超低矮大倾角楔形防弹车首、后置长尾舱HITFACT MkII焊接炮塔、45倍径120mm高膛压滑膛炮（配标志性多孔胡椒瓶炮口制退器）、HITROLE遥控武器站与ATTILA D全景周视镜。非实物1:1工程认证。"
+    },
+    "army:42_PzH2000_155mm自行榴弹炮": {
+      "categoryId": "land-artillery",
+      "subtypeId": "spg",
+      "sourceStatus": "依据《武备·盟军》UID166绘制：7对负重轮重型底盘、后置超大多折面焊接炮塔、车顶铺设刺猬防攻顶橡胶针装甲（Igelpanzerung）、52倍径155mm L52超长身管（配抽气筒、V0初速多普勒雷达箱与车首折叠A字行军锁，行军/MRSI 45°大仰角起竖双构型）。非实物1:1工程认证。"
+    },
+    "army:43_M6后卫_机动伴随防空车": {
+      "categoryId": "land-air-defense",
+      "subtypeId": "tracked-sam",
+      "sourceStatus": "依据《武备·盟军》UID33与UID70绘制：M2A2 ODS布拉德利6对负重轮履带底盘、层压间隔侧裙、微仰25mm M242链式机炮、炮塔右侧四联装毒刺防空导弹装甲发射箱（SVML）、右前角板状IFF敌我识别天线与车顶FLIR光电火控转塔。非实物1:1工程认证。"
+    },
+    "army:44_奇美拉_重装合成突击要塞": {
+      "categoryId": "land-tank",
+      "subtypeId": "heavy",
+      "sourceStatus": "依据《武备·尤里》UID19与《工程·尤里》UID3绘制：前后四履带铰接合成肌束驱动底盘、车首全宽V形液压重装破障铲、双层多棱生物陶瓷移动碉堡车体、5座全向旋转独立步兵球塔与顶置万神殿湿件母脑共生神经桥。非实物1:1工程认证。"
+    },
+    "army:45_地鸣_深地谐振自行臼炮": {
+      "categoryId": "land-artillery",
+      "subtypeId": "spg",
+      "sourceStatus": "依据《武备·尤里》UID21绘制：7负重轮特重型攻城履带底盘、中置600mm级粗短巨口径次声波聚能谐振臼炮管（外覆3圈超导低频激振环）、车尾双联重型液压钻地驻锄与后部碳化钨钻地谐振弹输弹摇臂（行军收拢/60°驻锄锚地攻城展开双构型）。非实物1:1工程认证。"
+    },
+    "army:46_2S19M2_姆斯塔152mm自行榴弹炮": {
+      "categoryId": "land-artillery",
+      "subtypeId": "spg",
+      "sourceStatus": "依据《武备·苏联》UID20与《工程·苏联》UID6绘制：6对双轮缘负重轮混合底盘、车首自挖推土铲与A字行军架、高大有人多面折角焊接盒式炮塔、47倍径152mm 2A64M2主炮（配三室箱形开槽制退器与偏心抽气筒）、炮塔尾板折叠式外部输弹导轨与右侧APU恒温舱。非实物1:1工程认证。"
+    },
+    "army:47_亚尔斯_RS24洲际弹道导弹发射车": {
+      "categoryId": "land-artillery",
+      "subtypeId": "strategic-missile",
+      "sourceStatus": "依据《武备·苏联》UID85绘制：MZKT-79291型16×16八轴超重型越野轮式底盘（3+2+3轮距分布）、车首左右分体双驾驶室、车背22米级环形加强筋洲际导弹冷发射筒（配钝锥形多面体分离鼻锥）与前后4组重型箱形液压调平支腿（水平行军/90°垂直冷发射起竖双构型）。非实物1:1工程认证。"
+    },
+    "army:48_凯撒_155mm轮式自行卡车炮": {
+      "categoryId": "land-artillery",
+      "subtypeId": "spg",
+      "sourceStatus": "依据《武备·盟军》UID165与UID77绘制：法系6×6全驱越野卡车底盘、轻型防破片装甲乘员舱、中段立式18发弹丸/药筒储箱、后置无炮塔敞开式52倍径155mm超长身管加榴炮（配SAGEM Sigma 30惯导火控盒）与车尾大型箱梁式液压驻锄铲（行军收拢/42°驻锄落地仰射双构型）。非实物1:1工程认证。"
+    },
+    "army:49_M1150_ABV突击破障工程车": {
+      "categoryId": "land-engineering",
+      "subtypeId": "breacher",
+      "sourceStatus": "依据《武备·盟军》UID32绘制：M1重型7负重轮无主炮底盘、车首巨型全宽V形16齿深耕扫雷犁（FWMP，配3具接地滑靴与平行四边形液压推臂）、披挂块状ERA反应装甲的扁平楔形工程转塔、后置双联装M58 MICLIC线性火箭爆破索发射箱与车尾LMS通道标杆箱。非实物1:1工程认证。"
+    },
+    "army:50_神经突击车_轮足致幻无人机": {
+      "categoryId": "land-armored",
+      "subtypeId": "quadruped-drone",
+      "sourceStatus": "依据《武备·尤里》UID13绘制：X形对称展开的四足-轮式复合无人机动底盘（4条多自由度缓冲关节机械腿+末端独立电动越野驱动轮）、中央八角防爆笼环抱的高压二元神经致幻气溶胶钢瓶簇与顶置360°旋转12喷嘴脉冲气雾喷洒转塔。非实物1:1工程认证。"
+    },
+    "army:51_牧羊人_脑波中继抢修工程车": {
+      "categoryId": "land-engineering",
+      "subtypeId": "heavy-mining",
+      "sourceStatus": "依据《武备·尤里》UID14与UID16绘制：6负重轮加固履带工程底盘、前部装甲医官/黑客乘员舱、中段湿件冷媒培养罐簇、车顶可折叠3层同心环形振子脑波共振/网电注入中继天线桅杆、右后多关节机械抢修臂与车尾液氮-脑脊液换热塔（行军收拢/中继抢修展开双构型）。非实物1:1工程认证。"
+    },
+    "army:52_T-72B3M_主战坦克": {
+      "categoryId": "land-tank",
+      "subtypeId": "main",
+      "sourceStatus": "依据《武备·苏联》UID24与《工程·苏联》UID7绘制：6对等间距六孔压模大直径负重轮、圆弧铸造炮塔外挂尖锐折角楔形接触-5重型爆炸反应装甲、松树-U多通道热像仪、前段3块Relikt硬质爆反侧裙、中后段软质爆反袋与车尾防破甲格栅装甲及双外挂油箱。非实物1:1工程认证。"
+    },
+    "army:53_山毛榉M3_中程防空导弹车": {
+      "categoryId": "land-air-defense",
+      "subtypeId": "tracked-sam",
+      "sourceStatus": "依据《武备·苏联》UID58绘制：GM-569六负重轮重型履带底盘、车首大倾角斜切象鼻式9S36M相控阵火控照射雷达罩与中后部全向旋转转塔搭载的上4下2共6联装9M317M圆柱形密封储运防空导弹筒（水平行军/36°斜向起竖待发双构型）。非实物1:1工程认证。"
+    },
+    "army:54_战术气象车_电离云雾控制车": {
+      "categoryId": "land-engineering",
+      "subtypeId": "heavy-mining",
+      "sourceStatus": "依据《武备·盟军》UID141绘制：8×8重型战术高机动底盘、防电磁屏蔽驾驶室与法拉第笼式气象超算方舱、中段高压脉冲电容储能柜、车顶折叠升降式大口径微波高频电离辐射抛物面与八木十字偶极电离层加热阵列及车尾12管气溶胶云雾催化火箭发射架（行军收拢/电离展开双构型）。非实物1:1工程认证。"
+    },
+    "army:55_爱国者PAC3_远程防空导弹车": {
+      "categoryId": "land-air-defense",
+      "subtypeId": "sam",
+      "sourceStatus": "依据《武备·盟军》UID70与《特色建筑·盟军》UID16绘制：M983 HEMTT 8×8四轴重型战术牵引卡车头、M902双轴半挂调平发射拖车（配4组大跨距外伸曲臂液压支腿与尾部升降数据链桅杆）及回转台搭载的4×4十六联装PAC-3 MSE矩形肋条储运发射箱（水平牵引行军/38°起竖拦截双构型）。非实物1:1工程认证。"
+    },
+    "army:56_前沿基地建设车_通用随行工地母车": {
+      "categoryId": "land-engineering",
+      "subtypeId": "mcv",
+      "sourceStatus": "依据《通用·陆地载具》UID9绘制：8×8重型全驱装甲工程底盘、前部防弹工程指挥驾驶舱（配激光水准测绘仪与双警示灯）、中段双侧外翻扩展预制构件拼装与白名单工地调度方舱、车尾重型折臂式随车起重塔吊与推土平地铲/4组液压支腿（行军收拢/工地展开双构型）。非实物1:1工程认证。"
+    },
+    "army:57_前哨基地展开车_通用前沿节点母车": {
+      "categoryId": "land-engineering",
+      "subtypeId": "mcv",
+      "sourceStatus": "依据《通用·陆地载具》UID46与《通用·主建筑》UID47绘制：三阵营通用前哨展开母车（盟军外勤前哨勘探车/苏联Sputnik前哨展开车/尤里前沿工程节点车），加长8×8越野底盘、球形战地微波测控穹顶舱、4组重型液压自调平永久锚定桩腿与四向平铺扩展裙板（行军收拢/一次展开前沿节点锚定双构型）。非实物1:1工程认证。"
+    },
+    "army:58_核能供能车_移动微堆电站": {
+      "categoryId": "land-engineering",
+      "subtypeId": "heavy-mining",
+      "sourceStatus": "依据《武备·盟军》UID140与《通用·陆地载具》UID10绘制：10×10重型防弹越野底盘、前部重铅屏蔽控制驾驶舱、中段圆柱形铅-硼聚乙烯重屏蔽第四代小型模块化高温气冷微堆舱（SMR）、车顶与两侧大型折叠闭式循环微通道散热翼板阵及车尾超导高压并网变电柜（行军收拢/并网供能展开双构型）。非实物1:1工程认证。"
+    },
+    "army:59_脑波共振网电车_反机械黑客战车": {
+      "categoryId": "land-armored",
+      "subtypeId": "command-c2",
+      "sourceStatus": "依据《武备·尤里》UID16绘制：6×6高机动轮式生物陶瓷折面装甲底盘（配六边形电磁屏蔽轮毂盖）、中段心灵网络-机器指令编译固件超算液冷舱、前部多节液压升降八边形相控阵大功率光电波束发射器与后部升降式宽频对数周期/螺旋网电注入天线阵（行军收拢/网电注入展开双构型）。非实物1:1工程认证。"
+    },
+    "army:60_BMD-4M_空降步兵战车": {
+      "categoryId": "land-armored",
+      "subtypeId": "tracked-ifv",
+      "sourceStatus": "依据《武备·苏联》UID19绘制：5对小直径双缘负重轮+4托带轮可变高度液气悬挂超紧凑铝合金空降车体、车首两栖折浪板、车尾左右双喷水推进器导流盖及正中置双人巴赫恰-U战斗室（并列刚性抱箍100mm 2A70低压炮+30mm 2A72机炮+左前热像镜+右前车长周视镜）。非实物1:1工程认证。"
+    },
+    "army:61_K2_黑豹主战坦克": {
+      "categoryId": "land-tank",
+      "subtypeId": "main",
+      "sourceStatus": "依据《武备·盟军》UID177与UID80绘制：6对负重轮半主动液气悬挂底盘、前部重型复合裙板与中后段波浪底缘橡胶侧裙、扁平阶梯状焊接复合装甲炮塔（正面两侧毫米波/KAPS主动防御雷达面板、顶置CPS/KGPS双观瞄、右侧深水潜渡通气筒架、长尾舱自动装填隔舱）及55倍径120mm CN08滑膛炮（标准平射/液气悬挂前倾山地跪姿俯射双构型）。非实物1:1工程认证。"
+    },
+    "army:62_前线战车组装车_模块化移动总装厂": {
+      "categoryId": "land-engineering",
+      "subtypeId": "mcv",
+      "sourceStatus": "依据《通用·陆地载具》UID11与UID10绘制：10×10五轴超重型全驱底盘、前部防弹车床调度驾驶舱与外接核能供能车高压受电接口、中后段大型箱式双翼外翻重装移动总装车间、车顶贯穿式重型桁架龙门天车、两侧四自由度数控装甲拼焊机械臂与车尾装甲下线液压斜坡踏板（行军收拢/总装展开双构型）。非实物1:1工程认证。"
+    },
+    "army:63_前线整备车_模块化弹药燃料补给母车": {
+      "categoryId": "land-support",
+      "subtypeId": "repair",
+      "sourceStatus": "依据《通用·陆地载具》UID12与UID10绘制：8×8重型防爆装甲底盘、前部防弹勤务指挥舱、前中段防爆单元化弹药集装箱阵列与双联自动化输弹装填机械臂、中后段圆柱形耐压航空煤油/重油快速加注储罐与双侧可伸缩高压加油桁架卷盘及车尾反应装甲快速挂装架（行军收拢/整备展开双构型）。非实物1:1工程认证。"
+    },
+    "army:64_野战机场车_移动垂直起降整备母车": {
+      "categoryId": "land-engineering",
+      "subtypeId": "mcv",
+      "sourceStatus": "依据《通用·陆地载具》UID13与UID10绘制：10×10五轴超重型低趴全驱底盘、前部超低矮防弹塔台领航驾驶舱、中后部三折式蜂窝铝合金防滑垂直起降停机坪甲板（带发光助降圆环与H/十字标线）、车侧航空燃油加注臂与精确制导武器挂弹机械臂及车尾升降式野战塔台信标桅杆（行军收拢/停机坪展开双构型）。非实物1:1工程认证。"
+    },
+    "army:65_BMPT_终结者坦克支援战车": {
+      "categoryId": "land-armored",
+      "subtypeId": "tracked-ifv",
+      "sourceStatus": "依据《武备·苏联》UID24与UID35绘制：T-90/T-72六对负重轮重型坦克底盘、前部5块接触-5/化石重型爆反侧裙、后部与车尾环绕防破甲格栅装甲、车首下部推土铲与左右双内置30mm AGS-30自动榴弹发射器鼓包，以及细颈高脚顶置无人武器站（并列双联30mm 2A42机炮+左右4联装9M120冲锋-T超音速反坦克导弹筒）。非实物1:1工程认证。"
+    },
+    "army:66_UR-77_陨石火箭爆破扫雷车": {
+      "categoryId": "land-engineering",
+      "subtypeId": "breacher",
+      "sourceStatus": "依据《武备·苏联》UID37绘制：2S1/MT-LB七对大直径单缘负重轮无托带轮低矮两栖底盘、前置动力舱百叶窗、车首防浪折浪板、左前微型圆形装甲观瞄小塔、中后部加高盘卷式巨型УЗП-77塑性炸药索储舱与顶置宽扁船型双联装УЗРП-77火箭拖带爆破索发射转塔（行军闭合/38°爆破起竖双构型）。非实物1:1工程认证。"
+    },
+    "army:67_AAV-7A1_两栖突击车": {
+      "categoryId": "land-armored",
+      "subtypeId": "tracked-ifv",
+      "sourceStatus": "依据《武备·盟军》UID40绘制：6对中等直径负重轮高大流线型楔形滑水船首铝合金两栖浮渡车体、车首下部液压折浪板、车侧大面积EAAK波纹凸台螺栓附加装甲套件阵列、右前单人上武器站（并列40mm Mk19自动榴弹发射器+12.7mm M2HB重机枪）、车顶进排气防水百叶与分节运兵顶舱盖及车尾双大推力喷水推进器口。非实物1:1工程认证。"
+    },
+    "air:01_F-22A_猛禽隐身制空战斗机": {
+      "categoryId": "air-fighter",
+      "subtypeId": "stealth-fighter",
+      "sourceStatus": "依据《武备·盟军》UID84绘制：四棱菱形机头、无框镀金水泡座舱、加莱特进气道、钻石梯形主翼、28°外倾双垂尾、F119二元矢量喷口及机腹6×AIM-120+侧弹舱2×AIM-9X（闭舱巡航/弹舱全开双构型）。非实物1:1工程认证。"
+    },
+    "air:02_BlackEagle_黑鹰前掠翼突击机": {
+      "categoryId": "air-fighter",
+      "subtypeId": "strike-fighter",
+      "sourceStatus": "依据《武备·盟军》UID189绘制：大角度碳纤维复合材料气动前掠主翼（配抗扭斜交加强筋网格）、近距耦合全动前鸭翼、双发推力矢量鱼鳞喷管与进气道下保形重装穿甲钻地空地导弹。非实物1:1工程认证。"
+    },
+    "air:03_Kirov_基洛夫空中无人机武库母舰": {
+      "categoryId": "air-special",
+      "subtypeId": "arsenal-airship",
+      "sourceStatus": "依据《武备·苏联》UID40~42与《工程·苏联》UID3绘制：18道刚性分舱环形主桁架、钛合金承力龙骨、鲨鱼齿装甲鼻锥、前腹蜂群离轨滑轨与VTOL收容吊篮、中腹大容量旋转武器弹舱及艇侧双核涡喷矢量短舱（巡航/重型攻城双构型）。非实物1:1工程认证。"
+    },
+    "air:04_Tu-160M_白天鹅超音速战略轰炸机": {
+      "categoryId": "air-bomber",
+      "subtypeId": "strategic-bomber",
+      "sourceStatus": "依据《武备·苏联》UID87绘制：修长天鹅颈机鼻（配可伸缩受油管）、翼身融合体、中央钛合金翼盒枢轴、翼下成对四台NK-32-02加力涡扇短舱、十字形全动尾翼与机腹串联双旋转巡航导弹弹舱（20°展开/65°全后掠双构型）。非实物1:1工程认证。"
+    },
+    "air:05_FloatingDisc_镭射幽浮磁流体飞碟": {
+      "categoryId": "air-special",
+      "subtypeId": "mhd-disc",
+      "sourceStatus": "依据《武备·尤里》UID26与《工程·尤里》UID16绘制：外缘12扇区闭环高温超导MHD磁流体推进环、康达效应环形翼径向导流叶栅、盘面120°对称3人机组神经领航/网电泡罩、中心重型粒子束主炮与机腹6向强微波抽能整流天线爪（巡航/抽能打击双构型）。非实物1:1工程认证。"
+    },
+    "air:06_NightOwl_夜枭双涵道倾转神经攻击机": {
+      "categoryId": "air-rotorcraft",
+      "subtypeId": "tiltrotor",
+      "sourceStatus": "依据《武备·尤里》UID23与《工程·尤里》UID22绘制：前后串列双闭式钛合金装甲倾转涵道（配12叶碳纤维锯齿降噪风扇）、前低后高阶梯串列双座脑波交联座舱、机首下颚三档盖特航炮、短翼19管电浆火箭巢与机腹次声波脑波致盲脉冲吊舱（平飞冲刺/90°垂直悬停双构型）。非实物1:1工程认证。"
+    },
+    "air:07_A-10C_雷电II近距攻击机": {
+      "categoryId": "air-bomber",
+      "subtypeId": "cas",
+      "sourceStatus": "依据《武备·盟军》UID47绘制：机鼻中心偏左GAU-8/A 30mm七管复仇者转管机炮、向右偏置前起落架、17mm钛合金装甲浴缸座舱、平直大机翼（带主起落架半收整流罩与开裂减速板）、翼下11挂点满载武备、后机身背置双发TF34涡扇短舱与H形双垂尾。非实物1:1工程认证。"
+    },
+    "air:08_V-22_鱼鹰倾转旋翼机": {
+      "categoryId": "air-rotorcraft",
+      "subtypeId": "tiltrotor",
+      "sourceStatus": "依据《武备·盟军》UID54绘制：宽体矩形装甲货舱（配尾部液压跳板舱门与两侧浮筒式起落架/油箱短舱）、中央上单翼、翼尖双台可0°~90°倾转T406涡轴短舱与大直径三叶宽弦旋翼、H形双垂尾及右前可伸缩受油管（0°固定翼平飞/90°垂直悬停双构型）。非实物1:1工程认证。"
+    },
+    "air:09_Su-34M_鸭嘴兽防区外战斗轰炸机": {
+      "categoryId": "air-bomber",
+      "subtypeId": "fighter-bomber",
+      "sourceStatus": "依据《武备·苏联》UID45与《工程·苏联》UID14绘制：宽扁折角棱边鸭嘴兽机头、并列双座钛合金装甲座舱、全动前鸭翼、翼尖希比内电子战吊舱、串列双轮强化主起落架、机腹树冠侦察吊舱与防区外导弹挂载及超长后视雷达尾椎。非实物1:1工程认证。"
+    },
+    "air:10_Ka-52_短吻鳄共轴武装直升机": {
+      "categoryId": "air-rotorcraft",
+      "subtypeId": "attack-heli",
+      "sourceStatus": "依据《武备·苏联》UID54与《工程·苏联》UID16绘制：共轴反转双层三叶主旋翼、无尾桨单主垂尾配双端板、并列双座K-37火箭弹射座舱（配顶视锯齿爆破索天窗）、扁平短吻鳄雷达机鼻、下颌GOES-451光电球、右侧刚性2A42 30mm机炮与短翼6挂点旋风反坦克导弹/总统-S系统。非实物1:1工程认证。"
+    },
+    "air:11_PhantomBat_幻影蝠湿件无人制空战斗机": {
+      "categoryId": "air-fighter",
+      "subtypeId": "ucav",
+      "sourceStatus": "依据《武备·尤里》UID25与《工程·尤里》UID21绘制：无人类座舱盖与无垂/平尾的碳化钛-几丁质多折线蝙蝠菱形飞翼、机背抗过载氟化液仿生湿件大脑舱与环形量子脑波天线、背置S形锯齿进气道、扁平二元脉冲爆震喷口、翼尖开裂式阻力方向舵与机腹内置4×高G格斗空空导弹（闭舱/开舱截杀双构型）。非实物1:1工程认证。"
+    },
+    "air:12_Raven_渡鸦重型四涵道装甲运输机": {
+      "categoryId": "air-rotorcraft",
+      "subtypeId": "heavy-ducted",
+      "sourceStatus": "依据《武备·尤里》UID24绘制：宽体升力复合生化防弹货舱机身、3人重装甲驾驶舱、前后短翼对称四组大功率密闭式涵道升力风扇（16叶宽弦叶轮）及机腹高承载四爪液压机械巨臂+中心超导强磁吸附圆盘复合吊具（高速巡航/90°悬停强磁吊运双构型）。非实物1:1工程认证。"
+    },
+    "air:13_B-21_突袭者隐身战略轰炸机": {
+      "categoryId": "air-bomber",
+      "subtypeId": "strategic-bomber",
+      "sourceStatus": "依据《武备·盟军》UID87绘制：全频段隐身无垂尾飞翼升力体、鹰嘴折棱机鼻、两正两斜四窗斜切风挡、下沉式背置S弯埋入进气道、简洁双段W形后缘与机腹内置旋转挂架重型钻地弹/巡航导弹舱（闭舱巡航/弹舱开启双构型）。非实物1:1工程认证。"
+    },
+    "air:14_AH-64D_阿帕奇长弓武装直升机": {
+      "categoryId": "air-rotorcraft",
+      "subtypeId": "attack-heli",
+      "sourceStatus": "依据《武备·盟军》UID48与《工程·盟军》UID11绘制：四叶20°后掠桨尖主旋翼、桅顶AN/APG-78长弓毫米波火控雷达圆盘与MUM-T顶帽天线、阶梯串列双座装甲舱、EFAB电子边箱、机鼻光电转塔、机腹M230 30mm链炮、T700黑洞排气口、X形四叶尾桨与短翼地狱火/九头蛇混挂。非实物1:1工程认证。"
+    },
+    "air:15_MiG-31K_狐蝠高超音速武器载机": {
+      "categoryId": "air-fighter",
+      "subtypeId": "interceptor",
+      "sourceStatus": "依据《武备·苏联》UID46/47与《工程·苏联》UID15绘制：大口径盾牌相控阵雷达罩、串列双座（后座小观察窗与顶视潜望镜折板）、二元斜板超音速进气道、41°后掠上单翼、外倾双垂尾与双发巨型D-30F6加力喷口（BM型半埋4×R-37M远程截击态/K型机腹中线挂载Kh-47M2匕首高超音速导弹双构型）。非实物1:1工程认证。"
+    },
+    "air:16_Su-57_重剑五代隐身战斗机": {
+      "categoryId": "air-fighter",
+      "subtypeId": "stealth-fighter",
+      "sourceStatus": "依据《武备·苏联》UID48绘制：扁平折棱机鼻、101KS-V红外光电球、可动前缘边条LEVCON、大面积梯形翼、全动小双垂尾、宽间距三维推力矢量喷管、多色阶锯齿数码像素隐身迷彩及中央串联双主弹舱+翼根三角形侧弹舱（闭舱巡航/全弹舱开启双构型）。非实物1:1工程认证。"
+    },
+    "air:17_Peeper_窥视者无尾仿生脑波侦察机": {
+      "categoryId": "air-special",
+      "subtypeId": "recon-lifting",
+      "sourceStatus": "依据《武备·尤里》UID22与《工程·尤里》UID23绘制：柔曲双吻前口蝠鲼（魔鬼鱼）无垂尾翼身融合升力体、机首双头鳍式量子脑波差分感应角、机翼内埋双圆形低噪闭式涵道风扇、无武装构型与机腹高灵敏度仿生脑电/生物电场相控遥测阵列（高空滑翔/深层脑波扫描双构型）。非实物1:1工程认证。"
+    },
+    "air:18_SiegeChopper_苏联重型攻城直升机": {
+      "categoryId": "air-rotorcraft",
+      "subtypeId": "attack-heli",
+      "sourceStatus": "依据《武备·苏联》UID61绘制：五叶宽弦主旋翼、有人纵列双座阶梯式防弹双气泡舱、机首下颌四管加特林机枪塔、TV3-117双发涡轴短舱、中段蚌壳式重载火炮舱、机身四角箱梁液压千斤顶驻锄与152mm长身管重型攻城火炮+四联装巡飞弹发射箱套件（空中突击飞行态/着陆锚定重炮攻城展开态双构型）。非实物1:1工程认证。"
+    },
+    "air:19_F-35_闪电II联合打击战斗机": {
+      "categoryId": "air-fighter",
+      "subtypeId": "stealth-fighter",
+      "sourceStatus": "依据《武备·盟军》UID85与《工程·盟军》UID19绘制：四棱隐身机鼻、下颌钻石形蓝宝石EOTS光电棱镜窗、整体前翻式泪滴座舱盖、无隔道DSI三维鼓包进气口、单发粗壮锯齿F135尾喷口、机腹对称双内置弹舱及F-35B座舱后对转升力风扇+90°三轴承旋转尾喷管（常规隐身巡航/短垂悬停与双弹舱开启双构型）。非实物1:1工程认证。"
+    },
+    "air:20_B-1B_枪骑兵超音速战略轰炸机": {
+      "categoryId": "air-bomber",
+      "subtypeId": "strategic-bomber",
+      "sourceStatus": "依据《武备·盟军》UID128绘制：修长天鹅颈翼身融合体、机首两侧三角形SMCS模态控制减振小前翼、前机腹挂载Sniper XR光电吊舱、机背鱼骨形受油口导引线、15°~67.5°可变后掠机翼、翼下双联4台F101加力涡扇短舱、高置T尾与机腹前/中/后三座大型内置旋转弹舱（15°展翼巡航/67.5°全后掠超音速突防投弹双构型）。非实物1:1工程认证。"
+    },
+    "air:21_C-17_环球霸王III战略运输机": {
+      "categoryId": "air-special",
+      "subtypeId": "strategic-transport",
+      "sourceStatus": "依据《武备·盟军》UID126绘制：圆润宽体七十吨级高容积货舱机身、机身下部两侧大型14轮主起落架整流泡罩、25°超临界后掠上单翼、翼尖小翼、翼下4台F117-PW-100大涵道比反推涡扇短舱、钛合金外吹式增升襟翼、高置T形尾翼与尾部液压重装跳板（洲际闭合巡航/吹气襟翼下偏与尾跳板重装战车牵引空投双构型）。非实物1:1工程认证。"
+    },
+    "air:22_RQ-4B_全球鹰高空侦察无人机": {
+      "categoryId": "air-special",
+      "subtypeId": "hale-uav",
+      "sourceStatus": "依据《武备·盟军》UID51绘制：近40米超大展弦比（25:1）滑翔机式修长碳纤维复合机翼、无风挡白鲸式高耸球形鹅头宽频带卫通（SATCOM）整流罩、机背驼峰式单台AE3007H涡扇短舱、外倾V形双尾翼、机鼻下远程光学/红外（EO/IR）侦察转塔球与机腹长舟形AN/ZPQ-2合成孔径雷达（SAR）相控阵舱。非实物1:1工程认证。"
+    },
+    "air:23_Su-35S_超侧卫矢量空优战斗机": {
+      "categoryId": "air-fighter",
+      "subtypeId": "strike-fighter",
+      "sourceStatus": "依据《武备·苏联》UID44与《工程·苏联》UID13绘制：修长下垂天鹅颈雪豹-E相控阵雷达罩、单座水泡座舱、风挡右前OLS-35光电球、无鸭翼无背减速板大边条翼身融合体、水平切尖双垂尾、中央长尾椎、双发AL-41F1S三维推力矢量喷管、左右翼尖柱状L175M希比内-M电子战吊舱与12挂点满载空空导弹。非实物1:1工程认证。"
+    },
+    "air:24_A-50U_支柱大型空中预警指挥机": {
+      "categoryId": "air-special",
+      "subtypeId": "awacs-c2",
+      "sourceStatus": "依据《武备·苏联》UID59与UID55绘制：基于Il-76MD宽体四发运输机机身、机背双A字形气动支柱支撑9米直径熊蜂-M（Shmel-M）扁圆旋转相控阵雷达罩、机首长杆空中受油管、前机背大型泪滴形卫通鼓包与刀形数据链天线阵列、后机身两侧翼刀式水平稳定鳍、高置T形尾翼与翼下4台D-30KP-2涡扇短舱。非实物1:1工程认证。"
+    },
+    "air:25_F-15E_攻击鹰双重任务战斗轰炸机": {
+      "categoryId": "air-bomber",
+      "subtypeId": "fighter-bomber",
+      "sourceStatus": "依据《武备·盟军》UID86绘制：串列双座（飞行员+WSO武器官）高视野大水泡座舱盖、外切角矩形二元可调斜板超音速进气道、进气道下挂载LANTIRN导航吊舱与Sniper XR激光瞄准吊舱、翼根两侧大容量保形油箱（CFTs）配双排切向阶梯式重型武器挂架、45°切角三角上单翼、直立双垂尾（左粗右细不对称电子战天线与配重杆）、双发无外罩F100-PW-229尾喷口与机腹GBU-28深层钻地弹满载武库。非实物1:1工程认证。"
+    },
+    "air:26_CH-47F_支奴干重型运输直升机": {
+      "categoryId": "air-rotorcraft",
+      "subtypeId": "transport-heli",
+      "sourceStatus": "依据《武备·盟军》UID53与《工程·盟军》UID14绘制：前低后高双旋翼塔座与纵列反转双三叶巨型复合材料旋翼（两旋翼圆盘在机背中段深度交错啮合同步旋转）、后旋翼塔两侧并列双发T55-GA-714A涡轴装甲短舱、宽体箱式货舱机身、机身下部两侧长条形耐碰撞燃油浮筒（Sponsons）、四轮固定抗坠毁起落架与机腹三挂钩外部吊运M777A2 155mm榴弹炮（战术机降巡航/重炮外部吊运双构型）。非实物1:1工程认证。"
+    },
+    "air:27_MQ-9B_死神察打一体战略无人机": {
+      "categoryId": "air-special",
+      "subtypeId": "male-ucav",
+      "sourceStatus": "依据《武备·盟军》UID49与《工程·盟军》UID12绘制：前机身流线隆起鹅头Ku波段卫通（SATCOM）整流罩、机鼻下AN/AAS-52 MTS-B多光谱光电/红外与激光指示转塔球、机背CCA协同作战宽带数据链刀状天线群、机腹AN/APY-8合成孔径雷达（SAR）舱、20m大展弦比直掠中单翼配翼尖小翼、翼下6挂点满载GBU-12激光制导炸弹与AGM-114R地狱火导弹、Y形尾翼（上双V尾+下腹鳍）与尾部TPE331-10涡桨驱动四叶推进式螺旋桨。非实物1:1工程认证。"
+    },
+    "air:28_B-52H_同温层堡垒战略轰炸机": {
+      "categoryId": "air-bomber",
+      "subtypeId": "strategic-bomber",
+      "sourceStatus": "依据《武备·盟军》UID127与《工程·盟军》UID15绘制：48.5m修长矩形截面高抗疲劳机身、机鼻下颌并列AN/ASQ-151光电双转塔（FLIR+LLTV）、56.4m超长35°后掠上单翼（带下反垂度与翼尖支撑小轮舱）、翼下4具前伸斜挂架吊挂4对双联吊舱共8台涡扇发动机、内翼段HSAB重型复合挂架挂载12枚巡航导弹与机腹CSRL通用战略旋转发射架挂载8枚巡航导弹（洲际巡航/三十吨武库弹舱开启齐射双构型）。非实物1:1工程认证。"
+    },
+    "air:29_Tu-95MS_熊式战略涡桨轰炸机": {
+      "categoryId": "air-bomber",
+      "subtypeId": "strategic-bomber",
+      "sourceStatus": "依据《武备·苏联》UID49与UID87绘制：机鼻前伸长杆式空中受油管、下颌凸出王冠（Obzor-MS）巨型导航轰炸雷达罩、八窗阶梯增压驾驶舱与机背天文观测泡罩、35°大后掠大展弦比中单翼（翼面3道长翼刀）、翼上4具巨型NK-12MP涡桨短舱配AV-60K同轴反转双四叶超音速螺旋桨、内侧短舱向机翼后缘外大幅延伸的巨型主起落架长整流锥、翼下4具BD-206M双联挂架外挂8枚Kh-101隐身巡航导弹、机腹MKU-6-5六联旋转弹舱透视与尾部AM-23双管尾炮塔。非实物1:1工程认证。"
+    },
+    "air:30_Mi-28NM_浩劫重型武装直升机": {
+      "categoryId": "air-rotorcraft",
+      "subtypeId": "attack-heli",
+      "sourceStatus": "依据《武备·苏联》UID54绘制：五叶宽弦复合材料主旋翼、桅顶球形N025M阿尔巴特毫米波火控雷达罩、前低后高阶梯串列双座重装甲平板防弹玻璃座舱、前机身两侧鼓出米老鼠球鼻电子设备舱、机鼻尖端双层OPS-28M光电转塔、机鼻正下方NPPU-28大角度随动炮塔与超长2A42 30mm机炮（配双250发供弹箱）、VK-2500P双发下弯象鼻式红外抑制排气箱、短翼16管9M123菊花反坦克导弹+火箭巢+翼尖总统-S自卫舱与右侧窄夹角X形四叶抗噪尾桨。非实物1:1工程认证。"
+    },
+    "air:31_Il-76MD-90A_伊尔76大型战略运输机": {
+      "categoryId": "air-special",
+      "subtypeId": "strategic-transport",
+      "sourceStatus": "依据《武备·苏联》UID55与UID19/57绘制：光滑贯通中央翼盒脊背与双天桥电动吊车导轨（无机背预警大圆盘）、机鼻下方标志性多格透明玻璃领航员观察舱、双层防弹阶梯风挡、50.5m后掠悬臂上单翼、翼下4台大涵道比PS-90A-76粗壮涡扇发动机短舱、机身下部两侧20轮越野主起落架整流泡罩、高置T形尾翼与尾部三瓣蚌壳舱门（洲际闭合巡航/尾舱开启牵引伞连投BMD-4M空降战车双构型）。非实物1:1工程认证。"
+    },
+    "air:32_E-2D_先进鹰眼舰载空中预警机": {
+      "categoryId": "air-special",
+      "subtypeId": "awacs-c2",
+      "sourceStatus": "依据《武备·盟军》UID50与UID19绘制：机背四根液压桁架立柱顶托7.32m直径AN/APY-9相控阵旋转雷达圆盘（内置18通道八木天线阵列与中央CEC卫通罩）、机背大型电子设备冷却进气道、双发T56-A-427A涡桨短舱驱动NP2000八叶大后掠弯刀复合材料螺旋桨、舱顶固定式空中受油管、标志性四垂尾布局与格鲁曼Sto-Wing倾斜轴旋转折叠机翼机构（机翼展开空中警戒/外翼向后旋转90°贴合机身甲板停放双构型）。非实物1:1工程认证。"
+    },
+    "air:33_EA-18G_咆哮者电子攻击机": {
+      "categoryId": "air-fighter",
+      "subtypeId": "ew-attack",
+      "sourceStatus": "依据《武备·盟军》UID52绘制：超级大黄蜂哥特式大面积大边条（Gothic LERX）、机翼前缘锯齿折角（Dogtooth）与上表面空气动力翼刀、外斜圆弧矩形加莱特进气道、串列双座（飞行员+EWO电子战官）修长水泡座舱盖、机鼻封闭电子战设备舱、机背INCANS卫通扁平鼓包、左右翼尖2具纺锤形AN/ALQ-218宽带接收吊舱、内翼与机腹3具带前端冲压空气涡轮小螺旋桨的AN/ALQ-99/NGJ干扰吊舱及外翼2枚AGM-88G反辐射导弹+半埋2枚AIM-120D空空导弹。非实物1:1工程认证。"
+    },
+    "air:34_CH-53K_种马王重型舰载运输直升机": {
+      "categoryId": "air-rotorcraft",
+      "subtypeId": "transport-heli",
+      "sourceStatus": "依据《武备·盟军》UID53与UID23绘制：7叶宽弦复合材料主旋翼（带第四代后掠下反折角桨尖）、机背动力舱品字形搭载3台GE T408（3×7500轴马力）巨型涡轴发动机短舱、机鼻右侧前伸超长可伸缩空中受油管、机身下部两侧硕大梯形加宽复合燃油浮筒（Sponsons）、左倾20°高大增升垂尾、左侧四叶抗扭尾桨与右侧海鸥式高置平尾（舰载闭舱巡航/机腹四点钢索外吊JLTV联合轻型战术装甲车双构型）。非实物1:1工程认证。"
+    },
+    "air:35_Mi-26T2V_光环超重型运输直升机": {
+      "categoryId": "air-rotorcraft",
+      "subtypeId": "transport-heli",
+      "sourceStatus": "依据《武备·苏联》UID54绘制：世界最大量产32m直径8叶等弦复合材料主旋翼（正八角45°均匀放射分布）与球形钛合金中央桨毂、右侧5叶抗扭尾桨、驾驶舱后上方高耸双联D-136（2×11400马力）巨型涡轴发动机舱、56吨级33.7m宽体客货机式半硬壳机身、外撑三角形桁架固定双轮主起落架、维捷布斯克激光定向红外对抗球及尾部大型双蚌壳舱门与三段式液压重装跳板（重装闭舱战略巡航/尾跳板全开装甲战车驶出卸载双构型）。非实物1:1工程认证。"
+    },
+    "air:36_Orion_猎户座中高空察打一体无人机": {
+      "categoryId": "air-special",
+      "subtypeId": "male-ucav",
+      "sourceStatus": "依据《武备·苏联》UID56绘制：平缓低阻无高耸鹅头鼓包的修长流线型机首（内置扁平卫通相控阵天线与浅蓝灰透波鼻锥）、机鼻正下方球形MOES多通道光电/红外与激光测距指示转塔、机腹合成孔径雷达（SAR）侦察舱、16m大展弦比平直切尖中单翼（无翼尖上翘小翼）、翼下4挂点满挂KAB-20滑翔制导炸弹与Kh-BPLA激光制导空地导弹、向外上扬的V形双尾翼及尾部APD-115T驱动2叶AV-115推进式螺旋桨。非实物1:1工程认证。"
+    },
+    "air:37_Su-25SM3_蛙足重装甲强击机": {
+      "categoryId": "air-bomber",
+      "subtypeId": "cas",
+      "sourceStatus": "依据《武备·苏联》UID45与《工程·苏联》UID14绘制：下倾楔形机鼻（配SOLT-25光电激光瞄准窗与左下GSh-30-2双管30mm机炮）、全焊接24mm钛合金防弹澡盆单座座舱、大展弦比微后掠上单直翼（带前缘缝翼与翼刀）、翼根两侧紧贴机身的2台R-195无加力涡喷长圆筒短舱、单片高大梯形垂尾配机背UV-26干扰弹箱、左右翼尖维捷布斯克-25纺锤形电子战吊舱与翼下10挂点满载S-25L重型火箭弹/B-8M1火箭巢/Kh-29L空地导弹。非实物1:1工程认证。"
+    },
+    "air:38_F-16V_毒蛇多用途战斗机": {
+      "categoryId": "air-fighter",
+      "subtypeId": "strike-fighter",
+      "sourceStatus": "依据《武备·盟军》UID41与UID85/86绘制：扁平折线机鼻（内置AN/APG-83 SABR有源相控阵雷达阵列与鼻上4片鸟切IFF刀状天线）、360°无前风挡框一体式水泡座舱盖、前机腹固定几何笑口式皮托管超音速进气道、进气道右侧挂载AN/AAQ-33狙击手光电吊舱、翼身融合大边条切角三角翼、机背航电脊与翼根两侧多面体脊背保形油箱（CFTs）、单发F110鱼鳞收敛扩张喷管及翼尖AIM-120C/D+翼下AGM-88G/副油箱满载挂架。非实物1:1工程认证。"
+    },
+    "air:39_P-8A_海神远程反潜巡逻机": {
+      "categoryId": "air-special",
+      "subtypeId": "maritime-asw",
+      "sourceStatus": "依据《武备·盟军》UID19与UID50绘制：基于737-800ERX无客舱舷窗强化窄体机身（仅中段保留双气泡观察窗）、机鼻AN/APY-10海面搜索雷达罩与折角六窗风挡、机鼻下MX-20HD光电球、机背卫通与刀状天线群、下单翼吊挂2台CFM56-7B27A大涵道比涡扇短舱（外侧带180kVA发电机鼓包）、大角度后掠刀刃状斜梢翼尖（Raked Wingtips）、内翼挂载4枚AGM-84鱼叉反舰导弹与后机腹内置5挂点Mk54滑翔翼反潜鱼雷弹舱及旋转声呐浮标阵列（巡航反潜搜索/内置鱼雷弹舱开启投放双构型）。非实物1:1工程认证。"
+    },
+    "air:40_Il-78M-90A_伊尔78大型空中加油机": {
+      "categoryId": "air-special",
+      "subtypeId": "aerial-tanker",
+      "sourceStatus": "依据《武备·苏联》UID55与UID49/87绘制：基于Il-76MD-90A上单后掠翼四发PS-90A-76大涵道比涡扇平台、取消尾空投跳板与机背预警圆盘、货舱内透视串联两座大容量圆柱形主储油罐与中央增压输油泵站、机尾改装后视多窗透明加油指挥员观察舱，以及左外翼下、右外翼下与后机身左舷共3具UPAZ-1M萨哈林软管-锥套空中加油吊舱（巡航收起待命/三软管锥套向机尾全长放出同步加油双构型）。非实物1:1工程认证。"
+    },
+    "air:41_UH-60M_黑鹰通用突击直升机": {
+      "categoryId": "air-rotorcraft",
+      "subtypeId": "transport-heli",
+      "sourceStatus": "依据《武备·盟军》UID42与UID53绘制：4叶宽弦大角度后掠下反折角桨尖复合材料主旋翼、低矮扁平抗坠毁机身、顶置双发T700-GE-701D涡轴短舱配HIRSS悬停红外抑制箱式排气混合器、两侧后滑式步兵舱门与M134六管加特林舱门机枪窗、不可收放后三点抗坠毁起落架（远置尾轮）、尾梁末端右倾20°四叶无轴承尾桨与最下部平直可变迎角全动平尾（Stabilator）及机身两侧海鸥形ESSS短翼满挂2具副油箱与8枚AGM-114地狱火导弹。非实物1:1工程认证。"
+    },
+    "air:42_Mi-35M_超级雌鹿武装运输直升机": {
+      "categoryId": "air-rotorcraft",
+      "subtypeId": "attack-heli",
+      "sourceStatus": "依据《武备·苏联》UID54绘制：纵列阶梯式双独立水泡防弹座舱盖（Double-Bubble Cockpit）、机鼻下NPPU-23随动炮塔（GSh-23V双管23mm机炮）与右侧OPS-24N光电转塔球、顶置VK-2500双发防沙涡轴短舱、5叶复合材料主旋翼、左侧窄夹角剪刀式X形四叶抗噪尾桨、不可收放固定式三点起落架、截短式16°下反短翼挂载9M120冲锋反坦克导弹与B-8V20A火箭巢及中部8人装甲步兵舱上下两段式蚌壳舱门（闭舱突击巡航/上掀顶门与下翻登机梯全开8人突击班机降展开双构型）。非实物1:1工程认证。"
+    }
+  }
+}

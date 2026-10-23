@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 320" width="1100" height="320" data-asset-id="naval.virginia.side" style="background:#080a0b;">
+  <defs>
+    <style>
+      svg { fill: none; stroke-linecap: butt; }
+      .s-dim { stroke: #2c3b40; stroke-width: 1; }
+      .s-line { stroke: #5f7c84; stroke-width: 1; }
+      .s-hi { stroke: #d4e3e6; stroke-width: 1.2; }
+      .s-alert { stroke: #ff5a36; stroke-width: 1.4; }
+      .s-focus { stroke: #38bdf8; stroke-width: 1.4; }
+      .f-dim { fill: #2c3b40; stroke: none; }
+      .f-line { fill: #5f7c84; stroke: none; }
+      .f-hi { fill: #d4e3e6; stroke: none; }
+      .f-alert { fill: #ff5a36; stroke: none; }
+      .f-panel { fill: #0c1113; }
+      text { font-family: "Rajdhani", "Bahnschrift", "DIN Alternate", "Microsoft YaHei", sans-serif; letter-spacing: 0.12em; }
+      text:not([stroke]) { stroke: none; }
+      text:not([fill]) { fill: #cfdde0; }
+      text:not([font-size]):not(.cap):not(.big) { font-size: 10px; }
+      text.p { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; letter-spacing: 0.06em; }
+      text.cap { letter-spacing: 0.2em; text-transform: uppercase; }
+      text.cap:not([fill]) { fill: #8aa1a7; }
+      text.cap:not([font-size]) { font-size: 8.5px; }
+      text.mono { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; letter-spacing: 0.06em; }
+      text.big { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; font-weight: 600; letter-spacing: 0.08em; }
+      text.big:not([font-size]) { font-size: 18px; }
+      text.big:not([fill]) { fill: #d4e3e6; }
+      text.alert { fill: #ff5a36; }
+    </style>
+    <pattern id="cad-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#10181c" stroke-width="1"/>
+      <circle cx="20" cy="20" r="0.8" fill="#1b262b"/>
+    </pattern>
+    <pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#ff5a36" stroke-width="1.2" stroke-opacity="0.35"/>
+    </pattern>
+  </defs>
+
+  <!-- 1. 工程蓝图暗色底板与坐标网格图层 -->
+  <g id="layer-backdrop">
+    <rect x="0" y="0" width="1100" height="320" fill="#080a0b"/>
+    <rect x="20" y="20" width="1060" height="280" fill="url(#cad-grid)" stroke="#2c3b40" stroke-width="1"/>
+    <path d="M 20 36 V 20 H 36 M 1064 20 H 1080 V 36 M 20 284 V 300 H 36 M 1064 300 H 1080 V 284" fill="none" stroke="#38bdf8" stroke-width="1.5"/>
+    <line x1="20" y1="54" x2="1080" y2="54" stroke="#2c3b40" stroke-width="1"/>
+    <line x1="20" y1="274" x2="1080" y2="274" stroke="#2c3b40" stroke-width="1"/>
+    <text x="34" y="42" class="p mono" fill="#38bdf8" font-size="11" font-weight="bold">USS VIRGINIA (SSN-774) BLOCK V · STARBOARD PROFILE &amp; 25.6M VPM CUTAWAY</text>
+    <text x="1066" y="42" text-anchor="end" class="p cap" fill="#d4e3e6" font-size="10.5">SSN-774「弗吉尼亚」级 Block V 攻击核潜艇 · 侧视VPM垂发与核堆剖面图 (10,200T)</text>
+    <text x="34" y="291" class="p mono" fill="#8aa1a7" font-size="9.5">LOA: 140.2M · BEAM: 10.4M · 2×VPT (12) + 4×VPM (28) = 40 CELLS · S9G PWR (210MWt) + PUMP-JET · UID: 105</text>
+    <text x="1066" y="291" text-anchor="end" class="p mono" fill="#5f7c84" font-size="9.5">POSEIDON NAVAL CAD ASSET · TRUE 1:1 ASPECT (13.48:1)</text>
+  </g>
+
+  <!-- 2. 舰艇核心 CAD 矢量图层 (1:1 等比缩放 sx=sy=2.320 · 艇首朝右 +X · LOA 140.2m / BEAM 10.4m = 13.48:1) -->
+  <g id="layer-ship-cad">
+    <g transform="translate(52.0,56.0) scale(2.320,2.320)">
+      <!-- 0. 潜望镜深度基准线与 VPM / VPT 潜射导弹齐射出水轨迹剪影 -->
+      <g id="salvo-vpm-vpt-cutaway">
+        <line x1="12" y1="33.5" x2="422" y2="33.5" stroke="#2c3b40" stroke-width="0.6" stroke-dasharray="4 3"/>
+        <text x="16" y="31.2" class="mono" font-size="2.7" fill="#5f7c84">SEA SURFACE DATUM · SUBMERGED VPM / VPT SALVO ENVELOPE</text>
+
+        <!-- 舯部 VPM-1 垂直发射 IRCPS 高超音速助推滑翔导弹轨迹弧 -->
+        <path d="M 248.0 41.0 Q 248.0 21.0 232.0 8.5" fill="none" stroke="#ff5a36" stroke-width="0.8" stroke-dasharray="2.4 1.6"/>
+        <!-- 艇首 VPT-1 垂直发射 BGM-109 战斧 Block V 巡航导弹轨迹弧 -->
+        <path d="M 363.0 41.2 Q 366.0 22.0 388.0 11.5" fill="none" stroke="#38bdf8" stroke-width="0.75" stroke-dasharray="2.2 1.6"/>
+
+        <!-- [导弹剪影 1] 舯部 VPM 齐射出水：IRCPS (Conventional Prompt Strike) 高超音速双锥体滑翔导弹 -->
+        <g transform="translate(228.0, 7.8) rotate(-142)">
+          <polygon points="-9.5,0 -4.2,-1.5 -4.2,1.5" fill="#ff5a36" fill-opacity="0.82"/>
+          <rect x="-4.2" y="-1.45" width="10.5" height="2.9" fill="#1b0d10" stroke="#ff5a36" stroke-width="0.75"/>
+          <polygon points="6.3,-1.45 12.0,-0.75 16.5,0 12.0,0.75 6.3,1.45" fill="#2a1216" stroke="#eab308" stroke-width="0.75"/>
+          <line x1="1.2" y1="-1.45" x2="1.2" y2="1.45" stroke="#38bdf8" stroke-width="0.55"/>
+          <polygon points="-4.2,-1.45 -5.8,-2.8 -3.0,-1.45" fill="#0d222e" stroke="#d4e3e6" stroke-width="0.5"/>
+          <polygon points="-4.2,1.45 -5.8,2.8 -3.0,1.45" fill="#0d222e" stroke="#d4e3e6" stroke-width="0.5"/>
+        </g>
+        <text x="132" y="6.8" class="mono" font-size="2.6" fill="#ff5a36" font-weight="bold">VPM SALVO: IRCPS HYPERSONIC (MACH 5+)</text>
+
+        <!-- [导弹剪影 2] 艇首 VPT 齐射出水：BGM-109 Tomahawk Block V (Maritime Strike TLAM) 巡航导弹 -->
+        <g transform="translate(392.0, 10.5) rotate(-18)">
+          <polygon points="-8.0,0 -4.0,-1.1 -4.0,1.1" fill="#eab308" fill-opacity="0.85"/>
+          <path d="M -4.0 -1.05 L 10.5 -1.05 C 12.5 -1.05 13.8 -0.45 14.2 0 C 13.8 0.45 12.5 1.05 10.5 1.05 L -4.0 1.05 Z"
+                fill="#0d2230" stroke="#38bdf8" stroke-width="0.75"/>
+          <polygon points="1.5,-1.05 0.2,-5.4 2.2,-5.4 4.0,-1.05" fill="#133246" stroke="#d4e3e6" stroke-width="0.55"/>
+          <polygon points="1.5,1.05 0.2,5.4 2.2,5.4 4.0,1.05" fill="#133246" stroke="#d4e3e6" stroke-width="0.55"/>
+          <polygon points="-3.8,-1.05 -5.0,-3.0 -2.6,-1.05" fill="#0d2230" stroke="#38bdf8" stroke-width="0.5"/>
+          <polygon points="-3.8,1.05 -5.0,3.0 -2.6,1.05" fill="#0d2230" stroke="#38bdf8" stroke-width="0.5"/>
+        </g>
+        <text x="330" y="6.8" class="mono" font-size="2.6" fill="#38bdf8" font-weight="bold">VPT SALVO: BGM-109 BLOCK V</text>
+      </g>
+
+      <!-- 1. 艇尾环形导管泵喷推进器 (Ducted Pump-Jet Propulsor · X=16..35, Y=48..64 · #eab308 高亮) 与十字尾翼 -->
+      <g id="stern-pumpjet-and-fins">
+        <!-- 上垂直尾翼 + 顶置 TB-29A/TB-34 细线拖曳线列声呐荚舱 (X=34..62, Y=22.5..46.5) -->
+        <polygon points="35,46.8 41,23.5 52,23.5 64,43.5" fill="#0a1822" stroke="#d4e3e6" stroke-width="1.15"/>
+        <line x1="46.5" y1="23.5" x2="50.5" y2="45.0" stroke="#4a6368" stroke-width="0.7"/>
+        <path d="M 31.5 23.0 C 35.0 21.5 51.0 21.5 55.5 23.0 C 51.0 24.4 35.0 24.4 31.5 23.0 Z" fill="#0d2230" stroke="#38bdf8" stroke-width="0.9"/>
+        <circle cx="32.2" cy="23.0" r="0.8" fill="#ff5a36"/>
+
+        <!-- 下垂直腹鳍舵 (Lower Ventral Fin &amp; Rudder · X=36..60, Y=65.2..79.2) -->
+        <polygon points="36,65.2 60,68.5 52,79.2 40,79.2" fill="#0a1822" stroke="#d4e3e6" stroke-width="1.1"/>
+        <line x1="46.5" y1="66.8" x2="46.0" y2="79.2" stroke="#4a6368" stroke-width="0.7"/>
+
+        <!-- 水平尾稳定翼面与右舷 TB-16 粗线拖曳声呐释放管 -->
+        <ellipse cx="49.0" cy="56.0" rx="15.5" ry="1.8" fill="#091620" stroke="#38bdf8" stroke-width="0.85"/>
+        <line x1="30.0" y1="53.8" x2="68.0" y2="53.8" stroke="#38bdf8" stroke-width="0.65" stroke-dasharray="3 1.5"/>
+
+        <!-- 环形导管泵喷推进器 (Shrouded Pump-Jet Propulsor · 前置13叶定子 + 后置9叶转子 + 消音锥毂) -->
+        <polygon points="18.0,49.2 31.5,47.2 34.5,48.5 34.5,63.5 31.5,64.8 18.0,62.8"
+                 fill="#141e24" stroke="#eab308" stroke-width="1.15"/>
+        <!-- 导管内部定子导叶 (Stator Vanes) 与转子叶轮 (Rotor Blades) 透视 -->
+        <line x1="28.5" y1="47.8" x2="28.5" y2="64.2" stroke="#38bdf8" stroke-width="0.85" stroke-dasharray="1.6 1.0"/>
+        <line x1="23.2" y1="48.5" x2="23.2" y2="63.5" stroke="#eab308" stroke-width="1.1" stroke-dasharray="1.8 1.0"/>
+        <line x1="18.5" y1="52.0" x2="31.5" y2="50.5" stroke="#eab308" stroke-width="0.55"/>
+        <line x1="18.5" y1="60.0" x2="31.5" y2="61.5" stroke="#eab308" stroke-width="0.55"/>
+        <!-- 尾部中心流体消音锥毂 (Tail Cone Hub) -->
+        <polygon points="15.0,56.0 18.5,53.6 18.5,58.4" fill="#eab308" stroke="#d4e3e6" stroke-width="0.65"/>
+        <text x="16" y="18.5" class="mono" font-size="2.6" fill="#eab308">DUCTED PUMP-JET &amp; TB-29A POD</text>
+      </g>
+
+      <!-- 2. 主艇体：13.48:1 极修长 HY-80/HY-100 单耐压壳体轮廓 (X=28..420, Y=41.0..71.0 · 高 30.0 单位 = 10.4m) -->
+      <!-- 下半暗红消音瓦船底背衬与上半深海战术黑灰声学涂层 -->
+      <path d="M 32.0 56.0 L 420.0 56.0 C 420.0 65.2 403.5 71.0 380.0 71.0 L 74.0 71.0 C 54.0 71.0 40.0 66.2 32.0 61.5 Z"
+            fill="#1e0d12" stroke="#ff5a36" stroke-width="0.95"/>
+      <path d="M 32.0 50.5 C 40.0 45.8 54.0 41.0 74.0 41.0 L 380.0 41.0 C 403.5 41.0 420.0 46.8 420.0 56.0 C 420.0 65.2 403.5 71.0 380.0 71.0 L 74.0 71.0 C 54.0 71.0 40.0 66.2 32.0 61.5 Z"
+            fill="#08131b" fill-opacity="0.88" stroke="#d4e3e6" stroke-width="1.3"/>
+      <!-- 艇体中轴吃水/分界基准线与底部压载水舱通海孔群 -->
+      <line x1="34" y1="56.0" x2="419" y2="56.0" stroke="#2c3b40" stroke-width="0.6" stroke-dasharray="5 2.5"/>
+      <g stroke="#4a6368" stroke-width="1.1" stroke-dasharray="2.0 1.5">
+        <line x1="68" y1="69.5" x2="96" y2="69.5"/>
+        <line x1="336" y1="69.5" x2="368" y2="69.5"/>
+      </g>
+
+      <!-- 3. 艇尾轮机舱 + S9G 210MWt 自然循环全寿命压水核反应堆舱内透视 (X=68..184) -->
+      <g id="s9g-reactor-propulsion-cutaway">
+        <!-- 主轮机舱：双蒸汽轮机与电力/齿轮推进主轴箱 (X=70..112) -->
+        <polygon points="70,48.5 111,45.5 111,66.5 70,63.5" fill="#07151f" fill-opacity="0.72" stroke="#eab308" stroke-width="0.8" stroke-dasharray="3 1.5"/>
+        <line x1="34.5" y1="56.0" x2="112.0" y2="56.0" stroke="#eab308" stroke-width="1.1" stroke-dasharray="4 1.8"/>
+        <rect x="82" y="50.5" width="22" height="11.0" rx="1.2" fill="#0d2230" stroke="#38bdf8" stroke-width="0.7"/>
+        <text x="93" y="57.0" text-anchor="middle" class="mono" font-size="2.5" fill="#eab308">TURBINE</text>
+
+        <!-- S9G 210MWt 自然循环全寿命核反应堆舱 (X=114..152, Y=43.5..68.5) -->
+        <rect x="114.0" y="43.5" width="38.0" height="25.0" rx="2.0" fill="#1d0c10" fill-opacity="0.78" stroke="#ff5a36" stroke-width="0.95"/>
+        <circle cx="133.0" cy="56.0" r="6.8" fill="#2c1015" stroke="#ff5a36" stroke-width="0.9"/>
+        <circle cx="133.0" cy="56.0" r="3.2" fill="#ff5a36" fill-opacity="0.65"/>
+        <!-- 控制棒驱动机构与自然循环一回路主蒸汽发生器立管 -->
+        <line x1="133.0" y1="44.2" x2="133.0" y2="49.2" stroke="#eab308" stroke-width="1.2"/>
+        <rect x="118.5" y="47.5" width="5.5" height="17.0" rx="1.0" fill="#14090c" stroke="#eab308" stroke-width="0.65"/>
+        <rect x="142.0" y="47.5" width="5.5" height="17.0" rx="1.0" fill="#14090c" stroke="#eab308" stroke-width="0.65"/>
+        <text x="133.0" y="67.2" text-anchor="middle" class="mono" font-size="2.5" fill="#ff5a36">S9G PWR (210MWt)</text>
+
+        <!-- 辅机、应急柴电与后救生舱段 (X=154..184) -->
+        <rect x="154.0" y="44.0" width="29.5" height="24.0" rx="1.5" fill="#06121a" fill-opacity="0.65" stroke="#4a6368" stroke-width="0.75" stroke-dasharray="3 1.5"/>
+        <line x1="154.0" y1="56.0" x2="183.5" y2="56.0" stroke="#2c3b40" stroke-width="0.65"/>
+        <circle cx="168.5" cy="41.0" r="2.1" fill="#0d2230" stroke="#d4e3e6" stroke-width="0.75"/>
+      </g>
+
+      <!-- 4. 核心识别特征：舯部 25.6m VPM 弗吉尼亚有效载荷舱段 (4×VPM 大直径7联装垂发筒 · X=186..260) -->
+      <g id="vpm-25m-plug-section">
+        <!-- 25.6m 插入段分界高亮双虚线框 (X=186.0 .. 260.0) -->
+        <rect x="186.0" y="40.2" width="74.0" height="31.6" fill="#140b10" fill-opacity="0.45" stroke="#ff5a36" stroke-width="1.05" stroke-dasharray="3.5 1.8"/>
+        <line x1="186.0" y1="36.0" x2="186.0" y2="75.0" stroke="#38bdf8" stroke-width="0.85" stroke-dasharray="2.5 1.5"/>
+        <line x1="260.0" y1="36.0" x2="260.0" y2="75.0" stroke="#38bdf8" stroke-width="0.85" stroke-dasharray="2.5 1.5"/>
+        <text x="223.0" y="38.2" text-anchor="middle" class="mono" font-size="2.6" fill="#38bdf8" font-weight="bold">◀ 25.6M VPM PLUG (4×87" TUBES · 28×TLAM) ▶</text>
+
+        <!-- 4座直径 2.2m (87英寸) VPM 垂直发射筒剖面 (VPM-4..VPM-1: cx=197, 214, 231, 248) -->
+        <!-- VPM-4 (X=190.8..203.2) -->
+        <rect x="190.8" y="42.0" width="12.4" height="26.5" rx="1.2" fill="#1c0d12" stroke="#ff5a36" stroke-width="0.9"/>
+        <line x1="194.8" y1="43.0" x2="194.8" y2="67.5" stroke="#eab308" stroke-width="0.7" stroke-dasharray="3 1.2"/>
+        <line x1="199.2" y1="43.0" x2="199.2" y2="67.5" stroke="#eab308" stroke-width="0.7" stroke-dasharray="3 1.2"/>
+        <!-- VPM-3 (X=207.8..220.2) -->
+        <rect x="207.8" y="42.0" width="12.4" height="26.5" rx="1.2" fill="#1c0d12" stroke="#ff5a36" stroke-width="0.9"/>
+        <line x1="211.8" y1="43.0" x2="211.8" y2="67.5" stroke="#eab308" stroke-width="0.7" stroke-dasharray="3 1.2"/>
+        <line x1="216.2" y1="43.0" x2="216.2" y2="67.5" stroke="#eab308" stroke-width="0.7" stroke-dasharray="3 1.2"/>
+        <!-- VPM-2 (X=224.8..237.2) -->
+        <rect x="224.8" y="42.0" width="12.4" height="26.5" rx="1.2" fill="#1c0d12" stroke="#ff5a36" stroke-width="0.9"/>
+        <line x1="228.8" y1="43.0" x2="228.8" y2="67.5" stroke="#38bdf8" stroke-width="0.75" stroke-dasharray="3 1.2"/>
+        <line x1="233.2" y1="43.0" x2="233.2" y2="67.5" stroke="#38bdf8" stroke-width="0.75" stroke-dasharray="3 1.2"/>
+        <!-- VPM-1 (X=241.8..254.2 · 舱盖开启发射态) -->
+        <rect x="241.8" y="42.0" width="12.4" height="26.5" rx="1.2" fill="#261016" stroke="#ff5a36" stroke-width="1.05"/>
+        <line x1="245.8" y1="43.0" x2="245.8" y2="67.5" stroke="#ff5a36" stroke-width="0.9"/>
+        <line x1="250.2" y1="43.0" x2="250.2" y2="67.5" stroke="#ff5a36" stroke-width="0.9"/>
+        <!-- VPM-1 开启的顶部半球水密发射舱盖 -->
+        <line x1="254.2" y1="41.0" x2="258.5" y2="35.8" stroke="#eab308" stroke-width="1.15"/>
+      </g>
+
+      <!-- 5. 流线型前缘圆角围壳 (Cusp/Fillet Sail · X=268..318, Y=21.5..41.0) 与非穿透光电桅杆群 -->
+      <g id="cusp-sail-and-photonic-masts">
+        <!-- 弗吉尼亚级标志性前缘大圆角流线型过渡围壳 (Leading-Edge Fillet/Cusp Sail) -->
+        <path d="M 268.0 41.0 L 271.5 21.5 L 304.5 21.5 L 307.5 34.5 Q 311.5 40.8 321.5 41.0 Z"
+              fill="#0c1e2a" stroke="#d4e3e6" stroke-width="1.2"/>
+        <line x1="270.0" y1="31.5" x2="306.8" y2="31.5" stroke="#4a6368" stroke-width="0.65"/>
+        <!-- 围壳前缘 HF 高频猎雷声呐阵窗口 -->
+        <path d="M 304.5 22.8 L 306.8 32.5" fill="none" stroke="#38bdf8" stroke-width="1.1"/>
+        <text x="288.0" y="29.2" text-anchor="middle" class="mono" font-size="2.6" fill="#d4e3e6">SSN-774</text>
+        <text x="288.0" y="38.2" text-anchor="middle" class="mono" font-size="2.4" fill="#38bdf8">FILLET SAIL</text>
+
+        <!-- 非穿透桅杆井：2×AN/BVS-1 光电桅杆 + AN/BLQ-10 电子战桅杆 + HDR 高速卫通桅杆 -->
+        <!-- 1号 AN/BVS-1 光电桅杆 (前高) -->
+        <line x1="299.5" y1="21.5" x2="299.5" y2="9.8" stroke="#d4e3e6" stroke-width="1.0"/>
+        <rect x="297.6" y="7.5" width="3.8" height="2.6" rx="0.6" fill="#133246" stroke="#38bdf8" stroke-width="0.8"/>
+        <circle cx="299.5" cy="8.8" r="0.7" fill="#eab308"/>
+        <!-- 2号 AN/BVS-1 光电桅杆 (次高) -->
+        <line x1="293.0" y1="21.5" x2="293.0" y2="11.8" stroke="#d4e3e6" stroke-width="0.95"/>
+        <rect x="291.2" y="9.6" width="3.6" height="2.4" rx="0.6" fill="#133246" stroke="#38bdf8" stroke-width="0.75"/>
+        <!-- AN/BLQ-10 电子战 ESM 桅杆与 HDR 卫通天线 -->
+        <line x1="285.5" y1="21.5" x2="285.5" y2="13.5" stroke="#5f7c84" stroke-width="0.85"/>
+        <circle cx="285.5" cy="12.8" r="1.1" fill="#0d2230" stroke="#d4e3e6" stroke-width="0.65"/>
+        <line x1="278.5" y1="21.5" x2="278.5" y2="15.0" stroke="#5f7c84" stroke-width="0.85"/>
+        <ellipse cx="278.5" cy="14.2" rx="1.6" ry="1.0" fill="#0d2230" stroke="#38bdf8" stroke-width="0.65"/>
+        <text x="292.0" y="5.5" text-anchor="middle" class="mono" font-size="2.5" fill="#38bdf8">2×AN/BVS-1 PHOTONIC MASTS</text>
+      </g>
+
+      <!-- 6. 围壳下方指挥控制舱 (CACC)、鱼雷舱、UUV 收放口与三块式 LWWAA 宽孔径光纤侧舷阵 (X=262..340) -->
+      <g id="cacc-torpedo-lwwaa">
+        <!-- 上层：非穿透光电指挥控制室 (CACC) 与海豹突击队/UUV 气密收放舱 (X=263..338, Y=42.5..55.0) -->
+        <rect x="263.0" y="42.5" width="75.0" height="12.2" rx="1.2" fill="#071722" fill-opacity="0.7" stroke="#38bdf8" stroke-width="0.75" stroke-dasharray="3 1.5"/>
+        <text x="300.5" y="49.8" text-anchor="middle" class="mono" font-size="2.5" fill="#38bdf8">CACC &amp; UUV / SOF LOCK-OUT</text>
+        <!-- 下层：鱼雷与水雷武器舱 (Mk 48 ADCAP 重型鱼雷架 · X=288..340, Y=55.5..68.0) -->
+        <rect x="288.0" y="55.5" width="52.0" height="12.2" rx="1.2" fill="#0a1620" fill-opacity="0.7" stroke="#eab308" stroke-width="0.75" stroke-dasharray="3 1.5"/>
+        <line x1="294.0" y1="59.2" x2="334.0" y2="59.2" stroke="#eab308" stroke-width="1.2" stroke-dasharray="6 2"/>
+        <line x1="294.0" y1="63.2" x2="334.0" y2="63.2" stroke="#ff5a36" stroke-width="1.2" stroke-dasharray="6 2"/>
+
+        <!-- 艇体两侧标志性的 3块式 LWWAA 轻质宽孔径光纤保形侧舷声呐阵 (Light Weight Wide Aperture Array) -->
+        <rect x="216.0" y="60.5" width="18.0" height="5.2" rx="0.8" fill="#0b2838" fill-opacity="0.75" stroke="#38bdf8" stroke-width="0.85"/>
+        <rect x="264.0" y="60.5" width="18.0" height="5.2" rx="0.8" fill="#0b2838" fill-opacity="0.75" stroke="#38bdf8" stroke-width="0.85"/>
+        <rect x="312.0" y="60.5" width="18.0" height="5.2" rx="0.8" fill="#0b2838" fill-opacity="0.75" stroke="#38bdf8" stroke-width="0.85"/>
+      </g>
+
+      <!-- 7. 艇首 2×VPT (Virginia Payload Tubes · 12枚战斧) + 4×533mm 鱼雷管 + LAB 大孔径保形声呐阵 (X=340..420) -->
+      <g id="bow-vpt-and-lab-sonar">
+        <!-- 艇首 2座直径 2.2m 的 6联装左轮垂直发射筒 (2×VPT: cx=349, 363, Y=41.5..65.5) -->
+        <rect x="343.5" y="42.0" width="11.0" height="23.5" rx="1.2" fill="#0d2230" stroke="#38bdf8" stroke-width="0.95"/>
+        <line x1="347.2" y1="43.0" x2="347.2" y2="64.5" stroke="#d4e3e6" stroke-width="0.65" stroke-dasharray="2.5 1.2"/>
+        <line x1="350.8" y1="43.0" x2="350.8" y2="64.5" stroke="#d4e3e6" stroke-width="0.65" stroke-dasharray="2.5 1.2"/>
+        <rect x="357.5" y="42.0" width="11.0" height="23.5" rx="1.2" fill="#0d2230" stroke="#38bdf8" stroke-width="1.05"/>
+        <line x1="361.2" y1="43.0" x2="361.2" y2="64.5" stroke="#38bdf8" stroke-width="0.8"/>
+        <line x1="364.8" y1="43.0" x2="364.8" y2="64.5" stroke="#38bdf8" stroke-width="0.8"/>
+        <!-- VPT-1 开启的发射舱盖 -->
+        <line x1="368.5" y1="41.2" x2="372.5" y2="36.5" stroke="#38bdf8" stroke-width="1.1"/>
+        <text x="356.0" y="38.2" text-anchor="middle" class="mono" font-size="2.5" fill="#38bdf8">2×VPT (12×TLAM)</text>
+
+        <!-- 可收放首水平舵舱位 (Retractable Bow Planes · X=344..361, Y=46.8..49.8) -->
+        <rect x="344.5" y="46.8" width="16.5" height="3.0" rx="0.7" fill="#061018" stroke="#eab308" stroke-width="0.85"/>
+        <line x1="346.5" y1="48.3" x2="359.0" y2="48.3" stroke="#d4e3e6" stroke-width="0.6"/>
+
+        <!-- 4×533mm 鱼雷发射管舱门与内管延长线 + UUV 收放口 (X=340..386) -->
+        <rect x="374.0" y="52.0" width="6.5" height="1.6" rx="0.5" fill="#061016" stroke="#eab308" stroke-width="0.75"/>
+        <rect x="375.5" y="54.5" width="6.5" height="1.6" rx="0.5" fill="#061016" stroke="#eab308" stroke-width="0.75"/>
+        <rect x="375.5" y="57.2" width="6.5" height="1.6" rx="0.5" fill="#061016" stroke="#d4e3e6" stroke-width="0.7"/>
+        <rect x="374.0" y="59.7" width="6.5" height="1.6" rx="0.5" fill="#061016" stroke="#d4e3e6" stroke-width="0.7"/>
+        <line x1="340.0" y1="52.8" x2="374.0" y2="52.8" stroke="#eab308" stroke-width="0.6" stroke-dasharray="2.5 1.2"/>
+        <line x1="340.0" y1="55.3" x2="375.5" y2="55.3" stroke="#eab308" stroke-width="0.6" stroke-dasharray="2.5 1.2"/>
+
+        <!-- 艇首 AN/BQQ-10 LAB (Large Aperture Bow) 水背衬大孔径马蹄形保形声呐阵 + 下颌高频阵 (X=382..420) -->
+        <path d="M 386.0 41.2 C 382.0 50.0 382.0 62.0 386.0 70.8" fill="none" stroke="#38bdf8" stroke-width="1.0" stroke-dasharray="2.5 1.2"/>
+        <path d="M 388.5 44.5 C 404.0 44.5 415.5 49.2 415.5 56.0 C 415.5 62.8 404.0 67.5 388.5 67.5 Z"
+              fill="#0b2434" fill-opacity="0.75" stroke="#38bdf8" stroke-width="0.95"/>
+        <line x1="391.0" y1="52.0" x2="413.0" y2="52.0" stroke="#38bdf8" stroke-width="0.5"/>
+        <line x1="391.0" y1="56.0" x2="414.5" y2="56.0" stroke="#38bdf8" stroke-width="0.5"/>
+        <line x1="391.0" y1="60.0" x2="413.0" y2="60.0" stroke="#38bdf8" stroke-width="0.5"/>
+        <!-- 下颌高频声呐阵 (Chin HF Sonar) -->
+        <polygon points="374.0,67.8 392.0,67.8 389.0,70.8 372.0,70.8" fill="#123044" stroke="#eab308" stroke-width="0.75"/>
+      </g>
+
+      <!-- 8. 底部总长与分段工程尺寸标尺 (LOA 140.2m = 114.6m Base + 25.6m VPM Plug · 零文字碰撞) -->
+      <g id="dimension-ruler" stroke="#5f7c84" stroke-width="0.6">
+        <line x1="16.0" y1="84.5" x2="420.0" y2="84.5"/>
+        <line x1="16.0" y1="81.5" x2="16.0" y2="87.0"/>
+        <line x1="186.0" y1="81.5" x2="186.0" y2="87.0" stroke="#38bdf8"/>
+        <line x1="260.0" y1="81.5" x2="260.0" y2="87.0" stroke="#38bdf8"/>
+        <line x1="420.0" y1="81.5" x2="420.0" y2="87.0"/>
+        <text x="101.0" y="82.8" text-anchor="middle" class="mono" font-size="2.7" fill="#8aa1a7">AFT S9G PWR &amp; PUMP-JET PROPULSOR</text>
+        <text x="223.0" y="82.8" text-anchor="middle" class="mono" font-size="2.7" fill="#ff5a36">25.6M VPM SECTION (4×7=28 CELLS)</text>
+        <text x="345.0" y="82.8" text-anchor="middle" class="mono" font-size="2.7" fill="#38bdf8">FWD 2×VPT (12) + LAB SONAR · LOA 140.2M</text>
+      </g>
+    </g>
+  </g>
+</svg>

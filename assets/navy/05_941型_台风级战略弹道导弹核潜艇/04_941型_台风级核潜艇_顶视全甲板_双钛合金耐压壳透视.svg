@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 320" width="1120" height="320" data-asset-id="naval.typhoon.top.twin_hulls" style="background:#080a0b;">
+  <defs>
+    <style>
+      svg { fill: none; stroke-linecap: butt; }
+      .s-dim { stroke: #2c3b40; stroke-width: 1; }
+      .s-line { stroke: #5f7c84; stroke-width: 1; }
+      .s-hi { stroke: #d4e3e6; stroke-width: 1.2; }
+      .s-alert { stroke: #ff5a36; stroke-width: 1.4; }
+      .s-focus { stroke: #38bdf8; stroke-width: 1.4; }
+      .f-dim { fill: #2c3b40; stroke: none; }
+      .f-line { fill: #5f7c84; stroke: none; }
+      .f-hi { fill: #d4e3e6; stroke: none; }
+      .f-alert { fill: #ff5a36; stroke: none; }
+      .f-panel { fill: #0c1113; }
+      text { font-family: "Rajdhani", "Bahnschrift", "DIN Alternate", "Microsoft YaHei", sans-serif; letter-spacing: 0.12em; }
+      text:not([stroke]) { stroke: none; }
+      text:not([fill]) { fill: #cfdde0; }
+      text:not([font-size]):not(.cap):not(.big) { font-size: 10px; }
+      text.cap { letter-spacing: 0.2em; text-transform: uppercase; }
+      text.cap:not([fill]) { fill: #8aa1a7; }
+      text.cap:not([font-size]) { font-size: 8.5px; }
+      text.mono { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; letter-spacing: 0.06em; }
+      text.big { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; font-weight: 600; letter-spacing: 0.08em; }
+      text.big:not([font-size]) { font-size: 18px; }
+      text.big:not([fill]) { fill: #d4e3e6; }
+      text.alert { fill: #ff5a36; }
+    </style>
+    <pattern id="cad-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#10181c" stroke-width="1"/>
+      <circle cx="20" cy="20" r="0.8" fill="#1b262b"/>
+    </pattern>
+    <pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#ff5a36" stroke-width="1.2" stroke-opacity="0.35"/>
+    </pattern>
+  </defs>
+
+  <!-- 1. 工程蓝图暗色底板与坐标网格图层 -->
+  <g id="layer-backdrop">
+    <rect x="0" y="0" width="1120" height="320" fill="#080a0b"/>
+    <rect x="20" y="20" width="1080" height="280" fill="url(#cad-grid)" stroke="#2c3b40" stroke-width="1"/>
+    <path d="M 20 36 V 20 H 36 M 1084 20 H 1100 V 36 M 20 284 V 300 H 36 M 1084 300 H 1100 V 284" fill="none" stroke="#38bdf8" stroke-width="1.5"/>
+    <line x1="20" y1="54" x2="1100" y2="54" stroke="#2c3b40" stroke-width="1"/>
+    <line x1="20" y1="274" x2="1100" y2="274" stroke="#2c3b40" stroke-width="1"/>
+    <text x="34" y="42" class="p mono" fill="#38bdf8" font-size="11" font-weight="bold">PROJECT 941 AKULA / TYPHOON SSBN · PARALLEL TWIN Ø13.8M TITANIUM PRESSURE HULLS PLAN</text>
+    <text x="1086" y="42" text-anchor="end" class="p cap" fill="#d4e3e6" font-size="10.5">941型「鲨鱼/台风」级重型战略核潜艇 · 顶视全甲板与内部双并列钛合金耐压壳透视图</text>
+    <text x="34" y="291" class="p mono" fill="#8aa1a7" font-size="9.5">INTERNAL X-RAY: PARALLEL TWIN TITANIUM PRESSURE HULLS + 2×10 FORWARD SLBM SILOS + COMMAND &amp; TORPEDO PODS · REF: F89-LOWER</text>
+    <text x="1086" y="291" text-anchor="end" class="p mono" fill="#5f7c84" font-size="9.5">POSEIDON NAVAL CAD ASSET · TRUE 1:1 ASPECT</text>
+  </g>
+
+  <!-- 2. 舰艇核心 CAD 矢量图层 (无损原生算子输出) -->
+  <g id="layer-ship-cad">
+    <g transform="translate(56.0,88.4) scale(2.400,1.964)">
+      <!-- 尾部上下水平舵翼与双环形导管螺旋桨 (Twin Shrouded Propellers · 舰政标准规范 左端双喷口状结构) -->
+      <polygon points="4,12 36,12 48,22 48,68 36,78 4,78 4,62 14,60 14,30 4,28"
+               fill="#071218" stroke="#d4e3e6" stroke-width="1.15"/>
+      <!-- 上(左舷)导管螺旋桨环与尾流锥 -->
+      <polygon points="12,19 26,21 26,35 12,37" fill="#0c202c" stroke="#38bdf8" stroke-width="1.2"/>
+      <path d="M 26 21 Q 38 23 44 28 Q 38 33 26 35 Z" fill="#091822" stroke="#d4e3e6" stroke-width="0.9"/>
+      <!-- 下(右舷)导管螺旋桨环与尾流锥 -->
+      <polygon points="12,53 26,55 26,69 12,71" fill="#0c202c" stroke="#38bdf8" stroke-width="1.2"/>
+      <path d="M 26 55 Q 38 57 44 62 Q 38 67 26 69 Z" fill="#091822" stroke="#d4e3e6" stroke-width="0.9"/>
+      <!-- 中央垂直尾翼俯视脊线 -->
+      <ellipse cx="26" cy="45" rx="18" ry="2.2" fill="#0d222e" stroke="#38bdf8" stroke-width="1"/>
+
+      <!-- 艇艏左右展开的前水平舵翼 (虚线展开态 · 舰政标准规范 右端上下伸出小翼) -->
+      <rect x="372" y="10" width="9" height="10" fill="none" stroke="#38bdf8" stroke-width="0.8" stroke-dasharray="2 1.5"/>
+      <rect x="372" y="70" width="9" height="10" fill="none" stroke="#38bdf8" stroke-width="0.8" stroke-dasharray="2 1.5"/>
+
+      <!-- 宽扁猫体双壳体主外廓 (长宽比 7.4:1 · 尾部收束为双流道凹槽 · 舰政标准规范) -->
+      <path d="M 42 22 C 62 14 95 14 140 14 L 348 14 C 392 14 416 27 416 45 C 416 63 392 76 348 76 L 140 76 C 95 76 62 76 42 68 C 48 60 48 52 40 45 C 48 38 48 30 42 22 Z"
+            fill="#08141c" stroke="#d4e3e6" stroke-width="1.4"/>
+      <!-- 外壳内侧甲板边界线 -->
+      <path d="M 48 25 L 346 18 C 386 18 410 29 410 45 C 410 61 386 72 346 72 L 48 65"
+            fill="none" stroke="#4a6368" stroke-width="0.8"/>
+
+      
+      <!-- 内部总师透视虚线：左右并列双根 Ø13.8m 钛合金耐压主壳体 (Parallel Twin Titanium Pressure Hulls) -->
+      <rect x="64" y="21" width="276" height="19" rx="9.5" fill="none" stroke="#38bdf8" stroke-width="0.75" stroke-dasharray="5 3" stroke-opacity="0.65"/>
+      <rect x="64" y="50" width="276" height="19" rx="9.5" fill="none" stroke="#38bdf8" stroke-width="0.75" stroke-dasharray="5 3" stroke-opacity="0.65"/>
+      
+
+      <!-- 前甲板核心特征：2×10 共 20 座正方形 R-39 洲际导弹发射井盖 + 中央纵向走道 (X=215..330) -->
+      <line x1="212" y1="39.5" x2="342" y2="39.5" stroke="#38bdf8" stroke-width="0.9"/>
+      <line x1="212" y1="50.5" x2="342" y2="50.5" stroke="#38bdf8" stroke-width="0.9"/>
+      <line x1="212" y1="45" x2="412" y2="45" stroke="#38bdf8" stroke-width="0.7" stroke-dasharray="4 2"/>
+      <g>
+        <!-- 上排(左舷)正方形发射井盖 -->
+        <rect x="220.0" y="27" width="7.8" height="8.2" fill="#0b1d28" stroke="#d4e3e6" stroke-width="0.9"/>
+        <!-- 下排(右舷)正方形发射井盖 -->
+        <rect x="220.0" y="54.8" width="7.8" height="8.2" fill="#0b1d28" stroke="#d4e3e6" stroke-width="0.9"/>
+        <!-- 中央走道上的液压开盖铰链节点 -->
+        <rect x="222.2" y="39.5" width="3.4" height="3" fill="#132c3a" stroke="#38bdf8" stroke-width="0.7"/>
+        <rect x="222.2" y="47.5" width="3.4" height="3" fill="#132c3a" stroke="#38bdf8" stroke-width="0.7"/>
+      </g><g>
+        <!-- 上排(左舷)正方形发射井盖 -->
+        <rect x="230.4" y="27" width="7.8" height="8.2" fill="#0b1d28" stroke="#d4e3e6" stroke-width="0.9"/>
+        <!-- 下排(右舷)正方形发射井盖 -->
+        <rect x="230.4" y="54.8" width="7.8" height="8.2" fill="#0b1d28" stroke="#d4e3e6" stroke-width="0.9"/>
+        <!-- 中央走道上的液压开盖铰链节点 -->
+        <rect x="232.6" y="39.5" width="3.4" height="3" fill="#132c3a" stroke="#38bdf8" stroke-width="0.7"/>
+        <rect x="232.6" y="47.5" width="3.4" height="3" fill="#132c3a" stroke="#38bdf8" stroke-width="0.7"/>
+      </g><g>
+        <!-- 上排(左舷)正方形发射井盖 -->
+        <rect x="240.8" y="27" width="7.8" height="8.2" fill="#0b1d28" stroke="#d4e3e6" stroke-width="0.9"/>
+        <!-- 下排(右舷)正方形发射井盖 -->
+        <rect x="240.8" y="54.8" width="7.8" height="8.2" fill="#0b1d28" stroke="#d4e3e6" stroke-width="0.9"/>
+        <!-- 中央走道上的液压开盖铰链节点 -->
+        <rect x="243.0" y="39.5" width="3.4" height="3" fill="#132c3a" stroke="#38bdf8" stroke-width="0.7"/>
+        <rect x="243.0" y="47.5" width="3.4" height="3" fill="#132c3a" stroke="#38bdf8" stroke-width="0.7"/>
+      </g><g>
+        <!-- 上排(左舷)正方形发射井盖 -->
+        <rect x="251.2" y="27" width="7.8" height="8.2" fill="#0b1d28" stroke="#d4e3e6" stroke-width="0.9"/>
+        <!-- 下排(右舷)正方形发射井盖 -->
+        <rect x="251.2" y="54.8" width="7.8" height="8.2" fill="#0b1d28" stroke="#d4e3e6" stroke-width="0.9"/>
+        <!-- 中央走道上的液压开盖铰链节点 -->
+        <rect x="253.4" y="39.5" width="3.4" height="3" fill="#132c3a" stroke="#38bdf8" stroke-width="0.7"/>
+        <rect x="253.4" y="47.5" width="3.4" height="3" fill="#132c3a" stroke="#38bdf8" stroke-width="0.7"/>
+      </g><g>
+        <!-- 上排(左舷)正方形发射井盖 -->
+        <rect x="261.6" y="27" width="7.8" height="8.2" fill="#0b1d28" stroke="#d4e3e6" stroke-width="0.9"/>
+        <!-- 下排(右舷)正方形发射井盖 -->
+        <rect x="261.6" y="54.8" width="7.8" height="8.2" fill="#0b1d28" stroke="#d4e3e6" stroke-width="0.9"/>
+        <!-- 中央走道上的液压开盖铰链节点 -->
+        <rect x="263.8" y="39.5" width="3.4" height="3" fill="#132c3a" stroke="#38bdf8" stroke-width="0.7"/>
+        <rect x="263.8" y="47.5" width="3.4" height="3" fill="#132c3a" stroke="#38bdf8" stroke-width="0.7"/>
+      </g><g>
+        <!-- 上排(左舷)正方形发射井盖 -->
+        <rect x="272.0" y="27" width="7.8" height="8.2" fill="#0b1d28" stroke="#d4e3e6" stroke-width="0.9"/>
+        <!-- 下排(右舷)正方形发射井盖 -->
+        <rect x="272.0" y="54.8" width="7.8" height="8.2" fill="#0b1d28" stroke="#d4e3e6" stroke-width="0.9"/>
+        <!-- 中央走道上的液压开盖铰链节点 -->
+        <rect x="274.2" y="39.5" width="3.4" height="3" fill="#132c3a" stroke="#38bdf8" stroke-width="0.7"/>
+        <rect x="274.2" y="47.5" width="3.4" height="3" fill="#132c3a" stroke="#38bdf8" stroke-width="0.7"/>
+      </g><g>
+        <!-- 上排(左舷)正方形发射井盖 -->
+        <rect x="282.4" y="27" width="7.8" height="8.2" fill="#0b1d28" stroke="#d4e3e6" stroke-width="0.9"/>
+        <!-- 下排(右舷)正方形发射井盖 -->
+        <rect x="282.4" y="54.8" width="7.8" height="8.2" fill="#0b1d28" stroke="#d4e3e6" stroke-width="0.9"/>
+        <!-- 中央走道上的液压开盖铰链节点 -->
+        <rect x="284.6" y="39.5" width="3.4" height="3" fill="#132c3a" stroke="#38bdf8" stroke-width="0.7"/>
+        <rect x="284.6" y="47.5" width="3.4" height="3" fill="#132c3a" stroke="#38bdf8" stroke-width="0.7"/>
+      </g><g>
+        <!-- 上排(左舷)正方形发射井盖 -->
+        <rect x="292.8" y="27" width="7.8" height="8.2" fill="#0b1d28" stroke="#d4e3e6" stroke-width="0.9"/>
+        <!-- 下排(右舷)正方形发射井盖 -->
+        <rect x="292.8" y="54.8" width="7.8" height="8.2" fill="#0b1d28" stroke="#d4e3e6" stroke-width="0.9"/>
+        <!-- 中央走道上的液压开盖铰链节点 -->
+        <rect x="295.0" y="39.5" width="3.4" height="3" fill="#132c3a" stroke="#38bdf8" stroke-width="0.7"/>
+        <rect x="295.0" y="47.5" width="3.4" height="3" fill="#132c3a" stroke="#38bdf8" stroke-width="0.7"/>
+      </g><g>
+        <!-- 上排(左舷)正方形发射井盖 -->
+        <rect x="303.2" y="27" width="7.8" height="8.2" fill="#0b1d28" stroke="#d4e3e6" stroke-width="0.9"/>
+        <!-- 下排(右舷)正方形发射井盖 -->
+        <rect x="303.2" y="54.8" width="7.8" height="8.2" fill="#0b1d28" stroke="#d4e3e6" stroke-width="0.9"/>
+        <!-- 中央走道上的液压开盖铰链节点 -->
+        <rect x="305.4" y="39.5" width="3.4" height="3" fill="#132c3a" stroke="#38bdf8" stroke-width="0.7"/>
+        <rect x="305.4" y="47.5" width="3.4" height="3" fill="#132c3a" stroke="#38bdf8" stroke-width="0.7"/>
+      </g><g>
+        <!-- 上排(左舷)正方形发射井盖 -->
+        <rect x="313.6" y="27" width="7.8" height="8.2" fill="#0b1d28" stroke="#d4e3e6" stroke-width="0.9"/>
+        <!-- 下排(右舷)正方形发射井盖 -->
+        <rect x="313.6" y="54.8" width="7.8" height="8.2" fill="#0b1d28" stroke="#d4e3e6" stroke-width="0.9"/>
+        <!-- 中央走道上的液压开盖铰链节点 -->
+        <rect x="315.8" y="39.5" width="3.4" height="3" fill="#132c3a" stroke="#38bdf8" stroke-width="0.7"/>
+        <rect x="315.8" y="47.5" width="3.4" height="3" fill="#132c3a" stroke="#38bdf8" stroke-width="0.7"/>
+      </g>
+
+      <!-- 艇艏甲板：圆形救生对接舱口、系缆绞盘与前升降口 (X=340..405 · 舰政标准规范 右部) -->
+      <circle cx="346" cy="45" r="4.5" fill="#0b1d28" stroke="#38bdf8" stroke-width="1"/>
+      <circle cx="358" cy="45" r="4.8" fill="#0b1d28" stroke="#d4e3e6" stroke-width="1"/>
+      <circle cx="378" cy="45" r="3.2" fill="#0b1d28" stroke="#38bdf8" stroke-width="0.9"/>
+      <rect x="352" y="28" width="5" height="4" fill="none" stroke="#d4e3e6" stroke-width="0.7"/>
+      <rect x="352" y="58" width="5" height="4" fill="none" stroke="#d4e3e6" stroke-width="0.7"/>
+
+      <!-- 中后部：水滴形大圆角围壳俯视图 + 左右对称救生漂浮舱 + 顶部潜望镜井阵列 (X=128..214 · 舰政标准规范 中央) -->
+      <path d="M 128 45 C 142 29 166 23 192 23 C 206 23 214 32 214 45 C 214 58 206 67 192 67 C 166 67 142 61 128 45 Z"
+            fill="#0a1922" stroke="#d4e3e6" stroke-width="1.2"/>
+      <path d="M 148 45 C 156 36 172 33 196 33 C 204 33 208 38 208 45 C 208 52 204 57 196 57 C 172 57 156 54 148 45 Z"
+            fill="#0e2430" stroke="#38bdf8" stroke-width="1.15"/>
+      <!-- 围壳内潜望镜/桅杆井圆孔与前指挥桥槽 -->
+      <rect x="184" y="40" width="12" height="10" fill="#061016" stroke="#d4e3e6" stroke-width="0.8"/>
+      <circle cx="176" cy="45" r="2.2" fill="none" stroke="#38bdf8"/><circle cx="168" cy="45" r="2" fill="none" stroke="#d4e3e6"/>
+      <circle cx="161" cy="45" r="1.8" fill="none" stroke="#38bdf8"/>
+      <!-- 围壳两侧救生漂浮舱 (Escape Pods) 矩形舱盖 -->
+      <rect x="164" y="26.5" width="28" height="4.5" fill="#071218" stroke="#d4e3e6" stroke-width="0.75"/>
+      <rect x="164" y="59" width="28" height="4.5" fill="#071218" stroke="#d4e3e6" stroke-width="0.75"/>
+
+      <!-- 后甲板 (X=52..126)：核反应堆舱顶盖分块、后救生圆舱口与机舱通风口 (舰政标准规范 左中部) -->
+      <rect x="84" y="31" width="22" height="8" fill="#0a1820" stroke="#4a6368" stroke-width="0.8"/>
+      <rect x="84" y="51" width="22" height="8" fill="#0a1820" stroke="#4a6368" stroke-width="0.8"/>
+      <circle cx="52" cy="45" r="4.5" fill="#0b1d28" stroke="#d4e3e6" stroke-width="0.9"/>
+      <circle cx="62" cy="34" r="2.5" fill="#132c3a" stroke="#38bdf8" stroke-width="0.8"/>
+      <circle cx="126" cy="54" r="2.5" fill="#132c3a" stroke="#38bdf8" stroke-width="0.8"/>
+    </g>
+  </g>
+</svg>

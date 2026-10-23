@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 580" width="1320" height="580" data-asset-id="naval.columbia826.master.sheet" style="background:#080a0b;">
+  <defs>
+    <style>
+      svg { fill: none; stroke-linecap: butt; }
+      .s-dim { stroke: #2c3b40; stroke-width: 1; }
+      .s-line { stroke: #5f7c84; stroke-width: 1; }
+      .s-hi { stroke: #d4e3e6; stroke-width: 1.2; }
+      .s-alert { stroke: #ff5a36; stroke-width: 1.4; }
+      .s-focus { stroke: #38bdf8; stroke-width: 1.4; }
+      .f-dim { fill: #2c3b40; stroke: none; }
+      .f-line { fill: #5f7c84; stroke: none; }
+      .f-hi { fill: #d4e3e6; stroke: none; }
+      .f-alert { fill: #ff5a36; stroke: none; }
+      .f-panel { fill: #0c1113; }
+      text { font-family: "Rajdhani", "Bahnschrift", "DIN Alternate", "Microsoft YaHei", sans-serif; letter-spacing: 0.12em; }
+      text:not([stroke]) { stroke: none; }
+      text:not([fill]) { fill: #cfdde0; }
+      text:not([font-size]):not(.cap):not(.big) { font-size: 10px; }
+      text.p { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; letter-spacing: 0.06em; }
+      text.cap { letter-spacing: 0.2em; text-transform: uppercase; }
+      text.cap:not([fill]) { fill: #8aa1a7; }
+      text.cap:not([font-size]) { font-size: 8.5px; }
+      text.mono { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; letter-spacing: 0.06em; }
+      text.big { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; font-weight: 600; letter-spacing: 0.08em; }
+      text.big:not([font-size]) { font-size: 18px; }
+      text.big:not([fill]) { fill: #d4e3e6; }
+      text.alert { fill: #ff5a36; }
+    </style>
+    <pattern id="cad-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#10181c" stroke-width="1"/>
+      <circle cx="20" cy="20" r="0.8" fill="#1b262b"/>
+    </pattern>
+    <pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#ff5a36" stroke-width="1.2" stroke-opacity="0.35"/>
+    </pattern>
+  </defs>
+
+  <!-- 1. 工程蓝图暗色底板与坐标网格图层 -->
+  <g id="layer-backdrop">
+    <rect x="0" y="0" width="1320" height="580" fill="#080a0b"/>
+    <rect x="20" y="20" width="1280" height="540" fill="url(#cad-grid)" stroke="#2c3b40" stroke-width="1"/>
+    <path d="M 20 36 V 20 H 36 M 1284 20 H 1300 V 36 M 20 544 V 560 H 36 M 1284 560 H 1300 V 544" fill="none" stroke="#38bdf8" stroke-width="1.5"/>
+    <line x1="20" y1="54" x2="1300" y2="54" stroke="#2c3b40" stroke-width="1"/>
+    <line x1="20" y1="534" x2="1300" y2="534" stroke="#2c3b40" stroke-width="1"/>
+    <text x="34" y="42" class="p mono" fill="#38bdf8" font-size="10.2" font-weight="bold">US NAVY COLUMBIA-CLASS SSBN (SSBN-826 DISTRICT OF COLUMBIA) · 20,810T STRATEGIC MASTER BLUEPRINT</text>
+    <text x="1286" y="42" text-anchor="end" class="p cap" fill="#d4e3e6" font-size="10.5">SSBN-826「哥伦比亚」级战略导弹核潜艇 · 侧视16联三叉戟D5LE与顶视X尾舵双联工程总图</text>
+    <text x="34" y="551" class="p mono" fill="#8aa1a7" font-size="9.5">20,810T SUBMERGED · 171.0M×13.1M (13.05:1) · 16×TRIDENT II D5LE SLBM (4×QUAD-PACK CMC) · S1B 42-YR PWR + PMM PUMP-JET · UID=106</text>
+    <text x="1286" y="551" text-anchor="end" class="p mono" fill="#5f7c84" font-size="9.5">POSEIDON NAVAL CAD ASSET · TRUE 1:1 ASPECT (13.05:1)</text>
+  </g>
+
+  <!-- 2. 舰艇核心 CAD 矢量图层 (上半框侧视立面 + 下半框顶视全甲板 + 右侧双工程规格铭牌) -->
+  <g id="layer-ship-cad">
+    <rect x="44" y="72" width="1232" height="216" fill="#091116" fill-opacity="0.45" stroke="#2c3b40"/>
+    <text font-size="9.5" x="58" y="92" class="p mono" fill="#38bdf8">01 / STARBOARD PROFILE &amp; 16×TRIDENT II D5LE CMC / S1B 42-YR REACTOR / PMM PUMP-JET CUTAWAY</text>
+    <text x="975" y="92" text-anchor="end" class="p mono" fill="#5f7c84" font-size="9">SCALE 1:1 · BOW RIGHT (+X)</text>
+    <g transform="translate(76.0,98.0) scale(2.020,2.020)">
+
+      <!-- 0. 潜望镜/发射深度基准线与 UGM-133A「三叉戟 II D5LE」潜射洲际弹道导弹冷弹射出水点火轨迹 -->
+      <g id="trident-d5le-salvo-cutaway">
+        <line x1="12" y1="33.5" x2="422" y2="33.5" stroke="#2c3b40" stroke-width="0.6" stroke-dasharray="4 3"/>
+        <text x="16" y="31.2" class="mono" font-size="2.5" fill="#5f7c84">SEA SURFACE DATUM · SUBMERGED GAS-STEAM EJECTION SLBM SALVO (DEPTH 45M)</text>
+
+        <!-- 1号与2号 87英寸发射筒水下空泡冷弹射轨迹线 -->
+        <line x1="276.5" y1="39.5" x2="276.5" y2="21.0" stroke="#ff5a36" stroke-width="0.85" stroke-dasharray="2.2 1.4"/>
+        <line x1="265.5" y1="39.5" x2="265.5" y2="27.5" stroke="#38bdf8" stroke-width="0.75" stroke-dasharray="2.0 1.4"/>
+        <!-- 水面破水蒸汽激波环 -->
+        <ellipse cx="276.5" cy="33.5" rx="4.2" ry="1.0" fill="#38bdf8" fill-opacity="0.25" stroke="#38bdf8" stroke-width="0.6"/>
+        <ellipse cx="265.5" cy="33.5" rx="3.4" ry="0.85" fill="#38bdf8" fill-opacity="0.2" stroke="#38bdf8" stroke-width="0.55"/>
+
+        <!-- [导弹剪影 1] 1号井腾空主发动机点火：UGM-133A Trident II D5LE (带前端可伸缩气动减阻激波杆 Aerospike) -->
+        <g transform="translate(276.5, 13.5)">
+          <!-- 一级固体火箭尾焰 -->
+          <polygon points="-1.5,5.8 1.5,5.8 2.5,11.2 0,13.6 -2.5,11.2" fill="#eab308" fill-opacity="0.8"/>
+          <polygon points="-0.9,5.8 0.9,5.8 1.3,9.5 0,11.2 -1.3,9.5" fill="#ff5a36"/>
+          <!-- 三级碳纤维复合弹体 (直径 2.11m · 长 13.4m) -->
+          <rect x="-1.7" y="-4.8" width="3.4" height="10.6" fill="#180d10" stroke="#ff5a36" stroke-width="0.75"/>
+          <line x1="-1.7" y1="-1.2" x2="1.7" y2="-1.2" stroke="#eab308" stroke-width="0.55"/>
+          <line x1="-1.7" y1="2.4" x2="1.7" y2="2.4" stroke="#38bdf8" stroke-width="0.55"/>
+          <!-- 钝圆形分导核弹头整流罩 (8-12×W88/W76-1 MIRV) + 标志性前置气动减阻激波杆 (Aerospike) -->
+          <path d="M -1.7 -4.8 C -1.7 -7.2 -0.8 -8.2 0 -8.2 C 0.8 -8.2 1.7 -7.2 1.7 -4.8 Z" fill="#ff5a36" stroke="#d4e3e6" stroke-width="0.65"/>
+          <line x1="0" y1="-8.2" x2="0" y2="-11.5" stroke="#d4e3e6" stroke-width="0.75"/>
+          <circle cx="0" cy="-11.5" r="0.55" fill="#eab308"/>
+        </g>
+
+        <!-- [导弹剪影 2] 2号井刚跃出水面尚未展开激波杆的 Trident II D5LE -->
+        <g transform="translate(265.5, 22.5)">
+          <ellipse cx="0" cy="6.2" rx="2.0" ry="1.2" fill="#38bdf8" fill-opacity="0.5"/>
+          <rect x="-1.5" y="-3.8" width="3.0" height="8.8" fill="#0d2230" stroke="#38bdf8" stroke-width="0.7"/>
+          <line x1="-1.5" y1="-0.8" x2="1.5" y2="-0.8" stroke="#d4e3e6" stroke-width="0.5"/>
+          <line x1="-1.5" y1="2.2" x2="1.5" y2="2.2" stroke="#d4e3e6" stroke-width="0.5"/>
+          <path d="M -1.5 -3.8 C -1.5 -5.8 -0.7 -6.6 0 -6.6 C 0.7 -6.6 1.5 -5.8 1.5 -3.8 Z" fill="#38bdf8" stroke="#d4e3e6" stroke-width="0.6"/>
+          <line x1="0" y1="-6.6" x2="0" y2="-8.6" stroke="#d4e3e6" stroke-width="0.65"/>
+        </g>
+
+        <text x="196" y="5.8" class="mono" font-size="2.6" fill="#ff5a36" font-weight="bold">SALVO: UGM-133A TRIDENT II D5LE (12,000KM · 8×W88 MIRV + AEROSPIKE)</text>
+      </g>
+
+      <!-- 1. 艇尾标志性 X 形四翼控制舵面 (X-Stern Control Surfaces · X=32..64) + 环形导管泵喷推进器 (#eab308) -->
+      <g id="stern-x-rudder-and-pumpjet">
+        <!-- X形尾舵上半斜置翼面 (45° Dihedral X-Fin Upper · 带斜切棱线与全动后缘舵面分割线 + 翼尖 TB-29A 拖曳声呐荚舱) -->
+        <polygon points="34,47.0 42,23.5 53,23.5 64,43.0" fill="#0d202c" stroke="#d4e3e6" stroke-width="1.15"/>
+        <polygon points="34,47.0 42,23.5 47.5,23.5 48.5,45.0" fill="#132c3d" stroke="#38bdf8" stroke-width="0.75"/>
+        <line x1="38.0" y1="35.2" x2="58.5" y2="33.2" stroke="#4a6368" stroke-width="0.6" stroke-dasharray="2 1"/>
+        <!-- 上X翼尖 TB-29A 细线拖曳线列声呐流线型荚舱 -->
+        <path d="M 32.0 23.0 C 35.5 21.6 51.5 21.6 56.0 23.0 C 51.5 24.3 35.5 24.3 32.0 23.0 Z" fill="#0d2230" stroke="#38bdf8" stroke-width="0.85"/>
+        <circle cx="32.8" cy="23.0" r="0.75" fill="#ff5a36"/>
+
+        <!-- X形尾舵下半斜置翼面 (45° Anhedral X-Fin Lower · X=34..64, Y=66.0..83.5) -->
+        <polygon points="34,66.0 64,69.5 53,83.5 42,83.5" fill="#0d202c" stroke="#d4e3e6" stroke-width="1.15"/>
+        <polygon points="34,66.0 48.5,67.8 47.5,83.5 42,83.5" fill="#132c3d" stroke="#38bdf8" stroke-width="0.75"/>
+        <line x1="38.0" y1="74.8" x2="58.5" y2="76.5" stroke="#4a6368" stroke-width="0.6" stroke-dasharray="2 1"/>
+
+        <!-- X形尾舵根部整流罩与右舷拖曳声呐释放管 -->
+        <polygon points="34,53.5 58,52.0 62,56.5 58,61.0 34,59.5" fill="#102636" stroke="#38bdf8" stroke-width="0.85"/>
+        <line x1="31.0" y1="56.5" x2="66.0" y2="56.5" stroke="#38bdf8" stroke-width="0.65" stroke-dasharray="3 1.5"/>
+
+        <!-- 环形导管泵喷推进器 (Ducted Pump-Jet Propulsor · X=16..34, Y=48.2..64.8 · #eab308 工程金高亮) -->
+        <polygon points="18.0,49.5 31.0,47.5 34.0,48.8 34.0,64.2 31.0,65.5 18.0,63.5"
+                 fill="#141e24" stroke="#eab308" stroke-width="1.2"/>
+        <!-- 导管内前置定子导叶 (Stator Vanes) 与后置无轴/中心轴转子叶轮 (Rotor) -->
+        <line x1="28.2" y1="48.2" x2="28.2" y2="64.8" stroke="#38bdf8" stroke-width="0.85" stroke-dasharray="1.6 1.0"/>
+        <line x1="23.0" y1="48.8" x2="23.0" y2="64.2" stroke="#eab308" stroke-width="1.1" stroke-dasharray="1.8 1.0"/>
+        <line x1="18.5" y1="52.2" x2="31.0" y2="50.8" stroke="#eab308" stroke-width="0.55"/>
+        <line x1="18.5" y1="60.8" x2="31.0" y2="62.2" stroke="#eab308" stroke-width="0.55"/>
+        <!-- 尾部中心流体消音锥毂 -->
+        <polygon points="14.8,56.5 18.2,54.0 18.2,59.0" fill="#eab308" stroke="#d4e3e6" stroke-width="0.65"/>
+        <text x="14" y="18.2" class="mono" font-size="2.5" fill="#eab308" font-weight="bold">X-STERN SURFACES &amp; DUCTED PUMP-JET</text>
+      </g>
+
+      <!-- 2. 主艇体：13.05:1 修长 HY-100 单耐压壳体与平滑导弹龟背 (X=28..420, Y=41.0..72.0 · 艇高 31.0 单位 = 13.1m) -->
+      <!-- 下半暗红防污与消音瓦船底背衬 -->
+      <path d="M 32.0 56.5 L 420.0 56.5 C 420.0 66.0 403.0 72.0 378.0 72.0 L 76.0 72.0 C 55.0 72.0 40.0 67.0 32.0 62.0 Z"
+            fill="#1e0d12" stroke="#ff5a36" stroke-width="0.95"/>
+      <!-- 全艇主轮廓 (含 X=176..298 段平滑融入围壳的低阻通用导弹舱龟背导流脊 Y=39.2) -->
+      <path d="M 32.0 51.0
+               C 40.0 46.0 55.0 41.0 76.0 41.0
+               L 174.0 41.0
+               L 184.0 39.2
+               L 296.0 39.2
+               L 334.0 41.0
+               L 378.0 41.0
+               C 403.0 41.0 420.0 47.0 420.0 56.5
+               C 420.0 66.0 403.0 72.0 378.0 72.0
+               L 76.0 72.0
+               C 55.0 72.0 40.0 67.0 32.0 62.0
+               Z"
+            fill="#08131b" fill-opacity="0.88" stroke="#d4e3e6" stroke-width="1.3"/>
+      <!-- 艇体中轴线与主压载水舱底部流水孔群 -->
+      <line x1="34" y1="56.5" x2="419" y2="56.5" stroke="#2c3b40" stroke-width="0.6" stroke-dasharray="5 2.5"/>
+      <g stroke="#4a6368" stroke-width="1.1" stroke-dasharray="2.0 1.5">
+        <line x1="68" y1="70.5" x2="98" y2="70.5"/>
+        <line x1="342" y1="70.5" x2="376" y2="70.5"/>
+      </g>
+
+      <!-- 3. 艇尾全电推进系统：PMM 永磁电机直驱舱 + 涡轮发电机舱 + S1B 42年全寿命压水核反应堆舱内透视 (X=66..182) -->
+      <g id="s1b-reactor-pmm-electric-drive-cutaway">
+        <!-- (A) 永磁推进电机舱 (PMM · Permanent Magnet Motor · 取消机械减速齿轮箱 · X=66..102) -->
+        <polygon points="66,48.5 102,45.0 102,68.0 66,64.5" fill="#07151f" fill-opacity="0.78" stroke="#38bdf8" stroke-width="0.85"/>
+        <!-- 泵喷直驱主推进轴与大型环形永磁同步电机 (PMM Stator/Rotor Rings) -->
+        <line x1="34.0" y1="56.5" x2="102.0" y2="56.5" stroke="#eab308" stroke-width="1.3"/>
+        <rect x="75.0" y="47.2" width="18.0" height="18.6" rx="2.0" fill="#0d2230" stroke="#eab308" stroke-width="0.95"/>
+        <rect x="78.2" y="49.5" width="11.6" height="14.0" rx="1.2" fill="#133246" stroke="#38bdf8" stroke-width="0.75"/>
+        <line x1="75.0" y1="52.0" x2="93.0" y2="52.0" stroke="#eab308" stroke-width="0.55"/>
+        <line x1="75.0" y1="61.0" x2="93.0" y2="61.0" stroke="#eab308" stroke-width="0.55"/>
+        <text x="84.0" y="57.3" text-anchor="middle" class="mono" font-size="2.3" fill="#eab308" font-weight="bold">PMM MOTOR</text>
+
+        <!-- (B) 蒸汽涡轮发电机与主配电变频器舱 (Turbo-Electric Generators · X=104..138) -->
+        <rect x="104.0" y="44.2" width="34.0" height="24.6" rx="1.5" fill="#07151f" fill-opacity="0.72" stroke="#eab308" stroke-width="0.8" stroke-dasharray="3 1.5"/>
+        <rect x="108.0" y="47.5" width="26.0" height="8.0" rx="1.0" fill="#0d2230" stroke="#38bdf8" stroke-width="0.65"/>
+        <rect x="108.0" y="57.5" width="26.0" height="8.0" rx="1.0" fill="#0d2230" stroke="#eab308" stroke-width="0.65"/>
+        <!-- 高压直流电力母线 (HVDC Power Bus 连接涡轮发电机与 PMM 永磁电机) -->
+        <line x1="102.0" y1="51.5" x2="108.0" y2="51.5" stroke="#38bdf8" stroke-width="0.9"/>
+        <line x1="102.0" y1="61.5" x2="108.0" y2="61.5" stroke="#38bdf8" stroke-width="0.9"/>
+        <text x="121.0" y="52.4" text-anchor="middle" class="mono" font-size="2.2" fill="#38bdf8">TURBO-GEN</text>
+        <text x="121.0" y="62.4" text-anchor="middle" class="mono" font-size="2.2" fill="#eab308">HVDC BUS</text>
+
+        <!-- (C) S1B 42年全寿命自然循环压水核反应堆舱 (S1B Life-of-Ship PWR · X=140..182, Y=43.2..69.8) -->
+        <rect x="140.0" y="43.2" width="42.0" height="26.6" rx="2.0" fill="#1d0c10" fill-opacity="0.8" stroke="#ff5a36" stroke-width="0.95"/>
+        <circle cx="161.0" cy="56.5" r="7.2" fill="#2c1015" stroke="#ff5a36" stroke-width="0.95"/>
+        <circle cx="161.0" cy="56.5" r="3.5" fill="#ff5a36" fill-opacity="0.7"/>
+        <line x1="161.0" y1="44.0" x2="161.0" y2="49.3" stroke="#eab308" stroke-width="1.2"/>
+        <rect x="144.5" y="47.2" width="5.8" height="18.6" rx="1.0" fill="#14090c" stroke="#eab308" stroke-width="0.65"/>
+        <rect x="171.7" y="47.2" width="5.8" height="18.6" rx="1.0" fill="#14090c" stroke="#eab308" stroke-width="0.65"/>
+        <text x="161.0" y="68.2" text-anchor="middle" class="mono" font-size="2.4" fill="#ff5a36" font-weight="bold">S1B 42-YR PWR</text>
+      </g>
+
+      <!-- 4. 核心灵魂：通用导弹舱 (CMC · Common Missile Compartment · 4组 Quad-Pack = 16联装 87英寸三叉戟 D5LE 发射井 · X=186..286) -->
+      <g id="cmc-16-trident-d5le-cutaway">
+        <!-- CMC 模块舱段高亮分界框 (X=186.0 .. 286.0) -->
+        <rect x="186.0" y="39.2" width="100.0" height="32.8" fill="#140b10" fill-opacity="0.48" stroke="#ff5a36" stroke-width="1.05" stroke-dasharray="3.5 1.8"/>
+        <line x1="186.0" y1="36.2" x2="186.0" y2="74.5" stroke="#38bdf8" stroke-width="0.85" stroke-dasharray="2.5 1.5"/>
+        <line x1="286.0" y1="36.2" x2="286.0" y2="74.5" stroke="#38bdf8" stroke-width="0.85" stroke-dasharray="2.5 1.5"/>
+        <!-- 4组 Quad-Pack 模块分隔虚线 (X=211, 236, 261) -->
+        <line x1="211.0" y1="39.2" x2="211.0" y2="72.0" stroke="#38bdf8" stroke-width="0.7" stroke-dasharray="2 1.2"/>
+        <line x1="236.0" y1="39.2" x2="236.0" y2="72.0" stroke="#38bdf8" stroke-width="0.7" stroke-dasharray="2 1.2"/>
+        <line x1="261.0" y1="39.2" x2="261.0" y2="72.0" stroke="#38bdf8" stroke-width="0.7" stroke-dasharray="2 1.2"/>
+
+        <!-- 单侧可见 8 具（全艇 2×8 = 16 具）直径 2.21m (87英寸) 三叉戟 D5LE 垂直发射筒剖面 -->
+        <!-- Quad-Pack 4 (Tube 15 &amp; 13: X=189..208) -->
+        <rect x="189.5" y="40.8" width="8.2" height="29.2" rx="0.8" fill="#1c0d12" stroke="#ff5a36" stroke-width="0.8"/>
+        <rect x="191.6" y="43.0" width="4.0" height="24.5" fill="#0d2230" stroke="#eab308" stroke-width="0.5"/>
+        <path d="M 191.6 43.0 C 191.6 41.5 195.6 41.5 195.6 43.0 Z" fill="#ff5a36"/>
+        <rect x="199.8" y="40.8" width="8.2" height="29.2" rx="0.8" fill="#1c0d12" stroke="#ff5a36" stroke-width="0.8"/>
+        <rect x="201.9" y="43.0" width="4.0" height="24.5" fill="#0d2230" stroke="#eab308" stroke-width="0.5"/>
+        <path d="M 201.9 43.0 C 201.9 41.5 205.9 41.5 205.9 43.0 Z" fill="#ff5a36"/>
+
+        <!-- Quad-Pack 3 (Tube 11 &amp; 9: X=214..233) -->
+        <rect x="214.5" y="40.8" width="8.2" height="29.2" rx="0.8" fill="#1c0d12" stroke="#ff5a36" stroke-width="0.8"/>
+        <rect x="216.6" y="43.0" width="4.0" height="24.5" fill="#0d2230" stroke="#eab308" stroke-width="0.5"/>
+        <path d="M 216.6 43.0 C 216.6 41.5 220.6 41.5 220.6 43.0 Z" fill="#ff5a36"/>
+        <rect x="224.8" y="40.8" width="8.2" height="29.2" rx="0.8" fill="#1c0d12" stroke="#ff5a36" stroke-width="0.8"/>
+        <rect x="226.9" y="43.0" width="4.0" height="24.5" fill="#0d2230" stroke="#eab308" stroke-width="0.5"/>
+        <path d="M 226.9 43.0 C 226.9 41.5 230.9 41.5 230.9 43.0 Z" fill="#ff5a36"/>
+
+        <!-- Quad-Pack 2 (Tube 7 &amp; 5: X=239..258) -->
+        <rect x="239.5" y="40.8" width="8.2" height="29.2" rx="0.8" fill="#1c0d12" stroke="#ff5a36" stroke-width="0.8"/>
+        <rect x="241.6" y="43.0" width="4.0" height="24.5" fill="#0d2230" stroke="#eab308" stroke-width="0.5"/>
+        <path d="M 241.6 43.0 C 241.6 41.5 245.6 41.5 245.6 43.0 Z" fill="#ff5a36"/>
+        <rect x="249.8" y="40.8" width="8.2" height="29.2" rx="0.8" fill="#1c0d12" stroke="#ff5a36" stroke-width="0.8"/>
+        <rect x="251.9" y="43.0" width="4.0" height="24.5" fill="#0d2230" stroke="#eab308" stroke-width="0.5"/>
+        <path d="M 251.9 43.0 C 251.9 41.5 255.9 41.5 255.9 43.0 Z" fill="#ff5a36"/>
+
+        <!-- Quad-Pack 1 (Tube 3 &amp; 1 · 已齐射打开发射井盖: X=264..283) -->
+        <rect x="261.5" y="40.8" width="8.2" height="29.2" rx="0.8" fill="#091620" stroke="#38bdf8" stroke-width="0.85"/>
+        <rect x="272.5" y="40.8" width="8.2" height="29.2" rx="0.8" fill="#091620" stroke="#ff5a36" stroke-width="0.85"/>
+        <!-- 掀开的 1号与2号发射井重装甲顶盖 -->
+        <line x1="269.7" y1="39.2" x2="271.5" y2="35.2" stroke="#d4e3e6" stroke-width="1.1"/>
+        <line x1="280.7" y1="39.2" x2="282.5" y2="35.2" stroke="#d4e3e6" stroke-width="1.1"/>
+      </g>
+
+      <!-- 5. 流线型指挥台围壳 + 围壳前水平舵 (Sail-Mounted Fairwater Planes) + 光电桅杆群 (X=294..336) -->
+      <g id="sail-and-fairwater-planes">
+        <!-- 指挥台围壳主体 (前缘大曲率圆弧过渡 Fillet · X=294..334, Y=21.5..41.0) -->
+        <path d="M 294.0 39.2 L 298.5 21.5 L 323.5 21.5 L 328.5 36.5 C 330.5 39.5 333.5 41.0 337.0 41.0 L 294.0 41.0 Z"
+              fill="#0c1d29" stroke="#d4e3e6" stroke-width="1.2"/>
+        <line x1="297.0" y1="28.5" x2="325.8" y2="28.5" stroke="#38bdf8" stroke-width="0.65"/>
+        <!-- 哥伦比亚级标志性特征：位于指挥台围壳上的前水平舵 (Sail-Mounted Fairwater Planes · X=308..324, Y=29.5..33.2) -->
+        <ellipse cx="316.5" cy="31.5" rx="7.8" ry="1.9" fill="#16364a" stroke="#eab308" stroke-width="1.05"/>
+        <line x1="309.5" y1="31.5" x2="323.5" y2="31.5" stroke="#d4e3e6" stroke-width="0.75"/>
+        <circle cx="318.0" cy="31.5" r="0.9" fill="#eab308"/>
+        <!-- 围壳侧面「826」白色战术舷号 -->
+        <text x="306.5" y="27.2" text-anchor="middle" class="mono" font-size="3.6" fill="#d4e3e6" font-weight="bold">826</text>
+
+        <!-- AN/BVS-1 非穿透光电桅杆 (Photonics Masts)、ESM 电子战桅杆与高数据率卫通天线 (Y=9.5..21.5) -->
+        <rect x="319.5" y="11.5" width="1.6" height="10.0" fill="#163244" stroke="#d4e3e6" stroke-width="0.65"/>
+        <rect x="318.5" y="9.2" width="3.6" height="2.5" rx="0.5" fill="#0d2230" stroke="#38bdf8" stroke-width="0.7"/>
+        <circle cx="320.8" cy="10.4" r="0.65" fill="#ff5a36"/>
+        <line x1="313.5" y1="21.5" x2="313.5" y2="12.8" stroke="#d4e3e6" stroke-width="1.0"/>
+        <circle cx="313.5" cy="12.2" r="1.1" fill="#38bdf8"/>
+        <line x1="307.5" y1="21.5" x2="307.5" y2="14.5" stroke="#8aa1a7" stroke-width="0.8"/>
+        <text x="345" y="13.5" class="mono" font-size="2.5" fill="#38bdf8" font-weight="bold">SAIL-MOUNTED FAIRWATER PLANES</text>
+        <text x="345" y="18.2" class="mono" font-size="2.4" fill="#8aa1a7">AN/BVS-1 PHOTONICS + LAB SONAR</text>
+      </g>
+
+      <!-- 6. 前部指挥控制舱、4×533mm Mk 48 ADCAP 鱼雷舱、LWWAA 宽孔径侧舷声呐阵与艇首 LAB 大孔径声呐罩 (X=336..420) -->
+      <g id="bow-torpedo-and-lab-sonar">
+        <!-- 作战指挥中心 (CACS) 与居住舱段 + 4×533mm 鱼雷室透视 (X=338..392) -->
+        <rect x="340.0" y="43.5" width="48.0" height="25.5" rx="2.0" fill="#07151f" fill-opacity="0.72" stroke="#38bdf8" stroke-width="0.8" stroke-dasharray="3 1.5"/>
+        <line x1="340.0" y1="52.0" x2="388.0" y2="52.0" stroke="#2c3b40" stroke-width="0.65"/>
+        <line x1="340.0" y1="61.0" x2="388.0" y2="61.0" stroke="#2c3b40" stroke-width="0.65"/>
+        <!-- 4具 533mm (21英寸) Mk 48 Mod 7 ADCAP 重型鱼雷发射管与备用鱼雷 -->
+        <g stroke="#ff5a36" stroke-width="0.85">
+          <line x1="366.0" y1="54.2" x2="394.0" y2="54.2"/>
+          <line x1="366.0" y1="57.8" x2="394.0" y2="57.8"/>
+        </g>
+        <rect x="346.0" y="53.4" width="14.0" height="1.6" rx="0.6" fill="#eab308"/>
+        <rect x="346.0" y="57.0" width="14.0" height="1.6" rx="0.6" fill="#eab308"/>
+        <ellipse cx="395.5" cy="54.2" rx="2.2" ry="0.9" fill="#050a0e" stroke="#38bdf8" stroke-width="0.65"/>
+        <ellipse cx="395.5" cy="57.8" rx="2.2" ry="0.9" fill="#050a0e" stroke="#38bdf8" stroke-width="0.65"/>
+
+        <!-- 两舷 LWWAA 轻型宽孔径光纤侧舷声呐阵 (3块保形阵列板 · Y=63.2..67.5) -->
+        <g fill="#0c2434" fill-opacity="0.75" stroke="#38bdf8" stroke-width="0.75">
+          <rect x="292.0" y="63.5" width="16.0" height="4.2" rx="0.6"/>
+          <rect x="316.0" y="63.5" width="16.0" height="4.2" rx="0.6"/>
+          <rect x="340.0" y="63.5" width="16.0" height="4.2" rx="0.6"/>
+        </g>
+
+        <!-- 艇首 AN/BQQ-10 LAB 大孔径保形声呐罩 (Large Aperture Bow Array · X=392..420) + 下颌高频声呐 -->
+        <path d="M 392.0 42.5 C 408.0 43.2 419.5 48.5 419.5 56.5 C 419.5 64.5 408.0 69.8 392.0 70.5 Z"
+              fill="#112b3c" fill-opacity="0.82" stroke="#38bdf8" stroke-width="1.05" stroke-dasharray="2.5 1.2"/>
+        <!-- LAB 保形水听器阵列与顶部高频下颌声呐窗 -->
+        <path d="M 398.0 46.5 C 410.0 47.5 417.0 51.5 417.0 56.5 C 417.0 61.5 410.0 65.5 398.0 66.5 Z"
+              fill="#183b52" stroke="#eab308" stroke-width="0.85"/>
+        <line x1="398.0" y1="51.5" x2="415.0" y2="51.5" stroke="#38bdf8" stroke-width="0.55"/>
+        <line x1="398.0" y1="56.5" x2="417.0" y2="56.5" stroke="#38bdf8" stroke-width="0.55"/>
+        <line x1="398.0" y1="61.5" x2="415.0" y2="61.5" stroke="#38bdf8" stroke-width="0.55"/>
+        <polygon points="384.0,41.2 396.0,42.2 394.0,45.2 383.0,44.2" fill="#1c3f56" stroke="#eab308" stroke-width="0.75"/>
+      </g>
+
+      <!-- 7. 底部舱段工程标尺与总师标注 (Y=78..85 · 严格净空排布) -->
+      <text x="118.0" y="79.5" text-anchor="middle" class="mono" font-size="2.5" fill="#eab308" font-weight="bold">◀ TURBO-ELECTRIC PMM + S1B 42-YR REACTOR ▶</text>
+      <text x="236.0" y="79.5" text-anchor="middle" class="mono" font-size="2.5" fill="#ff5a36" font-weight="bold">◀ CMC: 4×QUAD-PACK (16×87" TRIDENT II D5LE) ▶</text>
+      <text x="368.0" y="79.5" text-anchor="middle" class="mono" font-size="2.5" fill="#38bdf8" font-weight="bold">◀ 4×533MM ADCAP + LAB SONAR ▶</text>
+    </g>
+    <g>
+      <rect x="986" y="84" width="282" height="192" fill="#070d11" stroke="#2c3b40" stroke-width="1"/>
+      <rect x="986" y="84" width="282" height="22" fill="#0d1e28" stroke="#2c3b40" stroke-width="0.9"/>
+      <text x="996" y="99" class="mono" font-size="9.0" fill="#38bdf8" font-weight="bold">ELECTRIC BOAT · SSBN-826 SPECS</text>
+      <text x="996" y="120" class="mono" font-size="7.6" fill="#8aa1a7">DISPLACEMENT (SURF/SUB):</text>
+      <text x="1258" y="120" text-anchor="end" class="mono" font-size="7.6" fill="#d4e3e6">17,800T / 20,810T</text>
+      <text x="996" y="138" class="mono" font-size="7.6" fill="#8aa1a7">DIMENSIONS (L×B×D):</text>
+      <text x="1258" y="138" text-anchor="end" class="mono" font-size="7.6" fill="#38bdf8">171.0M × 13.1M × 10.0M</text>
+      <text x="996" y="156" class="mono" font-size="7.6" fill="#8aa1a7">PRESSURE HULL:</text>
+      <text x="1258" y="156" text-anchor="end" class="mono" font-size="7.6" fill="#d4e3e6">Ø13.1M HY-100 STEEL (42-YR LIFE)</text>
+      <text x="996" y="174" class="mono" font-size="7.6" fill="#8aa1a7">NUCLEAR REACTOR:</text>
+      <text x="1258" y="174" text-anchor="end" class="mono" font-size="7.6" fill="#ff5a36">1×GE S1B PWR (NO REFUELING)</text>
+      <text x="996" y="192" class="mono" font-size="7.6" fill="#8aa1a7">PROPULSION DRIVE:</text>
+      <text x="1258" y="192" text-anchor="end" class="mono" font-size="7.6" fill="#eab308">TURBO-ELECTRIC PMM + PUMP-JET</text>
+      <text x="996" y="210" class="mono" font-size="7.6" fill="#8aa1a7">CONTROL SURFACES:</text>
+      <text x="1258" y="210" text-anchor="end" class="mono" font-size="7.6" fill="#38bdf8">45° X-STERN + SAIL PLANES</text>
+      <line x1="996" y1="222" x2="1258" y2="222" stroke="#1e2c33" stroke-width="1"/>
+      <text x="996" y="238" class="mono" font-size="8.0" fill="#38bdf8">GEARLESS ULTRA-QUIET ARCHITECTURE:</text>
+      <text x="996" y="253" class="mono" font-size="7.6" fill="#d4e3e6">PERMANENT MAGNET MOTOR (NO GEARBOX)</text>
+      <text x="996" y="266" class="mono" font-size="7.6" fill="#8aa1a7">42-YEAR LIFE-OF-SHIP NUCLEAR CORE</text>
+    </g>
+
+    <rect x="44" y="304" width="1232" height="216" fill="#091116" fill-opacity="0.45" stroke="#2c3b40"/>
+    <text font-size="9.5" x="58" y="324" class="p mono" fill="#38bdf8">02 / ORTHOGRAPHIC TOP VIEW · 4×QUAD-PACK (2×8) D5LE HATCHES &amp; X-STERN CONTROL SURFACES</text>
+    <text x="975" y="324" text-anchor="end" class="p mono" fill="#5f7c84" font-size="9">BEAM: 13.1M · ASPECT: 13.05:1</text>
+    <g transform="translate(76.0,330.0) scale(2.020,2.020)">
+
+      <!-- 0. 顶视纵轴中心基准线、13.1m 艇宽工程标尺与顶部模块标注 (严格净空零碰撞) -->
+      <line x1="8" y1="44.0" x2="424" y2="44.0" stroke="#2c3b40" stroke-width="0.6" stroke-dasharray="6 3"/>
+      <!-- 左端 13.1m 艇宽工程标尺 (Y=28.5 .. 59.5 · 共 31.0 单位) -->
+      <line x1="9.5" y1="28.5" x2="9.5" y2="59.5" stroke="#38bdf8" stroke-width="0.65"/>
+      <line x1="7.2" y1="28.5" x2="12.0" y2="28.5" stroke="#38bdf8" stroke-width="0.7"/>
+      <line x1="7.2" y1="59.5" x2="12.0" y2="59.5" stroke="#38bdf8" stroke-width="0.7"/>
+      <text x="6.2" y="44.0" text-anchor="middle" transform="rotate(-90 6.2 44.0)" class="mono" font-size="2.5" fill="#38bdf8">BEAM 13.1M</text>
+
+      <!-- 顶部左舷战略模块说明 (净空区 Y=9.2) -->
+      <text x="16" y="9.2" class="mono" font-size="2.5" fill="#eab308" font-weight="bold">STERN: X-CONTROL SURFACES &amp; PMM PUMP-JET</text>
+      <text x="184" y="9.2" class="mono" font-size="2.5" fill="#ff5a36" font-weight="bold">MIDSHIP: CMC 4×QUAD-PACK (16×TRIDENT II D5LE)</text>
+      <text x="342" y="9.2" class="mono" font-size="2.5" fill="#38bdf8" font-weight="bold">SAIL PLANES &amp; LAB SONAR</text>
+
+      <!-- 1. 艇尾标志性 X 形四翼控制舵面 (X-Stern Control Surfaces · X=32..64) + 环形导管泵喷推进器 (#eab308) -->
+      <g id="top-x-stern-and-pumpjet">
+        <!-- 左舷侧 X 形双斜翼投影 (左上翼与左下翼 45° 斜置交叠 + 全动舵面铰链分割线 · Y=14.8..30.0) -->
+        <polygon points="34,34.5 41,15.2 52,15.2 63,29.5" fill="#0d202c" stroke="#d4e3e6" stroke-width="1.1"/>
+        <polygon points="35,34.5 43,18.2 54,18.2 61,29.5" fill="#132c3d" fill-opacity="0.75" stroke="#38bdf8" stroke-width="0.8"/>
+        <line x1="37.5" y1="24.8" x2="57.5" y2="22.5" stroke="#eab308" stroke-width="0.65" stroke-dasharray="2 1"/>
+        <!-- 左上斜翼尖 TB-29A 细线拖曳线列声呐流线型荚舱 -->
+        <rect x="31.5" y="14.2" width="23.5" height="2.2" rx="1.0" fill="#0d2230" stroke="#38bdf8" stroke-width="0.85"/>
+        <circle cx="32.2" cy="15.3" r="0.7" fill="#ff5a36"/>
+
+        <!-- 右舷侧 X 形双斜翼投影 (右上翼与右下翼 45° 斜置交叠 · Y=58.0..73.2) -->
+        <polygon points="34,53.5 41,72.8 52,72.8 63,58.5" fill="#0d202c" stroke="#d4e3e6" stroke-width="1.1"/>
+        <polygon points="35,53.5 43,69.8 54,69.8 61,58.5" fill="#132c3d" fill-opacity="0.75" stroke="#38bdf8" stroke-width="0.8"/>
+        <line x1="37.5" y1="63.2" x2="57.5" y2="65.5" stroke="#eab308" stroke-width="0.65" stroke-dasharray="2 1"/>
+        <!-- 右下斜翼尖 TB-16 粗线拖曳声呐释放管 -->
+        <rect x="33.0" y="71.6" width="21.5" height="2.0" rx="0.9" fill="#0d2230" stroke="#38bdf8" stroke-width="0.75"/>
+
+        <!-- 环形导管泵喷推进器顶视图 (Ducted Pump-Jet Propulsor · X=15.0..34.0, Y=35.8..52.2 · #eab308) -->
+        <polygon points="18.0,36.8 31.0,35.2 34.0,36.5 34.0,51.5 31.0,52.8 18.0,51.2"
+                 fill="#141e24" stroke="#eab308" stroke-width="1.2"/>
+        <line x1="28.2" y1="35.8" x2="28.2" y2="52.2" stroke="#38bdf8" stroke-width="0.8" stroke-dasharray="1.6 1.0"/>
+        <line x1="23.0" y1="36.4" x2="23.0" y2="51.6" stroke="#eab308" stroke-width="1.05" stroke-dasharray="1.8 1.0"/>
+        <polygon points="14.8,44.0 18.2,41.5 18.2,46.5" fill="#eab308" stroke="#d4e3e6" stroke-width="0.65"/>
+      </g>
+
+      <!-- 2. 主艇体：13.05:1 修长流线型单耐压壳体外廓 (X=28..420, Y=28.5..59.5 · 严格锁定 31.0 单位艇宽 = 13.1m) -->
+      <path d="M 32.0 38.2
+               C 40.0 33.4 55.0 28.5 76.0 28.5
+               L 378.0 28.5
+               C 403.0 28.5 420.0 34.5 420.0 44.0
+               C 420.0 53.5 403.0 59.5 378.0 59.5
+               L 76.0 59.5
+               C 55.0 59.5 40.0 54.6 32.0 49.8
+               Z"
+            fill="#08131b" stroke="#d4e3e6" stroke-width="1.35"/>
+
+      <!-- 内部 HY-100 耐压壳壁与通用导弹舱龟背上层甲板边线 (X=174..334, Y=31.0..57.0) -->
+      <path d="M 68.0 30.2 H 376.0 M 68.0 57.8 H 376.0" fill="none" stroke="#38bdf8" stroke-width="0.65" stroke-dasharray="4.5 2.2"/>
+      <rect x="178.0" y="31.5" width="154.0" height="25.0" rx="2.5" fill="#0b1b26" fill-opacity="0.55" stroke="#38bdf8" stroke-width="0.7"/>
+      <g stroke="#2c3b40" stroke-width="0.6" stroke-dasharray="2 1.5">
+        <line x1="66" y1="28.7" x2="66" y2="59.3"/>
+        <line x1="102" y1="28.7" x2="102" y2="59.3"/>
+        <line x1="138" y1="28.7" x2="138" y2="59.3"/>
+        <line x1="184" y1="28.7" x2="184" y2="59.3"/>
+        <line x1="288" y1="28.7" x2="288" y2="59.3"/>
+        <line x1="336" y1="28.7" x2="336" y2="59.3"/>
+      </g>
+
+      <!-- 3. 艇尾全电推进系统 X 光透视：PMM 永磁推进电机 + 涡轮发电机 + S1B 42年全寿命压水堆 (X=66..182) -->
+      <g id="top-s1b-reactor-pmm-drive">
+        <!-- 主推进轴与大直径环形永磁同步电机 (PMM · X=68..100) -->
+        <line x1="34.0" y1="44.0" x2="102.0" y2="44.0" stroke="#eab308" stroke-width="1.3"/>
+        <rect x="74.0" y="34.5" width="19.0" height="19.0" rx="2.0" fill="#0d2230" stroke="#eab308" stroke-width="0.95"/>
+        <rect x="77.5" y="37.2" width="12.0" height="13.6" rx="1.2" fill="#133246" stroke="#38bdf8" stroke-width="0.75"/>
+        <text x="83.5" y="44.8" text-anchor="middle" class="mono" font-size="2.3" fill="#eab308" font-weight="bold">PMM</text>
+
+        <!-- 左右双蒸汽涡轮发电机组与高压直流配电母线 (Turbo-Electric Generators · X=104..138) -->
+        <rect x="105.0" y="32.5" width="30.0" height="9.2" rx="1.2" fill="#071620" stroke="#38bdf8" stroke-width="0.75"/>
+        <rect x="105.0" y="46.3" width="30.0" height="9.2" rx="1.2" fill="#071620" stroke="#38bdf8" stroke-width="0.75"/>
+        <line x1="93.0" y1="38.5" x2="105.0" y2="38.5" stroke="#eab308" stroke-width="0.85"/>
+        <line x1="93.0" y1="49.5" x2="105.0" y2="49.5" stroke="#eab308" stroke-width="0.85"/>
+        <text x="120.0" y="38.0" text-anchor="middle" class="mono" font-size="2.1" fill="#38bdf8">TURBO-GEN L</text>
+        <text x="120.0" y="51.8" text-anchor="middle" class="mono" font-size="2.1" fill="#38bdf8">TURBO-GEN R</text>
+
+        <!-- S1B 42年全寿命自然循环压水核反应堆屏蔽舱与圆形压力容器顶盖 (X=140..182, cx=161, cy=44) -->
+        <rect x="140.0" y="31.5" width="42.0" height="25.0" rx="2.0" fill="#1d0c10" fill-opacity="0.78" stroke="#ff5a36" stroke-width="0.95"/>
+        <circle cx="161.0" cy="44.0" r="7.8" fill="#2b1015" stroke="#ff5a36" stroke-width="0.95"/>
+        <circle cx="161.0" cy="44.0" r="3.6" fill="#ff5a36" fill-opacity="0.7"/>
+        <line x1="153.2" y1="44.0" x2="168.8" y2="44.0" stroke="#eab308" stroke-width="0.65"/>
+        <line x1="161.0" y1="36.2" x2="161.0" y2="51.8" stroke="#eab308" stroke-width="0.65"/>
+      </g>
+
+      <!-- 4. 核心灵魂：通用导弹舱 (CMC · 4组 Quad-Pack = 2×8 共 16 座直径 87英寸 UGM-133A 三叉戟 II D5LE 发射井 · X=186..286) -->
+      <g id="top-cmc-4x4-quad-packs">
+        <!-- CMC 总外框与 4 组 Quad-Pack 模块分界框 (QP-4 / QP-3 / QP-2 / QP-1) -->
+        <rect x="186.0" y="27.8" width="100.0" height="32.4" fill="#180b10" fill-opacity="0.45" stroke="#ff5a36" stroke-width="1.1" stroke-dasharray="3.5 1.8"/>
+        <line x1="186.0" y1="22.5" x2="186.0" y2="65.5" stroke="#38bdf8" stroke-width="0.85" stroke-dasharray="2.5 1.5"/>
+        <line x1="286.0" y1="22.5" x2="286.0" y2="65.5" stroke="#38bdf8" stroke-width="0.85" stroke-dasharray="2.5 1.5"/>
+        <!-- 4 组 Quad-Pack 独立钢结构模块盒 (每盒 2×2 = 4 具 87" 发射筒) -->
+        <rect x="187.8" y="32.2" width="22.0" height="23.6" rx="1.2" fill="#0d1e2a" stroke="#38bdf8" stroke-width="0.8"/>
+        <rect x="212.8" y="32.2" width="22.0" height="23.6" rx="1.2" fill="#0d1e2a" stroke="#38bdf8" stroke-width="0.8"/>
+        <rect x="237.8" y="32.2" width="22.0" height="23.6" rx="1.2" fill="#0d1e2a" stroke="#38bdf8" stroke-width="0.8"/>
+        <rect x="262.8" y="32.2" width="22.0" height="23.6" rx="1.2" fill="#0d1e2a" stroke="#ff5a36" stroke-width="0.9"/>
+
+        <!-- 左舷偶数列 8 座发射井 (#16..#2 · cy=38.0) 与右舷奇数列 8 座发射井 (#15..#1 · cy=50.0) -->
+        <!-- Quad-Pack 4: Silos #16, #15 (cx=193.5) &amp; #14, #13 (cx=204.0) -->
+        <g fill="#1c0d12" stroke="#ff5a36" stroke-width="0.95">
+          <circle cx="193.5" cy="38.0" r="4.3"/><circle cx="193.5" cy="50.0" r="4.3"/>
+          <circle cx="204.0" cy="38.0" r="4.3"/><circle cx="204.0" cy="50.0" r="4.3"/>
+          <!-- Quad-Pack 3: Silos #12, #11 (cx=218.5) &amp; #10, #9 (cx=229.0) -->
+          <circle cx="218.5" cy="38.0" r="4.3"/><circle cx="218.5" cy="50.0" r="4.3"/>
+          <circle cx="229.0" cy="38.0" r="4.3"/><circle cx="229.0" cy="50.0" r="4.3"/>
+          <!-- Quad-Pack 2: Silos #8, #7 (cx=243.5) &amp; #6, #5 (cx=254.0) -->
+          <circle cx="243.5" cy="38.0" r="4.3"/><circle cx="243.5" cy="50.0" r="4.3"/>
+          <circle cx="254.0" cy="38.0" r="4.3"/><circle cx="254.0" cy="50.0" r="4.3"/>
+          <!-- Quad-Pack 1 后排: Silos #4, #3 (cx=268.5) -->
+          <circle cx="268.5" cy="38.0" r="4.3"/><circle cx="268.5" cy="50.0" r="4.3"/>
+        </g>
+
+        <!-- #3~#16 井内部 Trident II D5LE 导弹头锥与中心 Aerospike 激波杆点 X 光透视 -->
+        <g fill="#091824" stroke="#eab308" stroke-width="0.6">
+          <circle cx="193.5" cy="38.0" r="2.2"/><circle cx="193.5" cy="50.0" r="2.2"/>
+          <circle cx="204.0" cy="38.0" r="2.2"/><circle cx="204.0" cy="50.0" r="2.2"/>
+          <circle cx="218.5" cy="38.0" r="2.2"/><circle cx="218.5" cy="50.0" r="2.2"/>
+          <circle cx="229.0" cy="38.0" r="2.2"/><circle cx="229.0" cy="50.0" r="2.2"/>
+          <circle cx="243.5" cy="38.0" r="2.2"/><circle cx="243.5" cy="50.0" r="2.2"/>
+          <circle cx="254.0" cy="38.0" r="2.2"/><circle cx="254.0" cy="50.0" r="2.2"/>
+          <circle cx="268.5" cy="38.0" r="2.2"/><circle cx="268.5" cy="50.0" r="2.2"/>
+        </g>
+        <g fill="#38bdf8">
+          <circle cx="193.5" cy="38.0" r="0.65"/><circle cx="193.5" cy="50.0" r="0.65"/>
+          <circle cx="204.0" cy="38.0" r="0.65"/><circle cx="204.0" cy="50.0" r="0.65"/>
+          <circle cx="218.5" cy="38.0" r="0.65"/><circle cx="218.5" cy="50.0" r="0.65"/>
+          <circle cx="229.0" cy="38.0" r="0.65"/><circle cx="229.0" cy="50.0" r="0.65"/>
+          <circle cx="243.5" cy="38.0" r="0.65"/><circle cx="243.5" cy="50.0" r="0.65"/>
+          <circle cx="254.0" cy="38.0" r="0.65"/><circle cx="254.0" cy="50.0" r="0.65"/>
+          <circle cx="268.5" cy="38.0" r="0.65"/><circle cx="268.5" cy="50.0" r="0.65"/>
+        </g>
+
+        <!-- Quad-Pack 1 前排：#2号井与 #1号井 (cx=279.0) 舱盖向外侧掀开露出内部待发/齐射 D5LE MIRV 弹头阵列 -->
+        <circle cx="279.0" cy="38.0" r="4.4" fill="#2c1015" stroke="#38bdf8" stroke-width="1.15"/>
+        <circle cx="279.0" cy="38.0" r="2.6" fill="#ff5a36" stroke="#d4e3e6" stroke-width="0.65"/>
+        <circle cx="279.0" cy="38.0" r="0.9" fill="#eab308"/>
+        <!-- 向左舷掀开的 #2 号圆形重装甲井盖 -->
+        <ellipse cx="279.0" cy="31.2" rx="3.8" ry="1.5" fill="#163244" stroke="#d4e3e6" stroke-width="0.85"/>
+
+        <circle cx="279.0" cy="50.0" r="4.4" fill="#2c1015" stroke="#ff5a36" stroke-width="1.15"/>
+        <circle cx="279.0" cy="50.0" r="2.6" fill="#ff5a36" stroke="#d4e3e6" stroke-width="0.65"/>
+        <circle cx="279.0" cy="50.0" r="0.9" fill="#eab308"/>
+        <!-- 向右舷掀开的 #1 号圆形重装甲井盖 -->
+        <ellipse cx="279.0" cy="56.8" rx="3.8" ry="1.5" fill="#163244" stroke="#d4e3e6" stroke-width="0.85"/>
+      </g>
+
+      <!-- 5. 流线型指挥台围壳 + 围壳两侧展开的前水平舵 (Sail-Mounted Fairwater Planes · X=294..336) -->
+      <g id="top-sail-and-fairwater-planes">
+        <!-- 围壳两侧展开的大型可偏转前水平舵翼 (Sail-Mounted Fairwater Planes · Y=16.5..39.8 &amp; Y=48.2..71.5 · #eab308 高亮) -->
+        <polygon points="308.0,39.8 311.5,16.8 320.5,16.8 323.5,39.8" fill="#132e40" stroke="#eab308" stroke-width="1.1"/>
+        <line x1="316.0" y1="16.8" x2="316.0" y2="39.8" stroke="#38bdf8" stroke-width="0.75"/>
+        <polygon points="308.0,48.2 311.5,71.2 320.5,71.2 323.5,48.2" fill="#132e40" stroke="#eab308" stroke-width="1.1"/>
+        <line x1="316.0" y1="48.2" x2="316.0" y2="71.2" stroke="#38bdf8" stroke-width="0.75"/>
+
+        <!-- 流线型指挥台围壳顶视外廓 (X=294..334, Y=39.6..48.4) -->
+        <path d="M 294.0 41.2 L 302.0 39.6 L 324.0 39.6 C 330.0 39.6 334.0 41.5 334.0 44.0 C 334.0 46.5 330.0 48.4 324.0 48.4 L 302.0 48.4 L 294.0 46.8 Z"
+              fill="#102534" stroke="#d4e3e6" stroke-width="1.2"/>
+        <!-- 围壳顶光电桅杆、ESM 与卫通升降井口 -->
+        <circle cx="321.0" cy="44.0" r="1.5" fill="#050a0e" stroke="#38bdf8" stroke-width="0.7"/>
+        <circle cx="315.5" cy="44.0" r="1.3" fill="#050a0e" stroke="#d4e3e6" stroke-width="0.65"/>
+        <circle cx="310.0" cy="44.0" r="1.2" fill="#050a0e" stroke="#eab308" stroke-width="0.65"/>
+        <rect x="299.0" y="42.4" width="6.5" height="3.2" rx="0.8" fill="#050a0e" stroke="#38bdf8" stroke-width="0.65"/>
+      </g>
+
+      <!-- 6. 前部指挥舱、4×533mm Mk 48 ADCAP 鱼雷室、两舷 LWWAA 宽孔径光纤侧舷阵与艇首 LAB 保形声呐罩 (X=336..420) -->
+      <g id="top-bow-torpedo-and-sonar">
+        <!-- 两舷 LWWAA 轻型宽孔径光纤侧舷声呐阵 (左右各3块声学保形板 · Y=27.0 &amp; Y=59.5) -->
+        <g fill="#16384c" stroke="#38bdf8" stroke-width="0.75">
+          <rect x="292.0" y="27.2" width="16.0" height="1.5"/>
+          <rect x="316.0" y="27.2" width="16.0" height="1.5"/>
+          <rect x="340.0" y="27.2" width="16.0" height="1.5"/>
+          <rect x="292.0" y="59.3" width="16.0" height="1.5"/>
+          <rect x="316.0" y="59.3" width="16.0" height="1.5"/>
+          <rect x="340.0" y="59.3" width="16.0" height="1.5"/>
+        </g>
+
+        <!-- 前救生舱口与鱼雷装载斜舱口 (X=344..364) -->
+        <circle cx="348.0" cy="44.0" r="3.2" fill="#0b1d28" stroke="#d4e3e6" stroke-width="0.85"/>
+        <circle cx="348.0" cy="44.0" r="1.2" fill="none" stroke="#38bdf8" stroke-width="0.6"/>
+
+        <!-- 4具 533mm (21英寸) Mk 48 ADCAP 重型鱼雷发射管与备用鱼雷架 (X=356..396) -->
+        <g stroke="#ff5a36" stroke-width="0.85">
+          <line x1="366.0" y1="36.5" x2="395.0" y2="34.2"/>
+          <line x1="366.0" y1="39.5" x2="397.0" y2="37.5"/>
+          <line x1="366.0" y1="48.5" x2="397.0" y2="50.5"/>
+          <line x1="366.0" y1="51.5" x2="395.0" y2="53.8"/>
+        </g>
+        <rect x="354.0" y="36.0" width="10.5" height="1.5" rx="0.5" fill="#eab308"/>
+        <rect x="354.0" y="39.0" width="10.5" height="1.5" rx="0.5" fill="#eab308"/>
+        <rect x="354.0" y="47.5" width="10.5" height="1.5" rx="0.5" fill="#eab308"/>
+        <rect x="354.0" y="50.5" width="10.5" height="1.5" rx="0.5" fill="#eab308"/>
+
+        <!-- 艇首 AN/BQQ-10 LAB 大孔径保形声呐罩 (Large Aperture Bow Sonar · X=392..420) -->
+        <path d="M 392.0 30.0 C 408.0 30.8 419.5 36.2 419.5 44.0 C 419.5 51.8 408.0 57.2 392.0 58.0 Z"
+              fill="#112b3c" fill-opacity="0.82" stroke="#38bdf8" stroke-width="1.05" stroke-dasharray="2.5 1.2"/>
+        <path d="M 398.0 34.2 C 410.0 35.2 417.0 39.0 417.0 44.0 C 417.0 49.0 410.0 52.8 398.0 53.8 Z"
+              fill="#183b52" stroke="#eab308" stroke-width="0.9"/>
+        <circle cx="407.0" cy="44.0" r="2.2" fill="#0d2230" stroke="#38bdf8" stroke-width="0.7"/>
+      </g>
+
+      <!-- 7. 底部右舷净空区工程标注 (Y=79.5 · 严格净空零碰撞) -->
+      <text x="118.0" y="79.5" text-anchor="middle" class="mono" font-size="2.5" fill="#eab308" font-weight="bold">◀ S1B 42-YR REACTOR + TURBO-ELECTRIC PMM ▶</text>
+      <text x="236.0" y="79.5" text-anchor="middle" class="mono" font-size="2.5" fill="#ff5a36" font-weight="bold">◀ 2×8 = 16×87" TRIDENT II D5LE SILOS (4×QUAD-PACK) ▶</text>
+      <text x="368.0" y="79.5" text-anchor="middle" class="mono" font-size="2.5" fill="#38bdf8" font-weight="bold">◀ 4×533MM ADCAP + LWWAA + LAB ▶</text>
+    </g>
+    <g>
+      <rect x="986" y="316" width="282" height="192" fill="#070d11" stroke="#2c3b40" stroke-width="1"/>
+      <rect x="986" y="316" width="282" height="22" fill="#1c1012" stroke="#ff5a36" stroke-width="0.9"/>
+      <text x="996" y="331" class="mono" font-size="9.0" fill="#ff5a36" font-weight="bold">COMMON MISSILE COMPARTMENT (CMC)</text>
+      <text x="996" y="352" class="mono" font-size="7.6" fill="#8aa1a7">SLBM BATTERY:</text>
+      <text x="1258" y="352" text-anchor="end" class="mono" font-size="7.6" fill="#ff5a36">16×UGM-133A TRIDENT II D5LE</text>
+      <text x="996" y="370" class="mono" font-size="7.6" fill="#8aa1a7">CMC ARCHITECTURE:</text>
+      <text x="1258" y="370" text-anchor="end" class="mono" font-size="7.6" fill="#eab308">4×QUAD-PACK MODULES (87" TUBES)</text>
+      <text x="996" y="388" class="mono" font-size="7.6" fill="#8aa1a7">WARHEAD PAYLOAD:</text>
+      <text x="1258" y="388" text-anchor="end" class="mono" font-size="7.6" fill="#d4e3e6">UP TO 8–12×W88 (475KT) / W76-1</text>
+      <text x="996" y="406" class="mono" font-size="7.6" fill="#8aa1a7">MISSILE RANGE:</text>
+      <text x="1258" y="406" text-anchor="end" class="mono" font-size="7.6" fill="#d4e3e6">12,000+ KM · AEROSPIKE NOSE</text>
+      <text x="996" y="424" class="mono" font-size="7.6" fill="#8aa1a7">TORPEDO DEFENSE:</text>
+      <text x="1258" y="424" text-anchor="end" class="mono" font-size="7.6" fill="#38bdf8">4×533MM TUBES (MK48 ADCAP)</text>
+      <text x="996" y="442" class="mono" font-size="7.6" fill="#8aa1a7">SONAR COMPLEX:</text>
+      <text x="1258" y="442" text-anchor="end" class="mono" font-size="7.6" fill="#38bdf8">LAB CONFORMAL + LWWAA + TB-29A</text>
+      <line x1="996" y1="454" x2="1258" y2="454" stroke="#1e2c33" stroke-width="1"/>
+      <text x="996" y="470" class="mono" font-size="8.0" fill="#eab308">PLANNED COLUMBIA-CLASS FLEET (12):</text>
+      <text x="996" y="485" class="mono" font-size="7.6" fill="#d4e3e6">SSBN-826 DISTRICT OF COLUMBIA</text>
+      <text x="996" y="498" class="mono" font-size="7.6" fill="#8aa1a7">SSBN-827 WISCONSIN · SSBN-828 GROTON</text>
+    </g>
+  </g>
+</svg>

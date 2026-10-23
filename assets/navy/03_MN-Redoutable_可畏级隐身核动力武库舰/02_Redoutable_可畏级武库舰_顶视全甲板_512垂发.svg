@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 300" width="1120" height="300" data-asset-id="naval.redoutable.top" style="background:#080a0b;">
+  <defs>
+    <style>
+      svg { fill: none; stroke-linecap: butt; }
+      .s-dim { stroke: #2c3b40; stroke-width: 1; }
+      .s-line { stroke: #5f7c84; stroke-width: 1; }
+      .s-hi { stroke: #d4e3e6; stroke-width: 1.2; }
+      .s-alert { stroke: #ff5a36; stroke-width: 1.4; }
+      .s-focus { stroke: #38bdf8; stroke-width: 1.4; }
+      .f-dim { fill: #2c3b40; stroke: none; }
+      .f-line { fill: #5f7c84; stroke: none; }
+      .f-hi { fill: #d4e3e6; stroke: none; }
+      .f-alert { fill: #ff5a36; stroke: none; }
+      .f-panel { fill: #0c1113; }
+      text { font-family: "Rajdhani", "Bahnschrift", "DIN Alternate", "Microsoft YaHei", sans-serif; letter-spacing: 0.12em; }
+      text:not([stroke]) { stroke: none; }
+      text:not([fill]) { fill: #cfdde0; }
+      text:not([font-size]):not(.cap):not(.big) { font-size: 10px; }
+      text.cap { letter-spacing: 0.2em; text-transform: uppercase; }
+      text.cap:not([fill]) { fill: #8aa1a7; }
+      text.cap:not([font-size]) { font-size: 8.5px; }
+      text.mono { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; letter-spacing: 0.06em; }
+      text.big { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; font-weight: 600; letter-spacing: 0.08em; }
+      text.big:not([font-size]) { font-size: 18px; }
+      text.big:not([fill]) { fill: #d4e3e6; }
+      text.alert { fill: #ff5a36; }
+    </style>
+    <pattern id="cad-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#10181c" stroke-width="1"/>
+      <circle cx="20" cy="20" r="0.8" fill="#1b262b"/>
+    </pattern>
+    <pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#ff5a36" stroke-width="1.2" stroke-opacity="0.35"/>
+    </pattern>
+  </defs>
+
+  <!-- 1. 工程蓝图暗色底板与坐标网格图层 -->
+  <g id="layer-backdrop">
+    <rect x="0" y="0" width="1120" height="300" fill="#080a0b"/>
+    <rect x="20" y="20" width="1080" height="260" fill="url(#cad-grid)" stroke="#2c3b40" stroke-width="1"/>
+    <path d="M 20 36 V 20 H 36 M 1084 20 H 1100 V 36 M 20 264 V 280 H 36 M 1084 280 H 1100 V 264" fill="none" stroke="#38bdf8" stroke-width="1.5"/>
+    <line x1="20" y1="54" x2="1100" y2="54" stroke="#2c3b40" stroke-width="1"/>
+    <line x1="20" y1="254" x2="1100" y2="254" stroke="#2c3b40" stroke-width="1"/>
+    <text x="34" y="42" class="p mono" fill="#38bdf8" font-size="11" font-weight="bold">MN REDOUTABLE (CGN-38) · 512-CELL VLS MATRIX &amp; FULL DECK PLAN VIEW</text>
+    <text x="1086" y="42" text-anchor="end" class="p cap" fill="#d4e3e6" font-size="10.5">MN Redoutable「可畏级」隐身核动力武库舰 · 顶视全甲板与前部三大垂发方阵</text>
+    <text x="34" y="271" class="p mono" fill="#8aa1a7" font-size="9.5">3×FORWARD VLS BANKS (512 CELLS TOTAL) · TWIN STEALTH PAGODA TOWERS · AFT HELIDECK (H) · REF: F100-MIDDLE</text>
+    <text x="1086" y="271" text-anchor="end" class="p mono" fill="#5f7c84" font-size="9.5">POSEIDON NAVAL CAD ASSET · TRUE 1:1 ASPECT</text>
+  </g>
+
+  <!-- 2. 舰艇核心 CAD 矢量图层 (无损原生算子输出) -->
+  <g id="layer-ship-cad">
+    <g transform="translate(56.0,79.2) scale(2.291,1.994)">
+      <!-- 1. 多边形切角隐身船体与修长穿浪钻石尖艏外廓 (舰政标准规范) -->
+      <polygon points="10,24 22,15 66,12 228,12 318,16 382,25 432,37 382,49 318,58 228,62 66,62 22,59 10,50"
+               fill="#09151e" stroke="#d4e3e6" stroke-width="1.4"/>
+      <!-- 内倾干舷折角内边界线 (Tumblehome Deck Edge) -->
+      <polygon points="18,26 26,19 68,16 226,16 316,20 378,28 420,37 378,46 316,54 226,58 68,58 26,55 18,48"
+               fill="#0c1c26" stroke="#38bdf8" stroke-width="0.9"/>
+
+      <!-- 2. 舰尾多边形直升机甲板：红白虚线框 + 白色平行引导线 + 圆形 H 起降标志 (X=18..66 · 舰政标准规范 左端) -->
+      <rect x="24" y="21" width="38" height="32" fill="#081218" stroke="#ff5a36" stroke-width="0.8" stroke-dasharray="3 2"/>
+      <line x1="26" y1="33" x2="60" y2="33" stroke="#d4e3e6" stroke-width="1"/>
+      <line x1="26" y1="41" x2="60" y2="41" stroke="#d4e3e6" stroke-width="1"/>
+      <circle cx="43" cy="37" r="7.5" fill="none" stroke="#d4e3e6" stroke-width="1.2"/>
+      <text x="43" y="39.8" text-anchor="middle" class="p mono" font-size="8" fill="#d4e3e6" font-weight="bold">H</text>
+
+      <!-- 3. 后上层建筑俯视图 (Aft Stealth Pagoda · X=80..130)：八角切角堡垒 + 双黑色方形冷却格栅 + 中央白圆罩 -->
+      <polygon points="80,26 88,20 124,20 130,26 130,48 124,54 88,54 80,48" fill="#102430" stroke="#d4e3e6" stroke-width="1.2"/>
+      <polygon points="86,28 92,24 120,24 125,28 125,46 120,50 92,50 86,46" fill="#0b1a24" stroke="#38bdf8" stroke-width="0.85"/>
+      <rect x="92" y="31" width="8" height="12" rx="1.5" fill="#04080b" stroke="#38bdf8" stroke-width="0.8"/>
+      <circle cx="106" cy="37" r="4.5" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.8"/>
+      <rect x="113" y="31" width="8" height="12" rx="1.5" fill="#04080b" stroke="#38bdf8" stroke-width="0.8"/>
+
+      <!-- 4. 中段武器鞍部与两侧舷墙共形阵贴片 (X=130..146) -->
+      <rect x="131" y="26" width="14" height="22" fill="#071118" stroke="#38bdf8" stroke-width="0.8"/>
+      <rect x="134" y="32" width="8" height="10" fill="#142834" stroke="#ff5a36" stroke-width="0.8"/>
+      <rect x="128" y="13" width="20" height="3" fill="#183040" stroke="#d4e3e6" stroke-width="0.6"/>
+      <rect x="128" y="58" width="20" height="3" fill="#183040" stroke="#d4e3e6" stroke-width="0.6"/>
+
+      <!-- 5. 前上层建筑俯视图 (Forward Stealth Pagoda · X=146..196)：八角切角堡垒 + 双黑色格栅 + 中央白圆罩 + 前八角白盾 -->
+      <polygon points="146,25 154,19 188,19 196,26 196,48 188,55 154,55 146,49" fill="#102430" stroke="#d4e3e6" stroke-width="1.2"/>
+      <polygon points="152,28 158,23 184,23 190,28 190,46 184,51 158,51 152,46" fill="#0b1a24" stroke="#38bdf8" stroke-width="0.85"/>
+      <rect x="156" y="31" width="8" height="12" rx="1.5" fill="#04080b" stroke="#38bdf8" stroke-width="0.8"/>
+      <circle cx="171" cy="37" r="4.5" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.8"/>
+      <rect x="178" y="31" width="8" height="12" rx="1.5" fill="#04080b" stroke="#38bdf8" stroke-width="0.8"/>
+
+      <!-- 6. 前甲板核心灵魂：左右对称双排、前后三大方阵 512 单元超密集垂直发射井矩阵 (X=196..366 · 舰政标准规范) -->
+      <line x1="196" y1="37" x2="424" y2="37" stroke="#d4e3e6" stroke-width="0.8" stroke-dasharray="5 3"/>
+      <rect x="198.0" y="19.0" width="6.2" height="15.5" fill="#071218" stroke="#38bdf8" stroke-width="0.65"/><rect x="198.0" y="39.5" width="6.2" height="15.5" fill="#071218" stroke="#38bdf8" stroke-width="0.65"/><line x1="201.1" y1="19.0" x2="201.1" y2="34.5" stroke="#4a6368" stroke-width="0.45"/><line x1="201.1" y1="39.5" x2="201.1" y2="55.0" stroke="#4a6368" stroke-width="0.45"/><rect x="205.3" y="19.0" width="6.2" height="15.5" fill="#071218" stroke="#38bdf8" stroke-width="0.65"/><rect x="205.3" y="39.5" width="6.2" height="15.5" fill="#071218" stroke="#38bdf8" stroke-width="0.65"/><line x1="208.4" y1="19.0" x2="208.4" y2="34.5" stroke="#4a6368" stroke-width="0.45"/><line x1="208.4" y1="39.5" x2="208.4" y2="55.0" stroke="#4a6368" stroke-width="0.45"/><rect x="212.6" y="19.0" width="6.2" height="15.5" fill="#071218" stroke="#38bdf8" stroke-width="0.65"/><rect x="212.6" y="39.5" width="6.2" height="15.5" fill="#071218" stroke="#38bdf8" stroke-width="0.65"/><line x1="215.7" y1="19.0" x2="215.7" y2="34.5" stroke="#4a6368" stroke-width="0.45"/><line x1="215.7" y1="39.5" x2="215.7" y2="55.0" stroke="#4a6368" stroke-width="0.45"/><rect x="219.9" y="19.0" width="6.2" height="15.5" fill="#071218" stroke="#38bdf8" stroke-width="0.65"/><rect x="219.9" y="39.5" width="6.2" height="15.5" fill="#071218" stroke="#38bdf8" stroke-width="0.65"/><line x1="223.0" y1="19.0" x2="223.0" y2="34.5" stroke="#4a6368" stroke-width="0.45"/><line x1="223.0" y1="39.5" x2="223.0" y2="55.0" stroke="#4a6368" stroke-width="0.45"/><rect x="227.2" y="19.0" width="6.2" height="15.5" fill="#071218" stroke="#38bdf8" stroke-width="0.65"/><rect x="227.2" y="39.5" width="6.2" height="15.5" fill="#071218" stroke="#38bdf8" stroke-width="0.65"/><line x1="230.3" y1="19.0" x2="230.3" y2="34.5" stroke="#4a6368" stroke-width="0.45"/><line x1="230.3" y1="39.5" x2="230.3" y2="55.0" stroke="#4a6368" stroke-width="0.45"/><rect x="234.5" y="19.0" width="6.2" height="15.5" fill="#071218" stroke="#38bdf8" stroke-width="0.65"/><rect x="234.5" y="39.5" width="6.2" height="15.5" fill="#071218" stroke="#38bdf8" stroke-width="0.65"/><line x1="237.6" y1="19.0" x2="237.6" y2="34.5" stroke="#4a6368" stroke-width="0.45"/><line x1="237.6" y1="39.5" x2="237.6" y2="55.0" stroke="#4a6368" stroke-width="0.45"/><rect x="241.8" y="19.0" width="6.2" height="15.5" fill="#071218" stroke="#38bdf8" stroke-width="0.65"/><rect x="241.8" y="39.5" width="6.2" height="15.5" fill="#071218" stroke="#38bdf8" stroke-width="0.65"/><line x1="244.9" y1="19.0" x2="244.9" y2="34.5" stroke="#4a6368" stroke-width="0.45"/><line x1="244.9" y1="39.5" x2="244.9" y2="55.0" stroke="#4a6368" stroke-width="0.45"/><rect x="249.1" y="19.0" width="6.2" height="15.5" fill="#071218" stroke="#38bdf8" stroke-width="0.65"/><rect x="249.1" y="39.5" width="6.2" height="15.5" fill="#071218" stroke="#38bdf8" stroke-width="0.65"/><line x1="252.2" y1="19.0" x2="252.2" y2="34.5" stroke="#4a6368" stroke-width="0.45"/><line x1="252.2" y1="39.5" x2="252.2" y2="55.0" stroke="#4a6368" stroke-width="0.45"/><rect x="256.4" y="19.0" width="6.2" height="15.5" fill="#071218" stroke="#38bdf8" stroke-width="0.65"/><rect x="256.4" y="39.5" width="6.2" height="15.5" fill="#071218" stroke="#38bdf8" stroke-width="0.65"/><line x1="259.5" y1="19.0" x2="259.5" y2="34.5" stroke="#4a6368" stroke-width="0.45"/><line x1="259.5" y1="39.5" x2="259.5" y2="55.0" stroke="#4a6368" stroke-width="0.45"/>
+      <rect x="268.0" y="21.0" width="6.2" height="13.5" fill="#071218" stroke="#38bdf8" stroke-width="0.65"/><rect x="268.0" y="39.5" width="6.2" height="13.5" fill="#071218" stroke="#38bdf8" stroke-width="0.65"/><line x1="271.1" y1="21.0" x2="271.1" y2="34.5" stroke="#4a6368" stroke-width="0.45"/><line x1="271.1" y1="39.5" x2="271.1" y2="53.0" stroke="#4a6368" stroke-width="0.45"/><rect x="275.3" y="21.0" width="6.2" height="13.5" fill="#071218" stroke="#38bdf8" stroke-width="0.65"/><rect x="275.3" y="39.5" width="6.2" height="13.5" fill="#071218" stroke="#38bdf8" stroke-width="0.65"/><line x1="278.4" y1="21.0" x2="278.4" y2="34.5" stroke="#4a6368" stroke-width="0.45"/><line x1="278.4" y1="39.5" x2="278.4" y2="53.0" stroke="#4a6368" stroke-width="0.45"/><rect x="282.6" y="21.0" width="6.2" height="13.5" fill="#071218" stroke="#38bdf8" stroke-width="0.65"/><rect x="282.6" y="39.5" width="6.2" height="13.5" fill="#071218" stroke="#38bdf8" stroke-width="0.65"/><line x1="285.7" y1="21.0" x2="285.7" y2="34.5" stroke="#4a6368" stroke-width="0.45"/><line x1="285.7" y1="39.5" x2="285.7" y2="53.0" stroke="#4a6368" stroke-width="0.45"/><rect x="289.9" y="21.0" width="6.2" height="13.5" fill="#071218" stroke="#38bdf8" stroke-width="0.65"/><rect x="289.9" y="39.5" width="6.2" height="13.5" fill="#071218" stroke="#38bdf8" stroke-width="0.65"/><line x1="293.0" y1="21.0" x2="293.0" y2="34.5" stroke="#4a6368" stroke-width="0.45"/><line x1="293.0" y1="39.5" x2="293.0" y2="53.0" stroke="#4a6368" stroke-width="0.45"/><rect x="297.2" y="21.0" width="6.2" height="13.5" fill="#071218" stroke="#38bdf8" stroke-width="0.65"/><rect x="297.2" y="39.5" width="6.2" height="13.5" fill="#071218" stroke="#38bdf8" stroke-width="0.65"/><line x1="300.3" y1="21.0" x2="300.3" y2="34.5" stroke="#4a6368" stroke-width="0.45"/><line x1="300.3" y1="39.5" x2="300.3" y2="53.0" stroke="#4a6368" stroke-width="0.45"/><rect x="304.5" y="21.0" width="6.2" height="13.5" fill="#071218" stroke="#38bdf8" stroke-width="0.65"/><rect x="304.5" y="39.5" width="6.2" height="13.5" fill="#071218" stroke="#38bdf8" stroke-width="0.65"/><line x1="307.6" y1="21.0" x2="307.6" y2="34.5" stroke="#4a6368" stroke-width="0.45"/><line x1="307.6" y1="39.5" x2="307.6" y2="53.0" stroke="#4a6368" stroke-width="0.45"/><rect x="311.8" y="21.0" width="6.2" height="13.5" fill="#071218" stroke="#38bdf8" stroke-width="0.65"/><rect x="311.8" y="39.5" width="6.2" height="13.5" fill="#071218" stroke="#38bdf8" stroke-width="0.65"/><line x1="314.9" y1="21.0" x2="314.9" y2="34.5" stroke="#4a6368" stroke-width="0.45"/><line x1="314.9" y1="39.5" x2="314.9" y2="53.0" stroke="#4a6368" stroke-width="0.45"/>
+      <rect x="324.0" y="24.5" width="6.2" height="10.0" fill="#071218" stroke="#38bdf8" stroke-width="0.65"/><rect x="324.0" y="39.5" width="6.2" height="10.0" fill="#071218" stroke="#38bdf8" stroke-width="0.65"/><line x1="327.1" y1="24.5" x2="327.1" y2="34.5" stroke="#4a6368" stroke-width="0.45"/><line x1="327.1" y1="39.5" x2="327.1" y2="49.5" stroke="#4a6368" stroke-width="0.45"/><rect x="331.3" y="24.5" width="6.2" height="10.0" fill="#071218" stroke="#38bdf8" stroke-width="0.65"/><rect x="331.3" y="39.5" width="6.2" height="10.0" fill="#071218" stroke="#38bdf8" stroke-width="0.65"/><line x1="334.4" y1="24.5" x2="334.4" y2="34.5" stroke="#4a6368" stroke-width="0.45"/><line x1="334.4" y1="39.5" x2="334.4" y2="49.5" stroke="#4a6368" stroke-width="0.45"/><rect x="338.6" y="24.5" width="6.2" height="10.0" fill="#071218" stroke="#38bdf8" stroke-width="0.65"/><rect x="338.6" y="39.5" width="6.2" height="10.0" fill="#071218" stroke="#38bdf8" stroke-width="0.65"/><line x1="341.7" y1="24.5" x2="341.7" y2="34.5" stroke="#4a6368" stroke-width="0.45"/><line x1="341.7" y1="39.5" x2="341.7" y2="49.5" stroke="#4a6368" stroke-width="0.45"/><rect x="345.9" y="24.5" width="6.2" height="10.0" fill="#071218" stroke="#38bdf8" stroke-width="0.65"/><rect x="345.9" y="39.5" width="6.2" height="10.0" fill="#071218" stroke="#38bdf8" stroke-width="0.65"/><line x1="349.0" y1="24.5" x2="349.0" y2="34.5" stroke="#4a6368" stroke-width="0.45"/><line x1="349.0" y1="39.5" x2="349.0" y2="49.5" stroke="#4a6368" stroke-width="0.45"/><rect x="353.2" y="24.5" width="6.2" height="10.0" fill="#071218" stroke="#38bdf8" stroke-width="0.65"/><rect x="353.2" y="39.5" width="6.2" height="10.0" fill="#071218" stroke="#38bdf8" stroke-width="0.65"/><line x1="356.3" y1="24.5" x2="356.3" y2="34.5" stroke="#4a6368" stroke-width="0.45"/><line x1="356.3" y1="39.5" x2="356.3" y2="49.5" stroke="#4a6368" stroke-width="0.45"/>
+
+      <!-- 7. 穿浪尖艏锚机甲板、前近防炮与首柱白色导流楔 (X=368..430 · 舰政标准规范 右端) -->
+      <circle cx="374" cy="37" r="2.8" fill="#0d222e" stroke="#38bdf8" stroke-width="0.9"/>
+      <polygon points="396,35 412,37 396,39" fill="#d4e3e6"/>
+    </g>
+  </g>
+</svg>

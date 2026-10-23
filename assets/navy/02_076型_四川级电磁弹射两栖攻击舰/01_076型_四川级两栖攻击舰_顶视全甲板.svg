@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 360" width="1120" height="360" data-asset-id="naval.type076.top.deck" style="background:#080a0b;">
+  <defs>
+    <style>
+      svg { fill: none; stroke-linecap: butt; }
+      .s-dim { stroke: #2c3b40; stroke-width: 1; }
+      .s-line { stroke: #5f7c84; stroke-width: 1; }
+      .s-hi { stroke: #d4e3e6; stroke-width: 1.2; }
+      .s-alert { stroke: #ff5a36; stroke-width: 1.4; }
+      .s-focus { stroke: #38bdf8; stroke-width: 1.4; }
+      .f-dim { fill: #2c3b40; stroke: none; }
+      .f-line { fill: #5f7c84; stroke: none; }
+      .f-hi { fill: #d4e3e6; stroke: none; }
+      .f-alert { fill: #ff5a36; stroke: none; }
+      .f-panel { fill: #0c1113; }
+      text { font-family: "Rajdhani", "Bahnschrift", "DIN Alternate", "Microsoft YaHei", sans-serif; letter-spacing: 0.12em; }
+      text:not([stroke]) { stroke: none; }
+      text:not([fill]) { fill: #cfdde0; }
+      text:not([font-size]):not(.cap):not(.big) { font-size: 10px; }
+      text.cap { letter-spacing: 0.2em; text-transform: uppercase; }
+      text.cap:not([fill]) { fill: #8aa1a7; }
+      text.cap:not([font-size]) { font-size: 8.5px; }
+      text.mono { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; letter-spacing: 0.06em; }
+      text.big { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; font-weight: 600; letter-spacing: 0.08em; }
+      text.big:not([font-size]) { font-size: 18px; }
+      text.big:not([fill]) { fill: #d4e3e6; }
+      text.alert { fill: #ff5a36; }
+    </style>
+    <pattern id="cad-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#10181c" stroke-width="1"/>
+      <circle cx="20" cy="20" r="0.8" fill="#1b262b"/>
+    </pattern>
+    <pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#ff5a36" stroke-width="1.2" stroke-opacity="0.35"/>
+    </pattern>
+  </defs>
+
+  <!-- 1. 工程蓝图暗色底板与坐标网格图层 -->
+  <g id="layer-backdrop">
+    <rect x="0" y="0" width="1120" height="360" fill="#080a0b"/>
+    <rect x="20" y="20" width="1080" height="320" fill="url(#cad-grid)" stroke="#2c3b40" stroke-width="1"/>
+    <path d="M 20 36 V 20 H 36 M 1084 20 H 1100 V 36 M 20 324 V 340 H 36 M 1084 340 H 1100 V 324" fill="none" stroke="#38bdf8" stroke-width="1.5"/>
+    <line x1="20" y1="54" x2="1100" y2="54" stroke="#2c3b40" stroke-width="1"/>
+    <line x1="20" y1="314" x2="1100" y2="314" stroke="#2c3b40" stroke-width="1"/>
+    <text x="34" y="42" class="p mono" fill="#38bdf8" font-size="11" font-weight="bold">PLA NAVY TYPE-076 LHD «SICHUAN» · TWIN-ISLAND EMALS FLIGHT DECK PLAN</text>
+    <text x="1086" y="42" text-anchor="end" class="p cap" fill="#d4e3e6" font-size="10.5">076型「四川」级双舰岛电磁弹射两栖攻击舰 · 顶视全甲板工程图 (48,000T)</text>
+    <text x="34" y="331" class="p mono" fill="#8aa1a7" font-size="9.5">TWIN ISLANDS (NAV + AVN/FUNNEL) · PORT 100M EMALS CATAPULT · 3×ELEVATORS · SPOTS 1–7 · 13×GJ-11 UCAV + Z-8L/Z-20 · REF: F94</text>
+    <text x="1086" y="331" text-anchor="end" class="p mono" fill="#5f7c84" font-size="9.5">POSEIDON NAVAL CAD ASSET · TRUE 1:1 ASPECT</text>
+  </g>
+
+  <!-- 2. 舰艇核心 CAD 矢量图层 (无损原生算子输出) -->
+  <g id="layer-ship-cad">
+    <g transform="translate(56.0,80.9) scale(2.520,2.108)">
+      <!-- 1. 船体与全通平顶矩形飞行甲板外廓 + 左前/左尾/右尾近防武器舷台 (Sponsons · 舰政标准规范) -->
+      <!-- 左前 1130 近防炮外凸舷台 + 左舷救生筏舱壁 -->
+      <polygon points="274,14 278,4 294,4 298,14" fill="#0d202c" stroke="#d4e3e6" stroke-width="0.9"/>
+      <circle cx="286" cy="9" r="2.2" fill="#08131a" stroke="#38bdf8" stroke-width="0.8"/>
+      <!-- 舰尾左右外扩梯形舷台角 (Stern Sponsons) -->
+      <polygon points="6,14 14,3 34,3 34,14" fill="#0b1a24" stroke="#d4e3e6" stroke-width="0.9"/>
+      <polygon points="6,86 14,97 34,97 34,86" fill="#0b1a24" stroke="#d4e3e6" stroke-width="0.9"/>
+      <circle cx="18" cy="91" r="2.4" fill="#08131a" stroke="#eab308" stroke-width="0.8"/>
+
+      <!-- 主飞行甲板多边形 (全通平顶矩形 + 右后舷内收折线) -->
+      <polygon points="14,14 394,14 394,86 154,86 146,80 14,80 14,65 24,65 24,37 14,37"
+               fill="#0a1620" stroke="#d4e3e6" stroke-width="1.35"/>
+
+      <!-- 2. 左舷通长黄色跑道中线 + 中轴红白虚线停机界线 + 1~7 号直升机起降点 (舰政标准规范) -->
+      <line x1="16" y1="31" x2="392" y2="31" stroke="#eab308" stroke-width="2.1"/>
+      <line x1="82" y1="50" x2="392" y2="50" stroke="#ff5a36" stroke-width="0.9" stroke-dasharray="4 2.5"/>
+      <g>
+      <circle cx="346" cy="31" r="9.5" fill="none" stroke="#d4e3e6" stroke-width="0.8" stroke-opacity="0.85"/>
+      <line x1="346" y1="31" x2="354" y2="21" stroke="#d4e3e6" stroke-width="0.7"/>
+      <line x1="346" y1="31" x2="354" y2="41" stroke="#d4e3e6" stroke-width="0.7"/>
+      <line x1="368" y1="14" x2="368" y2="50" stroke="#d4e3e6" stroke-width="0.65" stroke-opacity="0.65"/>
+      <text x="358" y="25" class="p mono" font-size="7.5" fill="#d4e3e6">1</text>
+    </g><g>
+      <circle cx="286" cy="31" r="9.5" fill="none" stroke="#d4e3e6" stroke-width="0.8" stroke-opacity="0.85"/>
+      <line x1="286" y1="31" x2="294" y2="21" stroke="#d4e3e6" stroke-width="0.7"/>
+      <line x1="286" y1="31" x2="294" y2="41" stroke="#d4e3e6" stroke-width="0.7"/>
+      <line x1="308" y1="14" x2="308" y2="50" stroke="#d4e3e6" stroke-width="0.65" stroke-opacity="0.65"/>
+      <text x="298" y="25" class="p mono" font-size="7.5" fill="#d4e3e6">2</text>
+    </g><g>
+      <circle cx="222" cy="31" r="9.5" fill="none" stroke="#d4e3e6" stroke-width="0.8" stroke-opacity="0.85"/>
+      <line x1="222" y1="31" x2="230" y2="21" stroke="#d4e3e6" stroke-width="0.7"/>
+      <line x1="222" y1="31" x2="230" y2="41" stroke="#d4e3e6" stroke-width="0.7"/>
+      <line x1="244" y1="14" x2="244" y2="50" stroke="#d4e3e6" stroke-width="0.65" stroke-opacity="0.65"/>
+      <text x="234" y="25" class="p mono" font-size="7.5" fill="#d4e3e6">3</text>
+    </g><g>
+      <circle cx="164" cy="31" r="9.5" fill="none" stroke="#d4e3e6" stroke-width="0.8" stroke-opacity="0.85"/>
+      <line x1="164" y1="31" x2="172" y2="21" stroke="#d4e3e6" stroke-width="0.7"/>
+      <line x1="164" y1="31" x2="172" y2="41" stroke="#d4e3e6" stroke-width="0.7"/>
+      <line x1="186" y1="14" x2="186" y2="50" stroke="#d4e3e6" stroke-width="0.65" stroke-opacity="0.65"/>
+      <text x="176" y="25" class="p mono" font-size="7.5" fill="#d4e3e6">4</text>
+    </g><g>
+      <circle cx="108" cy="31" r="9.5" fill="none" stroke="#d4e3e6" stroke-width="0.8" stroke-opacity="0.85"/>
+      <line x1="108" y1="31" x2="116" y2="21" stroke="#d4e3e6" stroke-width="0.7"/>
+      <line x1="108" y1="31" x2="116" y2="41" stroke="#d4e3e6" stroke-width="0.7"/>
+      <line x1="130" y1="14" x2="130" y2="50" stroke="#d4e3e6" stroke-width="0.65" stroke-opacity="0.65"/>
+      <text x="120" y="25" class="p mono" font-size="7.5" fill="#d4e3e6">5</text>
+    </g><g>
+      <circle cx="58" cy="31" r="9.5" fill="none" stroke="#d4e3e6" stroke-width="0.8" stroke-opacity="0.85"/>
+      <line x1="58" y1="31" x2="66" y2="21" stroke="#d4e3e6" stroke-width="0.7"/>
+      <line x1="58" y1="31" x2="66" y2="41" stroke="#d4e3e6" stroke-width="0.7"/>
+      <line x1="80" y1="14" x2="80" y2="50" stroke="#d4e3e6" stroke-width="0.65" stroke-opacity="0.65"/>
+      <text x="70" y="25" class="p mono" font-size="7.5" fill="#d4e3e6">6</text>
+    </g>
+      <!-- 7 号右舷后甲板直升机起降点 -->
+      <circle cx="96" cy="68" r="8.5" fill="none" stroke="#d4e3e6" stroke-width="0.8"/>
+      <text x="108" y="62" class="p mono" font-size="7.5" fill="#d4e3e6">7</text>
+
+      <!-- 3. 左舷前部单条百米级 EMALS 电磁弹射轨道 + 双格深灰偏流板 (JBD · 舰政标准规范 左上弹射槽) -->
+      <rect x="254" y="21" width="14" height="19" fill="#131c22" stroke="#d4e3e6" stroke-width="0.9"/>
+      <line x1="261" y1="21" x2="261" y2="40" stroke="#4a6368" stroke-width="0.8"/>
+      <line x1="268" y1="24.5" x2="393" y2="24.5" stroke="#38bdf8" stroke-width="1.5"/>
+      <line x1="268" y1="26.5" x2="393" y2="26.5" stroke="#d4e3e6" stroke-width="0.7" stroke-dasharray="2 1.5"/>
+
+      <!-- 4. 三座黄黑斜纹警示框巨型升降机 (舰政标准规范 的右中、左尾、尾中三座升降机) -->
+      <!-- (A) 右舷中置升降机 (位于前后双舰岛之间 · 停放 2 架折叠态攻击-11) -->
+      <rect x="182" y="60" width="44" height="33" fill="#0d1e2a" stroke="#eab308" stroke-width="1.5" stroke-dasharray="3 1.5"/>
+      <line x1="194" y1="76.5" x2="214" y2="76.5" stroke="#d4e3e6" stroke-width="0.9"/>
+      <g transform="translate(204.0,68.0) rotate(180) scale(0.98)">
+        <polygon points="8,0 4,-4.5 -5,-4.5 -8,0 -5,4.5 4,4.5" fill="#10212b" stroke="#d4e3e6" stroke-width="0.75"/>
+        <line x1="-5" y1="-2.4" x2="5" y2="-2.4" stroke="#38bdf8" stroke-width="0.55"/>
+        <line x1="-5" y1="2.4" x2="5" y2="2.4" stroke="#38bdf8" stroke-width="0.55"/>
+        <polygon points="2,0 -1,-1.5 -1,1.5" fill="#38bdf8"/>
+      </g>
+      <g transform="translate(204.0,85.0) rotate(180) scale(0.98)">
+        <polygon points="8,0 4,-4.5 -5,-4.5 -8,0 -5,4.5 4,4.5" fill="#10212b" stroke="#d4e3e6" stroke-width="0.75"/>
+        <line x1="-5" y1="-2.4" x2="5" y2="-2.4" stroke="#38bdf8" stroke-width="0.55"/>
+        <line x1="-5" y1="2.4" x2="5" y2="2.4" stroke="#38bdf8" stroke-width="0.55"/>
+        <polygon points="2,0 -1,-1.5 -1,1.5" fill="#38bdf8"/>
+      </g>
+
+      <!-- (B) 左舷舰尾舷侧升降机 (位于6号起降点后外侧 · 停放 2 架折叠态直-8L) -->
+      <rect x="44" y="-2" width="44" height="24" fill="#0d1e2a" stroke="#eab308" stroke-width="1.5" stroke-dasharray="3 1.5"/>
+      <g transform="translate(66.0,4.5) rotate(0) scale(0.95)">
+      <rect x="-11" y="-2.6" width="20" height="5.2" rx="2.2" fill="#0e202c" stroke="#d4e3e6" stroke-width="0.8"/>
+      <line x1="-12" y1="-1.2" x2="6" y2="-1.2" stroke="#38bdf8" stroke-width="0.7"/>
+      <line x1="-12" y1="1.2" x2="6" y2="1.2" stroke="#38bdf8" stroke-width="0.7"/>
+      <circle cx="3" cy="0" r="1.5" fill="#ff5a36"/>
+    </g>
+      <g transform="translate(66.0,15.5) rotate(0) scale(0.95)">
+      <rect x="-11" y="-2.6" width="20" height="5.2" rx="2.2" fill="#0e202c" stroke="#d4e3e6" stroke-width="0.8"/>
+      <line x1="-12" y1="-1.2" x2="6" y2="-1.2" stroke="#38bdf8" stroke-width="0.7"/>
+      <line x1="-12" y1="1.2" x2="6" y2="1.2" stroke="#38bdf8" stroke-width="0.7"/>
+      <circle cx="3" cy="0" r="1.5" fill="#ff5a36"/>
+    </g>
+
+      <!-- (C) 舰尾居中内嵌升降机 (位于尾门上方中央 · 停放 2 架直-10/直-20 武装直升机) -->
+      <rect x="24" y="37" width="46" height="28" fill="#0d1e2a" stroke="#eab308" stroke-width="1.5" stroke-dasharray="3 1.5"/>
+      <line x1="47" y1="42" x2="47" y2="60" stroke="#d4e3e6" stroke-width="0.9"/>
+      <g transform="translate(47.0,44.0) rotate(-90) scale(0.85)">
+      <rect x="-11" y="-2.6" width="20" height="5.2" rx="2.2" fill="#0e202c" stroke="#38bdf8" stroke-width="0.8"/>
+      <line x1="-12" y1="-1.2" x2="6" y2="-1.2" stroke="#38bdf8" stroke-width="0.7"/>
+      <line x1="-12" y1="1.2" x2="6" y2="1.2" stroke="#38bdf8" stroke-width="0.7"/>
+      <circle cx="3" cy="0" r="1.5" fill="#ff5a36"/>
+    </g>
+      <g transform="translate(47.0,58.0) rotate(-90) scale(0.85)">
+      <rect x="-11" y="-2.6" width="20" height="5.2" rx="2.2" fill="#0e202c" stroke="#ff5a36" stroke-width="0.8"/>
+      <line x1="-12" y1="-1.2" x2="6" y2="-1.2" stroke="#38bdf8" stroke-width="0.7"/>
+      <line x1="-12" y1="1.2" x2="6" y2="1.2" stroke="#38bdf8" stroke-width="0.7"/>
+      <circle cx="3" cy="0" r="1.5" fill="#ff5a36"/>
+    </g>
+
+      <!-- 5. 右舷前后分置「双舰岛」上层建筑 (Twin Islands · 舰政标准规范 右侧前后两座舰岛) -->
+      <!-- 前舰岛：航海与综合指挥舰岛 (X=228..264, Y=68..86) + 前伸长杆天线 + 圆形综合射频主桅 -->
+      <polygon points="228,86 228,72 236,68 258,68 262,72 262,86" fill="#132836" stroke="#d4e3e6" stroke-width="1.2"/>
+      <rect x="242" y="72" width="10" height="9" rx="1.5" fill="#08131a" stroke="#38bdf8" stroke-width="0.9"/>
+      <circle cx="254" cy="76.5" r="3.5" fill="#0d222e" stroke="#eab308" stroke-width="0.9"/>
+      <line x1="258" y1="66" x2="278" y2="66" stroke="#d4e3e6" stroke-width="1.1"/>
+      <!-- 后舰岛：航空指挥与动力烟囱舰岛 (X=154..180, Y=68..86) -->
+      <polygon points="154,86 154,71 160,68 180,68 180,86" fill="#132836" stroke="#d4e3e6" stroke-width="1.2"/>
+      <rect x="160" y="73" width="7" height="7" fill="#060e14" stroke="#38bdf8" stroke-width="0.8"/>
+      <circle cx="173" cy="76.5" r="3" fill="#0d222e" stroke="#d4e3e6" stroke-width="0.8"/>
+
+      <!-- 6. 全甲板满编 13 架攻击-11 (GJ-11) 飞翼无人机 + 直-8L / 直-20 旋翼突击机群 (舰政标准规范) -->
+      <!-- 右舷前甲板 8 架折叠态攻击-11 -->
+      <g transform="translate(380.0,66.0) rotate(180) scale(1.05)">
+        <polygon points="8,0 4,-4.5 -5,-4.5 -8,0 -5,4.5 4,4.5" fill="#10212b" stroke="#d4e3e6" stroke-width="0.75"/>
+        <line x1="-5" y1="-2.4" x2="5" y2="-2.4" stroke="#38bdf8" stroke-width="0.55"/>
+        <line x1="-5" y1="2.4" x2="5" y2="2.4" stroke="#38bdf8" stroke-width="0.55"/>
+        <polygon points="2,0 -1,-1.5 -1,1.5" fill="#38bdf8"/>
+      </g><g transform="translate(365.8,66.0) rotate(180) scale(1.05)">
+        <polygon points="8,0 4,-4.5 -5,-4.5 -8,0 -5,4.5 4,4.5" fill="#10212b" stroke="#d4e3e6" stroke-width="0.75"/>
+        <line x1="-5" y1="-2.4" x2="5" y2="-2.4" stroke="#38bdf8" stroke-width="0.55"/>
+        <line x1="-5" y1="2.4" x2="5" y2="2.4" stroke="#38bdf8" stroke-width="0.55"/>
+        <polygon points="2,0 -1,-1.5 -1,1.5" fill="#38bdf8"/>
+      </g><g transform="translate(351.6,66.0) rotate(180) scale(1.05)">
+        <polygon points="8,0 4,-4.5 -5,-4.5 -8,0 -5,4.5 4,4.5" fill="#10212b" stroke="#d4e3e6" stroke-width="0.75"/>
+        <line x1="-5" y1="-2.4" x2="5" y2="-2.4" stroke="#38bdf8" stroke-width="0.55"/>
+        <line x1="-5" y1="2.4" x2="5" y2="2.4" stroke="#38bdf8" stroke-width="0.55"/>
+        <polygon points="2,0 -1,-1.5 -1,1.5" fill="#38bdf8"/>
+      </g><g transform="translate(337.4,66.0) rotate(180) scale(1.05)">
+        <polygon points="8,0 4,-4.5 -5,-4.5 -8,0 -5,4.5 4,4.5" fill="#10212b" stroke="#d4e3e6" stroke-width="0.75"/>
+        <line x1="-5" y1="-2.4" x2="5" y2="-2.4" stroke="#38bdf8" stroke-width="0.55"/>
+        <line x1="-5" y1="2.4" x2="5" y2="2.4" stroke="#38bdf8" stroke-width="0.55"/>
+        <polygon points="2,0 -1,-1.5 -1,1.5" fill="#38bdf8"/>
+      </g><g transform="translate(323.2,66.0) rotate(180) scale(1.05)">
+        <polygon points="8,0 4,-4.5 -5,-4.5 -8,0 -5,4.5 4,4.5" fill="#10212b" stroke="#d4e3e6" stroke-width="0.75"/>
+        <line x1="-5" y1="-2.4" x2="5" y2="-2.4" stroke="#38bdf8" stroke-width="0.55"/>
+        <line x1="-5" y1="2.4" x2="5" y2="2.4" stroke="#38bdf8" stroke-width="0.55"/>
+        <polygon points="2,0 -1,-1.5 -1,1.5" fill="#38bdf8"/>
+      </g><g transform="translate(309.0,66.0) rotate(180) scale(1.05)">
+        <polygon points="8,0 4,-4.5 -5,-4.5 -8,0 -5,4.5 4,4.5" fill="#10212b" stroke="#d4e3e6" stroke-width="0.75"/>
+        <line x1="-5" y1="-2.4" x2="5" y2="-2.4" stroke="#38bdf8" stroke-width="0.55"/>
+        <line x1="-5" y1="2.4" x2="5" y2="2.4" stroke="#38bdf8" stroke-width="0.55"/>
+        <polygon points="2,0 -1,-1.5 -1,1.5" fill="#38bdf8"/>
+      </g><g transform="translate(294.8,66.0) rotate(180) scale(1.05)">
+        <polygon points="8,0 4,-4.5 -5,-4.5 -8,0 -5,4.5 4,4.5" fill="#10212b" stroke="#d4e3e6" stroke-width="0.75"/>
+        <line x1="-5" y1="-2.4" x2="5" y2="-2.4" stroke="#38bdf8" stroke-width="0.55"/>
+        <line x1="-5" y1="2.4" x2="5" y2="2.4" stroke="#38bdf8" stroke-width="0.55"/>
+        <polygon points="2,0 -1,-1.5 -1,1.5" fill="#38bdf8"/>
+      </g><g transform="translate(280.6,66.0) rotate(180) scale(1.05)">
+        <polygon points="8,0 4,-4.5 -5,-4.5 -8,0 -5,4.5 4,4.5" fill="#10212b" stroke="#d4e3e6" stroke-width="0.75"/>
+        <line x1="-5" y1="-2.4" x2="5" y2="-2.4" stroke="#38bdf8" stroke-width="0.55"/>
+        <line x1="-5" y1="2.4" x2="5" y2="2.4" stroke="#38bdf8" stroke-width="0.55"/>
+        <polygon points="2,0 -1,-1.5 -1,1.5" fill="#38bdf8"/>
+      </g>
+      <!-- 弹射位 1 架展开态攻击-11 + 3号位 1 架展开态攻击-11 + 前舰岛旁 1 架展开态攻击-11 -->
+      <g transform="translate(274.0,25.5) rotate(0) scale(1.12)">
+      <polygon points="9,0 -4,-13 -8,-11 -4,-4 -7,0 -4,4 -8,11 -4,13" fill="#122634" stroke="#38bdf8" stroke-width="0.85"/>
+      <polygon points="5,0 0,-2.2 -3,0 0,2.2" fill="#08131a" stroke="#d4e3e6" stroke-width="0.6"/>
+    </g>
+      <g transform="translate(232.0,31.0) rotate(-8) scale(1.08)">
+      <polygon points="9,0 -4,-13 -8,-11 -4,-4 -7,0 -4,4 -8,11 -4,13" fill="#122634" stroke="#38bdf8" stroke-width="0.85"/>
+      <polygon points="5,0 0,-2.2 -3,0 0,2.2" fill="#08131a" stroke="#d4e3e6" stroke-width="0.6"/>
+    </g>
+      <g transform="translate(254.0,57.0) rotate(152) scale(1.05)">
+      <polygon points="9,0 -4,-13 -8,-11 -4,-4 -7,0 -4,4 -8,11 -4,13" fill="#122634" stroke="#38bdf8" stroke-width="0.85"/>
+      <polygon points="5,0 0,-2.2 -3,0 0,2.2" fill="#08131a" stroke="#d4e3e6" stroke-width="0.6"/>
+    </g>
+      <!-- 4号、5号起降点：2 架展开六叶大旋翼的直-8L 宽体运输直升机 -->
+      <g transform="translate(164.0,31.0) scale(1.15)">
+      <ellipse cx="1" cy="0" rx="5.5" ry="2" fill="#0b1820" stroke="#d4e3e6" stroke-width="0.8"/>
+      <line x1="-8" y1="0" x2="6" y2="0" stroke="#d4e3e6" stroke-width="0.8"/>
+      <line x1="-6" y1="-6" x2="8" y2="6" stroke="#38bdf8" stroke-width="0.7"/>
+      <line x1="-6" y1="6" x2="8" y2="-6" stroke="#38bdf8" stroke-width="0.7"/>
+      <circle cx="1" cy="0" r="7.5" fill="none" stroke="#4a6368" stroke-width="0.5" stroke-dasharray="2 2"/>
+    </g>
+      <g transform="translate(108.0,31.0) scale(1.15)">
+      <ellipse cx="1" cy="0" rx="5.5" ry="2" fill="#0b1820" stroke="#d4e3e6" stroke-width="0.8"/>
+      <line x1="-8" y1="0" x2="6" y2="0" stroke="#d4e3e6" stroke-width="0.8"/>
+      <line x1="-6" y1="-6" x2="8" y2="6" stroke="#38bdf8" stroke-width="0.7"/>
+      <line x1="-6" y1="6" x2="8" y2="-6" stroke="#38bdf8" stroke-width="0.7"/>
+      <circle cx="1" cy="0" r="7.5" fill="none" stroke="#4a6368" stroke-width="0.5" stroke-dasharray="2 2"/>
+    </g>
+      <!-- 6号、7号起降点：2 架展开旋翼的直-20 突击直升机 -->
+      <g transform="translate(58.0,31.0) scale(0.92)">
+      <ellipse cx="1" cy="0" rx="5.5" ry="2" fill="#0b1820" stroke="#d4e3e6" stroke-width="0.8"/>
+      <line x1="-8" y1="0" x2="6" y2="0" stroke="#d4e3e6" stroke-width="0.8"/>
+      <line x1="-6" y1="-6" x2="8" y2="6" stroke="#38bdf8" stroke-width="0.7"/>
+      <line x1="-6" y1="6" x2="8" y2="-6" stroke="#38bdf8" stroke-width="0.7"/>
+      <circle cx="1" cy="0" r="7.5" fill="none" stroke="#4a6368" stroke-width="0.5" stroke-dasharray="2 2"/>
+    </g>
+      <g transform="translate(96.0,68.0) scale(0.95)">
+      <ellipse cx="1" cy="0" rx="5.5" ry="2" fill="#0b1820" stroke="#d4e3e6" stroke-width="0.8"/>
+      <line x1="-8" y1="0" x2="6" y2="0" stroke="#d4e3e6" stroke-width="0.8"/>
+      <line x1="-6" y1="-6" x2="8" y2="6" stroke="#38bdf8" stroke-width="0.7"/>
+      <line x1="-6" y1="6" x2="8" y2="-6" stroke="#38bdf8" stroke-width="0.7"/>
+      <circle cx="1" cy="0" r="7.5" fill="none" stroke="#4a6368" stroke-width="0.5" stroke-dasharray="2 2"/>
+    </g>
+      <!-- 后舰岛左后方停机区：3 架斜列折叠态直-8L + 2 架斜列折叠态突击直升机 -->
+      <g transform="translate(148.0,61.0) rotate(-55) scale(0.95)">
+      <rect x="-11" y="-2.6" width="20" height="5.2" rx="2.2" fill="#0e202c" stroke="#d4e3e6" stroke-width="0.8"/>
+      <line x1="-12" y1="-1.2" x2="6" y2="-1.2" stroke="#38bdf8" stroke-width="0.7"/>
+      <line x1="-12" y1="1.2" x2="6" y2="1.2" stroke="#38bdf8" stroke-width="0.7"/>
+      <circle cx="3" cy="0" r="1.5" fill="#ff5a36"/>
+    </g>
+      <g transform="translate(130.0,61.0) rotate(-55) scale(0.95)">
+      <rect x="-11" y="-2.6" width="20" height="5.2" rx="2.2" fill="#0e202c" stroke="#d4e3e6" stroke-width="0.8"/>
+      <line x1="-12" y1="-1.2" x2="6" y2="-1.2" stroke="#38bdf8" stroke-width="0.7"/>
+      <line x1="-12" y1="1.2" x2="6" y2="1.2" stroke="#38bdf8" stroke-width="0.7"/>
+      <circle cx="3" cy="0" r="1.5" fill="#ff5a36"/>
+    </g>
+      <g transform="translate(112.0,61.0) rotate(-55) scale(0.95)">
+      <rect x="-11" y="-2.6" width="20" height="5.2" rx="2.2" fill="#0e202c" stroke="#d4e3e6" stroke-width="0.8"/>
+      <line x1="-12" y1="-1.2" x2="6" y2="-1.2" stroke="#38bdf8" stroke-width="0.7"/>
+      <line x1="-12" y1="1.2" x2="6" y2="1.2" stroke="#38bdf8" stroke-width="0.7"/>
+      <circle cx="3" cy="0" r="1.5" fill="#ff5a36"/>
+    </g>
+      <g transform="translate(94.0,56.0) rotate(-55) scale(0.78)">
+      <rect x="-11" y="-2.6" width="20" height="5.2" rx="2.2" fill="#0e202c" stroke="#38bdf8" stroke-width="0.8"/>
+      <line x1="-12" y1="-1.2" x2="6" y2="-1.2" stroke="#38bdf8" stroke-width="0.7"/>
+      <line x1="-12" y1="1.2" x2="6" y2="1.2" stroke="#38bdf8" stroke-width="0.7"/>
+      <circle cx="3" cy="0" r="1.5" fill="#ff5a36"/>
+    </g>
+      <g transform="translate(78.0,56.0) rotate(-55) scale(0.78)">
+      <rect x="-11" y="-2.6" width="20" height="5.2" rx="2.2" fill="#0e202c" stroke="#38bdf8" stroke-width="0.8"/>
+      <line x1="-12" y1="-1.2" x2="6" y2="-1.2" stroke="#38bdf8" stroke-width="0.7"/>
+      <line x1="-12" y1="1.2" x2="6" y2="1.2" stroke="#38bdf8" stroke-width="0.7"/>
+      <circle cx="3" cy="0" r="1.5" fill="#ff5a36"/>
+    </g>
+      <g transform="translate(62.0,70.0) rotate(-60) scale(0.78)">
+      <rect x="-11" y="-2.6" width="20" height="5.2" rx="2.2" fill="#0e202c" stroke="#ff5a36" stroke-width="0.8"/>
+      <line x1="-12" y1="-1.2" x2="6" y2="-1.2" stroke="#38bdf8" stroke-width="0.7"/>
+      <line x1="-12" y1="1.2" x2="6" y2="1.2" stroke="#38bdf8" stroke-width="0.7"/>
+      <circle cx="3" cy="0" r="1.5" fill="#ff5a36"/>
+    </g>
+    </g>
+  </g>
+</svg>

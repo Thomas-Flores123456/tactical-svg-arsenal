@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 360" width="1100" height="360" data-asset-id="naval.udaloy1155m.top" style="background:#080a0b;">
+  <defs>
+    <style>
+      svg { fill: none; stroke-linecap: butt; }
+      .s-dim { stroke: #2c3b40; stroke-width: 1; }
+      .s-line { stroke: #5f7c84; stroke-width: 1; }
+      .s-hi { stroke: #d4e3e6; stroke-width: 1.2; }
+      .s-alert { stroke: #ff5a36; stroke-width: 1.4; }
+      .s-focus { stroke: #38bdf8; stroke-width: 1.4; }
+      .f-dim { fill: #2c3b40; stroke: none; }
+      .f-line { fill: #5f7c84; stroke: none; }
+      .f-hi { fill: #d4e3e6; stroke: none; }
+      .f-alert { fill: #ff5a36; stroke: none; }
+      .f-panel { fill: #0c1113; }
+      text { font-family: "Rajdhani", "Bahnschrift", "DIN Alternate", "Microsoft YaHei", sans-serif; letter-spacing: 0.12em; }
+      text:not([stroke]) { stroke: none; }
+      text:not([fill]) { fill: #cfdde0; }
+      text:not([font-size]):not(.cap):not(.big) { font-size: 10px; }
+      text.cap { letter-spacing: 0.2em; text-transform: uppercase; }
+      text.cap:not([fill]) { fill: #8aa1a7; }
+      text.cap:not([font-size]) { font-size: 8.5px; }
+      text.mono { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; letter-spacing: 0.06em; }
+      text.big { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; font-weight: 600; letter-spacing: 0.08em; }
+      text.big:not([font-size]) { font-size: 18px; }
+      text.big:not([fill]) { fill: #d4e3e6; }
+      text.alert { fill: #ff5a36; }
+    </style>
+    <pattern id="cad-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#10181c" stroke-width="1"/>
+      <circle cx="20" cy="20" r="0.8" fill="#1b262b"/>
+    </pattern>
+    <pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#ff5a36" stroke-width="1.2" stroke-opacity="0.35"/>
+    </pattern>
+  </defs>
+
+  <!-- 1. 工程蓝图暗色底板与坐标网格图层 -->
+  <g id="layer-backdrop">
+    <rect x="0" y="0" width="1100" height="360" fill="#080a0b"/>
+    <rect x="20" y="20" width="1060" height="320" fill="url(#cad-grid)" stroke="#2c3b40" stroke-width="1"/>
+    <path d="M 20 36 V 20 H 36 M 1064 20 H 1080 V 36 M 20 324 V 340 H 36 M 1064 340 H 1080 V 324" fill="none" stroke="#38bdf8" stroke-width="1.5"/>
+    <line x1="20" y1="54" x2="1080" y2="54" stroke="#2c3b40" stroke-width="1"/>
+    <line x1="20" y1="314" x2="1080" y2="314" stroke="#2c3b40" stroke-width="1"/>
+    <text x="34" y="42" class="p mono" fill="#38bdf8"  font-weight="bold" font-size="9.5">PROJECT 1155.1 UDALOY-II ASW DD (650 ADMIRAL CHABANENKO) · ORTHOGRAPHIC DECK PLAN</text>
+    <text x="1066" y="42" text-anchor="end" class="p cap" fill="#d4e3e6"  font-size="9.5">1155M型「无畏II级 · 650 恰巴年科号」大型反潜驱逐舰 · 顶视全甲板图</text>
+    <text x="34" y="331" class="p mono" fill="#8aa1a7" font-size="9.5">LOA: 163.5M · BEAM: 19.3M (8.47:1) · AK-130 · 2×4 P-270 MOSKIT · 4-FUNNEL SPLIT EXHAUSTS · TWIN KA-27 HANGARS · REF: UID-72</text>
+    <text x="1066" y="331" text-anchor="end" class="p mono" fill="#5f7c84" font-size="9.5">POSEIDON NAVAL CAD ASSET · TRUE 1:1 ASPECT (8.47:1)</text>
+  </g>
+
+  <!-- 2. 舰艇核心 CAD 矢量图层 (1:1 真实长宽比 8.47:1 严格锁定：舰长 390u=163.5m，舰宽 46.0u=19.3m，Y=21.0..67.0) -->
+  <g id="layer-ship-cad">
+    <g transform="translate(56.0,96.0) scale(2.380,2.380)">
+
+      <!-- 0. 顶视纵中剖面基准线与上/下净空区工程标注 -->
+      <line x1="12" y1="44.0" x2="416" y2="44.0" stroke="#2c3b40" stroke-width="0.6" stroke-dasharray="6 3"/>
+      <text x="20" y="13.5" class="mono" font-size="2.6" fill="#38bdf8">PORT BATTERY: 4×P-270 MOSKIT · 2×FUNNELS · 1×KASHTAN · 4×533MM RPK-6 VODOPAD · 32×KINZHAL</text>
+      <text x="410" y="13.5" text-anchor="end" class="mono" font-size="2.6" fill="#ff5a36">BOW: 1×AK-130 + 32×KINZHAL + 2×RBU-12000</text>
+
+      <!-- 1. 1155.1型修长飞剪主船体深海蓝灰外廓 (X=20..410, 舰宽 Y=21.0..67.0) + 苏联铁锈红主甲板涂装内框 -->
+      <polygon points="20,28.5 84,23.5 136,21.0 282,21.0 338,25.2 378,32.5 410,44.0 378,55.5 338,62.8 282,67.0 136,67.0 84,64.5 20,59.5"
+               fill="#0a1822" stroke="#d4e3e6" stroke-width="1.4"/>
+      <polygon points="23,29.8 86,25.0 138,22.8 280,22.8 336,26.8 375,33.8 404,44.0 375,54.2 336,61.2 280,65.2 138,65.2 86,63.0 23,58.2"
+               fill="#1c1412" stroke="#ff5a36" stroke-width="0.9"/>
+
+      <!-- 2. 舰首水下前探巨型「波利诺姆」(MGK-355 Polinom) 球鼻声呐导流罩虚线投影与前甲板锚链区 (X=380..414) -->
+      <path d="M 392 36.8 C 406 37.8 413 40.5 413 44.0 C 413 47.5 406 50.2 392 51.2"
+            fill="#261014" fill-opacity="0.55" stroke="#ff5a36" stroke-width="0.85" stroke-dasharray="2.2 1.2"/>
+      <line x1="382" y1="44.0" x2="408" y2="44.0" stroke="#d4e3e6" stroke-width="0.8"/>
+      <line x1="384" y1="41.2" x2="399" y2="42.6" stroke="#d4e3e6" stroke-width="0.85" stroke-dasharray="1.8 1"/>
+      <line x1="384" y1="46.8" x2="399" y2="45.4" stroke="#d4e3e6" stroke-width="0.85" stroke-dasharray="1.8 1"/>
+      <polyline points="376,34.5 386,44.0 376,53.5" fill="none" stroke="#d4e3e6" stroke-width="0.95"/>
+
+      <!-- 3. 前甲板武器区：32单元 (4×8) 3K95「道尔/匕首」转轮垂发 + AK-130 双管130mm主炮 + 2座 RBU-12000 反潜深弹 (X=302..382) -->
+      <g id="foredeck-top-weapons">
+        <!-- 舰首楔形抬升垂发平台与 4座 8联装 3K95「匕首」(Kinzhal / SA-N-9) 圆形左轮垂发井 (X=350..380) -->
+        <polygon points="348,36.2 374,38.0 380,41.0 380,47.0 374,50.0 348,51.8" fill="#0d202c" stroke="#38bdf8" stroke-width="0.95"/>
+        <circle cx="355.5" cy="40.5" r="2.8" fill="#08141c" stroke="#38bdf8" stroke-width="0.75"/>
+        <circle cx="355.5" cy="40.5" r="0.8" fill="#ff5a36"/>
+        <circle cx="355.5" cy="47.5" r="2.8" fill="#08141c" stroke="#38bdf8" stroke-width="0.75"/>
+        <circle cx="355.5" cy="47.5" r="0.8" fill="#ff5a36"/>
+        <circle cx="366.5" cy="41.2" r="2.8" fill="#08141c" stroke="#38bdf8" stroke-width="0.75"/>
+        <circle cx="366.5" cy="41.2" r="0.8" fill="#ff5a36"/>
+        <circle cx="366.5" cy="46.8" r="2.8" fill="#08141c" stroke="#38bdf8" stroke-width="0.75"/>
+        <circle cx="366.5" cy="46.8" r="0.8" fill="#ff5a36"/>
+
+        <!-- 舰首 1座 AK-130 双联装 130mm/70 主炮塔 (双炮管朝右 +X, X=322..360) -->
+        <circle cx="332" cy="44.0" r="8.2" fill="#0e2230" stroke="#38bdf8" stroke-width="0.85"/>
+        <polygon points="323,38.2 336,37.2 342,39.8 342,48.2 336,50.8 323,49.8" fill="#163244" stroke="#d4e3e6" stroke-width="1.2"/>
+        <rect x="326.5" y="40.8" width="7.5" height="6.4" fill="#09151e" stroke="#38bdf8" stroke-width="0.7"/>
+        <line x1="342" y1="42.3" x2="360" y2="42.3" stroke="#d4e3e6" stroke-width="1.35"/>
+        <line x1="342" y1="45.7" x2="360" y2="45.7" stroke="#38bdf8" stroke-width="1.35"/>
+
+        <!-- 舰桥前高台：左右对称 2座 RBU-12000「蟒蛇-1M」(Udav-1M) 十管反潜深弹发射器 (X=302..319) -->
+        <polygon points="300,32.5 318,34.5 318,53.5 300,55.5" fill="#102432" stroke="#d4e3e6" stroke-width="1.0"/>
+        <rect x="306" y="36.2" width="7.2" height="5.0" rx="0.8" fill="#142c3c" stroke="#38bdf8" stroke-width="0.85"/>
+        <line x1="313.2" y1="37.5" x2="318.5" y2="37.5" stroke="#ff5a36" stroke-width="0.9"/>
+        <line x1="313.2" y1="39.8" x2="318.5" y2="39.8" stroke="#ff5a36" stroke-width="0.9"/>
+        <rect x="306" y="46.8" width="7.2" height="5.0" rx="0.8" fill="#142c3c" stroke="#38bdf8" stroke-width="0.85"/>
+        <line x1="313.2" y1="48.2" x2="318.5" y2="48.2" stroke="#ff5a36" stroke-width="0.9"/>
+        <line x1="313.2" y1="50.5" x2="318.5" y2="50.5" stroke="#ff5a36" stroke-width="0.9"/>
+      </g>
+
+      <!-- 4. 核心灵魂：舰桥两舷外飘硕大的 2×4 四联装 P-270「日炙」(Moskit / SS-N-22) 倾斜反舰导弹发射筒 (X=256..299) -->
+      <g id="moskit-quad-top">
+        <!-- 左舷四联装 KT-190 倾斜发射筒组 (Y=21.2..31.8, 微向外偏转角) -->
+        <g transform="translate(258, 22.2) rotate(3)">
+          <rect x="0" y="0" width="38.5" height="9.2" rx="1.0" fill="#180b0e" stroke="#ff5a36" stroke-width="1.05"/>
+          <line x1="1.5" y1="2.3" x2="37.5" y2="2.3" stroke="#d4e3e6" stroke-width="0.7"/>
+          <line x1="1.5" y1="4.6" x2="37.5" y2="4.6" stroke="#38bdf8" stroke-width="0.75"/>
+          <line x1="1.5" y1="6.9" x2="37.5" y2="6.9" stroke="#d4e3e6" stroke-width="0.7"/>
+          <!-- 发射筒横向加强箍环与前端红色半球帽 -->
+          <line x1="10" y1="0" x2="10" y2="9.2" stroke="#eab308" stroke-width="0.7"/>
+          <line x1="20" y1="0" x2="20" y2="9.2" stroke="#eab308" stroke-width="0.7"/>
+          <line x1="30" y1="0" x2="30" y2="9.2" stroke="#eab308" stroke-width="0.7"/>
+          <rect x="36.8" y="0.4" width="2.2" height="8.4" rx="0.8" fill="#ff5a36"/>
+        </g>
+        <!-- 右舷四联装 KT-190 倾斜发射筒组 (Y=56.2..66.8, 微向外偏转角) -->
+        <g transform="translate(258, 56.6) rotate(-3)">
+          <rect x="0" y="0" width="38.5" height="9.2" rx="1.0" fill="#180b0e" stroke="#ff5a36" stroke-width="1.05"/>
+          <line x1="1.5" y1="2.3" x2="37.5" y2="2.3" stroke="#d4e3e6" stroke-width="0.7"/>
+          <line x1="1.5" y1="4.6" x2="37.5" y2="4.6" stroke="#38bdf8" stroke-width="0.75"/>
+          <line x1="1.5" y1="6.9" x2="37.5" y2="6.9" stroke="#d4e3e6" stroke-width="0.7"/>
+          <line x1="10" y1="0" x2="10" y2="9.2" stroke="#eab308" stroke-width="0.7"/>
+          <line x1="20" y1="0" x2="20" y2="9.2" stroke="#eab308" stroke-width="0.7"/>
+          <line x1="30" y1="0" x2="30" y2="9.2" stroke="#eab308" stroke-width="0.7"/>
+          <rect x="36.8" y="0.4" width="2.2" height="8.4" rx="0.8" fill="#ff5a36"/>
+        </g>
+      </g>
+
+      <!-- 5. 中央上层建筑、主舰桥、双桁架桅杆与标志性「四烟囱分列布局」(Four-Funnel Split Exhausts, X=144..294) -->
+      <g id="superstructure-four-funnels-top">
+        <!-- 主上层建筑底座轮廓 -->
+        <polygon points="144,24.5 248,24.5 292,31.8 292,56.2 248,63.5 144,63.5"
+                 fill="#0f2230" stroke="#d4e3e6" stroke-width="1.2"/>
+
+        <!-- 5.1 前舰桥、Mineral-ME「音乐台」雷达圆罩、MR-184 炮瞄雷达与前桁架主桅 (X=228..290) -->
+        <polygon points="246,30.5 282,32.2 288,36.5 288,51.5 282,55.8 246,57.5"
+                 fill="#163042" stroke="#38bdf8" stroke-width="1.05"/>
+        <!-- 舰桥顶置 Mineral-ME「音乐台」(Band Stand) 大圆罩 + MR-184「鸢鸣」(Kite Screech) 雷达 -->
+        <circle cx="278.5" cy="44.0" r="4.8" fill="#d4e3e6" stroke="#38bdf8" stroke-width="1.0"/>
+        <circle cx="278.5" cy="44.0" r="2.2" fill="#18364a" stroke="#ff5a36" stroke-width="0.7"/>
+        <circle cx="259.0" cy="44.0" r="2.8" fill="#d4e3e6" stroke="#ff5a36" stroke-width="0.8"/>
+
+        <!-- 前桁架主桅 + 1号「十字剑」(Cross Sword) 导引雷达 + 桅顶「顶板」(Top Plate) 三坐标雷达横臂 (X=228..250) -->
+        <rect x="230" y="36.5" width="16" height="15.0" fill="#122836" stroke="#d4e3e6" stroke-width="1.0"/>
+        <circle cx="247.5" cy="44.0" r="2.6" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.8"/>
+        <line x1="238" y1="27.5" x2="238" y2="60.5" stroke="#d4e3e6" stroke-width="1.15"/>
+        <rect x="235" y="38.5" width="6" height="11.0" fill="#18384c" stroke="#38bdf8" stroke-width="0.9"/>
+        <line x1="238" y1="37.0" x2="238" y2="51.0" stroke="#ff5a36" stroke-width="1.2"/>
+
+        <!-- 5.2 标志性四烟囱分列布局：前对左/右燃气轮机烟囱 (Funnel #1 Port &amp; Funnel #2 Starboard, X=202..222) -->
+        <g id="forward-funnel-pair">
+          <!-- 左舷前烟囱 (微向外倾) -->
+          <polygon points="203,26.2 221,26.8 221,35.8 203,35.2" fill="#142c3c" stroke="#d4e3e6" stroke-width="1.1"/>
+          <rect x="206" y="28.0" width="12" height="5.8" rx="0.8" fill="#04080b" stroke="#38bdf8" stroke-width="0.8"/>
+          <line x1="208" y1="30.9" x2="216" y2="30.9" stroke="#ff5a36" stroke-width="0.65"/>
+          <!-- 右舷前烟囱 (微向外倾) -->
+          <polygon points="203,52.8 221,52.2 221,61.2 203,61.8" fill="#142c3c" stroke="#d4e3e6" stroke-width="1.1"/>
+          <rect x="206" y="54.2" width="12" height="5.8" rx="0.8" fill="#04080b" stroke="#38bdf8" stroke-width="0.8"/>
+          <line x1="208" y1="57.1" x2="216" y2="57.1" stroke="#ff5a36" stroke-width="0.65"/>
+        </g>
+
+        <!-- 5.3 后桁架主桅杆 + Strut Pair 搜索雷达 + 两舷 2座「卡什坦」(Kashtan) 弹炮合一近防系统 (X=178..200) -->
+        <rect x="181" y="36.5" width="16" height="15.0" fill="#122836" stroke="#d4e3e6" stroke-width="1.0"/>
+        <line x1="189" y1="29.0" x2="189" y2="59.0" stroke="#d4e3e6" stroke-width="1.1"/>
+        <ellipse cx="189" cy="44.0" rx="3.2" ry="6.5" fill="#18384c" stroke="#38bdf8" stroke-width="0.9"/>
+        <!-- 左/右两舷「卡什坦」(Kashtan CADS-N-1) 弹炮合一近防炮台 (Y=25.5 &amp; Y=62.5) -->
+        <rect x="184.5" y="23.2" width="8.5" height="5.6" rx="1.0" fill="#163244" stroke="#38bdf8" stroke-width="0.9"/>
+        <circle cx="188.8" cy="26.0" r="1.8" fill="#d4e3e6" stroke="#ff5a36" stroke-width="0.65"/>
+        <line x1="188.8" y1="24.5" x2="195.0" y2="24.5" stroke="#ff5a36" stroke-width="0.85"/>
+        <rect x="184.5" y="59.2" width="8.5" height="5.6" rx="1.0" fill="#163244" stroke="#38bdf8" stroke-width="0.9"/>
+        <circle cx="188.8" cy="62.0" r="1.8" fill="#d4e3e6" stroke="#ff5a36" stroke-width="0.65"/>
+        <line x1="188.8" y1="63.5" x2="195.0" y2="63.5" stroke="#ff5a36" stroke-width="0.85"/>
+
+        <!-- 5.4 标志性四烟囱分列布局：后对左/右燃气轮机烟囱 (Funnel #3 Port &amp; Funnel #4 Starboard, X=152..172) -->
+        <g id="aft-funnel-pair">
+          <!-- 左舷后烟囱 -->
+          <polygon points="153,27.0 171,27.5 171,36.2 153,35.6" fill="#142c3c" stroke="#d4e3e6" stroke-width="1.1"/>
+          <rect x="156" y="28.8" width="12" height="5.6" rx="0.8" fill="#04080b" stroke="#38bdf8" stroke-width="0.8"/>
+          <line x1="158" y1="31.6" x2="166" y2="31.6" stroke="#ff5a36" stroke-width="0.65"/>
+          <!-- 右舷后烟囱 -->
+          <polygon points="153,52.4 171,51.8 171,60.5 153,61.0" fill="#142c3c" stroke="#d4e3e6" stroke-width="1.1"/>
+          <rect x="156" y="53.6" width="12" height="5.6" rx="0.8" fill="#04080b" stroke="#38bdf8" stroke-width="0.8"/>
+          <line x1="158" y1="56.4" x2="166" y2="56.4" stroke="#ff5a36" stroke-width="0.65"/>
+        </g>
+
+        <!-- 两舷四联装 533mm PTA-53-1155 反潜鱼雷 / RPK-6「瀑布」(SS-N-16) 反潜导弹发射管 (X=160..178, Y=21.8 &amp; Y=66.2) -->
+        <rect x="160" y="21.4" width="16.5" height="4.2" rx="0.6" fill="#1c1012" stroke="#eab308" stroke-width="0.85"/>
+        <line x1="161" y1="22.8" x2="175.5" y2="22.8" stroke="#ff5a36" stroke-width="0.6"/>
+        <line x1="161" y1="24.2" x2="175.5" y2="24.2" stroke="#38bdf8" stroke-width="0.6"/>
+        <rect x="160" y="62.4" width="16.5" height="4.2" rx="0.6" fill="#1c1012" stroke="#eab308" stroke-width="0.85"/>
+        <line x1="161" y1="63.8" x2="175.5" y2="63.8" stroke="#ff5a36" stroke-width="0.6"/>
+        <line x1="161" y1="65.2" x2="175.5" y2="65.2" stroke="#38bdf8" stroke-width="0.6"/>
+      </g>
+
+      <!-- 6. 后部半沉降式并列双 Ka-27 直升机机库 + 后 32单元道尔/匕首垂发 + 2号「十字剑」导引雷达 (X=84..144) -->
+      <g id="aft-twin-hangars-top">
+        <polygon points="84,26.5 144,25.5 144,62.5 84,61.5" fill="#102432" stroke="#d4e3e6" stroke-width="1.2"/>
+        <!-- 并列双机库隔墙与左/右机库卷帘大门轨 -->
+        <line x1="84" y1="44.0" x2="132" y2="44.0" stroke="#38bdf8" stroke-width="0.85" stroke-dasharray="3 1.5"/>
+        <rect x="86" y="29.0" width="38" height="12.5" fill="#0b1a24" stroke="#38bdf8" stroke-width="0.75"/>
+        <rect x="86" y="46.5" width="38" height="12.5" fill="#0b1a24" stroke="#38bdf8" stroke-width="0.75"/>
+
+        <!-- 后部 4×8 (32单元) 3K95「道尔/匕首」转轮垂发圆井阵列 (机库前段左右各 2 座转轮井) -->
+        <circle cx="131.5" cy="31.5" r="2.7" fill="#08141c" stroke="#38bdf8" stroke-width="0.75"/>
+        <circle cx="131.5" cy="31.5" r="0.8" fill="#ff5a36"/>
+        <circle cx="139.0" cy="31.5" r="2.7" fill="#08141c" stroke="#38bdf8" stroke-width="0.75"/>
+        <circle cx="139.0" cy="31.5" r="0.8" fill="#ff5a36"/>
+        <circle cx="131.5" cy="56.5" r="2.7" fill="#08141c" stroke="#38bdf8" stroke-width="0.75"/>
+        <circle cx="131.5" cy="56.5" r="0.8" fill="#ff5a36"/>
+        <circle cx="139.0" cy="56.5" r="2.7" fill="#08141c" stroke="#38bdf8" stroke-width="0.75"/>
+        <circle cx="139.0" cy="56.5" r="0.8" fill="#ff5a36"/>
+
+        <!-- 机库顶置：2号 3R95「十字剑」(Cross Sword) 制导雷达圆罩 + 着舰引导雷达 -->
+        <circle cx="118.0" cy="44.0" r="4.2" fill="#18364a" stroke="#38bdf8" stroke-width="0.95"/>
+        <circle cx="118.0" cy="44.0" r="2.0" fill="#d4e3e6" stroke="#ff5a36" stroke-width="0.7"/>
+        <circle cx="96.0" cy="44.0" r="2.4" fill="#d4e3e6" stroke="#38bdf8" stroke-width="0.75"/>
+      </g>
+
+      <!-- 7. 尾部升高直升机起降甲板 + Ka-27PL 共轴双旋翼反潜直升机 + 尾门可变深度拖曳声呐舱 (X=20..84) -->
+      <g id="stern-helideck-vds">
+        <!-- 升高飞行甲板 (X=28..84, Y=27.5..60.5) -->
+        <polygon points="28,29.5 84,27.0 84,61.0 28,58.5" fill="#14181d" stroke="#d4e3e6" stroke-width="1.05"/>
+        <!-- 两侧防坠海安全网虚线 -->
+        <line x1="30" y1="27.2" x2="82" y2="25.0" stroke="#38bdf8" stroke-width="0.95" stroke-dasharray="3 1.5"/>
+        <line x1="30" y1="60.8" x2="82" y2="63.0" stroke="#38bdf8" stroke-width="0.95" stroke-dasharray="3 1.5"/>
+        <!-- 白色起降同心圆与双机库牵引轨道线 -->
+        <line x1="54" y1="44.0" x2="84" y2="35.2" stroke="#ff5a36" stroke-width="0.75" stroke-dasharray="2.5 1.5"/>
+        <line x1="54" y1="44.0" x2="84" y2="52.8" stroke="#ff5a36" stroke-width="0.75" stroke-dasharray="2.5 1.5"/>
+        <circle cx="54.0" cy="44.0" r="10.2" fill="none" stroke="#d4e3e6" stroke-width="1.15"/>
+        <circle cx="54.0" cy="44.0" r="3.2" fill="none" stroke="#38bdf8" stroke-width="0.85"/>
+        <text x="34.5" y="46.0" text-anchor="middle" class="mono" font-size="5.0" fill="#d4e3e6" font-weight="bold">650</text>
+
+        <!-- 驻留 1架展开同轴反转双旋翼的 Ka-27PL「蜗牛」(Helix-A) 反潜直升机 (cx=54.0, cy=44.0) -->
+        <g transform="translate(54.0, 44.0)">
+          <ellipse cx="1.5" cy="0" rx="6.8" ry="2.4" fill="#163244" stroke="#d4e3e6" stroke-width="0.85"/>
+          <line x1="-5.0" y1="-1.6" x2="-8.5" y2="-2.8" stroke="#d4e3e6" stroke-width="0.8"/>
+          <line x1="-5.0" y1="1.6" x2="-8.5" y2="2.8" stroke="#d4e3e6" stroke-width="0.8"/>
+          <!-- 上三叶与下三叶共轴反转旋翼 -->
+          <line x1="0" y1="0" x2="0" y2="-9.2" stroke="#d4e3e6" stroke-width="0.95"/>
+          <line x1="0" y1="0" x2="8.0" y2="4.6" stroke="#d4e3e6" stroke-width="0.95"/>
+          <line x1="0" y1="0" x2="-8.0" y2="4.6" stroke="#d4e3e6" stroke-width="0.95"/>
+          <line x1="0" y1="0" x2="0" y2="9.2" stroke="#38bdf8" stroke-width="0.9"/>
+          <line x1="0" y1="0" x2="8.0" y2="-4.6" stroke="#38bdf8" stroke-width="0.9"/>
+          <line x1="0" y1="0" x2="-8.0" y2="-4.6" stroke="#38bdf8" stroke-width="0.9"/>
+          <circle cx="0" cy="0" r="1.3" fill="#ff5a36" stroke="#d4e3e6" stroke-width="0.5"/>
+        </g>
+
+        <!-- 舰尾下沉平台与「马尾」(VDS Horse Tail) 可变深度拖曳声呐舱门 (X=20..28, Y=38.5..49.5) -->
+        <rect x="20.0" y="38.5" width="7.5" height="11.0" fill="#261014" stroke="#ff5a36" stroke-width="0.95"/>
+        <line x1="20.0" y1="44.0" x2="12.5" y2="44.0" stroke="#38bdf8" stroke-width="0.8" stroke-dasharray="1.8 1.2"/>
+      </g>
+
+      <!-- 8. 底部右舷标注与全舰主尺度说明 -->
+      <text x="20" y="76.5" class="mono" font-size="2.6" fill="#38bdf8">STARBOARD BATTERY: 4×P-270 MOSKIT · 2×FUNNELS · 1×KASHTAN · 4×533MM RPK-6 VODOPAD · TWIN KA-27 HANGARS</text>
+      <text x="410" y="76.5" text-anchor="end" class="mono" font-size="2.6" fill="#eab308">BEAM: 19.3M · LOA: 163.5M (8.47:1)</text>
+
+    </g>
+  </g>
+</svg>

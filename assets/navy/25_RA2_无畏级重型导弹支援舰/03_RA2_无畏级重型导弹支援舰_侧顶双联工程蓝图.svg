@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 580" width="1320" height="580" data-asset-id="naval.dreadnought.master.sheet" style="background:#080a0b;">
+  <defs>
+    <style>
+      svg { fill: none; stroke-linecap: butt; }
+      .s-dim { stroke: #2c3b40; stroke-width: 1; }
+      .s-line { stroke: #5f7c84; stroke-width: 1; }
+      .s-hi { stroke: #d4e3e6; stroke-width: 1.2; }
+      .s-alert { stroke: #ff5a36; stroke-width: 1.4; }
+      .s-focus { stroke: #38bdf8; stroke-width: 1.4; }
+      .f-dim { fill: #2c3b40; stroke: none; }
+      .f-line { fill: #5f7c84; stroke: none; }
+      .f-hi { fill: #d4e3e6; stroke: none; }
+      .f-alert { fill: #ff5a36; stroke: none; }
+      .f-panel { fill: #0c1113; }
+      text { font-family: "Rajdhani", "Bahnschrift", "DIN Alternate", "Microsoft YaHei", sans-serif; letter-spacing: 0.12em; }
+      text:not([stroke]) { stroke: none; }
+      text:not([fill]) { fill: #cfdde0; }
+      text.p { font-family: "Rajdhani", "JetBrains Mono", Consolas, "Microsoft YaHei", monospace; letter-spacing: 0.08em; }
+      text.cap { letter-spacing: 0.16em; text-transform: uppercase; }
+      text.cap:not([fill]) { fill: #8aa1a7; }
+      text.mono { font-family: "Rajdhani", "JetBrains Mono", Consolas, "Microsoft YaHei", monospace; letter-spacing: 0.05em; }
+      text.big { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; font-weight: 600; letter-spacing: 0.08em; }
+      text.alert { fill: #ff5a36; }
+    </style>
+    <pattern id="grid20" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#0c151c" stroke-width="0.7"/>
+    </pattern>
+    <pattern id="grid100" width="100" height="100" patternUnits="userSpaceOnUse">
+      <path d="M 100 0 L 0 0 0 100" fill="none" stroke="#14222c" stroke-width="1"/>
+      <circle cx="50" cy="50" r="0.9" fill="#1f3340"/>
+    </pattern>
+    <pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#ff5a36" stroke-width="1.2" stroke-opacity="0.35"/>
+    </pattern>
+  </defs>
+
+  <!-- 1. 工程蓝图暗色底板与坐标网格图层 -->
+  <g id="layer-backdrop">
+    <rect x="0" y="0" width="1320" height="580" fill="#080a0b"/>
+    <rect x="20" y="20" width="1280" height="540" fill="url(#grid100)" stroke="#2c3b40" stroke-width="1"/>
+    <path d="M 20 36 V 20 H 36 M 1284 20 H 1300 V 36 M 20 544 V 560 H 36 M 1284 560 H 1300 V 544" fill="none" stroke="#38bdf8" stroke-width="1.5"/>
+    <line x1="20" y1="54" x2="1300" y2="54" stroke="#2c3b40" stroke-width="1"/>
+    <line x1="20" y1="534" x2="1300" y2="534" stroke="#2c3b40" stroke-width="1"/>
+    <text x="34" y="42" class="p mono" fill="#38bdf8" font-size="11" font-weight="bold">SOVIET NAVY DREADNOUGHT-CLASS HEAVY MISSILE SUPPORT SHIP (082 GROZNY) · 28,000T MASTER BLUEPRINT</text>
+    <text x="1286" y="42" text-anchor="end" class="p cap" fill="#d4e3e6" font-size="10.5">苏联海军「082 无畏级」重型战略导弹支援舰 · 侧视8座巨型通用任务井+双联攻城飞弹与顶视全甲板总图</text>
+    <text x="34" y="551" class="p mono" fill="#8aa1a7" font-size="9.5">LOA: 230.0M · BEAM: 28.0M (8.21:1) · 2×4 GIANT MISSION WELLS (Ø2.8M) + 2×TWIN HEAVY SIEGE LAUNCHERS + 24×STD VLS · UID=82</text>
+    <text x="1286" y="551" text-anchor="end" class="p mono" fill="#5f7c84" font-size="9.5">POSEIDON NAVAL CAD ASSET · TRUE 1:1 ASPECT (8.21:1)</text>
+  </g>
+
+  <!-- 2. 舰艇核心 CAD 矢量图层 (上半框侧视立面 + 下半框顶视全甲板 + 右侧双工程规格铭牌) -->
+  <g id="layer-ship-cad">
+    <rect x="44" y="72" width="1232" height="216" fill="#091116" fill-opacity="0.45" stroke="#2c3b40"/>
+    <text font-size="9.5" x="58" y="92" class="p mono" fill="#38bdf8">01 / STARBOARD PROFILE &amp; 2×4 GIANT MISSION WELLS / 2×TWIN SIEGE ERECTORS / 24-CELL AFT VLS CUTAWAY</text>
+    <text x="975" y="92" text-anchor="end" class="p mono" fill="#5f7c84" font-size="9">SCALE 1:1 · BOW RIGHT (+X)</text>
+    <g transform="translate(68.0,98.0) scale(2.020,2.020)">
+
+      <!-- A. 舰尾上方海域：舰尾 24 单元 (3×8) 标准防空/通用垂发矩阵框与载荷谱系 (X=24..116, Y=8..42 · 远离舯部攻城飞弹架) -->
+      <g id="aft-vls-matrix-callout">
+        <rect x="24" y="10" width="90" height="30" fill="#071118" fill-opacity="0.82" stroke="#2c3b40" stroke-width="0.65"/>
+        <line x1="24" y1="16.2" x2="114" y2="16.2" stroke="#2c3b40" stroke-width="0.55"/>
+        <text x="28" y="14.4" class="mono" font-size="2.5" fill="#38bdf8" font-weight="bold">AFT 24-CELL STANDARD VLS (3×8)</text>
+
+        <!-- 3×8 = 24单元标准垂发矩阵图 -->
+        <rect x="28" y="19" width="28" height="14" fill="#08151e" stroke="#38bdf8" stroke-width="0.75"/>
+        <line x1="28" y1="23.7" x2="56" y2="23.7" stroke="#38bdf8" stroke-width="0.45"/>
+        <line x1="28" y1="28.3" x2="56" y2="28.3" stroke="#38bdf8" stroke-width="0.45"/>
+        <line x1="31.5" y1="19" x2="31.5" y2="33" stroke="#4a6368" stroke-width="0.4"/>
+        <line x1="35.0" y1="19" x2="35.0" y2="33" stroke="#4a6368" stroke-width="0.4"/>
+        <line x1="38.5" y1="19" x2="38.5" y2="33" stroke="#4a6368" stroke-width="0.4"/>
+        <line x1="42.0" y1="19" x2="42.0" y2="33" stroke="#38bdf8" stroke-width="0.6"/>
+        <line x1="45.5" y1="19" x2="45.5" y2="33" stroke="#4a6368" stroke-width="0.4"/>
+        <line x1="49.0" y1="19" x2="49.0" y2="33" stroke="#4a6368" stroke-width="0.4"/>
+        <line x1="52.5" y1="19" x2="52.5" y2="33" stroke="#4a6368" stroke-width="0.4"/>
+        <text x="42" y="37.2" text-anchor="middle" class="mono" font-size="2.3" fill="#8aa1a7">SELF-DEFENSE ONLY</text>
+
+        <!-- 4种战略/防空载荷垂直对比剪影 (深地钻地弹 / 反舰弹道弹 / 巡飞弹母舱 / 防空弹) -->
+        <rect x="64" y="19.5" width="3.4" height="15.5" fill="#261014" stroke="#ff5a36" stroke-width="0.65"/>
+        <polygon points="64,19.5 65.7,16.5 67.4,19.5" fill="#ff5a36"/>
+        <text x="65.7" y="38.0" text-anchor="middle" class="mono" font-size="2.2" fill="#ff5a36">ASBM</text>
+
+        <rect x="76" y="20.0" width="3.2" height="15.0" fill="#1c1410" stroke="#eab308" stroke-width="0.65"/>
+        <polygon points="76,20.0 77.6,16.8 79.2,20.0" fill="#eab308"/>
+        <text x="77.6" y="38.0" text-anchor="middle" class="mono" font-size="2.2" fill="#eab308">BUNKER</text>
+
+        <rect x="88" y="21.5" width="3.0" height="13.5" fill="#0e2230" stroke="#38bdf8" stroke-width="0.65"/>
+        <polygon points="88,21.5 89.5,18.8 91.0,21.5" fill="#38bdf8"/>
+        <text x="89.5" y="38.0" text-anchor="middle" class="mono" font-size="2.2" fill="#38bdf8">SWARM</text>
+
+        <rect x="100" y="24.5" width="1.8" height="10.5" fill="#0c1e2a" stroke="#d4e3e6" stroke-width="0.55"/>
+        <polygon points="100,24.5 100.9,22.0 101.8,24.5" fill="#38bdf8"/>
+        <text x="101.0" y="38.0" text-anchor="middle" class="mono" font-size="2.2" fill="#8aa1a7">SAM</text>
+      </g>
+
+      <!-- B. 舰首上方海域：2×4 共 8 座 Ø2.8M 巨型通用战略任务井展开图 + 垂直腾空齐射的战略攻城弹头 (X=292..408, Y=5..46) -->
+      <g id="forward-strategic-wells-salvo">
+        <!-- 2×4 巨型通用任务井俯视模块框 (X=294..354, Y=14..32) -->
+        <rect x="294" y="14" width="58" height="16" fill="#180c0e" stroke="#ff5a36" stroke-width="0.85"/>
+        <line x1="323" y1="14" x2="323" y2="30" stroke="#eab308" stroke-width="0.7" stroke-dasharray="2 1"/>
+        <!-- 后4井与前4井共8座 Ø2.8m 重型任务井口 -->
+        <circle cx="301.5" cy="18.5" r="2.6" fill="#2a1216" stroke="#ff5a36" stroke-width="0.7"/>
+        <circle cx="301.5" cy="25.5" r="2.6" fill="#2a1216" stroke="#ff5a36" stroke-width="0.7"/>
+        <circle cx="314.5" cy="18.5" r="2.6" fill="#2a1216" stroke="#ff5a36" stroke-width="0.7"/>
+        <circle cx="314.5" cy="25.5" r="2.6" fill="#2a1216" stroke="#ff5a36" stroke-width="0.7"/>
+        <circle cx="331.5" cy="18.5" r="2.6" fill="#2a1216" stroke="#eab308" stroke-width="0.7"/>
+        <circle cx="331.5" cy="25.5" r="2.6" fill="#2a1216" stroke="#eab308" stroke-width="0.7"/>
+        <circle cx="344.5" cy="18.5" r="2.6" fill="#ff5a36" stroke="#d4e3e6" stroke-width="0.7"/>
+        <circle cx="344.5" cy="25.5" r="2.6" fill="#2a1216" stroke="#eab308" stroke-width="0.7"/>
+        <text x="294" y="8.5" class="mono" font-size="2.6" fill="#ff5a36" font-weight="bold">8×Ø2.8M STRATEGIC MISSION WELLS (NO BOW GUN)</text>
+        <text x="294" y="12.0" class="mono" font-size="2.3" fill="#eab308">2×4 OPEN-ARCHITECTURE COLD/HOT SILOS · DEEP-STRIKE &amp; ASBM</text>
+
+        <!-- 从前部任务井垂直发射升空的超重型高超音速/深地穿透战略导弹剪影 (X=366..378, Y=6..48) -->
+        <line x1="370.5" y1="26.0" x2="370.5" y2="48.5" stroke="#ff5a36" stroke-width="0.85" stroke-dasharray="2.5 1.5"/>
+        <polygon points="368.5,26.0 372.5,26.0 370.5,33.5" fill="#eab308" fill-opacity="0.85"/>
+        <rect x="368.3" y="10.5" width="4.4" height="15.5" rx="0.6" fill="#261014" stroke="#ff5a36" stroke-width="0.9"/>
+        <polygon points="368.3,10.5 370.5,4.2 372.7,10.5" fill="#ff5a36" stroke="#d4e3e6" stroke-width="0.6"/>
+        <line x1="368.3" y1="15.5" x2="372.7" y2="15.5" stroke="#eab308" stroke-width="0.7"/>
+        <polygon points="366.5,25.5 368.3,22.0 368.3,26.0" fill="#d4e3e6"/>
+        <polygon points="374.5,25.5 372.7,22.0 372.7,26.0" fill="#d4e3e6"/>
+        <text x="377" y="16.5" class="mono" font-size="2.4" fill="#ff5a36" font-weight="bold">HEAVY STRATEGIC</text>
+        <text x="377" y="20.0" class="mono" font-size="2.3" fill="#eab308">PAYLOAD LAUNCH</text>
+      </g>
+
+      <!-- 1. 水下重型破冰球鼻艏、防雷装甲鼓包、四轴五叶金色螺旋桨与反应堆/弹药底舱 (Y=67.0..83.5) -->
+      <g id="underwater-hull-dreadnought">
+        <path d="M 22 67.0 L 402 67.0 C 405 70.0, 410 72.5, 414 75.2 C 416 77.5, 414 82.8, 401 83.2 C 388 83.2, 378 80.5, 368 79.5 L 78 79.5 L 48 75.2 L 23 72.8 Z"
+              fill="#261014" stroke="#ff5a36" stroke-width="1.2"/>
+        <!-- 舰首重型破冰加强球鼻艏与低频远程声呐罩 -->
+        <path d="M 380 72.0 C 396 72.0, 409 74.2, 413.5 78.2 C 409 81.8, 395 82.5, 380 79.5 Z"
+              fill="#351419" stroke="#ff5a36" stroke-width="0.85"/>
+        <line x1="391" y1="72.4" x2="391" y2="81.5" stroke="#ff5a36" stroke-width="0.55"/>
+        <line x1="401" y1="73.5" x2="401" y2="81.8" stroke="#ff5a36" stroke-width="0.55"/>
+        <!-- 水下防雷隔舱鼓包与长舭龙骨 -->
+        <rect x="115" y="68.5" width="250" height="3.2" fill="#351419" stroke="#ff5a36" stroke-width="0.7" stroke-dasharray="4 1.5"/>
+        <path d="M 128 76.2 L 138 78.5 L 278 78.5 L 288 76.2" fill="none" stroke="#ff5a36" stroke-width="1.05"/>
+        <!-- 舰尾重型双平衡舵 + 四轴推进轴架 + 五叶金色螺旋桨 (#eab308) -->
+        <polygon points="24,72.2 32,72.2 30.5,82.0 22.5,82.0" fill="#261014" stroke="#ff5a36" stroke-width="1.0"/>
+        <line x1="38" y1="78.2" x2="86" y2="74.2" stroke="#eab308" stroke-width="1.35"/>
+        <line x1="52" y1="73.2" x2="49" y2="78.0" stroke="#d4e3e6" stroke-width="1.05"/>
+        <ellipse cx="38" cy="78.2" rx="2.0" ry="4.8" fill="#eab308" stroke="#d4e3e6" stroke-width="0.65"/>
+        <circle cx="38" cy="78.2" r="1.0" fill="#d4e3e6"/>
+        <!-- 内部 KN-3 核动力/重油蒸汽轮机混合主机舱透视 (X=238..282) -->
+        <rect x="238" y="72.2" width="44" height="6.2" rx="0.8" fill="#141812" fill-opacity="0.75" stroke="#eab308" stroke-width="0.7" stroke-dasharray="2.5 1.2"/>
+        <text x="260" y="76.3" text-anchor="middle" class="mono" font-size="2.3" fill="#eab308">KN-3 REACTOR &amp; TURBINES</text>
+      </g>
+
+      <!-- 2. 28,000T 苏式重装甲高干舷破冰战列支援舰主船体与舷号 082 (X=20..414, Y=49.5..67.0) -->
+      <g id="heavy-armored-hull">
+        <polygon points="20,56.5 82,56.5 85,53.5 282,53.5 286,50.5 382,50.0 414,48.8 405,59.5 402,67.0 22,67.0"
+                 fill="#0a1822" stroke="#d4e3e6" stroke-width="1.4"/>
+        <!-- 全舰重型水线装甲带与折角防浪弦线 -->
+        <polyline points="21,61.2 84,61.2 88,58.5 286,58.0 388,55.5 408,54.2" fill="none" stroke="#38bdf8" stroke-width="0.95"/>
+        <line x1="22" y1="67.0" x2="402" y2="67.0" stroke="#d4e3e6" stroke-width="1.0"/>
+        <!-- 舰首双霍尔锚、苏维埃红星徽章与白色巨型战术舷号「082」 -->
+        <line x1="412.5" y1="48.8" x2="414.0" y2="40.5" stroke="#d4e3e6" stroke-width="0.9"/>
+        <line x1="20.5" y1="56.5" x2="18.5" y2="48.5" stroke="#d4e3e6" stroke-width="0.9"/>
+        <circle cx="398" cy="53.5" r="1.6" fill="#050a0e" stroke="#d4e3e6" stroke-width="0.7"/>
+        <polygon points="404,51.2 406.5,52.8 404,54.4 401.5,52.8" fill="#ff5a36"/>
+        <text x="384" y="61.5" text-anchor="middle" class="mono" font-size="6.6" fill="#d4e3e6" font-weight="bold">082</text>
+      </g>
+
+      <!-- 3. 核心特征一：舰首取消主炮，让渡给 2×4 共 8 座 Ø2.8M 巨型通用战略任务井与贯穿船体的深井内透视剖面 (X=285..385) -->
+      <g id="bow-8-strategic-mission-wells">
+        <!-- 前甲板加厚装甲井口围槛平台 (前群4井 X=340..380 + 后群4井 X=290..332) -->
+        <rect x="288" y="47.8" width="46" height="2.7" fill="#1c0d10" stroke="#ff5a36" stroke-width="1.0"/>
+        <rect x="338" y="47.5" width="44" height="2.7" fill="#1c0d10" stroke="#eab308" stroke-width="1.0"/>
+        <!-- 8座巨型通用任务井液压装甲井盖凸缘 (其中前群第3井掀开垂直发射态) -->
+        <rect x="291" y="46.4" width="8.5" height="1.4" fill="#2a1216" stroke="#ff5a36" stroke-width="0.75"/>
+        <rect x="302" y="46.4" width="8.5" height="1.4" fill="#2a1216" stroke="#ff5a36" stroke-width="0.75"/>
+        <rect x="313" y="46.4" width="8.5" height="1.4" fill="#2a1216" stroke="#ff5a36" stroke-width="0.75"/>
+        <rect x="324" y="46.4" width="8.5" height="1.4" fill="#2a1216" stroke="#ff5a36" stroke-width="0.75"/>
+
+        <rect x="341" y="46.1" width="8.5" height="1.4" fill="#2a1216" stroke="#eab308" stroke-width="0.75"/>
+        <rect x="352" y="46.1" width="8.5" height="1.4" fill="#2a1216" stroke="#eab308" stroke-width="0.75"/>
+        <!-- 掀开90°的发射井盖与井口烈焰高光 -->
+        <rect x="363" y="46.1" width="8.5" height="1.4" fill="#ff5a36" stroke="#d4e3e6" stroke-width="0.8"/>
+        <line x1="363" y1="46.1" x2="359.5" y2="40.5" stroke="#ff5a36" stroke-width="1.1"/>
+        <rect x="374" y="46.1" width="6.5" height="1.4" fill="#2a1216" stroke="#eab308" stroke-width="0.75"/>
+
+        <!-- 贯穿船体深处的 8 具 Ø2.8M 巨型通用战略任务井内透视剖面 (Y=51.0..77.2) -->
+        <g stroke="#ff5a36" stroke-width="0.75" fill="#1a0b0e" fill-opacity="0.72">
+          <rect x="291.8" y="51.2" width="7.0" height="25.0" rx="0.8" stroke-dasharray="2.5 1"/>
+          <rect x="302.8" y="51.2" width="7.0" height="25.0" rx="0.8" stroke-dasharray="2.5 1"/>
+          <rect x="313.8" y="51.2" width="7.0" height="25.0" rx="0.8" stroke-dasharray="2.5 1"/>
+          <rect x="324.8" y="51.2" width="7.0" height="25.0" rx="0.8" stroke-dasharray="2.5 1"/>
+          <rect x="341.8" y="51.2" width="7.0" height="25.0" rx="0.8" stroke="#eab308" stroke-dasharray="2.5 1"/>
+          <rect x="352.8" y="51.2" width="7.0" height="25.0" rx="0.8" stroke="#eab308" stroke-dasharray="2.5 1"/>
+          <rect x="363.8" y="51.2" width="7.0" height="25.0" rx="0.8" fill="#351216" stroke="#ff5a36"/>
+          <rect x="374.2" y="51.2" width="5.8" height="25.0" rx="0.8" stroke="#eab308" stroke-dasharray="2.5 1"/>
+        </g>
+        <!-- 井内待发超重型弹体与底部公共排焰增压管道 -->
+        <g stroke="#eab308" stroke-width="1.2" stroke-opacity="0.85">
+          <line x1="295.3" y1="53.5" x2="295.3" y2="73.5"/>
+          <line x1="306.3" y1="53.5" x2="306.3" y2="73.5"/>
+          <line x1="317.3" y1="53.5" x2="317.3" y2="73.5"/>
+          <line x1="328.3" y1="53.5" x2="328.3" y2="73.5"/>
+          <line x1="345.3" y1="53.5" x2="345.3" y2="73.5"/>
+          <line x1="356.3" y1="53.5" x2="356.3" y2="73.5"/>
+          <line x1="377.1" y1="53.5" x2="377.1" y2="73.5"/>
+        </g>
+        <line x1="290" y1="76.5" x2="381" y2="76.5" stroke="#38bdf8" stroke-width="0.9"/>
+        <text x="335" y="75.0" text-anchor="middle" class="mono" font-size="2.4" fill="#d4e3e6">DEEP-WELL THERMAL PLENUM &amp; INERTIAL BUS</text>
+      </g>
+
+      <!-- 4. 核心特征二：苏式重装甲战列舰式前倾指挥塔桅、目标链中继雷达球与防爆烟囱 (X=238..286, Y=4.0..53.5) -->
+      <g id="armored-citadel-mast">
+        <!-- 重装甲多层指挥塔基座与防弹观察窗 -->
+        <polygon points="238,53.5 242,32.0 281,32.0 286,53.5" fill="#0e2230" stroke="#d4e3e6" stroke-width="1.25"/>
+        <line x1="240" y1="43.5" x2="284" y2="43.5" stroke="#38bdf8" stroke-width="0.8"/>
+        <polygon points="268,34.0 281.5,34.0 282.8,37.5 268,37.5" fill="#04080b" stroke="#38bdf8" stroke-width="0.85"/>
+        <!-- 前侧耳台 2座 AK-630M 六管30mm近防炮 -->
+        <rect x="279" y="39.2" width="5.2" height="3.2" fill="#163244" stroke="#d4e3e6" stroke-width="0.75"/>
+        <circle cx="281.6" cy="37.8" r="1.6" fill="#18384c" stroke="#38bdf8" stroke-width="0.7"/>
+        <line x1="283.2" y1="37.5" x2="288.0" y2="36.5" stroke="#d4e3e6" stroke-width="1.0"/>
+
+        <!-- 舰桥前顶平台：大型「音乐台/目标链」(Band Stand / Target-Link) 卫星与空天母舰超视距目标指示雷达巨球 -->
+        <rect x="271" y="28.0" width="9.0" height="4.0" fill="#163244" stroke="#d4e3e6" stroke-width="0.85"/>
+        <circle cx="275.5" cy="24.2" r="4.2" fill="#183a4e" stroke="#38bdf8" stroke-width="1.15"/>
+        <line x1="271.5" y1="24.2" x2="279.5" y2="24.2" stroke="#eab308" stroke-width="0.65"/>
+
+        <!-- 高耸苏式金字塔桁架装甲主塔桅 + 顶置「顶对」(Top Pair) 远程三坐标雷达网架 (X=250..269, Y=5.0..32.0) -->
+        <polygon points="250,32.0 255,11.5 265,11.5 269,32.0" fill="#122836" stroke="#d4e3e6" stroke-width="1.2"/>
+        <polyline points="251,28 267,22 253,17 265,12" fill="none" stroke="#38bdf8" stroke-width="0.7"/>
+        <line x1="248" y1="20.5" x2="271" y2="20.5" stroke="#d4e3e6" stroke-width="1.0"/>
+        <line x1="251" y1="14.5" x2="268" y2="14.5" stroke="#d4e3e6" stroke-width="0.9"/>
+        <!-- 塔顶背靠背「顶对」(Top Pair) 巨型远程搜索雷达抛物面与目标链卫通杆 -->
+        <polygon points="253,11.5 251,5.8 267,5.8 265,11.5" fill="#183a4e" stroke="#38bdf8" stroke-width="1.1"/>
+        <line x1="259" y1="5.8" x2="259" y2="2.0" stroke="#ff5a36" stroke-width="1.0"/>
+        <circle cx="259" cy="2.0" r="0.8" fill="#eab308"/>
+
+        <!-- 后侧一体式重装甲防爆排烟囱 (X=240..251, Y=19.5..32.0) -->
+        <polygon points="240,32.0 242,19.5 250,19.5 251,32.0" fill="#102432" stroke="#d4e3e6" stroke-width="1.05"/>
+        <polygon points="242,19.5 243,17.5 250,18.0 250,19.5" fill="#04080b" stroke="#ff5a36" stroke-width="0.85"/>
+        <text x="259" y="49.5" text-anchor="middle" class="mono" font-size="2.4" fill="#38bdf8">TARGET-LINK CITADEL</text>
+      </g>
+
+      <!-- 5. 核心特征三：舰舯两座标志性红警2「无畏级」重型双联装倾斜起竖远程攻城飞弹发射架 (2×Twin Heavy Siege Missile Erector-Launchers · X=145..238) -->
+      <g id="ra2-twin-siege-missile-launchers">
+        <!-- 舯部重装甲飞弹发射平台基座与下方自动再装填弹药库内透视 (X=146..238, Y=53.5..71.5) -->
+        <rect x="146" y="48.5" width="92" height="5.0" fill="#142834" stroke="#d4e3e6" stroke-width="1.15"/>
+        <!-- 船体内部重型水平备用飞弹库与液压提升机虚线透视 -->
+        <rect x="150" y="55.0" width="84" height="12.5" rx="1.0" fill="#1c0d10" fill-opacity="0.68" stroke="#ff5a36" stroke-width="0.75" stroke-dasharray="3 1.5"/>
+        <line x1="156" y1="59.0" x2="226" y2="59.0" stroke="#eab308" stroke-width="1.4" stroke-dasharray="14 4"/>
+        <line x1="156" y1="63.5" x2="226" y2="63.5" stroke="#ff5a36" stroke-width="1.4" stroke-dasharray="14 4"/>
+        <text x="192" y="66.5" text-anchor="middle" class="mono" font-size="2.3" fill="#eab308">DEEP MAGAZINE &amp; HYDRAULIC RELOAD SYSTEM</text>
+
+        <!-- #1 前座双联装重型远程攻城飞弹起竖发射架 (X=192..236 · 38° 仰角昂首指向右上方 +X, -Y) -->
+        <g id="forward-siege-launcher">
+          <!-- 重型旋转装甲转盘与液压起竖巨臂 -->
+          <polygon points="194,48.5 198,41.5 214,41.5 218,48.5" fill="#18364a" stroke="#38bdf8" stroke-width="1.05"/>
+          <line x1="212" y1="43.5" x2="221" y2="29.5" stroke="#eab308" stroke-width="1.6"/>
+          <line x1="215" y1="44.5" x2="224" y2="31.0" stroke="#d4e3e6" stroke-width="1.0"/>
+          <!-- 38° 倾斜起竖的重型桁架导轨与 18米级 V-3/R-27K 红白涂装攻城飞弹 (中心旋转点 204, 41) -->
+          <g transform="translate(204.0, 41.0) rotate(-36)">
+            <!-- 下方重型导流桁架臂 -->
+            <rect x="-10" y="1.8" width="44" height="3.2" fill="#0d202c" stroke="#38bdf8" stroke-width="0.85"/>
+            <polyline points="-8,4.8 -2,2.0 4,4.8 10,2.0 16,4.8 22,2.0 28,4.8 32,2.0" fill="none" stroke="#38bdf8" stroke-width="0.55"/>
+            <!-- 远端并列第2枚飞弹虚影 (展现双联装立体层次) -->
+            <path d="M -8 -4.8 L 30 -4.8 L 39 -2.8 L 30 -0.8 L -8 -0.8 Z" fill="#1c0d10" stroke="#ff5a36" stroke-width="0.7" stroke-dasharray="2 1"/>
+            <!-- 近端主攻城飞弹弹体 (亮白弹身 + 鲜红重型战斗部头锥 + 十字尾翼 + 尾喷管) -->
+            <rect x="-8" y="-3.2" width="38" height="4.8" rx="0.6" fill="#d4e3e6" stroke="#050a0e" stroke-width="0.6"/>
+            <rect x="4" y="-3.2" width="12" height="4.8" fill="#163244"/>
+            <text x="10" y="0.2" text-anchor="middle" class="mono" font-size="2.6" fill="#eab308" font-weight="bold">CCCP</text>
+            <!-- 鲜红高爆/钻地重型双锥战斗部 -->
+            <polygon points="30,-3.2 42,-0.8 30,1.6" fill="#ff5a36" stroke="#d4e3e6" stroke-width="0.75"/>
+            <line x1="34" y1="-2.3" x2="34" y2="0.7" stroke="#eab308" stroke-width="0.7"/>
+            <!-- 尾部大展弦比安定翼与火箭发动机喷口 -->
+            <polygon points="-8,-3.2 -4,-7.2 2,-3.2" fill="#ff5a36" stroke="#d4e3e6" stroke-width="0.6"/>
+            <polygon points="-8,1.6 -4,5.2 2,1.6" fill="#ff5a36" stroke="#d4e3e6" stroke-width="0.6"/>
+            <polygon points="-11,-2.6 -8,-3.0 -8,1.4 -11,1.0" fill="#eab308" stroke="#ff5a36" stroke-width="0.6"/>
+          </g>
+        </g>
+
+        <!-- #2 后座双联装重型远程攻城飞弹起竖发射架 (X=150..194 · 38° 仰角阶梯并列齐射态) -->
+        <g id="aft-siege-launcher">
+          <polygon points="152,48.5 156,41.5 172,41.5 176,48.5" fill="#18364a" stroke="#38bdf8" stroke-width="1.05"/>
+          <line x1="170" y1="43.5" x2="179" y2="29.5" stroke="#eab308" stroke-width="1.6"/>
+          <line x1="173" y1="44.5" x2="182" y2="31.0" stroke="#d4e3e6" stroke-width="1.0"/>
+          <g transform="translate(162.0, 41.0) rotate(-36)">
+            <rect x="-10" y="1.8" width="44" height="3.2" fill="#0d202c" stroke="#38bdf8" stroke-width="0.85"/>
+            <polyline points="-8,4.8 -2,2.0 4,4.8 10,2.0 16,4.8 22,2.0 28,4.8 32,2.0" fill="none" stroke="#38bdf8" stroke-width="0.55"/>
+            <path d="M -8 -4.8 L 30 -4.8 L 39 -2.8 L 30 -0.8 L -8 -0.8 Z" fill="#1c0d10" stroke="#ff5a36" stroke-width="0.7" stroke-dasharray="2 1"/>
+            <rect x="-8" y="-3.2" width="38" height="4.8" rx="0.6" fill="#d4e3e6" stroke="#050a0e" stroke-width="0.6"/>
+            <rect x="4" y="-3.2" width="12" height="4.8" fill="#163244"/>
+            <text x="10" y="0.2" text-anchor="middle" class="mono" font-size="2.6" fill="#eab308" font-weight="bold">V-3M</text>
+            <polygon points="30,-3.2 42,-0.8 30,1.6" fill="#ff5a36" stroke="#d4e3e6" stroke-width="0.75"/>
+            <line x1="34" y1="-2.3" x2="34" y2="0.7" stroke="#eab308" stroke-width="0.7"/>
+            <polygon points="-8,-3.2 -4,-7.2 2,-3.2" fill="#ff5a36" stroke="#d4e3e6" stroke-width="0.6"/>
+            <polygon points="-8,1.6 -4,5.2 2,1.6" fill="#ff5a36" stroke="#d4e3e6" stroke-width="0.6"/>
+            <polygon points="-11,-2.6 -8,-3.0 -8,1.4 -11,1.0" fill="#eab308" stroke="#ff5a36" stroke-width="0.6"/>
+          </g>
+        </g>
+
+        <!-- 攻城飞弹起竖架工程标注 (置于发射架正上方净空区 X=132..232, Y=7.5..11.5) -->
+        <text x="182" y="7.8" text-anchor="middle" class="mono" font-size="2.6" fill="#ff5a36" font-weight="bold">2×TWIN HEAVY SIEGE BALLISTIC ERECTOR-LAUNCHERS</text>
+        <text x="182" y="11.2" text-anchor="middle" class="mono" font-size="2.3" fill="#eab308">4×18M LONG-RANGE SIEGE MISSILES (38° ELEVATION)</text>
+      </g>
+
+      <!-- 6. 核心特征四：舰尾保留 24 单元标准垂发 (3×8 Standard VLS) + 后火控塔 + 2座 AK-630M 近防炮 + 尾部系留甲板 (X=20..146) -->
+      <g id="aft-vls-and-ciws">
+        <!-- 后部辅机与近防火控平台 (X=118..146) -->
+        <polygon points="118,53.5 121,41.0 146,41.0 146,53.5" fill="#0e2230" stroke="#d4e3e6" stroke-width="1.1"/>
+        <!-- 后置「低音帐篷」火控雷达球罩与后部 2座 AK-630M 六管30mm近防炮 -->
+        <rect x="131" y="36.0" width="8.0" height="5.0" fill="#163244" stroke="#d4e3e6" stroke-width="0.8"/>
+        <circle cx="135.0" cy="33.2" r="2.8" fill="#18384c" stroke="#38bdf8" stroke-width="0.95"/>
+        <rect x="122" y="37.8" width="5.2" height="3.2" fill="#163244" stroke="#d4e3e6" stroke-width="0.75"/>
+        <circle cx="124.6" cy="36.4" r="1.6" fill="#18384c" stroke="#38bdf8" stroke-width="0.7"/>
+        <line x1="123.0" y1="36.2" x2="117.5" y2="35.2" stroke="#d4e3e6" stroke-width="1.0"/>
+
+        <!-- 舰尾 24 单元 (3×8) 标准防空/反潜/反无人机垂发井口围槛与内透视 (X=84..116) -->
+        <rect x="85" y="51.0" width="31" height="2.5" fill="#102838" stroke="#38bdf8" stroke-width="0.95"/>
+        <line x1="95.3" y1="51.0" x2="95.3" y2="53.5" stroke="#d4e3e6" stroke-width="0.65"/>
+        <line x1="105.6" y1="51.0" x2="105.6" y2="53.5" stroke="#d4e3e6" stroke-width="0.65"/>
+        <rect x="87" y="54.8" width="27" height="10.5" rx="0.6" fill="#08151e" fill-opacity="0.75" stroke="#38bdf8" stroke-width="0.7" stroke-dasharray="2.5 1.2"/>
+        <text x="100.5" y="61.2" text-anchor="middle" class="mono" font-size="2.3" fill="#38bdf8">24×STD VLS</text>
+
+        <!-- 舰尾重型补给起重机、系留绞盘与反潜诱饵发射器 (X=20..82) -->
+        <line x1="22" y1="55.2" x2="80" y2="55.2" stroke="#38bdf8" stroke-width="0.75" stroke-dasharray="3 1.5"/>
+        <polygon points="56,56.5 58,49.5 64,49.5 66,56.5" fill="#122836" stroke="#d4e3e6" stroke-width="0.85"/>
+        <line x1="60" y1="50.5" x2="38" y2="45.5" stroke="#eab308" stroke-width="1.1"/>
+        <rect x="28" y="53.8" width="7.5" height="2.7" fill="#163244" stroke="#d4e3e6" stroke-width="0.75"/>
+        <text x="52" y="43.5" text-anchor="middle" class="mono" font-size="2.4" fill="#8aa1a7">AFT MOORING &amp; CRANE</text>
+      </g>
+
+      <!-- 7. 底部总长与四大功能分段工程尺寸标尺 (LOA 230.0M) -->
+      <g id="dimension-ruler" stroke="#5f7c84" stroke-width="0.55">
+        <line x1="20" y1="86.0" x2="414" y2="86.0"/>
+        <line x1="20" y1="83.5" x2="20" y2="87.5"/>
+        <line x1="146" y1="84.0" x2="146" y2="87.2"/>
+        <line x1="238" y1="84.0" x2="238" y2="87.2"/>
+        <line x1="286" y1="84.0" x2="286" y2="87.2"/>
+        <line x1="414" y1="83.5" x2="414" y2="87.5"/>
+        <text x="83" y="85.0" text-anchor="middle" class="mono" font-size="2.4" fill="#38bdf8">AFT 24×STD VLS &amp; 4×AK-630M</text>
+        <text x="192" y="85.0" text-anchor="middle" class="mono" font-size="2.4" fill="#ff5a36">2×TWIN SIEGE ERECTOR LAUNCHERS</text>
+        <text x="262" y="85.0" text-anchor="middle" class="mono" font-size="2.4" fill="#d4e3e6">CITADEL</text>
+        <text x="350" y="85.0" text-anchor="middle" class="mono" font-size="2.4" fill="#eab308">8×Ø2.8M STRATEGIC MISSION WELLS (LOA 230M)</text>
+      </g>
+    </g>
+    <g>
+      <rect x="986" y="84" width="282" height="192" fill="#070d11" stroke="#2c3b40" stroke-width="1"/>
+      <rect x="986" y="84" width="282" height="22" fill="#0d1e28" stroke="#2c3b40" stroke-width="0.9"/>
+      <text x="996" y="99" class="mono" font-size="9.0" fill="#38bdf8" font-weight="bold">SOVIET STRATEGIC NAVAL BUREAU · UID=82</text>
+      <text x="996" y="120" class="mono" font-size="7.6" fill="#8aa1a7">FULL DISPLACEMENT:</text>
+      <text x="1258" y="120" text-anchor="end" class="mono" font-size="7.6" fill="#d4e3e6">28,000 TONS (HEAVY ARMORED HULL)</text>
+      <text x="996" y="138" class="mono" font-size="7.6" fill="#8aa1a7">DIMENSIONS (L×B×D):</text>
+      <text x="1258" y="138" text-anchor="end" class="mono" font-size="7.6" fill="#38bdf8">230.0M × 28.0M × 9.8M (8.21:1)</text>
+      <text x="996" y="156" class="mono" font-size="7.6" fill="#8aa1a7">BOW ARCHITECTURE:</text>
+      <text x="1258" y="156" text-anchor="end" class="mono" font-size="7.6" fill="#ff5a36">GUNLESS · 100% SPACE TO 8 WELLS</text>
+      <text x="996" y="174" class="mono" font-size="7.6" fill="#8aa1a7">PROPULSION:</text>
+      <text x="1258" y="174" text-anchor="end" class="mono" font-size="7.6" fill="#eab308">4-SHAFT CONAS / GTZA (140,000 SHP)</text>
+      <text x="996" y="192" class="mono" font-size="7.6" fill="#8aa1a7">TARGETING LINK:</text>
+      <text x="1258" y="192" text-anchor="end" class="mono" font-size="7.6" fill="#38bdf8">KIROV AIRSHIP / SAT / SUB C4ISR</text>
+      <text x="996" y="210" class="mono" font-size="7.6" fill="#8aa1a7">RELOAD CYCLE:</text>
+      <text x="1258" y="210" text-anchor="end" class="mono" font-size="7.6" fill="#d4e3e6">DEDICATED HEAVY BERTH (14 DAYS)</text>
+      <line x1="996" y1="222" x2="1258" y2="222" stroke="#1e2c33" stroke-width="1"/>
+      <text x="996" y="238" class="mono" font-size="8.0" fill="#38bdf8">OPEN-INTERFACE STRATEGIC PLATFORM:</text>
+      <text x="996" y="253" class="mono" font-size="7.6" fill="#d4e3e6">THERMAL EXHAUST DUCTS &amp; LINER WELLS</text>
+      <text x="996" y="266" class="mono" font-size="7.6" fill="#8aa1a7">ARMORED ICEBREAKER BOW · TDS BELT</text>
+    </g>
+
+    <rect x="44" y="304" width="1232" height="216" fill="#091116" fill-opacity="0.45" stroke="#2c3b40"/>
+    <text font-size="9.5" x="58" y="324" class="p mono" fill="#38bdf8">02 / ORTHOGRAPHIC FULL DECK PLAN · GUNLESS BOW 8×GIANT WELLS · MIDSHIP TWIN ERECTORS · AFT 24 VLS</text>
+    <text x="975" y="324" text-anchor="end" class="p mono" fill="#5f7c84" font-size="9">BEAM: 28.0M · ASPECT: 8.21:1</text>
+    <g transform="translate(68.0,330.0) scale(2.020,2.020)">
+
+      <!-- 0. 顶视纵中线与水下破冰球鼻艏/四轴五叶金色螺旋桨虚线透视 -->
+      <line x1="12" y1="44.0" x2="420" y2="44.0" stroke="#2c3b40" stroke-width="0.55" stroke-dasharray="5 2.5"/>
+      <!-- 舰首水下重型破冰球鼻艏外伸轮廓 -->
+      <path d="M 404 38.2 C 414 39.2, 417.5 41.5, 417.5 44.0 C 417.5 46.5, 414 48.8, 404 49.8"
+            fill="none" stroke="#ff5a36" stroke-width="0.75" stroke-dasharray="2 1.2"/>
+      <!-- 船尾水下四轴五叶金色螺旋桨 (#eab308) -->
+      <g stroke="#eab308" stroke-width="0.75" fill="#eab308" fill-opacity="0.32">
+        <line x1="14" y1="28.0" x2="21" y2="28.0"/><ellipse cx="15.5" cy="28.0" rx="1.1" ry="2.8"/>
+        <line x1="15" y1="35.5" x2="21" y2="35.5"/><ellipse cx="16.5" cy="35.5" rx="1.1" ry="2.8"/>
+        <line x1="15" y1="52.5" x2="21" y2="52.5"/><ellipse cx="16.5" cy="52.5" rx="1.1" ry="2.8"/>
+        <line x1="14" y1="60.0" x2="21" y2="60.0"/><ellipse cx="15.5" cy="60.0" rx="1.1" ry="2.8"/>
+      </g>
+
+      <!-- 1. 28,000T 无畏级重装甲破冰支援舰 8.21:1 主船体外廓與水线防雷鼓包 (X=20..414, Y=20.0..68.0) -->
+      <!-- 左右两舷水下防雷装甲鼓包外缘线 (Y=20.0 与 Y=68.0) -->
+      <path d="M 110 21.2 L 122 20.0 L 336 20.0 L 354 22.2" fill="none" stroke="#ff5a36" stroke-width="0.9" stroke-dasharray="4 1.5"/>
+      <path d="M 110 66.8 L 122 68.0 L 336 68.0 L 354 65.8" fill="none" stroke="#ff5a36" stroke-width="0.9" stroke-dasharray="4 1.5"/>
+      <!-- 主船体外廓 -->
+      <polygon points="20,26.5 62,22.8 115,20.5 335,20.5 368,24.8 396,32.5 414,44.0 396,55.5 368,63.2 335,67.5 115,67.5 62,65.2 20,61.5"
+               fill="#0a1822" stroke="#d4e3e6" stroke-width="1.45"/>
+      <!-- 内侧重型装甲主甲板边线 -->
+      <polygon points="23,28.5 115,22.8 334,22.8 366,27.0 403,44.0 366,61.0 334,65.2 115,65.2 23,59.5"
+               fill="#0d202c" stroke="#38bdf8" stroke-width="0.85"/>
+
+      <!-- 2. 舰尾重型补给系留甲板、舷号 082 + 24 单元标准垂发 (3×8 Standard VLS) + 后火控塔与 2座 AK-630M (X=20..146) -->
+      <g id="top-aft-section">
+        <!-- 舰尾系留甲板、重型起重吊臂与白色大号舷号 082 -->
+        <polygon points="23,28.8 82,24.5 82,63.5 23,59.2" fill="#08131a" stroke="#d4e3e6" stroke-width="0.95"/>
+        <text x="34" y="46.2" text-anchor="middle" class="mono" font-size="6.0" fill="#d4e3e6" font-weight="bold">082</text>
+        <circle cx="62" cy="44.0" r="3.8" fill="#122836" stroke="#d4e3e6" stroke-width="0.9"/>
+        <line x1="62" y1="44.0" x2="42" y2="44.0" stroke="#eab308" stroke-width="1.4"/>
+        <rect x="27" y="31.5" width="6" height="4.5" fill="#163244" stroke="#38bdf8" stroke-width="0.7"/>
+        <rect x="27" y="52.0" width="6" height="4.5" fill="#163244" stroke="#38bdf8" stroke-width="0.7"/>
+
+        <!-- 舰尾保留的 24 单元 (3×8) 标准防空/反潜/反无人机垂发矩阵 (X=85..116, Y=30.0..58.0) -->
+        <rect x="85" y="30.0" width="31" height="28.0" rx="0.8" fill="#07131c" stroke="#38bdf8" stroke-width="1.15"/>
+        <!-- 3列纵向分隔 (每列 8 单元, 共 24 单元) -->
+        <line x1="95.3" y1="30.0" x2="95.3" y2="58.0" stroke="#38bdf8" stroke-width="0.75"/>
+        <line x1="105.6" y1="30.0" x2="105.6" y2="58.0" stroke="#38bdf8" stroke-width="0.75"/>
+        <!-- 8行横向分隔 -->
+        <line x1="85" y1="33.5" x2="116" y2="33.5" stroke="#4a6368" stroke-width="0.5"/>
+        <line x1="85" y1="37.0" x2="116" y2="37.0" stroke="#4a6368" stroke-width="0.5"/>
+        <line x1="85" y1="40.5" x2="116" y2="40.5" stroke="#4a6368" stroke-width="0.5"/>
+        <line x1="85" y1="44.0" x2="116" y2="44.0" stroke="#d4e3e6" stroke-width="0.75"/>
+        <line x1="85" y1="47.5" x2="116" y2="47.5" stroke="#4a6368" stroke-width="0.5"/>
+        <line x1="85" y1="51.0" x2="116" y2="51.0" stroke="#4a6368" stroke-width="0.5"/>
+        <line x1="85" y1="54.5" x2="116" y2="54.5" stroke="#4a6368" stroke-width="0.5"/>
+
+        <!-- 后置近防火控塔与左右两舷 AK-630M 六管30mm近防炮 (X=118..146) -->
+        <rect x="118" y="25.5" width="28" height="37.0" fill="#102432" stroke="#d4e3e6" stroke-width="1.1"/>
+        <circle cx="135" cy="44.0" r="4.2" fill="#18384c" stroke="#38bdf8" stroke-width="1.0"/>
+        <circle cx="135" cy="44.0" r="1.4" fill="#d4e3e6"/>
+        <!-- 后左舷 #3 与后右舷 #4 AK-630M 近防炮耳台 -->
+        <circle cx="125" cy="29.5" r="2.6" fill="#163244" stroke="#d4e3e6" stroke-width="0.85"/>
+        <line x1="125" y1="26.9" x2="122" y2="23.5" stroke="#d4e3e6" stroke-width="1.0"/>
+        <circle cx="125" cy="58.5" r="2.6" fill="#163244" stroke="#d4e3e6" stroke-width="0.85"/>
+        <line x1="125" y1="61.1" x2="122" y2="64.5" stroke="#d4e3e6" stroke-width="1.0"/>
+      </g>
+
+      <!-- 3. 核心特征：舰舯两座标志性红警2「无畏级」重型双联装远程攻城飞弹起竖发射架俯视图 (2×Twin Siege Missile Erector-Launchers · X=146..238) -->
+      <g id="top-ra2-twin-siege-launchers">
+        <!-- 舯部重装甲飞弹发射区甲板、防爆折流挡墙与装填滑轨 -->
+        <rect x="146" y="23.5" width="92" height="41.0" fill="#141014" stroke="#ff5a36" stroke-width="1.15"/>
+        <rect x="148" y="25.0" width="88" height="38.0" fill="url(#hatch)" fill-opacity="0.35"/>
+        <line x1="192" y1="23.5" x2="192" y2="64.5" stroke="#eab308" stroke-width="0.9" stroke-dasharray="3 1.5"/>
+
+        <!-- #2 后座双联装重型远程攻城飞弹发射架 (X=150..190, 并列搭载左/右 2 枚 18m 级红白涂装攻城飞弹) -->
+        <g id="aft-twin-launcher-top">
+          <!-- 大型圆形装甲旋转基座与起竖桁架横梁 -->
+          <circle cx="166" cy="44.0" r="14.5" fill="#0d1e28" stroke="#38bdf8" stroke-width="1.05"/>
+          <rect x="153" y="28.5" width="26" height="31.0" rx="1.5" fill="#122836" stroke="#d4e3e6" stroke-width="1.0"/>
+          <!-- 左联攻城飞弹 (Y=35.0, 指向舰首 +X) -->
+          <rect x="150" y="31.8" width="34" height="6.4" rx="1.2" fill="#d4e3e6" stroke="#050a0e" stroke-width="0.7"/>
+          <rect x="162" y="31.8" width="10" height="6.4" fill="#163244"/>
+          <polygon points="184,31.8 193,35.0 184,38.2" fill="#ff5a36" stroke="#d4e3e6" stroke-width="0.75"/>
+          <polygon points="150,31.8 147,29.5 153,31.8" fill="#ff5a36"/>
+          <polygon points="150,38.2 147,40.5 153,38.2" fill="#ff5a36"/>
+          <polygon points="148,32.6 150,32.2 150,37.8 148,37.4" fill="#eab308"/>
+          <!-- 右联攻城飞弹 (Y=53.0, 指向舰首 +X) -->
+          <rect x="150" y="49.8" width="34" height="6.4" rx="1.2" fill="#d4e3e6" stroke="#050a0e" stroke-width="0.7"/>
+          <rect x="162" y="49.8" width="10" height="6.4" fill="#163244"/>
+          <polygon points="184,49.8 193,53.0 184,56.2" fill="#ff5a36" stroke="#d4e3e6" stroke-width="0.75"/>
+          <polygon points="150,49.8 147,47.5 153,49.8" fill="#ff5a36"/>
+          <polygon points="150,56.2 147,58.5 153,56.2" fill="#ff5a36"/>
+          <polygon points="148,50.6 150,50.2 150,55.8 148,55.4" fill="#eab308"/>
+          <!-- 中央双液压起竖主缸 -->
+          <rect x="156" y="41.5" width="22" height="5.0" fill="#1c0d10" stroke="#eab308" stroke-width="0.8"/>
+        </g>
+
+        <!-- #1 前座双联装重型远程攻城飞弹发射架 (X=194..234, 并列搭载左/右 2 枚 18m 级红白涂装攻城飞弹) -->
+        <g id="fwd-twin-launcher-top">
+          <circle cx="210" cy="44.0" r="14.5" fill="#0d1e28" stroke="#38bdf8" stroke-width="1.05"/>
+          <rect x="197" y="28.5" width="26" height="31.0" rx="1.5" fill="#122836" stroke="#d4e3e6" stroke-width="1.0"/>
+          <!-- 左联攻城飞弹 (Y=35.0, 指向舰首 +X) -->
+          <rect x="194" y="31.8" width="34" height="6.4" rx="1.2" fill="#d4e3e6" stroke="#050a0e" stroke-width="0.7"/>
+          <rect x="206" y="31.8" width="10" height="6.4" fill="#163244"/>
+          <polygon points="228,31.8 237,35.0 228,38.2" fill="#ff5a36" stroke="#d4e3e6" stroke-width="0.75"/>
+          <polygon points="194,31.8 191,29.5 197,31.8" fill="#ff5a36"/>
+          <polygon points="194,38.2 191,40.5 197,38.2" fill="#ff5a36"/>
+          <polygon points="192,32.6 194,32.2 194,37.8 192,37.4" fill="#eab308"/>
+          <!-- 右联攻城飞弹 (Y=53.0, 指向舰首 +X) -->
+          <rect x="194" y="49.8" width="34" height="6.4" rx="1.2" fill="#d4e3e6" stroke="#050a0e" stroke-width="0.7"/>
+          <rect x="206" y="49.8" width="10" height="6.4" fill="#163244"/>
+          <polygon points="228,49.8 237,53.0 228,56.2" fill="#ff5a36" stroke="#d4e3e6" stroke-width="0.75"/>
+          <polygon points="194,49.8 191,47.5 197,49.8" fill="#ff5a36"/>
+          <polygon points="194,56.2 191,58.5 197,56.2" fill="#ff5a36"/>
+          <polygon points="192,50.6 194,50.2 194,55.8 192,55.4" fill="#eab308"/>
+          <!-- 中央双液压起竖主缸 -->
+          <rect x="200" y="41.5" width="22" height="5.0" fill="#1c0d10" stroke="#eab308" stroke-width="0.8"/>
+        </g>
+      </g>
+
+      <!-- 4. 苏式重装甲战列舰式指挥塔桅、目标链中继雷达巨球与防爆烟囱俯视图 (X=238..286, Y=22.8..65.2) -->
+      <g id="top-armored-citadel">
+        <polygon points="238,22.8 278,22.8 286,28.5 286,59.5 278,65.2 238,65.2"
+                 fill="#122836" stroke="#d4e3e6" stroke-width="1.3"/>
+        <rect x="242" y="27.0" width="38" height="34.0" fill="#163244" stroke="#38bdf8" stroke-width="0.95"/>
+        <!-- 航海舰桥前端折角防弹观察窗 -->
+        <polyline points="278,29.5 284,35.5 284,52.5 278,58.5" fill="none" stroke="#38bdf8" stroke-width="1.25"/>
+        <!-- 前左舷 #1 与前右舷 #2 AK-630M 六管30mm近防炮耳台 -->
+        <circle cx="276" cy="26.2" r="2.6" fill="#163244" stroke="#d4e3e6" stroke-width="0.85"/>
+        <line x1="276" y1="23.6" x2="280" y2="20.8" stroke="#d4e3e6" stroke-width="1.0"/>
+        <circle cx="276" cy="61.8" r="2.6" fill="#163244" stroke="#d4e3e6" stroke-width="0.85"/>
+        <line x1="276" y1="64.4" x2="280" y2="67.2" stroke="#d4e3e6" stroke-width="1.0"/>
+        <!-- 后侧一体式重装甲防爆排烟囱双排気口 (X=241..251) -->
+        <rect x="241" y="33.0" width="10" height="22.0" fill="#08131a" stroke="#d4e3e6" stroke-width="0.95"/>
+        <circle cx="246" cy="39.0" r="3.0" fill="#04080b" stroke="#ff5a36" stroke-width="0.85"/>
+        <circle cx="246" cy="49.0" r="3.0" fill="#04080b" stroke="#ff5a36" stroke-width="0.85"/>
+        <!-- 中央金字塔主塔桅与顶置「顶对」(Top Pair) 远程三坐标雷达横桁 (X=253..267) -->
+        <rect x="253" y="34.0" width="14" height="20.0" fill="#1c445c" stroke="#38bdf8" stroke-width="1.05"/>
+        <line x1="260" y1="28.5" x2="260" y2="59.5" stroke="#d4e3e6" stroke-width="1.2"/>
+        <rect x="257" y="32.0" width="6" height="24.0" rx="1.2" fill="#0d202c" stroke="#38bdf8" stroke-width="1.0"/>
+        <!-- 舰桥前顶平台：「音乐台/目标链」(Band Stand / Target-Link) 巨型雷达球罩 -->
+        <circle cx="275.5" cy="44.0" r="5.2" fill="#183a4e" stroke="#38bdf8" stroke-width="1.15"/>
+        <circle cx="275.5" cy="44.0" r="2.0" fill="#eab308" stroke="#050a0e" stroke-width="0.6"/>
+      </g>
+
+      <!-- 5. 核心特征：舰首彻底取消主炮，让渡给两组共 8 座 Ø2.8M 巨型通用战略任务井 (2×4 Giant Open-Architecture Mission Wells · X=288..382) -->
+      <g id="top-bow-8-strategic-mission-wells">
+        <!-- 后群 4 座 (2×2) Ø2.8M 巨型通用战略任务井装甲区 (X=289..333, Y=26.5..61.5) -->
+        <rect x="289" y="26.5" width="44" height="35.0" rx="1.2" fill="#1c0d10" stroke="#ff5a36" stroke-width="1.2"/>
+        <line x1="289" y1="44.0" x2="333" y2="44.0" stroke="#ff5a36" stroke-width="0.85"/>
+        <line x1="311" y1="26.5" x2="311" y2="61.5" stroke="#ff5a36" stroke-width="0.85"/>
+
+        <!-- 后群 #1~#4 巨型战略井 (八角装甲座圈 + Ø2.8m 圆井盖, 其中 #1 井开盖露出深地钻地弹头) -->
+        <!-- Well #1 (开盖待发态) -->
+        <circle cx="300" cy="35.2" r="6.4" fill="#2a1014" stroke="#ff5a36" stroke-width="1.05"/>
+        <circle cx="300" cy="35.2" r="4.5" fill="#140708" stroke="#eab308" stroke-width="0.85"/>
+        <circle cx="300" cy="35.2" r="2.4" fill="#ff5a36"/>
+        <circle cx="300" cy="35.2" r="0.9" fill="#eab308"/>
+        <!-- Well #2 -->
+        <circle cx="300" cy="52.8" r="6.4" fill="#142430" stroke="#d4e3e6" stroke-width="1.0"/>
+        <circle cx="300" cy="52.8" r="4.5" fill="#0b161e" stroke="#ff5a36" stroke-width="0.8" stroke-dasharray="2.5 1.2"/>
+        <line x1="295" y1="52.8" x2="305" y2="52.8" stroke="#d4e3e6" stroke-width="0.7"/>
+        <!-- Well #3 -->
+        <circle cx="322" cy="35.2" r="6.4" fill="#142430" stroke="#d4e3e6" stroke-width="1.0"/>
+        <circle cx="322" cy="35.2" r="4.5" fill="#0b161e" stroke="#ff5a36" stroke-width="0.8" stroke-dasharray="2.5 1.2"/>
+        <line x1="317" y1="35.2" x2="327" y2="35.2" stroke="#d4e3e6" stroke-width="0.7"/>
+        <!-- Well #4 -->
+        <circle cx="322" cy="52.8" r="6.4" fill="#142430" stroke="#d4e3e6" stroke-width="1.0"/>
+        <circle cx="322" cy="52.8" r="4.5" fill="#0b161e" stroke="#ff5a36" stroke-width="0.8" stroke-dasharray="2.5 1.2"/>
+        <line x1="317" y1="52.8" x2="327" y2="52.8" stroke="#d4e3e6" stroke-width="0.7"/>
+
+        <!-- 前群 4 座 (2×2) Ø2.8M 巨型通用战略任务井装甲区 (X=337..381, Y=28.0..60.0) -->
+        <rect x="337" y="28.0" width="44" height="32.0" rx="1.2" fill="#1c120d" stroke="#eab308" stroke-width="1.2"/>
+        <line x1="337" y1="44.0" x2="381" y2="44.0" stroke="#eab308" stroke-width="0.85"/>
+        <line x1="359" y1="28.0" x2="359" y2="60.0" stroke="#eab308" stroke-width="0.85"/>
+
+        <!-- 前群 #5~#8 巨型战略井 (其中 #7 井开盖露出高超音速反舰弹道载荷头锥) -->
+        <!-- Well #5 -->
+        <circle cx="348" cy="36.0" r="6.0" fill="#142430" stroke="#d4e3e6" stroke-width="1.0"/>
+        <circle cx="348" cy="36.0" r="4.2" fill="#0b161e" stroke="#eab308" stroke-width="0.8" stroke-dasharray="2.5 1.2"/>
+        <line x1="343.5" y1="36.0" x2="352.5" y2="36.0" stroke="#d4e3e6" stroke-width="0.7"/>
+        <!-- Well #6 -->
+        <circle cx="348" cy="52.0" r="6.0" fill="#142430" stroke="#d4e3e6" stroke-width="1.0"/>
+        <circle cx="348" cy="52.0" r="4.2" fill="#0b161e" stroke="#eab308" stroke-width="0.8" stroke-dasharray="2.5 1.2"/>
+        <line x1="343.5" y1="52.0" x2="352.5" y2="52.0" stroke="#d4e3e6" stroke-width="0.7"/>
+        <!-- Well #7 (开盖发射态) -->
+        <circle cx="370" cy="36.0" r="6.0" fill="#2a1014" stroke="#ff5a36" stroke-width="1.05"/>
+        <circle cx="370" cy="36.0" r="4.2" fill="#140708" stroke="#eab308" stroke-width="0.85"/>
+        <circle cx="370" cy="36.0" r="2.3" fill="#ff5a36"/>
+        <circle cx="370" cy="36.0" r="0.9" fill="#d4e3e6"/>
+        <!-- Well #8 -->
+        <circle cx="370" cy="52.0" r="6.0" fill="#142430" stroke="#d4e3e6" stroke-width="1.0"/>
+        <circle cx="370" cy="52.0" r="4.2" fill="#0b161e" stroke="#eab308" stroke-width="0.8" stroke-dasharray="2.5 1.2"/>
+        <line x1="365.5" y1="52.0" x2="374.5" y2="52.0" stroke="#d4e3e6" stroke-width="0.7"/>
+      </g>
+
+      <!-- 6. 破冰装甲舰首、V形重型防浪板、双锚链与苏维埃红星舰徽 (X=382..414) -->
+      <g id="top-armored-bow">
+        <polyline points="382,31.5 394,44.0 382,56.5" fill="none" stroke="#38bdf8" stroke-width="1.05"/>
+        <circle cx="390" cy="39.5" r="1.5" fill="#132c3a" stroke="#d4e3e6" stroke-width="0.7"/>
+        <circle cx="390" cy="48.5" r="1.5" fill="#132c3a" stroke="#d4e3e6" stroke-width="0.7"/>
+        <line x1="391.5" y1="39.5" x2="402" y2="41.2" stroke="#8aa1a7" stroke-width="0.85" stroke-dasharray="1.5 1"/>
+        <line x1="391.5" y1="48.5" x2="402" y2="46.8" stroke="#8aa1a7" stroke-width="0.85" stroke-dasharray="1.5 1"/>
+        <polygon points="403,44.0 406.5,41.8 410,44.0 406.5,46.2" fill="#ff5a36" stroke="#d4e3e6" stroke-width="0.5"/>
+      </g>
+
+      <!-- 7. 上下安全净空区工程标注 (Y=12.5 与 Y=76.5 · 严格遵守 SOP 防重叠水平间距公式) -->
+      <g id="top-annotations">
+        <!-- 上排标注 (Y=12.5) -->
+        <text x="68" y="12.5" text-anchor="middle" class="mono" font-size="2.5" fill="#38bdf8">AFT 24-CELL VLS (3×8) &amp; MOORING (082)</text>
+        <text x="192" y="12.5" text-anchor="middle" class="mono" font-size="2.5" fill="#ff5a36" font-weight="bold">2×TWIN HEAVY SIEGE ERECTOR-LAUNCHERS (4×18M)</text>
+        <text x="335" y="12.5" text-anchor="middle" class="mono" font-size="2.5" fill="#eab308" font-weight="bold">8×Ø2.8M STRATEGIC MISSION WELLS (NO BOW GUN)</text>
+
+        <!-- 下排标注 (Y=76.5) -->
+        <text x="72" y="76.5" text-anchor="middle" class="mono" font-size="2.5" fill="#eab308">4×5-BLADE PROPS &amp; 4×AK-630M CIWS</text>
+        <text x="242" y="76.5" text-anchor="middle" class="mono" font-size="2.5" fill="#38bdf8">ARMORED CITADEL &amp; TARGET-LINK RADOME</text>
+        <text x="355" y="76.5" text-anchor="middle" class="mono" font-size="2.5" fill="#ff5a36">OPEN-ARCHITECTURE ASBM / DEEP-STRIKE SILOS</text>
+      </g>
+    </g>
+    <g>
+      <rect x="986" y="316" width="282" height="192" fill="#070d11" stroke="#2c3b40" stroke-width="1"/>
+      <rect x="986" y="316" width="282" height="22" fill="#1c1012" stroke="#ff5a36" stroke-width="0.9"/>
+      <text x="996" y="331" class="mono" font-size="9.0" fill="#ff5a36" font-weight="bold">GIANT MISSION WELLS &amp; SIEGE BATTERY</text>
+      <text x="996" y="352" class="mono" font-size="7.6" fill="#8aa1a7">FWD MISSION WELLS:</text>
+      <text x="1258" y="352" text-anchor="end" class="mono" font-size="7.6" fill="#ff5a36">2×4 Ø2.8M GIANT UNIVERSAL WELLS</text>
+      <text x="996" y="370" class="mono" font-size="7.6" fill="#8aa1a7">WELL PAYLOADS:</text>
+      <text x="1258" y="370" text-anchor="end" class="mono" font-size="7.6" fill="#eab308">ULTRA-HEAVY ASBM / EARTH-PENETRATOR</text>
+      <text x="996" y="388" class="mono" font-size="7.6" fill="#8aa1a7">SPECIAL PACKAGES:</text>
+      <text x="1258" y="388" text-anchor="end" class="mono" font-size="7.6" fill="#eab308">LOITERING SWARM / DECOY / NUCLEAR</text>
+      <text x="996" y="406" class="mono" font-size="7.6" fill="#8aa1a7">MIDSHIP ERECTORS:</text>
+      <text x="1258" y="406" text-anchor="end" class="mono" font-size="7.6" fill="#ff5a36">2×TWIN 18M HEAVY SIEGE MISSILES</text>
+      <text x="996" y="424" class="mono" font-size="7.6" fill="#8aa1a7">AFT STANDARD VLS:</text>
+      <text x="1258" y="424" text-anchor="end" class="mono" font-size="7.6" fill="#38bdf8">24-CELL (3×8) SAM / ASW / ANTI-UAV</text>
+      <text x="996" y="442" class="mono" font-size="7.6" fill="#8aa1a7">CLOSE-IN DEFENSE:</text>
+      <text x="1258" y="442" text-anchor="end" class="mono" font-size="7.6" fill="#d4e3e6">4×30MM AK-630M + PK-2 CHAFF</text>
+      <line x1="996" y1="454" x2="1258" y2="454" stroke="#1e2c33" stroke-width="1"/>
+      <text x="996" y="470" class="mono" font-size="8.0" fill="#eab308">DOCTRINE &amp; OPERATIONAL CONSTRAINTS:</text>
+      <text x="996" y="485" class="mono" font-size="7.6" fill="#d4e3e6">STAND-OFF SALVO UNDER ESCORT UMBRELLA</text>
+      <text x="996" y="498" class="mono" font-size="7.6" fill="#8aa1a7">REQUIRES DREADNOUGHT INTEGRATION CERT</text>
+    </g>
+  </g>
+</svg>

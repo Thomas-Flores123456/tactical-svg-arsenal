@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 360" width="1100" height="360" data-asset-id="naval.ra2.seascorpion.top" style="background:#050a0e;">
+  <defs>
+    <style>
+      svg { fill: none; stroke-linecap: butt; }
+      .s-dim { stroke: #2c3b40; stroke-width: 1; }
+      .s-line { stroke: #5f7c84; stroke-width: 1; }
+      .s-hi { stroke: #d4e3e6; stroke-width: 1.2; }
+      .s-alert { stroke: #ff5a36; stroke-width: 1.4; }
+      .s-focus { stroke: #38bdf8; stroke-width: 1.4; }
+      .f-dim { fill: #2c3b40; stroke: none; }
+      .f-line { fill: #5f7c84; stroke: none; }
+      .f-hi { fill: #d4e3e6; stroke: none; }
+      .f-alert { fill: #ff5a36; stroke: none; }
+      .f-panel { fill: #0c1113; }
+      text { font-family: "Rajdhani", "Bahnschrift", "DIN Alternate", "Microsoft YaHei", sans-serif; letter-spacing: 0.12em; }
+      text:not([stroke]) { stroke: none; }
+      text:not([fill]) { fill: #cfdde0; }
+      text.p { font-family: "Rajdhani", "JetBrains Mono", Consolas, "Microsoft YaHei", monospace; letter-spacing: 0.08em; }
+      text.cap { letter-spacing: 0.16em; text-transform: uppercase; }
+      text.cap:not([fill]) { fill: #8aa1a7; }
+      text.mono { font-family: "Rajdhani", "JetBrains Mono", Consolas, "Microsoft YaHei", monospace; letter-spacing: 0.05em; }
+      text.big { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; font-weight: 600; letter-spacing: 0.08em; }
+      text.alert { fill: #ff5a36; }
+    </style>
+    <pattern id="grid20" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#0c151c" stroke-width="0.7"/>
+    </pattern>
+    <pattern id="grid100" width="100" height="100" patternUnits="userSpaceOnUse">
+      <path d="M 100 0 L 0 0 0 100" fill="none" stroke="#14222c" stroke-width="1"/>
+      <circle cx="50" cy="50" r="0.9" fill="#1f3340"/>
+    </pattern>
+    <pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#ff5a36" stroke-width="1.2" stroke-opacity="0.35"/>
+    </pattern>
+  </defs>
+
+  <!-- 1. 工程蓝图暗色底板与坐标网格图层 -->
+  <g id="layer-backdrop">
+    <rect x="0" y="0" width="1100" height="360" fill="#050a0e"/>
+    <rect x="20" y="20" width="1060" height="320" fill="url(#grid20)"/>
+    <rect x="20" y="20" width="1060" height="320" fill="url(#grid100)" stroke="#2c3b40" stroke-width="1"/>
+    <path d="M 20 36 V 20 H 36 M 1064 20 H 1080 V 36 M 20 324 V 340 H 36 M 1064 340 H 1080 V 324" fill="none" stroke="#38bdf8" stroke-width="1.6"/>
+    <line x1="20" y1="52" x2="1080" y2="52" stroke="#2c3b40" stroke-width="1"/>
+    <line x1="20" y1="316" x2="1080" y2="316" stroke="#2c3b40" stroke-width="1"/>
+    <text x="34" y="40" font-size="9.5" class="p mono" fill="#38bdf8" font-weight="bold">SOVIET RA2 SEA SCORPION (MPK-84) · ORTHOGRAPHIC FULL DECK &amp; HYDROFOIL PLAN</text>
+    <text x="1066" y="40" font-size="9.5" text-anchor="end" class="p cap" fill="#d4e3e6">苏联「海蝎」级近海防空导弹水翼快艇 · 顶视全甲板与前V水翼/防空武器阵列图</text>
+    <text x="34" y="332" font-size="9.5" class="p mono" fill="#8aa1a7">LOA: 56.0M · FOIL SPAN: 10.2M (5.49:1) · HULL BEAM: 8.6M (6.51:1) · TWIN 57MM AHEAD FLAK + 8-CELL SAM + 2×AK-630M · UID=74</text>
+    <text x="1066" y="332" font-size="9.5" text-anchor="end" class="p mono" fill="#5f7c84">OBLIVION UI GFX · POSEIDON NAVAL CAD · TRUE 1:1 ASPECT</text>
+  </g>
+
+  <!-- 2. 舰艇核心 CAD 矢量图层 (1:1 等比缩放 sx===sy=2.400, 局部艇长 X=24..408 共384单位, 中心线 Y=44.0, 艇体宽 Y=14.5..73.5 共59.0单位, 前水翼展宽 Y=9.0..79.0 共70.0单位) -->
+  <g id="layer-ship-cad">
+    <g transform="translate(52.0,78.0) scale(2.400,2.400)">
+
+      <!-- 0. 顶视纵中线与船尾水下三轴超空泡高速螺旋桨 (#eab308) -->
+      <line x1="12" y1="44.0" x2="416" y2="44.0" stroke="#2c3b40" stroke-width="0.55" stroke-dasharray="5 2.5"/>
+      <g stroke="#eab308" stroke-width="0.8" fill="#eab308" fill-opacity="0.32">
+        <!-- 左轴、中轴、右轴三具超空泡螺旋桨 -->
+        <line x1="16" y1="30.0" x2="24" y2="30.0"/><ellipse cx="17.5" cy="30.0" rx="1.2" ry="3.2"/>
+        <line x1="15" y1="44.0" x2="24" y2="44.0"/><ellipse cx="16.5" cy="44.0" rx="1.3" ry="3.5"/>
+        <line x1="16" y1="58.0" x2="24" y2="58.0"/><ellipse cx="17.5" cy="58.0" rx="1.2" ry="3.2"/>
+      </g>
+
+      <!-- 1. 地标一：水下外伸「前 V 形割划式巨型升力主水翼 (Y=9.0..79.0)」与「后全浸式稳定水翼 (Y=13.5..74.5)」 -->
+      <g id="top-hydrofoils-wings">
+        <!-- 前部左舷外伸后掠主水翼 + 翼尖空泡稳定端板 (Port Forward Main Hydrofoil · X=278..336, Y=9.0..17.5) -->
+        <polygon points="296,17.5 334,19.0 316,9.0 282,9.0" fill="#2a1014" stroke="#ff5a36" stroke-width="1.15"/>
+        <line x1="289" y1="13.2" x2="325" y2="14.0" stroke="#eab308" stroke-width="0.7" stroke-dasharray="2.5 1.2"/>
+        <rect x="278" y="8.2" width="40" height="1.6" rx="0.5" fill="#1c1410" stroke="#eab308" stroke-width="0.85"/>
+
+        <!-- 前部右舷外伸后掠主水翼 + 翼尖空泡稳定端板 (Starboard Forward Main Hydrofoil · X=278..336, Y=70.5..79.0) -->
+        <polygon points="296,70.5 334,69.0 316,79.0 282,79.0" fill="#2a1014" stroke="#ff5a36" stroke-width="1.15"/>
+        <line x1="289" y1="74.8" x2="325" y2="74.0" stroke="#eab308" stroke-width="0.7" stroke-dasharray="2.5 1.2"/>
+        <rect x="278" y="78.2" width="40" height="1.6" rx="0.5" fill="#1c1410" stroke="#eab308" stroke-width="0.85"/>
+
+        <!-- 后部左舷与右舷外伸稳定尾水翼 (Aft Stabilizing Hydrofoils · X=54..96, Y=13.0..75.0) -->
+        <polygon points="62,16.5 94,16.0 86,12.8 56,12.8" fill="#261014" stroke="#ff5a36" stroke-width="0.95"/>
+        <polygon points="62,71.5 94,72.0 86,75.2 56,75.2" fill="#261014" stroke="#ff5a36" stroke-width="0.95"/>
+        <!-- 贯穿船底的水翼主梁虚线 -->
+        <line x1="298" y1="17.5" x2="298" y2="70.5" stroke="#ff5a36" stroke-width="0.65" stroke-dasharray="3 2"/>
+        <line x1="322" y1="18.2" x2="322" y2="69.8" stroke="#ff5a36" stroke-width="0.65" stroke-dasharray="3 2"/>
+      </g>
+
+      <!-- 2. 海蝎级 6.51:1 宽体高速滑行主艇体外廓 (X=24..408, Y=14.5..73.5, 艇体宽严格 59.0 单位) -->
+      <polygon points="24,20.5 64,16.5 112,14.5 278,14.5 328,17.2 368,24.5 394,33.5 408,44.0 394,54.5 368,63.5 328,70.8 278,73.5 112,73.5 64,71.5 24,67.5"
+               fill="#0a1822" stroke="#d4e3e6" stroke-width="1.4"/>
+      <!-- 内侧防浪折角甲板边线 -->
+      <polygon points="27,23.0 112,17.2 278,17.2 326,19.8 364,27.0 398,44.0 364,61.0 326,68.2 278,70.8 112,70.8 27,65.0"
+               fill="#0d202c" stroke="#38bdf8" stroke-width="0.85"/>
+
+      <!-- 3. 地标四（后部）：舰尾并列 2座 30mm AK-630M 六管近防炮 + Kolonka 火控台 + 艇尾烟幕发生器 (X=24..104) -->
+      <g id="top-aft-ak630m-section">
+        <!-- 艇尾甲板系留区与双烟幕发生罐 (X=24..48) -->
+        <rect x="29" y="27.5" width="9" height="5.5" rx="0.8" fill="#163244" stroke="#d4e3e6" stroke-width="0.75"/>
+        <rect x="29" y="55.0" width="9" height="5.5" rx="0.8" fill="#163244" stroke="#d4e3e6" stroke-width="0.75"/>
+        <text x="38" y="46.2" text-anchor="middle" class="mono" font-size="5.6" fill="#d4e3e6" font-weight="bold">084</text>
+
+        <!-- 舰尾近防武器甲板室 (X=48..104, Y=22.0..66.0) -->
+        <polygon points="48,24.0 104,21.0 104,67.0 48,64.0" fill="#102432" stroke="#d4e3e6" stroke-width="1.1"/>
+        <!-- 中央 Kolonka / Bass Tilt 近防火控雷达球台 (X=88, Y=44.0) -->
+        <rect x="82" y="38.5" width="12" height="11.0" rx="1.0" fill="#163244" stroke="#38bdf8" stroke-width="0.85"/>
+        <circle cx="88" cy="44.0" r="3.4" fill="#18384c" stroke="#38bdf8" stroke-width="0.95"/>
+        <circle cx="88" cy="44.0" r="1.2" fill="#d4e3e6"/>
+
+        <!-- 左舷 #1 与右舷 #2 30mm AK-630M 六管加特林近防炮转塔 (X=67, Y=31.0 与 Y=57.0 · 炮管朝向艇尾 -X) -->
+        <g transform="translate(67.0, 31.0)">
+          <circle cx="0" cy="0" r="4.8" fill="#0b1a24" stroke="#d4e3e6" stroke-width="0.9"/>
+          <circle cx="0" cy="0" r="2.4" fill="#18384c" stroke="#38bdf8" stroke-width="0.8"/>
+          <line x1="-2.4" y1="-0.5" x2="-11.5" y2="-1.5" stroke="#d4e3e6" stroke-width="1.25"/>
+          <line x1="-2.4" y1="0.8" x2="-11.5" y2="0.2" stroke="#38bdf8" stroke-width="0.9"/>
+        </g>
+        <g transform="translate(67.0, 57.0)">
+          <circle cx="0" cy="0" r="4.8" fill="#0b1a24" stroke="#d4e3e6" stroke-width="0.9"/>
+          <circle cx="0" cy="0" r="2.4" fill="#18384c" stroke="#38bdf8" stroke-width="0.8"/>
+          <line x1="-2.4" y1="-0.8" x2="-11.5" y2="-0.2" stroke="#38bdf8" stroke-width="0.9"/>
+          <line x1="-2.4" y1="0.5" x2="-11.5" y2="1.5" stroke="#d4e3e6" stroke-width="1.25"/>
+        </g>
+      </g>
+
+      <!-- 4. 地标三：后甲板中央「8 联装旋转式近程防空反导导弹发射转塔 (8-Cell Sosna-R / Palma Naval SAM Launcher · X=104..196)」 -->
+      <g id="top-aft-8cell-sam-turret">
+        <rect x="104" y="20.0" width="92" height="48.0" fill="#122634" stroke="#d4e3e6" stroke-width="1.15"/>
+        <rect x="110" y="24.0" width="80" height="40.0" fill="#0c1a24" stroke="#38bdf8" stroke-width="0.85"/>
+        <!-- 左右两舷 PK-16 16管箔条/红外干扰火箭发射器 (X=176..186, Y=26.5 与 Y=61.5) -->
+        <rect x="175" y="25.5" width="9.5" height="5.0" rx="0.6" fill="#163244" stroke="#38bdf8" stroke-width="0.8"/>
+        <rect x="175" y="57.5" width="9.5" height="5.0" rx="0.6" fill="#163244" stroke="#38bdf8" stroke-width="0.8"/>
+        <!-- 左右两舷救生筏圆筒群 -->
+        <rect x="116" y="25.5" width="11" height="4.2" rx="1.8" fill="#18384c" stroke="#d4e3e6" stroke-width="0.7"/>
+        <rect x="116" y="58.3" width="11" height="4.2" rx="1.8" fill="#18384c" stroke="#d4e3e6" stroke-width="0.7"/>
+
+        <!-- 中央大型 8 联装 (左4 + 右4) 旋转式近程防空反导导弹发射转塔 (X=132..166, Y=29.0..59.0 · 高亮 #ff5a36 / #eab308) -->
+        <circle cx="148" cy="44.0" r="13.5" fill="#1c0d10" stroke="#ff5a36" stroke-width="1.1"/>
+        <circle cx="148" cy="44.0" r="10.2" fill="#0d1e28" stroke="#38bdf8" stroke-width="0.85" stroke-dasharray="3 1.5"/>
+        <!-- 左翼 4 联装 Sosna-R 防空导弹发射箱组 (Y=32.5..39.5) -->
+        <rect x="136" y="32.2" width="24" height="7.2" rx="0.8" fill="#2a1014" stroke="#ff5a36" stroke-width="1.0"/>
+        <line x1="136" y1="35.8" x2="160" y2="35.8" stroke="#eab308" stroke-width="0.65"/>
+        <polygon points="160,33.0 164.5,34.0 160,35.0" fill="#ff5a36"/>
+        <polygon points="160,36.6 164.5,37.6 160,38.6" fill="#eab308"/>
+        <!-- 右翼 4 联装 Sosna-R 防空导弹发射箱组 (Y=48.5..55.8) -->
+        <rect x="136" y="48.6" width="24" height="7.2" rx="0.8" fill="#2a1014" stroke="#ff5a36" stroke-width="1.0"/>
+        <line x1="136" y1="52.2" x2="160" y2="52.2" stroke="#eab308" stroke-width="0.65"/>
+        <polygon points="160,49.4 164.5,50.4 160,51.4" fill="#ff5a36"/>
+        <polygon points="160,53.0 164.5,54.0 160,55.0" fill="#eab308"/>
+        <!-- 中央转塔座与顶置多光谱激光/红外制导球 -->
+        <rect x="141" y="39.4" width="14" height="9.2" rx="1.2" fill="#18384c" stroke="#d4e3e6" stroke-width="0.95"/>
+        <circle cx="148" cy="44.0" r="3.2" fill="#1c445c" stroke="#eab308" stroke-width="0.95"/>
+        <circle cx="148" cy="44.0" r="1.1" fill="#ff5a36"/>
+      </g>
+
+      <!-- 5. 地标四（前部）：前倾流线型装甲快艇驾驶室 + 顶置旋转式小型 X 波段相控阵低空补盲雷达 (Furke-E · X=196..298) -->
+      <g id="top-fast-bridge-and-mast">
+        <polygon points="196,20.0 276,20.0 298,27.5 298,60.5 276,68.0 196,68.0"
+                 fill="#122836" stroke="#d4e3e6" stroke-width="1.25"/>
+        <polygon points="202,24.5 272,24.5 288,30.5 288,57.5 272,63.5 202,63.5"
+                 fill="#163244" stroke="#38bdf8" stroke-width="0.9"/>
+        <!-- 驾驶室前端折角防浪装甲风挡观察窗 (X=280..292) -->
+        <polyline points="280,29.5 291,35.5 291,52.5 280,58.5" fill="none" stroke="#38bdf8" stroke-width="1.35"/>
+        <!-- 舰桥前顶 Sfera-02 光电红外搜索跟踪球 (IRST · X=274.8, Y=44.0) -->
+        <rect x="269" y="39.0" width="11" height="10.0" rx="1.0" fill="#0d202c" stroke="#d4e3e6" stroke-width="0.85"/>
+        <circle cx="274.8" cy="44.0" r="3.0" fill="#18384c" stroke="#eab308" stroke-width="0.95"/>
+        <circle cx="274.8" cy="44.0" r="1.0" fill="#ff5a36"/>
+
+        <!-- 后侧低矮隐身燃气轮机排气格栅 (X=200..218, Y=34.0..54.0) -->
+        <rect x="201" y="34.0" width="16" height="20.0" rx="1.0" fill="#08131a" stroke="#d4e3e6" stroke-width="0.9"/>
+        <circle cx="209" cy="39.5" r="2.8" fill="#04080b" stroke="#ff5a36" stroke-width="0.8"/>
+        <circle cx="209" cy="48.5" r="2.8" fill="#04080b" stroke="#eab308" stroke-width="0.8"/>
+
+        <!-- 中央复合主桅与顶置旋转式小型 X 波段相控阵低空补盲雷达 (Furke-E / Cross Dome · X=224..254, Y=30.0..58.0) -->
+        <polygon points="224,31.0 252,33.0 252,55.0 224,57.0" fill="#1c445c" stroke="#38bdf8" stroke-width="1.05"/>
+        <line x1="237" y1="25.5" x2="237" y2="62.5" stroke="#d4e3e6" stroke-width="1.15"/>
+        <!-- 旋转式双面 X 波段相控阵天线罩俯视图 -->
+        <circle cx="237" cy="44.0" r="6.2" fill="#0d202c" stroke="#38bdf8" stroke-width="1.15"/>
+        <rect x="234.2" y="38.5" width="5.6" height="11.0" rx="1.2" fill="#20506c" stroke="#eab308" stroke-width="0.9"/>
+        <circle cx="237" cy="44.0" r="1.4" fill="#ff5a36"/>
+      </g>
+
+      <!-- 6. 地标二：前甲板红警2 标志性「双联 57mm 可编程高平两用防空速射高炮 (Twin 57mm Programmable AHEAD Flak Turret · X=308..382)」 -->
+      <g id="top-bow-twin-57mm-flak">
+        <!-- 大直径旋转装甲座圈与供弹甲板环 (X=331, Y=44.0) -->
+        <circle cx="331" cy="44.0" r="13.5" fill="#1c0d10" stroke="#ff5a36" stroke-width="1.1"/>
+        <circle cx="331" cy="44.0" r="10.5" fill="#09151e" stroke="#38bdf8" stroke-width="0.8" stroke-dasharray="3 1.5"/>
+
+        <!-- 红警2 海蝎级多面体宽大双联 57mm 防空高炮炮塔外廓 (X=316..347, Y=33.5..54.5) -->
+        <polygon points="316,35.5 334,33.5 347,37.0 347,51.0 334,54.5 316,52.5"
+                 fill="#163244" stroke="#d4e3e6" stroke-width="1.25"/>
+        <polygon points="320,38.0 334,36.8 343,39.2 343,48.8 334,51.2 320,50.0"
+                 fill="#1c445c" stroke="#38bdf8" stroke-width="0.85"/>
+        <!-- 炮塔后部独立光电/毫米波火控跟踪球 -->
+        <circle cx="325" cy="44.0" r="3.2" fill="#18384c" stroke="#eab308" stroke-width="0.95"/>
+        <circle cx="325" cy="44.0" r="1.1" fill="#ff5a36"/>
+
+        <!-- 双联 57mm/75 水冷速射高炮身管与炮口 AHEAD 电磁编程感应圈 (朝向艇首 +X · X=347..380) -->
+        <rect x="347" y="39.8" width="9.5" height="8.4" rx="0.8" fill="#2a1216" stroke="#ff5a36" stroke-width="0.9"/>
+        <!-- 左/右双联 57mm 长炮管 -->
+        <line x1="356.5" y1="41.8" x2="380.0" y2="41.8" stroke="#d4e3e6" stroke-width="1.65"/>
+        <line x1="356.5" y1="46.2" x2="380.0" y2="46.2" stroke="#d4e3e6" stroke-width="1.65"/>
+        <!-- 炮管中部加强箍与炮口电磁编程感应圈 -->
+        <rect x="366.0" y="40.6" width="2.2" height="6.8" fill="#eab308"/>
+        <rect x="376.5" y="40.4" width="3.8" height="2.8" rx="0.4" fill="#ff5a36" stroke="#eab308" stroke-width="0.65"/>
+        <rect x="376.5" y="44.8" width="3.8" height="2.8" rx="0.4" fill="#ff5a36" stroke="#eab308" stroke-width="0.65"/>
+
+        <!-- 艇首 V 形压浪防浪板、双锚链与苏维埃红星徽章 (X=380..408) -->
+        <polyline points="376,30.5 391,44.0 376,57.5" fill="none" stroke="#38bdf8" stroke-width="0.95"/>
+        <polygon points="396,44.0 399.5,41.8 403,44.0 399.5,46.2" fill="#ff5a36" stroke="#d4e3e6" stroke-width="0.5"/>
+      </g>
+
+      <!-- 7. 上下安全净空区工程标注 (Y=5.5 与 Y=84.5 · 置于水翼翼尖外侧净空，零碰撞) -->
+      <g id="top-annotations-seascorpion">
+        <!-- 上排标注 (Y=5.5) -->
+        <text x="68" y="5.5" text-anchor="middle" class="mono" font-size="2.4" fill="#38bdf8" font-weight="bold">AFT FOILS &amp; 2×30MM AK-630M (084)</text>
+        <text x="162" y="5.5" text-anchor="middle" class="mono" font-size="2.4" fill="#ff5a36" font-weight="bold">8-CELL SOSNA-R SAM TURRET</text>
+        <text x="248" y="5.5" text-anchor="middle" class="mono" font-size="2.4" fill="#38bdf8">FURKE-E X-BAND AESA &amp; BRIDGE</text>
+        <text x="348" y="5.5" text-anchor="middle" class="mono" font-size="2.4" fill="#eab308" font-weight="bold">FWD V-HYDROFOIL &amp; TWIN 57MM FLAK</text>
+
+        <!-- 下排标注 (Y=84.5) -->
+        <text x="68" y="84.5" text-anchor="middle" class="mono" font-size="2.4" fill="#eab308">3×SUPERCAVITATING PROPS (48 KTS)</text>
+        <text x="195" y="84.5" text-anchor="middle" class="mono" font-size="2.4" fill="#eab308">CODAG: 2×M504 + 1×M70 (18,000 SHP)</text>
+        <text x="335" y="84.5" text-anchor="middle" class="mono" font-size="2.4" fill="#ff5a36">SURFACE-PIERCING FOIL SPAN: 10.2M (5.49:1)</text>
+      </g>
+    </g>
+  </g>
+</svg>

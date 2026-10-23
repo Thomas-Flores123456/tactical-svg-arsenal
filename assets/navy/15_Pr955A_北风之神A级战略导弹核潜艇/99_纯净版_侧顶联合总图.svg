@@ -1,0 +1,359 @@
+<?xml version='1.0' encoding='utf8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 427.572" width="1200" height="427.572" data-asset-id="naval.borei955a.clean.master" data-view-kind="clean-master" data-clean-status="measured"><title>15_Pr955A_北风之神A级战略导弹核潜艇 · 纯净侧顶联合图</title><metadata>Derived from 01_Pr955A_北风之神A级核潜艇_侧视立面.svg | 02_Pr955A_北风之神A级核潜艇_顶视双排16联布拉瓦.svg. Preserves original fictional/technical geometry; not independently verified engineering data. No cross-asset physical scale claim.</metadata><g id="clean-side" fill="none" transform="translate(40.000000 32.000000) scale(1.147705614) translate(-72.060000 -79.004000)"><defs>
+    <style>
+#clean-side { fill: none; stroke-linecap: butt; }
+#clean-side .s-dim { stroke: #2c3b40; stroke-width: 1; }
+#clean-side .s-line { stroke: #5f7c84; stroke-width: 1; }
+#clean-side .s-hi { stroke: #d4e3e6; stroke-width: 1.2; }
+#clean-side .s-alert { stroke: #ff5a36; stroke-width: 1.4; }
+#clean-side .s-focus { stroke: #38bdf8; stroke-width: 1.4; }
+#clean-side .f-dim { fill: #2c3b40; stroke: none; }
+#clean-side .f-line { fill: #5f7c84; stroke: none; }
+#clean-side .f-hi { fill: #d4e3e6; stroke: none; }
+#clean-side .f-alert { fill: #ff5a36; stroke: none; }
+#clean-side .f-panel { fill: #0c1113; }
+#clean-side text { font-family: "Rajdhani", "Bahnschrift", "DIN Alternate", "Microsoft YaHei", sans-serif; letter-spacing: 0.12em; }
+#clean-side text:not([stroke]) { stroke: none; }
+#clean-side text:not([fill]) { fill: #cfdde0; }
+#clean-side text:not([font-size]):not(.cap):not(.big) { font-size: 10px; }
+#clean-side text.cap { letter-spacing: 0.2em; text-transform: uppercase; }
+#clean-side text.cap:not([fill]) { fill: #8aa1a7; }
+#clean-side text.cap:not([font-size]) { font-size: 8.5px; }
+#clean-side text.mono { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; letter-spacing: 0.06em; }
+#clean-side text.big { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; font-weight: 600; letter-spacing: 0.08em; }
+#clean-side text.big:not([font-size]) { font-size: 18px; }
+#clean-side text.big:not([fill]) { fill: #d4e3e6; }
+#clean-side text.alert { fill: #ff5a36; }
+</style>
+    <pattern id="clean-side-cad-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#10181c" stroke-width="1" />
+      <circle cx="20" cy="20" r="0.8" fill="#1b262b" />
+    </pattern>
+    <pattern id="clean-side-hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#ff5a36" stroke-width="1.2" stroke-opacity="0.35" />
+    </pattern>
+  </defs>
+
+  <g id="clean-side-layer-ship-cad">
+    <g transform="translate(52.0,58.0) scale(2.360,2.360)">
+
+      <g id="clean-side-stern-pumpjet-empennage">
+        <polygon points="27,49.5 34,19.5 45,19.5 58,47.5" fill="#0a1822" stroke="#d4e3e6" stroke-width="1.2" />
+        <line x1="40" y1="19.5" x2="43" y2="48.0" stroke="#38bdf8" stroke-width="0.75" />
+        <line x1="44" y1="22.0" x2="46" y2="47.5" stroke="#4a6368" stroke-width="0.6" stroke-dasharray="2 1.2" />
+        <rect x="33.5" y="18.2" width="11.8" height="1.4" rx="0.5" fill="#132c3a" stroke="#38bdf8" stroke-width="0.75" />
+        <circle cx="34.5" cy="18.9" r="0.7" fill="#ff5a36" />
+
+        <polygon points="29,63.2 52,66.0 46,79.5 32,78.0" fill="#0a1822" stroke="#d4e3e6" stroke-width="1.15" />
+        <line x1="39" y1="64.5" x2="38" y2="78.6" stroke="#38bdf8" stroke-width="0.7" />
+
+        <ellipse cx="44" cy="56.8" rx="16.5" ry="1.8" fill="#0c1f2c" stroke="#38bdf8" stroke-width="0.9" />
+        <rect x="27" y="54.2" width="10.5" height="5.2" rx="0.7" fill="#132c3a" stroke="#d4e3e6" stroke-width="0.8" />
+
+        <path d="M 27 49.0 L 17 49.0 L 17 50.8 L 28 51.2 Z" fill="#142c3c" stroke="#38bdf8" stroke-width="0.75" />
+        <line x1="17" y1="49.8" x2="8.5" y2="49.8" stroke="#38bdf8" stroke-width="0.65" stroke-dasharray="1.5 1" />
+
+        <polygon points="21,52.2 29,50.5 29,63.1 21,61.4" fill="#0b1d28" stroke="#d4e3e6" stroke-width="0.95" />
+        <polygon points="15.0,51.6 23.5,50.2 23.5,63.4 15.0,62.0" fill="#0e2432" stroke="#38bdf8" stroke-width="1.15" />
+        <line x1="21.2" y1="50.8" x2="21.2" y2="62.8" stroke="#eab308" stroke-width="1.1" stroke-dasharray="1.4 0.9" />
+        <line x1="18.2" y1="51.2" x2="18.2" y2="62.4" stroke="#eab308" stroke-width="1.35" stroke-dasharray="1.6 0.8" />
+        <rect x="15.2" y="53.2" width="8.0" height="7.2" fill="none" stroke="#eab308" stroke-width="0.65" stroke-dasharray="2 1" />
+        <polygon points="12.5,56.8 15.5,54.8 15.5,58.8" fill="#eab308" stroke="#d4e3e6" stroke-width="0.6" />
+        </g>
+
+      <path d="M 28 59.5 L 421.5 59.5 C 420.5 67.8 403 74.1 374 74.1 L 106 74.1 C 72 74.1 46 66.8 28 62.5 Z" fill="#1f0d11" stroke="#ff5a36" stroke-width="0.95" />
+
+      <path d="M 26 51.0                C 48 48.2 82 44.0 132 42.2                L 306 42.0                L 344 42.8                L 378 43.2                C 404 43.2 422 49.5 422 58.2                C 422 67.2 404 74.1 374 74.1                L 106 74.1                C 72 74.1 46 66.8 26 62.2 Z" fill="#08141c" fill-opacity="0.88" stroke="#d4e3e6" stroke-width="1.35" />
+
+      <line x1="42" y1="50.5" x2="418" y2="50.5" stroke="#38bdf8" stroke-width="0.7" stroke-dasharray="6 2" />
+      <rect x="118" y="61.5" width="196" height="3.6" rx="0.8" fill="#0d222e" stroke="#38bdf8" stroke-width="0.7" stroke-opacity="0.85" />
+      <g stroke="#5f7c84" stroke-width="1.15" stroke-dasharray="2.2 1.5">
+        <line x1="72" y1="71.8" x2="104" y2="71.8" />
+        <line x1="114" y1="72.2" x2="146" y2="72.2" />
+        <line x1="332" y1="72.2" x2="364" y2="72.2" />
+        <line x1="370" y1="71.6" x2="394" y2="71.6" />
+      </g>
+
+      <rect x="78" y="47.2" width="292" height="24.2" rx="4.0" fill="#061016" fill-opacity="0.58" stroke="#38bdf8" stroke-width="0.8" stroke-dasharray="5 2.5" />
+      <g stroke="#2c3b40" stroke-width="0.65" stroke-dasharray="2 1.5">
+        <line x1="108" y1="47.2" x2="108" y2="71.4" />
+        <line x1="142" y1="47.2" x2="142" y2="71.4" />
+        <line x1="184" y1="47.2" x2="184" y2="71.4" />
+        <line x1="302" y1="47.2" x2="302" y2="71.4" />
+        <line x1="342" y1="47.2" x2="342" y2="71.4" />
+      </g>
+
+      <g id="clean-side-ok650v-reactor-cutaway">
+        <rect x="146.0" y="49.5" width="31.0" height="18.8" rx="2.0" fill="#1f0d10" fill-opacity="0.78" stroke="#ff5a36" stroke-width="0.95" />
+        <circle cx="161.5" cy="59.2" r="5.5" fill="#2c1014" stroke="#ff5a36" stroke-width="0.85" />
+        <circle cx="161.5" cy="59.2" r="2.4" fill="#ff5a36" fill-opacity="0.7" />
+        <circle cx="161.5" cy="59.2" r="0.9" fill="#eab308" />
+        <line x1="158.5" y1="49.5" x2="158.5" y2="53.7" stroke="#eab308" stroke-width="1.0" />
+        <line x1="161.5" y1="49.5" x2="161.5" y2="53.7" stroke="#eab308" stroke-width="1.0" />
+        <line x1="164.5" y1="49.5" x2="164.5" y2="53.7" stroke="#eab308" stroke-width="1.0" />
+
+        <polygon points="86,52.2 138,50.2 138,66.2 86,64.2" fill="#091a24" fill-opacity="0.7" stroke="#38bdf8" stroke-width="0.85" />
+        <line x1="138" y1="55.5" x2="146" y2="55.5" stroke="#eab308" stroke-width="0.95" />
+        <line x1="138" y1="61.5" x2="146" y2="61.5" stroke="#38bdf8" stroke-width="0.85" />
+        <line x1="84" y1="67.8" x2="178" y2="67.8" stroke="#eab308" stroke-width="1.1" stroke-dasharray="3.2 1.4" />
+        <line x1="88" y1="69.4" x2="174" y2="69.4" stroke="#38bdf8" stroke-width="0.75" stroke-dasharray="2 1.2" />
+        <line x1="23" y1="56.8" x2="86" y2="58.2" stroke="#eab308" stroke-width="1.0" stroke-dasharray="4 1.8" />
+        </g>
+
+      <g id="clean-side-bulava-16-vertical-tubes">
+        <rect x="189.2" y="42.4" width="9.2" height="27.2" rx="1.0" fill="#180c0f" fill-opacity="0.72" stroke="#ff5a36" stroke-width="0.8" />
+        <rect x="191.2" y="45.2" width="5.2" height="22.8" rx="0.8" fill="#0d222e" stroke="#38bdf8" stroke-width="0.55" />
+        <polygon points="191.2,45.2 193.8,43.0 196.4,45.2" fill="#ff5a36" />
+        <rect x="202.7" y="42.4" width="9.2" height="27.2" rx="1.0" fill="#180c0f" fill-opacity="0.72" stroke="#ff5a36" stroke-width="0.8" />
+        <rect x="204.7" y="45.2" width="5.2" height="22.8" rx="0.8" fill="#0d222e" stroke="#38bdf8" stroke-width="0.55" />
+        <polygon points="204.7,45.2 207.3,43.0 209.9,45.2" fill="#ff5a36" />
+        <rect x="216.2" y="42.4" width="9.2" height="27.2" rx="1.0" fill="#180c0f" fill-opacity="0.72" stroke="#ff5a36" stroke-width="0.8" />
+        <rect x="218.2" y="45.2" width="5.2" height="22.8" rx="0.8" fill="#0d222e" stroke="#38bdf8" stroke-width="0.55" />
+        <polygon points="218.2,45.2 220.8,43.0 223.4,45.2" fill="#ff5a36" />
+        <rect x="229.7" y="42.4" width="9.2" height="27.2" rx="1.0" fill="#180c0f" fill-opacity="0.72" stroke="#ff5a36" stroke-width="0.8" />
+        <rect x="231.7" y="45.2" width="5.2" height="22.8" rx="0.8" fill="#0d222e" stroke="#38bdf8" stroke-width="0.55" />
+        <polygon points="231.7,45.2 234.3,43.0 236.9,45.2" fill="#ff5a36" />
+        <rect x="243.2" y="42.4" width="9.2" height="27.2" rx="1.0" fill="#180c0f" fill-opacity="0.72" stroke="#ff5a36" stroke-width="0.8" />
+        <rect x="245.2" y="45.2" width="5.2" height="22.8" rx="0.8" fill="#0d222e" stroke="#38bdf8" stroke-width="0.55" />
+        <polygon points="245.2,45.2 247.8,43.0 250.4,45.2" fill="#ff5a36" />
+        <rect x="256.7" y="42.4" width="9.2" height="27.2" rx="1.0" fill="#180c0f" fill-opacity="0.72" stroke="#ff5a36" stroke-width="0.8" />
+        <rect x="258.7" y="45.2" width="5.2" height="22.8" rx="0.8" fill="#0d222e" stroke="#38bdf8" stroke-width="0.55" />
+        <polygon points="258.7,45.2 261.3,43.0 263.9,45.2" fill="#ff5a36" />
+        <rect x="270.2" y="42.4" width="9.2" height="27.2" rx="1.0" fill="#241014" fill-opacity="0.82" stroke="#ff5a36" stroke-width="0.95" />
+        <line x1="274.8" y1="42.4" x2="274.8" y2="66.0" stroke="#38bdf8" stroke-width="0.7" stroke-dasharray="1.8 1.2" />
+        <line x1="270.2" y1="42.0" x2="266.8" y2="38.2" stroke="#d4e3e6" stroke-width="0.9" />
+        <rect x="283.7" y="42.4" width="9.2" height="27.2" rx="1.0" fill="#241014" fill-opacity="0.82" stroke="#ff5a36" stroke-width="0.95" />
+        <line x1="288.3" y1="42.4" x2="288.3" y2="66.0" stroke="#ff5a36" stroke-width="0.7" stroke-dasharray="1.8 1.2" />
+        <line x1="283.7" y1="42.0" x2="280.2" y2="38.2" stroke="#d4e3e6" stroke-width="0.9" />
+        <line x1="188.5" y1="51.5" x2="294.0" y2="51.5" stroke="#38bdf8" stroke-width="0.6" stroke-dasharray="3 1.5" />
+        <line x1="188.5" y1="60.5" x2="294.0" y2="60.5" stroke="#38bdf8" stroke-width="0.6" stroke-dasharray="3 1.5" />
+      </g>
+
+      <g id="clean-side-borei-a-sail">
+        <path d="M 297.5 42.0                  C 303.0 42.0 306.0 38.5 307.5 33.5                  L 310.0 25.2                  L 341.5 25.2                  C 343.5 25.2 344.2 27.5 344.8 34.5                  C 345.4 39.5 348.5 42.8 354.5 43.0                  Z" fill="#0b1b26" stroke="#d4e3e6" stroke-width="1.25" />
+        <path d="M 299.5 42.0 C 306.5 41.2 310.0 38.2 316.0 38.2 L 341.0 38.2 C 345.2 38.2 348.0 41.5 353.5 43.0 Z" fill="#0e2432" stroke="#38bdf8" stroke-width="0.85" />
+        <polygon points="335.5,27.2 342.8,27.2 343.4,30.2 335.5,30.2" fill="#040a0e" stroke="#38bdf8" stroke-width="0.75" />
+        <line x1="339.2" y1="27.2" x2="339.2" y2="30.2" stroke="#d4e3e6" stroke-width="0.6" />
+
+        <rect x="314.5" y="26.0" width="13.5" height="9.2" rx="1.4" fill="#1a0d10" fill-opacity="0.75" stroke="#ff5a36" stroke-width="0.85" stroke-dasharray="2.2 1.0" />
+        <circle cx="321.2" cy="30.6" r="1.8" fill="none" stroke="#eab308" stroke-width="0.7" />
+        <circle cx="321.2" cy="30.6" r="0.6" fill="#ff5a36" />
+
+        <g stroke="#d4e3e6" stroke-width="0.9">
+          <line x1="313.5" y1="25.2" x2="313.5" y2="14.5" />
+          <rect x="311.2" y="12.5" width="4.6" height="2.2" rx="0.4" fill="#0d222e" stroke="#38bdf8" stroke-width="0.7" />
+          <line x1="325.0" y1="25.2" x2="325.0" y2="10.8" />
+          <circle cx="325.0" cy="10.2" r="1.3" fill="#0d222e" stroke="#38bdf8" stroke-width="0.7" />
+          <line x1="331.0" y1="25.2" x2="331.0" y2="12.2" />
+          <polygon points="329.6,13.5 332.4,13.5 331.0,11.0" fill="#38bdf8" stroke="none" />
+          <line x1="337.0" y1="25.2" x2="337.0" y2="14.0" />
+          <ellipse cx="337.0" cy="13.5" rx="2.0" ry="1.1" fill="#180d10" stroke="#ff5a36" stroke-width="0.65" />
+        </g>
+        </g>
+
+      <g id="clean-side-bow-sonar-torpedo-cutaway">
+        <path d="M 390 43.6 C 385 52.5 385 64.5 393 73.2" fill="none" stroke="#38bdf8" stroke-width="1.0" />
+        <ellipse cx="404.5" cy="59.0" rx="11.0" ry="8.6" fill="#0b1f2c" fill-opacity="0.76" stroke="#38bdf8" stroke-width="0.95" stroke-dasharray="2.2 1.1" />
+        <line x1="395.5" y1="55.5" x2="413.5" y2="55.5" stroke="#38bdf8" stroke-width="0.5" />
+        <line x1="394.0" y1="59.0" x2="415.0" y2="59.0" stroke="#38bdf8" stroke-width="0.55" />
+        <line x1="395.5" y1="62.5" x2="413.5" y2="62.5" stroke="#38bdf8" stroke-width="0.5" />
+        <circle cx="404.5" cy="59.0" r="2.2" fill="#38bdf8" fill-opacity="0.35" stroke="#d4e3e6" stroke-width="0.5" />
+
+        <g stroke="#eab308" stroke-width="0.7" fill="#061016">
+          <rect x="385.0" y="45.8" width="6.5" height="1.6" rx="0.5" />
+          <rect x="386.5" y="48.0" width="6.5" height="1.6" rx="0.5" />
+          <rect x="387.5" y="50.2" width="6.5" height="1.6" rx="0.5" />
+        </g>
+        <g stroke="#eab308" stroke-width="0.65" stroke-dasharray="3.2 1.4" stroke-opacity="0.85">
+          <line x1="350" y1="46.6" x2="385.0" y2="46.6" />
+          <line x1="350" y1="48.8" x2="386.5" y2="48.8" />
+          <line x1="350" y1="51.0" x2="387.5" y2="51.0" />
+        </g>
+
+        <rect x="372" y="42.8" width="11.5" height="1.4" fill="#142c3c" stroke="#ff5a36" stroke-width="0.6" />
+
+        <rect x="364.0" y="45.2" width="16.8" height="3.0" rx="0.8" fill="#050d12" stroke="#38bdf8" stroke-width="0.95" />
+        <line x1="366.0" y1="46.7" x2="378.8" y2="46.7" stroke="#d4e3e6" stroke-width="0.65" />
+
+        </g>
+
+      </g>
+  </g>
+</g><g id="clean-top" fill="none" transform="translate(40.000000 261.226119) scale(1.147705614) translate(-72.060000 -141.312000)"><defs>
+    <style>
+#clean-top { fill: none; stroke-linecap: butt; }
+#clean-top .s-dim { stroke: #2c3b40; stroke-width: 1; }
+#clean-top .s-line { stroke: #5f7c84; stroke-width: 1; }
+#clean-top .s-hi { stroke: #d4e3e6; stroke-width: 1.2; }
+#clean-top .s-alert { stroke: #ff5a36; stroke-width: 1.4; }
+#clean-top .s-focus { stroke: #38bdf8; stroke-width: 1.4; }
+#clean-top .f-dim { fill: #2c3b40; stroke: none; }
+#clean-top .f-line { fill: #5f7c84; stroke: none; }
+#clean-top .f-hi { fill: #d4e3e6; stroke: none; }
+#clean-top .f-alert { fill: #ff5a36; stroke: none; }
+#clean-top .f-panel { fill: #0c1113; }
+#clean-top text { font-family: "Rajdhani", "Bahnschrift", "DIN Alternate", "Microsoft YaHei", sans-serif; letter-spacing: 0.12em; }
+#clean-top text:not([stroke]) { stroke: none; }
+#clean-top text:not([fill]) { fill: #cfdde0; }
+#clean-top text:not([font-size]):not(.cap):not(.big) { font-size: 10px; }
+#clean-top text.cap { letter-spacing: 0.2em; text-transform: uppercase; }
+#clean-top text.cap:not([fill]) { fill: #8aa1a7; }
+#clean-top text.cap:not([font-size]) { font-size: 8.5px; }
+#clean-top text.mono { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; letter-spacing: 0.06em; }
+#clean-top text.big { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; font-weight: 600; letter-spacing: 0.08em; }
+#clean-top text.big:not([font-size]) { font-size: 18px; }
+#clean-top text.big:not([fill]) { fill: #d4e3e6; }
+#clean-top text.alert { fill: #ff5a36; }
+</style>
+    <pattern id="clean-top-cad-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#10181c" stroke-width="1" />
+      <circle cx="20" cy="20" r="0.8" fill="#1b262b" />
+    </pattern>
+    <pattern id="clean-top-hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#ff5a36" stroke-width="1.2" stroke-opacity="0.35" />
+    </pattern>
+  </defs>
+
+  <g id="clean-top-layer-ship-cad">
+    <g transform="translate(52.0,96.0) scale(2.360,2.360)">
+
+      <g id="clean-top-stern-top-pumpjet">
+        <polygon points="27,23.8 40,23.8 56,34.5 56,53.5 40,64.2 27,64.2 30,54.0 30,34.0" fill="#071218" stroke="#d4e3e6" stroke-width="1.1" />
+        <rect x="24.5" y="22.6" width="16.5" height="1.8" rx="0.5" fill="#0d222e" stroke="#38bdf8" stroke-width="0.85" />
+        <rect x="24.5" y="63.6" width="16.5" height="1.8" rx="0.5" fill="#0d222e" stroke="#38bdf8" stroke-width="0.85" />
+
+        <polygon points="21,38.8 29,37.2 29,50.8 21,49.2" fill="#0b1d28" stroke="#d4e3e6" stroke-width="0.95" />
+        <polygon points="15.0,38.2 23.5,37.0 23.5,51.0 15.0,49.8" fill="#0e2432" stroke="#38bdf8" stroke-width="1.15" />
+        <line x1="21.2" y1="37.6" x2="21.2" y2="50.4" stroke="#eab308" stroke-width="1.05" stroke-dasharray="1.4 0.9" />
+        <line x1="18.2" y1="38.0" x2="18.2" y2="50.0" stroke="#eab308" stroke-width="1.3" stroke-dasharray="1.5 0.8" />
+        <polygon points="12.5,44.0 15.5,42.0 15.5,46.0" fill="#eab308" stroke="#d4e3e6" stroke-width="0.6" />
+      </g>
+
+      <path d="M 26 39.2                C 52 34.5 92 29.2 136 27.95                L 348 27.95                C 386 27.95 412 34.2 422 44.0                C 412 53.8 386 60.05 348 60.05                L 136 60.05                C 92 58.8 52 53.5 26 48.8 Z" fill="#08141c" stroke="#d4e3e6" stroke-width="1.4" />
+
+      <path d="M 48 39.8 C 88 34.8 130 30.8 168 30.5 L 352 30.5 C 382 31.2 404 36.5 415 44.0 C 404 51.5 382 56.8 352 57.5 L 168 57.5 C 130 57.2 88 53.2 48 48.2" fill="none" stroke="#4a6368" stroke-width="0.75" />
+
+      <ellipse cx="42" cy="44.0" rx="15.5" ry="1.4" fill="#0d222e" stroke="#38bdf8" stroke-width="0.9" />
+      <line x1="26" y1="44.0" x2="8.5" y2="44.0" stroke="#38bdf8" stroke-width="0.65" stroke-dasharray="1.8 1.2" />
+
+      <g id="clean-top-pressure-hull-xray">
+        <rect x="78.0" y="31.8" width="288.0" height="24.4" rx="10.0" fill="#061016" fill-opacity="0.58" stroke="#38bdf8" stroke-width="0.9" stroke-dasharray="5 2.5" />
+        <g stroke="#38bdf8" stroke-width="0.6" stroke-dasharray="2 1.5" stroke-opacity="0.65">
+          <line x1="108" y1="31.8" x2="108" y2="56.2" />
+          <line x1="142" y1="31.8" x2="142" y2="56.2" />
+          <line x1="184" y1="31.8" x2="184" y2="56.2" />
+          <line x1="302" y1="31.8" x2="302" y2="56.2" />
+          <line x1="342" y1="31.8" x2="342" y2="56.2" />
+        </g>
+
+        <rect x="146.0" y="35.2" width="31.0" height="17.6" rx="2.2" fill="#1f0d10" fill-opacity="0.72" stroke="#ff5a36" stroke-width="0.85" />
+        <circle cx="161.5" cy="44.0" r="5.2" fill="#2c1014" stroke="#ff5a36" stroke-width="0.8" />
+        <circle cx="161.5" cy="44.0" r="2.2" fill="#ff5a36" fill-opacity="0.7" />
+        <circle cx="161.5" cy="44.0" r="0.9" fill="#eab308" />
+
+        <polygon points="86,36.8 138,35.2 138,52.8 86,51.2" fill="#091a24" fill-opacity="0.68" stroke="#38bdf8" stroke-width="0.8" />
+        <rect x="92" y="38.2" width="40" height="11.6" fill="none" stroke="#eab308" stroke-width="0.65" stroke-dasharray="2.5 1.2" />
+        <line x1="23.5" y1="44.0" x2="86.0" y2="44.0" stroke="#eab308" stroke-width="1.1" stroke-dasharray="3.5 1.5" />
+      </g>
+
+      <g id="clean-top-bulava-16-silos-top">
+        <rect x="187.5" y="32.2" width="108.0" height="23.6" rx="1.8" fill="#0a1924" stroke="#38bdf8" stroke-width="0.95" />
+        <line x1="187.5" y1="44.0" x2="295.5" y2="44.0" stroke="#2c3b40" stroke-width="0.7" stroke-dasharray="3 1.5" />
+
+        <rect x="189.4" y="33.8" width="8.8" height="8.8" rx="1.4" fill="#0d222e" stroke="#d4e3e6" stroke-width="0.8" />
+        <circle cx="193.8" cy="38.2" r="3.3" fill="#08141c" stroke="#38bdf8" stroke-width="0.7" />
+        <rect x="189.4" y="45.4" width="8.8" height="8.8" rx="1.4" fill="#0d222e" stroke="#d4e3e6" stroke-width="0.8" />
+        <circle cx="193.8" cy="49.8" r="3.3" fill="#08141c" stroke="#38bdf8" stroke-width="0.7" />
+        <rect x="202.9" y="33.8" width="8.8" height="8.8" rx="1.4" fill="#0d222e" stroke="#d4e3e6" stroke-width="0.8" />
+        <circle cx="207.3" cy="38.2" r="3.3" fill="#08141c" stroke="#38bdf8" stroke-width="0.7" />
+        <rect x="202.9" y="45.4" width="8.8" height="8.8" rx="1.4" fill="#0d222e" stroke="#d4e3e6" stroke-width="0.8" />
+        <circle cx="207.3" cy="49.8" r="3.3" fill="#08141c" stroke="#38bdf8" stroke-width="0.7" />
+        <rect x="216.4" y="33.8" width="8.8" height="8.8" rx="1.4" fill="#0d222e" stroke="#d4e3e6" stroke-width="0.8" />
+        <circle cx="220.8" cy="38.2" r="3.3" fill="#08141c" stroke="#38bdf8" stroke-width="0.7" />
+        <rect x="216.4" y="45.4" width="8.8" height="8.8" rx="1.4" fill="#0d222e" stroke="#d4e3e6" stroke-width="0.8" />
+        <circle cx="220.8" cy="49.8" r="3.3" fill="#08141c" stroke="#38bdf8" stroke-width="0.7" />
+        <rect x="229.9" y="33.8" width="8.8" height="8.8" rx="1.4" fill="#0d222e" stroke="#d4e3e6" stroke-width="0.8" />
+        <circle cx="234.3" cy="38.2" r="3.3" fill="#08141c" stroke="#38bdf8" stroke-width="0.7" />
+        <rect x="229.9" y="45.4" width="8.8" height="8.8" rx="1.4" fill="#0d222e" stroke="#d4e3e6" stroke-width="0.8" />
+        <circle cx="234.3" cy="49.8" r="3.3" fill="#08141c" stroke="#38bdf8" stroke-width="0.7" />
+        <rect x="243.4" y="33.8" width="8.8" height="8.8" rx="1.4" fill="#0d222e" stroke="#d4e3e6" stroke-width="0.8" />
+        <circle cx="247.8" cy="38.2" r="3.3" fill="#08141c" stroke="#38bdf8" stroke-width="0.7" />
+        <rect x="243.4" y="45.4" width="8.8" height="8.8" rx="1.4" fill="#0d222e" stroke="#d4e3e6" stroke-width="0.8" />
+        <circle cx="247.8" cy="49.8" r="3.3" fill="#08141c" stroke="#38bdf8" stroke-width="0.7" />
+        <rect x="256.9" y="33.8" width="8.8" height="8.8" rx="1.4" fill="#0d222e" stroke="#d4e3e6" stroke-width="0.8" />
+        <circle cx="261.3" cy="38.2" r="3.3" fill="#08141c" stroke="#38bdf8" stroke-width="0.7" />
+        <rect x="256.9" y="45.4" width="8.8" height="8.8" rx="1.4" fill="#0d222e" stroke="#d4e3e6" stroke-width="0.8" />
+        <circle cx="261.3" cy="49.8" r="3.3" fill="#08141c" stroke="#38bdf8" stroke-width="0.7" />
+        <rect x="270.4" y="33.8" width="8.8" height="8.8" rx="1.4" fill="#1c0b0e" stroke="#ff5a36" stroke-width="0.95" />
+        <ellipse cx="274.8" cy="29.5" rx="3.4" ry="1.8" fill="#132c3a" stroke="#d4e3e6" stroke-width="0.75" />
+        <circle cx="274.8" cy="38.2" r="3.3" fill="#2b0c0e" stroke="#ff5a36" stroke-width="0.85" />
+        <circle cx="274.8" cy="38.2" r="1.4" fill="#ff5a36" />
+        <circle cx="274.8" cy="38.2" r="0.55" fill="#eab308" />
+
+        <rect x="270.4" y="45.4" width="8.8" height="8.8" rx="1.4" fill="#1c0b0e" stroke="#ff5a36" stroke-width="0.95" />
+        <ellipse cx="274.8" cy="58.5" rx="3.4" ry="1.8" fill="#132c3a" stroke="#d4e3e6" stroke-width="0.75" />
+        <circle cx="274.8" cy="49.8" r="3.3" fill="#2b0c0e" stroke="#ff5a36" stroke-width="0.85" />
+        <circle cx="274.8" cy="49.8" r="1.4" fill="#ff5a36" />
+        <circle cx="274.8" cy="49.8" r="0.55" fill="#eab308" />
+
+        <rect x="283.9" y="33.8" width="8.8" height="8.8" rx="1.4" fill="#1c0b0e" stroke="#ff5a36" stroke-width="0.95" />
+        <ellipse cx="288.3" cy="29.5" rx="3.4" ry="1.8" fill="#132c3a" stroke="#d4e3e6" stroke-width="0.75" />
+        <circle cx="288.3" cy="38.2" r="3.3" fill="#2b0c0e" stroke="#ff5a36" stroke-width="0.85" />
+        <circle cx="288.3" cy="38.2" r="1.5" fill="#ff5a36" />
+        <circle cx="288.3" cy="38.2" r="0.6" fill="#eab308" />
+
+        <rect x="283.9" y="45.4" width="8.8" height="8.8" rx="1.4" fill="#1c0b0e" stroke="#ff5a36" stroke-width="0.95" />
+        <ellipse cx="288.3" cy="58.5" rx="3.4" ry="1.8" fill="#132c3a" stroke="#d4e3e6" stroke-width="0.75" />
+        <circle cx="288.3" cy="49.8" r="3.3" fill="#2b0c0e" stroke="#ff5a36" stroke-width="0.85" />
+        <circle cx="288.3" cy="49.8" r="1.5" fill="#ff5a36" />
+        <circle cx="288.3" cy="49.8" r="0.6" fill="#eab308" />
+      </g>
+
+      <g id="clean-top-sail-top-view">
+        <path d="M 298.0 44.0 C 304.0 36.2 314.0 35.8 342.0 35.8 C 349.5 35.8 354.5 39.5 354.5 44.0 C 354.5 48.5 349.5 52.2 342.0 52.2 C 314.0 52.2 304.0 51.8 298.0 44.0 Z" fill="#0a1922" stroke="#38bdf8" stroke-width="0.95" />
+        <path d="M 303.5 44.0 C 308.5 38.5 316.0 38.0 340.5 38.0 C 344.2 38.0 345.8 40.5 345.8 44.0 C 345.8 47.5 344.2 50.0 340.5 50.0 C 316.0 50.0 308.5 49.5 303.5 44.0 Z" fill="#0e2432" stroke="#d4e3e6" stroke-width="1.15" />
+        <path d="M 339.5 39.5 C 343.2 40.5 344.5 42.2 344.5 44.0 C 344.5 45.8 343.2 47.5 339.5 48.5" fill="none" stroke="#38bdf8" stroke-width="1.0" />
+        <rect x="334.0" y="41.4" width="5.2" height="5.2" rx="0.9" fill="#050d12" stroke="#38bdf8" stroke-width="0.7" />
+        <circle cx="330.5" cy="42.2" r="1.2" fill="#061016" stroke="#d4e3e6" stroke-width="0.65" />
+        <circle cx="330.5" cy="45.8" r="1.2" fill="#061016" stroke="#38bdf8" stroke-width="0.65" />
+        <circle cx="312.5" cy="44.0" r="1.6" fill="#061016" stroke="#38bdf8" stroke-width="0.7" />
+        <ellipse cx="321.2" cy="44.0" rx="5.8" ry="3.8" fill="#1a0d10" stroke="#ff5a36" stroke-width="0.95" />
+        <circle cx="321.2" cy="44.0" r="1.9" fill="#0b1d28" stroke="#eab308" stroke-width="0.7" />
+        <circle cx="321.2" cy="44.0" r="0.7" fill="#ff5a36" />
+      </g>
+
+      <rect x="148" y="39.2" width="27" height="9.6" rx="1.2" fill="#0a1820" stroke="#4a6368" stroke-width="0.75" />
+      <line x1="161.5" y1="39.2" x2="161.5" y2="48.8" stroke="#2c3b40" stroke-width="0.65" />
+      <circle cx="118" cy="44.0" r="3.6" fill="#0b1d28" stroke="#d4e3e6" stroke-width="0.85" />
+      <circle cx="118" cy="44.0" r="1.5" fill="none" stroke="#38bdf8" stroke-width="0.65" />
+      <circle cx="72" cy="44.0" r="3.0" fill="#0b1d28" stroke="#38bdf8" stroke-width="0.8" />
+
+      <g id="clean-top-bow-top-view">
+        <polygon points="364,28.5 379,28.5 382,19.2 369,19.2" fill="#0b1d28" stroke="#38bdf8" stroke-width="0.95" />
+        <polygon points="364,59.5 379,59.5 382,68.8 369,68.8" fill="#0b1d28" stroke="#38bdf8" stroke-width="0.95" />
+
+        <path d="M 390 30.2 C 384 37.5 384 50.5 390 57.8" fill="none" stroke="#38bdf8" stroke-width="1.0" stroke-dasharray="3 1.5" />
+        <ellipse cx="404.5" cy="44.0" rx="10.8" ry="8.4" fill="#0b1f2c" fill-opacity="0.65" stroke="#38bdf8" stroke-width="0.85" stroke-dasharray="2.2 1.1" />
+        <circle cx="404.5" cy="44.0" r="2.5" fill="#38bdf8" fill-opacity="0.3" stroke="#d4e3e6" stroke-width="0.55" />
+
+        <g stroke="#eab308" stroke-width="0.7" stroke-dasharray="3 1.2" stroke-opacity="0.85">
+          <line x1="354" y1="36.8" x2="393" y2="37.8" />
+          <line x1="354" y1="39.2" x2="396" y2="40.0" />
+          <line x1="354" y1="41.6" x2="398" y2="42.2" />
+          <line x1="354" y1="46.4" x2="398" y2="45.8" />
+          <line x1="354" y1="48.8" x2="396" y2="48.0" />
+          <line x1="354" y1="51.2" x2="393" y2="50.2" />
+        </g>
+
+        <rect x="356" y="41.4" width="12.5" height="5.2" rx="0.9" fill="#0b1d28" stroke="#4a6368" stroke-width="0.8" />
+        <circle cx="376" cy="44.0" r="3.6" fill="#0b1d28" stroke="#d4e3e6" stroke-width="0.9" />
+        <circle cx="376" cy="44.0" r="1.5" fill="#132c3a" stroke="#38bdf8" stroke-width="0.65" />
+        <circle cx="384" cy="34.5" r="0.9" fill="#ff5a36" />
+        <circle cx="387" cy="34.5" r="0.9" fill="#ff5a36" />
+        <circle cx="384" cy="53.5" r="0.9" fill="#ff5a36" />
+        <circle cx="387" cy="53.5" r="0.9" fill="#ff5a36" />
+      </g>
+
+      </g>
+  </g>
+</g></svg>

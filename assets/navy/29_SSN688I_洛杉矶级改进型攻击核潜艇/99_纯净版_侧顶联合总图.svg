@@ -1,0 +1,322 @@
+<?xml version='1.0' encoding='utf8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 462.140" width="1200" height="462.140" data-asset-id="naval.losangeles688i.clean.master" data-view-kind="clean-master" data-clean-status="measured"><title>29_SSN688I_洛杉矶级改进型攻击核潜艇 · 纯净侧顶联合图</title><metadata>Derived from 01_SSN688I_洛杉矶级核潜艇_侧视立面.svg | 02_SSN688I_洛杉矶级核潜艇_顶视12联战斧垂发.svg. Preserves original fictional/technical geometry; not independently verified engineering data. No cross-asset physical scale claim.</metadata><g id="clean-side" fill="none" transform="translate(40.000000 32.000000) scale(1.179419136) translate(-72.180000 -74.756000)"><defs>
+    <style>
+#clean-side { fill: none; stroke-linecap: butt; }
+#clean-side .s-dim { stroke: #2c3b40; stroke-width: 1; }
+#clean-side .s-line { stroke: #5f7c84; stroke-width: 1; }
+#clean-side .s-hi { stroke: #d4e3e6; stroke-width: 1.2; }
+#clean-side .s-alert { stroke: #ff5a36; stroke-width: 1.4; }
+#clean-side .s-focus { stroke: #38bdf8; stroke-width: 1.4; }
+#clean-side .f-dim { fill: #2c3b40; stroke: none; }
+#clean-side .f-line { fill: #5f7c84; stroke: none; }
+#clean-side .f-hi { fill: #d4e3e6; stroke: none; }
+#clean-side .f-alert { fill: #ff5a36; stroke: none; }
+#clean-side .f-panel { fill: #0c1113; }
+#clean-side text { font-family: "Rajdhani", "Bahnschrift", "DIN Alternate", "Microsoft YaHei", sans-serif; letter-spacing: 0.12em; }
+#clean-side text:not([stroke]) { stroke: none; }
+#clean-side text:not([fill]) { fill: #cfdde0; }
+#clean-side text:not([font-size]):not(.cap):not(.big) { font-size: 10px; }
+#clean-side text.cap { letter-spacing: 0.2em; text-transform: uppercase; }
+#clean-side text.cap:not([fill]) { fill: #8aa1a7; }
+#clean-side text.cap:not([font-size]) { font-size: 8.5px; }
+#clean-side text.mono { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; letter-spacing: 0.06em; }
+#clean-side text.big { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; font-weight: 600; letter-spacing: 0.08em; }
+#clean-side text.big:not([font-size]) { font-size: 18px; }
+#clean-side text.big:not([fill]) { fill: #d4e3e6; }
+#clean-side text.alert { fill: #ff5a36; }
+</style>
+    <pattern id="clean-side-cad-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#10181c" stroke-width="1" />
+      <circle cx="20" cy="20" r="0.8" fill="#1b262b" />
+    </pattern>
+    <pattern id="clean-side-hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#ff5a36" stroke-width="1.2" stroke-opacity="0.35" />
+    </pattern>
+  </defs>
+
+  <g id="clean-side-layer-ship-cad">
+    <g transform="translate(46.0,60.0) scale(2.380,2.380)">
+
+      <g id="clean-side-ssn688i-stern-cruciform-propeller">
+        <polygon points="21,49.5 25,22.5 36,22.5 45,48.0" fill="#0a1822" stroke="#d4e3e6" stroke-width="1.2" />
+        <line x1="31" y1="22.5" x2="34" y2="48.5" stroke="#4a6368" stroke-width="0.75" />
+        <polygon points="22,61.5 38,63.2 34,79.5 23,78.0" fill="#0a1822" stroke="#d4e3e6" stroke-width="1.15" />
+        <line x1="29" y1="62.2" x2="28" y2="78.5" stroke="#4a6368" stroke-width="0.7" />
+
+        <ellipse cx="33" cy="56.0" rx="15.5" ry="1.6" fill="#0d222e" stroke="#38bdf8" stroke-width="0.9" />
+        <polygon points="20,51.2 31,51.8 33,60.2 20,60.8" fill="#102432" stroke="#38bdf8" stroke-width="0.95" />
+        <circle cx="20.2" cy="51.6" r="0.85" fill="#ff5a36" />
+
+        <g stroke="#eab308" stroke-width="0.95" fill="#eab308" fill-opacity="0.34">
+          <polygon points="11.0,56.0 17.5,53.6 17.5,58.4" />
+          <path d="M 14.2 56.0 C 11.0 50.0 12.6 46.5 15.8 47.8 C 15.0 51.2 14.6 53.6 14.2 56.0 Z" />
+          <path d="M 14.2 56.0 C 11.0 62.0 12.6 65.5 15.8 64.2 C 15.0 60.8 14.6 58.4 14.2 56.0 Z" />
+          <path d="M 13.0 53.5 C 10.2 50.8 10.8 48.6 13.4 49.6" />
+          <path d="M 13.0 58.5 C 10.2 61.2 10.8 63.4 13.4 62.4" />
+          <line x1="11.5" y1="53.0" x2="16.2" y2="59.0" stroke-width="0.8" />
+          <line x1="11.5" y1="59.0" x2="16.2" y2="53.0" stroke-width="0.8" />
+          <circle cx="14.2" cy="56.0" r="1.25" fill="#eab308" stroke="#080a0b" stroke-width="0.4" />
+        </g>
+        </g>
+
+      <g id="clean-side-hy80-single-hull-body">
+        <path d="M 17.5 56.0 L 410 56.0 C 410 63.8 394 68.8 368 68.8 L 86 68.8 C 56 68.8 34 62.5 17.5 58.2 Z" fill="#261014" stroke="none" />
+        <path d="M 17.5 53.8 L 86 43.2 L 368 43.2 C 394 43.2 410 48.2 410 56.0 C 410 63.8 394 68.8 368 68.8 L 86 68.8 C 56 68.8 34 62.5 17.5 58.2 Z" fill="#0a1822" fill-opacity="0.74" stroke="#d4e3e6" stroke-width="1.35" />
+        <path d="M 410 56.0 C 410 63.8 394 68.8 368 68.8 L 86 68.8 C 56 68.8 34 62.5 17.5 58.2" fill="none" stroke="#ff5a36" stroke-width="1.15" />
+
+        <path d="M 338 43.2 C 334 49.0 334 63.0 338 68.8" fill="none" stroke="#38bdf8" stroke-width="1.05" stroke-dasharray="3 1.5" />
+        <path d="M 78 44.5 C 81 50.5 81 61.5 78 67.5" fill="none" stroke="#38bdf8" stroke-width="0.95" stroke-dasharray="3 1.5" />
+        <line x1="78" y1="52.5" x2="336" y2="52.5" stroke="#2c3b40" stroke-width="0.65" stroke-dasharray="4 2" />
+        <line x1="78" y1="60.5" x2="336" y2="60.5" stroke="#2c3b40" stroke-width="0.65" stroke-dasharray="4 2" />
+        <g stroke="#2c3b40" stroke-width="0.65" stroke-dasharray="2 1.5">
+          <line x1="148" y1="43.2" x2="148" y2="68.8" />
+          <line x1="202" y1="43.2" x2="202" y2="68.8" />
+          <line x1="258" y1="43.2" x2="258" y2="68.8" />
+          <line x1="296" y1="43.2" x2="296" y2="68.8" />
+        </g>
+
+        <g fill="#0d2432" stroke="#38bdf8" stroke-width="0.8">
+          <rect x="128" y="61.2" width="14" height="3.6" rx="0.6" />
+          <rect x="208" y="61.2" width="14" height="3.6" rx="0.6" />
+          <rect x="278" y="61.2" width="14" height="3.6" rx="0.6" />
+        </g>
+        <line x1="20" y1="51.6" x2="256" y2="45.8" stroke="#38bdf8" stroke-width="0.65" stroke-dasharray="3 1.5" />
+      </g>
+
+      <g id="clean-side-ge-s6g-reactor-turbine-cutaway">
+        <rect x="154.0" y="45.5" width="42.0" height="20.8" rx="2.0" fill="#1a0f10" fill-opacity="0.72" stroke="#ff5a36" stroke-width="0.95" />
+        <circle cx="175.0" cy="56.5" r="5.5" fill="#2a1214" stroke="#ff5a36" stroke-width="0.85" />
+        <circle cx="175.0" cy="56.5" r="2.3" fill="#ff5a36" fill-opacity="0.65" stroke="#eab308" stroke-width="0.7" />
+        <line x1="175.0" y1="46.2" x2="175.0" y2="51.0" stroke="#eab308" stroke-width="1.15" />
+        <rect x="158.0" y="48.5" width="6.5" height="14.5" rx="1.2" fill="#261014" stroke="#eab308" stroke-width="0.65" />
+        <rect x="185.5" y="48.5" width="6.5" height="14.5" rx="1.2" fill="#261014" stroke="#eab308" stroke-width="0.65" />
+
+        <polygon points="82,50.5 144,47.5 144,64.5 82,61.5" fill="#091a24" fill-opacity="0.62" stroke="#38bdf8" stroke-width="0.8" stroke-dasharray="3 1.5" />
+        <line x1="144" y1="53.0" x2="154" y2="53.0" stroke="#eab308" stroke-width="0.9" />
+        <line x1="17.5" y1="56.0" x2="144" y2="56.0" stroke="#eab308" stroke-width="0.85" stroke-dasharray="4 2" />
+        </g>
+
+      <g id="clean-side-ssn688i-ice-hardened-sail">
+        <polygon points="268,43.2 270,23.5 301,23.5 304,43.2" fill="#0b1a24" fill-opacity="0.94" stroke="#d4e3e6" stroke-width="1.3" />
+        <polygon points="270,23.5 301,23.5 302,26.8 269.5,26.8" fill="#132c3a" stroke="#38bdf8" stroke-width="0.95" />
+        <line x1="285" y1="23.5" x2="285" y2="43.2" stroke="#2c3b40" stroke-width="0.7" />
+        <g stroke="#d4e3e6" stroke-width="0.95">
+          <line x1="274" y1="23.5" x2="274" y2="12.5" />
+          <rect x="272.0" y="10.5" width="4.0" height="2.0" rx="0.4" fill="#0d222e" stroke="#38bdf8" stroke-width="0.75" />
+          <line x1="281" y1="23.5" x2="281" y2="9.5" />
+          <circle cx="281" cy="8.7" r="1.3" fill="#132c3a" stroke="#ff5a36" stroke-width="0.75" />
+          <line x1="289" y1="23.5" x2="289" y2="7.5" />
+          <polygon points="287.6,9.0 290.4,9.0 289,6.2" fill="#38bdf8" stroke="none" />
+          <line x1="296" y1="23.5" x2="296" y2="11.0" />
+          <ellipse cx="296" cy="10.4" rx="2.0" ry="1.0" fill="#0d222e" stroke="#eab308" stroke-width="0.7" />
+        </g>
+        </g>
+
+      <g id="clean-side-midship-mk67-torpedo-tubes">
+        <g stroke="#eab308" stroke-width="0.75" stroke-dasharray="3 1.4" stroke-opacity="0.88">
+          <line x1="298" y1="54.2" x2="330" y2="54.2" />
+          <line x1="298" y1="57.2" x2="332" y2="57.2" />
+        </g>
+        <rect x="299" y="61.5" width="22" height="2.0" rx="0.6" fill="#1c0d10" stroke="#ff5a36" stroke-width="0.65" />
+        <rect x="299" y="64.2" width="22" height="2.0" rx="0.6" fill="#0d222e" stroke="#38bdf8" stroke-width="0.65" />
+
+        <rect x="324.0" y="53.2" width="8.5" height="2.0" rx="0.9" fill="#1c0d10" stroke="#eab308" stroke-width="0.9" />
+        <rect x="326.0" y="56.2" width="8.5" height="2.0" rx="0.9" fill="#1c0d10" stroke="#ff5a36" stroke-width="0.9" />
+
+        </g>
+
+      <g id="clean-side-bow-mk45-vls-bqq5-sonar">
+        <g fill="#1c0d10" fill-opacity="0.86" stroke="#ff5a36" stroke-width="0.85">
+          <rect x="342.5" y="43.5" width="7.2" height="22.8" rx="0.8" />
+          <rect x="352.5" y="43.5" width="7.2" height="22.8" rx="0.8" />
+          <rect x="362.5" y="44.0" width="7.2" height="21.5" rx="0.8" />
+        </g>
+        <g stroke="#eab308" stroke-width="0.65" stroke-dasharray="2 1">
+          <line x1="346.1" y1="45.0" x2="346.1" y2="65.0" />
+          <line x1="356.1" y1="45.0" x2="356.1" y2="65.0" />
+          <line x1="366.1" y1="45.5" x2="366.1" y2="64.0" />
+        </g>
+        <line x1="342.5" y1="43.2" x2="339.5" y2="39.2" stroke="#38bdf8" stroke-width="1.0" />
+        <line x1="352.5" y1="43.2" x2="349.5" y2="39.2" stroke="#ff5a36" stroke-width="1.0" />
+
+        <rect x="348.0" y="47.5" width="17.5" height="3.1" rx="0.8" fill="#050d12" stroke="#38bdf8" stroke-width="1.0" />
+        <line x1="350.0" y1="49.0" x2="363.5" y2="49.0" stroke="#d4e3e6" stroke-width="0.7" />
+
+        <path d="M 375 43.4 C 371 50.5 371 61.5 375 68.6" fill="none" stroke="#38bdf8" stroke-width="1.05" />
+        <circle cx="391.5" cy="56.0" r="10.8" fill="#0b1f2c" fill-opacity="0.8" stroke="#38bdf8" stroke-width="1.05" />
+        <ellipse cx="391.5" cy="56.0" rx="10.8" ry="4.8" fill="none" stroke="#38bdf8" stroke-width="0.55" stroke-dasharray="2 1" />
+        <ellipse cx="391.5" cy="56.0" rx="4.8" ry="10.8" fill="none" stroke="#38bdf8" stroke-width="0.55" stroke-dasharray="2 1" />
+        <line x1="380.7" y1="56.0" x2="402.3" y2="56.0" stroke="#38bdf8" stroke-width="0.6" />
+        <line x1="391.5" y1="45.2" x2="391.5" y2="66.8" stroke="#38bdf8" stroke-width="0.6" />
+        <circle cx="391.5" cy="56.0" r="2.0" fill="#38bdf8" fill-opacity="0.55" />
+        <rect x="377.5" y="41.8" width="3.6" height="1.6" rx="0.5" fill="#132c3a" stroke="#eab308" stroke-width="0.7" />
+
+        </g>
+
+      </g>
+  </g>
+</g><g id="clean-top" fill="none" transform="translate(40.000000 275.754386) scale(1.179419136) translate(-72.180000 -115.270000)"><defs>
+    <style>
+#clean-top { fill: none; stroke-linecap: butt; }
+#clean-top .s-dim { stroke: #2c3b40; stroke-width: 1; }
+#clean-top .s-line { stroke: #5f7c84; stroke-width: 1; }
+#clean-top .s-hi { stroke: #d4e3e6; stroke-width: 1.2; }
+#clean-top .s-alert { stroke: #ff5a36; stroke-width: 1.4; }
+#clean-top .s-focus { stroke: #38bdf8; stroke-width: 1.4; }
+#clean-top .f-dim { fill: #2c3b40; stroke: none; }
+#clean-top .f-line { fill: #5f7c84; stroke: none; }
+#clean-top .f-hi { fill: #d4e3e6; stroke: none; }
+#clean-top .f-alert { fill: #ff5a36; stroke: none; }
+#clean-top .f-panel { fill: #0c1113; }
+#clean-top text { font-family: "Rajdhani", "Bahnschrift", "DIN Alternate", "Microsoft YaHei", sans-serif; letter-spacing: 0.12em; }
+#clean-top text:not([stroke]) { stroke: none; }
+#clean-top text:not([fill]) { fill: #cfdde0; }
+#clean-top text:not([font-size]):not(.cap):not(.big) { font-size: 10px; }
+#clean-top text.cap { letter-spacing: 0.2em; text-transform: uppercase; }
+#clean-top text.cap:not([fill]) { fill: #8aa1a7; }
+#clean-top text.cap:not([font-size]) { font-size: 8.5px; }
+#clean-top text.mono { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; letter-spacing: 0.06em; }
+#clean-top text.big { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; font-weight: 600; letter-spacing: 0.08em; }
+#clean-top text.big:not([font-size]) { font-size: 18px; }
+#clean-top text.big:not([fill]) { fill: #d4e3e6; }
+#clean-top text.alert { fill: #ff5a36; }
+</style>
+    <pattern id="clean-top-cad-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#10181c" stroke-width="1" />
+      <circle cx="20" cy="20" r="0.8" fill="#1b262b" />
+    </pattern>
+    <pattern id="clean-top-hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#ff5a36" stroke-width="1.2" stroke-opacity="0.35" />
+    </pattern>
+  </defs>
+
+  <g id="clean-top-layer-ship-cad">
+    <g transform="translate(46.0,76.0) scale(2.380,2.380)">
+
+      <g id="clean-top-ssn688i-stern-top">
+        <polygon points="21,23.5 32,23.5 47,36.5 47,51.5 32,64.5 21,64.5 24,53.0 24,35.0" fill="#071218" stroke="#d4e3e6" stroke-width="1.1" />
+        <rect x="19.0" y="22.4" width="11.5" height="2.0" rx="0.4" fill="#0d222e" stroke="#38bdf8" stroke-width="0.85" />
+        <rect x="19.0" y="63.6" width="11.5" height="2.0" rx="0.4" fill="#0d222e" stroke="#38bdf8" stroke-width="0.85" />
+        <circle cx="19.0" cy="64.6" r="0.85" fill="#ff5a36" />
+        <line x1="11.5" y1="64.6" x2="18.2" y2="64.6" stroke="#ff5a36" stroke-width="0.65" stroke-dasharray="1.5 1" />
+
+        <g stroke="#eab308" stroke-width="0.95" fill="#eab308" fill-opacity="0.34">
+          <polygon points="11.0,44.0 17.5,41.6 17.5,46.4" />
+          <path d="M 14.2 44.0 C 11.0 38.0 12.6 34.5 15.8 35.8 C 15.0 39.2 14.6 41.6 14.2 44.0 Z" />
+          <path d="M 14.2 44.0 C 11.0 50.0 12.6 53.5 15.8 52.2 C 15.0 48.8 14.6 46.4 14.2 44.0 Z" />
+          <line x1="11.5" y1="39.8" x2="16.2" y2="48.2" />
+          <line x1="11.5" y1="48.2" x2="16.2" y2="39.8" />
+          <circle cx="14.2" cy="44.0" r="1.25" fill="#eab308" stroke="#080a0b" stroke-width="0.4" />
+        </g>
+      </g>
+
+      <path d="M 17.5 41.6                C 36 37.0 64 29.0 92 26.5                L 364 26.15                C 392 26.15 410 33.2 410 44.0                C 410 54.8 392 61.85 364 61.85                L 92 61.5                C 64 59.0 36 51.0 17.5 46.4 Z" fill="#08141c" stroke="#d4e3e6" stroke-width="1.4" />
+
+      <rect x="68" y="30.5" width="270" height="27.0" rx="4.0" fill="none" stroke="#4a6368" stroke-width="0.7" stroke-dasharray="6 2" />
+      <ellipse cx="32" cy="44.0" rx="12.5" ry="1.3" fill="#0d222e" stroke="#d4e3e6" stroke-width="0.8" />
+
+      <g fill="#0d2432" stroke="#38bdf8" stroke-width="0.8">
+        <rect x="128" y="25.2" width="14" height="1.6" rx="0.4" /><rect x="128" y="61.2" width="14" height="1.6" rx="0.4" />
+        <rect x="208" y="25.2" width="14" height="1.6" rx="0.4" /><rect x="208" y="61.2" width="14" height="1.6" rx="0.4" />
+        <rect x="278" y="25.2" width="14" height="1.6" rx="0.4" /><rect x="278" y="61.2" width="14" height="1.6" rx="0.4" />
+      </g>
+      <line x1="20" y1="63.8" x2="256" y2="59.5" stroke="#38bdf8" stroke-width="0.65" stroke-dasharray="3 1.5" />
+
+      <g id="clean-top-hy80-single-hull-xray">
+        <path d="M 338 26.3 C 333 33.5 333 54.5 338 61.7" fill="none" stroke="#38bdf8" stroke-width="1.05" stroke-dasharray="3 1.5" />
+        <path d="M 78 27.8 C 82 34.5 82 53.5 78 60.2" fill="none" stroke="#38bdf8" stroke-width="0.95" stroke-dasharray="3 1.5" />
+        <g stroke="#38bdf8" stroke-width="0.6" stroke-dasharray="2 1.5" stroke-opacity="0.62">
+          <line x1="148" y1="26.5" x2="148" y2="61.5" />
+          <line x1="202" y1="26.5" x2="202" y2="61.5" />
+          <line x1="258" y1="26.5" x2="258" y2="61.5" />
+          <line x1="296" y1="26.5" x2="296" y2="61.5" />
+        </g>
+
+        <rect x="154.0" y="32.5" width="42.0" height="23.0" rx="2.2" fill="#1a0f10" fill-opacity="0.74" stroke="#ff5a36" stroke-width="0.9" />
+        <circle cx="175.0" cy="44.0" r="6.2" fill="#2a1214" stroke="#ff5a36" stroke-width="0.85" />
+        <circle cx="175.0" cy="44.0" r="2.5" fill="#ff5a36" fill-opacity="0.65" stroke="#eab308" stroke-width="0.7" />
+        <rect x="158.0" y="35.2" width="6.5" height="17.6" rx="1.2" fill="#261014" stroke="#eab308" stroke-width="0.65" />
+        <rect x="185.5" y="35.2" width="6.5" height="17.6" rx="1.2" fill="#261014" stroke="#eab308" stroke-width="0.65" />
+
+        <polygon points="82,35.5 144,32.8 144,55.2 82,52.5" fill="#091a24" fill-opacity="0.62" stroke="#38bdf8" stroke-width="0.8" stroke-dasharray="3 1.5" />
+        <rect x="106" y="35.2" width="32" height="6.8" rx="1.2" fill="#0d222e" stroke="#eab308" stroke-width="0.65" />
+        <rect x="106" y="46.0" width="32" height="6.8" rx="1.2" fill="#0d222e" stroke="#eab308" stroke-width="0.65" />
+        <line x1="17.5" y1="44.0" x2="106" y2="44.0" stroke="#eab308" stroke-width="0.9" stroke-dasharray="3.5 1.8" />
+        <circle cx="66" cy="44.0" r="3.0" fill="#0b1d28" stroke="#d4e3e6" stroke-width="0.85" />
+
+        </g>
+
+      <g id="clean-top-ssn688i-sail-top">
+        <path d="M 268 44.0 L 272 40.4 L 298 40.4 C 302 40.4 304 42.0 304 44.0 C 304 46.0 302 47.6 298 47.6 L 272 47.6 Z" fill="#0b1a24" stroke="#d4e3e6" stroke-width="1.25" />
+        <rect x="273" y="41.4" width="26" height="5.2" rx="1.2" fill="#132c3a" stroke="#38bdf8" stroke-width="0.85" />
+        <circle cx="295.0" cy="44.0" r="1.3" fill="#050d12" stroke="#d4e3e6" stroke-width="0.65" />
+        <circle cx="289.5" cy="44.0" r="1.3" fill="#050d12" stroke="#38bdf8" stroke-width="0.65" />
+        <circle cx="283.5" cy="44.0" r="1.4" fill="#180d10" stroke="#ff5a36" stroke-width="0.65" />
+        <rect x="275.5" y="42.6" width="4.5" height="2.8" rx="0.6" fill="#050d12" stroke="#eab308" stroke-width="0.65" />
+      </g>
+
+      <g id="clean-top-midship-mk67-torpedo-room-top">
+        <g fill="#121e28" stroke-width="0.65">
+          <rect x="264" y="30.0" width="28" height="2.2" rx="0.6" stroke="#eab308" />
+          <rect x="264" y="33.5" width="28" height="2.2" rx="0.6" stroke="#38bdf8" />
+          <rect x="264" y="52.3" width="28" height="2.2" rx="0.6" stroke="#38bdf8" />
+          <rect x="264" y="55.8" width="28" height="2.2" rx="0.6" stroke="#eab308" />
+        </g>
+
+        <g stroke="#eab308" stroke-width="0.9" stroke-dasharray="3 1.2">
+          <line x1="298" y1="35.5" x2="326" y2="26.3" />
+          <line x1="304" y1="36.5" x2="332" y2="26.4" />
+          <line x1="298" y1="52.5" x2="326" y2="61.7" />
+          <line x1="304" y1="51.5" x2="332" y2="61.6" />
+        </g>
+        <g fill="#ff5a36">
+          <circle cx="326" cy="26.3" r="0.95" /><circle cx="332" cy="26.4" r="0.95" />
+          <circle cx="326" cy="61.7" r="0.95" /><circle cx="332" cy="61.6" r="0.95" />
+        </g>
+
+        </g>
+
+      <g id="clean-top-bow-12-cell-mk45-vls-top">
+        <polygon points="349,26.2 364,26.2 366,16.5 353,16.5" fill="#0b1d28" stroke="#38bdf8" stroke-width="0.95" />
+        <polygon points="349,61.8 364,61.8 366,71.5 353,71.5" fill="#0b1d28" stroke="#38bdf8" stroke-width="0.95" />
+        <line x1="351" y1="27.2" x2="365" y2="27.2" stroke="#38bdf8" stroke-width="0.65" stroke-dasharray="1.8 1" />
+        <line x1="351" y1="60.8" x2="365" y2="60.8" stroke="#38bdf8" stroke-width="0.65" stroke-dasharray="1.8 1" />
+
+        <g fill="#0b1d28" stroke="#d4e3e6" stroke-width="0.8">
+          <circle cx="345.0" cy="31.0" r="2.1" />
+          <circle cx="345.0" cy="36.2" r="2.1" />
+          <circle cx="345.0" cy="41.4" r="2.1" />
+          <circle cx="345.0" cy="46.6" r="2.1" />
+          <circle cx="345.0" cy="57.0" r="2.1" />
+        </g>
+        <ellipse cx="341.2" cy="51.8" rx="1.1" ry="2.0" fill="#261014" stroke="#ff5a36" stroke-width="0.75" />
+        <circle cx="345.0" cy="51.8" r="2.2" fill="#18080a" stroke="#ff5a36" stroke-width="0.95" />
+        <circle cx="345.0" cy="51.8" r="0.95" fill="#eab308" />
+
+        <g fill="#0b1d28" stroke="#d4e3e6" stroke-width="0.8">
+          <circle cx="357.5" cy="40.8" r="2.1" />
+          <circle cx="357.5" cy="47.2" r="2.1" />
+          <circle cx="357.5" cy="53.5" r="2.1" />
+        </g>
+        <ellipse cx="353.7" cy="34.5" rx="1.1" ry="2.0" fill="#261014" stroke="#ff5a36" stroke-width="0.75" />
+        <circle cx="357.5" cy="34.5" r="2.2" fill="#18080a" stroke="#ff5a36" stroke-width="0.95" />
+        <circle cx="357.5" cy="34.5" r="0.95" fill="#eab308" />
+
+        <g fill="#0b1d28" stroke="#38bdf8" stroke-width="0.85">
+          <circle cx="369.0" cy="40.5" r="2.1" /><circle cx="369.0" cy="40.5" r="0.7" fill="#38bdf8" />
+          <circle cx="369.0" cy="47.5" r="2.1" /><circle cx="369.0" cy="47.5" r="0.7" fill="#38bdf8" />
+        </g>
+
+        <path d="M 375 28.2 C 371 35.5 371 52.5 375 59.8" fill="none" stroke="#38bdf8" stroke-width="1.05" stroke-dasharray="3 1.5" />
+        <circle cx="391.5" cy="44.0" r="10.8" fill="#0b1f2c" fill-opacity="0.78" stroke="#38bdf8" stroke-width="1.05" />
+        <ellipse cx="391.5" cy="44.0" rx="10.8" ry="4.8" fill="none" stroke="#38bdf8" stroke-width="0.55" stroke-dasharray="2 1" />
+        <ellipse cx="391.5" cy="44.0" rx="4.8" ry="10.8" fill="none" stroke="#38bdf8" stroke-width="0.55" stroke-dasharray="2 1" />
+        <line x1="380.7" y1="44.0" x2="402.3" y2="44.0" stroke="#38bdf8" stroke-width="0.6" />
+        <line x1="391.5" y1="33.2" x2="391.5" y2="54.8" stroke="#38bdf8" stroke-width="0.6" />
+        <circle cx="391.5" cy="44.0" r="2.0" fill="#38bdf8" fill-opacity="0.55" />
+
+        </g>
+
+      </g>
+  </g>
+</g></svg>

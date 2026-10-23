@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 360" width="1100" height="360" data-asset-id="naval.yuri.abyssalhive.top" style="background:#080a0b;">
+  <defs>
+    <style>
+      svg { fill: none; stroke-linecap: butt; }
+      .s-dim { stroke: #2c3b40; stroke-width: 1; }
+      .s-line { stroke: #5f7c84; stroke-width: 1; }
+      .s-hi { stroke: #d4e3e6; stroke-width: 1.2; }
+      .s-alert { stroke: #ff5a36; stroke-width: 1.4; }
+      .s-focus { stroke: #38bdf8; stroke-width: 1.4; }
+      .f-dim { fill: #2c3b40; stroke: none; }
+      .f-line { fill: #5f7c84; stroke: none; }
+      .f-hi { fill: #d4e3e6; stroke: none; }
+      .f-alert { fill: #ff5a36; stroke: none; }
+      .f-panel { fill: #0c1113; }
+      text { font-family: "Rajdhani", "Bahnschrift", "DIN Alternate", "Microsoft YaHei", sans-serif; letter-spacing: 0.12em; }
+      text:not([stroke]) { stroke: none; }
+      text:not([fill]) { fill: #cfdde0; }
+      text:not([font-size]):not(.cap):not(.big) { font-size: 10px; }
+      text.cap { letter-spacing: 0.2em; text-transform: uppercase; }
+      text.cap:not([fill]) { fill: #8aa1a7; }
+      text.cap:not([font-size]) { font-size: 8.5px; }
+      text.mono { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; letter-spacing: 0.06em; }
+      text.big { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; font-weight: 600; letter-spacing: 0.08em; }
+      text.big:not([font-size]) { font-size: 18px; }
+      text.big:not([fill]) { fill: #d4e3e6; }
+      text.alert { fill: #ff5a36; }
+    </style>
+    <pattern id="cad-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#10181c" stroke-width="1"/>
+      <circle cx="20" cy="20" r="0.8" fill="#1b262b"/>
+    </pattern>
+    <pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#ff5a36" stroke-width="1.2" stroke-opacity="0.35"/>
+    </pattern>
+  </defs>
+
+  <!-- 1. 工程蓝图暗色底板与坐标网格图层 -->
+  <g id="layer-backdrop">
+    <rect x="0" y="0" width="1100" height="360" fill="#080a0b"/>
+    <rect x="20" y="20" width="1060" height="320" fill="url(#cad-grid)" stroke="#2c3b40" stroke-width="1"/>
+    <path d="M 20 36 V 20 H 36 M 1064 20 H 1080 V 36 M 20 324 V 340 H 36 M 1064 340 H 1080 V 324" fill="none" stroke="#38bdf8" stroke-width="1.5"/>
+    <line x1="20" y1="54" x2="1080" y2="54" stroke="#2c3b40" stroke-width="1"/>
+    <line x1="20" y1="314" x2="1080" y2="314" stroke="#2c3b40" stroke-width="1"/>
+    <text x="34" y="42" class="p mono" fill="#38bdf8" font-size="9.5" font-weight="bold">YURI ABYSSAL HIVE SUBMERSIBLE CARRIER (AHV-01) · TOP VIEW &amp; HANGAR / WET DOCK X-RAY</text>
+    <text x="1066" y="42" text-anchor="end" class="p cap" fill="#d4e3e6" font-size="9.5">尤里「深渊母巢」双壳体潜水母舰 · 顶视水密机库与子母潜艇坞舱工程图</text>
+    <text x="34" y="331" class="p mono" fill="#8aa1a7" font-size="9.5">TWIN Ø11M PRESSURE HULLS (240M×36M) · 2×EM WETWARE CATAPULTS · 2×FLOATING DISC + 4×NIGHTJAR · BOOMER &amp; KRAKEN WET DOCK</text>
+    <text x="1066" y="331" text-anchor="end" class="p mono" fill="#5f7c84" font-size="9.5">POSEIDON NAVAL CAD ASSET · TRUE 1:1 ASPECT (6.67:1)</text>
+  </g>
+
+  <!-- 2. 舰艇核心 CAD 矢量图层 (1:1 真实长宽比等比锁定 scale(2.360,2.360) · 局部 X=20..410(390), Y=15.75..74.25(58.5)) -->
+  <g id="layer-ship-cad">
+    <g transform="translate(46.0,76.0) scale(2.360,2.360)">
+
+      <!-- 0. 顶视纵中剖面基准线与左舷工程标注 -->
+      <line x1="8" y1="45.0" x2="416" y2="45.0" stroke="#2c3b40" stroke-width="0.6" stroke-dasharray="6 3"/>
+      <text x="14" y="8.2" class="mono" font-size="2.4" fill="#38bdf8">CATAMARAN DOUBLE-HULL (240.0M×36.0M · 6.67:1) · SPLIT WATERTIGHT HANGAR DOORS OPEN</text>
+      <text x="412" y="8.2" text-anchor="end" class="mono" font-size="2.4" fill="#ff5a36">▼ BOW INFRASOUND DEEP-GROUND RESONATOR</text>
+
+      <!-- 1. 舰尾：左右双核/超导磁流体静音推进喷口 (2×Nuclear-MHD Thrusters) + 中央尾坞闸门 + 超长波水声-脑波相控拖曳线列阵 (Stern X=8..36) -->
+      <g id="abyssal-hive-stern-top">
+        <!-- 左舷(Y=27.5)与右舷(Y=62.5) 双超导磁流体推进涵道喷口 -->
+        <polygon points="18,22.5 28,21.0 28,34.0 18,32.5" fill="#0d222e" stroke="#38bdf8" stroke-width="1.05"/>
+        <rect x="21" y="23.2" width="3.5" height="8.6" rx="0.6" fill="#183a4e" stroke="#eab308" stroke-width="0.7"/>
+        <polygon points="11.5,24.5 18,23.5 18,31.5 11.5,30.5" fill="#38bdf8" fill-opacity="0.25" stroke="#38bdf8" stroke-width="0.6" stroke-dasharray="2 1"/>
+
+        <polygon points="18,57.5 28,56.0 28,69.0 18,67.5" fill="#0d222e" stroke="#38bdf8" stroke-width="1.05"/>
+        <rect x="21" y="58.2" width="3.5" height="8.6" rx="0.6" fill="#183a4e" stroke="#eab308" stroke-width="0.7"/>
+        <polygon points="11.5,59.5 18,58.5 18,66.5 11.5,65.5" fill="#38bdf8" fill-opacity="0.25" stroke="#38bdf8" stroke-width="0.6" stroke-dasharray="2 1"/>
+
+        <!-- 舰尾中央释放的「超长波水声-脑波相控线列阵 (Infrasound-Psychic Towed Array · Radius +40%)」 -->
+        <path d="M 8.5 45.0 Q 14.5 42.8 20.5 45.0 T 28.0 45.0" fill="none" stroke="#eab308" stroke-width="0.95"/>
+        <circle cx="9.5" cy="45.0" r="1.1" fill="#ff5a36"/>
+        <circle cx="15.5" cy="44.2" r="0.9" fill="#38bdf8"/>
+        <circle cx="21.5" cy="45.6" r="0.9" fill="#eab308"/>
+      </g>
+
+      <!-- 2. 主舰体：240.0m × 36.0m 扁平宽体双壳体巨型潜水母舰俯视外廓 (长宽比 strictly 6.67:1 · X=20..410, Y=15.75..74.25) -->
+      <path d="M 20 22.0
+               C 38 17.5 68 15.75 106 15.75
+               L 332 15.75
+               C 374 15.75 398 25.5 407 37.5
+               C 409.2 40.5 410 42.8 410 45.0
+               C 410 47.2 409.2 49.5 407 52.5
+               C 398 64.5 374 74.25 332 74.25
+               L 106 74.25
+               C 68 74.25 38 72.5 20 68.0
+               L 24 56.5 L 28 56.0 L 28 34.0 L 24 33.5 Z"
+            fill="#08141c" stroke="#d4e3e6" stroke-width="1.4"/>
+
+      <!-- 抗极压活性生化消声外皮装甲分格带 -->
+      <path d="M 34 20.2 C 58 17.8 88 17.5 120 17.5 L 330 17.5 C 368 17.5 392 26.5 402 45.0 C 392 63.5 368 72.5 330 72.5 L 120 72.5 C 88 72.5 58 72.2 34 69.8"
+            fill="none" stroke="#4a6368" stroke-width="0.75" stroke-dasharray="8 2.5"/>
+
+      <!-- 3. 并列双耐压壳体 X 光透视 (Twin Ø11.0m Parallel Pressure Hulls) + 双座核-磁流体混合反应堆 (X=28..356) -->
+      <g id="twin-pressure-hulls-xray">
+        <!-- 左舷 Ø11.0m 高强度耐压壳体 (Port Pressure Hull · X=28..354, Y=19.2..34.2) -->
+        <rect x="28.0" y="19.2" width="326.0" height="15.0" rx="7.5"
+              fill="#061016" fill-opacity="0.58" stroke="#38bdf8" stroke-width="0.9" stroke-dasharray="5 2.2"/>
+        <!-- 右舷 Ø11.0m 高强度耐压壳体 (Starboard Pressure Hull · X=28..354, Y=55.8..70.8) -->
+        <rect x="28.0" y="55.8" width="326.0" height="15.0" rx="7.5"
+              fill="#061016" fill-opacity="0.58" stroke="#38bdf8" stroke-width="0.9" stroke-dasharray="5 2.2"/>
+
+        <!-- 左舷与右舷双座核-磁流体混合反应堆 (2×Nuclear-MHD Hybrid Reactors · X=92..132) -->
+        <rect x="92.0" y="21.0" width="38.0" height="11.4" rx="2.0" fill="#1a0f10" fill-opacity="0.78" stroke="#ff5a36" stroke-width="0.85"/>
+        <circle cx="111.0" cy="26.7" r="4.0" fill="#2a1214" stroke="#ff5a36" stroke-width="0.8"/>
+        <circle cx="111.0" cy="26.7" r="1.6" fill="#eab308"/>
+        <line x1="28.0" y1="26.7" x2="92.0" y2="26.7" stroke="#eab308" stroke-width="0.85" stroke-dasharray="3 1.5"/>
+
+        <rect x="92.0" y="57.6" width="38.0" height="11.4" rx="2.0" fill="#1a0f10" fill-opacity="0.78" stroke="#ff5a36" stroke-width="0.85"/>
+        <circle cx="111.0" cy="63.3" r="4.0" fill="#2a1214" stroke="#ff5a36" stroke-width="0.8"/>
+        <circle cx="111.0" cy="63.3" r="1.6" fill="#eab308"/>
+        <line x1="28.0" y1="63.3" x2="92.0" y2="63.3" stroke="#eab308" stroke-width="0.85" stroke-dasharray="3 1.5"/>
+      </g>
+
+      <!-- 4. 核心地标二：后部中央「湿式泛水子母潜艇船坞舱 (Ventral/Aft Wet Sub-Dock Bay · X=28..132, Y=34.2..55.8)」 -->
+      <g id="aft-wet-sub-dock-top">
+        <!-- 湿式船坞泛水池内腔与尾闸门 -->
+        <rect x="28.0" y="34.2" width="104.0" height="21.6" rx="1.8" fill="#040a0f" fill-opacity="0.92" stroke="#eab308" stroke-width="1.0"/>
+        <!-- 两侧磁流体充电机母线与 4 具多关节维修补给机械臂 -->
+        <line x1="32" y1="36.0" x2="128" y2="36.0" stroke="#38bdf8" stroke-width="0.75" stroke-dasharray="3 1.5"/>
+        <line x1="32" y1="54.0" x2="128" y2="54.0" stroke="#38bdf8" stroke-width="0.75" stroke-dasharray="3 1.5"/>
+        <polyline points="54,36.0 58,39.5 62,41.2" fill="none" stroke="#eab308" stroke-width="0.85"/>
+        <polyline points="82,36.0 78,39.5 74,41.2" fill="none" stroke="#eab308" stroke-width="0.85"/>
+        <polyline points="54,54.0 58,50.5 62,48.8" fill="none" stroke="#eab308" stroke-width="0.85"/>
+        <polyline points="82,54.0 78,50.5 74,48.8" fill="none" stroke="#eab308" stroke-width="0.85"/>
+
+        <!-- 坞舱中央正停泊补给鱼雷与导弹的 1 艘「雷鸣攻城潜艇 (Boomer Attack Submarine)」俯视轮廓 (X=38..96, Y=41.2..48.8) -->
+        <g id="docked-boomer-sub-top">
+          <path d="M 38 44.0 L 46 41.2 L 88 41.2 C 93 41.2 96 42.8 96 45.0 C 96 47.2 93 48.8 88 48.8 L 46 48.8 L 38 46.0 Z"
+                fill="#142c3c" stroke="#d4e3e6" stroke-width="1.0"/>
+          <!-- 雷鸣潜艇双联潜射巡航/弹道导弹发射井盖与围壳 -->
+          <circle cx="62" cy="43.5" r="1.2" fill="#261014" stroke="#ff5a36" stroke-width="0.65"/>
+          <circle cx="62" cy="46.5" r="1.2" fill="#261014" stroke="#ff5a36" stroke-width="0.65"/>
+          <circle cx="66.5" cy="43.5" r="1.2" fill="#261014" stroke="#ff5a36" stroke-width="0.65"/>
+          <circle cx="66.5" cy="46.5" r="1.2" fill="#261014" stroke="#ff5a36" stroke-width="0.65"/>
+          <ellipse cx="76" cy="45.0" rx="5.0" ry="1.8" fill="#183a4e" stroke="#38bdf8" stroke-width="0.75"/>
+          <circle cx="37.2" cy="45.0" r="1.2" fill="#eab308"/>
+        </g>
+
+        <!-- 坞舱前段左右充能架上战地充能的 2 台「克拉肯多节机械触腕潜航器 (2×Kraken UUVs)」(X=102..128) -->
+        <g id="docked-kraken-uuvs-top">
+          <!-- 左架克拉肯 #1 (Y=39.2) -->
+          <polygon points="110,39.2 118,37.4 123,39.2 118,41.0" fill="#261014" stroke="#ff5a36" stroke-width="0.85"/>
+          <circle cx="119.5" cy="39.2" r="0.95" fill="#eab308"/>
+          <path d="M 110 38.4 Q 104 37.2 100 38.2 M 110 39.2 L 99.5 39.2 M 110 40.0 Q 104 41.2 100 40.2" fill="none" stroke="#38bdf8" stroke-width="0.7"/>
+          <!-- 右架克拉肯 #2 (Y=50.8) -->
+          <polygon points="110,50.8 118,49.0 123,50.8 118,52.6" fill="#261014" stroke="#ff5a36" stroke-width="0.85"/>
+          <circle cx="119.5" cy="50.8" r="0.95" fill="#eab308"/>
+          <path d="M 110 50.0 Q 104 48.8 100 49.8 M 110 50.8 L 99.5 50.8 M 110 51.6 Q 104 52.8 100 51.8" fill="none" stroke="#38bdf8" stroke-width="0.7"/>
+        </g>
+      </g>
+
+      <!-- 5. 核心地标一：中前部「对开式重型升降水密密封飞行甲板 + 双通式耐压机库 + 2条电磁湿件弹射器」(X=135..355, Y=21.5..68.5) -->
+      <g id="split-watertight-flight-deck-top">
+        <!-- 向左右两舷外翻开启的对开式重型水密装甲折翼舱门 (Clamshell Watertight Doors · Y=18.2..21.5 &amp; Y=68.5..71.8) -->
+        <rect x="135" y="18.2" width="218" height="3.2" rx="0.8" fill="#142c3c" stroke="#38bdf8" stroke-width="0.95"/>
+        <rect x="135" y="68.6" width="218" height="3.2" rx="0.8" fill="#142c3c" stroke="#38bdf8" stroke-width="0.95"/>
+        <!-- 舱门加强肋条 -->
+        <g stroke="#d4e3e6" stroke-width="0.6">
+          <line x1="165" y1="18.2" x2="165" y2="21.4"/><line x1="205" y1="18.2" x2="205" y2="21.4"/><line x1="245" y1="18.2" x2="245" y2="21.4"/><line x1="285" y1="18.2" x2="285" y2="21.4"/><line x1="325" y1="18.2" x2="325" y2="21.4"/>
+          <line x1="165" y1="68.6" x2="165" y2="71.8"/><line x1="205" y1="68.6" x2="205" y2="71.8"/><line x1="245" y1="68.6" x2="245" y2="71.8"/><line x1="285" y1="68.6" x2="285" y2="71.8"/><line x1="325" y1="68.6" x2="325" y2="71.8"/>
+        </g>
+
+        <!-- 中央升降水密飞行甲板与下层耐压机库主腔 (X=135..355, Y=21.8..68.2) -->
+        <rect x="135" y="21.8" width="220" height="46.4" rx="2.2" fill="#071118" stroke="#d4e3e6" stroke-width="1.15"/>
+
+        <!-- 2 条全自动电磁湿件快速弹射轨道 (2×EM Wetware Catapult Tracks · #1 左轨 Y=36.0, #2 右轨 Y=51.5, X=215..352) -->
+        <rect x="215" y="34.8" width="136" height="2.4" fill="#0c2230" stroke="#38bdf8" stroke-width="0.8"/>
+        <line x1="217" y1="36.0" x2="349" y2="36.0" stroke="#eab308" stroke-width="0.9" stroke-dasharray="3 1.5"/>
+        <rect x="215" y="50.3" width="136" height="2.4" fill="#0c2230" stroke="#38bdf8" stroke-width="0.8"/>
+        <line x1="217" y1="51.5" x2="349" y2="51.5" stroke="#eab308" stroke-width="0.9" stroke-dasharray="3 1.5"/>
+
+        <!-- 1号与2号大型圆盘重型飞机升降平台 (Elevators #1 &amp; #2) + 2 架圆盘形「镭射幽浮 (2×Floating Discs)」 -->
+        <!-- 后部1号升降台上的「镭射幽浮 #2」(X=162, Y=45.0, r=8.2) -->
+        <rect x="148" y="34.5" width="28" height="21.0" rx="1.5" fill="#0b1a24" stroke="#38bdf8" stroke-width="0.85" stroke-dasharray="3 1.5"/>
+        <g transform="translate(162.0, 45.0)">
+          <circle cx="0" cy="0" r="8.0" fill="#122836" stroke="#d4e3e6" stroke-width="1.05"/>
+          <circle cx="0" cy="0" r="5.8" fill="#1c0d10" stroke="#ff5a36" stroke-width="0.85" stroke-dasharray="2.2 1.1"/>
+          <circle cx="0" cy="0" r="3.0" fill="#183a4e" stroke="#38bdf8" stroke-width="0.85"/>
+          <circle cx="0" cy="0" r="1.2" fill="#eab308"/>
+          <circle cx="-6.8" cy="0" r="0.7" fill="#38bdf8"/><circle cx="6.8" cy="0" r="0.7" fill="#38bdf8"/>
+          <circle cx="0" cy="-6.8" r="0.7" fill="#eab308"/><circle cx="0" cy="6.8" r="0.7" fill="#eab308"/>
+        </g>
+
+        <!-- 前部2号弹射起飞位上的「镭射幽浮 #1」(X=334, Y=36.0, r=8.2) -->
+        <g transform="translate(334.0, 36.0)">
+          <circle cx="0" cy="0" r="8.0" fill="#122836" stroke="#d4e3e6" stroke-width="1.05"/>
+          <circle cx="0" cy="0" r="5.8" fill="#1c0d10" stroke="#ff5a36" stroke-width="0.85" stroke-dasharray="2.2 1.1"/>
+          <circle cx="0" cy="0" r="3.0" fill="#183a4e" stroke="#38bdf8" stroke-width="0.85"/>
+          <circle cx="0" cy="0" r="1.2" fill="#eab308"/>
+          <circle cx="-6.8" cy="0" r="0.7" fill="#38bdf8"/><circle cx="6.8" cy="0" r="0.7" fill="#38bdf8"/>
+          <circle cx="0" cy="-6.8" r="0.7" fill="#eab308"/><circle cx="0" cy="6.8" r="0.7" fill="#eab308"/>
+        </g>
+
+        <!-- 4 架「夜枭 (4×Nightjar)」前掠菱形翼双涵道隐身攻击机 (1架位于2号弹射轨 X=314, Y=51.5 + 3架停放左舷机库位 X=188, 206, 224, Y=27.5) -->
+        <!-- 弹射位夜枭 #1 (X=314, Y=51.5) -->
+        <g transform="translate(314.0, 51.5)">
+          <polygon points="7.5,0 2.0,-2.2 -3.5,-6.5 -6.0,-5.5 -4.0,-1.8 -6.5,0 -4.0,1.8 -6.0,5.5 -3.5,6.5 2.0,2.2"
+                   fill="#142c3c" stroke="#d4e3e6" stroke-width="0.85"/>
+          <circle cx="-1.0" cy="-2.2" r="1.2" fill="#050d12" stroke="#eab308" stroke-width="0.6"/>
+          <circle cx="-1.0" cy="2.2" r="1.2" fill="#050d12" stroke="#eab308" stroke-width="0.6"/>
+          <polygon points="1.5,-0.9 5.0,0 1.5,0.9" fill="#38bdf8"/>
+        </g>
+        <!-- 左舷停机区夜枭 #2, #3, #4 (X=188, 206, 224, Y=27.5) -->
+        <g transform="translate(188.0, 27.5)">
+          <polygon points="6.5,0 1.5,-1.8 -3.0,-5.2 -5.0,-4.5 -3.5,-1.5 -5.5,0 -3.5,1.5 -5.0,4.5 -3.0,5.2 1.5,1.8" fill="#142c3c" stroke="#d4e3e6" stroke-width="0.75"/>
+          <circle cx="-0.8" cy="-1.8" r="1.0" fill="#050d12" stroke="#38bdf8" stroke-width="0.55"/>
+          <circle cx="-0.8" cy="1.8" r="1.0" fill="#050d12" stroke="#38bdf8" stroke-width="0.55"/>
+        </g>
+        <g transform="translate(206.0, 27.5)">
+          <polygon points="6.5,0 1.5,-1.8 -3.0,-5.2 -5.0,-4.5 -3.5,-1.5 -5.5,0 -3.5,1.5 -5.0,4.5 -3.0,5.2 1.5,1.8" fill="#142c3c" stroke="#d4e3e6" stroke-width="0.75"/>
+          <circle cx="-0.8" cy="-1.8" r="1.0" fill="#050d12" stroke="#38bdf8" stroke-width="0.55"/>
+          <circle cx="-0.8" cy="1.8" r="1.0" fill="#050d12" stroke="#38bdf8" stroke-width="0.55"/>
+        </g>
+        <g transform="translate(224.0, 27.5)">
+          <polygon points="6.5,0 1.5,-1.8 -3.0,-5.2 -5.0,-4.5 -3.5,-1.5 -5.5,0 -3.5,1.5 -5.0,4.5 -3.0,5.2 1.5,1.8" fill="#142c3c" stroke="#d4e3e6" stroke-width="0.75"/>
+          <circle cx="-0.8" cy="-1.8" r="1.0" fill="#050d12" stroke="#38bdf8" stroke-width="0.55"/>
+          <circle cx="-0.8" cy="1.8" r="1.0" fill="#050d12" stroke="#38bdf8" stroke-width="0.55"/>
+        </g>
+
+        <!-- 2 架「窥视者 (2×Seeker UAVs)」无人侦察机 (停放于右舷前内侧 X=188, 206, Y=61.5) -->
+        <g transform="translate(188.0, 61.5)">
+          <polygon points="4.8,0 0.5,-1.2 -3.2,-3.8 -4.2,-3.0 -3.0,0 -4.2,3.0 -3.2,3.8 0.5,1.2" fill="#183a4e" stroke="#eab308" stroke-width="0.7"/>
+          <circle cx="1.2" cy="0" r="0.9" fill="#ff5a36"/>
+        </g>
+        <g transform="translate(206.0, 61.5)">
+          <polygon points="4.8,0 0.5,-1.2 -3.2,-3.8 -4.2,-3.0 -3.0,0 -4.2,3.0 -3.2,3.8 0.5,1.2" fill="#183a4e" stroke="#eab308" stroke-width="0.7"/>
+          <circle cx="1.2" cy="0" r="0.9" fill="#ff5a36"/>
+        </g>
+      </g>
+
+      <!-- 6. 核心地标三：中央「溟海主脑湿件中枢 (Abyssal Wetware Master Brain · X=256..296, Y=38.5..49.5)」+ 偏右舷流线型装甲指挥舰岛围壳 (X=245..305, Y=57.0..68.2) -->
+      <g id="wetware-brain-and-island-top">
+        <!-- 中央耐压营养液球舱内的巨型「溟海主脑湿件中枢」俯视 X 光透视 -->
+        <ellipse cx="276.0" cy="43.8" rx="16.0" ry="5.5" fill="#1c0812" fill-opacity="0.9" stroke="#ff5a36" stroke-width="1.05"/>
+        <ellipse cx="276.0" cy="43.8" rx="10.5" ry="3.6" fill="#2d0c18" stroke="#eab308" stroke-width="0.8" stroke-dasharray="2 1"/>
+        <circle cx="276.0" cy="43.8" r="2.2" fill="#ff5a36" stroke="#eab308" stroke-width="0.7"/>
+        <!-- 放射状神经突触光缆连接至双弹射器与右舷指挥舰岛 -->
+        <line x1="276.0" y1="49.3" x2="276.0" y2="57.5" stroke="#ff5a36" stroke-width="1.0" stroke-dasharray="1.8 1"/>
+        <line x1="264.0" y1="43.8" x2="245.0" y2="36.0" stroke="#eab308" stroke-width="0.7" stroke-dasharray="1.8 1"/>
+        <line x1="288.0" y1="43.8" x2="310.0" y2="51.5" stroke="#eab308" stroke-width="0.7" stroke-dasharray="1.8 1"/>
+
+        <!-- 偏右舷流线型装甲双层指挥舰岛围壳 (Starboard-Offset Armored Island Sail · X=245..305, Y=57.2..68.2) -->
+        <path d="M 244 62.8 C 250 58.2 260 57.2 292 57.2 C 301 57.2 306 59.8 306 62.8 C 306 65.8 301 68.2 292 68.2 C 260 68.2 250 67.2 244 62.8 Z"
+              fill="#0c1c28" stroke="#d4e3e6" stroke-width="1.25"/>
+        <path d="M 252 62.8 C 257 59.5 265 58.8 291 58.8 C 298 58.8 302 60.5 302 62.8 C 302 65.1 298 66.8 291 66.8 C 265 66.8 257 66.1 252 62.8 Z"
+              fill="#142c3c" stroke="#38bdf8" stroke-width="0.95"/>
+        <!-- 舰岛顶部蜂巢心灵信标环与升降桅杆井 + 编号 AHV-01 -->
+        <circle cx="280.0" cy="62.8" r="3.2" fill="#261014" stroke="#ff5a36" stroke-width="0.9"/>
+        <circle cx="280.0" cy="62.8" r="1.2" fill="#eab308"/>
+        <circle cx="294.0" cy="62.8" r="1.6" fill="#050d12" stroke="#38bdf8" stroke-width="0.75"/>
+        <text x="264.0" y="63.8" text-anchor="middle" class="mono" font-size="2.6" fill="#d4e3e6" font-weight="bold">AHV-01</text>
+      </g>
+
+      <!-- 7. 核心地标四：舰首「次声波深地谐振发生器 (Infrasound Deep-Ground Resonator · X=360..408)」+ 可展开首水平舵 -->
+      <g id="bow-infrasound-resonator-top">
+        <!-- 舰首左右展开态可收放首水平舵 (X=352..368, Y=8.5..16.2 / 73.8..81.5) -->
+        <polygon points="350,16.2 365,16.8 368,8.8 355,8.8" fill="#0b1d28" stroke="#38bdf8" stroke-width="0.95"/>
+        <polygon points="350,73.8 365,73.2 368,81.2 355,81.2" fill="#0b1d28" stroke="#38bdf8" stroke-width="0.95"/>
+
+        <!-- 舰首透声谐振罩分界弧线 -->
+        <path d="M 362 19.5 C 357 32.0 357 58.0 362 70.5" fill="none" stroke="#38bdf8" stroke-width="1.1" stroke-dasharray="3 1.5"/>
+
+        <!-- 舰首中央巨型多环同心「次声波深地谐振发生器 (Infrasound Deep-Ground Resonator)」(cx=385, cy=45.0, r=14.5) -->
+        <circle cx="385.0" cy="45.0" r="14.5" fill="#140910" fill-opacity="0.85" stroke="#ff5a36" stroke-width="1.15"/>
+        <circle cx="385.0" cy="45.0" r="10.2" fill="#0b1f2c" fill-opacity="0.75" stroke="#38bdf8" stroke-width="0.95" stroke-dasharray="2.5 1.2"/>
+        <circle cx="385.0" cy="45.0" r="5.6" fill="#261014" stroke="#eab308" stroke-width="0.9"/>
+        <circle cx="385.0" cy="45.0" r="2.2" fill="#ff5a36"/>
+        <line x1="370.5" y1="45.0" x2="408.0" y2="45.0" stroke="#eab308" stroke-width="0.85"/>
+        <line x1="385.0" y1="30.5" x2="385.0" y2="59.5" stroke="#38bdf8" stroke-width="0.7"/>
+        <!-- 向前发散的次声波深地谐振波束弧 -->
+        <path d="M 402 35.5 C 407 40.0 407 50.0 402 54.5" fill="none" stroke="#ff5a36" stroke-width="0.9" stroke-dasharray="2 1"/>
+      </g>
+
+      <!-- 8. 底部主尺度与核心特征标注 (严格保持水平间距零碰撞) -->
+      <text x="14" y="83.5" class="mono" font-size="2.4" fill="#eab308">AFT WET DOCK: 1×BOOMER SUB + 2×KRAKEN UUV CHARGING CRADLES</text>
+      <text x="412" y="83.5" text-anchor="end" class="mono" font-size="2.4" fill="#ff5a36">▲ ISLAND AHV-01 &amp; ABYSSAL WETWARE MASTER BRAIN</text>
+
+    </g>
+  </g>
+</svg>

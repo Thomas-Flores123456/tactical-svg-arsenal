@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 360" width="1100" height="360" data-asset-id="naval.borei955a.top" style="background:#080a0b;">
+  <defs>
+    <style>
+      svg { fill: none; stroke-linecap: butt; }
+      .s-dim { stroke: #2c3b40; stroke-width: 1; }
+      .s-line { stroke: #5f7c84; stroke-width: 1; }
+      .s-hi { stroke: #d4e3e6; stroke-width: 1.2; }
+      .s-alert { stroke: #ff5a36; stroke-width: 1.4; }
+      .s-focus { stroke: #38bdf8; stroke-width: 1.4; }
+      .f-dim { fill: #2c3b40; stroke: none; }
+      .f-line { fill: #5f7c84; stroke: none; }
+      .f-hi { fill: #d4e3e6; stroke: none; }
+      .f-alert { fill: #ff5a36; stroke: none; }
+      .f-panel { fill: #0c1113; }
+      text { font-family: "Rajdhani", "Bahnschrift", "DIN Alternate", "Microsoft YaHei", sans-serif; letter-spacing: 0.12em; }
+      text:not([stroke]) { stroke: none; }
+      text:not([fill]) { fill: #cfdde0; }
+      text:not([font-size]):not(.cap):not(.big) { font-size: 10px; }
+      text.cap { letter-spacing: 0.2em; text-transform: uppercase; }
+      text.cap:not([fill]) { fill: #8aa1a7; }
+      text.cap:not([font-size]) { font-size: 8.5px; }
+      text.mono { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; letter-spacing: 0.06em; }
+      text.big { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; font-weight: 600; letter-spacing: 0.08em; }
+      text.big:not([font-size]) { font-size: 18px; }
+      text.big:not([fill]) { fill: #d4e3e6; }
+      text.alert { fill: #ff5a36; }
+    </style>
+    <pattern id="cad-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#10181c" stroke-width="1"/>
+      <circle cx="20" cy="20" r="0.8" fill="#1b262b"/>
+    </pattern>
+    <pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#ff5a36" stroke-width="1.2" stroke-opacity="0.35"/>
+    </pattern>
+  </defs>
+
+  <!-- 1. 工程蓝图暗色底板与坐标网格图层 -->
+  <g id="layer-backdrop">
+    <rect x="0" y="0" width="1100" height="360" fill="#080a0b"/>
+    <rect x="20" y="20" width="1060" height="320" fill="url(#cad-grid)" stroke="#2c3b40" stroke-width="1"/>
+    <path d="M 20 36 V 20 H 36 M 1064 20 H 1080 V 36 M 20 324 V 340 H 36 M 1064 340 H 1080 V 324" fill="none" stroke="#38bdf8" stroke-width="1.5"/>
+    <line x1="20" y1="54" x2="1080" y2="54" stroke="#2c3b40" stroke-width="1"/>
+    <line x1="20" y1="314" x2="1080" y2="314" stroke="#2c3b40" stroke-width="1"/>
+    <text x="34" y="42" class="p mono" fill="#38bdf8" font-size="11" font-weight="bold">PROJECT 955A BOREI-A SSBN (K-549 KNYAZ VLADIMIR) · ORTHOGRAPHIC TOP PLAN &amp; 2×8 BULAVA SILOS</text>
+    <text x="1066" y="42" text-anchor="end" class="p cap" fill="#d4e3e6" font-size="10.5">955A型「北风之神-A」级战略导弹核潜艇 · 顶视双排16联布拉瓦发射井与耐压壳X光总图</text>
+    <text x="34" y="331" class="p mono" fill="#8aa1a7" font-size="9.5">LOA: 170.0M · BEAM: 13.5M (12.59:1) · 2×8 R-30 BULAVA SLBM SILOS · FILLETED SAIL · ENDPLATE STERN PLANES · PUMP-JET</text>
+    <text x="1066" y="331" text-anchor="end" class="p mono" fill="#5f7c84" font-size="9.5">POSEIDON NAVAL CAD ASSET · TRUE 1:1 ASPECT (12.59:1)</text>
+  </g>
+
+  <!-- 2. 舰艇核心 CAD 矢量图层 (1:1 真实长宽比 12.59:1 严格锁定：艇长 404u=170.0m，艇宽 32.1u=13.5m，Y=27.95..60.05) -->
+  <g id="layer-ship-cad">
+    <g transform="translate(52.0,96.0) scale(2.360,2.360)">
+
+      <!-- 0. 顶视纵中剖面基准线与上/下舷武器阵列标注 (置于艇体外侧安全净空区) -->
+      <line x1="8" y1="44.0" x2="424" y2="44.0" stroke="#2c3b40" stroke-width="0.6" stroke-dasharray="6 3"/>
+      <text x="16" y="13.5" class="mono" font-size="2.7" fill="#38bdf8">PORT BATTERY: 8×R-30 BULAVA (3M30) VERTICAL SILOS · FLUSH STREAMLINED CASING (NO TURTLEBACK)</text>
+      <text x="295" y="19.5" text-anchor="middle" class="mono" font-size="2.6" fill="#ff5a36">▼ SILOS 01/02 HATCHES OPEN (MIRV BUS EXPOSED)</text>
+
+      <!-- 1. 艇尾：带端板的改进型水平尾翼 (Stern Planes with Endplates) + 环形导管泵喷推进器 (X=12..60) -->
+      <g id="stern-top-pumpjet">
+        <!-- 955A 标志性带端板水平尾翼 (Y=23.2..64.8) -->
+        <polygon points="27,23.8 40,23.8 56,34.5 56,53.5 40,64.2 27,64.2 30,54.0 30,34.0"
+                 fill="#071218" stroke="#d4e3e6" stroke-width="1.1"/>
+        <!-- 左/右翼尖流体力学涡流控制垂直端板 (Hydrodynamic Wingtip Endplates) -->
+        <rect x="24.5" y="22.6" width="16.5" height="1.8" rx="0.5" fill="#0d222e" stroke="#38bdf8" stroke-width="0.85"/>
+        <rect x="24.5" y="63.6" width="16.5" height="1.8" rx="0.5" fill="#0d222e" stroke="#38bdf8" stroke-width="0.85"/>
+
+        <!-- 环形导管泵喷推进器俯视剖面 (Annular Shrouded Pump-Jet Propulsor · X=12.5..29, Y=37.4..50.6) -->
+        <polygon points="21,38.8 29,37.2 29,50.8 21,49.2" fill="#0b1d28" stroke="#d4e3e6" stroke-width="0.95"/>
+        <polygon points="15.0,38.2 23.5,37.0 23.5,51.0 15.0,49.8" fill="#0e2432" stroke="#38bdf8" stroke-width="1.15"/>
+        <!-- 泵喷导管内前级定子与后级多叶转子透视 -->
+        <line x1="21.2" y1="37.6" x2="21.2" y2="50.4" stroke="#eab308" stroke-width="1.05" stroke-dasharray="1.4 0.9"/>
+        <line x1="18.2" y1="38.0" x2="18.2" y2="50.0" stroke="#eab308" stroke-width="1.3" stroke-dasharray="1.5 0.8"/>
+        <!-- 中心消涡尾锥 -->
+        <polygon points="12.5,44.0 15.5,42.0 15.5,46.0" fill="#eab308" stroke="#d4e3e6" stroke-width="0.6"/>
+      </g>
+
+      <!-- 2. 955A型修长圆柱-水滴艇体俯视主外廓 (LOA 170.0m=404u × Beam 13.5m=32.1u · 严格落在 Y=27.95..60.05) -->
+      <path d="M 26 39.2
+               C 52 34.5 92 29.2 136 27.95
+               L 348 27.95
+               C 386 27.95 412 34.2 422 44.0
+               C 412 53.8 386 60.05 348 60.05
+               L 136 60.05
+               C 92 58.8 52 53.5 26 48.8 Z"
+            fill="#08141c" stroke="#d4e3e6" stroke-width="1.4"/>
+
+      <!-- 平滑无龟背上层甲板整流边线 (Flush Streamlined Deck Casing) -->
+      <path d="M 48 39.8 C 88 34.8 130 30.8 168 30.5 L 352 30.5 C 382 31.2 404 36.5 415 44.0 C 404 51.5 382 56.8 352 57.5 L 168 57.5 C 130 57.2 88 53.2 48 48.2"
+            fill="none" stroke="#4a6368" stroke-width="0.75"/>
+
+      <!-- 艇尾垂直方向舵脊线与内置拖曳线列声呐导出管 (无955早期型大圆桶荚舱) -->
+      <ellipse cx="42" cy="44.0" rx="15.5" ry="1.4" fill="#0d222e" stroke="#38bdf8" stroke-width="0.9"/>
+      <line x1="26" y1="44.0" x2="8.5" y2="44.0" stroke="#38bdf8" stroke-width="0.65" stroke-dasharray="1.8 1.2"/>
+
+      <!-- 3. 内部总师 X-Ray 透视：高强度钢耐压壳体 + 水密隔舱 + 1×OK-650V 压水堆与减震浮筏汽轮机舱 (X=76..368) -->
+      <g id="pressure-hull-xray">
+        <rect x="78.0" y="31.8" width="288.0" height="24.4" rx="10.0"
+              fill="#061016" fill-opacity="0.58" stroke="#38bdf8" stroke-width="0.9" stroke-dasharray="5 2.5"/>
+        <!-- 水密隔舱横舱壁虚线 -->
+        <g stroke="#38bdf8" stroke-width="0.6" stroke-dasharray="2 1.5" stroke-opacity="0.65">
+          <line x1="108" y1="31.8" x2="108" y2="56.2"/>
+          <line x1="142" y1="31.8" x2="142" y2="56.2"/>
+          <line x1="184" y1="31.8" x2="184" y2="56.2"/>
+          <line x1="302" y1="31.8" x2="302" y2="56.2"/>
+          <line x1="342" y1="31.8" x2="342" y2="56.2"/>
+        </g>
+
+        <!-- 1×OK-650V (190MWt) 压水核反应堆屏蔽舱俯视透视 (X=146..177) -->
+        <rect x="146.0" y="35.2" width="31.0" height="17.6" rx="2.2" fill="#1f0d10" fill-opacity="0.72" stroke="#ff5a36" stroke-width="0.85"/>
+        <circle cx="161.5" cy="44.0" r="5.2" fill="#2c1014" stroke="#ff5a36" stroke-width="0.8"/>
+        <circle cx="161.5" cy="44.0" r="2.2" fill="#ff5a36" fill-opacity="0.7"/>
+        <circle cx="161.5" cy="44.0" r="0.9" fill="#eab308"/>
+
+        <!-- 后部主蒸汽轮机齿轮箱与双层减震浮筏基座 (X=86..138) -->
+        <polygon points="86,36.8 138,35.2 138,52.8 86,51.2" fill="#091a24" fill-opacity="0.68" stroke="#38bdf8" stroke-width="0.8"/>
+        <rect x="92" y="38.2" width="40" height="11.6" fill="none" stroke="#eab308" stroke-width="0.65" stroke-dasharray="2.5 1.2"/>
+        <!-- 中轴单轴泵喷推进大轴 -->
+        <line x1="23.5" y1="44.0" x2="86.0" y2="44.0" stroke="#eab308" stroke-width="1.1" stroke-dasharray="3.5 1.5"/>
+      </g>
+
+      <!-- 4. 核心灵魂：舯部双排 2×8 = 16单元 R-30「布拉瓦」(SS-N-32 Bulava / 3M30) 洲际导弹垂直发射井阵列 (X=188..295) -->
+      <g id="bulava-16-silos-top">
+        <!-- 导弹甲板平整装甲矩形区 -->
+        <rect x="187.5" y="32.2" width="108.0" height="23.6" rx="1.8" fill="#0a1924" stroke="#38bdf8" stroke-width="0.95"/>
+        <line x1="187.5" y1="44.0" x2="295.5" y2="44.0" stroke="#2c3b40" stroke-width="0.7" stroke-dasharray="3 1.5"/>
+
+        <!-- 第 08 对发射井 (X=193.8 · 闭合态) -->
+        <rect x="189.4" y="33.8" width="8.8" height="8.8" rx="1.4" fill="#0d222e" stroke="#d4e3e6" stroke-width="0.8"/>
+        <circle cx="193.8" cy="38.2" r="3.3" fill="#08141c" stroke="#38bdf8" stroke-width="0.7"/>
+        <text x="193.8" y="39.1" text-anchor="middle" class="mono" font-size="2.4" fill="#8aa1a7">08</text>
+        <rect x="189.4" y="45.4" width="8.8" height="8.8" rx="1.4" fill="#0d222e" stroke="#d4e3e6" stroke-width="0.8"/>
+        <circle cx="193.8" cy="49.8" r="3.3" fill="#08141c" stroke="#38bdf8" stroke-width="0.7"/>
+        <text x="193.8" y="50.7" text-anchor="middle" class="mono" font-size="2.4" fill="#8aa1a7">16</text>
+
+        <!-- 第 07 对发射井 (X=207.3 · 闭合态) -->
+        <rect x="202.9" y="33.8" width="8.8" height="8.8" rx="1.4" fill="#0d222e" stroke="#d4e3e6" stroke-width="0.8"/>
+        <circle cx="207.3" cy="38.2" r="3.3" fill="#08141c" stroke="#38bdf8" stroke-width="0.7"/>
+        <text x="207.3" y="39.1" text-anchor="middle" class="mono" font-size="2.4" fill="#8aa1a7">07</text>
+        <rect x="202.9" y="45.4" width="8.8" height="8.8" rx="1.4" fill="#0d222e" stroke="#d4e3e6" stroke-width="0.8"/>
+        <circle cx="207.3" cy="49.8" r="3.3" fill="#08141c" stroke="#38bdf8" stroke-width="0.7"/>
+        <text x="207.3" y="50.7" text-anchor="middle" class="mono" font-size="2.4" fill="#8aa1a7">15</text>
+
+        <!-- 第 06 对发射井 (X=220.8 · 闭合态) -->
+        <rect x="216.4" y="33.8" width="8.8" height="8.8" rx="1.4" fill="#0d222e" stroke="#d4e3e6" stroke-width="0.8"/>
+        <circle cx="220.8" cy="38.2" r="3.3" fill="#08141c" stroke="#38bdf8" stroke-width="0.7"/>
+        <text x="220.8" y="39.1" text-anchor="middle" class="mono" font-size="2.4" fill="#8aa1a7">06</text>
+        <rect x="216.4" y="45.4" width="8.8" height="8.8" rx="1.4" fill="#0d222e" stroke="#d4e3e6" stroke-width="0.8"/>
+        <circle cx="220.8" cy="49.8" r="3.3" fill="#08141c" stroke="#38bdf8" stroke-width="0.7"/>
+        <text x="220.8" y="50.7" text-anchor="middle" class="mono" font-size="2.4" fill="#8aa1a7">14</text>
+
+        <!-- 第 05 对发射井 (X=234.3 · 闭合态) -->
+        <rect x="229.9" y="33.8" width="8.8" height="8.8" rx="1.4" fill="#0d222e" stroke="#d4e3e6" stroke-width="0.8"/>
+        <circle cx="234.3" cy="38.2" r="3.3" fill="#08141c" stroke="#38bdf8" stroke-width="0.7"/>
+        <text x="234.3" y="39.1" text-anchor="middle" class="mono" font-size="2.4" fill="#8aa1a7">05</text>
+        <rect x="229.9" y="45.4" width="8.8" height="8.8" rx="1.4" fill="#0d222e" stroke="#d4e3e6" stroke-width="0.8"/>
+        <circle cx="234.3" cy="49.8" r="3.3" fill="#08141c" stroke="#38bdf8" stroke-width="0.7"/>
+        <text x="234.3" y="50.7" text-anchor="middle" class="mono" font-size="2.4" fill="#8aa1a7">13</text>
+
+        <!-- 第 04 对发射井 (X=247.8 · 闭合态) -->
+        <rect x="243.4" y="33.8" width="8.8" height="8.8" rx="1.4" fill="#0d222e" stroke="#d4e3e6" stroke-width="0.8"/>
+        <circle cx="247.8" cy="38.2" r="3.3" fill="#08141c" stroke="#38bdf8" stroke-width="0.7"/>
+        <text x="247.8" y="39.1" text-anchor="middle" class="mono" font-size="2.4" fill="#8aa1a7">04</text>
+        <rect x="243.4" y="45.4" width="8.8" height="8.8" rx="1.4" fill="#0d222e" stroke="#d4e3e6" stroke-width="0.8"/>
+        <circle cx="247.8" cy="49.8" r="3.3" fill="#08141c" stroke="#38bdf8" stroke-width="0.7"/>
+        <text x="247.8" y="50.7" text-anchor="middle" class="mono" font-size="2.4" fill="#8aa1a7">12</text>
+
+        <!-- 第 03 对发射井 (X=261.3 · 闭合态) -->
+        <rect x="256.9" y="33.8" width="8.8" height="8.8" rx="1.4" fill="#0d222e" stroke="#d4e3e6" stroke-width="0.8"/>
+        <circle cx="261.3" cy="38.2" r="3.3" fill="#08141c" stroke="#38bdf8" stroke-width="0.7"/>
+        <text x="261.3" y="39.1" text-anchor="middle" class="mono" font-size="2.4" fill="#8aa1a7">03</text>
+        <rect x="256.9" y="45.4" width="8.8" height="8.8" rx="1.4" fill="#0d222e" stroke="#d4e3e6" stroke-width="0.8"/>
+        <circle cx="261.3" cy="49.8" r="3.3" fill="#08141c" stroke="#38bdf8" stroke-width="0.7"/>
+        <text x="261.3" y="50.7" text-anchor="middle" class="mono" font-size="2.4" fill="#8aa1a7">11</text>
+
+        <!-- 第 02 对发射井 (X=274.8 · 战斗开启态：外翻装甲井盖 + 内部红色 R-30 布拉瓦洲际导弹头锥露出！) -->
+        <rect x="270.4" y="33.8" width="8.8" height="8.8" rx="1.4" fill="#1c0b0e" stroke="#ff5a36" stroke-width="0.95"/>
+        <ellipse cx="274.8" cy="29.5" rx="3.4" ry="1.8" fill="#132c3a" stroke="#d4e3e6" stroke-width="0.75"/>
+        <circle cx="274.8" cy="38.2" r="3.3" fill="#2b0c0e" stroke="#ff5a36" stroke-width="0.85"/>
+        <circle cx="274.8" cy="38.2" r="1.4" fill="#ff5a36"/>
+        <circle cx="274.8" cy="38.2" r="0.55" fill="#eab308"/>
+
+        <rect x="270.4" y="45.4" width="8.8" height="8.8" rx="1.4" fill="#1c0b0e" stroke="#ff5a36" stroke-width="0.95"/>
+        <ellipse cx="274.8" cy="58.5" rx="3.4" ry="1.8" fill="#132c3a" stroke="#d4e3e6" stroke-width="0.75"/>
+        <circle cx="274.8" cy="49.8" r="3.3" fill="#2b0c0e" stroke="#ff5a36" stroke-width="0.85"/>
+        <circle cx="274.8" cy="49.8" r="1.4" fill="#ff5a36"/>
+        <circle cx="274.8" cy="49.8" r="0.55" fill="#eab308"/>
+
+        <!-- 第 01 对发射井 (X=288.3 · 战斗开启态：外翻装甲井盖 + 内部红色 R-30 布拉瓦洲际导弹 MIRV 母舱露出！) -->
+        <rect x="283.9" y="33.8" width="8.8" height="8.8" rx="1.4" fill="#1c0b0e" stroke="#ff5a36" stroke-width="0.95"/>
+        <ellipse cx="288.3" cy="29.5" rx="3.4" ry="1.8" fill="#132c3a" stroke="#d4e3e6" stroke-width="0.75"/>
+        <circle cx="288.3" cy="38.2" r="3.3" fill="#2b0c0e" stroke="#ff5a36" stroke-width="0.85"/>
+        <circle cx="288.3" cy="38.2" r="1.5" fill="#ff5a36"/>
+        <circle cx="288.3" cy="38.2" r="0.6" fill="#eab308"/>
+
+        <rect x="283.9" y="45.4" width="8.8" height="8.8" rx="1.4" fill="#1c0b0e" stroke="#ff5a36" stroke-width="0.95"/>
+        <ellipse cx="288.3" cy="58.5" rx="3.4" ry="1.8" fill="#132c3a" stroke="#d4e3e6" stroke-width="0.75"/>
+        <circle cx="288.3" cy="49.8" r="3.3" fill="#2b0c0e" stroke="#ff5a36" stroke-width="0.85"/>
+        <circle cx="288.3" cy="49.8" r="1.5" fill="#ff5a36"/>
+        <circle cx="288.3" cy="49.8" r="0.6" fill="#eab308"/>
+      </g>
+
+      <!-- 5. 955A型改进型流线指挥围壳俯视图：根部流体力学宽边条 (Fillet) + BVK 上浮救生舱 (X=298..354, Y=35.8..52.2) -->
+      <g id="sail-top-view">
+        <!-- 围壳根部流体力学圆角整流边条裙边 (Hydrodynamic Root Fillet) -->
+        <path d="M 298.0 44.0 C 304.0 36.2 314.0 35.8 342.0 35.8 C 349.5 35.8 354.5 39.5 354.5 44.0 C 354.5 48.5 349.5 52.2 342.0 52.2 C 314.0 52.2 304.0 51.8 298.0 44.0 Z"
+              fill="#0a1922" stroke="#38bdf8" stroke-width="0.95"/>
+        <!-- 围壳主壳体顶面轮廓 -->
+        <path d="M 303.5 44.0 C 308.5 38.5 316.0 38.0 340.5 38.0 C 344.2 38.0 345.8 40.5 345.8 44.0 C 345.8 47.5 344.2 50.0 340.5 50.0 C 316.0 50.0 308.5 49.5 303.5 44.0 Z"
+              fill="#0e2432" stroke="#d4e3e6" stroke-width="1.15"/>
+        <!-- 围壳前端弧形防冰观察窗与驾驶桥楼顶舱口 -->
+        <path d="M 339.5 39.5 C 343.2 40.5 344.5 42.2 344.5 44.0 C 344.5 45.8 343.2 47.5 339.5 48.5" fill="none" stroke="#38bdf8" stroke-width="1.0"/>
+        <rect x="334.0" y="41.4" width="5.2" height="5.2" rx="0.9" fill="#050d12" stroke="#38bdf8" stroke-width="0.7"/>
+        <!-- 潜望镜、雷达与电子战升降桅杆井 -->
+        <circle cx="330.5" cy="42.2" r="1.2" fill="#061016" stroke="#d4e3e6" stroke-width="0.65"/>
+        <circle cx="330.5" cy="45.8" r="1.2" fill="#061016" stroke="#38bdf8" stroke-width="0.65"/>
+        <circle cx="312.5" cy="44.0" r="1.6" fill="#061016" stroke="#38bdf8" stroke-width="0.7"/>
+        <!-- 围壳中部 BVK 集体上浮救生舱顶盖 (Escape Pod Hatch · cx=321.2, cy=44.0) -->
+        <ellipse cx="321.2" cy="44.0" rx="5.8" ry="3.8" fill="#1a0d10" stroke="#ff5a36" stroke-width="0.95"/>
+        <circle cx="321.2" cy="44.0" r="1.9" fill="#0b1d28" stroke="#eab308" stroke-width="0.7"/>
+        <circle cx="321.2" cy="44.0" r="0.7" fill="#ff5a36"/>
+      </g>
+
+      <!-- 6. 后甲板反应堆维修舱盖、应急救生对接圆舱口与消音百叶格栅 (Aft Deck X=58..184) -->
+      <rect x="148" y="39.2" width="27" height="9.6" rx="1.2" fill="#0a1820" stroke="#4a6368" stroke-width="0.75"/>
+      <line x1="161.5" y1="39.2" x2="161.5" y2="48.8" stroke="#2c3b40" stroke-width="0.65"/>
+      <circle cx="118" cy="44.0" r="3.6" fill="#0b1d28" stroke="#d4e3e6" stroke-width="0.85"/>
+      <circle cx="118" cy="44.0" r="1.5" fill="none" stroke="#38bdf8" stroke-width="0.65"/>
+      <circle cx="72" cy="44.0" r="3.0" fill="#0b1d28" stroke="#38bdf8" stroke-width="0.8"/>
+
+      <!-- 7. 艇艏：可收放前水平舵 (展开态) + MGK-600B 球形声呐基阵 + 6×533mm 鱼雷发射管内透视 (Bow X=354..422) -->
+      <g id="bow-top-view">
+        <!-- 艇艏左右展开态可收放前水平舵 (Retractable Bow Hydroplanes · Y=19.2..28.5 &amp; Y=59.5..68.8) -->
+        <polygon points="364,28.5 379,28.5 382,19.2 369,19.2" fill="#0b1d28" stroke="#38bdf8" stroke-width="0.95"/>
+        <polygon points="364,59.5 379,59.5 382,68.8 369,68.8" fill="#0b1d28" stroke="#38bdf8" stroke-width="0.95"/>
+
+        <!-- 艇艏 MGK-600B「额尔齐斯-双耳瓶-B」球形主被动声呐导流罩与内部基阵透视 -->
+        <path d="M 390 30.2 C 384 37.5 384 50.5 390 57.8" fill="none" stroke="#38bdf8" stroke-width="1.0" stroke-dasharray="3 1.5"/>
+        <ellipse cx="404.5" cy="44.0" rx="10.8" ry="8.4" fill="#0b1f2c" fill-opacity="0.65" stroke="#38bdf8" stroke-width="0.85" stroke-dasharray="2.2 1.1"/>
+        <circle cx="404.5" cy="44.0" r="2.5" fill="#38bdf8" fill-opacity="0.3" stroke="#d4e3e6" stroke-width="0.55"/>
+
+        <!-- 6×533mm 鱼雷/反潜导弹发射管俯视内透视 (左右对称各 3 具) -->
+        <g stroke="#eab308" stroke-width="0.7" stroke-dasharray="3 1.2" stroke-opacity="0.85">
+          <line x1="354" y1="36.8" x2="393" y2="37.8"/>
+          <line x1="354" y1="39.2" x2="396" y2="40.0"/>
+          <line x1="354" y1="41.6" x2="398" y2="42.2"/>
+          <line x1="354" y1="46.4" x2="398" y2="45.8"/>
+          <line x1="354" y1="48.8" x2="396" y2="48.0"/>
+          <line x1="354" y1="51.2" x2="393" y2="50.2"/>
+        </g>
+
+        <!-- 前甲板鱼雷装填舱盖、前救生对接舱口与 6具 REPS-324 声学诱饵发射孔 -->
+        <rect x="356" y="41.4" width="12.5" height="5.2" rx="0.9" fill="#0b1d28" stroke="#4a6368" stroke-width="0.8"/>
+        <circle cx="376" cy="44.0" r="3.6" fill="#0b1d28" stroke="#d4e3e6" stroke-width="0.9"/>
+        <circle cx="376" cy="44.0" r="1.5" fill="#132c3a" stroke="#38bdf8" stroke-width="0.65"/>
+        <!-- 左右对称 2×3 具 REPS-324 声学诱饵垂直发射孔 -->
+        <circle cx="384" cy="34.5" r="0.9" fill="#ff5a36"/>
+        <circle cx="387" cy="34.5" r="0.9" fill="#ff5a36"/>
+        <circle cx="384" cy="53.5" r="0.9" fill="#ff5a36"/>
+        <circle cx="387" cy="53.5" r="0.9" fill="#ff5a36"/>
+      </g>
+
+      <!-- 8. 底部右舷武器阵列与长宽比工程标注 -->
+      <text x="16" y="76.5" class="mono" font-size="2.7" fill="#38bdf8">STARBOARD BATTERY: 8×R-30 BULAVA SILOS · TOTAL 16×SLBM (96-160 HYPERSONIC MIRV WARHEADS)</text>
+      <text x="420" y="76.5" text-anchor="end" class="mono" font-size="2.7" fill="#eab308">BEAM: 13.5M · LOA: 170.0M (12.59:1)</text>
+
+    </g>
+  </g>
+</svg>

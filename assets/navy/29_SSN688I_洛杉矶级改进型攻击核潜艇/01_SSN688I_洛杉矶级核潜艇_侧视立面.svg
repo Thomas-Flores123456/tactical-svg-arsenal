@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 320" width="1100" height="320" data-asset-id="naval.losangeles688i.side" style="background:#080a0b;">
+  <defs>
+    <style>
+      svg { fill: none; stroke-linecap: butt; }
+      .s-dim { stroke: #2c3b40; stroke-width: 1; }
+      .s-line { stroke: #5f7c84; stroke-width: 1; }
+      .s-hi { stroke: #d4e3e6; stroke-width: 1.2; }
+      .s-alert { stroke: #ff5a36; stroke-width: 1.4; }
+      .s-focus { stroke: #38bdf8; stroke-width: 1.4; }
+      .f-dim { fill: #2c3b40; stroke: none; }
+      .f-line { fill: #5f7c84; stroke: none; }
+      .f-hi { fill: #d4e3e6; stroke: none; }
+      .f-alert { fill: #ff5a36; stroke: none; }
+      .f-panel { fill: #0c1113; }
+      text { font-family: "Rajdhani", "Bahnschrift", "DIN Alternate", "Microsoft YaHei", sans-serif; letter-spacing: 0.12em; }
+      text:not([stroke]) { stroke: none; }
+      text:not([fill]) { fill: #cfdde0; }
+      text:not([font-size]):not(.cap):not(.big) { font-size: 10px; }
+      text.cap { letter-spacing: 0.2em; text-transform: uppercase; }
+      text.cap:not([fill]) { fill: #8aa1a7; }
+      text.cap:not([font-size]) { font-size: 8.5px; }
+      text.mono { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; letter-spacing: 0.06em; }
+      text.big { font-family: "Rajdhani", "JetBrains Mono", Consolas, monospace; font-weight: 600; letter-spacing: 0.08em; }
+      text.big:not([font-size]) { font-size: 18px; }
+      text.big:not([fill]) { fill: #d4e3e6; }
+      text.alert { fill: #ff5a36; }
+    </style>
+    <pattern id="cad-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#10181c" stroke-width="1"/>
+      <circle cx="20" cy="20" r="0.8" fill="#1b262b"/>
+    </pattern>
+    <pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#ff5a36" stroke-width="1.2" stroke-opacity="0.35"/>
+    </pattern>
+  </defs>
+
+  <!-- 1. 工程蓝图暗色底板与坐标网格图层 -->
+  <g id="layer-backdrop">
+    <rect x="0" y="0" width="1100" height="320" fill="#080a0b"/>
+    <rect x="20" y="20" width="1060" height="280" fill="url(#cad-grid)" stroke="#2c3b40" stroke-width="1"/>
+    <path d="M 20 36 V 20 H 36 M 1064 20 H 1080 V 36 M 20 284 V 300 H 36 M 1064 300 H 1080 V 284" fill="none" stroke="#38bdf8" stroke-width="1.5"/>
+    <line x1="20" y1="54" x2="1080" y2="54" stroke="#2c3b40" stroke-width="1"/>
+    <line x1="20" y1="274" x2="1080" y2="274" stroke="#2c3b40" stroke-width="1"/>
+    <text x="34" y="42" class="p mono" fill="#38bdf8" font-size="9.5" font-weight="bold">US NAVY SSN-688I IMPROVED LOS ANGELES CLASS (SSN-773 CHEYENNE) · STARBOARD PROFILE</text>
+    <text x="1066" y="42" text-anchor="end" class="p cap" fill="#d4e3e6" font-size="9.5">SSN-688I「洛杉矶」级改进型核潜艇 · 侧视立面与12联战斧垂发内透视</text>
+    <text x="34" y="291" class="p mono" fill="#8aa1a7" font-size="9.5">6,927T SUBMERGED · 110.3M×10.1M · 12×MK45 TOMAHAWK VLS · 4×533MM MK67 TUBES (26×MK48 ADCAP) · GE S6G PWR · UID-60</text>
+    <text x="1066" y="291" text-anchor="end" class="p mono" fill="#5f7c84" font-size="9.5">POSEIDON NAVAL CAD ASSET · TRUE 1:1 ASPECT (10.92:1)</text>
+  </g>
+
+  <!-- 2. 舰艇核心 CAD 矢量图层 (1:1 真实长宽比等比锁定 scale(2.380,2.380)) -->
+  <g id="layer-ship-cad">
+    <g transform="translate(46.0,60.0) scale(2.380,2.380)">
+
+      <!-- 0. 水面基准线与前部 12单元 Mk 45 垂发系统发射 BGM-109「战斧」(Tomahawk TLAM) 巡航导弹垂直出水转平飞轨迹 -->
+      <g id="tomahawk-vls-salvo-cutaway">
+        <line x1="10" y1="33.5" x2="414" y2="33.5" stroke="#2c3b40" stroke-width="0.6" stroke-dasharray="4 3"/>
+        <text x="14" y="31.8" class="mono" font-size="2.4" fill="#5f7c84">SEA SURFACE DATUM · MK 45 VLS SUBMERGED CAPSULE EJECTION &amp; TOMAHAWK CRUISE TRANSITION</text>
+
+        <!-- 1号 BGM-109「战斧」从前部 Mk 45 垂发井 (X=358) 垂直出水、火箭助推转向平飞弧线 -->
+        <path d="M 358 43.2 L 358 24.5 Q 358 11.5 378 11.5 L 392 11.5" fill="none" stroke="#ff5a36" stroke-width="0.85" stroke-dasharray="2.4 1.5"/>
+        <!-- 2号 BGM-109「战斧」从前部 Mk 45 垂发井 (X=346) 垂直出水跃升轨迹 -->
+        <path d="M 346 43.2 L 346 21.0" fill="none" stroke="#38bdf8" stroke-width="0.75" stroke-dasharray="2 1.5"/>
+
+        <!-- 2号垂直跃升出水态 BGM-109「战斧」导弹剪影 (X=346, Y=18.5) -->
+        <g transform="translate(346.0, 17.5)">
+          <polygon points="0,6.5 -1.2,2.5 1.2,2.5" fill="#eab308" fill-opacity="0.85"/>
+          <rect x="-1.0" y="-6.5" width="2.0" height="9.0" rx="0.5" fill="#0d222e" stroke="#38bdf8" stroke-width="0.65"/>
+          <circle cx="0" cy="-6.5" r="1.0" fill="#d4e3e6"/>
+        </g>
+
+        <!-- 1号展开主翼平飞巡航态 BGM-109「战斧」(Tomahawk Block IV/V) 巡航导弹剪影 (X=394..412, Y=11.5) -->
+        <g transform="translate(398.0, 11.5)">
+          <polygon points="-11,0 -4.5,-1.2 -4.5,1.2" fill="#ff5a36" fill-opacity="0.8"/>
+          <rect x="-4.5" y="-1.0" width="14.5" height="2.0" rx="0.8" fill="#0d222e" stroke="#d4e3e6" stroke-width="0.75"/>
+          <circle cx="10.0" cy="0" r="1.0" fill="#ff5a36"/>
+          <!-- 战斧标志性中段平直下单翼与十字尾翼 -->
+          <polygon points="0.5,-1.0 2.0,-5.2 4.2,-5.2 3.5,-1.0" fill="#163244" stroke="#38bdf8" stroke-width="0.6"/>
+          <polygon points="1.5,1.0 3.0,3.2 4.5,3.2 3.8,1.0" fill="#163244" stroke="#eab308" stroke-width="0.55"/>
+          <polygon points="-4.2,-1.0 -2.8,-2.8 -1.5,-2.8 -2.0,-1.0" fill="#0d222e" stroke="#38bdf8" stroke-width="0.55"/>
+        </g>
+
+        <!-- 上方净空区战斧垂发标注 (远离围壳桅杆，零碰撞) -->
+        <text x="195" y="9.2" class="mono" font-size="2.5" fill="#ff5a36" font-weight="bold">12-CELL MK 45 VLS · BGM-109 TOMAHAWK SALVO (1,600KM)</text>
+        <text x="195" y="13.0" class="mono" font-size="2.3" fill="#38bdf8">EXTERNAL FORWARD BALLAST TANK SILOS (AHEAD OF PRESSURE HULL)</text>
+      </g>
+
+      <!-- 1. 688i 标志性艇尾：十字形尾舵 + 水平尾翼竖直稳定端板 (Dihedral Endplates) + 裸露七叶大侧斜静音螺旋桨 (Stern X=10..52) -->
+      <g id="ssn688i-stern-cruciform-propeller">
+        <!-- 上垂直方向舵 (Upper Vertical Rudder · X=21..46, Y=22.5..49.5) -->
+        <polygon points="21,49.5 25,22.5 36,22.5 45,48.0" fill="#0a1822" stroke="#d4e3e6" stroke-width="1.2"/>
+        <line x1="31" y1="22.5" x2="34" y2="48.5" stroke="#4a6368" stroke-width="0.75"/>
+        <!-- 下垂直方向舵 (Lower Ventral Rudder · X=22..44, Y=61.5..79.5) -->
+        <polygon points="22,61.5 38,63.2 34,79.5 23,78.0" fill="#0a1822" stroke="#d4e3e6" stroke-width="1.15"/>
+        <line x1="29" y1="62.2" x2="28" y2="78.5" stroke="#4a6368" stroke-width="0.7"/>
+
+        <!-- 水平尾翼与两端竖直稳定小翼端板 (Stern Planes with Vertical Endplates · 688级典型特征) -->
+        <ellipse cx="33" cy="56.0" rx="15.5" ry="1.6" fill="#0d222e" stroke="#38bdf8" stroke-width="0.9"/>
+        <!-- 翼尖竖直稳定端板 (Vertical Endplate Fin) + TB-29 拖曳线列声呐尾端释放管口 -->
+        <polygon points="20,51.2 31,51.8 33,60.2 20,60.8" fill="#102432" stroke="#38bdf8" stroke-width="0.95"/>
+        <circle cx="20.2" cy="51.6" r="0.85" fill="#ff5a36"/>
+
+        <!-- 裸露单轴七叶大侧斜静音螺旋桨 (Exposed 7-Blade Highly Skewed Low-Noise Propeller · 严禁画泵喷 · #eab308) -->
+        <g stroke="#eab308" stroke-width="0.95" fill="#eab308" fill-opacity="0.34">
+          <!-- 锥形桨毂 -->
+          <polygon points="11.0,56.0 17.5,53.6 17.5,58.4"/>
+          <!-- 7片镰刀形大侧斜桨叶 -->
+          <path d="M 14.2 56.0 C 11.0 50.0 12.6 46.5 15.8 47.8 C 15.0 51.2 14.6 53.6 14.2 56.0 Z"/>
+          <path d="M 14.2 56.0 C 11.0 62.0 12.6 65.5 15.8 64.2 C 15.0 60.8 14.6 58.4 14.2 56.0 Z"/>
+          <path d="M 13.0 53.5 C 10.2 50.8 10.8 48.6 13.4 49.6"/>
+          <path d="M 13.0 58.5 C 10.2 61.2 10.8 63.4 13.4 62.4"/>
+          <line x1="11.5" y1="53.0" x2="16.2" y2="59.0" stroke-width="0.8"/>
+          <line x1="11.5" y1="59.0" x2="16.2" y2="53.0" stroke-width="0.8"/>
+          <circle cx="14.2" cy="56.0" r="1.25" fill="#eab308" stroke="#080a0b" stroke-width="0.4"/>
+        </g>
+        <text x="12" y="44.5" class="mono" font-size="2.3" fill="#eab308">7-BLADE SKEWED SCREW</text>
+      </g>
+
+      <!-- 2. 主艇体：10.92:1 经典修长圆柱水滴形 HY-80 高强钢单壳体 (LOA 110.3m × Beam 10.1m · X=20..410, Y=43.2..68.8) -->
+      <g id="hy80-single-hull-body">
+        <!-- 水下暗红防污涂装下半艇体 -->
+        <path d="M 17.5 56.0 L 410 56.0 C 410 63.8 394 68.8 368 68.8 L 86 68.8 C 56 68.8 34 62.5 17.5 58.2 Z"
+              fill="#261014" stroke="none"/>
+        <!-- HY-80 单壳体主外廓 (中段平行圆柱体 X=86..368 + 尾锥 X=17.5..86 + 椭圆球鼻艇首 X=368..410) -->
+        <path d="M 17.5 53.8 L 86 43.2 L 368 43.2 C 394 43.2 410 48.2 410 56.0 C 410 63.8 394 68.8 368 68.8 L 86 68.8 C 56 68.8 34 62.5 17.5 58.2 Z"
+              fill="#0a1822" fill-opacity="0.74" stroke="#d4e3e6" stroke-width="1.35"/>
+        <!-- 艇底暗红防污漆高亮底边线 -->
+        <path d="M 410 56.0 C 410 63.8 394 68.8 368 68.8 L 86 68.8 C 56 68.8 34 62.5 17.5 58.2"
+              fill="none" stroke="#ff5a36" stroke-width="1.15"/>
+
+        <!-- 单耐压壳体前半球封头 (X=338) 与后封头 (X=76) 分界线 -->
+        <path d="M 338 43.2 C 334 49.0 334 63.0 338 68.8" fill="none" stroke="#38bdf8" stroke-width="1.05" stroke-dasharray="3 1.5"/>
+        <path d="M 78 44.5 C 81 50.5 81 61.5 78 67.5" fill="none" stroke="#38bdf8" stroke-width="0.95" stroke-dasharray="3 1.5"/>
+        <!-- 内部水密隔舱与双层甲板平台虚线 (X=78..338) -->
+        <line x1="78" y1="52.5" x2="336" y2="52.5" stroke="#2c3b40" stroke-width="0.65" stroke-dasharray="4 2"/>
+        <line x1="78" y1="60.5" x2="336" y2="60.5" stroke="#2c3b40" stroke-width="0.65" stroke-dasharray="4 2"/>
+        <g stroke="#2c3b40" stroke-width="0.65" stroke-dasharray="2 1.5">
+          <line x1="148" y1="43.2" x2="148" y2="68.8"/>
+          <line x1="202" y1="43.2" x2="202" y2="68.8"/>
+          <line x1="258" y1="43.2" x2="258" y2="68.8"/>
+          <line x1="296" y1="43.2" x2="296" y2="68.8"/>
+        </g>
+
+        <!-- 两舷 3 块式 AN/BQG-5D 宽孔径被动测距声呐侧阵 (WAA Flank Panels · X=132, 212, 282) + TB-29 拖曳声呐导管 -->
+        <g fill="#0d2432" stroke="#38bdf8" stroke-width="0.8">
+          <rect x="128" y="61.2" width="14" height="3.6" rx="0.6"/>
+          <rect x="208" y="61.2" width="14" height="3.6" rx="0.6"/>
+          <rect x="278" y="61.2" width="14" height="3.6" rx="0.6"/>
+        </g>
+        <line x1="20" y1="51.6" x2="256" y2="45.8" stroke="#38bdf8" stroke-width="0.65" stroke-dasharray="3 1.5"/>
+      </g>
+
+      <!-- 3. 后半艇核动力舱：1×GE S6G 压水核反应堆 (165MWt) + 2×蒸汽轮机与主减速齿轮箱内透视 (X=80..200) -->
+      <g id="ge-s6g-reactor-turbine-cutaway">
+        <!-- GE S6G 压水核反应堆舱 (X=154..198) -->
+        <rect x="154.0" y="45.5" width="42.0" height="20.8" rx="2.0" fill="#1a0f10" fill-opacity="0.72" stroke="#ff5a36" stroke-width="0.95"/>
+        <circle cx="175.0" cy="56.5" r="5.5" fill="#2a1214" stroke="#ff5a36" stroke-width="0.85"/>
+        <circle cx="175.0" cy="56.5" r="2.3" fill="#ff5a36" fill-opacity="0.65" stroke="#eab308" stroke-width="0.7"/>
+        <line x1="175.0" y1="46.2" x2="175.0" y2="51.0" stroke="#eab308" stroke-width="1.15"/>
+        <rect x="158.0" y="48.5" width="6.5" height="14.5" rx="1.2" fill="#261014" stroke="#eab308" stroke-width="0.65"/>
+        <rect x="185.5" y="48.5" width="6.5" height="14.5" rx="1.2" fill="#261014" stroke="#eab308" stroke-width="0.65"/>
+
+        <!-- 后部 2×蒸汽轮机 (35,000 SHP) 与主减速齿轮箱舱 (X=82..146) -->
+        <polygon points="82,50.5 144,47.5 144,64.5 82,61.5" fill="#091a24" fill-opacity="0.62" stroke="#38bdf8" stroke-width="0.8" stroke-dasharray="3 1.5"/>
+        <line x1="144" y1="53.0" x2="154" y2="53.0" stroke="#eab308" stroke-width="0.9"/>
+        <line x1="17.5" y1="56.0" x2="144" y2="56.0" stroke="#eab308" stroke-width="0.85" stroke-dasharray="4 2"/>
+        <text x="140" y="67.5" text-anchor="middle" class="mono" font-size="2.3" fill="#ff5a36">GE S6G PWR (165MWt) &amp; 2×TURBINES</text>
+      </g>
+
+      <!-- 4. 688i 标志性直立窄长无舵破冰围壳 (Ice-Hardened Sail · 无围壳水平舵 · 无根部圆弧边条 · 标号 773 · X=268..304, Y=23.5..43.2) -->
+      <g id="ssn688i-ice-hardened-sail">
+        <!-- 经典美式直立利落窄围壳外廓 (根部直交艇背，前缘微倾强化破冰装甲) -->
+        <polygon points="268,43.2 270,23.5 301,23.5 304,43.2"
+                 fill="#0b1a24" fill-opacity="0.94" stroke="#d4e3e6" stroke-width="1.3"/>
+        <!-- 围壳顶部强化破冰导流冠 (Ice-Hardened Cap) -->
+        <polygon points="270,23.5 301,23.5 302,26.8 269.5,26.8"
+                 fill="#132c3a" stroke="#38bdf8" stroke-width="0.95"/>
+        <line x1="285" y1="23.5" x2="285" y2="43.2" stroke="#2c3b40" stroke-width="0.7"/>
+        <!-- 围壳侧面美军白色舷号「773」(USS Cheyenne SSN-773) -->
+        <text x="286" y="36.2" text-anchor="middle" class="mono" font-size="4.0" fill="#d4e3e6" font-weight="bold">773</text>
+
+        <!-- 围壳顶部升降潜望镜、AN/BPS-16 雷达与通信桅杆群 (Type 18, Type 2, AN/BLQ-10 ESM, OE-538 SATCOM) -->
+        <g stroke="#d4e3e6" stroke-width="0.95">
+          <line x1="274" y1="23.5" x2="274" y2="12.5"/>
+          <rect x="272.0" y="10.5" width="4.0" height="2.0" rx="0.4" fill="#0d222e" stroke="#38bdf8" stroke-width="0.75"/>
+          <line x1="281" y1="23.5" x2="281" y2="9.5"/>
+          <circle cx="281" cy="8.7" r="1.3" fill="#132c3a" stroke="#ff5a36" stroke-width="0.75"/>
+          <line x1="289" y1="23.5" x2="289" y2="7.5"/>
+          <polygon points="287.6,9.0 290.4,9.0 289,6.2" fill="#38bdf8" stroke="none"/>
+          <line x1="296" y1="23.5" x2="296" y2="11.0"/>
+          <ellipse cx="296" cy="10.4" rx="2.0" ry="1.0" fill="#0d222e" stroke="#eab308" stroke-width="0.7"/>
+        </g>
+        <text x="285" y="4.5" text-anchor="middle" class="mono" font-size="2.4" fill="#38bdf8">ICE-HARDENED SAIL (NO FAIRWATER PLANES)</text>
+      </g>
+
+      <!-- 5. 舯部偏前两舷斜置 4×533mm Mk 67 水压鱼雷发射管 + 26枚重型武器架 (Midships X=296..336) -->
+      <g id="midship-mk67-torpedo-tubes">
+        <!-- 鱼雷舱内部 26 枚 Mk 48 ADCAP / 潜射鱼叉备用弹架与斜置鱼雷管延长线 (X=298..332) -->
+        <g stroke="#eab308" stroke-width="0.75" stroke-dasharray="3 1.4" stroke-opacity="0.88">
+          <line x1="298" y1="54.2" x2="330" y2="54.2"/>
+          <line x1="298" y1="57.2" x2="332" y2="57.2"/>
+        </g>
+        <rect x="299" y="61.5" width="22" height="2.0" rx="0.6" fill="#1c0d10" stroke="#ff5a36" stroke-width="0.65"/>
+        <rect x="299" y="64.2" width="22" height="2.0" rx="0.6" fill="#0d222e" stroke="#38bdf8" stroke-width="0.65"/>
+
+        <!-- 艇舯偏前右舷外侧 2 个长椭圆形斜置 533mm 鱼雷发射口活门 (Shutter Doors · X=324..335, Y=53.2..58.4) -->
+        <rect x="324.0" y="53.2" width="8.5" height="2.0" rx="0.9" fill="#1c0d10" stroke="#eab308" stroke-width="0.9"/>
+        <rect x="326.0" y="56.2" width="8.5" height="2.0" rx="0.9" fill="#1c0d10" stroke="#ff5a36" stroke-width="0.9"/>
+
+        <!-- 引线标注 (置于艇体下方净空区，彻底避开围壳与上层轨迹) -->
+        <line x1="328" y1="58.4" x2="328" y2="72.2" stroke="#eab308" stroke-width="0.65" stroke-dasharray="1.8 1.2"/>
+        <text x="328" y="75.2" text-anchor="middle" class="mono" font-size="2.4" fill="#eab308">4×533MM MIDSHIP MK 67 TUBES (26×MK48 ADCAP)</text>
+      </g>
+
+      <!-- 6. 688i 第一核心地标：耐压壳体外前压载水舱 12单元 Mk 45 战斧垂直发射管 (X=340..374) + 可收放首水平舵 + AN/BQQ-5E 球形声呐罩 (X=375..410) -->
+      <g id="bow-mk45-vls-bqq5-sonar">
+        <!-- 艇首耐压壳体外 12 单元 Mk 45 战斧巡航导弹独立垂直发射圆筒剖面 (3排阶梯组 · X=342..372, Y=43.2..66.5) -->
+        <g fill="#1c0d10" fill-opacity="0.86" stroke="#ff5a36" stroke-width="0.85">
+          <rect x="342.5" y="43.5" width="7.2" height="22.8" rx="0.8"/>
+          <rect x="352.5" y="43.5" width="7.2" height="22.8" rx="0.8"/>
+          <rect x="362.5" y="44.0" width="7.2" height="21.5" rx="0.8"/>
+        </g>
+        <!-- 发射筒内部 BGM-109 战斧导弹储运发射罐虚线与顶部装甲圆井盖 -->
+        <g stroke="#eab308" stroke-width="0.65" stroke-dasharray="2 1">
+          <line x1="346.1" y1="45.0" x2="346.1" y2="65.0"/>
+          <line x1="356.1" y1="45.0" x2="356.1" y2="65.0"/>
+          <line x1="366.1" y1="45.5" x2="366.1" y2="64.0"/>
+        </g>
+        <!-- 开启态 Mk 45 垂发井盖 -->
+        <line x1="342.5" y1="43.2" x2="339.5" y2="39.2" stroke="#38bdf8" stroke-width="1.0"/>
+        <line x1="352.5" y1="43.2" x2="349.5" y2="39.2" stroke="#ff5a36" stroke-width="1.0"/>
+
+        <!-- 688i 标志性艇首可收放水平舵及收放折槽 (Retractable Bow Diving Planes · X=348..366, Y=47.5..50.6) -->
+        <rect x="348.0" y="47.5" width="17.5" height="3.1" rx="0.8" fill="#050d12" stroke="#38bdf8" stroke-width="1.0"/>
+        <line x1="350.0" y1="49.0" x2="363.5" y2="49.0" stroke="#d4e3e6" stroke-width="0.7"/>
+
+        <!-- 艇首透声玻璃钢声呐整流罩分界线与直径 4.6m AN/BQQ-5E 大型球形主被动声呐基阵 (X=375..410) -->
+        <path d="M 375 43.4 C 371 50.5 371 61.5 375 68.6" fill="none" stroke="#38bdf8" stroke-width="1.05"/>
+        <circle cx="391.5" cy="56.0" r="10.8" fill="#0b1f2c" fill-opacity="0.8" stroke="#38bdf8" stroke-width="1.05"/>
+        <ellipse cx="391.5" cy="56.0" rx="10.8" ry="4.8" fill="none" stroke="#38bdf8" stroke-width="0.55" stroke-dasharray="2 1"/>
+        <ellipse cx="391.5" cy="56.0" rx="4.8" ry="10.8" fill="none" stroke="#38bdf8" stroke-width="0.55" stroke-dasharray="2 1"/>
+        <line x1="380.7" y1="56.0" x2="402.3" y2="56.0" stroke="#38bdf8" stroke-width="0.6"/>
+        <line x1="391.5" y1="45.2" x2="391.5" y2="66.8" stroke="#38bdf8" stroke-width="0.6"/>
+        <circle cx="391.5" cy="56.0" r="2.0" fill="#38bdf8" fill-opacity="0.55"/>
+        <!-- 艇首上部 AN/BQS-15 冰下高频避碰/测冰声呐小圆罩 -->
+        <rect x="377.5" y="41.8" width="3.6" height="1.6" rx="0.5" fill="#132c3a" stroke="#eab308" stroke-width="0.7"/>
+
+        <!-- 艇首球形声呐与可收放首水平舵引线标注 -->
+        <line x1="391.5" y1="45.2" x2="391.5" y2="26.5" stroke="#38bdf8" stroke-width="0.65" stroke-dasharray="1.8 1.2"/>
+        <text x="412" y="24.5" text-anchor="end" class="mono" font-size="2.5" fill="#38bdf8" font-weight="bold">AN/BQQ-5E SPHERICAL SONAR &amp; BOW PLANES</text>
+      </g>
+
+      <!-- 7. 底部总长与核心分段工程尺寸标尺 (LOA 110.3m · Aspect 10.92:1) -->
+      <g id="dimension-ruler" stroke="#5f7c84" stroke-width="0.6">
+        <line x1="20" y1="84.5" x2="410" y2="84.5"/>
+        <line x1="20" y1="81.5" x2="20" y2="87.0"/>
+        <line x1="148" y1="82.0" x2="148" y2="86.5"/>
+        <line x1="258" y1="82.0" x2="258" y2="86.5"/>
+        <line x1="338" y1="82.0" x2="338" y2="86.5"/>
+        <line x1="410" y1="81.5" x2="410" y2="87.0"/>
+        <text x="84" y="83.0" text-anchor="middle" class="mono" font-size="2.5" fill="#8aa1a7">7-BLADE SCREW &amp; TURBINES</text>
+        <text x="203" y="83.0" text-anchor="middle" class="mono" font-size="2.5" fill="#ff5a36">GE S6G PWR &amp; WAA</text>
+        <text x="298" y="83.0" text-anchor="middle" class="mono" font-size="2.5" fill="#eab308">SAIL 773 &amp; 4×533MM</text>
+        <text x="374" y="83.0" text-anchor="middle" class="mono" font-size="2.5" fill="#38bdf8">12×MK45 VLS · 110.3M</text>
+      </g>
+
+    </g>
+  </g>
+</svg>
