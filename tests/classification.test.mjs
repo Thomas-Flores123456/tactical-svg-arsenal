@@ -53,8 +53,11 @@ test('search, favorites, category and subtype intersect and empty services stay 
   assert.equal(sub.length, 3);
   const expectedArmy = equipment.filter(e => e.service === 'army').length;
   const expectedAir = equipment.filter(e => e.service === 'air').length;
+  const expectedAllied = equipment.filter(e => e.faction === 'allied').length;
   assert.equal(filterEquipment(equipment, { ...base, service: 'army' }, search).length, expectedArmy);
   assert.equal(filterEquipment(equipment, { ...base, service: 'air' }, search).length, expectedAir);
+  assert.equal(filterEquipment(equipment, { ...base, faction: 'allied' }, search).length, expectedAllied);
+  assert.ok(expectedAllied > 0);
   assert.equal(filterEquipment(equipment, { ...base, categoryId: 'carrier', query: '潜艇' }, search).length, 0);
   assert.equal(filterEquipment(equipment, { ...base, categoryId: 'submarine', favoritesOnly: true, favorites: [sub[0].id] }, search).length, 1);
   assert.equal(filterEquipment(equipment, { ...base, query: '  战略导弹   核潜艇 ' }, search).length, 3);

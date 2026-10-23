@@ -1,2 +1,33 @@
-export interface AssetView { id: string; equipmentId: string; file: string; sourcePath: string; url: string; width: number; height: number; bytes: number; sha256: string; kind: string; label: string; backdrop: boolean }
-export interface Equipment { categoryId: string; subtypeId: string; categoryLabel: string; subtypeLabel: string; categoryOrder: number; subtypeOrder: number; sourceOrder: number; id: string; name: string; service: string; platform: string; faction: string; sourceStatus: string; views: string[]; coverId: string }
+export interface AssetView {
+  id: string;
+  equipmentId: string;
+  file: string;
+  sourcePath: string;
+  url: string;
+  width: number;
+  height: number;
+  bytes: number;
+  sha256: string;
+  kind: string;
+  label: string;
+  configuration?: string;
+  backdrop: boolean;
+}
+
+export interface Equipment {
+  categoryId: string;
+  subtypeId: string;
+  categoryLabel: string;
+  subtypeLabel: string;
+  categoryOrder: number;
+  subtypeOrder: number;
+  sourceOrder: number;
+  id: string;
+  name: string;
+  service: string;
+  platform: string;
+  faction: string;
+  sourceStatus: string;
+  views: string[];
+  coverId: string;
+}
