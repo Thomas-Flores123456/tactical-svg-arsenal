@@ -1,0 +1,2 @@
+# Preserve exact bytes (and SHA-256 digests) of SVG assets across Windows/Linux/macOS
+*.svg binary

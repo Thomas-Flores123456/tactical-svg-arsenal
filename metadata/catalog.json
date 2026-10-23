@@ -2832,6 +2832,64 @@
       "coverId": "air.soviet.orion_inokhodets.default.clean.master"
     },
     {
+      "id": "air:37_Su-25SM3_蛙足重装甲强击机",
+      "categoryId": "air-bomber",
+      "subtypeId": "cas",
+      "categoryLabel": "攻击机与战略轰炸机",
+      "subtypeLabel": "近距支援攻击机",
+      "categoryOrder": 19,
+      "subtypeOrder": 0,
+      "sourceOrder": 37,
+      "name": "Su-25SM3 · 蛙足重装甲强击机",
+      "service": "air",
+      "platform": "air",
+      "faction": "soviet",
+      "sourceStatus": "依据《武备·苏联》UID45与《工程·苏联》UID14绘制：下倾楔形机鼻（配SOLT-25光电激光瞄准窗与左下GSh-30-2双管30mm机炮）、全焊接24mm钛合金防弹澡盆单座座舱、大展弦比微后掠上单直翼（带前缘缝翼与翼刀）、翼根两侧紧贴机身的2台R-195无加力涡喷长圆筒短舱、单片高大梯形垂尾配机背UV-26干扰弹箱、左右翼尖维捷布斯克-25纺锤形电子战吊舱与翼下10挂点满载S-25L重型火箭弹/B-8M1火箭巢/Kh-29L空地导弹。非实物1:1工程认证。",
+      "views": [
+        "air.soviet.su25sm3_frogfoot.default.clean.master"
+      ],
+      "coverId": "air.soviet.su25sm3_frogfoot.default.clean.master"
+    },
+    {
+      "id": "air:38_F-16V_毒蛇多用途战斗机",
+      "categoryId": "air-fighter",
+      "subtypeId": "strike-fighter",
+      "categoryLabel": "制空与多用途战机",
+      "subtypeLabel": "前掠翼／多用途突击机",
+      "categoryOrder": 18,
+      "subtypeOrder": 1,
+      "sourceOrder": 38,
+      "name": "F-16V · 毒蛇多用途战斗机",
+      "service": "air",
+      "platform": "air",
+      "faction": "allied",
+      "sourceStatus": "依据《武备·盟军》UID41与UID85/86绘制：扁平折线机鼻（内置AN/APG-83 SABR有源相控阵雷达阵列与鼻上4片鸟切IFF刀状天线）、360°无前风挡框一体式水泡座舱盖、前机腹固定几何笑口式皮托管超音速进气道、进气道右侧挂载AN/AAQ-33狙击手光电吊舱、翼身融合大边条切角三角翼、机背航电脊与翼根两侧多面体脊背保形油箱（CFTs）、单发F110鱼鳞收敛扩张喷管及翼尖AIM-120C/D+翼下AGM-88G/副油箱满载挂架。非实物1:1工程认证。",
+      "views": [
+        "air.allied.f16v_viper.default.clean.master"
+      ],
+      "coverId": "air.allied.f16v_viper.default.clean.master"
+    },
+    {
+      "id": "air:39_P-8A_海神远程反潜巡逻机",
+      "categoryId": "air-special",
+      "subtypeId": "maritime-asw",
+      "categoryLabel": "空天母舰与特种飞行器",
+      "subtypeLabel": "远程反潜与海上巡逻机",
+      "categoryOrder": 21,
+      "subtypeOrder": 7,
+      "sourceOrder": 39,
+      "name": "P-8A · 海神远程反潜巡逻机",
+      "service": "air",
+      "platform": "air",
+      "faction": "allied",
+      "sourceStatus": "依据《武备·盟军》UID19与UID50绘制：基于737-800ERX无客舱舷窗强化窄体机身（仅中段保留双气泡观察窗）、机鼻AN/APY-10海面搜索雷达罩与折角六窗风挡、机鼻下MX-20HD光电球、机背卫通与刀状天线群、下单翼吊挂2台CFM56-7B27A大涵道比涡扇短舱（外侧带180kVA发电机鼓包）、大角度后掠刀刃状斜梢翼尖（Raked Wingtips）、内翼挂载4枚AGM-84鱼叉反舰导弹与后机腹内置5挂点Mk54滑翔翼反潜鱼雷弹舱及旋转声呐浮标阵列（巡航反潜搜索/内置鱼雷弹舱开启投放双构型）。非实物1:1工程认证。",
+      "views": [
+        "air.allied.p8a_poseidon.default.clean.master",
+        "air.allied.p8a_poseidon.weapons_open.clean.variant"
+      ],
+      "coverId": "air.allied.p8a_poseidon.default.clean.master"
+    },
+    {
       "id": "air:40_Il-78M-90A_伊尔78大型空中加油机",
       "categoryId": "air-special",
       "subtypeId": "aerial-tanker",
@@ -2850,6 +2908,45 @@
         "air.soviet.il78m90a_midas.refuel_deployed.clean.variant"
       ],
       "coverId": "air.soviet.il78m90a_midas.default.clean.master"
+    },
+    {
+      "id": "air:41_UH-60M_黑鹰通用突击直升机",
+      "categoryId": "air-rotorcraft",
+      "subtypeId": "transport-heli",
+      "categoryLabel": "旋翼与倾转旋翼机",
+      "subtypeLabel": "纵列双旋翼／重型运输直升机",
+      "categoryOrder": 20,
+      "subtypeOrder": 3,
+      "sourceOrder": 41,
+      "name": "UH-60M · 黑鹰通用突击直升机",
+      "service": "air",
+      "platform": "air",
+      "faction": "allied",
+      "sourceStatus": "依据《武备·盟军》UID42与UID53绘制：4叶宽弦大角度后掠下反折角桨尖复合材料主旋翼、低矮扁平抗坠毁机身、顶置双发T700-GE-701D涡轴短舱配HIRSS悬停红外抑制箱式排气混合器、两侧后滑式步兵舱门与M134六管加特林舱门机枪窗、不可收放后三点抗坠毁起落架（远置尾轮）、尾梁末端右倾20°四叶无轴承尾桨与最下部平直可变迎角全动平尾（Stabilator）及机身两侧海鸥形ESSS短翼满挂2具副油箱与8枚AGM-114地狱火导弹。非实物1:1工程认证。",
+      "views": [
+        "air.allied.uh60m_blackhawk.default.clean.master"
+      ],
+      "coverId": "air.allied.uh60m_blackhawk.default.clean.master"
+    },
+    {
+      "id": "air:42_Mi-35M_超级雌鹿武装运输直升机",
+      "categoryId": "air-rotorcraft",
+      "subtypeId": "attack-heli",
+      "categoryLabel": "旋翼与倾转旋翼机",
+      "subtypeLabel": "重型武装／攻城直升机",
+      "categoryOrder": 20,
+      "subtypeOrder": 0,
+      "sourceOrder": 42,
+      "name": "Mi-35M · 超级雌鹿武装运输直升机",
+      "service": "air",
+      "platform": "air",
+      "faction": "soviet",
+      "sourceStatus": "依据《武备·苏联》UID54绘制：纵列阶梯式双独立水泡防弹座舱盖（Double-Bubble Cockpit）、机鼻下NPPU-23随动炮塔（GSh-23V双管23mm机炮）与右侧OPS-24N光电转塔球、顶置VK-2500双发防沙涡轴短舱、5叶复合材料主旋翼、左侧窄夹角剪刀式X形四叶抗噪尾桨、不可收放固定式三点起落架、截短式16°下反短翼挂载9M120冲锋反坦克导弹与B-8V20A火箭巢及中部8人装甲步兵舱上下两段式蚌壳舱门（闭舱突击巡航/上掀顶门与下翻登机梯全开8人突击班机降展开双构型）。非实物1:1工程认证。",
+      "views": [
+        "air.soviet.mi35m_superhind.default.clean.master",
+        "air.soviet.mi35m_superhind.troop_deploy.clean.variant"
+      ],
+      "coverId": "air.soviet.mi35m_superhind.default.clean.master"
     }
   ],
   "assets": [
@@ -7348,6 +7445,66 @@
       "backdrop": false
     },
     {
+      "id": "air.soviet.su25sm3_frogfoot.default.clean.master",
+      "equipmentId": "air:37_Su-25SM3_蛙足重装甲强击机",
+      "file": "01_纯净版_侧顶联合总图.svg",
+      "sourcePath": "assets/air/37_Su-25SM3_蛙足重装甲强击机/01_纯净版_侧顶联合总图.svg",
+      "url": "assets/air.soviet.su25sm3_frogfoot.default.clean.master.svg",
+      "width": 1600,
+      "height": 1000,
+      "bytes": 74163,
+      "sha256": "d888e1d9fbe1cb9a861c026a3ab3d20df524deb8d13c3e6158c836b4ca462b4e",
+      "kind": "clean-master",
+      "label": "纯净侧顶总图",
+      "configuration": "default",
+      "backdrop": false
+    },
+    {
+      "id": "air.allied.f16v_viper.default.clean.master",
+      "equipmentId": "air:38_F-16V_毒蛇多用途战斗机",
+      "file": "01_纯净版_侧顶联合总图.svg",
+      "sourcePath": "assets/air/38_F-16V_毒蛇多用途战斗机/01_纯净版_侧顶联合总图.svg",
+      "url": "assets/air.allied.f16v_viper.default.clean.master.svg",
+      "width": 1600,
+      "height": 1000,
+      "bytes": 70466,
+      "sha256": "31bcf6f44ef55a7dc8e471f4d5e515e0cb13b6471af127f2b92edb0b6a832fc5",
+      "kind": "clean-master",
+      "label": "纯净侧顶总图",
+      "configuration": "default",
+      "backdrop": false
+    },
+    {
+      "id": "air.allied.p8a_poseidon.default.clean.master",
+      "equipmentId": "air:39_P-8A_海神远程反潜巡逻机",
+      "file": "01_纯净版_侧顶联合总图.svg",
+      "sourcePath": "assets/air/39_P-8A_海神远程反潜巡逻机/01_纯净版_侧顶联合总图.svg",
+      "url": "assets/air.allied.p8a_poseidon.default.clean.master.svg",
+      "width": 1600,
+      "height": 1000,
+      "bytes": 73750,
+      "sha256": "ad31d67f0c061ed72a2f5a79a2d1358691521ef069750acf2415beedb886f9f7",
+      "kind": "clean-master",
+      "label": "纯净侧顶总图",
+      "configuration": "default",
+      "backdrop": false
+    },
+    {
+      "id": "air.allied.p8a_poseidon.weapons_open.clean.variant",
+      "equipmentId": "air:39_P-8A_海神远程反潜巡逻机",
+      "file": "02_反潜鱼雷仓开启态_侧顶联合总图.svg",
+      "sourcePath": "assets/air/39_P-8A_海神远程反潜巡逻机/02_反潜鱼雷仓开启态_侧顶联合总图.svg",
+      "url": "assets/air.allied.p8a_poseidon.weapons_open.clean.variant.svg",
+      "width": 1600,
+      "height": 1000,
+      "bytes": 77085,
+      "sha256": "d9e56d4db14df761b008018f47a4929b4677636269204704981d594d5856f0a5",
+      "kind": "clean-variant",
+      "label": "反潜鱼雷仓开启态 · 侧顶",
+      "configuration": "weapons_open",
+      "backdrop": false
+    },
+    {
       "id": "air.soviet.il78m90a_midas.default.clean.master",
       "equipmentId": "air:40_Il-78M-90A_伊尔78大型空中加油机",
       "file": "01_纯净版_侧顶联合总图.svg",
@@ -7375,6 +7532,51 @@
       "kind": "clean-variant",
       "label": "细节",
       "configuration": "refuel_deployed",
+      "backdrop": false
+    },
+    {
+      "id": "air.allied.uh60m_blackhawk.default.clean.master",
+      "equipmentId": "air:41_UH-60M_黑鹰通用突击直升机",
+      "file": "01_纯净版_侧顶联合总图.svg",
+      "sourcePath": "assets/air/41_UH-60M_黑鹰通用突击直升机/01_纯净版_侧顶联合总图.svg",
+      "url": "assets/air.allied.uh60m_blackhawk.default.clean.master.svg",
+      "width": 1600,
+      "height": 1000,
+      "bytes": 75770,
+      "sha256": "aa96997458641845623e83025b56378c7850228b8d7c497e7617c1a7d7b344ff",
+      "kind": "clean-master",
+      "label": "纯净侧顶总图",
+      "configuration": "default",
+      "backdrop": false
+    },
+    {
+      "id": "air.soviet.mi35m_superhind.default.clean.master",
+      "equipmentId": "air:42_Mi-35M_超级雌鹿武装运输直升机",
+      "file": "01_纯净版_侧顶联合总图.svg",
+      "sourcePath": "assets/air/42_Mi-35M_超级雌鹿武装运输直升机/01_纯净版_侧顶联合总图.svg",
+      "url": "assets/air.soviet.mi35m_superhind.default.clean.master.svg",
+      "width": 1600,
+      "height": 1000,
+      "bytes": 72806,
+      "sha256": "96722f25a4683b01c2678468326c5622388baeb39f1b4f6d0d831dbd35b9adfc",
+      "kind": "clean-master",
+      "label": "纯净侧顶总图",
+      "configuration": "default",
+      "backdrop": false
+    },
+    {
+      "id": "air.soviet.mi35m_superhind.troop_deploy.clean.variant",
+      "equipmentId": "air:42_Mi-35M_超级雌鹿武装运输直升机",
+      "file": "02_步兵舱门机降态_侧顶联合总图.svg",
+      "sourcePath": "assets/air/42_Mi-35M_超级雌鹿武装运输直升机/02_步兵舱门机降态_侧顶联合总图.svg",
+      "url": "assets/air.soviet.mi35m_superhind.troop_deploy.clean.variant.svg",
+      "width": 1600,
+      "height": 1000,
+      "bytes": 79523,
+      "sha256": "64f548813988ea2fa5690323411320d4417c99bdaabbc4a1aadb9e2f325ce843",
+      "kind": "clean-variant",
+      "label": "步兵舱门机降态 · 侧顶",
+      "configuration": "troop_deploy",
       "backdrop": false
     }
   ]
